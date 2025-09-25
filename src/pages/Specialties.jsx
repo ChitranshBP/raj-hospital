@@ -9,7 +9,7 @@ const Specialties = () => {
   const specialties = [
   {
     icon: FiHeart,
-    title: 'Cardiology & Cardiac Sciences',
+    title: 'Cardiology',
     description: 'Comprehensive heart care including interventional cardiology, cardiac surgery, and preventive heart health programs.',
     services: ['Angioplasty', 'Bypass Surgery', 'Pacemaker Implantation', 'Heart Failure Management'],
     image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
@@ -226,7 +226,8 @@ const Specialties = () => {
           </motion.div>
         </div>
       </section>
-    </div>);
+    </div>
+  );
 
 };
 

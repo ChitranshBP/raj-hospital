@@ -26,7 +26,9 @@ const {
   FiAward,
   FiUsers,
   FiPhone,
-  FiMessageSquare
+  FiMessageSquare,
+  FiChevronLeft,
+  FiChevronRight
 } = FiIcons;
 
 const SpecialtyDetail = () => {
@@ -37,7 +39,7 @@ const SpecialtyDetail = () => {
   const specialtyData = {
     cardiology: {
       id: 'cardiology',
-      title: 'Cardiology & Cardiac Sciences',
+      title: 'Cardiology',
       icon: FiHeart,
       bannerImage: 'assets/specialties/Cardiology/Banner-2-cardio.png',
       shortDescription: 'Expert care for heart diseases with state-of-the-art technology and experienced cardiologists',
@@ -436,6 +438,92 @@ const SpecialtyDetail = () => {
     'Autoimmune Kidney Disease']
 
   };
+function SidebarSpecialistsSlider({ specialists }) {
+  const [index, setIndex] = useState(0);
+
+  if (!specialists?.length) return null;
+
+  const prev = () => setIndex(i => (i === 0 ? specialists.length - 1 : i - 1));
+  const next = () => setIndex(i => (i === specialists.length - 1 ? 0 : i + 1));
+
+  const doc = specialists[index];
+
+  return (
+    <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-md">
+      <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+        <FiUsers className="w-5 h-5 text-primary-600 mr-2" />
+        Meet Our Specialists
+      </h3>
+      <div className="relative">
+        {specialists.length > 1 && (
+          <>
+            <button
+              className="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-100 p-2 rounded-full hover:bg-primary-100 z-10"
+              style={{ left: "-1.5rem" }}
+              onClick={prev}
+              aria-label="Previous"
+              type="button"
+            >
+              <FiChevronLeft className="w-5 h-5 text-primary-600" />
+            </button>
+            <button
+              className="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-100 p-2 rounded-full hover:bg-primary-100 z-10"
+              style={{ right: "-1.5rem" }}
+              onClick={next}
+              aria-label="Next"
+              type="button"
+            >
+              <FiChevronRight className="w-5 h-5 text-primary-600" />
+            </button>
+          </>
+        )}
+        <div className="bg-white rounded-xl shadow hover:shadow-lg transition-all overflow-hidden border border-gray-100">
+          <div className="relative h-48 overflow-hidden">
+            <img
+              src={doc.image}
+              alt={doc.name}
+              className="w-full h-full object-cover object-top"
+              onError={e => {
+                e.target.src = "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80";
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+          </div>
+          <div className="p-4">
+            <h4 className="text-lg font-semibold text-gray-900 mb-1">{doc.name}</h4>
+            <p className="text-primary-600 text-sm mb-1">{doc.qualification}</p>
+            <p className="text-secondary-600 text-xs mb-2">{doc.specialization}</p>
+            <div className="flex items-center text-xs text-gray-500 mb-3">
+              <FiAward className="w-4 h-4 mr-1" />
+              <span>{doc.experience} Experience</span>
+            </div>
+            <Link
+              to={`/doctors/${doc.id}`}
+              className="w-full bg-primary-500 text-white py-2 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 text-sm"
+            >
+              <FiCalendar className="w-4 h-4" />
+              <span>Book Appointment</span>
+            </Link>
+          </div>
+        </div>
+        {specialists.length > 1 && (
+          <div className="flex justify-center mt-4 space-x-2">
+            {specialists.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                aria-label={`Go to slide ${i + 1}`}
+                onClick={() => setIndex(i)}
+                className={`w-3 h-3 rounded-full border border-primary-300 ${index === i ? "bg-primary-500" : "bg-gray-200"}`}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 
   // Function to get conditions for a specific specialty
   const getConditionsForSpecialty = (specialtyId) => {
@@ -558,14 +646,14 @@ const SpecialtyDetail = () => {
               className="space-y-8">
 
               {/* Appointment Card */}
-              <div className="bg-gradient-to-br from-primary-50 to-secondary-50 p-6 rounded-xl shadow-md">
+              {/* <div className="bg-gradient-to-br from-primary-50 to-secondary-50 p-6 rounded-xl shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Book an Appointment</h3>
                 <p className="text-gray-700 mb-6">Schedule a consultation with our {specialty.title} specialists.</p>
                 <button className="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2">
                   <SafeIcon icon={FiCalendar} className="w-5 h-5" />
                   <span>Book Now</span>
                 </button>
-              </div>
+              </div> */}
 
               {/* Department Stats 
                                                                                                    <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
@@ -591,7 +679,7 @@ const SpecialtyDetail = () => {
                                                                                                    </div>
                                                                                                    */}
               {/* Emergency Contact */}
-              <div className="bg-accent-50 p-6 rounded-xl border border-accent-100">
+              {/* <div className="bg-accent-50 p-6 rounded-xl border border-accent-100">
                 <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
                   <SafeIcon icon={FiAlertCircle} className="w-5 h-5 text-accent-600 mr-2" />
                   Emergency Contact
@@ -604,8 +692,60 @@ const SpecialtyDetail = () => {
                   </a>
                   <p className="text-center text-sm text-gray-500 mt-1">Available 24/7</p>
                 </div>
-              </div>
+              </div> */}
+               <h3 className="text-2xl font-bold text-gray-900 mb-4 flex justify-center items-center">
+                  {/* <SafeIcon icon={FiAlertCircle} className="w-5 h-5 text-accent-600 mr-2" /> */}
+                    Meet Our Specialists
+                </h3>
+                <div className="flex flex-wrap justify-center gap-8">
+      {specialty.specialists.map((doctor, index) =>
+            <motion.div
+              key={doctor.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full sm:w-[320px] md:w-[300px] lg:w-[340px]">
+
+          <div className="relative h-48 overflow-hidden">
+            <img
+                  src={doctor.image}
+                  alt={doctor.name}
+                  className="w-full h-full object-cover object-top"
+                  onError={(e) => {
+                    e.target.src =
+                    "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80";
+                  }} />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+          </div>
+          <div className="p-6">
+            <h3 className="text-xl font-bold text-gray-900 mb-1">
+              {doctor.name}
+            </h3>
+            <p className="text-primary-600 font-medium mb-2">
+              {doctor.qualification}
+            </p>
+            <p className="text-secondary-600 text-sm mb-3">
+              {doctor.specialization}
+            </p>
+            <div className="flex items-center text-sm text-gray-500 mb-4">
+              <SafeIcon icon={FiAward} className="w-4 h-4 mr-2" />
+              <span>{doctor.experience} Experience</span>
+            </div>
+            <Link
+                  to={`/doctors/${doctor.id}`}
+                  className="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2">
+
+              <SafeIcon icon={FiCalendar} className="w-4 h-4" />
+              <span>Book Appointment</span>
+            </Link>
+          </div>
+        </motion.div>
+            )}
+    </div>
             </motion.div>
+            
           </div>
         </div>
       </section>
@@ -694,76 +834,14 @@ const SpecialtyDetail = () => {
         </div>
       </section>
 
-      {/* Meet Our Specialists 
-                                                                               <section className="py-16 bg-white">
-                                                                                <div className="max-w-7xl mx-auto px-4">
-                                                                                  <motion.div
-                                                                                    initial={{ opacity: 0, y: 30 }}
-                                                                                    whileInView={{ opacity: 1, y: 0 }}
-                                                                                    transition={{ duration: 0.6 }}
-                                                                                    viewport={{ once: true }}
-                                                                                    className="text-center mb-12">
-                                                                                     <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Specialists</h2>
-                                                                                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                                                                                      Experienced {specialty.title.split(' ')[0]} specialists dedicated to providing exceptional patient care
-                                                                                    </p>
-                                                                                  </motion.div>
-                                                                                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                                                                    {specialty.specialists.map((doctor, index) =>
-                                                                                    <motion.div
-                                                                                      key={doctor.id}
-                                                                                      initial={{ opacity: 0, y: 30 }}
-                                                                                      whileInView={{ opacity: 1, y: 0 }}
-                                                                                      transition={{ duration: 0.6, delay: index * 0.1 }}
-                                                                                      viewport={{ once: true }}
-                                                                                      className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100">
-                                                                                         <div className="relative h-64 overflow-hidden">
-                                                                                          <img
-                                                                                          src={doctor.image}
-                                                                                          alt={doctor.name}
-                                                                                          className="w-full h-full object-cover object-top"
-                                                                                          onError={(e) => {
-                                                                                            e.target.src = `https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80`;
-                                                                                          }} />
-                                                                                           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                                                                                        </div>
-                                                                                        <div className="p-6">
-                                                                                          <h3 className="text-xl font-bold text-gray-900 mb-1">{doctor.name}</h3>
-                                                                                          <p className="text-primary-600 font-medium mb-2">{doctor.qualification}</p>
-                                                                                          <p className="text-secondary-600 text-sm mb-3">{doctor.specialization}</p>
-                                                                                          <div className="flex items-center text-sm text-gray-500 mb-4">
-                                                                                            <SafeIcon icon={FiAward} className="w-4 h-4 mr-2" />
-                                                                                            <span>{doctor.experience} Experience</span>
-                                                                                          </div>
-                                                                                          <Link
-                                                                                          to={`/doctors/${doctor.id}`}
-                                                                                          className="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2">
-                                                                                             <SafeIcon icon={FiCalendar} className="w-4 h-4" />
-                                                                                            <span>Book Appointment</span>
-                                                                                          </Link>
-                                                                                        </div>
-                                                                                      </motion.div>
-                                                                                    )}
-                                                                                  </div>
-                                                                                   <div className="text-center mt-10">
-                                                                                    <Link
-                                                                                      to="/doctors"
-                                                                                      className="inline-flex items-center space-x-2 bg-gray-100 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors">
-                                                                                       <SafeIcon icon={FiUsers} className="w-5 h-5" />
-                                                                                      <span>View All Specialists</span>
-                                                                                    </Link>
-                                                                                  </div>
-                                                                                </div>
-                                                                               </section>
-                                                                               */
 
 
 
 
 
 
-      }
-    <section className="py-16 bg-white">
+      {/* Meet Our Specialists */}
+      {/* <section className="py-16 bg-white">
   <div className="max-w-7xl mx-auto px-4">
     <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -781,7 +859,7 @@ const SpecialtyDetail = () => {
       </p>
     </motion.div>
 
-    {/* Keep card size same, center if less than 3 */}
+    {/* Keep card size same, center if less than 3 *
     <div className="flex flex-wrap justify-center gap-8">
       {specialty.specialists.map((doctor, index) =>
             <motion.div
@@ -840,7 +918,7 @@ const SpecialtyDetail = () => {
       </Link>
     </div>
   </div>
-      </section>
+      </section> */}
 
 
       {/* Success Stories */}
@@ -937,41 +1015,10 @@ const SpecialtyDetail = () => {
       </div>
     </section>
 
-      {/* CTA Section 
-                                                                                                                                                   <section className="py-16 bg-gradient-to-r from-primary-600 to-secondary-600">
-                                                                                                                                                    <div className="max-w-7xl mx-auto px-4 text-center">
-                                                                                                                                                      <motion.div
-                                                                                                                                                        initial={{ opacity: 0, y: 30 }}
-                                                                                                                                                        whileInView={{ opacity: 1, y: 0 }}
-                                                                                                                                                        transition={{ duration: 0.6 }}
-                                                                                                                                                        viewport={{ once: true }}>
-                                                                                                                                                         <h2 className="text-3xl font-bold text-white mb-6">
-                                                                                                                                                          Need a Consultation with Our {specialty.title.split(' ')[0]} Specialists?
-                                                                                                                                                        </h2>
-                                                                                                                                                        <p className="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
-                                                                                                                                                          Our team of experienced specialists is ready to provide you with the best care and treatment options
-                                                                                                                                                        </p>
-                                                                                                                                                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                                                                                                                                          <Link
-                                                                                                                                                            to="/contact"
-                                                                                                                                                            className="bg-white text-primary-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors font-semibold text-lg">
-                                                                                                                                                             Book Appointment
-                                                                                                                                                          </Link>
-                                                                                                                                                          <a
-                                                                                                                                                            href="tel:+919771488888"
-                                                                                                                                                            className="bg-secondary-500 text-white px-8 py-4 rounded-lg hover:bg-secondary-600 transition-colors font-semibold text-lg flex items-center justify-center space-x-2">
-                                                                                                                                                             <SafeIcon icon={FiPhone} className="w-5 h-5" />
-                                                                                                                                                            <span>Call: +91 977 14 88888</span>
-                                                                                                                                                          </a>
-                                                                                                                                                        </div>
-                                                                                                                                                      </motion.div>
-                                                                                                                                                    </div>
-                                                                                                                                                   </section>
-                                                                                                                                                   */
 
 
-      }
-    </div>);
+    </div>
+  );
 
 };
 
