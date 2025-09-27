@@ -867,7 +867,90 @@ const SpecialtyDetail = () => {
     },
 
     //pulmonology
-    
+
+      pulmonology: {
+      id: 'pulmonology',
+      title: 'Department of Pulmonology',
+      icon: FiActivity, // Or choose a suitable icon from FiIcons
+      bannerImage: 'assets/specialties/Pulmonology/banner-pulmonology.png', // Update with your image path
+      shortDescription: 'High-quality pulmonology care in Ranchi by expert pulmonologists with comprehensive lung and respiratory treatment.',
+      longDescription: 'Raj Hospital in Ranchi is proud to offer specialized pulmonology services to patients suffering from lung and respiratory system conditions. Our experienced pulmonologists provide personalized care for diseases such as asthma, COPD, pneumonia, tuberculosis, sleep disorders, and more. Equipped with advanced diagnostic and treatment facilities, we ensure accurate diagnosis and effective management tailored to every patient’s needs.',
+
+      services: [
+        { title: 'Asthma & COPD', description: 'Comprehensive management of asthma, chronic obstructive pulmonary disease, and related lung conditions.', image: '/assets/specialties/Pulmonology/asthma-copd.png' },
+        { title: 'Chronic Bronchitis', description: 'Diagnosis and treatment of chronic bronchitis to improve respiratory function.', image: '/assets/specialties/Pulmonology/chronic-bronchitis.png' },
+        { title: 'Sleep Disorders', description: 'Expert care for sleep-related breathing disorders including obstructive sleep apnea.', image: '/assets/specialties/Pulmonology/sleep-disorders.png' },
+        { title: 'All Lungs & Chest Ailments', description: 'Treatment of various lung and chest diseases including infections and inflammatory conditions.', image: '/assets/specialties/Pulmonology/lung-chest-ailments.png' },
+        { title: 'Allergology & Allergies', description: 'Diagnosis and management of respiratory allergies and immunologic conditions.', image: '/assets/specialties/Pulmonology/allergies.png' },
+        { title: 'Asthma & Lung Disease Treatment', description: 'Tailored treatments to manage asthma and a variety of lung diseases.', image: '/assets/specialties/Pulmonology/asthma-lung.png' },
+        { title: 'Obstructive Sleep Apnea & Other Sleep Disorders', description: 'Diagnosis and treatment options including CPAP therapy for sleep apnea.', image: '/assets/specialties/Pulmonology/sleep-apnea.png' },
+        { title: 'Tuberculosis & Bronchitis', description: 'Comprehensive care for tuberculosis, bronchitis, and other chronic lung infections.', image: '/assets/specialties/Pulmonology/tuberculosis-bronchitis.png' },
+        { title: 'Pneumonia & COVID Care', description: 'Treatment of pneumonia due to lung inflammation, including COVID-19 management.', image: '/assets/specialties/Pulmonology/pneumonia-covid.png' },
+        { title: 'Pulmonary Rehabilitation', description: 'Rehabilitation for COPD, interstitial lung disease (ILD), and recovery from long COVID.', image: '/assets/specialties/Pulmonology/pulmonary-rehab.png' },
+        { title: 'Pulmonary Function Test', description: 'Advanced tests to assess lung function and capacity.', image: '/assets/specialties/Pulmonology/pulmonary-function-test.png' }
+      ],
+
+      facilities: [
+        'State-of-the-art pulmonology diagnostics and treatment center',
+        'Advanced respiratory therapy and pulmonary rehabilitation',
+        'Dedicated sleep lab and disorder clinics',
+        'Modern bronchoscopy and imaging facilities',
+        'Multidisciplinary team for comprehensive lung care'
+      ],
+
+      specialists: [
+        {
+          id: '1001',
+          name: 'Dr. Suprova Chakraborty',
+          qualification: 'DNB',
+          experience: '10+ Years',
+          image: '/assets/specialties/Pulmonology/dr-suprova-chakraborty.jpg',
+          specialization: 'Pulmonology & Respiratory Medicine'
+        }
+      ],
+
+      successStories: [
+        {
+          title: 'Effective COPD Management',
+          patient: 'Mr. Kumar',
+          story: 'Thanks to personalized care at Raj Hospitals, my COPD symptoms are well-controlled and my quality of life has improved significantly.',
+          outcome: 'Improved lung function and symptom relief.'
+        },
+        {
+          title: 'COVID-19 Pneumonia Recovery',
+          patient: 'Ms. Mehta',
+          story: 'Received excellent care for COVID pneumonia with full respiratory support and rehabilitation, leading to a full recovery.',
+          outcome: 'Complete lung function restoration.'
+        }
+      ],
+
+      faqs: [
+        {
+          question: 'What conditions does the pulmonology department treat?',
+          answer: 'Asthma, COPD, pneumonia, tuberculosis, sleep disorders, lung cancer, and other respiratory illnesses.'
+        },
+        {
+          question: 'How is obstructive sleep apnea treated?',
+          answer: 'Treatment options include CPAP therapy, lifestyle modifications, and, if needed, surgical interventions.'
+        },
+        {
+          question: 'What is pulmonary rehabilitation?',
+          answer: 'It is a program of exercise, education, and support to help patients improve lung function and quality of life.'
+        },
+        {
+          question: 'Are pulmonology services available for children?',
+          answer: 'Yes, pediatric pulmonary care is offered for respiratory conditions in children.'
+        }
+      ],
+
+      contactInfo: {
+        helpline: '+91 97714 88888',
+        appointmentLink: 'https://rajhospitals.com/contact.php',
+        address: 'Raj Hospitals, Ranchi, Jharkhand'
+      }
+    },
+
+
 
 
 
