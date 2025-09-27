@@ -574,6 +574,118 @@ const SpecialtyDetail = () => {
       }
     },
 
+    // Neuroscience
+
+      neurosciences: {
+      id: 'neurosciences',
+      title: 'Neurosciences',
+      icon: FiBrain,
+      bannerImage: 'assets/specialties/Neurosciences/banner-neurosciences.png',
+      shortDescription: 'Best Neurologist Hospital in Ranchi offering comprehensive brain and spine care by expert neuro physicians.',
+      longDescription:
+        'The Department of Neurosciences at Raj Hospitals provides comprehensive and multidisciplinary care for brain and spine disorders. Our team of expert neurologists, neurosurgeons, and interventional neuro-radiologists utilize the latest technologies to diagnose and treat a wide range of neurological conditions. We provide integrated care for stroke, epilepsy, movement disorders, neuro infections, brain tumors, spinal injuries, and more with specialized emergency and surgical services.',
+      services: [
+        { title: 'Stroke- (Ischemic & Haemorrhagic)', description: 'Comprehensive care and rehabilitation for all kinds of stroke.', image: '/assets/specialties/Neurosciences/stroke.png' },
+        { title: 'Epilepsy', description: 'Diagnosis, medical management, and surgical options for seizure disorders.', image: '/assets/specialties/Neurosciences/epilepsy.png' },
+        { title: 'Dementias', description: 'Evaluation and treatment of Alzheimer’s disease, vascular dementia, and other dementias.', image: '/assets/specialties/Neurosciences/dementia.png' },
+        { title: 'Parkinson\'s Disease and Atypical Parkinsonism', description: 'Advanced management of Parkinson’s and related movement disorders.', image: '/assets/specialties/Neurosciences/parkinsons.png' },
+        { title: 'Autoimmune & Demyelinating Disorders', description: 'Care for Multiple Sclerosis, ADEM, NMOSD & MOGAD.', image: '/assets/specialties/Neurosciences/demyelinating.png' },
+        { title: 'Myasthenia Gravis', description: 'Diagnosis and treatment of this neuromuscular condition.', image: '/assets/specialties/Neurosciences/myasthenia-gravis.png' },
+        { title: 'Neuro Infectious Disorders', description: 'Treatment for meningitis, encephalitis, CNS tuberculosis, Pott’s spine, etc.', image: '/assets/specialties/Neurosciences/neuro-infections.png' },
+        { title: 'Neuropathies', description: 'Management of GBS, CIDP and other peripheral nerve disorders.', image: '/assets/specialties/Neurosciences/neuropathies.png' },
+        { title: 'Motor Neuron Disease', description: 'Comprehensive care and symptom management.', image: '/assets/specialties/Neurosciences/mn-disease.png' },
+        { title: 'Myopathies', description: 'Diagnosis and treatment of muscle disorders.', image: '/assets/specialties/Neurosciences/myopathies.png' },
+        { title: 'Movement Disorders', description: 'Extensive care for complex movement disorders.', image: '/assets/specialties/Neurosciences/movement-disorders.png' },
+        { title: 'Head Injuries', description: 'Emergency and rehabilitative care for traumatic brain injuries.', image: '/assets/specialties/Neurosciences/head-injuries.png' },
+        { title: 'Brain Stroke Unit & Seizures', description: 'Specialized stroke unit with continuous monitoring and seizure control.', image: '/assets/specialties/Neurosciences/stroke-unit.png' },
+        { title: 'Spinal Cord Injury, Spine Surgery', description: 'Expert treatment and surgeries for spine trauma and disorders.', image: '/assets/specialties/Neurosciences/spine-injury.png' },
+        { title: 'Stereotactic & Tumor Surgeries', description: 'Minimally invasive procedures for brain tumors and neurological lesions.', image: '/assets/specialties/Neurosciences/tumor-surgery.png' },
+        { title: 'Trauma, Tumor & TB Surgeries', description: 'Specialized surgical interventions for neurological trauma and tubercular involvement.', image: '/assets/specialties/Neurosciences/trauma-surgery.png' },
+        { title: 'Headache', description: 'Diagnosis and treatment of chronic and severe headaches.', image: '/assets/specialties/Neurosciences/headache.png' },
+        { title: 'Backache & Stroke', description: 'Comprehensive management of back pain and stroke complications.', image: '/assets/specialties/Neurosciences/backache.png' },
+        { title: 'Brain & Spine Tumor Surgery', description: 'Advanced neurosurgical removal and care for tumors.', image: '/assets/specialties/Neurosciences/brain-spine-tumor.png' },
+        { title: 'Pediatric Brain Surgery', description: 'Expert neurosurgery for pediatric neurological conditions.', image: '/assets/specialties/Neurosciences/pediatric-brain-surgery.png' },
+        { title: 'Emergency & Spine Trauma Surgery', description: 'Urgent surgical care for traumatic neurologic injuries.', image: '/assets/specialties/Neurosciences/emergency-trauma.png' },
+        { title: 'Awake Brain Surgery', description: 'State-of-the-art awake craniotomy for tumor and functional brain surgery.', image: '/assets/specialties/Neurosciences/awake-brain-surgery.png' }
+      ],
+      facilities: [
+        'Advanced neuroimaging (MRI, CT, PET)',
+        'Dedicated stroke and epilepsy units',
+        'Modern operating rooms with endoscopes and microscopes',
+        '24/7 emergency neurology and neurosurgery services',
+        'Multidisciplinary neuro-rehabilitation programs',
+        'State-of-the-art electrophysiology labs',
+        'Interventional neuro-radiology facilities'
+      ],
+      specialists: [
+        {
+          id: '701',
+          name: 'Dr. Vijay Raj',
+          qualification: 'MBBS, MS, MCh',
+          experience: '18+ Years',
+          image: '/assets/specialties/Neurosciences/dr-vijay-raj.jpg',
+          specialization: 'Neurology & Neurosurgery'
+        },
+        {
+          id: '702',
+          name: 'Dr. Vivek Raj',
+          qualification: 'MBBS, ECFMG, DNB',
+          experience: '15+ Years',
+          image: '/assets/specialties/Neurosciences/dr-vivek-raj.jpg',
+          specialization: 'Neurology'
+        },
+        {
+          id: '703',
+          name: 'Dr. Ahmad Hussain',
+          qualification: 'MBBS, MD, DrNB',
+          experience: '12+ Years',
+          image: '/assets/specialties/Neurosciences/dr-ahmad-hussain.jpg',
+          specialization: 'Neurology'
+        }
+      ],
+      successStories: [
+        {
+          title: 'Stroke Recovery Success',
+          patient: 'Mr. Gupta, 62',
+          story: 'Rapid emergency neurological care helped me recover optimal function after a major stroke. Their dedicated stroke unit made all the difference.',
+          outcome: 'Regained independence after 3 months rehabilitation.'
+        },
+        {
+          title: 'Effective Epilepsy Treatment',
+          patient: 'Ms. Sharma',
+          story: 'I have been seizure-free after comprehensive medication management and proper monitoring by the neurology team.',
+          outcome: 'Improved quality of life and seizure control.'
+        }
+      ],
+      faqs: [
+        {
+          question: 'What are common neurological disorders treated?',
+          answer: 'Stroke, epilepsy, Parkinson’s disease, multiple sclerosis, neuropathies, brain and spine tumors, and movement disorders.'
+        },
+        {
+          question: 'How is stroke managed at Raj Hospitals?',
+          answer: 'We provide rapid assessment, acute treatment, and multidisciplinary rehabilitation in our dedicated stroke unit with advanced technologies.'
+        },
+        {
+          question: 'Are pediatric neurological surgeries available?',
+          answer: 'Yes, we have expert pediatric neurosurgeons for congenital and acquired brain and spine conditions.'
+        },
+        {
+          question: 'What is awake brain surgery?',
+          answer: 'Awake brain surgery allows monitoring of brain functions during tumor removal near critical brain areas to preserve neurological functions.'
+        }
+      ],
+      contactInfo: {
+        helpline: '+91 97714 88888',
+        appointmentLink: 'https://rajhospitals.com/contact.php',
+        address: 'Raj Hospitals, Ranchi, Jharkhand'
+      }
+    },
+
+    //Oncology(cancer care)
+    
+
+
 
     
 
