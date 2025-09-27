@@ -347,7 +347,7 @@ const SpecialtyDetail = () => {
     criticalEmergency: {
     id: 'criticalEmergency',
     title: 'Critical Care & Emergency',
-    icon: FiActivity, // Use FiActivity or FiShield, change as per your theme
+    icon: FiActivity, 
     bannerImage: 'assets/specialties/CriticalCare/banner-critical-emergency.png',
     shortDescription: 'Comprehensive 24/7 Emergency & Critical Care, trauma, surgical, neuro & cardiac ICU services under one roof.',
     longDescription: 'At Raj Hospitals, the Critical Care & Emergency Department provides seamless, multidisciplinary care for all acute, life-threatening illnesses and injuries. With a state-of-the-art ICU, trauma center, advanced ICUs on Wheels (ambulances), and a dedicated team of consultants in emergency, critical care, cardiology, neurology, surgery, nephrology, and more, we ensure rapid response and advanced management for every medical and trauma emergency.',
@@ -401,7 +401,96 @@ const SpecialtyDetail = () => {
       appointmentLink: 'https://rajhospitals.com/contact.php',
       address: 'Raj Hospitals, Ranchi, Jharkhand'
     }
-  }
+  },
+
+  // minimal access surgery
+      minimalaccessSurgery: {
+      id: 'minimalaccessSurgery',
+      title: 'Minimal Access Surgery',
+      icon: FiUser,
+      bannerImage: 'assets/specialties/GeneralSurgery/banner-general-surgery.png',
+      shortDescription: 'Advanced laparoscopic, laser, and general surgery with highly skilled surgeons and comprehensive care in Ranchi.',
+      longDescription: 'The Department of General and Minimally Invasive Surgery at Raj Hospitals offers complete evaluation, diagnosis, and surgical treatment for a wide range of disorders. Our surgeons provide state-of-the-art patient care, using minimally invasive and laser techniques for improved recovery and outcomes. We specialize in abdominal, breast, skin, hernia, and soft tissue surgeries, delivering personalized care and excellent results. ICU and emergency services ensure patients receive the highest level of surgical care, with a multidisciplinary team approach.',
+
+      services: [
+        { title: 'Laparoscopic & Laser Surgery', description: 'Gall Bladder, Hernia, Appendix & advanced general surgery using minimal access and laser technology.', image: '/assets/specialties/GeneralSurgery/laparoscopic-laser.png' },
+        { title: 'Thoracoscopic (Lung) Surgeries', description: 'Minimally invasive surgical management of chest and lung conditions.', image: '/assets/specialties/GeneralSurgery/thoracoscopic.png' },
+        { title: 'Bariatric (Weight Loss) & GI Surgeries', description: 'Weight-loss and gastrointestinal surgeries for obesity and digestive disorders.', image: '/assets/specialties/GeneralSurgery/bariatric-gi.png' },
+        { title: 'Laparoscopy Surgery', description: 'Keyhole procedures for faster recovery, less scarring and better results.', image: '/assets/specialties/GeneralSurgery/laparoscopy.png' },
+        { title: 'Laser Surgery For Proctology', description: 'Painless, advanced treatment for fissures, fistulas, piles, and hemorrhoids using laser.', image: '/assets/specialties/GeneralSurgery/laser-proctology.png' },
+        { title: 'Diagnostic and Therapeutic Endoscopy', description: 'Procedures for both diagnosis and treatment using advanced endoscopic techniques.', image: '/assets/specialties/GeneralSurgery/endoscopy.png' }
+      ],
+
+      facilities: [
+        'Advanced operation theatres with state-of-the-art equipment',
+        'Dedicated Laparoscopic and Laser Surgery suites',
+        '24/7 ICU and Emergency facilities',
+        'Post-surgical care and rehabilitation',
+        'In-house pathology and diagnostics',
+        'Integrated surgical team and multidisciplinary approach'
+      ],
+
+      specialists: [
+        {
+          id: '501',
+          name: 'Dr. Ashish Kumar Modi',
+          qualification: 'MBBS, MS',
+          experience: '15+ Years',
+          image: '/assets/specialties/GeneralSurgery/dr-ashish-kumar-modi.jpg',
+          specialization: 'General & Laparoscopic Surgery'
+        }
+      ],
+
+      successStories: [
+        {
+          title: 'Complex Abdominal Surgery Success',
+          patient: 'Jassi',
+          story: 'I underwent surgery for a complicated abdominal wall problem at Raj Hospitals. The surgeon’s laparoscopic skill and the care I received resulted in a quick and satisfying recovery.',
+          outcome: 'Full recovery post-laparoscopic repair.'
+        },
+        {
+          title: 'Life-changing Weight Loss Surgery',
+          patient: 'Justin',
+          story: 'I came for gastric problems but was diagnosed and treated for a hiatus hernia with laparoscopic Nissen Fundoplication. The entire process was seamless and I’m grateful for the care.',
+          outcome: 'Excellent surgical outcome and improved quality of life.'
+        },
+        {
+          title: 'Gallbladder Stone Removal',
+          patient: 'Gokul',
+          story: 'I was facing gallbladder stones and the Raj Hospitals surgical team treated me so well and performed the surgery efficiently. The team is fantastic.',
+          outcome: 'Problem solved, fast recovery.'
+        }
+      ],
+
+      faqs: [
+        {
+          question: 'How long after surgery can you go home?',
+          answer: 'Most patients are observed in the recovery room for 45 minutes to 2 hours post-surgery, and can usually go home between 1 and 4 hours after outpatient surgery. Overnight stay is seldom required, unless specified by the surgeon.'
+        },
+        {
+          question: 'What are minimally invasive/laparoscopic surgeries?',
+          answer: 'Laparoscopic surgeries use small cuts, a camera, and fine instruments for surgery inside your body, allowing quicker recovery, less pain and smaller scars compared to open surgery.'
+        },
+        {
+          question: 'Is laser surgery painful?',
+          answer: 'Laser surgeries for hemorrhoids, fistulas etc. are usually painless and offer faster healing as compared to traditional procedures.'
+        },
+        {
+          question: 'What precautions are needed after surgery?',
+          answer: 'Your surgeon will guide you on wound care, medications, and activity restrictions. Early mobilization and a healthy diet are encouraged for swift recovery.'
+        },
+        {
+          question: 'Can all hernias be treated laparoscopically?',
+          answer: 'Most hernias can be repaired using laparoscopy, but some complex or recurrent hernias might need open surgery depending on individual evaluation.'
+        }
+      ],
+
+      contactInfo: {
+        helpline: '+91 977 14 88888',
+        appointmentLink: 'https://rajhospitals.com/contact.php',
+        address: 'Raj Hospitals, Ranchi, Jharkhand'
+      }
+    },
 
  
 
