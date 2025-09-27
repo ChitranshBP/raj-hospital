@@ -870,9 +870,9 @@ const SpecialtyDetail = () => {
 
       pulmonology: {
       id: 'pulmonology',
-      title: 'Department of Pulmonology',
-      icon: FiActivity, // Or choose a suitable icon from FiIcons
-      bannerImage: 'assets/specialties/Pulmonology/banner-pulmonology.png', // Update with your image path
+      title: 'Pulmonology',
+      icon: FiActivity, 
+      bannerImage: 'assets/specialties/Pulmonology/banner-pulmonology.png', 
       shortDescription: 'High-quality pulmonology care in Ranchi by expert pulmonologists with comprehensive lung and respiratory treatment.',
       longDescription: 'Raj Hospital in Ranchi is proud to offer specialized pulmonology services to patients suffering from lung and respiratory system conditions. Our experienced pulmonologists provide personalized care for diseases such as asthma, COPD, pneumonia, tuberculosis, sleep disorders, and more. Equipped with advanced diagnostic and treatment facilities, we ensure accurate diagnosis and effective management tailored to every patient’s needs.',
 
@@ -949,6 +949,192 @@ const SpecialtyDetail = () => {
         address: 'Raj Hospitals, Ranchi, Jharkhand'
       }
     },
+    
+    // Internal Medicine
+
+//     internalMedicine: {
+//   id: 'internalMedicine',
+//   title: 'Department of Internal Medicine',
+//   icon: FiUser, // Choose appropriate icon
+//   bannerImage: 'assets/specialties/InternalMedicine/banner-internal-medicine.png', // Update with actual path
+//   shortDescription: 'Comprehensive adult care with state-of-the-art diagnostics and personalized treatments in Ranchi.',
+//   longDescription: 'The Department of Internal Medicine at Raj Hospitals provides expert care using advanced diagnostic facilities and tailored treatment plans. Our physicians specialize in managing chronic diseases like diabetes, hypertension, arthritis, and infectious diseases with a holistic approach. We emphasize preventive care, lifestyle modification, and patient education to improve health outcomes. The department is known for compassion, professionalism, and excellence in managing complex medical conditions.',
+
+//   services: [
+//     { title: 'Infectious Diseases', description: 'Diagnosis and treatment of various infectious diseases impacting adult and pediatric patients.', image: 'assets/specialties/InternalMedicine/infectious-diseases.png' },
+//     { title: 'Diabetes & Endocrinology', description: 'Comprehensive management of diabetes, thyroid, and hormonal disorders.', image: 'assets/specialties/InternalMedicine/diabetes-endocrinology.png' },
+//     { title: 'Non-Communicable Diseases', description: 'Care for chronic lifestyle diseases including hypertension and cardiovascular diseases.', image: 'assets/specialties/InternalMedicine/non-communicable-diseases.png' },
+//     { title: 'Master Health Checkup', description: 'Preventive health screening and diagnostic packages for early disease detection.', image: 'assets/specialties/InternalMedicine/health-checkup.png' },
+//     { title: 'Pulmonary Medicine', description: 'Treatment of respiratory conditions including asthma and COPD.', image: 'assets/specialties/InternalMedicine/pulmonary-medicine.png' },
+//     { title: 'Gastroenterology', description: 'Integrated care for digestive and liver diseases.', image: 'assets/specialties/InternalMedicine/gastroenterology.png' },
+//     { title: 'Cardiology', description: 'Management of heart diseases and vascular disorders.', image: 'assets/specialties/InternalMedicine/cardiology.png' },
+//     { title: 'General Medicine', description: 'Treatment of adult medical conditions, acute and chronic.', image: 'assets/specialties/InternalMedicine/general-medicine.png' }
+//   ],
+
+//   facilities: [
+//     'State-of-the-art modular operation theaters',
+//     'Advanced diagnostic imaging services (CT, MRI, X-ray)',
+//     'Comprehensive laboratory services including pathology',
+//     'Specialized units for diabetes and endocrine disorders',
+//     'Dedicated pulmonary and cardiac diagnostic sections',
+//     'Well-equipped emergency and intensive care units',
+//     'Multidisciplinary team approach with seamless coordination'
+//   ],
+
+//   specialists: [
+//     {
+//       id: '1101',
+//       name: 'Dr. A K Agarwal',
+//       qualification: 'MBBS, MD Medicine',
+//       experience: '25+ Years',
+//       image: 'assets/specialties/InternalMedicine/dr-ak-agarwal.png',
+//       specialization: 'Internal Medicine'
+//     },
+//     {
+//       id: '1102',
+//       name: 'Dr. A K Sinha',
+//       qualification: 'MBBS, MD',
+//       experience: '20+ Years',
+//       image: 'assets/specialties/InternalMedicine/dr-ak-sinha.png',
+//       specialization: 'Internal Medicine'
+//     },
+//     {
+//       id: '1103',
+//       name: 'Dr. Neelam',
+//       qualification: 'MBBS, MD',
+//       experience: '15+ Years',
+//       image: 'assets/specialties/InternalMedicine/dr-neelam.png',
+//       specialization: 'Internal Medicine'
+//     }
+//   ],
+
+//   faqs: [
+//     {
+//       question: 'What diseases are managed by internal medicine?',
+//       answer: 'Chronic diseases like diabetes, hypertension, arthritis and infectious diseases are treated by internal medicine specialists.'
+//     },
+//     {
+//       question: 'What preventive services do you offer?',
+//       answer: 'Health checkups, vaccination, lifestyle counseling and preventive care for all ages.'
+//     },
+//     {
+//       question: 'How often should I get a health checkup?',
+//       answer: 'Depends on age, medical history and risk factors; generally annually or biannually is advised.'
+//     },
+//     {
+//       question: 'Who should see an internal medicine doctor?',
+//       answer: 'Adults with chronic illness, complex health issues or undiagnosed symptoms.'
+//     },
+//     {
+//       question: 'Do you provide pulmonary medicine services?',
+//       answer: 'Yes, integrated care for respiratory conditions is part of our department.'
+//     }
+//   ],
+
+//   contactInfo: {
+//     helpline: '+91 977 14 8888',
+//     appointmentLink: 'https://rajhospitals.com/contact.php',
+//     address: 'Raj Hospitals, Ranchi, Jharkhand'
+//   }
+// },
+
+
+//urology
+urology: {
+  id: 'urology',
+  title: 'Urology',
+  icon: FiZap, // Icon from react-icons/fi or any preferred icon
+  bannerImage: 'assets/specialties/Urology/banner-urology.png', // Provide the correct image path
+  shortDescription: 'Best Urology Hospital in Ranchi offering comprehensive urological care for adults and children with advanced medical technology.',
+  longDescription: 'Raj Hospitals is committed to providing compassionate and timely care for disorders of the urinary system. Our skilled urologists offer diagnosis and treatment for a wide range of urological diseases including urinary tract infections, kidney stones, urologic cancers, infertility, and male reproductive issues. The department is equipped with cutting-edge technology delivering expert adult and pediatric urology care and minimally invasive surgical options.',
+  
+  services: [
+    { title: 'Prostate Surgeries – TURP', description: 'Treatment for benign prostatic hyperplasia and related conditions using Transurethral Resection of Prostate.', image: '/assets/specialties/Urology/prostate-surgery.png' },
+    { title: 'Kidney Stone Surgeries', description: 'Minimally invasive and surgical removal of kidney and bladder stones.', image: '/assets/specialties/Urology/kidney-stones.png' },
+    { title: 'Female Urology Surgeries', description: 'Treatment for female urinary tract conditions including incontinence and prolapse.', image: '/assets/specialties/Urology/female-urology.png' },
+    { title: 'Infertility Treatment', description: 'Care and surgical management of male and female infertility in the reproductive age group.', image: '/assets/specialties/Urology/infertility.png' },
+    { title: 'Lithotripsy', description: 'Non-invasive shock wave therapy for breaking down kidney stones.', image: '/assets/specialties/Urology/lithotripsy.png' },
+    { title: 'Robotic Surgery', description: 'Advanced robotic-assisted surgical techniques for precision and quicker recovery.', image: '/assets/specialties/Urology/robotic-surgery.png' },
+    { title: 'Renal Transplantation', description: 'Comprehensive pre-op and post-op care and surgery for kidney transplant patients.', image: '/assets/specialties/Urology/kidney-transplant.png' },
+    { title: 'Laparoscopic Surgery', description: 'Minimally invasive surgeries for urological conditions including tumors and reconstructions.', image: '/assets/specialties/Urology/laparoscopy.png' },
+    { title: 'Pancreatic Disorders', description: 'Diagnosis and treatment of pancreatic and adjacent genitourinary disorders.', image: '/assets/specialties/Urology/pancreatic-disorder.png' },
+    { title: 'Endourology', description: 'Minimally invasive procedures for urinary tract disorders via endoscopic techniques.', image: '/assets/specialties/Urology/endourology.png' },
+    { title: 'Uro-Oncology', description: 'Management of urological cancers including bladder, prostate, and renal tumors.', image: '/assets/specialties/Urology/uro-oncology.png' },
+    { title: 'Male Infertility & Andrology', description: 'Evaluation and treatment of male reproductive health issues.', image: '/assets/specialties/Urology/andrology.png' },
+    { title: 'Vascular Access for Hemodialysis (AVF)', description: 'Creation and maintenance of arteriovenous fistulas for dialysis patients.', image: '/assets/specialties/Urology/vascular-access.png' },
+    { title: 'Reconstructive Urology', description: 'Surgical repair and reconstruction of genitourinary tract anomalies.', image: '/assets/specialties/Urology/reconstructive-urology.png' }
+  ],
+
+  facilities: [
+    'Advanced endoscopic and laparoscopic surgical suites',
+    'Robotic surgical system for precision treatments',
+    'Dedicated dialysis access and renal transplant support',
+    'Comprehensive diagnostic imaging and laboratory services',
+    'Specialized pediatric urology care',
+    'Multidisciplinary urology team for holistic management'
+  ],
+
+  specialists: [
+    {
+      id: '1201',
+      name: 'Dr. Sunil Kumar',
+      qualification: 'MBBS, MS (Gen Surgery), MCh (Urology)',
+      experience: '18+ Years',
+      image: '/assets/specialties/Urology/dr-sunil-kumar.jpg',
+      specialization: 'Urology & Surgical Oncology'
+    },
+    {
+      id: '1202',
+      name: 'Dr. Ved Prakash',
+      qualification: 'MBBS, MS (Gen Surgery), MCh (Urology)',
+      experience: '15+ Years',
+      image: '/assets/specialties/Urology/dr-ved-prakash.jpg',
+      specialization: 'Urology'
+    }
+  ],
+
+  successStories: [
+    {
+      title: 'Successful Kidney Stone Removal',
+      patient: 'Mr. Sharma',
+      story: 'Raj Hospitals provided minimally invasive stone removal treatment which was quick and effective. I experienced little pain and a fast recovery.',
+      outcome: 'Stone-free with restored kidney function.'
+    },
+    {
+      title: 'Robotic Prostate Surgery Success',
+      patient: 'Mr. Singh',
+      story: 'The advanced robotic surgery for prostate cancer was state-of-the-art and led to minimal complications and fast rehabilitation.',
+      outcome: 'Cancer remission and improved quality of life.'
+    }
+  ],
+
+  faqs: [
+    {
+      question: 'What urological conditions are treated?',
+      answer: 'Urinary infections, stones, cancers, infertility, erectile dysfunction, and pediatric urology conditions.'
+    },
+    {
+      question: 'Is robotic surgery available?',
+      answer: 'Yes, we offer robotic-assisted surgeries for precision and faster recovery.'
+    },
+    {
+      question: 'Do you perform kidney transplants?',
+      answer: 'Yes, including pre and post transplantation comprehensive care.'
+    },
+    {
+      question: 'Are pediatric urology services offered?',
+      answer: 'Our team specializes in managing congenital and acquired urological conditions in children.'
+    }
+  ],
+
+  contactInfo: {
+    helpline: '+91 97714 66634',
+    appointmentLink: 'https://rajhospitals.com/contact.php',
+    address: 'Raj Hospitals, Ranchi, Jharkhand'
+  }
+}, 
+
+
 
 
 
