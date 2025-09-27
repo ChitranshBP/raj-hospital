@@ -683,7 +683,194 @@ const SpecialtyDetail = () => {
     },
 
     //Oncology(cancer care)
+
+      oncology: {
+      id: 'oncology',
+      title: 'Oncology',
+      icon: FiAward, 
+      bannerImage: 'assets/specialties/Oncology/banner-oncology.png',
+      shortDescription: 'World-class cancer care and radiation oncology services in Ranchi with multi-disciplinary, personalized treatments.',
+      longDescription: 'The Department of Oncology at Raj Hospitals is committed to providing comprehensive cancer care, including screening, diagnosis, staging, treatment, and management of various cancer types. We offer surgical oncology, chemotherapy, radiation therapy, and supportive care for all solid organ malignancies including head & neck, breast, GI, gynae, and uro oncology. Our experienced oncologists use advanced diagnostic tools and individualized treatment protocols to ensure the best outcomes.',
+      
+      services: [
+        { title: 'Medical Oncology & Chemotherapy', description: 'Safe administration of chemotherapy and advanced drug therapies for various cancers.', image: '/assets/specialties/Oncology/medical-oncology.png' },
+        { title: 'Surgical Oncology', description: 'Expert surgeries for cancer including head & neck, breast, lung, abdominal cancers, and more.', image: '/assets/specialties/Oncology/surgical-oncology.png' },
+        { title: 'Head & Neck Cancer Treatment', description: 'Specialized surgical and non-surgical treatments targeting cancers of the head and neck region.', image: '/assets/specialties/Oncology/head-neck.png' },
+        { title: 'Breast Cancer Treatment', description: 'Comprehensive care involving breast conservative surgery, reconstruction, and medical therapies.', image: '/assets/specialties/Oncology/breast-cancer.png' },
+        { title: 'Gynaecologic Oncology', description: 'Treatment for cancers of female reproductive organs including radical hysterectomy and ovarian surgery.', image: '/assets/specialties/Oncology/gynae-oncology.png' }
+      ],
+      
+      facilities: [
+        'Advanced modular operation theaters with ICU and HDU support',
+        'State-of-the-art diagnostic imaging including CT, MRI, PET scans',
+        'On-site pathology labs with IHC, Cytogenetics, FISH testing',
+        'Dedicated chemotherapy infusion center with chemo port facilities',
+        'Radiation oncology with precise therapy delivery',
+        'Multidisciplinary oncology team for personalized care'
+      ],
+      
+      specialists: [
+        {
+          id: '801',
+          name: 'Dr. P K Raina',
+          qualification: 'MBBS, MS',
+          experience: '20+ Years',
+          image: '/assets/specialties/Oncology/dr-pk-raina.jpg',
+          specialization: 'Oncology & Surgical Oncology'
+        },
+        {
+          id: '802',
+          name: 'Dr. Abhijit Kumar',
+          qualification: 'MBBS, MS, PDCC',
+          experience: '16+ Years',
+          image: '/assets/specialties/Oncology/dr-abhijit-kumar.jpg',
+          specialization: 'Medical Oncology'
+        }
+      ],
+      
+      successStories: [
+        {
+          title: 'Successful Head & Neck Cancer Treatment',
+          patient: 'Mr. Singh',
+          story: 'Received comprehensive combined surgery and radiotherapy leading to successful remission. The entire care team was supportive and professional.',
+          outcome: 'Complete remission with excellent quality of life.'
+        },
+        {
+          title: 'Breast Cancer Reconstruction Success',
+          patient: 'Ms. Sharma',
+          story: 'Underwent breast conservation surgery with oncoplastic reconstruction and chemotherapy. Excellent recovery and follow-up care.',
+          outcome: 'Healthy and cancer-free after 5 years.'
+        }
+      ],
+      
+      faqs: [
+        {
+          question: 'What types of cancer are treated?',
+          answer: 'We treat all solid organ malignancies including breast, head & neck, lung, gastrointestinal, gynecologic, and urologic cancers.'
+        },
+        {
+          question: 'What treatments do you provide?',
+          answer: 'Our comprehensive options include surgery, chemotherapy, radiation therapy, immunotherapy, and targeted therapies.'
+        },
+        {
+          question: 'Do you offer support services?',
+          answer: 'Yes, including pain management, nutritional counseling, psychological support, and palliative care.'
+        },
+        {
+          question: 'How is cancer diagnosis done?',
+          answer: 'Using imaging (CT, MRI, PET), biopsy, tumor markers, and advanced pathology tests like IHC and molecular studies.'
+        },
+        {
+          question: 'Is personalized treatment available?',
+          answer: 'Yes, every patient receives an individualized treatment plan from a multidisciplinary oncology team.'
+        }
+      ],
+      
+      contactInfo: {
+        helpline: '+91 97714 88888',
+        appointmentLink: 'https://rajhospitals.com/contact.php',
+        address: 'Raj Hospitals, Ranchi, Jharkhand'
+      }
+    },
+
+    //orthopaedics - joint replacement
+      orthopedics: {
+      id: 'orthopedics',
+      title: 'Orthopaedics & Joint Replacement',
+      icon: FiActivity, 
+      bannerImage: 'assets/specialties/Orthopedics/banner-orthopedics.png', 
+      shortDescription: 'Comprehensive orthopaedic and joint replacement care with advanced surgical techniques in Ranchi.',
+      longDescription: 'The Department of Orthopaedics & Joint Replacement at Raj Hospitals provides expert treatment for musculoskeletal conditions including joint pain, trauma, sports injuries, and deformities. Our specialised surgeons perform minimally invasive surgeries, joint replacements, arthroscopy, and complex trauma management using latest technology for optimal patient outcomes and speedy recovery. We also offer pediatric orthopaedics and comprehensive rehabilitation services.',
+      
+      services: [
+        { title: 'Joint Replacements – Knee, Hip, Shoulder, Elbow & Ankle', description: 'Advanced joint replacement surgeries for multiple joints ensuring mobility and pain relief.', image: 'assets/specialties/Orthopedics/joint-replacement.png' },
+        { title: 'Arthroscopy and Sports Injury', description: 'Minimally invasive procedures and expert care for sports-related injuries.', image: 'assets/specialties/Orthopedics/arthroscopy-sports.png' },
+        { title: 'Bone Deformity and CTEV Correction', description: 'Surgical correction of bone deformities including clubfoot (CTEV).', image: 'assets/specialties/Orthopedics/deformity-correction.png' },
+        { title: 'Trauma Surgery and Geriatric Care', description: 'Emergency trauma management and specialized geriatric orthopaedic care.', image: 'assets/specialties/Orthopedics/trauma-geriatric.png' },
+        { title: 'Complex Trauma and Multiple Ligament Injuries', description: 'Comprehensive care for severe trauma and ligament reconstructions like ACL, PCL.', image: 'assets/specialties/Orthopedics/complex-trauma.png' },
+        { title: 'Arthritis and Autoimmune Disorders', description: 'Treatment for osteoarthritis, rheumatoid arthritis, and associated autoimmune issues.', image: 'assets/specialties/Orthopedics/arthritis.png' },
+        { title: 'Paediatric Orthopaedics', description: 'Specialized treatment for children including deformity corrections and injury management.', image: 'assets/specialties/Orthopedics/paediatric-orthopedics.png' }
+      ],
+      
+      facilities: [
+        'State-of-the-art operation theatres',
+        'Advanced joint replacement technology',
+        'Comprehensive rehabilitation and physiotherapy',
+        'Dedicated pediatric orthopaedic care',
+        'Multidisciplinary orthopedic team',
+        '24/7 Emergency trauma care'
+      ],
+      
+      specialists: [
+        {
+          id: '901',
+          name: 'Dr. Mozammil Pheroz',
+          qualification: 'MBBS, MS (Orthopaedics), DNB',
+          experience: '11+ Years',
+          image: 'assets/specialties/Orthopedics/dr-mozammil-pheroz.jpg',
+          specialization: 'Orthopaedics & Joint Replacement Surgery'
+        },
+       
+        {
+          id: '904',
+          name: 'Dr. Abhishek Roy',
+          qualification: 'MBBS, MS, MAMC, FIJR, FIASM',
+          experience: '15+ Years',
+          image: 'assets/specialties/Orthopedics/dr-abhishek-roy.jpg',
+          specialization: 'Orthopaedics & Joint Replacement'
+        }
+      ],
+      
+      successStories: [
+        {
+          title: 'Successful Knee Replacement',
+          patient: 'Mohit',
+          story: 'I underwent a left knee replacement at Raj Hospitals and got excellent care. The entire surgical process and recovery was smooth and professional.',
+          outcome: 'Complete mobility restored, pain-free life.'
+        },
+        {
+          title: 'Orthopaedic Trauma Surgery',
+          patient: 'Raja',
+          story: 'Raj Hospitals provided top quality treatment for my trauma injury, including surgical repair and rehabilitation. The surgeons and staff were supportive.',
+          outcome: 'Full functional recovery.'
+        }
+      ],
+      
+      faqs: [
+        {
+          question: 'How long does recovery take after joint replacement?',
+          answer: 'Recovery varies per individual but generally patients regain mobility and return to daily activities within 6-12 weeks.'
+        },
+        {
+          question: 'Are minimally invasive techniques used?',
+          answer: 'Yes, minimally invasive surgeries including arthroscopy and laparoscopic approaches are frequently used for better outcomes.'
+        },
+        {
+          question: 'Do you provide pediatric orthopaedic care?',
+          answer: 'Yes, we specialize in pediatric cases including deformity correction and injury management.'
+        },
+        {
+          question: 'Is pain managed effectively post-surgery?',
+          answer: 'Dedicated pain management protocols ensure patient comfort and promote fast recovery.'
+        },
+        {
+          question: 'Are costs affordable?',
+          answer: 'Raj Hospitals is committed to providing world-class care at affordable prices for all sections of society.'
+        }
+      ],
+      
+      contactInfo: {
+        helpline: '+91 977 14 88888',
+        appointmentLink: 'https://rajhospitals.com/contact.php',
+        address: 'Raj Hospitals, Ranchi, Jharkhand'
+      }
+    },
+
+    //pulmonology
     
+
+
+
 
 
 
