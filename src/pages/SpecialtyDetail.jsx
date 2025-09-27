@@ -492,7 +492,90 @@ const SpecialtyDetail = () => {
       }
     },
 
- 
+      nephrology: {
+      id: 'nephrology',
+      title: 'Nephrology',
+      icon: FiDroplet, 
+      bannerImage: 'assets/specialties/Nephrology/banner-nephrology.png',
+      shortDescription: 'Best kidney care and dialysis services in Ranchi with advanced equipment and top nephrologists.',
+      longDescription: 'The Department of Nephrology & Dialysis Services at Raj Hospitals is among the most advanced in the state, providing evaluation, diagnosis, and comprehensive treatment for hypertension, kidney disease, dialysis, and renal disorders. Our nephrology experts serve adults and children, offering diagnostic, management, operative services, and chronic dialysis therapy for acute kidney failure. Dedicated to prevention and early diagnosis, we deliver personalized, compassionate care for every kidney-related condition.',
+      services: [
+        { title: 'Hypertensive & Diabetic Kidney Disease', description: 'Specialized management and treatment of kidney disorders caused by hypertension and diabetes.', image: '/assets/specialties/Nephrology/hypertensive-diabetic.png' },
+        { title: 'Hemodialysis', description: 'Regular and emergency dialysis treatments using state-of-the-art dialysis machines.', image: '/assets/specialties/Nephrology/hemodialysis.png' },
+        { title: 'Peritoneal Dialysis', description: 'Continuous ambulatory peritoneal dialysis (CAPD) for chronic kidney disease patients.', image: '/assets/specialties/Nephrology/peritoneal-dialysis.png' },
+        { title: 'Acute Kidney Injury & CKD', description: 'Expert care for acute kidney injury and chronic kidney disease, including assessment, management, and rehabilitation.', image: '/assets/specialties/Nephrology/acute-ckd.png' },
+        { title: 'CRRT (Continuous Renal Replacement Therapy)', description: 'Advanced therapy for critically ill patients requiring continuous renal support.', image: '/assets/specialties/Nephrology/crrt.png' },
+      //   { title: 'Kidney Biopsy', description: 'Diagnosis of kidney conditions through percutaneous biopsy procedures.', image: '/assets/specialties/Nephrology/kidney-biopsy.png' },
+      //   { title: 'Kidney Stone Treatment', description: 'Management of kidney stones through medications, minimally invasive procedures, and surgery.', image: '/assets/specialties/Nephrology/kidney-stones.png' },
+      //   { title: 'Permanent/Temporary Catheter Insertion', description: 'Catheter placement for dialysis and renal therapies.', image: '/assets/specialties/Nephrology/catheter.png' },
+      //   { title: 'TPE/Plasmapheresis', description: 'Plasma exchange therapies for certain kidney and systemic conditions.', image: '/assets/specialties/Nephrology/plasmapheresis.png' },
+      //   { title: 'Urinary Tract Infection (UTI) Management', description: 'Diagnosis and treatment of acute/chronic UTIs impacting kidney health.', image: '/assets/specialties/Nephrology/uti.png' },
+      //   { title: 'CAPD Patient Management', description: 'Personalized management of CAPD for chronic dialysis patients.', image: '/assets/specialties/Nephrology/capd.png' },
+      //   { title: 'Post-Kidney Transplantation Care', description: 'Specialized care and monitoring after kidney transplant for long-term recovery.', image: '/assets/specialties/Nephrology/transplant-care.png' }
+      ],
+      facilities: [
+        'Dedicated nephrology ward and dialysis center',
+        'State-of-the-art dialysis machines for adult and pediatric patients',
+        'Continuous monitoring and expert nursing care',
+        'Advanced diagnostic lab services',
+        'Kidney transplant preparation and post-care support',
+        'Personalized dietary and lifestyle counseling'
+      ],
+      specialists: [
+        {
+          id: '601',
+          name: 'Dr. Avinash Kumar Dubey',
+          qualification: 'MBBS, MD, DM',
+          experience: '12+ Years',
+          image: '/assets/specialties/Nephrology/dr-avinash-kumar-dubey.jpg',
+          specialization: 'Nephrology & Dialysis'
+        }
+      ],
+      successStories: [
+        {
+          title: 'Life-saving Dialysis for Acute Kidney Failure',
+          patient: 'Mr. Kumar',
+          story: 'Emergency dialysis restored my kidney function after sudden acute kidney injury. The caring nephrologists ensured my quick stabilization and recovery.',
+          outcome: 'Full recovery and regular follow-up.'
+        },
+        {
+          title: 'Successful Kidney Stone Management',
+          patient: 'Mrs. Sharma',
+          story: 'I was treated with minimally invasive techniques for painful kidney stones and am now symptom-free thanks to Raj Hospitals.',
+          outcome: 'Pain-free and healthy.'
+        }
+      ],
+      faqs: [
+        {
+          question: 'What causes chronic kidney disease?',
+          answer: 'Common causes include diabetes, long-standing hypertension, recurrent urinary tract infections, and family history of kidney disease.'
+        },
+        {
+          question: 'How is dialysis performed?',
+          answer: 'Hemodialysis cleans your blood using a machine, while peritoneal dialysis uses the lining of your abdomen to filter blood. The method depends on your specific medical needs.'
+        },
+        {
+          question: 'What lifestyle changes support kidney health?',
+          answer: 'Healthy diet, regular exercise, controlled blood pressure, avoiding smoking/alcohol, and monitoring medications help prevent kidney damage.'
+        },
+        {
+          question: 'How often are follow-ups required after treatment?',
+          answer: 'Patients need regular checkups to monitor kidney function and adjust medications, especially after dialysis or transplant.'
+        },
+        {
+          question: 'Can children get nephrology care at Raj Hospitals?',
+          answer: 'Yes, our nephrology department provides care for children as well as adults, including dialysis, diagnostics, and long-term management.'
+        }
+      ],
+      contactInfo: {
+        helpline: '+91 97714 66634',
+        appointmentLink: 'https://rajhospitals.com/contact.php',
+        address: 'Raj Hospitals, Ranchi, Jharkhand'
+      }
+    },
+
+
+    
 
 
 
