@@ -1043,8 +1043,8 @@ const SpecialtyDetail = () => {
 urology: {
   id: 'urology',
   title: 'Urology',
-  icon: FiZap, // Icon from react-icons/fi or any preferred icon
-  bannerImage: 'assets/specialties/Urology/banner-urology.png', // Provide the correct image path
+  icon: FiZap, 
+  bannerImage: 'assets/specialties/Urology/banner-urology.png', 
   shortDescription: 'Best Urology Hospital in Ranchi offering comprehensive urological care for adults and children with advanced medical technology.',
   longDescription: 'Raj Hospitals is committed to providing compassionate and timely care for disorders of the urinary system. Our skilled urologists offer diagnosis and treatment for a wide range of urological diseases including urinary tract infections, kidney stones, urologic cancers, infertility, and male reproductive issues. The department is equipped with cutting-edge technology delivering expert adult and pediatric urology care and minimally invasive surgical options.',
   
