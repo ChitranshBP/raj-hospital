@@ -143,6 +143,7 @@ const SpecialtyDetail = () => {
       }]
 
     },
+
     neurology: {
       id: 'neurology',
       title: 'Neurosciences & Neurosurgery',
@@ -248,8 +249,172 @@ const SpecialtyDetail = () => {
         answer: 'Recovery after brain surgery varies depending on the procedure\'s complexity and the patient\'s condition. Initial hospital stay is typically 3-10 days. Physical, occupational, and speech therapy may be needed. Most patients can return to light activities within 4-8 weeks. Complete recovery may take several months, with follow-up appointments to monitor progress.'
       }]
 
+    },
+
+   //gastro
+    gastroenterology: {
+    id: 'gastroenterology',
+    title: 'Gastroenterology & Endoscopy',
+    icon: FiDroplet,
+    bannerImage: 'assets/specialties/Gastroenterology/Banner-gastro.png',
+    shortDescription: 'Best gastroenterology care in Ranchi with advanced diagnostics, minimally invasive surgeries and expert gastroenterologists.',
+    longDescription: 'The Department of Gastroenterology & Endoscopy at Raj Hospitals provides top medical services for digestive system disorders including gastroenterology, hepatology, and gastrointestinal surgery. Our minimally invasive procedures like laparoscopy and endoscopy offer faster recovery, fewer complications and less post-operative follow-up. We are among few centers offering scarless minimal access surgery and advanced laparoscopic, biliary, pancreatic, and colorectal oncologic procedures.',
+
+      services: [
+        { title: 'Therapeutic and Diagnostic Upper GI Endoscopy', description: 'Advanced diagnostic and therapeutic procedures for the upper gastrointestinal tract.', image: '/assets/specialties/Gastroenterology/upper-gi-endoscopy.png' },
+        { title: 'Lower GI Endoscopy (Colonoscopy)', description: 'Examination and treatment of the lower gastrointestinal tract using colonoscopy techniques.', image: '/assets/specialties/Gastroenterology/lower-gi-endoscopy.png' },
+        { title: 'ERCP (Endoscopic Retrograde Cholangiopancreatography)', description: 'Diagnostic and therapeutic procedure to treat biliary and pancreatic duct disorders.', image: '/assets/specialties/Gastroenterology/ercp.png' },
+        { title: 'Endoscopic Ultrasound (EUS)', description: 'Advanced imaging technique combining endoscopy and ultrasound to diagnose pancreatic and GI disorders.', image: '/assets/specialties/Gastroenterology/eus.png' },
+        { title: 'Inflammatory Bowel Disease (IBD) Clinic', description: 'Specialized care for Crohn\'s disease, ulcerative colitis, and other inflammatory bowel diseases.', image: '/assets/specialties/Gastroenterology/ibd-clinic.png' },
+        { title: 'Hepatology Clinic', description: 'Expert management of liver diseases including hepatitis and fatty liver disease.', image: '/assets/specialties/Gastroenterology/hepatology.png' },
+        { title: 'Pancreatic Disorder Management', description: 'Comprehensive diagnosis and treatment of pancreatic disorders including pancreatitis.', image: '/assets/specialties/Gastroenterology/pancreatic-disorder.png' },
+        { title: 'Esophageal Disorders', description: 'Diagnosis and treatment of esophageal diseases such as reflux and motility disorders.', image: '/assets/specialties/Gastroenterology/esophageal-disorders.png' },
+        { title: 'Enteral Stenting', description: 'Minimally invasive stenting procedures for obstructive gastrointestinal conditions.', image: '/assets/specialties/Gastroenterology/enteral-stenting.png' },
+        { title: 'Endoscopy & Colonoscopy', description: 'Comprehensive endoscopic examinations of the digestive tract for diagnosis and treatment.', image: '/assets/specialties/Gastroenterology/endoscopy-colonoscopy.png' },
+        { title: 'ERCP, EUS, Hepatitis Care', description: 'Diagnostic and therapeutic services including ERCP, EUS, and hepatitis management.', image: '/assets/specialties/Gastroenterology/ercp-eus-hepatitis.png' },
+        { title: 'Pancreatitis, Reflux, Peptic Ulcer Treatment', description: 'Expert medical and procedural management of pancreatitis, acid reflux, and peptic ulcers.', image: '/assets/specialties/Gastroenterology/pancreatitis-reflux-peptic.png' },
+        { title: 'Abdominal Pain & Fatty Liver Treatment', description: 'Diagnosis and treatment of chronic abdominal pain and fatty liver disease.', image: '/assets/specialties/Gastroenterology/abdominal-pain-fatty-liver.png' },
+        { title: 'Bile Duct Surgery & GI Stenting', description: 'Surgical treatments and stenting for bile duct and gastrointestinal tract disorders.', image: '/assets/specialties/Gastroenterology/bile-duct-surgery.png' }
+      ],
+
+      facilities: [
+        'Minimally Invasive Laparoscopic and Endoscopic Surgery',
+        'Advanced Diagnostic Endoscopy Suite',
+        'Biliary and Pancreatic Endoscopy',
+        'Gastrointestinal Oncology Surgery',
+        'State-of-the-art Imaging and Laboratory Facilities',
+        'Pre and Post-operative Care Units',
+        'Multidisciplinary Gastroenterology Clinics'
+      ],
+
+      specialists: [
+        {
+          id: '201',
+          name: 'Dr. Ravish Ranjan',
+          qualification: 'MBBS, MD, DNB (Gastroenterology)',
+          experience: '15+ Years',
+          image: '/assets/specialties/Gastroenterology/dr-ravish-ranjan.jpg',
+          specialization: 'Gastroenterology & Endoscopy'
+        }
+      ],
+
+      successStories: [
+        {
+          title: 'Successful Gallbladder Surgery Using Laparoscopy',
+          patient: 'Mr. Kumar, 48',
+          story: 'Our expert surgeons performed a minimally invasive cholecystectomy on Mr. Kumar, who recovered quickly with minimal pain and was discharged within days.',
+          outcome: 'Full recovery with no complications'
+        },
+        {
+          title: 'Effective Management of Inflammatory Bowel Disease',
+          patient: 'Ms. Radhika, 34',
+          story: 'Ms. Radhika was diagnosed with ulcerative colitis and achieved remission through personalized therapy including medications and lifestyle changes.',
+          outcome: 'Sustained remission for over 2 years'
+        }
+      ],
+
+      faqs: [
+        {
+          question: 'What symptoms indicate I should see a gastroenterologist?',
+          answer: 'Common symptoms include persistent abdominal pain, changes in bowel habits, unexplained weight loss, blood in stool, and difficulty swallowing.'
+        },
+        {
+          question: 'How are gastroenterology procedures like endoscopy performed?',
+          answer: 'They are minimally invasive techniques performed under sedation using a flexible camera to diagnose or treat digestive system conditions.'
+        },
+        {
+          question: 'Is laparoscopic surgery safe?',
+          answer: 'Yes, it is a safe and effective surgery with smaller incisions, faster recovery, fewer complications, and shorter hospital stays compared to open surgery.'
+        },
+        {
+          question: 'What lifestyle changes can improve digestive health?',
+          answer: 'Eating a balanced diet, avoiding smoking and alcohol, exercising regularly, and managing stress can improve digestive function.'
+        },
+        {
+          question: 'How do I prepare for a colonoscopy?',
+          answer: 'Your doctor will give you specific bowel preparation instructions to ensure your colon is clear for an effective examination.'
+        }
+      ],
+
+      contactInfo: {
+        helpline: '+91 97714 66634',
+        appointmentLink: 'https://rajhospitals.com/contact.php',
+        address: 'Raj Hospitals, Ranchi, Jharkhand'
+      }
+    },
+
+    // Critical care & emergency
+    criticalEmergency: {
+    id: 'criticalEmergency',
+    title: 'Critical Care & Emergency',
+    icon: FiActivity, // Use FiActivity or FiShield, change as per your theme
+    bannerImage: 'assets/specialties/CriticalCare/banner-critical-emergency.png',
+    shortDescription: 'Comprehensive 24/7 Emergency & Critical Care, trauma, surgical, neuro & cardiac ICU services under one roof.',
+    longDescription: 'At Raj Hospitals, the Critical Care & Emergency Department provides seamless, multidisciplinary care for all acute, life-threatening illnesses and injuries. With a state-of-the-art ICU, trauma center, advanced ICUs on Wheels (ambulances), and a dedicated team of consultants in emergency, critical care, cardiology, neurology, surgery, nephrology, and more, we ensure rapid response and advanced management for every medical and trauma emergency.',
+    services: [
+      { title: '24 × 7 Emergency & Critical Care Consultant', description: 'Continuously available consultants to handle every acute medical, trauma or accident emergency.', image: '/assets/specialties/CriticalCare/consultant.png' },
+      { title: 'Cardiac & Neuro ICU', description: 'Expert cardiac and neurological intensive care with dedicated beds and advanced monitoring systems.', image: '/assets/specialties/CriticalCare/cardio-neuro-icu.png' },
+      { title: 'Medical & Surgical ICU', description: 'Round the clock ICU support for all complex medical and surgical cases.', image: '/assets/specialties/CriticalCare/medical-icu.png' },
+      { title: 'Emergency, Trauma & Acute Care', description: 'Immediate management for accidents, trauma, acute illnesses and multi-organ failures.', image: '/assets/specialties/CriticalCare/emergency-trauma.png' },
+      { title: 'ICU On Wheels (Advanced Life-Support Ambulances)', description: 'Ambulances equipped as mobile ICUs start critical care during transit.', image: '/assets/specialties/CriticalCare/ambulance.png' },
+      { title: 'Dedicated Emergency Unit (10 Beds)', description: 'Multiple well-equipped emergency beds for simultaneous management of cases.', image: '/assets/specialties/CriticalCare/emergency-beds.png' },
+      { title: 'Neuro Critical Care', description: 'Comprehensive care for stroke, head injuries, and neurological emergencies.', image: '/assets/specialties/CriticalCare/neuro-care.png' },
+      { title: 'Multidisciplinary ICU Team', description: 'Specialists include emergency physicians, surgeons, cardiologists, orthopaedists, nephrologists, urologists, and more.', image: '/assets/specialties/CriticalCare/multidisciplinary-team.png' },
+      { title: 'Haemodialysis', description: 'Renal support and dialysis services for patients with kidney injury.', image: '/assets/specialties/CriticalCare/dialysis.png' },
+      { title: 'Advanced Ventilatory Support (Mechanical Ventilation)', description: 'Non-invasive and invasive ventilation for respiratory emergencies.', image: '/assets/specialties/CriticalCare/ventilator.png' },
+      { title: 'Temporary Pacemaker & Cardiac Emergency', description: 'Emergency cardiac pacing and acute cardiac intervention for life-threatening arrhythmias.', image: '/assets/specialties/CriticalCare/cardiac-pacing.png' },
+      { title: 'ECMO (Extra Corporeal Membrane Oxygenation)', description: 'Advanced life support for severe cardiac and respiratory conditions.', image: '/assets/specialties/CriticalCare/ecmo.png' },
+      { title: 'Difficult Airway Management', description: 'Expert handling of challenging airway scenarios for safe ventilation.', image: '/assets/specialties/CriticalCare/airway-management.png' },
+      { title: 'Positive & Negative Pressure Isolation Rooms', description: 'Infection control zones to manage high-risk infectious cases.', image: '/assets/specialties/CriticalCare/isolation-room.png' },
+      { title: 'Pre & Post-Procedure Monitoring', description: 'Continuous observation for patients before and after emergency interventions.', image: '/assets/specialties/CriticalCare/monitoring.png' },
+      { title: 'Ultrasound in ICU (POCUS)', description: 'Bedside ultrasound diagnostics for rapid assessment.', image: '/assets/specialties/CriticalCare/ultrasound.png' },
+      { title: 'Special Minor Procedure Room', description: 'Dedicated for immediate surgical and therapeutic procedures.', image: '/assets/specialties/CriticalCare/procedure-room.png' },
+      { title: 'Research in Critical Care', description: 'Ongoing innovation and research for improving critical outcomes.', image: '/assets/specialties/CriticalCare/research.png' }
+    ],
+    facilities: [
+      'State-of-the-art ICU & Emergency infrastructure',
+      'Advanced monitors and ventilators',
+      'Central oxygen/vacuum lines, minor procedure room',
+      'Pre- and post-treatment patient areas',
+      'Dedicated isolation rooms with advanced filtration',
+      'ICU-equipped ambulances (ICUs on Wheels)',
+      'On-site multidisciplinary medical team 24/7'
+    ],
+    specialists: [
+      { id: '301', name: 'Dr. Shyam Prasad', qualification: 'MBBS, MD MEM', experience: '14+ Years', image: '/assets/specialties/Emergency/dr-shyam-prasad.jpg', specialization: 'Emergency Medicine' },
+      { id: '302', name: 'Dr. Mohib Ahmed', qualification: 'MBBS, MD, IDCCM, EDM', experience: '12+ Years', image: '/assets/specialties/CriticalCare/dr-mohib-ahmed.jpg', specialization: 'Critical Care & ICU' },
+      { id: '303', name: 'Dr. Fuzail Sarwer', qualification: 'MBBS, MD, PDCC', experience: '10+ Years', image: '/assets/specialties/CriticalCare/dr-fuzail-sarwer.jpg', specialization: 'Critical Care & ICU' },
+      { id: '304', name: 'Dr. Rahul Roy', qualification: 'MBBS, DA, IDCCM', experience: '8+ Years', image: '/assets/specialties/CriticalCare/dr-rahul-roy.jpg', specialization: 'Critical Care & Anesthesia' }
+    ],
+    successStories: [
+      { title: 'Stroke Survival & ICU Recovery', patient: 'Mr. Gupta, 62', story: 'Received rapid neurocritical care after a major stroke, including mechanical ventilation and advanced monitoring. Recovered mobility and speech with ICU and post-care rehabilitation.', outcome: 'Regained independence after 3 months.' },
+      { title: 'Cardiac Emergency Saved', patient: 'Mr. Rajesh, 59', story: 'Rushed in with a heart attack, treatment began in ambulance and continued in ICU. Fully recovered after prompt intervention and ICU support.', outcome: 'Discharged in stable condition.' }
+    ],
+    faqs: [
+      { question: 'What types of emergencies are managed?', answer: 'All acute medical, trauma, cardiac, neurological, respiratory and multi-organ system emergencies are managed 24/7.' },
+      { question: 'How are ambulance services equipped?', answer: 'Ambulances at Raj Hospitals function as ICUs on Wheels with full life support systems and rapid response.' },
+      { question: 'Is the ICU and Emergency Unit available 24/7?', answer: 'Yes, all critical and emergency services have round-the-clock consultants and staff.' },
+      { question: 'How is infection controlled in critical areas?', answer: 'Strict protocols, filtered isolation rooms and monitored zones ensure safety.' }
+    ],
+    contactInfo: {
+      helpline: '+91 97714 88888',
+      appointmentLink: 'https://rajhospitals.com/contact.php',
+      address: 'Raj Hospitals, Ranchi, Jharkhand'
     }
-  };
+  }
+
+ 
+
+
+
+     
+
+};
+
+
+
+  
+
 
   // Conditions data for each specialty
   const conditionsData = {
