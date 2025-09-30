@@ -147,7 +147,7 @@ const SpecialtyDetail = () => {
 
     neurology: {
       id: 'neurology',
-      title: 'Neurosciences & Neurosurgery',
+      title: 'Neurosciences',
       icon: FiBrain,
       bannerImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
       shortDescription: 'Advanced care for neurological disorders with cutting-edge technology and specialized neurologists',
