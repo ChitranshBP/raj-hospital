@@ -5,6 +5,7 @@ import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 
 const {
+
   FiHeart,
   FiFeather,
   FiBrain,
@@ -147,7 +148,7 @@ const SpecialtyDetail = () => {
 
     neurology: {
       id: 'neurology',
-      title: 'Neurosciences & Neurosurgery',
+      title: 'Neurosciences',
       icon: FiBrain,
       bannerImage: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
       shortDescription: 'Advanced care for neurological disorders with cutting-edge technology and specialized neurologists',
@@ -1412,9 +1413,9 @@ obstetricsGynaecology: {
 
 //dentalcare
 
-dentalCare: {
-  id: 'dental-care',
-  title: 'Dental Care & Maxillofacial Surgery',
+dental: {
+  id: 'dental',
+  title: 'Dental',
   icon: FiSmile,
   bannerImage: 'assets/specialties/Dental/banner-dental.png',
   shortDescription: 'Expert dental & maxillofacial care in Ranchi with advanced technology, cosmetic dentistry, implantology, and preventive treatments.',
@@ -1503,9 +1504,10 @@ dentalCare: {
   }
 },
 
-dermatologyCosmetology: {
-  id: 'dermatology-cosmetology',
-  title: 'Dermatology & Cosmetology',
+//dermatology
+dermatology: {
+  id: 'dermatology',
+  title: 'Dermatology',
   icon: FiFeather,
   bannerImage: 'assets/specialties/Dermatology/banner-dermatology.png',
   shortDescription: 'Comprehensive dermatology & cosmetology treatments in Ranchi for skin, hair, and cosmetic concerns.',
@@ -1579,6 +1581,111 @@ dermatologyCosmetology: {
     address: 'Raj Hospitals, Ranchi, Jharkhand'
   }
 },
+
+//ENT
+
+ent: {
+  id: 'ent',
+  title: 'ENT',
+  icon: FiMic,
+  bannerImage: 'assets/specialties/ENT/banner-ent.png',
+  shortDescription: 'Best ENT hospital in Ranchi with advanced treatments for ear, nose, throat, and voice disorders.',
+  longDescription: 'The ENT Department at Raj Hospitals, Ranchi, is recognized as one of the best in Jharkhand for comprehensive ear, nose, and throat treatments. With advanced diagnostic tools, modern surgical equipment, and highly skilled ENT specialists, we provide world-class care for patients suffering from ear infections, sinus problems, throat disorders, hearing loss, allergies, and balance issues. Our facilities include advanced audiology, speech therapy, and minimally invasive surgical procedures. With dedicated care for both adults and pediatric ENT cases, Raj Hospitals ensures patient comfort, precise diagnosis, and effective treatments for improved quality of life.',
+
+  services: [
+    { title: 'Rhinology & Sinus Care', description: 'Advanced diagnosis and minimally invasive procedures for sinusitis, nasal polyps, and rhinology-related conditions.', image: 'assets/specialties/ENT/rhinology.png' },
+    { title: 'Advanced Skull Base Treatment', description: 'Specialized surgical care for complex skull base and inner ear conditions.', image: 'assets/specialties/ENT/skull-base.png' },
+    { title: 'Allergic Rhinitis Treatments', description: 'Comprehensive therapies and immunotherapy for managing allergic rhinitis and chronic nasal allergies.', image: 'assets/specialties/ENT/allergy.png' },
+    { title: 'Sleep Apnea & Snoring Disorders', description: 'Specialized diagnosis and treatment for obstructive sleep apnea and snoring-related ENT conditions.', image: 'assets/specialties/ENT/sleep-apnea.png' },
+    { title: 'Functional Endoscopic Sinus Surgery (FESS)', description: 'Minimally invasive sinus surgery for chronic sinusitis and nasal blockages.', image: 'assets/specialties/ENT/fess.png' },
+    { title: 'Audiology & Hearing Aids', description: 'Hearing assessments, audiometry, and advanced hearing aids for hearing loss.', image: 'assets/specialties/ENT/audiology.png' },
+    { title: 'Speech Therapy & Voice Disorders', description: 'Phonosurgery, voice rehabilitation, and speech therapy programs.', image: 'assets/specialties/ENT/speech-therapy.png' },
+    { title: 'Pediatric ENT Care', description: 'Dedicated treatments for children including tonsillitis, adenoidectomy, and ear infections.', image: 'assets/specialties/ENT/pediatric-ent.png' }
+  ],
+
+  facilities: [
+    'Round-the-clock emergency ENT care',
+    'Voice disorder and phonosurgery unit',
+    'Vertigo clinic and vestibular rehab program',
+    'Endoscopic assessment of ear, nose & throat issues',
+    'Advanced diagnostic audiology services',
+    'State-of-the-art operating theatres',
+    'Comprehensive care for skull base and inner ear conditions',
+    'Multidisciplinary ENT team with pediatric and adult care'
+  ],
+
+  specialists: [
+    {
+      id: '601',
+      name: 'Dr. Abhishek Kr. Ramadhin',
+      qualification: 'MBBS, MD, MS, FARS',
+      experience: '15+ Years',
+      image: 'assets/specialties/ENT/dr-abhishek-ramadhin.jpg',
+      specialization: 'Advanced ENT Surgeries & Voice Disorders'
+    },
+    // {
+    //   id: '602',
+    //   name: 'Dr. T G N Sinha',
+    //   qualification: 'MBBS, MS, FICS',
+    //   experience: '20+ Years',
+    //   image: 'assets/specialties/ENT/dr-tgn-sinha.jpg',
+    //   specialization: 'Head & Neck Surgery, Rhinology'
+    // },
+    // {
+    //   id: '603',
+    //   name: 'Dr. Ranajan Kumar Jha',
+    //   qualification: 'MBBS, MS, FESS',
+    //   experience: '12+ Years',
+    //   image: 'assets/specialties/ENT/dr-ranajan-jha.jpg',
+    //   specialization: 'Functional Endoscopic Sinus Surgery (FESS)'
+    // }
+  ],
+
+  successStories: [
+    {
+      title: 'Successful Sinus Surgery',
+      patient: 'Ravi',
+      story: 'I was suffering from chronic sinusitis for years. At Raj Hospitals, ENT specialists performed a FESS surgery and my breathing improved drastically.',
+      outcome: 'Sinus problem resolved with improved breathing and comfort.'
+    },
+    {
+      title: 'Voice Disorder Treatment',
+      patient: 'Sneha',
+      story: 'I had severe voice issues due to vocal cord strain. The ENT team provided phono surgery and speech therapy that completely restored my voice.',
+      outcome: 'Voice restored with excellent clarity and pitch.'
+    }
+  ],
+
+  faqs: [
+    {
+      question: 'What are common symptoms of ENT problems?',
+      answer: 'Ear pain, hearing loss, chronic sinusitis, allergies, sore throat, snoring, and persistent headaches are indicators of ENT issues.'
+    },
+    {
+      question: 'Do you treat sleep apnea?',
+      answer: 'Yes, we provide comprehensive care for obstructive sleep apnea including diagnostics, medical therapies, and surgical interventions.'
+    },
+    {
+      question: 'Is surgery always needed for sinus problems?',
+      answer: 'Not always. Initial treatments include medicines, sprays, and lifestyle changes. Surgery like FESS is only recommended for chronic cases.'
+    },
+    {
+      question: 'Do you offer pediatric ENT treatment?',
+      answer: 'Yes, our ENT department provides specialized care for children suffering from tonsillitis, adenoid problems, and middle ear infections.'
+    },
+    {
+      question: 'Can hearing loss be treated?',
+      answer: 'Yes, we provide audiology assessments, hearing aids, and surgical options for conditions like otosclerosis or acoustic neuroma.'
+    }
+  ],
+
+  contactInfo: {
+    helpline: '+91 97714 88888',
+    appointmentLink: 'https://rajhospitals.com/contact.php',
+    address: 'Raj Hospitals, Ranchi, Jharkhand'
+  }
+},
+
 
 
 
