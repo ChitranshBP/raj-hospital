@@ -950,93 +950,153 @@ const SpecialtyDetail = () => {
       }
     },
     
-    // Internal Medicine
+  // Internal Medicine
 
-//     internalMedicine: {
-//   id: 'internalMedicine',
-//   title: 'Department of Internal Medicine',
-//   icon: FiUser, // Choose appropriate icon
-//   bannerImage: 'assets/specialties/InternalMedicine/banner-internal-medicine.png', // Update with actual path
-//   shortDescription: 'Comprehensive adult care with state-of-the-art diagnostics and personalized treatments in Ranchi.',
-//   longDescription: 'The Department of Internal Medicine at Raj Hospitals provides expert care using advanced diagnostic facilities and tailored treatment plans. Our physicians specialize in managing chronic diseases like diabetes, hypertension, arthritis, and infectious diseases with a holistic approach. We emphasize preventive care, lifestyle modification, and patient education to improve health outcomes. The department is known for compassion, professionalism, and excellence in managing complex medical conditions.',
+    internalMedicine: {
+      id: 'internalmedicine',
+      title: 'Internal Medicine',
+      icon: FiActivity, 
+      bannerImage: 'assets/specialties/InternalMedicine/internal-medicine-ranchi-banner.png', 
+      shortDescription: 'Best Internal Medicine Hospital in Ranchi with expert doctors for diabetes, heart, chest, gastro & chronic diseases.',
+      longDescription: 'Raj Hospitals is recognized as one of the best Internal Medicine hospitals in Ranchi, Jharkhand. Our department provides advanced diagnostic services, preventive care, and treatment for lifestyle and chronic diseases. With a team of highly experienced physicians and state-of-the-art technology, we specialize in diabetes care, heart problems, chest and lung diseases, gastroenterology, infectious diseases, and more. We focus on holistic patient wellness with preventive counselling, lifestyle guidance, and compassionate care for both acute and long-term illnesses.',
 
-//   services: [
-//     { title: 'Infectious Diseases', description: 'Diagnosis and treatment of various infectious diseases impacting adult and pediatric patients.', image: 'assets/specialties/InternalMedicine/infectious-diseases.png' },
-//     { title: 'Diabetes & Endocrinology', description: 'Comprehensive management of diabetes, thyroid, and hormonal disorders.', image: 'assets/specialties/InternalMedicine/diabetes-endocrinology.png' },
-//     { title: 'Non-Communicable Diseases', description: 'Care for chronic lifestyle diseases including hypertension and cardiovascular diseases.', image: 'assets/specialties/InternalMedicine/non-communicable-diseases.png' },
-//     { title: 'Master Health Checkup', description: 'Preventive health screening and diagnostic packages for early disease detection.', image: 'assets/specialties/InternalMedicine/health-checkup.png' },
-//     { title: 'Pulmonary Medicine', description: 'Treatment of respiratory conditions including asthma and COPD.', image: 'assets/specialties/InternalMedicine/pulmonary-medicine.png' },
-//     { title: 'Gastroenterology', description: 'Integrated care for digestive and liver diseases.', image: 'assets/specialties/InternalMedicine/gastroenterology.png' },
-//     { title: 'Cardiology', description: 'Management of heart diseases and vascular disorders.', image: 'assets/specialties/InternalMedicine/cardiology.png' },
-//     { title: 'General Medicine', description: 'Treatment of adult medical conditions, acute and chronic.', image: 'assets/specialties/InternalMedicine/general-medicine.png' }
-//   ],
+      services: [
+        { 
+          title: 'Medicine', 
+          description: 'Comprehensive Internal Medicine care in Ranchi for acute and chronic illnesses with expert diagnosis and treatment.', 
+          image: '/assets/specialties/InternalMedicine/general-medicine-ranchi.png' 
+        },
+        { 
+          title: 'Heart Problems', 
+          description: 'Best doctors in Ranchi for diagnosis and management of heart diseases, hypertension, and cardiovascular conditions.', 
+          image: '/assets/specialties/InternalMedicine/heart-care-ranchi.png' 
+        },
+        { 
+          title: 'Chest Related Issues', 
+          description: 'Expert care in Ranchi for chest pain, lung infections, tuberculosis, and thoracic conditions.', 
+          image: '/assets/specialties/InternalMedicine/chest-treatment-ranchi.png' 
+        },
+        { 
+          title: 'Pulmonary Medicine', 
+          description: 'Specialized treatment in Ranchi for asthma, COPD, allergies, and other lung diseases by pulmonary specialists.', 
+          image: '/assets/specialties/InternalMedicine/pulmonary-medicine-ranchi.png' 
+        },
+        { 
+          title: 'Gastroenterology', 
+          description: 'Advanced care for digestive system disorders including acidity, ulcers, liver and intestinal diseases in Ranchi.', 
+          image: '/assets/specialties/InternalMedicine/gastroenterology-ranchi.png' 
+        },
+        { 
+          title: 'Cardiology', 
+          description: 'Expert cardiologists in Ranchi providing diagnosis, preventive care, and treatment for heart problems.', 
+          image: '/assets/specialties/InternalMedicine/cardiology-ranchi.png' 
+        },
+        { 
+          title: 'Infectious Diseases', 
+          description: 'Comprehensive care for viral, bacterial, and parasitic infections with infection control measures in Ranchi.', 
+          image: '/assets/specialties/InternalMedicine/infectious-diseases-ranchi.png' 
+        },
+        { 
+          title: 'Diabetes & Endocrinology', 
+          description: 'Best diabetes hospital in Ranchi with specialized endocrinologists for diabetes, thyroid, and hormonal disorders.', 
+          image: '/assets/specialties/InternalMedicine/diabetes-treatment-ranchi.png' 
+        },
+        { 
+          title: 'Non-Communicable Diseases', 
+          description: 'Management of lifestyle diseases including obesity, high blood pressure, and high cholesterol in Ranchi.', 
+          image: '/assets/specialties/InternalMedicine/ncd-ranchi.png' 
+        },
+        { 
+          title: 'Chronic Medical Conditions', 
+          description: 'Long-term management of chronic conditions such as diabetes, hypertension, arthritis, and kidney diseases in Ranchi.', 
+          image: '/assets/specialties/InternalMedicine/chronic-care-ranchi.png' 
+        },
+        { 
+          title: 'Master Health Checkup', 
+          description: 'Affordable master health checkup packages in Ranchi for early detection and preventive healthcare.', 
+          image: '/assets/specialties/InternalMedicine/health-checkup-ranchi.png' 
+        }
+      ],
 
-//   facilities: [
-//     'State-of-the-art modular operation theaters',
-//     'Advanced diagnostic imaging services (CT, MRI, X-ray)',
-//     'Comprehensive laboratory services including pathology',
-//     'Specialized units for diabetes and endocrine disorders',
-//     'Dedicated pulmonary and cardiac diagnostic sections',
-//     'Well-equipped emergency and intensive care units',
-//     'Multidisciplinary team approach with seamless coordination'
-//   ],
+      facilities: [
+        'State-of-the-art diagnostic and imaging facilities in Ranchi',
+        '24x7 modular and well-equipped Emergency unit',
+        'Preventive and executive health check-up packages',
+        'Dedicated lifestyle and chronic disease management programs',
+        'Specialized treatment for diabetes, hypertension, and cardiac care',
+        'Comprehensive laboratory and infection control services',
+        'Integrated care with multidisciplinary specialists',
+        'Emergency services for trauma and urgent medical care'
+      ],
 
-//   specialists: [
-//     {
-//       id: '1101',
-//       name: 'Dr. A K Agarwal',
-//       qualification: 'MBBS, MD Medicine',
-//       experience: '25+ Years',
-//       image: 'assets/specialties/InternalMedicine/dr-ak-agarwal.png',
-//       specialization: 'Internal Medicine'
-//     },
-//     {
-//       id: '1102',
-//       name: 'Dr. A K Sinha',
-//       qualification: 'MBBS, MD',
-//       experience: '20+ Years',
-//       image: 'assets/specialties/InternalMedicine/dr-ak-sinha.png',
-//       specialization: 'Internal Medicine'
-//     },
-//     {
-//       id: '1103',
-//       name: 'Dr. Neelam',
-//       qualification: 'MBBS, MD',
-//       experience: '15+ Years',
-//       image: 'assets/specialties/InternalMedicine/dr-neelam.png',
-//       specialization: 'Internal Medicine'
-//     }
-//   ],
+      specialists: [
+        {
+          id: '2101',
+          name: 'Dr. A K Agarwal',
+          qualification: 'MBBS, M.D (Medicine) P.M.C.H',
+          experience: '20+ Years',
+          image: '/assets/specialties/InternalMedicine/dr-ak-agarwal-ranchi.jpg',
+          specialization: 'Internal Medicine & Diabetes Specialist in Ranchi'
+        },
+        {
+          id: '2102',
+          name: 'Dr. A K Sinha',
+          qualification: 'MBBS, MD',
+          experience: '18+ Years',
+          image: '/assets/specialties/InternalMedicine/dr-ak-sinha-ranchi.jpg',
+          specialization: 'General Medicine & Preventive Care'
+        },
+        {
+          id: '2103',
+          name: 'Dr. Neelam',
+          qualification: 'MBBS, MD',
+          experience: '15+ Years',
+          image: '/assets/specialties/InternalMedicine/dr-neelam-ranchi.jpg',
+          specialization: 'Internal Medicine & Lifestyle Diseases'
+        }
+      ],
 
-//   faqs: [
-//     {
-//       question: 'What diseases are managed by internal medicine?',
-//       answer: 'Chronic diseases like diabetes, hypertension, arthritis and infectious diseases are treated by internal medicine specialists.'
-//     },
-//     {
-//       question: 'What preventive services do you offer?',
-//       answer: 'Health checkups, vaccination, lifestyle counseling and preventive care for all ages.'
-//     },
-//     {
-//       question: 'How often should I get a health checkup?',
-//       answer: 'Depends on age, medical history and risk factors; generally annually or biannually is advised.'
-//     },
-//     {
-//       question: 'Who should see an internal medicine doctor?',
-//       answer: 'Adults with chronic illness, complex health issues or undiagnosed symptoms.'
-//     },
-//     {
-//       question: 'Do you provide pulmonary medicine services?',
-//       answer: 'Yes, integrated care for respiratory conditions is part of our department.'
-//     }
-//   ],
+      successStories: [
+        {
+          title: 'Successful Diabetes Management in Ranchi',
+          patient: 'Mr. Amit',
+          story: 'My father was severely diabetic and dependent on insulin. At Raj Hospitals Ranchi, the best diabetologists managed his sugar levels with advanced treatment and lifestyle changes.',
+          outcome: 'Sugar levels under control with reduced medicines and better quality of life.'
+        },
+        {
+          title: 'Hypertension Controlled with Expert Care',
+          patient: 'Mr. Ravindra',
+          story: 'I struggled with uncontrolled blood pressure for years. At Raj Hospitals Ranchi, doctors gave personalized treatment and effective counselling.',
+          outcome: 'Stable blood pressure, improved health, and lifestyle guidance.'
+        }
+      ],
 
-//   contactInfo: {
-//     helpline: '+91 977 14 8888',
-//     appointmentLink: 'https://rajhospitals.com/contact.php',
-//     address: 'Raj Hospitals, Ranchi, Jharkhand'
-//   }
-// },
+      faqs: [
+        {
+          question: 'Who is the best doctor for diabetes in Ranchi?',
+          answer: 'Raj Hospitals has some of the best diabetologists in Ranchi with years of experience in treating diabetes, thyroid disorders, and hormonal problems.'
+        },
+        {
+          question: 'Which is the best hospital in Ranchi for Internal Medicine?',
+          answer: 'Raj Hospitals is among the top hospitals in Ranchi for Internal Medicine, offering advanced care for diabetes, heart problems, chest issues, infections, and chronic diseases.'
+        },
+        {
+          question: 'What tests are included in a Master Health Checkup in Ranchi?',
+          answer: 'Our Master Health Checkup includes blood tests, heart checkup (ECG), diabetes screening, liver and kidney tests, chest X-ray, and more depending on the package.'
+        },
+        {
+          question: 'Can Raj Hospitals treat both acute and chronic diseases?',
+          answer: 'Yes, our Internal Medicine specialists in Ranchi provide complete care for both short-term illnesses like infections and long-term conditions like hypertension, diabetes, and asthma.'
+        }
+      ],
+
+      contactInfo: {
+        helpline: '+91 97714 88888',
+        appointmentLink: 'https://rajhospitals.com/contact.php',
+        address: 'Raj Hospitals, Ranchi, Jharkhand'
+      }
+    },
+
 
 
 //urology
@@ -1133,6 +1193,395 @@ urology: {
     address: 'Raj Hospitals, Ranchi, Jharkhand'
   }
 }, 
+
+//obstetrics & gynecology
+obstetricsGynaecology: {
+  id: 'obstetrics-gynaecology',
+  title: 'Obstetrics & Gynaecology',
+  icon: FiHeart, 
+  bannerImage: 'assets/specialties/Gynaecology/banner-gynaecology.png',
+  shortDescription: 'Expert maternity and gynaecological care in Ranchi with advanced minimally invasive treatments.',
+  longDescription: 'The Department of Obstetrics & Gynaecology at Raj Hospitals offers world-class care for women’s health, pregnancy, and reproductive needs. Our team of renowned gynaecologists, obstetricians, radiologists, and counsellors provide treatments ranging from routine care to advanced minimally invasive laparoscopic & robotic surgeries. We specialize in high-risk pregnancies, menstrual disorders, infertility solutions, and comprehensive maternity care. With state-of-the-art technology, dedicated maternity services, and compassionate care, we ensure safe deliveries, faster recovery, and holistic women’s wellness.',
+  
+  services: [
+    { title: 'Complete Maternity Care', description: 'Holistic antenatal, delivery, and postnatal care ensuring the well-being of mother and child.', image: 'assets/specialties/Gynaecology/maternity-care.png' },
+    { title: 'High-Risk Pregnancies', description: 'Expert management for complicated and late pregnancies with advanced monitoring.', image: 'assets/specialties/Gynaecology/high-risk.png' },
+    { title: 'Gestational Diabetes Mellitus', description: 'Comprehensive care for pregnancy-related diabetes to prevent maternal and fetal complications.', image: 'assets/specialties/Gynaecology/gestational-diabetes.png' },
+    { title: 'Menstrual Abnormalities', description: 'Treatment for irregular, painful, or abnormal menstrual cycles with advanced diagnostic support.', image: 'assets/specialties/Gynaecology/menstrual-abnormalities.png' },
+    { title: 'Endometriosis, Fibroids & Ovarian Cysts', description: 'Laparoscopic and non-invasive treatments for endometriosis, fibroids, ovarian cysts, and obesity-related complications.', image: 'assets/specialties/Gynaecology/fibroids-cysts.png' },
+    { title: 'Laparoscopy & Hysteroscopy', description: 'Minimally invasive surgical solutions for fibroids, ovarian cysts, adhesions, and malformations.', image: 'assets/specialties/Gynaecology/laparoscopy.png' },
+    { title: 'Infertility Solutions', description: 'Advanced evaluation and treatments including laparoscopic tuboplasty and assisted reproductive care.', image: 'assets/specialties/Gynaecology/infertility.png' },
+    { title: 'Adolescent & Puberty Care', description: 'Specialized care for teenage girls addressing hormonal, reproductive, and developmental health issues.', image: 'assets/specialties/Gynaecology/adolescent-care.png' },
+    { title: 'Menopause & Hormonal Care', description: 'Supportive therapies and treatments for menopausal symptoms, osteoporosis, and hormonal issues.', image: 'assets/specialties/Gynaecology/menopause.png' },
+    { title: 'Ultrasound & Colour Doppler', description: 'Accurate diagnostic imaging including USG and colour Doppler for pregnancy and gynaecology care.', image: 'assets/specialties/Gynaecology/ultrasound.png' }
+  ],
+
+  facilities: [
+    'Well-equipped maternity complex with fetal monitors',
+    'Facility for painless and natural delivery',
+    'Dedicated operation theatres for cesarean section',
+    'Laparoscopic & hysteroscopic surgical facilities',
+    'Neonatal intensive care with advanced newborn care',
+    'State-of-the-art diagnostic & radiology support',
+    'Comprehensive pre and postnatal care',
+    'Specialized units for high-risk pregnancies'
+  ],
+
+  specialists: [
+    {
+      id: '201',
+      name: 'Dr. Anupama Mahli',
+      qualification: 'MBBS, MS, DNB, D.MAS',
+      experience: '10+ Years',
+      image: 'assets/specialties/Gynaecology/dr-anupama-mahli.jpg',
+      specialization: 'Obstetrics & Gynaecology'
+    },
+    {
+      id: '202',
+      name: 'Dr. Pushpa Sinha',
+      qualification: 'MBBS, MD, DGO',
+      experience: '15+ Years',
+      image: 'assets/specialties/Gynaecology/dr-pushpa-sinha.jpg',
+      specialization: 'Obstetrics & Gynaecology'
+    },
+    // {
+    //   id: '203',
+    //   name: 'Dr. Neena Jha',
+    //   qualification: 'MBBS, MS (OBG)',
+    //   experience: '20+ Years',
+    //   image: 'assets/specialties/Gynaecology/dr-neena-jha.jpg',
+    //   specialization: 'High-risk pregnancy & Women’s health'
+    // },
+    // {
+    //   id: '204',
+    //   name: 'Dr. Rashmi Rai',
+    //   qualification: 'MBBS, MRCOG',
+    //   experience: '12+ Years',
+    //   image: 'assets/specialties/Gynaecology/dr-rashmi-rai.jpg',
+    //   specialization: 'Minimally Invasive Gynaecology & Obstetrics'
+    // }
+  ],
+
+  successStories: [
+    {
+      title: 'High-Risk Pregnancy Managed Successfully',
+      patient: 'Priya',
+      story: 'I had gestational diabetes during pregnancy. The doctors at Raj Hospitals provided specialist care and ensured my safe delivery and recovery.',
+      outcome: 'Healthy mother and baby with smooth recovery.'
+    },
+    {
+      title: 'Fibroid Removal with Laparoscopy',
+      patient: 'Meera',
+      story: 'I underwent laparoscopic fibroid removal surgery. The recovery was quick, and I received excellent support from the hospital staff.',
+      outcome: 'Symptom-free life with minimal incision and early mobility.'
+    }
+  ],
+
+  faqs: [
+    {
+      question: 'Do you provide care for high-risk pregnancies?',
+      answer: 'Yes, our department specializes in managing high-risk and late pregnancies with advanced technology and 24/7 monitoring.'
+    },
+    {
+      question: 'Are minimally invasive laparoscopic surgeries available?',
+      answer: 'Yes, laparoscopic and hysteroscopic procedures are available for fibroids, cysts, infertility, and uterine conditions.'
+    },
+    {
+      question: 'Do you offer infertility treatments?',
+      answer: 'Yes, infertility is managed with comprehensive evaluation, advanced laparoscopy, tuboplasty, and personalized care.'
+    },
+    {
+      question: 'Is painless normal delivery possible at Raj Hospitals?',
+      answer: 'Yes, we provide painless delivery options with advanced anesthesia care under expert supervision.'
+    },
+    {
+      question: 'Do you provide adolescent and menopause support?',
+      answer: 'Yes, our team focuses on adolescent gynaecology, puberty-related issues, and menopause care with evidence-based therapies.'
+    }
+  ],
+
+  contactInfo: {
+    helpline: '+91 97714 66634',
+    appointmentLink: 'https://rajhospitals.com/contact.php',
+    address: 'Raj Hospitals, Ranchi, Jharkhand'
+  }
+},
+
+// Specialties List
+  aestheticReconstructive: {
+  id: 'aesthetic-reconstructive',
+  title: 'Aesthetic & Reconstructive Surgery',
+  icon: FiSmile,
+  bannerImage: 'assets/specialties/Aesthetic/banner-aesthetic.png',
+  shortDescription: 'Best hospital for aesthetic & reconstructive surgery in Ranchi with expert plastic surgeons and cutting-edge technology.',
+  longDescription: 'The Department of Aesthetic & Reconstructive Surgery at Raj Hospitals, Ranchi, combines advanced cosmetic procedures with reconstructive expertise to deliver world-class care. Established by eminent plastic surgeons, the department provides individualized treatments for scars, birth defects, facial reconstruction, and body reshaping. Using state-of-the-art technology and minimally invasive techniques, our expert plastic and maxillofacial surgeons improve aesthetics, self-esteem, and functional outcomes. Whether it is corrective surgery after trauma, congenital defect management, or cosmetic enhancement, Raj Hospitals ensures safe, precise, and natural-looking results.',
+
+  services: [
+    { title: 'Brow Lift', description: 'Enhance forehead and eye appearance by correcting sagging brows.', image: 'assets/specialties/Aesthetic/brow-lift.png' },
+    { title: 'Facial Implants', description: 'Jaw, cheek, and chin implants to balance facial aesthetics.', image: 'assets/specialties/Aesthetic/facial-implants.png' },
+    { title: 'Wrinkle Filling', description: 'Safe dermal fillers to reduce signs of aging and restore youthful look.', image: 'assets/specialties/Aesthetic/wrinkle-filling.png' },
+    { title: 'Lip Augmentation', description: 'Enhancement procedures to improve lip shape and volume.', image: 'assets/specialties/Aesthetic/lip-augmentation.png' },
+    { title: 'Hair Restoration Surgery', description: 'Advanced hair transplantation and restoration techniques.', image: 'assets/specialties/Aesthetic/hair-restoration.png' },
+    { title: 'Buttock & Thigh Lift', description: 'Reshaping procedures for better contour and body proportion.', image: 'assets/specialties/Aesthetic/buttock-thigh-lift.png' },
+    { title: 'Liposuction', description: 'Surgical fat removal for body shaping and sculpting.', image: 'assets/specialties/Aesthetic/liposuction.png' },
+    { title: 'Blepharoplasty (Eyelid Surgery)', description: 'Correct drooping eyelids and rejuvenate the eye area.', image: 'assets/specialties/Aesthetic/blepharoplasty.png' },
+    { title: 'Chin & Facial Surgery', description: 'Corrective surgeries to enhance jawline and chin structure.', image: 'assets/specialties/Aesthetic/chin-surgery.png' },
+    { title: 'Non-surgical Face Rejuvenation', description: 'Advanced non-invasive treatments for anti-aging & skin tightening.', image: 'assets/specialties/Aesthetic/face-rejuvenation.png' },
+    { title: 'Non-surgical Rhinoplasty', description: 'Non-invasive reshaping of the nose for balanced facial aesthetics.', image: 'assets/specialties/Aesthetic/rhinoplasty.png' }
+  ],
+
+  facilities: [
+    'Expert team of plastic and reconstructive surgeons',
+    'Individualized treatments tailored to patient needs',
+    'State-of-the-art operating theatres',
+    'Advanced anti-aging & skin rejuvenation treatments',
+    'Minimally invasive surgical approaches',
+    'Precision surgical techniques ensuring safety',
+    'Well-equipped aesthetic recovery units',
+    'Affordable treatment packages for patients'
+  ],
+
+  specialists: [
+    {
+      id: '301',
+      name: 'Dr. Pankaj Kumar',
+      qualification: 'MBBS, MS, M.Ch (Plastic Surgery)',
+      experience: '12+ Years',
+      image: 'assets/specialties/Aesthetic/dr-pankaj-kumar.jpg',
+      specialization: 'Aesthetic & Reconstructive Surgery, Plastic Surgery'
+    }
+  ],
+
+  successStories: [
+    {
+      title: 'Scar Revision & Reconstructive Surgery',
+      patient: 'Mr. Gill',
+      story: 'Raj Hospital provided me with the best reconstructive surgery experience. The scars I had were treated with great precision, and now I feel confident again.',
+      outcome: 'Significant scar reduction and improved appearance.'
+    },
+    {
+      title: 'Facial Cosmetic Enhancement',
+      patient: 'Mrs. Kaur',
+      story: 'I underwent facial rejuvenation at Raj Hospital. The doctors were supportive, and the results looked natural and safe. Truly one of the best facilities in Ranchi.',
+      outcome: 'Youthful look with natural aesthetic results.'
+    },
+    {
+      title: 'Complete Reconstructive Care',
+      patient: 'Mr. Sinha',
+      story: 'The reconstructive team at Raj Hospital helped me after corrective surgery. They use cutting-edge technology and ensure full recovery with high-quality results.',
+      outcome: 'Improved function and balanced aesthetics.'
+    },
+    {
+      title: 'Aesthetic Face Surgery',
+      patient: 'Mr. Singh',
+      story: 'The surgery was smooth, comfortable, and highly professional. The results perfectly matched my expectations.',
+      outcome: 'Enhanced appearance and confidence restored.'
+    }
+  ],
+
+  faqs: [
+    {
+      question: 'Is reconstructive surgery the same as plastic surgery?',
+      answer: 'Plastic surgery includes both aesthetic (cosmetic) and reconstructive procedures. Aesthetic surgery focuses on enhancing appearance, while reconstructive surgery corrects abnormalities caused by congenital defects, trauma, or cancer surgery.'
+    },
+    {
+      question: 'How long does recovery take after facial reconstruction surgery?',
+      answer: 'Recovery depends on the procedure but usually ranges from 2 to 6 weeks. Patients are guided with personalized post-operative care for faster healing.'
+    },
+    {
+      question: 'What are examples of aesthetics?',
+      answer: 'Aesthetic procedures include treatments like wrinkle reduction, lip augmentation, nose reshaping, facelifts, and facial rejuvenation.'
+    },
+    {
+      question: 'What qualities define beauty in aesthetic treatments?',
+      answer: 'Balance in facial features, symmetry, natural proportions, and rejuvenation are key elements addressed in aesthetic surgery.'
+    },
+    {
+      question: 'What is the cost of aesthetic and reconstructive surgery in Ranchi?',
+      answer: 'Raj Hospitals provides affordable packages for cosmetic & reconstructive surgeries, ensuring high-quality results at cost-effective pricing.'
+    }
+  ],
+
+  contactInfo: {
+    helpline: '+91 97714 88888',
+    appointmentLink: 'https://rajhospitals.com/contact.php',
+    address: 'Raj Hospitals, Ranchi, Jharkhand'
+  }
+},
+
+//dentalcare
+
+dentalCare: {
+  id: 'dental-care',
+  title: 'Dental Care & Maxillofacial Surgery',
+  icon: FiSmile,
+  bannerImage: 'assets/specialties/Dental/banner-dental.png',
+  shortDescription: 'Expert dental & maxillofacial care in Ranchi with advanced technology, cosmetic dentistry, implantology, and preventive treatments.',
+  longDescription: 'The Dental Care Department at Raj Hospitals, Ranchi, offers comprehensive oral health care ranging from preventive dentistry to advanced cosmetic and maxillofacial surgeries. With a specialized team of dentists, oral surgeons, implantologists, orthodontists, periodontists, and dental hygienists, we deliver world-class dental treatments with precision and safety. Our focus is on pain-free, affordable, and aesthetic oral health services, helping patients achieve healthy gums, perfect teeth alignment, and confident smiles. Equipped with the latest dental technology, Raj Hospitals is committed to providing personalized treatment plans, minimally invasive procedures, and safe recovery protocols for both adults and children.',
+
+  services: [
+    { title: 'Cosmetic Dentistry & Smile Designing', description: 'Aesthetic treatments including smile designing, veneers, and teeth whitening to enhance your smile.', image: 'assets/specialties/Dental/cosmetic-dentistry.png' },
+    { title: 'Dental Filling', description: 'Advanced tooth-colored fillings to treat cavities and restore teeth functionally and aesthetically.', image: 'assets/specialties/Dental/dental-filling.png' },
+    { title: 'Root Canal Treatment (RCT)', description: 'Pain-free root canal treatments with advanced rotary endodontics for permanent tooth preservation.', image: 'assets/specialties/Dental/rct.png' },
+    { title: 'Crowns & Bridges', description: 'Prosthetic restorations for missing or damaged teeth ensuring long-lasting strength and functionality.', image: 'assets/specialties/Dental/crowns-bridges.png' },
+    { title: 'Scaling & Polishing', description: 'Professional cleaning to maintain oral hygiene and prevent gum disease.', image: 'assets/specialties/Dental/scaling-polishing.png' },
+    { title: 'Preventive Dentistry', description: 'Regular cleanings, fluoride treatments, and sealants to prevent cavities and gum issues early.', image: 'assets/specialties/Dental/preventive-dentistry.png' },
+    { title: 'Teeth Whitening (Bleaching)', description: 'Safe and effective whitening treatments to brighten stained or yellowed teeth.', image: 'assets/specialties/Dental/teeth-whitening.png' },
+    { title: 'Removable & Complete Dentures', description: 'Custom dentures for lost teeth ensuring functional bite and natural aesthetics.', image: 'assets/specialties/Dental/dentures.png' },
+    { title: 'Extractions & Surgical Extractions', description: 'Safe tooth extractions, including complex impacted wisdom tooth removal.', image: 'assets/specialties/Dental/extractions.png' },
+    { title: 'Implant Surgery', description: 'Permanent solution for missing teeth with titanium dental implants.', image: 'assets/specialties/Dental/implants.png' },
+    { title: 'Laser Gum Surgery & Pyorrhea Care', description: 'Advanced laser treatments for gum diseases and periodontal therapy.', image: 'assets/specialties/Dental/laser-gum-surgery.png' },
+    { title: 'Orthodontics & Braces', description: 'Treatment for crooked teeth including traditional braces and modern aligners.', image: 'assets/specialties/Dental/orthodontics.png' },
+    { title: 'Paediatric Dentistry', description: 'Comprehensive dental care for children including preventive and corrective treatments.', image: 'assets/specialties/Dental/paediatric-dentistry.png' }
+  ],
+
+  facilities: [
+    'Team of cosmetic dentists, implantologists & orthodontists',
+    'Painless dentistry with advanced anesthesia and laser technology',
+    'Well-equipped dental operation rooms',
+    'Comprehensive oral cancer screening & diagnosis',
+    'Digital X-ray, 3D imaging & advanced diagnostics',
+    'High standards of hygiene with sterilization protocols',
+    'Affordable treatment packages',
+    'Preventive, restorative, and cosmetic treatments under one roof'
+  ],
+
+  specialists: [
+    {
+      id: '401',
+      name: 'Dr. Suraj Mani Bhattacharjee',
+      qualification: 'BDS',
+      experience: '10+ Years',
+      image: 'assets/specialties/Dental/dr-suraj-mani-bhattacharjee.jpg',
+      specialization: 'Cosmetic Dentistry, Implantology & Preventive Dentistry'
+    }
+  ],
+
+  successStories: [
+    {
+      title: 'Smile Designing & Whitening',
+      patient: 'Rohit',
+      story: 'I consulted Raj Hospitals for stained teeth. The cosmetic dentistry team designed my smile with whitening and veneers. I now feel much more confident.',
+      outcome: 'Perfectly aligned, whiter teeth with natural aesthetics.'
+    },
+    {
+      title: 'Dental Implants & Full Restoration',
+      patient: 'Meera',
+      story: 'I underwent implant surgery at Raj Hospitals. The team handled everything meticulously, and the results exceeded my expectations.',
+      outcome: 'Strong teeth replacement with improved bite and smile.'
+    }
+  ],
+
+  faqs: [
+    {
+      question: 'Do you provide painless dental treatments?',
+      answer: 'Yes, we use advanced pain management and laser dentistry techniques for painless procedures.'
+    },
+    {
+      question: 'What is the lifespan of dental implants?',
+      answer: 'Dental implants can last a lifetime with proper oral care, hygiene, and regular dental check-ups.'
+    },
+    {
+      question: 'When should children visit a dentist?',
+      answer: 'Children should have their first dental visit by the age of one year or within six months of their first tooth eruption.'
+    },
+    {
+      question: 'Can crooked teeth be aligned without braces?',
+      answer: 'Yes, clear aligners and invisible braces offer an advanced alternative to traditional braces for realignment.'
+    },
+    {
+      question: 'Is teeth whitening safe?',
+      answer: 'Yes, our expert dentists use clinically approved whitening methods that are safe and effective under supervision.'
+    }
+  ],
+
+  contactInfo: {
+    helpline: '+91 97714 88888',
+    appointmentLink: 'https://rajhospitals.com/contact.php',
+    address: 'Raj Hospitals, Ranchi, Jharkhand'
+  }
+},
+
+dermatologyCosmetology: {
+  id: 'dermatology-cosmetology',
+  title: 'Dermatology & Cosmetology',
+  icon: FiFeather,
+  bannerImage: 'assets/specialties/Dermatology/banner-dermatology.png',
+  shortDescription: 'Comprehensive dermatology & cosmetology treatments in Ranchi for skin, hair, and cosmetic concerns.',
+  longDescription: 'The Department of Dermatology & Cosmetology at Raj Hospitals, Ranchi, is dedicated to providing advanced medical and cosmetic skincare solutions. Our expert dermatologists and cosmetologists specialize in treatments for acne, pigmentation, eczema, psoriasis, vitiligo, hair loss, and various pediatric skin concerns. We also provide advanced cosmetic procedures including anti-aging therapies, chemical peels, laser skin rejuvenation, and hair transplant surgeries. Equipped with state-of-the-art diagnostic and treatment technologies, Raj Hospitals ensures effective, safe, and personalized care for every skin and hair condition. As a leading skincare center in Ranchi, we combine clinical dermatology with cosmetic innovations for holistic skincare solutions.',
+
+  services: [
+    { title: 'Hair Disorder Treatments', description: 'Comprehensive care for alopecia, hair fall, hair thinning, and baldness with hair restoration and transplant procedures.', image: 'assets/specialties/Dermatology/hair-disorder.png' },
+    { title: 'Acne & Acne Scar Treatment', description: 'Advanced medical and cosmetic dermatology solutions for acne, scars, and skin rejuvenation.', image: 'assets/specialties/Dermatology/acne-treatment.png' },
+    { title: 'Cosmetology & Anti-Aging', description: 'Specialized cosmetic dermatology treatments including laser therapy, chemical peels, wrinkle reduction, and scar removal.', image: 'assets/specialties/Dermatology/cosmetology.png' }
+  ],
+
+  facilities: [
+    'Expert dermatologists and cosmetology specialists in Ranchi',
+    'Comprehensive dermatology covering medical, pediatric, and cosmetic care',
+    'Cutting-edge technology for diagnosis including skin biopsies and digital imaging',
+    'Advanced treatment options for acne, psoriasis, eczema, pigmentation, and vitiligo',
+    'Laser skin rejuvenation and cosmetic dermatology procedures',
+    'Hair transplant and restoration therapies for baldness and hair loss',
+    'Specialized pediatric dermatology services',
+    'Focus on non-invasive cosmetic treatments for skin and hair rejuvenation'
+  ],
+
+  specialists: [
+    {
+      id: '501',
+      name: 'Dr. Piyali Banerjee',
+      qualification: 'MBBS, DVDL',
+      experience: '12+ Years',
+      image: 'assets/specialties/Dermatology/dr-piyali-banerjee.jpg',
+      specialization: 'Dermatology, Cosmetology & Hair Disorders'
+    }
+  ],
+
+  successStories: [
+    {
+      title: 'Acne Treatment Success',
+      patient: 'Tara',
+      story: 'I struggled with acne for years until I started treatment at Raj Hospitals Dermatology Department. Within 3 weeks, my acne was fully under control.',
+      outcome: 'Clear, blemish-free skin with restored confidence.'
+    },
+    {
+      title: 'Pigmentation & Scar Removal',
+      patient: 'Esha',
+      story: 'Raj Hospitals helped me treat pigmentation and acne scars with advanced dermatology procedures. My skin feels brighter, smoother, and completely renewed.',
+      outcome: 'Skin rejuvenation with long-lasting, natural results.'
+    }
+  ],
+
+  faqs: [
+    {
+      question: 'What happens during the first visit to a dermatologist?',
+      answer: 'During your first dermatology consultation, the doctor will examine your skin, discuss your medical history, and suggest a personalized treatment plan.'
+    },
+    {
+      question: 'How often should I visit a dermatologist?',
+      answer: 'It is recommended to visit a dermatologist at least once a year for skin evaluation, or more frequently if you have ongoing skin concerns.'
+    },
+    {
+      question: 'Is it worth visiting a dermatologist for acne?',
+      answer: 'Yes, dermatologists offer medically supervised treatments that are more effective than home remedies, especially for persistent acne or scarring.'
+    },
+    {
+      question: 'Do you provide hair loss treatments?',
+      answer: 'Yes, we specialize in hair disorder management including advanced transplant procedures and medical therapies for hair regrowth.'
+    }
+  ],
+
+  contactInfo: {
+    helpline: '+91 97714 88888',
+    appointmentLink: 'https://rajhospitals.com/contact.php',
+    address: 'Raj Hospitals, Ranchi, Jharkhand'
+  }
+},
+
+
+
+
 
 
 
