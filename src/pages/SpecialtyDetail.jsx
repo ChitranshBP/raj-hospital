@@ -6,6 +6,7 @@ import SafeIcon from '../common/SafeIcon';
 
 const {
   FiHeart,
+  FiFeather,
   FiBrain,
   FiDroplet,
   FiShield,
