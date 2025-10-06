@@ -146,114 +146,114 @@ const SpecialtyDetail = () => {
 
     },
 
-//neurology
+// //neurology
 
-    neuroscience: {
-      id: 'neuroscience',
-      title: 'Neurosciences',
-      icon: FiBrain,
-      bannerImage: 'assets/specialties/Neuroscience/Neurosciences-banner-image.png',
-      shortDescription: 'Advanced care for neurological disorders with cutting-edge technology and specialized neurologists',
-      longDescription: 'Our Department of Neurosciences & Neurosurgery at Raj Hospitals offers comprehensive care for disorders of the brain, spine, and nervous system. Our team of highly skilled neurologists and neurosurgeons uses advanced technology to diagnose and treat a wide range of neurological conditions, from common disorders to complex neurosurgical cases.',
-      services: [
-      {
-        title: 'Neurological Diagnostics',
-        description: 'Advanced neurological assessments including EEG, EMG, NCS, and neuroimaging studies.',
-        image: '/assets/specialties/Neuroscience/Neurological-Diagnostics.png'
-      },
-      {
-        title: 'Neurosurgery',
-        description: 'Surgical treatment of brain and spine conditions including tumors, trauma, and congenital disorders.',
-        image: 'assets/specialties/Neuroscience/Neurosurgery.png'
-      },
-      {
-        title: 'Stroke Management',
-        description: 'Comprehensive stroke care including acute treatment, rehabilitation, and prevention strategies.',
-        image: 'assets/specialties/Neuroscience/Stroke.png'
-      },
-      {
-        title: 'Movement Disorders',
-        description: 'Diagnosis and treatment of conditions like Parkinson\'s disease, tremors, and dystonia.',
-        image: 'assets/specialties/Neuroscience/Movement-Disorders.png'
-      },
-      {
-        title: 'Epilepsy Management',
-        description: 'Specialized care for seizure disorders including medical management and surgical options.',
-        image: 'assets/specialties/Neuroscience/Epilepsy-Management.png'
-      },
-      {
-        title: 'Neurorehabilitation',
-        description: 'Comprehensive rehabilitation programs for recovery from neurological injuries and disorders.',
-        image: 'assets/specialties/Neuroscience/Neurorehabilitation.png'
-      }],
+//     neuroscience: {
+//       id: 'neuroscience',
+//       title: 'Neurosciences',
+//       icon: FiBrain,
+//       bannerImage: 'assets/specialties/Neuroscience/Neurosciences-banner-image.png',
+//       shortDescription: 'Advanced care for neurological disorders with cutting-edge technology and specialized neurologists',
+//       longDescription: 'Our Department of Neurosciences & Neurosurgery at Raj Hospitals offers comprehensive care for disorders of the brain, spine, and nervous system. Our team of highly skilled neurologists and neurosurgeons uses advanced technology to diagnose and treat a wide range of neurological conditions, from common disorders to complex neurosurgical cases.',
+//       services: [
+//       {
+//         title: 'Neurological Diagnostics',
+//         description: 'Advanced neurological assessments including EEG, EMG, NCS, and neuroimaging studies.',
+//         image: '/assets/specialties/Neuroscience/Neurological-Diagnostics.png'
+//       },
+//       {
+//         title: 'Neurosurgery',
+//         description: 'Surgical treatment of brain and spine conditions including tumors, trauma, and congenital disorders.',
+//         image: 'assets/specialties/Neuroscience/Neurosurgery.png'
+//       },
+//       {
+//         title: 'Stroke Management',
+//         description: 'Comprehensive stroke care including acute treatment, rehabilitation, and prevention strategies.',
+//         image: 'assets/specialties/Neuroscience/Stroke.png'
+//       },
+//       {
+//         title: 'Movement Disorders',
+//         description: 'Diagnosis and treatment of conditions like Parkinson\'s disease, tremors, and dystonia.',
+//         image: 'assets/specialties/Neuroscience/Movement-Disorders.png'
+//       },
+//       {
+//         title: 'Epilepsy Management',
+//         description: 'Specialized care for seizure disorders including medical management and surgical options.',
+//         image: 'assets/specialties/Neuroscience/Epilepsy-Management.png'
+//       },
+//       {
+//         title: 'Neurorehabilitation',
+//         description: 'Comprehensive rehabilitation programs for recovery from neurological injuries and disorders.',
+//         image: 'assets/specialties/Neuroscience/Neurorehabilitation.png'
+//       }],
 
-      facilities: [
-      'Advanced Neurodiagnostic Lab',
-      'State-of-the-art Neurosurgical Operation Theaters',
-      'Neuro-Intensive Care Unit',
-      'EEG, EMG, and NCS Facilities',
-      'Neuroimaging Services',
-      'Neurorehabilitation Center'],
+//       facilities: [
+//       'Advanced Neurodiagnostic Lab',
+//       'State-of-the-art Neurosurgical Operation Theaters',
+//       'Neuro-Intensive Care Unit',
+//       'EEG, EMG, and NCS Facilities',
+//       'Neuroimaging Services',
+//       'Neurorehabilitation Center'],
 
-      specialists: [
-      {
-        id: '7',
-        name: 'Dr. Suresh Kumar Jha',
-        qualification: 'MBBS, MS, MCh (Neurosurgery)',
-        experience: '14+ Years',
-        image: 'https://images.unsplash.com/photo-1584827172806-ea64d6d30fac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFN1cmVzaCUyMEt1bWFyJTIwSmhhJTJDJTIwYSUyMHNwZWNpYWxpc3QlMjBpbiUyMG5ldXJvc3VyZ2VyeS58ZW58MHx8fHwxNzU1MDg3MDU5fDA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-        specialization: 'Neurosurgery'
-      },
-      {
-        id: '11',
-        name: 'Dr. Priya Sharma',
-        qualification: 'MBBS, MD (Neurology), DM (Neurology)',
-        experience: '12+ Years',
-        image: 'https://images.unsplash.com/photo-1580471260026-2a8acbc7c7a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFByaXlhJTIwS3VtYXJpJTJDJTIwYSUyMHNwZWNpYWxpc3QlMjBpbiUyME5ldXJvbG9neSUyQyUyMGZlYXR1cmVkJTIwb24lMjB0aGUlMjBSYWolMjBIb3NwaXRhbHMlMjB3ZWJzaXRlLnxlbnwwfHx8fDE3NTUwODcwMzh8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-        specialization: 'Neurology'
-      },
-      {
-        id: '15',
-        name: 'Dr. Vikash Kumar',
-        qualification: 'MBBS, MD, DM (Neurology)',
-        experience: '10+ Years',
-        image: 'https://images.unsplash.com/photo-1509242547758-3ce17361523b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFZpa2FzaCUyMEt1bWFyJTJDJTIwYSUyMHNwZWNpYWxpc3QlMjBpbiUyME5ldXJvbG9neSUyQyUyMGZlYXR1cmVkJTIwb24lMjB0aGUlMjBSYWolMjBIb3NwaXRhbHMlMjB3ZWJzaXRlLnxlbnwwfHx8fDE3NTUwODcwNTJ8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-        specialization: 'Stroke Specialist'
-      }],
+//       specialists: [
+//       {
+//         id: '7',
+//         name: 'Dr. Suresh Kumar Jha',
+//         qualification: 'MBBS, MS, MCh (Neurosurgery)',
+//         experience: '14+ Years',
+//         image: 'https://images.unsplash.com/photo-1584827172806-ea64d6d30fac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFN1cmVzaCUyMEt1bWFyJTIwSmhhJTJDJTIwYSUyMHNwZWNpYWxpc3QlMjBpbiUyMG5ldXJvc3VyZ2VyeS58ZW58MHx8fHwxNzU1MDg3MDU5fDA&ixlib=rb-4.1.0&q=80&w=200$w=800',
+//         specialization: 'Neurosurgery'
+//       },
+//       {
+//         id: '11',
+//         name: 'Dr. Priya Sharma',
+//         qualification: 'MBBS, MD (Neurology), DM (Neurology)',
+//         experience: '12+ Years',
+//         image: 'https://images.unsplash.com/photo-1580471260026-2a8acbc7c7a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFByaXlhJTIwS3VtYXJpJTJDJTIwYSUyMHNwZWNpYWxpc3QlMjBpbiUyME5ldXJvbG9neSUyQyUyMGZlYXR1cmVkJTIwb24lMjB0aGUlMjBSYWolMjBIb3NwaXRhbHMlMjB3ZWJzaXRlLnxlbnwwfHx8fDE3NTUwODcwMzh8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
+//         specialization: 'Neurology'
+//       },
+//       {
+//         id: '15',
+//         name: 'Dr. Vikash Kumar',
+//         qualification: 'MBBS, MD, DM (Neurology)',
+//         experience: '10+ Years',
+//         image: 'https://images.unsplash.com/photo-1509242547758-3ce17361523b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFZpa2FzaCUyMEt1bWFyJTJDJTIwYSUyMHNwZWNpYWxpc3QlMjBpbiUyME5ldXJvbG9neSUyQyUyMGZlYXR1cmVkJTIwb24lMjB0aGUlMjBSYWolMjBIb3NwaXRhbHMlMjB3ZWJzaXRlLnxlbnwwfHx8fDE3NTUwODcwNTJ8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
+//         specialization: 'Stroke Specialist'
+//       }],
 
-      successStories: [
-      {
-        title: 'Brain Tumor Removal with Precision',
-        patient: 'Anand Singh, 45',
-        story: 'Anand was diagnosed with a complex brain tumor located in a critical area. Our neurosurgical team used advanced neuronavigation and microsurgical techniques to remove the tumor completely while preserving all neurological functions. The precision of the surgery allowed Anand to recover quickly with minimal rehabilitation needs.',
-        outcome: 'Complete tumor removal with full neurological recovery'
-      },
-      {
-        title: 'Remarkable Stroke Recovery',
-        patient: 'Meera Devi, 68',
-        story: 'Meera was brought to our emergency within 3 hours of stroke symptoms. Our stroke team administered thrombolytic therapy and performed necessary interventions promptly. Following the acute treatment, she underwent intensive neurorehabilitation at our center, which helped her regain most of her lost functions.',
-        outcome: 'Regained 90% functionality within 6 months'
-      }],
+//       successStories: [
+//       {
+//         title: 'Brain Tumor Removal with Precision',
+//         patient: 'Anand Singh, 45',
+//         story: 'Anand was diagnosed with a complex brain tumor located in a critical area. Our neurosurgical team used advanced neuronavigation and microsurgical techniques to remove the tumor completely while preserving all neurological functions. The precision of the surgery allowed Anand to recover quickly with minimal rehabilitation needs.',
+//         outcome: 'Complete tumor removal with full neurological recovery'
+//       },
+//       {
+//         title: 'Remarkable Stroke Recovery',
+//         patient: 'Meera Devi, 68',
+//         story: 'Meera was brought to our emergency within 3 hours of stroke symptoms. Our stroke team administered thrombolytic therapy and performed necessary interventions promptly. Following the acute treatment, she underwent intensive neurorehabilitation at our center, which helped her regain most of her lost functions.',
+//         outcome: 'Regained 90% functionality within 6 months'
+//       }],
 
-      faqs: [
-      {
-        question: 'What are the warning signs of a stroke?',
-        answer: 'Remember the acronym FAST: Face drooping, Arm weakness, Speech difficulties, Time to call emergency services. Other symptoms include sudden numbness, confusion, trouble seeing, difficulty walking, and severe headache. Immediate medical attention is crucial as "time is brain" - every minute counts in stroke treatment.'
-      },
-      {
-        question: 'When should someone with recurring headaches see a neurologist?',
-        answer: 'You should consult a neurologist if you experience severe headaches that interfere with daily activities, headaches that wake you from sleep, headaches accompanied by neurological symptoms (vision changes, weakness, numbness), headaches that worsen with physical activity, or if there\'s a significant change in your headache pattern.'
-      },
-      {
-        question: 'What is epilepsy and how is it treated?',
-        answer: 'Epilepsy is a neurological disorder characterized by recurrent seizures due to abnormal electrical activity in the brain. Treatment typically begins with anti-seizure medications. If medications aren\'t effective, other options include surgery, vagus nerve stimulation, responsive neurostimulation, or dietary therapy (ketogenic diet). Regular follow-ups are essential for medication adjustments and monitoring.'
-      },
-      {
-        question: 'What is the recovery process after brain surgery?',
-        answer: 'Recovery after brain surgery varies depending on the procedure\'s complexity and the patient\'s condition. Initial hospital stay is typically 3-10 days. Physical, occupational, and speech therapy may be needed. Most patients can return to light activities within 4-8 weeks. Complete recovery may take several months, with follow-up appointments to monitor progress.'
-      }]
+//       faqs: [
+//       {
+//         question: 'What are the warning signs of a stroke?',
+//         answer: 'Remember the acronym FAST: Face drooping, Arm weakness, Speech difficulties, Time to call emergency services. Other symptoms include sudden numbness, confusion, trouble seeing, difficulty walking, and severe headache. Immediate medical attention is crucial as "time is brain" - every minute counts in stroke treatment.'
+//       },
+//       {
+//         question: 'When should someone with recurring headaches see a neurologist?',
+//         answer: 'You should consult a neurologist if you experience severe headaches that interfere with daily activities, headaches that wake you from sleep, headaches accompanied by neurological symptoms (vision changes, weakness, numbness), headaches that worsen with physical activity, or if there\'s a significant change in your headache pattern.'
+//       },
+//       {
+//         question: 'What is epilepsy and how is it treated?',
+//         answer: 'Epilepsy is a neurological disorder characterized by recurrent seizures due to abnormal electrical activity in the brain. Treatment typically begins with anti-seizure medications. If medications aren\'t effective, other options include surgery, vagus nerve stimulation, responsive neurostimulation, or dietary therapy (ketogenic diet). Regular follow-ups are essential for medication adjustments and monitoring.'
+//       },
+//       {
+//         question: 'What is the recovery process after brain surgery?',
+//         answer: 'Recovery after brain surgery varies depending on the procedure\'s complexity and the patient\'s condition. Initial hospital stay is typically 3-10 days. Physical, occupational, and speech therapy may be needed. Most patients can return to light activities within 4-8 weeks. Complete recovery may take several months, with follow-up appointments to monitor progress.'
+//       }]
 
-    },
+//     },
 
    //gastro
     gastroenterology: {
@@ -265,6 +265,20 @@ const SpecialtyDetail = () => {
     longDescription: 'The Department of Gastroenterology & Endoscopy at Raj Hospitals provides top medical services for digestive system disorders including gastroenterology, hepatology, and gastrointestinal surgery. Our minimally invasive procedures like laparoscopy and endoscopy offer faster recovery, fewer complications and less post-operative follow-up. We are among few centers offering scarless minimal access surgery and advanced laparoscopic, biliary, pancreatic, and colorectal oncologic procedures.',
 
       services: [
+        { title: 'Therapeutic and Diagnostic Upper GI Endoscopy', description: 'Advanced diagnostic and therapeutic procedures for the upper gastrointestinal tract.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Therapeutic and Diagnostic.png'},
+        { title: 'Lower GI Endoscopy (Colonoscopy)', description: 'Examination and treatment of the lower gastrointestinal tract using colonoscopy techniques.', image:'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Lower GI Endoscopy (Colonoscopy).png' },
+        { title: 'ERCP (Endoscopic Retrograde Cholangiopancreatography)', description: 'Diagnostic and therapeutic procedure to treat biliary and pancreatic duct disorders.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/ERCP (Endoscopic-Retrograde).png' },
+        { title: 'Endoscopic Ultrasound (EUS)', description: 'Advanced imaging technique combining endoscopy and ultrasound to diagnose pancreatic and GI disorders.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/ERCP,-EUS,-Hepatitis-Care.png' },
+        { title: 'Inflammatory Bowel Disease (IBD) Clinic', description: 'Specialized care for Crohn\'s disease, ulcerative colitis, and other inflammatory bowel diseases.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Inflammatory-Bowel-Disease.png' },
+        { title: 'Hepatology Clinic', description: 'Expert management of liver diseases including hepatitis and fatty liver disease.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Hepatology-Clinic.png' },
+        { title: 'Pancreatic Disorder Management', description: 'Comprehensive diagnosis and treatment of pancreatic disorders including pancreatitis.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Pancreatic-Disorder-Management.png' },
+        { title: 'Esophageal Disorders', description: 'Diagnosis and treatment of esophageal diseases such as reflux and motility disorders.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Esophageal-Disorders.png' },
+        { title: 'Enteral Stenting', description: 'Minimally invasive stenting procedures for obstructive gastrointestinal conditions.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Enteral-Stenting.png' },
+        { title: 'Endoscopy & Colonoscopy', description: 'Comprehensive endoscopic examinations of the digestive tract for diagnosis and treatment.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Endoscopy & Colonoscopy.png' },
+        { title: 'ERCP, EUS, Hepatitis Care', description: 'Diagnostic and therapeutic services including ERCP, EUS, and hepatitis management.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/ERCP,-EUS,-Hepatitis-Care.png' },
+        { title: 'Pancreatitis, Reflux, Peptic Ulcer Treatment', description: 'Expert medical and procedural management of pancreatitis, acid reflux, and peptic ulcers.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Pancreatitis,-Reflux,-Peptic-Ulcer-Treatment.png' },
+        { title: 'Abdominal Pain & Fatty Liver Treatment', description: 'Diagnosis and treatment of chronic abdominal pain and fatty liver disease.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Abdominal-Pain & Fatty-Liver-Treatment.png' },
+        { title: 'Bile Duct Surgery & GI Stenting', description: 'Surgical treatments and stenting for bile duct and gastrointestinal tract disorders.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Bile-Duct-Surgery & GI-Stenting.png' }
         { title: 'Therapeutic and Diagnostic Upper GI Endoscopy', description: 'Advanced diagnostic and therapeutic procedures for the upper gastrointestinal tract.', image: '/assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Therapeutic and Diagnostic.png'},
         { title: 'Lower GI Endoscopy (Colonoscopy)', description: 'Examination and treatment of the lower gastrointestinal tract using colonoscopy techniques.', image:'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Lower GI Endoscopy (Colonoscopy).png' },
         { title: 'ERCP (Endoscopic Retrograde Cholangiopancreatography)', description: 'Diagnostic and therapeutic procedure to treat biliary and pancreatic duct disorders.', image: '/assets/specialties/Gastroenterology/ercp.png' },
@@ -533,7 +547,18 @@ const SpecialtyDetail = () => {
           experience: '12+ Years',
           image: '/assets/specialties/Nephrology/dr-avinash-kumar-dubey.jpg',
           specialization: 'Nephrology & Dialysis'
+        },
+        {
+          
+            id: '602',
+            name: 'Dr. Yogendra Rai',
+            qualification: '',
+            experience: '',
+            image: '/assets/specialties/Neurology/dr-yogendra-rai.jpg',
+            specialization: 'Neurology'
+
         }
+
       ],
       successStories: [
         {
@@ -584,13 +609,13 @@ const SpecialtyDetail = () => {
       id: 'neurosciences',
       title: 'Neurosciences',
       icon: FiBrain,
-      bannerImage: 'assets/specialties/Neuroscience/Neurosciences-banner-image.png',
+      bannerImage: 'assets/specialties/Neuroscience/Neurological-Diagnostics.png',
       shortDescription: 'Best Neurologist Hospital in Ranchi offering comprehensive brain and spine care by expert neuro physicians.',
       longDescription:
         'The Department of Neurosciences at Raj Hospitals provides comprehensive and multidisciplinary care for brain and spine disorders. Our team of expert neurologists, neurosurgeons, and interventional neuro-radiologists utilize the latest technologies to diagnose and treat a wide range of neurological conditions. We provide integrated care for stroke, epilepsy, movement disorders, neuro infections, brain tumors, spinal injuries, and more with specialized emergency and surgical services.',
       services: [
-        { title: 'Stroke- (Ischemic & Haemorrhagic)', description: 'Comprehensive care and rehabilitation for all kinds of stroke.', image: '/assets/specialties/Neuroscience/Stroke.png' },
-        { title: 'Epilepsy', description: 'Diagnosis, medical management, and surgical options for seizure disorders.', image: '/assets/specialties/Neuroscience/Epilepsy-Management.png' },
+        { title: 'Stroke- (Ischemic & Haemorrhagic)', description: 'Comprehensive care and rehabilitation for all kinds of stroke.', image: 'assets/specialties/Neuroscience/Stroke.png' },
+        { title: 'Epilepsy', description: 'Diagnosis, medical management, and surgical options for seizure disorders.', image: 'assets/specialties/Neuroscience/Epilepsy-Management.png' },
         { title: 'Dementias', description: 'Evaluation and treatment of Alzheimer’s disease, vascular dementia, and other dementias.', image: '/assets/specialties/Neuroscience/dementia.png' },
         { title: 'Parkinson\'s Disease and Atypical Parkinsonism', description: 'Advanced management of Parkinson’s and related movement disorders.', image: '/assets/specialties/Neuroscience/Movement-Disorders.png' },
         { title: 'Autoimmune & Demyelinating Disorders', description: 'Care for Multiple Sclerosis, ADEM, NMOSD & MOGAD.', image: '/assets/specialties/Neuroscience/demyelinating.png' },
@@ -599,7 +624,7 @@ const SpecialtyDetail = () => {
         { title: 'Neuropathies', description: 'Management of GBS, CIDP and other peripheral nerve disorders.', image: '/assets/specialties/Neuroscience/neuropathies.png' },
         { title: 'Motor Neuron Disease', description: 'Comprehensive care and symptom management.', image: '/assets/specialties/Neuroscience/mn-disease.png' },
         { title: 'Myopathies', description: 'Diagnosis and treatment of muscle disorders.', image: '/assets/specialties/Neuroscience/myopathies.png' },
-        { title: 'Movement Disorders', description: 'Extensive care for complex movement disorders.', image: '/assets/specialties/Neuroscience/movement-disorders.png' },
+        { title: 'Movement Disorders', description: 'Extensive care for complex movement disorders.', image: 'assets/specialties/Neuroscience/Movement-Disorders.png' },
         { title: 'Head Injuries', description: 'Emergency and rehabilitative care for traumatic brain injuries.', image: '/assets/specialties/Neuroscience/head-injuries.png' },
         { title: 'Brain Stroke Unit & Seizures', description: 'Specialized stroke unit with continuous monitoring and seizure control.', image: '/assets/specialties/Neuroscience/stroke-unit.png' },
         { title: 'Spinal Cord Injury, Spine Surgery', description: 'Expert treatment and surgeries for spine trauma and disorders.', image: '/assets/specialties/Neuroscience/spine-injury.png' },
@@ -612,6 +637,7 @@ const SpecialtyDetail = () => {
         { title: 'Emergency & Spine Trauma Surgery', description: 'Urgent surgical care for traumatic neurologic injuries.', image: '/assets/specialties/Neuroscience/emergency-trauma.png' },
         { title: 'Awake Brain Surgery', description: 'State-of-the-art awake craniotomy for tumor and functional brain surgery.', image: '/assets/specialties/Neuroscience/awake-brain-surgery.png' }
       ],
+  
       facilities: [
         'Advanced neuroimaging (MRI, CT, PET)',
         'Dedicated stroke and epilepsy units',

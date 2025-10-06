@@ -138,12 +138,10 @@ export const doctorsData = [
     procedures: [
       {
         name: 'EEG & Video EEG',
-        count: '1200+',
         description: 'Electrophysiological monitoring for seizure diagnosis',
       },
       {
         name: 'Thrombolysis for Acute Stroke',
-        count: '600+',
         description: 'Acute reperfusion therapy for ischemic stroke',
       },
     ],
@@ -163,6 +161,358 @@ export const doctorsData = [
       address: 'Bangalore, India',
     },
   },
+
+ {
+  id: '3',
+  name: 'Dr. Rajesh Kumar Jha',
+  qualifications: 'MBBS, MD, DM',
+  specialty: 'Cardiology',
+  experience: '16+ Years',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/sample-doc.png',
+  specialtyIcon: medicalIcons.cardiology,
+  description: 'Dr. Rajesh Kumar Jha is a Cardiologist with over 16 years of experience specializing in interventional cardiology.',
+  expertise: ['Interventional Cardiology'],
+  education: [
+    { degree: 'DM (Cardiology)', institution: 'Safdarjung Hospital, New Delhi' },
+    { degree: 'MD (Medicine)', institution: 'RIMS, Ranchi' },
+    { degree: 'MBBS', institution: 'TNMC, Mumbai' }
+  ],
+  memberships: [
+    'AFESC - European Society of Cardiology',
+    'Cardiological Society of India (CSI)'
+  ],
+  procedures: [
+    {
+      name: 'Angioplasty & Stenting',
+      description: 'Minimally invasive procedure to open blocked coronary arteries',
+      
+    },
+    {
+      name: 'Coronary Angiography',
+      description: 'Diagnostic imaging of coronary arteries',
+      
+    },
+    {
+      name: 'Pacemaker Implantation',
+      description: 'Implantation of devices to regulate abnormal heart rhythms',
+      
+    }
+  ],
+  awards: [
+    { title: 'Excellence in Cardiac Care', organization: 'Indian Cardiac Society', year: '2021' },
+    { title: 'Outstanding Cardiologist Award', organization: 'AFESC', year: '2019' }
+  ],
+   publications: [
+    //  no publications listed
+    ],
+  contact: {
+    phone: '+919263630500'
+  }
+},
+
+//critical care
+{
+  id: '4',
+  name: 'Dr. Fuzail Sarwer',
+  qualifications: 'MBBS, MD (Anaesthesiology), PDCC (Cardiac Anaesthesia)',
+  specialty: 'Critical Care',
+  experience: '8+ Years',
+  image: '', // No image provided
+  specialtyIcon: '', // No icon provided
+  description: 'Dr. Fuzail Sarwer is a renowned Anaesthesiologist and Critical Care specialist with over 20 years of experience. He is known for his precise diagnosis and empathetic patient care.',
+  expertise: [
+    'Anaesthesiology & Pain Management',
+    'Critical Care Medicine',
+    'Trauma Care & Emergency Medicine',
+    'Cardiac Anesthesia',
+    'POCUS (Point Of Care Ultrasound)',
+    'Medical Education & Research Methodology'
+  ],
+  education: [
+    { degree: 'MBBS', institution: 'Kaithal Medical College', year: '' },
+    { degree: 'MD (Anaesthesiology)', institution: 'Kaithal Medical College', year: '' },
+    { degree: 'PDCC (Cardiac Anaesthesia)', institution: 'RIMS, Ranchi', year: '' }
+  ],
+  memberships: [
+    'Indian Medical Association',
+    'Indian Society Of Anesthesiologists',
+    'Indian Society of Critical Care Medicine'
+  ],
+  awards: [
+    // { title: 'Member - Indian Medical Association', organization: '', year: '' },
+    // { title: 'Member - Indian Society Of Anesthesiologists', organization: '', year: '' },
+    // { title: 'Member - Indian Society of Critical Care Medicine', organization: '', year: '' }
+  ],
+  procedures: [], // No procedures listed
+  publications: [], // No publications listed
+  contact: {
+    phone: '+919263630500',
+    email: '', // No email provided
+    clinic: '', // No clinic address provided
+    address: '' // No physical address provided
+  }
+},
+
+{
+  id: '5',
+  name: 'Dr. Shyam Prasad',
+  qualifications: 'MBBS, MD MEM',
+  specialty: 'Emergency',
+  experience: '5+ Years',
+  image: '', // No image provided
+  specialtyIcon: '', // No icon provided
+  description: 'Dr. Shyam Prasad is an experienced emergency medicine specialist with over 5 years of practice. He serves as the Consultant Head of the Department of Emergency at Raj Hospital and is affiliated with SEMI. He is dedicated to handling all kinds of emergency medical situations and trauma care.',
+  expertise: [
+    'Emergency Medical Care',
+    'All Types of Trauma'
+  ],
+  education: [
+    { degree: 'MBBS', institution: 'Smolensk State Medical Academy, Russia', year: '' },
+    { degree: 'MD MEM', institution: 'G.W.U & Amri Bhubaneswar', year: '' }
+  ],
+  memberships: [
+    'SEMI'
+  ],
+  awards: [
+    { title: 'Consultant Head', organization: 'Department Of Emergency, Raj Hospital', year: '' }
+  ],
+  procedures: [], // No procedures listed
+  publications: [], // No publications listed
+  contact: {
+    phone: '+919263630500',
+    email: '', // No email provided
+    clinic: '', // No clinic address provided
+    address: '' // No physical address provided
+  }
+},
+
+//gastroenterology
+{
+  id: '6',
+  name: 'Dr. Ravish Ranjan',
+  qualifications: 'MBBS, MD (Internal Medicine), DNB Super Specialty',
+  specialty: 'Gastroenterology',
+  experience: '12 Years',
+  image: '', // No image provided
+  specialtyIcon: '', // No icon provided
+  description: 'Dr. Ravish Ranjan is an experienced gastroenterologist specializing in advanced diagnostic and therapeutic endoscopy with 12 years of expertise. He is dedicated to providing personalized and comprehensive care for complex gastrointestinal conditions.',
+  expertise: [
+    'Gastroenterology',
+    'Therapeutic and Diagnostic Upper GI Endoscopy',
+    'Lower GI Endoscopy',
+    'ERCP',
+    'Endoscopy and EUS',
+    'IBD Clinic',
+    'Hepatology Clinic',
+    'Pancreatic Disorder',
+    'Esophageal Disorders',
+    'Enteral Stenting'
+  ],
+  education: [
+    { degree: 'MBBS', institution: 'RIMS', year: '' },
+    { degree: 'MD (Internal Medicine)', institution: 'PMCH, Patna', year: '' },
+    { degree: 'DNB Super Specialty', institution: 'IGIMS, Patna', year: '' }
+  ],
+  memberships: [], // No memberships listed
+  awards: [], // No awards listed
+  procedures: [], // No specific procedures listed
+  publications: [], // No publications listed
+  contact: {
+    phone: '+919263630500',
+    email: '', // No email provided
+    clinic: '', // No clinic address provided
+    address: '' // No physical address provided
+  }
+},
+ {
+  id: '7',
+  name: 'Dr. Ashish Kumar Modi',
+  qualifications: 'MBBS, MS (General Surgery)',
+  specialty: 'Bariatric Surgery, General & Laparoscopic Surgery',
+  experience: '12+ Years',
+  image: '', // No image provided
+  specialtyIcon: '', // No icon provided
+  description: 'Dr. Ashish Kumar Modi is a highly skilled bariatric and laparoscopic surgeon with over 12 years of experience. He specializes in advanced laparoscopic procedures, laser surgery for proctology, and diagnostic and therapeutic endoscopy, known for his precise surgical skills and compassionate patient care.',
+  expertise: [
+    'Laparoscopy Surgery',
+    'Laser Surgery For Proctology',
+    'Diagnostic and Therapeutic Endoscopy'
+  ],
+  education: [
+    { degree: 'MBBS', institution: 'JLNMCH, Bhagalpur', year: '' },
+    { degree: 'MS (General Surgery)', institution: 'RIMS, Ranchi', year: '' }
+  ],
+  memberships: [
+    'FMAS',
+    'FIAGE',
+    'Member of ASI',
+    'Member of Diabetic Foot',
+    'Treasurer in ASI Jharkhand Chapter'
+  ],
+  awards: [], // No specific awards listed
+  procedures: [], // No specific procedures listed
+  publications: [], // No publications listed
+  contact: {
+    phone: '+919263630500',
+    email: '', // No email provided
+    clinic: '', // No clinic address provided
+    address: '' // No physical address provided
+  }
+},
+
+//internal medicine
+{
+  id: '8',
+  name: 'Dr. A K Agarwal',
+  qualifications: 'MBBS, MD (Medicine)',
+  specialty: 'Internal Medicine',
+  experience: '18+ Years',
+  image: '', // No image provided
+  specialtyIcon: '', // No icon provided
+  description: 'Dr. A K Agarwal is a seasoned Internal Medicine specialist with over 18 years of experience, focusing on heart and chest-related issues.',
+  expertise: [
+    'Medicine',
+    'Heart problems',
+    'Chest related issues'
+  ],
+  education: [
+    { degree: 'MBBS', institution: '', year: '' },
+    { degree: 'MD (Medicine)', institution: 'PMCH, Patna', year: '' },
+    { degree: 'Senior Residency (Cardiology)', institution: 'GB Pant Hospital, New Delhi', year: '' },
+    { degree: '', institution: 'RIMS', year: '' }
+  ],
+  memberships: [], // Not specified
+  awards: [], // Not specified
+  procedures: [], // Not specified
+  publications: [], // Not specified
+  contact: {
+    phone: '+919263630500',
+    email: '', // Not specified
+    clinic: '', // Not specified
+    address: '' // Not specified
+  }
+},
+
+{
+  id: '9',
+  name: 'Dr. A K Sinha',
+  qualifications: 'MBBS, MD (Medicine)',
+  specialty: 'Internal Medicine',
+  experience: '25+ Years',
+  image: '', // No image provided
+  specialtyIcon: '', // No icon provided
+  description: 'Dr. A K Sinha is a highly experienced Internal Medicine specialist with over 25 years of practice, focusing on cardiology, heart problems, and chest-related issues.',
+  expertise: [
+    'Cardiology',
+    'Heart problems',
+    'Chest related issues'
+  ],
+  education: [
+    { degree: 'MBBS', institution: 'PMCH', year: '' },
+    { degree: 'MD (Medicine)', institution: '', year: '' }
+  ],
+  memberships: [], // Not specified
+  awards: [], // Not specified
+  procedures: [], // Not specified
+  publications: [], // Not specified
+  contact: {
+    phone: '+919263630500',
+    email: '', // Not specified
+    clinic: '', // Not specified
+    address: '' // Not specified
+  }
+},
+
+//nephrology
+{
+  id: '10',
+  name: 'Dr. Avinash Kumar Dubey',
+  qualifications: 'MBBS (Gold Medalist), MD (Internal Medicine), DM (Nephrology)',
+  specialty: 'Nephrology',
+  experience: '10+ Years',
+  image: '', // No image provided
+  specialtyIcon: '', // No icon provided
+  description:
+    'Dr. Avinash Kumar Dubey is a distinguished Nephrologist with over 10 years of experience, specializing in kidney transplantation, chronic kidney disease, and preventive nephrology. He is recognized for his thorough diagnostic approach and compassionate patient care.',
+  expertise: [
+    'Kidney transplantation',
+    'Chronic Kidney Disease (CKD)',
+    'Preventive Nephrology',
+    'Clinical Epidemiology'
+  ],
+  education: [
+    { degree: 'MBBS', institution: 'Mahatma Gandhi Memorial Medical College, Indore', year: '' },
+    { degree: 'MD (Internal Medicine)', institution: 'Gandhi Medical College, Indore / Bhubaneswar', year: '' },
+    { degree: 'DM (Nephrology)', institution: 'Jawaharlal Institute Of Postgraduate Medical Education And Research (JIPMER), Puducherry, India', year: '' }
+  ],
+  memberships: [], // Not specified
+  awards: [
+    { title: 'Position in ISHTM National Hematology Quiz (State Level GMC Bhopal)', year: '2011 & 2012' },
+    { title: 'Position in Oral Presentation (DM Thesis Work, Puducherry ISNSCCON)', year: '2017' }
+  ],
+  procedures: [], // Not specified
+  publications: [], // Not specified
+  contact: {
+    phone: '+919263630500',
+    email: '', // Not specified
+    clinic: '', // Not specified
+    address: '' // Not specified
+  }
+},
+
+//neuroscience
+{
+  id: '11',
+  name: 'Dr. Vivek Raj',
+  qualifications: 'MBBS, ECFMG Certified (USA) Neurosurgery, DNB Neurosurgery (Brain & Spine Surgery)',
+  specialty: 'Neurosurgery',
+  experience: '9+ Years',
+  image: '', // No image provided
+  specialtyIcon: '', // No icon provided
+  description: 'Dr. Vivek Raj is a skilled neurosurgeon with expertise in brain and spine tumor surgery, pediatric brain surgery, and emergency spine trauma. He is committed to providing advanced surgical care including awake brain surgery for better patient outcomes.',
+  expertise: [
+    'Headache',
+    'Backache & Stroke',
+    'Brain & Spine Tumor Surgery',
+    'Pediatric Brain Surgery',
+    'Emergency & Spine Trauma Surgery',
+    'Awake Brain Surgery'
+  ],
+  education: [
+    { degree: 'MBBS', institution: 'Kasturba Medical College, Manipal', year: '' },
+    { degree: 'ECFMG Certified (USA) Neurosurgery', institution: 'Sri Sathya Sai Institute of Higher Medical Science', year: '' },
+    { degree: 'DNB Neurosurgery (Brain & Spine Surgery)', institution: 'Bangalore', year: '' }
+  ],
+  memberships: [
+    'Indian Medical Association',
+    'Neurological Society of India'
+  ],
+  awards: [], // Not specified
+  procedures: [], // Not specified
+  publications: [], // Not specified
+  contact: {
+    phone: '+919263630500',
+    email: '', // Not specified
+    clinic: '', // Not specified
+    address: '' // Not specified
+  }
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 const DoctorProfile = () => {
@@ -304,7 +654,10 @@ const DoctorProfile = () => {
                       <motion.div key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.1 }} className="flex">
                         <div className="mr-4">
                           <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
-                            <span className="text-primary-600 font-bold">{edu.year.substring(2)}</span>
+                            {/* <span className="text-primary-600 font-bold">{edu.year.substring(2)}</span> */}
+                            
+                            <span className="text-primary-600 font-bold">{edu.year ? edu.year.substring(2) : 'N/A'}</span>
+
                           </div>
                           <div className="h-full w-0.5 bg-primary-100 mx-auto mt-2"></div>
                         </div>
