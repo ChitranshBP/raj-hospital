@@ -5,7 +5,7 @@ import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 
 const {
-
+ 
   FiHeart,
   FiFeather,
   FiBrain,
