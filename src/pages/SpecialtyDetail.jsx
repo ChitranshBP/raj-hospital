@@ -113,10 +113,6 @@ const SpecialtyDetail = () => {
 
 
 
-
-
-
-
       successStories: [
       { title: 'Life-Saving Emergency Angioplasty',
         patient: 'Ramesh Kumar, 58',
@@ -146,114 +142,6 @@ const SpecialtyDetail = () => {
 
     },
 
-// //neurology
-
-//     neuroscience: {
-//       id: 'neuroscience',
-//       title: 'Neurosciences',
-//       icon: FiBrain,
-//       bannerImage: 'assets/specialties/Neuroscience/Neurosciences-banner-image.png',
-//       shortDescription: 'Advanced care for neurological disorders with cutting-edge technology and specialized neurologists',
-//       longDescription: 'Our Department of Neurosciences & Neurosurgery at Raj Hospitals offers comprehensive care for disorders of the brain, spine, and nervous system. Our team of highly skilled neurologists and neurosurgeons uses advanced technology to diagnose and treat a wide range of neurological conditions, from common disorders to complex neurosurgical cases.',
-//       services: [
-//       {
-//         title: 'Neurological Diagnostics',
-//         description: 'Advanced neurological assessments including EEG, EMG, NCS, and neuroimaging studies.',
-//         image: '/assets/specialties/Neuroscience/Neurological-Diagnostics.png'
-//       },
-//       {
-//         title: 'Neurosurgery',
-//         description: 'Surgical treatment of brain and spine conditions including tumors, trauma, and congenital disorders.',
-//         image: 'assets/specialties/Neuroscience/Neurosurgery.png'
-//       },
-//       {
-//         title: 'Stroke Management',
-//         description: 'Comprehensive stroke care including acute treatment, rehabilitation, and prevention strategies.',
-//         image: 'assets/specialties/Neuroscience/Stroke.png'
-//       },
-//       {
-//         title: 'Movement Disorders',
-//         description: 'Diagnosis and treatment of conditions like Parkinson\'s disease, tremors, and dystonia.',
-//         image: 'assets/specialties/Neuroscience/Movement-Disorders.png'
-//       },
-//       {
-//         title: 'Epilepsy Management',
-//         description: 'Specialized care for seizure disorders including medical management and surgical options.',
-//         image: 'assets/specialties/Neuroscience/Epilepsy-Management.png'
-//       },
-//       {
-//         title: 'Neurorehabilitation',
-//         description: 'Comprehensive rehabilitation programs for recovery from neurological injuries and disorders.',
-//         image: 'assets/specialties/Neuroscience/Neurorehabilitation.png'
-//       }],
-
-//       facilities: [
-//       'Advanced Neurodiagnostic Lab',
-//       'State-of-the-art Neurosurgical Operation Theaters',
-//       'Neuro-Intensive Care Unit',
-//       'EEG, EMG, and NCS Facilities',
-//       'Neuroimaging Services',
-//       'Neurorehabilitation Center'],
-
-//       specialists: [
-//       {
-//         id: '7',
-//         name: 'Dr. Suresh Kumar Jha',
-//         qualification: 'MBBS, MS, MCh (Neurosurgery)',
-//         experience: '14+ Years',
-//         image: 'https://images.unsplash.com/photo-1584827172806-ea64d6d30fac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFN1cmVzaCUyMEt1bWFyJTIwSmhhJTJDJTIwYSUyMHNwZWNpYWxpc3QlMjBpbiUyMG5ldXJvc3VyZ2VyeS58ZW58MHx8fHwxNzU1MDg3MDU5fDA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-//         specialization: 'Neurosurgery'
-//       },
-//       {
-//         id: '11',
-//         name: 'Dr. Priya Sharma',
-//         qualification: 'MBBS, MD (Neurology), DM (Neurology)',
-//         experience: '12+ Years',
-//         image: 'https://images.unsplash.com/photo-1580471260026-2a8acbc7c7a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFByaXlhJTIwS3VtYXJpJTJDJTIwYSUyMHNwZWNpYWxpc3QlMjBpbiUyME5ldXJvbG9neSUyQyUyMGZlYXR1cmVkJTIwb24lMjB0aGUlMjBSYWolMjBIb3NwaXRhbHMlMjB3ZWJzaXRlLnxlbnwwfHx8fDE3NTUwODcwMzh8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-//         specialization: 'Neurology'
-//       },
-//       {
-//         id: '15',
-//         name: 'Dr. Vikash Kumar',
-//         qualification: 'MBBS, MD, DM (Neurology)',
-//         experience: '10+ Years',
-//         image: 'https://images.unsplash.com/photo-1509242547758-3ce17361523b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFZpa2FzaCUyMEt1bWFyJTJDJTIwYSUyMHNwZWNpYWxpc3QlMjBpbiUyME5ldXJvbG9neSUyQyUyMGZlYXR1cmVkJTIwb24lMjB0aGUlMjBSYWolMjBIb3NwaXRhbHMlMjB3ZWJzaXRlLnxlbnwwfHx8fDE3NTUwODcwNTJ8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-//         specialization: 'Stroke Specialist'
-//       }],
-
-//       successStories: [
-//       {
-//         title: 'Brain Tumor Removal with Precision',
-//         patient: 'Anand Singh, 45',
-//         story: 'Anand was diagnosed with a complex brain tumor located in a critical area. Our neurosurgical team used advanced neuronavigation and microsurgical techniques to remove the tumor completely while preserving all neurological functions. The precision of the surgery allowed Anand to recover quickly with minimal rehabilitation needs.',
-//         outcome: 'Complete tumor removal with full neurological recovery'
-//       },
-//       {
-//         title: 'Remarkable Stroke Recovery',
-//         patient: 'Meera Devi, 68',
-//         story: 'Meera was brought to our emergency within 3 hours of stroke symptoms. Our stroke team administered thrombolytic therapy and performed necessary interventions promptly. Following the acute treatment, she underwent intensive neurorehabilitation at our center, which helped her regain most of her lost functions.',
-//         outcome: 'Regained 90% functionality within 6 months'
-//       }],
-
-//       faqs: [
-//       {
-//         question: 'What are the warning signs of a stroke?',
-//         answer: 'Remember the acronym FAST: Face drooping, Arm weakness, Speech difficulties, Time to call emergency services. Other symptoms include sudden numbness, confusion, trouble seeing, difficulty walking, and severe headache. Immediate medical attention is crucial as "time is brain" - every minute counts in stroke treatment.'
-//       },
-//       {
-//         question: 'When should someone with recurring headaches see a neurologist?',
-//         answer: 'You should consult a neurologist if you experience severe headaches that interfere with daily activities, headaches that wake you from sleep, headaches accompanied by neurological symptoms (vision changes, weakness, numbness), headaches that worsen with physical activity, or if there\'s a significant change in your headache pattern.'
-//       },
-//       {
-//         question: 'What is epilepsy and how is it treated?',
-//         answer: 'Epilepsy is a neurological disorder characterized by recurrent seizures due to abnormal electrical activity in the brain. Treatment typically begins with anti-seizure medications. If medications aren\'t effective, other options include surgery, vagus nerve stimulation, responsive neurostimulation, or dietary therapy (ketogenic diet). Regular follow-ups are essential for medication adjustments and monitoring.'
-//       },
-//       {
-//         question: 'What is the recovery process after brain surgery?',
-//         answer: 'Recovery after brain surgery varies depending on the procedure\'s complexity and the patient\'s condition. Initial hospital stay is typically 3-10 days. Physical, occupational, and speech therapy may be needed. Most patients can return to light activities within 4-8 weeks. Complete recovery may take several months, with follow-up appointments to monitor progress.'
-//       }]
-
-//     },
 
    //gastro
     gastroenterology: {
@@ -624,7 +512,7 @@ const SpecialtyDetail = () => {
         { title: 'Neuropathies', description: 'Management of GBS, CIDP and other peripheral nerve disorders.', image: '/assets/specialties/Neuroscience/neuropathies.png' },
         { title: 'Motor Neuron Disease', description: 'Comprehensive care and symptom management.', image: '/assets/specialties/Neuroscience/mn-disease.png' },
         { title: 'Myopathies', description: 'Diagnosis and treatment of muscle disorders.', image: '/assets/specialties/Neuroscience/myopathies.png' },
-        { title: 'Movement Disorders', description: 'Extensive care for complex movement disorders.', image: 'assets/specialties/Neuroscience/Movement-Disorders.png' },
+        { title: 'Movement Disorders', description: 'Extensive care for complex movement disorders.', image: 'assets/specialties/Neuroscience/movement-disorders.png' },
         { title: 'Head Injuries', description: 'Emergency and rehabilitative care for traumatic brain injuries.', image: '/assets/specialties/Neuroscience/head-injuries.png' },
         { title: 'Brain Stroke Unit & Seizures', description: 'Specialized stroke unit with continuous monitoring and seizure control.', image: '/assets/specialties/Neuroscience/stroke-unit.png' },
         { title: 'Spinal Cord Injury, Spine Surgery', description: 'Expert treatment and surgeries for spine trauma and disorders.', image: '/assets/specialties/Neuroscience/spine-injury.png' },
@@ -1537,14 +1425,14 @@ dermatology: {
   id: 'dermatology',
   title: 'Dermatology',
   icon: FiFeather,
-  bannerImage: 'assets/specialties/Dermatology/banner-dermatology.png',
+  bannerImage: 'assets/specialties/Dermatology/Dermatology.jpg',
   shortDescription: 'Comprehensive dermatology & cosmetology treatments in Ranchi for skin, hair, and cosmetic concerns.',
   longDescription: 'The Department of Dermatology & Cosmetology at Raj Hospitals, Ranchi, is dedicated to providing advanced medical and cosmetic skincare solutions. Our expert dermatologists and cosmetologists specialize in treatments for acne, pigmentation, eczema, psoriasis, vitiligo, hair loss, and various pediatric skin concerns. We also provide advanced cosmetic procedures including anti-aging therapies, chemical peels, laser skin rejuvenation, and hair transplant surgeries. Equipped with state-of-the-art diagnostic and treatment technologies, Raj Hospitals ensures effective, safe, and personalized care for every skin and hair condition. As a leading skincare center in Ranchi, we combine clinical dermatology with cosmetic innovations for holistic skincare solutions.',
 
   services: [
-    { title: 'Hair Disorder Treatments', description: 'Comprehensive care for alopecia, hair fall, hair thinning, and baldness with hair restoration and transplant procedures.', image: 'assets/specialties/Dermatology/hair-disorder.png' },
-    { title: 'Acne & Acne Scar Treatment', description: 'Advanced medical and cosmetic dermatology solutions for acne, scars, and skin rejuvenation.', image: 'assets/specialties/Dermatology/acne-treatment.png' },
-    { title: 'Cosmetology & Anti-Aging', description: 'Specialized cosmetic dermatology treatments including laser therapy, chemical peels, wrinkle reduction, and scar removal.', image: 'assets/specialties/Dermatology/cosmetology.png' }
+    { title: 'Hair Disorder Treatments', description: 'Comprehensive care for alopecia, hair fall, hair thinning, and baldness with hair restoration and transplant procedures.', image: 'assets/specialties/Dermatology/Hair-Disorder-Treatments.jpg' },
+    { title: 'Acne & Acne Scar Treatment', description: 'Advanced medical and cosmetic dermatology solutions for acne, scars, and skin rejuvenation.', image: 'assets/specialties/Dermatology/Acne & Acne-Scar-Treatment.jpg'},
+    { title: 'Cosmetology & Anti-Aging', description: 'Specialized cosmetic dermatology treatments including laser therapy, chemical peels, wrinkle reduction, and scar removal.', image: 'assets/specialties/Dermatology/Cosmetology & Anti-Aging.jpg' }
   ],
 
   facilities: [
@@ -1616,19 +1504,19 @@ ent: {
   id: 'ent',
   title: 'ENT',
   icon: FiMic,
-  bannerImage: 'assets/specialties/ENT/banner-ent.png',
+  bannerImage: 'assets/specialties/ENT/ENT.jpg',
   shortDescription: 'Best ENT hospital in Ranchi with advanced treatments for ear, nose, throat, and voice disorders.',
   longDescription: 'The ENT Department at Raj Hospitals, Ranchi, is recognized as one of the best in Jharkhand for comprehensive ear, nose, and throat treatments. With advanced diagnostic tools, modern surgical equipment, and highly skilled ENT specialists, we provide world-class care for patients suffering from ear infections, sinus problems, throat disorders, hearing loss, allergies, and balance issues. Our facilities include advanced audiology, speech therapy, and minimally invasive surgical procedures. With dedicated care for both adults and pediatric ENT cases, Raj Hospitals ensures patient comfort, precise diagnosis, and effective treatments for improved quality of life.',
 
   services: [
-    { title: 'Rhinology & Sinus Care', description: 'Advanced diagnosis and minimally invasive procedures for sinusitis, nasal polyps, and rhinology-related conditions.', image: 'assets/specialties/ENT/rhinology.png' },
-    { title: 'Advanced Skull Base Treatment', description: 'Specialized surgical care for complex skull base and inner ear conditions.', image: 'assets/specialties/ENT/skull-base.png' },
-    { title: 'Allergic Rhinitis Treatments', description: 'Comprehensive therapies and immunotherapy for managing allergic rhinitis and chronic nasal allergies.', image: 'assets/specialties/ENT/allergy.png' },
-    { title: 'Sleep Apnea & Snoring Disorders', description: 'Specialized diagnosis and treatment for obstructive sleep apnea and snoring-related ENT conditions.', image: 'assets/specialties/ENT/sleep-apnea.png' },
-    { title: 'Functional Endoscopic Sinus Surgery (FESS)', description: 'Minimally invasive sinus surgery for chronic sinusitis and nasal blockages.', image: 'assets/specialties/ENT/fess.png' },
-    { title: 'Audiology & Hearing Aids', description: 'Hearing assessments, audiometry, and advanced hearing aids for hearing loss.', image: 'assets/specialties/ENT/audiology.png' },
-    { title: 'Speech Therapy & Voice Disorders', description: 'Phonosurgery, voice rehabilitation, and speech therapy programs.', image: 'assets/specialties/ENT/speech-therapy.png' },
-    { title: 'Pediatric ENT Care', description: 'Dedicated treatments for children including tonsillitis, adenoidectomy, and ear infections.', image: 'assets/specialties/ENT/pediatric-ent.png' }
+    { title: 'Rhinology & Sinus Care', description: 'Advanced diagnosis and minimally invasive procedures for sinusitis, nasal polyps, and rhinology-related conditions.', image: 'assets/specialties/ENT/Rhinology & Sinus-Care.jpg' },
+    { title: 'Advanced Skull Base Treatment', description: 'Specialized surgical care for complex skull base and inner ear conditions.', image: 'assets/specialties/ENT/Advanced-Skull-Base-Treatment.jpg' },
+    { title: 'Allergic Rhinitis Treatments', description: 'Comprehensive therapies and immunotherapy for managing allergic rhinitis and chronic nasal allergies.', image: 'assets/specialties/ENT/Allergic-Rhinitis-Treatments.jpg' },
+    { title: 'Sleep Apnea & Snoring Disorders', description: 'Specialized diagnosis and treatment for obstructive sleep apnea and snoring-related ENT conditions.', image: 'assets/specialties/ENT/Sleep-Apnea & Snoring-Disorders.jpg' },
+    { title: 'Functional Endoscopic Sinus Surgery (FESS)', description: 'Minimally invasive sinus surgery for chronic sinusitis and nasal blockages.', image: 'assets/specialties/ENT/Functional.jpg' },
+    { title: 'Audiology & Hearing Aids', description: 'Hearing assessments, audiometry, and advanced hearing aids for hearing loss.', image: 'assets/specialties/ENT/Audiology & Hearing-Aids.jpg' },
+    { title: 'Speech Therapy & Voice Disorders', description: 'Phonosurgery, voice rehabilitation, and speech therapy programs.', image: 'assets/specialties/ENT/Speech-Therapy & Voice-Disorders.jpg' },
+    { title: 'Pediatric ENT Care', description: 'Dedicated treatments for children including tonsillitis, adenoidectomy, and ear infections.', image: 'assets/specialties/ENT/Pediatric-ENT-Care.jpg' }
   ],
 
   facilities: [
@@ -1720,19 +1608,19 @@ eye: {
   id: 'eye',
   title: 'Eye Care',
   icon: FiEye, 
-  bannerImage: 'assets/specialties/EYE/banner-eye.png',
+  bannerImage: 'assets/specialties/Eye Care/Eye-Care.jpg',
   shortDescription: 'Best eye hospital in Ranchi offering advanced treatments for cataract, LASIK, glaucoma, and comprehensive vision care.',
   longDescription: `The Eye Care Department at Raj Hospitals, Ranchi, is recognized as a leading center for comprehensive eye care in Jharkhand. Equipped with state-of-the-art clinical care and infrastructure, we offer a full spectrum of diagnostic, medical, and surgical services for eye conditions. Our team of expert ophthalmologists and surgeons provides personalized treatment using the latest technologies for LASIK (WaveFront & Standard), cataract surgery, glaucoma care, eye ultrasounds, cornea and retina procedures, pediatric ophthalmology, and low vision aids. Raj Hospitals is committed to providing high-quality eye care with a focus on patient comfort, precise diagnosis, and outstanding treatment outcomes for patients of all ages.`,
 
   services: [
-    { title: 'LASIK (WaveFront & Standard)', description: 'Advanced laser vision correction procedures to reduce dependence on glasses and contact lenses.', image: 'assets/specialties/EYE/lasik.png' },
-    { title: 'Cataract Surgery', description: 'Phacoemulsification and intraocular lens implantation for restoring clear vision.', image: 'assets/specialties/EYE/cataract.png' },
-    { title: 'Glaucoma Diagnosis & Surgery', description: 'Comprehensive diagnostics (including intraocular pressure measurement) and advanced glaucoma surgeries.', image: 'assets/specialties/EYE/glaucoma.png' },
-    { title: 'Cornea Care & Surgery', description: 'Diagnosis, medical and surgical management of corneal diseases and injuries.', image: 'assets/specialties/EYE/cornea.png' },
-    { title: 'Retina & Vitreous Services', description: 'Advanced diagnostics (including OCT) and treatments for retinal and vitreous disorders, including diabetic retinopathy and AMD.', image: 'assets/specialties/EYE/retina.png' },
-    { title: 'Pediatric Ophthalmology', description: 'Specialized eye care for children including squint correction and pediatric eye disorders.', image: 'assets/specialties/EYE/pediatric.png' },
-    { title: 'Low Vision Aids', description: 'Provision of advanced low vision aids for patients with reduced vision.', image: 'assets/specialties/EYE/low-vision.png' },
-    { title: 'Comprehensive Eye Examination', description: 'Routine and specialized diagnostic tests including eye ultrasound, visual acuity, and imaging.', image: 'assets/specialties/EYE/exam.png' }
+    { title: 'LASIK (WaveFront & Standard)', description: 'Advanced laser vision correction procedures to reduce dependence on glasses and contact lenses.', image: 'assets/specialties/Eye Care/LASIK.jpg' },
+    { title: 'Cataract Surgery', description: 'Phacoemulsification and intraocular lens implantation for restoring clear vision.', image: 'assets/specialties/Eye Care/Cataract-Surgery.jpg' },
+    { title: 'Glaucoma Diagnosis & Surgery', description: 'Comprehensive diagnostics (including intraocular pressure measurement) and advanced glaucoma surgeries.', image: 'assets/specialties/Eye Care/Glaucoma-Diagnosis & Surgery.jpg' },
+    { title: 'Cornea Care & Surgery', description: 'Diagnosis, medical and surgical management of corneal diseases and injuries.', image: 'assets/specialties/Eye Care/Cornea-Care & Surgery.jpg' },
+    { title: 'Retina & Vitreous Services', description: 'Advanced diagnostics (including OCT) and treatments for retinal and vitreous disorders, including diabetic retinopathy and AMD.', image: 'assets/specialties/Eye Care/Retina & Vitreous-Services.jpg' },
+    { title: 'Pediatric Ophthalmology', description: 'Specialized eye care for children including squint correction and pediatric eye disorders.', image: 'assets/specialties/Eye Care/Pediatric-Ophthalmology.jpg' },
+    { title: 'Low Vision Aids', description: 'Provision of advanced low vision aids for patients with reduced vision.', image: 'assets/specialties/Eye Care/Low-Vision-Aids.jpg' },
+    { title: 'Comprehensive Eye Examination', description: 'Routine and specialized diagnostic tests including eye ultrasound, visual acuity, and imaging.', image: 'assets/specialties/Eye Care/Comprehensive-Eye-Examination.jpg' }
   ],
 
   facilities: [
@@ -1807,15 +1695,15 @@ paediatrics: {
   id: 'paediatrics',
   title: 'Paediatrics & Neonatology',
   icon: FiUser, 
-  bannerImage: 'assets/specialties/PAEDIATRICS/banner-paediatrics.png',
+  bannerImage: 'assets/specialties/Paediatrics & Neonatology/Paediatrics & Neonatology.jpg',
   shortDescription: 'Best child hospital in Ranchi with complete, compassionate pediatric care from birth to adolescence.',
   longDescription: `The Paediatrics Department at Raj Hospitals delivers comprehensive, state-of-the-art healthcare services tailored for children from birth up to sixteen years. With dedicated pediatricians, skilled nurses, and child life experts, the department ensures the highest standards in child healthcare, diagnosis, compassionate support, preventive medicine, and advanced treatments. Specialized services range from pediatric and neonatal intensive care to immunization and surgical management for various childhood diseases and health concerns.`,
 
   services: [
-    { title: 'Respiratory support (Ventilation & Surfactant)', description: 'Advanced management for respiratory distress in newborns requiring ventilators and surfactant therapy.', image: 'assets/specialties/PAEDIATRICS/ventilation.png' },
-    { title: 'Neonatal jaundice (DVET)', description: 'Management of severe newborn jaundice with double volume exchange transfusion (DVET).', image: 'assets/specialties/PAEDIATRICS/jaundice.png' },
-    { title: 'Neonatal sepsis & convulsions', description: 'Critical care for life-threatening newborn infections and treatment for neonatal convulsions.', image: 'assets/specialties/PAEDIATRICS/sepsis.png' },
-    { title: 'Common pediatric ailments', description: 'Comprehensive care for conditions such as pneumonia, pediatric asthma, allergic disorders, gastrointestinal (GI) diseases, and childhood convulsions.', image: 'assets/specialties/PAEDIATRICS/common-ailments.png' }
+    { title: 'Respiratory support (Ventilation & Surfactant)', description: 'Advanced management for respiratory distress in newborns requiring ventilators and surfactant therapy.', image: 'assets/specialties/Paediatrics & Neonatology/Respiratory-support.jpg' },
+    { title: 'Neonatal jaundice (DVET)', description: 'Management of severe newborn jaundice with double volume exchange transfusion (DVET).', image: 'assets/specialties/Paediatrics & Neonatology/Neonatal-jaundice.jpg' },
+    { title: 'Neonatal sepsis & convulsions', description: 'Critical care for life-threatening newborn infections and treatment for neonatal convulsions.', image: 'assets/specialties/Paediatrics & Neonatology/Neonatal-sepsis.jpg' },
+    { title: 'Common pediatric ailments', description: 'Comprehensive care for conditions such as pneumonia, pediatric asthma, allergic disorders, gastrointestinal (GI) diseases, and childhood convulsions.', image: 'assets/specialties/Paediatrics & Neonatology/Common-pediatric-ailments.jpg' }
   ],
 
   facilities: [
@@ -1889,98 +1777,21 @@ paediatrics: {
   }
 },
 
-//Physiotherapy & Rehabilitation
-// physiotherapy: {
-//   id: 'physiotherapy',
-//   title: 'Physiotherapy & Rehabilitation',
-//   icon: FiActivity, 
-//   bannerImage: 'assets/specialties/PHYSIOTHERAPY/banner-physio.png',
-//   shortDescription: 'Comprehensive physiotherapy center in Ranchi for orthopaedic, neurological, cardiac, and sports rehabilitation services.',
-//   longDescription: `The Physiotherapy Department at Raj Hospitals provides expert rehabilitative care tailored for patients with orthopaedic, neurological, cardiological, gynecological, and sports injuries. Our physiotherapists use advanced techniques and state-of-the-art equipment to ensure efficient pain management, post-surgical rehabilitation, injury recovery, and mobility restoration. Special emphasis is placed on cardiac physiotherapy, ergonomic lifestyle interventions, bedside physiotherapy for ICU and ward patients, and pediatric rehabilitation for children with developmental challenges. Our aim is to maximize functional independence and enhance the quality of life for every patient.`,
-
-//   services: [
-//     { title: 'Cardiology', description: 'Specialized physiotherapy protocols for cardiac rehabilitation addressing heart problems and chest-related issues.', image: 'assets/specialties/PHYSIOTHERAPY/cardiology.png' },
-//     { title: 'Heart problems', description: 'Recovery and exercise plans for patients with heart conditions, post-cardiac event or surgery.', image: 'assets/specialties/PHYSIOTHERAPY/heart.png' },
-//     { title: 'Chest related issues', description: 'Chest physiotherapy for respiratory problems, post-operative care, and pulmonary rehabilitation.', image: 'assets/specialties/PHYSIOTHERAPY/chest.png' }
-//   ],
-
-//   facilities: [
-//     'Short Wave Diathermy (SWD) & Microwave Diathermy',
-//     'TENS Therapy, IFT Therapy, Electrical Stimulation',
-//     'Pelvic & Cervical Traction',
-//     'Continuous Passive Movement (CPM) Machine',
-//     'Laser & Ultrasonic Therapy',
-//     'Hot & Cold Pack Therapy, Wax Therapy, Infra-Red Lamp Therapy',
-//     'Advanced balance, mobility and exercise equipment',
-//     'Bedside physiotherapy for ICU, HDU & wards'
-//   ],
-
-//   specialists: [
-//     {
-//       id: '801',
-//       name: 'Dr. Abhay Kr Pandey',
-//       qualification: 'PT, BPT, MPT, PGDYT, COMT, MIAP',
-//       image: 'assets/specialties/PHYSIOTHERAPY/dr-abhay-pandey.jpg',
-//       specialization: 'Orthopaedic, Neurological, and Cardiac Rehabilitation',
-//       profileLink: 'https://rajhospitals.com/dr-abhay-kr-pandey.php'
-//     }
-//   ],
-
-//   successStories: [
-//     {
-//       title: 'Stroke Rehabilitation Success',
-//       patient: 'Mr. Mehta',
-//       story: 'Post-stroke, I underwent neurological physiotherapy at Raj Hospitals, regaining mobility and independence far quicker than expected.',
-//       outcome: 'Full stroke rehabilitation and improved quality of life.'
-//     },
-//     {
-//       title: 'Cardiac Recovery',
-//       patient: 'Mrs. Sharma',
-//       story: 'After cardiac surgery, structured physiotherapy plans helped with breathing exercises and a safe return to routine activities.',
-//       outcome: 'Improved heart function and daily endurance.'
-//     }
-//   ],
-
-//   faqs: [
-//     {
-//       question: 'What conditions do physiotherapists treat?',
-//       answer: 'We manage pain, mobility problems, injuries, neurological and cardiac conditions, breathing issues, and both acute and chronic musculoskeletal disorders.'
-//     },
-//     {
-//       question: 'How is cardiac physiotherapy different?',
-//       answer: 'Cardiac physiotherapy focuses on safe rehabilitation after heart surgery, heart attacks, and chronic cardiac conditions, emphasizing breathing, endurance and safe mobility.'
-//     },
-//     {
-//       question: 'Do you provide bedside physiotherapy services?',
-//       answer: 'Yes, we offer comprehensive bedside physiotherapy for patients in ICU, HDU and wards to promote recovery and prevent complications.'
-//     },
-//     {
-//       question: 'Can physiotherapy help children with developmental delays?',
-//       answer: 'Absolutely. Pediatric physiotherapy aids in muscle strengthening, posture correction, and physical therapy for children with delayed milestones or deformities.'
-//     }
-//   ],
-
-//   contactInfo: {
-//     helpline: '+91 97714 88888',
-//     appointmentLink: 'https://rajhospitals.com/contact.php',
-//     address: 'Raj Hospitals, Ranchi, Jharkhand'
-//   }
-// },
 
 physiotherapy: {
   id: 'physiotherapy',
   title: 'Physiotherapy & Rehabilitation',
   icon: FiActivity, 
-  bannerImage: 'assets/specialties/PHYSIOTHERAPY/banner-physio.png',
+  bannerImage: 'assets/specialties/Physiotherapy & Rehabilitation/Physiotherapy & Rehabilitation.jpg',
   shortDescription: 'Comprehensive physiotherapy center in Ranchi for orthopaedic, neurological, cardiac, and sports rehabilitation services.',
   longDescription: `The Physiotherapy Department at Raj Hospitals provides expert rehabilitative care tailored for patients with orthopaedic, neurological, cardiological, gynecological, and sports injuries. Our physiotherapists use advanced techniques and state-of-the-art equipment to ensure efficient pain management, post-surgical rehabilitation, injury recovery, and mobility restoration. Special emphasis is placed on cardiac physiotherapy, ergonomic lifestyle interventions, bedside physiotherapy for ICU and ward patients, and pediatric rehabilitation for children with developmental challenges. Our aim is to maximize functional independence and enhance the quality of life for every patient.`,
 
   rehabilitationDescription: `Rehabilitation at Raj Hospitals is a holistic process aimed at restoring optimal function and independence after injury, surgery, or illness. Our multidisciplinary approach integrates physiotherapy, occupational therapy, pain management, and functional training tailored to individual patient needs. Rehabilitation programs cover stroke recovery, orthopedic post-operative care, cardiac rehabilitation, neurological conditions, and sports injury management. We focus on improving mobility, strength, balance, coordination, and daily living skills to help patients return to their normal lives with confidence and improved quality of life.`,
 
   services: [
-    { title: 'Cardiology', description: 'Specialized physiotherapy protocols for cardiac rehabilitation addressing heart problems and chest-related issues.', image: 'assets/specialties/PHYSIOTHERAPY/cardiology.png' },
-    { title: 'Heart problems', description: 'Recovery and exercise plans for patients with heart conditions, post-cardiac event or surgery.', image: 'assets/specialties/PHYSIOTHERAPY/heart.png' },
-    { title: 'Chest related issues', description: 'Chest physiotherapy for respiratory problems, post-operative care, and pulmonary rehabilitation.', image: 'assets/specialties/PHYSIOTHERAPY/chest.png' }
+    { title: 'Cardiology', description: 'Specialized physiotherapy protocols for cardiac rehabilitation addressing heart problems and chest-related issues.', image: 'assets/specialties/Physiotherapy & Rehabilitation/Cardiology.jpg' },
+    { title: 'Heart problems', description: 'Recovery and exercise plans for patients with heart conditions, post-cardiac event or surgery.', image: 'assets/specialties/Physiotherapy & Rehabilitation/Heart-problems.jpg' },
+    { title: 'Chest related issues', description: 'Chest physiotherapy for respiratory problems, post-operative care, and pulmonary rehabilitation.', image: 'assets/specialties/Physiotherapy & Rehabilitation/Chest-related-issues.jpg' }
   ],
 
   facilities: [
@@ -2054,16 +1865,16 @@ nutritionDietetics: {
   id: 'nutritionDietetics',
   title: 'Nutrition & Dietetics',
   icon: FiActivity, 
-  bannerImage: 'assets/specialties/NUTRITION/banner-nutrition.png',
+  bannerImage: 'assets/specialties/Nutrition & Dietetics/Nutrition & Dietetics.jpg',
   shortDescription: 'Comprehensive nutrition and dietary planning services to promote health, manage diseases, and support recovery.',
   longDescription: `The Nutrition & Dietetics Department at Raj Hospitals offers personalized nutritional assessments and dietary management plans aimed at optimizing health and supporting recovery from illness. Our expert dietitians provide counseling for a wide range of conditions including diabetes, cardiovascular diseases, digestive disorders, obesity, and pediatric nutrition. We emphasize evidence-based dietary interventions, lifestyle modifications, and nutritional education to help patients achieve their wellness goals and improve quality of life.`,
   
   services: [
-    { title: 'Medical Nutrition Therapy', description: 'Personalized diet plans for chronic diseases such as diabetes, hypertension, and kidney disorders.', image: 'assets/specialties/NUTRITION/medical-nutrition.png' },
-    { title: 'Weight Management', description: 'Healthy weight loss and gain programs tailored to individual needs.', image: 'assets/specialties/NUTRITION/weight-management.png' },
-    { title: 'Pediatric Nutrition', description: 'Specialized dietary care for infants, children, and adolescents to support growth and development.', image: 'assets/specialties/NUTRITION/pediatric-nutrition.png' },
-    { title: 'Prenatal & Postnatal Nutrition', description: 'Dietary counseling for mothers during pregnancy and after childbirth to support maternal and infant health.', image: 'assets/specialties/NUTRITION/prenatal.png' },
-    { title: 'Nutritional Counseling', description: 'Guidance on balanced diets, nutrient intake, and healthy eating habits.', image: 'assets/specialties/NUTRITION/counseling.png' }
+    { title: 'Medical Nutrition Therapy', description: 'Personalized diet plans for chronic diseases such as diabetes, hypertension, and kidney disorders.', image: 'assets/specialties/Nutrition & Dietetics/Medical-Nutrition-Therapy.jpg' },
+    { title: 'Weight Management', description: 'Healthy weight loss and gain programs tailored to individual needs.', image: 'assets/specialties/Nutrition & Dietetics/Weight-Management.jpg' },
+    { title: 'Pediatric Nutrition', description: 'Specialized dietary care for infants, children, and adolescents to support growth and development.', image: 'assets/specialties/Nutrition & Dietetics/Pediatric-Nutrition.jpg' },
+    { title: 'Prenatal & Postnatal Nutrition', description: 'Dietary counseling for mothers during pregnancy and after childbirth to support maternal and infant health.', image: 'assets/specialties/Nutrition & Dietetics/Prenatal & Postnatal-Nutrition.jpg' },
+    { title: 'Nutritional Counseling', description: 'Guidance on balanced diets, nutrient intake, and healthy eating habits.', image: 'assets/specialties/Nutrition & Dietetics/Nutritional-Counseling.jpg' }
   ],
 
   facilities: [
@@ -2140,16 +1951,16 @@ psychiatryMentalHealth: {
   id: 'psychiatryMentalHealth',
   title: 'Psychiatry & Mental Health',
   icon: FiHeart, 
-  bannerImage: 'assets/specialties/PSYCHIATRY/banner-psychiatry.png',
+  bannerImage: 'assets/specialties/Psychiatry & Mental Health/Psychiatry & Mental-Health.jpg',
   shortDescription: 'Comprehensive mental health services for diagnosis, treatment, and rehabilitation of psychiatric disorders.',
   longDescription: `The Psychiatry & Mental Health Department at Raj Hospitals offers compassionate, evidence-based care for individuals facing mental health challenges. Our multidisciplinary team provides diagnosis, medical management, psychotherapy, and rehabilitation for a range of psychiatric conditions including depression, anxiety disorders, bipolar disorder, schizophrenia, and stress-related illnesses. We are committed to reducing stigma and promoting mental wellness through patient-centered care, family support, and community outreach.`,
 
   services: [
-    { title: 'Psychiatric Evaluation & Diagnosis', description: 'Comprehensive assessment and identification of mental health conditions.', image: 'assets/specialties/PSYCHIATRY/diagnosis.png' },
-    { title: 'Medication Management', description: 'Safe and effective use of psychiatric medications tailored to individual needs.', image: 'assets/specialties/PSYCHIATRY/medication.png' },
-    { title: 'Psychotherapy & Counseling', description: 'Individual, family, and group therapy sessions to aid coping, recovery, and behavioral change.', image: 'assets/specialties/PSYCHIATRY/therapy.png' },
-    { title: 'Addiction Treatment', description: 'Rehabilitation and support for substance use disorders.', image: 'assets/specialties/PSYCHIATRY/addiction.png' },
-    { title: 'Child & Adolescent Psychiatry', description: 'Specialized services addressing developmental and behavioral issues in young patients.', image: 'assets/specialties/PSYCHIATRY/child-psychiatry.png' }
+    { title: 'Psychiatric Evaluation & Diagnosis', description: 'Comprehensive assessment and identification of mental health conditions.', image: 'assets/specialties/Psychiatry & Mental Health/Psychiatric-Evaluation & Diagnosis.jpg' },
+    { title: 'Medication Management', description: 'Safe and effective use of psychiatric medications tailored to individual needs.', image: 'assets/specialties/Psychiatry & Mental Health/Medication-Management.jpg' },
+    { title: 'Psychotherapy & Counseling', description: 'Individual, family, and group therapy sessions to aid coping, recovery, and behavioral change.', image: 'assets/specialties/Psychiatry & Mental Health/Psychotherapy & Counseling.jpg' },
+    { title: 'Addiction Treatment', description: 'Rehabilitation and support for substance use disorders.', image: 'assets/specialties/Psychiatry & Mental Health/Addiction-Treatment.jpg' },
+    { title: 'Child & Adolescent Psychiatry', description: 'Specialized services addressing developmental and behavioral issues in young patients.', image: 'assets/specialties/Psychiatry & Mental Health/Child & Adolescent-Psychiatry.jpg' }
   ],
 
   facilities: [
