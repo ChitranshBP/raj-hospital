@@ -422,6 +422,49 @@ export const doctorsData = [
     address: '' // Not specified
   }
 },
+{
+  id: '17',
+  name: 'Dr. Neelam',
+  qualifications: 'MBBS, MD, DNB (Orthopaedics)',
+  specialty: 'Internal Medicine',
+  experience: '8+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.internalMedicine,
+  description:
+    'Dr. Neelam is an internal medicine specialist with over 8 years of experience. She has qualifications from Banaras Hindu University (BHU), Varanasi, and DNB in Orthopaedics from VMMC, Safdarjung, New Delhi.',
+  expertise: [
+    'Pulmonary Medicine',
+    'Gastroenterology'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'MD',
+      institution: 'Banaras Hindu University (BHU), Varanasi',
+      year: ''
+    },
+    {
+      degree: 'MBBS',
+      institution: 'Banaras Hindu University (BHU), Varanasi',
+      year: ''
+    },
+    {
+      degree: 'DNB (Orthopaedics)',
+      institution: 'VMMC, CIO Safdarjung, New Delhi',
+      year: ''
+    }
+  ],
+  memberships: [],
+  awards: [],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: '',
+    address: ''
+  }
+},
+
 
 //nephrology
 {
@@ -497,6 +540,996 @@ export const doctorsData = [
     address: '' // Not specified
   }
 },
+
+//oncology
+{
+  id: '12',
+  name: 'Dr. P K Raina',
+  qualifications: 'MBBS, MS (Surgery)',
+  specialty: 'Oncology',
+  experience: '14+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.oncology,
+  description:
+    'Dr. P K Raina is a skilled oncologist and surgeon with over 14 years of experience. His areas of interest include Head & Neck Cancer, Breast Cancer, and Gynae Oncology, focusing on comprehensive cancer care and surgical oncology.',
+  expertise: [
+    'Head & Neck Cancer',
+    'Breast Cancer',
+    'Gynae Oncology'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'MS (Surgery)',
+      institution: 'Banaras Hindu University (BHU)',
+      year: ''
+    },
+    {
+      degree: 'MBBS',
+      institution: '',
+      year: ''
+    }
+  ],
+  memberships: [],
+  awards: [],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: '',
+    address: '',
+  }
+},
+
+//orthopaedics & joint replacement
+{
+  id: '13',
+  name: 'Dr. Abhijit Kumar',
+  qualifications: 'MBBS, MS (Otolaryngology), PDCC (Head and Neck Oncology)',
+  specialty: 'Otolaryngology & Head and Neck Surgery',
+  experience: '16+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.ent,
+  description:
+    'Dr. Abhijit Kumar is a Consultant Otolaryngologist and Head & Neck Surgeon with over 16 years of experience across premier surgical centers in India. His special interest includes endoscopic skull base surgery, head and neck cancer surgeries, cochlear implants, and implantable hearing aids. He has extensive academic and clinical experience, along with numerous research publications in national and international journals.',
+  expertise: [
+    'Endoscopic Skull Base Surgery',
+    'Head & Neck Cancer Surgery',
+    'Cochlear Implant',
+    'Implantable Hearing Aids',
+    'Otolaryngology Procedures',
+    'Laser Surgery in ENT'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'PDCC (Head and Neck Oncology)',
+      institution: 'Tata Memorial Centre, Mumbai',
+      year: '2010-11'
+    },
+    {
+      degree: 'MS (Otolaryngology)',
+      institution: 'Kasturba Medical College, Mangalore, Manipal University',
+      year: '2004-2006'
+    },
+    {
+      degree: 'MBBS',
+      institution: 'Government Medical College, Thiruvananthapuram, Kerala University',
+      year: '2000-2001'
+    }
+  ],
+  memberships: [
+    'Indian Medical Association (IMA)',
+    'Association of Otolaryngologists of India (AOI)',
+    'Indian Society of Otology'
+  ],
+  awards: [],
+  publications: [
+    {
+      title: 'Myoparasitism: A Rare Differential in a Case of Parotid Swelling',
+      journal: 'J Head Neck Spine Surg',
+      year: '2021'
+    },
+    {
+      title: 'Aggressive Invasive Fungal Sinusitis with MDR Pseudomonas co-infection',
+      journal: 'Int J Otorhinolaryngol Head Neck Surg',
+      year: '2021'
+    },
+    {
+      title: 'Bilateral Central Retinal Artery Occlusion in Post-COVID Mucormycosis',
+      journal: 'Cureus',
+      year: '2021'
+    },
+    {
+      title: 'Berry-Treacher Collins Syndrome with Congenital Bells Palsy',
+      journal: 'Cureus',
+      year: '2021'
+    },
+    {
+      title: 'The Role of Oral Vitamin D3 in Chronic Rhinosinusitis',
+      journal: 'J Family Med Prim Care',
+      year: '2020'
+    },
+    {
+      title: 'Sphenopalatine Ganglion Block in Endoscopic Sinus Surgery: A Comparative Study',
+      journal: 'J Allergy Ther',
+      year: '2020'
+    },
+    {
+      title: 'Balloon Catheter Sinusotomy – Review of Literature',
+      journal: 'J Allergy Ther',
+      year: '2020'
+    },
+    {
+      title: 'Osteomyelitis of the Temporal Bone: Terminology, Diagnosis, and Management',
+      journal: 'J Neurol Surg B Skull Base',
+      year: '2014'
+    },
+    {
+      title: 'Oral Microflora – A Comparative Study in HIV and Normal Patients',
+      journal: 'Indian J Otolaryngol Head Neck Surg',
+      year: '2014'
+    },
+    {
+      title: 'Management of Head and Neck Trauma in a Developing Country',
+      journal: 'Indian J Otolaryngol Head Neck Surg',
+      year: '2009'
+    }
+  ],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: '',
+    address: ''
+  }
+},
+
+{
+  id: '14',
+  name: 'Dr. Muzammil Pheroz',
+  qualifications: 'MBBS, MS (Orthopaedics), DNB (Orthopaedics)',
+  specialty: 'Orthopaedics & Joint Replacement',
+  experience: '9+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.orthopaedics,
+  description:
+    'Dr. Muzammil Pheroz is an experienced orthopaedist with over 9 years of practice. His expertise includes trauma surgery, geriatric trauma, joint replacement (hip and knee), arthroscopic surgery, spine surgery, paediatric orthopaedics, and deformity correction.',
+  expertise: [
+    'Trauma Surgery',
+    'Geriatric Trauma',
+    'Hip & Knee Joint Replacement',
+    'Arthroscopic Surgery',
+    'Spine Surgery',
+    'Paediatric Orthopaedics',
+    'Deformity Correction'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'MS (Orthopaedics)',
+      institution: 'VMMC & Safdarjung Hospital, New Delhi',
+      year: ''
+    },
+    {
+      degree: 'DNB (Orthopaedics)',
+      institution: 'VMMC, CIO Safdarjung, New Delhi',
+      year: ''
+    },
+    {
+      degree: 'MBBS',
+      institution: 'Patna Medical College and Hospital (PMCH)',
+      year: ''
+    }
+  ],
+  memberships: [
+    'National Academy Of Medical Science (MNAMS), New Delhi',
+    'Delhi Orthopaedics Association (DOA)',
+    'JOA',
+    'CZIOA',
+    'Indian Orthopaedic Association (IOA)',
+    'SICOT',
+    'Spine Surgery',
+    'Sports Medicine, Switzerland'
+  ],
+  awards: [],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: '',
+    address: ''
+  }
+},
+{
+  id: '15',
+  name: 'Dr. Abhishek Roy',
+  qualifications: 'MBBS, MS (Orthopaedics), FIJR, FIASM',
+  specialty: 'Orthopaedics (Sports Injury & Joint Replacement)',
+  experience: '6+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.orthopaedics,
+  description:
+    'Dr. Abhishek Roy specializes in orthopaedics with a focus on sports injury and joint replacement. He has over 6 years of experience and expertise in managing complex trauma, arthritis, and autoimmune neurological disorders.',
+  expertise: [
+    'Joint Replacement',
+    'Sports Injury',
+    'Complex Trauma',
+    'General Arthritis',
+    'Autoimmune & Demyelinating Disorders (Multiple Sclerosis, ADEM, NMOSD, MOGAD)'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'MS (Orthopaedics)',
+      institution: 'MAMC, New Delhi',
+      year: ''
+    },
+    {
+      degree: 'MBBS',
+      institution: 'RIMS, Ranchi',
+      year: ''
+    },
+    {
+      degree: 'FIJR',
+      institution: 'D.Y. Patil University',
+      year: ''
+    },
+    {
+      degree: 'FIASM',
+      institution: 'Indian Arthroscopy Society, Kolkata',
+      year: ''
+    }
+  ],
+  memberships: [
+    'Delhi Orthopaedic Association'
+  ],
+ awards: [
+  { title: 'MBBS Gold Medalist', year: '' },
+  { title: 'Delhi Orthopaedic Association Best Paper Award', year: '' },
+  { title: 'Healthcare Excellence Award, FIAMA', year: '' },
+  { title: 'Position in ISHTM National Hematology Quiz (State Level GMC Bhopal)', year: '2011 & 2012' },
+  { title: 'Position in Oral Presentation (DM Thesis Work, Puducherry ISNSCCON)', year: '2017' }
+],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: '',
+    address: ''
+  }
+},
+
+//pulmonology
+{
+  id: '16',
+  name: 'Dr. Suprova Chakraborty',
+  qualifications: 'DNB Respiratory Medicine',
+  specialty: 'Pulmonology',
+  experience: '18+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.pulmonology,
+  description:
+    'Dr. Suprova Chakraborty is an experienced pulmonologist with over 18 years specializing in respiratory medicine. She has worked as Senior Resident at IPGMER-SSKM Hospital Kolkata and AIIMS Deoghar, and as Consultant at Hayat Hospital & Down Town Hospital in Guwahati.',
+  expertise: [
+    'Allergies',
+    'Asthma and Lung Disease Treatment',
+    'Obstructive Sleep Apnea and Other Sleep Disorders',
+    'Tuberculosis, Bronchitis and Other Lung Conditions',
+    'Pneumonia including Covid Care Treatment',
+    'Pulmonary Rehabilitation for COPD, ILD and Long Covid',
+    'Pulmonary Function Testing'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'DNB Respiratory Medicine',
+      institution: '',
+      year: ''
+    }
+  ],
+  memberships: [],
+  awards: [],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: '',
+    address: ''
+  }
+},
+
+//urology
+
+{
+  id: '18',
+  name: 'Dr. Sunil Kumar',
+  qualifications: 'MBBS, MS (General Surgery), MCh (Urology)',
+  specialty: 'Urology',
+  experience: '12+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.urology,
+  description:
+    'Dr. Sunil Kumar is a senior urologist with over 12 years of experience. He specializes in robotic surgery, renal transplantation, laparoscopic procedures, endourology, uro-oncology, male infertility, and vascular access for hemodialysis.',
+  expertise: [
+    'Robotic Surgery',
+    'Renal Transplantation',
+    'Laparoscopic Surgery',
+    'Pancreatic Disorders',
+    'Endourology',
+    'Uro-Oncology',
+    'Male Infertility',
+    'Vascular Access for Hemodialysis'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'MS (General Surgery)',
+      institution: 'RIMS, Ranchi',
+      year: ''
+    },
+    {
+      degree: 'MBBS',
+      institution: 'PMCH, Patna',
+      year: ''
+    },
+    {
+      degree: 'MCh (Urology)',
+      institution: 'JIPMER, Puducherry',
+      year: ''
+    }
+  ],
+  memberships: [
+    'Urological Society of India',
+    'North Zone Urological Society of India',
+    'South Zone Urological Society of India'
+  ],
+  awards: [],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: '',
+    address: ''
+  }
+},
+{
+  id: '19',
+  name: 'Dr. Ved Prakash',
+  qualifications: 'MBBS, MS (General Surgery), MCh (Urology)',
+  specialty: 'Urology',
+  experience: '9+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.urology,
+  description:
+    'Dr. Ved Prakash is a urologist with over 9 years of experience specializing in endourology, reconstructive urology, uro-oncology, laparoscopic surgery, and andrology including male infertility.',
+  expertise: [
+    'Endourology',
+    'Reconstructive Urology',
+    'Uro-oncology',
+    'Laparoscopic Surgery',
+    'Andrology',
+    'Male Infertility'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'MS (General Surgery)',
+      institution: 'UCMS & GTB Hospital, Delhi',
+      year: ''
+    },
+    {
+      degree: 'MBBS',
+      institution: 'MAMC, New Delhi',
+      year: ''
+    },
+    {
+      degree: 'MCh (Urology)',
+      institution: 'KGMU, Lucknow',
+      year: ''
+    }
+  ],
+  memberships: [
+    'Europe Fellowship Award (USI)',
+    'Urological Society of India',
+    'East Zone Urological Society of India',
+    'North Zone Urological Society of India'
+  ],
+  awards: [
+    { title: 'Europe Fellowship Award (USI)', year: '' }
+  ],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: '',
+    address: ''
+  }
+},
+
+//obstetrics & gynecology
+
+{
+  id: '20',
+  name: 'Dr. Anupama Mahli',
+  qualifications: 'MBBS, MS (Obstetrics), DNB (Obs & Gyn), D.MAS',
+  specialty: 'Obstetrics & Gynaecology',
+  experience: '10+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.obstetricsGynecology,
+  description:
+    'Dr. Anupama Mahli has over 10 years of experience in obstetrics and gynaecology with expertise in laparoscopy, hysteroscopy, infertility treatment, and sonology (ultrasound).',
+  expertise: [
+    'Laparoscopy & Hysteroscopy',
+    'Infertility',
+    'Sonologist (USG)'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'MS (Obstetrics)',
+      institution: 'West Bengal University of Health Sciences (WBUHS)',
+      year: ''
+    },
+    {
+      degree: 'DNB (Obs & Gyn)',
+      institution: '',
+      year: ''
+    },
+    {
+      degree: 'MBBS',
+      institution: 'RIMS',
+      year: ''
+    },
+    {
+      degree: 'D.MAS',
+      institution: '',
+      year: ''
+    }
+  ],
+  memberships: [
+    'Senior Resident - PGIMER, Kolkata',
+    'The Federation of Obstetric and Gynaecological Societies of India (FOGSI)',
+    'Bengal Obstetrics & Gynaecological Society (BOGS)'
+  ],
+  awards: [],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: '',
+    address: ''
+  }
+},
+{
+  id: '21',
+  name: 'Dr. Pushpa Sinha',
+  qualifications: 'MBBS, MD (OBG), DGO',
+  specialty: 'Obstetrics & Gynaecology',
+  experience: '10+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.obstetricsGynecology,
+  description:
+    'Dr. Pushpa Sinha has over 10 years of experience in obstetrics and gynaecology, with interests in research on gynae and obstetric care, high-risk pregnancy, adolescent gynecology, puberty, infertility, menopause, infectious diseases, and ultrasound with color Doppler.',
+  expertise: [
+    'Research in Gynae & Obstetric Care',
+    'High Risk of Pregnancy',
+    'Adolescent Gynecology',
+    'Puberty',
+    'Infertility',
+    'Menopause',
+    'Infectious Diseases',
+    'Ultrasound & Colour Doppler'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'MD (OBG)',
+      institution: 'Patna Medical College',
+      year: ''
+    },
+    {
+      degree: 'MBBS',
+      institution: '',
+      year: ''
+    },
+    {
+      degree: 'DGO',
+      institution: '',
+      year: ''
+    }
+  ],
+  memberships: [],
+  awards: [],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: '',
+    address: ''
+  }
+},
+
+//aesthetics & critical care
+
+{
+  id: '22',
+  name: 'Dr. Pankaj Kumar',
+  qualifications: 'MBBS, MS (General Surgery), MCh (Plastic Surgery)',
+  specialty: 'Aesthetic and Reconstructive Surgery',
+  experience: '10+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.plasticSurgery,
+  description:
+    'Dr. Pankaj Kumar is a renowned Plastic, Cosmetic, and Reconstructive Surgeon based in Ranchi with over 10 years of experience. He is associated with Raj Hospital and Srijan Plastic Cosmetic and Micro Surgery Clinic, known for attention to accurate diagnosis and empathetic patient care.',
+  expertise: [
+    'Nose Reshaping',
+    'Lower Body Lift',
+    'Scar Revision Surgery',
+    'Ear Reconstruction',
+    'Acne/Pimple Scar Treatment',
+    'Non-Surgical Eye Lift'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'MCh (Plastic Surgery)',
+      institution: 'Patna Medical College',
+      year: ''
+    },
+    {
+      degree: 'MBBS',
+      institution: 'Tilka Manjhi Bhagalpur University',
+      year: ''
+    }
+  ],
+  memberships: [],
+  awards: [
+    { title: 'Global Healthcare Excellence Award', year: '' }
+  ],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: 'Srijan Plastic Cosmetic & Micro Surgery Clinic, Kanka, Ranchi',
+    address: '2nd Floor, Roshpa Tower, Mahatma Gandhi Main Road, Ranchi'
+  }
+},
+
+//dental care
+{
+  id: '23',
+  name: 'Dr. Suraj Mani Bhattacharjee',
+  qualifications: 'BDS',
+  specialty: 'Dentistry',
+  experience: '10+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.dentistry,
+  description:
+    'Dr. Suraj Mani Bhattacharjee is an experienced dentist with over 10 years of expertise, having performed 5000+ root canal treatments and multiple mouth rehabilitations. He has served as clinical head in leading dental chains and worked as a cosmetic dentist for Mahavir International NGO.',
+  expertise: [
+    'Cosmetic Dentistry',
+    'Implantology',
+    'Laser Specialist',
+    'Smile Designer',
+    'Dental Filling',
+    'Root Canal Treatment (RCT)',
+    'Crowns & Bridges',
+    'Teeth Whitening (Bleaching)',
+    'General Dentistry',
+    'Scaling & Polishing',
+    'Preventive Dentistry',
+    'Veneers',
+    'Removable Partial Dentures',
+    'Complete Dentures',
+    'Extractions and Surgical Extractions',
+    'Implant Surgery',
+    'Laser Gum Surgery',
+    'Treatment of Pyorrhea',
+    'Child Dentistry',
+    'Braces and Realignment of Crooked Teeth'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'BDS',
+      institution: 'Rajiv Gandhi University of Health Science, Bangalore, Karnataka',
+      year: ''
+    }
+  ],
+  memberships: [],
+  awards: [],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: '',
+    address: ''
+  }
+},
+
+//dermatology
+{
+  id: '24',
+  name: 'Dr. Piyali Banerjee',
+  qualifications: 'MBBS, DVDL (Dermatology, Venereology, Leprosy)',
+  specialty: 'Dermatology and Cosmetology',
+  experience: '5+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.dermatology,
+  description:
+    'Dr. Piyali Banerjee is a skilled dermatologist and cosmetologist with over 5 years of experience, specializing in hair disorders, acne, and cosmetology. She has held advisory roles and received multiple awards for her academic and clinical excellence.',
+  expertise: [
+    'Hair Disorder',
+    'Acne',
+    'Cosmetology'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'DVDL (Dermatology, Venereology, Leprosy)',
+      institution: 'RIMS, Ranchi',
+      year: ''
+    },
+    {
+      degree: 'MBBS',
+      institution: '',
+      year: ''
+    }
+  ],
+  memberships: [
+    'Life Membership IADV (LM/J/7586)'
+  ],
+  awards: [
+    { title: 'First Prize in Award Paper Presentation, Asia Aesthetica', year: '2019' },
+    { title: 'Award Paper Presentation, International Dermacon, New Delhi', year: '2013' }
+  ],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: '',
+    address: ''
+  },
+  pastRoles: [
+    'Advisory Dermatologist at Dr. Pauls Multispeciality Clinic (Dec 2015 - May 2019)'
+  ]
+},
+
+//ent
+{
+  id: '25',
+  name: 'Dr. Abhishek KR Ramadhin',
+  qualifications: 'MBBS, MD (ENT), MS (ENT), FARS',
+  specialty: 'ENT',
+  experience: '14+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.ent,
+  description:
+    'Dr. Abhishek KR Ramadhin is a leading ENT specialist at Raj Hospital, Ranchi, with over 14 years of experience. He specializes in Rhinology, Advanced Skull Base Treatment, Allergy Rhinitis, and Sleep Apnea. Dr. Ramadhin is known for his accurate diagnosis, empathetic patient care, and expertise in complex ENT surgeries.',
+  expertise: [
+    'Rhinology',
+    'Advanced Skull Base Treatment',
+    'Allergy Rhinitis',
+    'Sleep Apnea'
+  ],
+  procedures: [
+    'Functional Endoscopic Sinus Surgery (FESS)',
+    'Reconstructive Middle Ear Surgery',
+    'Skull Base Surgery'
+  ],
+  education: [
+    {
+      degree: 'MBBS',
+      institution: 'G.S. Medical College',
+      year: ''
+    },
+    {
+      degree: 'MS (ENT)',
+      institution: 'Jawaharlal Nehru Medical College',
+      year: ''
+    },
+    {
+      degree: 'MD (ENT)',
+      institution: 'American Rhinologic Society, USA',
+      year: ''
+    },
+    {
+      degree: 'Fellowship of the American Rhinologic Society (FARS)',
+      institution: '',
+      year: ''
+    }
+  ],
+  memberships: [
+    'American Rhinologic Society',
+    'Fellowship of the American Rhinologic Society (FARS)'
+  ],
+  awards: [
+    { title: 'Award in ENT Surgery', year: '' }
+  ],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: 'Raj Hospital, Ranchi',
+    address: 'Behind Central, Opposite Roshpa Tower, Ratu Road, Ranchi'
+  }
+},
+
+//chatgpt content about ent doctor
+{
+  id: '26',
+  name: 'Dr. T G N Sinha',
+  qualifications: 'MBBS, MS, FICS',
+  specialty: 'ENT',
+  experience: '40+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.ent,
+  description:
+    'Dr. T G N Sinha is a distinguished ENT specialist at Raj Hospital, Ranchi, with over 40 years of experience. He is renowned for providing expert care in diagnosing and treating a wide range of ear, nose, and throat disorders with advanced technology and personalized patient care.',
+  expertise: [
+    'Ear, Nose, and Throat Disorders',
+    'Phonosurgery',
+    'Laryngology',
+    'Voice Disorders',
+    'ENT Emergencies',
+    'Audiology',
+    'Speech Therapy'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'MBBS',
+      institution: '',
+      year: ''
+    },
+    {
+      degree: 'MS',
+      institution: '',
+      year: ''
+    },
+    {
+      degree: 'Fellow of the International College of Surgeons (FICS)',
+      institution: '',
+      year: ''
+    }
+  ],
+  memberships: [
+    'International College of Surgeons (FICS)'
+  ],
+  awards: [],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: 'Raj Hospital, Ranchi',
+    address: 'Behind Central, Opposite Roshpa Tower, Ratu Road, Ranchi'
+  }
+},
+
+{
+  id: '27',
+  name: 'Dr. Ranajan Kumar Jha',
+  qualifications: 'MBBS, MS, FESS',
+  specialty: 'ENT',
+  experience: '15+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.ent,
+  description:
+    'Dr. Ranajan Kumar Jha is an experienced ENT specialist at Raj Hospital, Ranchi, with expertise in functional endoscopic sinus surgery (FESS) and comprehensive treatment of ear, nose, and throat conditions. He is recognized for his patient-centric approach and advanced surgical skills.',
+  expertise: [
+    'Functional Endoscopic Sinus Surgery (FESS)',
+    'Management of Nasal and Sinus Disorders',
+    'Ear, Nose, and Throat Care',
+    'Skull Base and Endoscopic Surgeries'
+  ],
+  procedures: [
+  {
+    name: 'FESS',
+    description: 'Minimally invasive surgery using an endoscope to clear blockages and improve sinus drainage and function.'
+  },
+  {
+    name: 'Microsurgery',
+    description: 'Surgical procedures performed under magnification to operate on tiny anatomical structures with precision.'
+  },
+  {
+    name: 'Endoscopic Surgeries',
+    description: 'Surgeries performed with the aid of an endoscope, allowing minimally invasive access to internal organs and cavities.'
+  }
+],
+
+  education: [
+    {
+      degree: 'MS (ENT)',
+      institution: '',
+      year: ''
+    },
+    {
+      degree: 'MBBS',
+      institution: '',
+      year: ''
+    },
+    {
+      degree: 'Fellowship in Functional Endoscopic Sinus Surgery (FESS)',
+      institution: '',
+      year: ''
+    }
+  ],
+  memberships: [],
+  awards: [],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: 'Raj Hospital, Ranchi',
+    address: 'Behind Central, Opposite Roshpa Tower, Ratu Road, Ranchi'
+  }
+},
+
+//eyecare
+//no doctors avl 
+
+//nutrition & dietetics
+
+
+//pediatrics 
+{
+  id: '28',
+  name: 'Dr. Sainik Dutta',
+  qualifications: 'MBBS, MD Pediatrics',
+  specialty: 'Pediatrics and Neonatology',
+  experience: '10+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.pediatrics,
+  description:
+    'Dr. Sainik Dutta is a senior consultant in Pediatrics and Neonatology with expertise in respiratory distress requiring ventilatory support, neonatal jaundice, neonatal sepsis, convulsions, and common pediatric ailments such as pneumonia and allergic disorders.',
+  expertise: [
+    'Respiratory distress requiring ventilatory support and surfactant therapy',
+    'Neonatal jaundice requiring DVET',
+    'Neonatal sepsis',
+    'Neonatal convulsion',
+    'Pneumonia',
+    'Pediatric asthma and allergic disorders',
+    'Gastrointestinal diseases',
+    'Convulsions'
+  ],
+  procedures: [],
+  education: [
+    {
+      degree: 'MD Pediatrics',
+      institution: 'PGIMS, Rohtak',
+      year: ''
+    },
+    {
+      degree: 'MBBS',
+      institution: 'N.R.S Medical College, Kolkata',
+      year: ''
+    }
+  ],
+  memberships: [],
+  awards: [],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: '',
+    address: ''
+  }
+},
+
+//physiotherapy & rehabilitation
+{
+  id: '29',
+  name: 'Dr. Abhay Kr Pandey',
+  qualifications: 'BPT, MPT, PGDYT, COMT, MIAP',
+  specialty: 'Physiotherapy',
+  experience: '25+ Years',
+  image: '',
+  specialtyIcon: medicalIcons.physiotherapy,
+  description:
+    'Dr. Abhay Kr Pandey is a senior physiotherapist at Raj Hospital, Ranchi, with over 25 years of experience specializing in orthopedic and traumatology physiotherapy, yoga therapy, and manual therapy. His interests include cardiology, heart problems, and chest-related issues.',
+  expertise: [
+    'Orthopedic & Traumatology Physiotherapy',
+    'Yoga Therapy',
+    'Manual Therapy',
+    'Cardiology',
+    'Chest Related Issues'
+  ],
+  procedures: [
+    {
+      name: 'Short Wave Diathermy (SWD)',
+      description: 'Use of high-frequency electromagnetic waves for deep tissue heating to relieve pain and promote healing.'
+    },
+    {
+      name: 'TENS Therapy',
+      description: 'Transcutaneous electrical nerve stimulation for pain relief by stimulating nerves through the skin.'
+    },
+    {
+      name: 'IFT Therapy',
+      description: 'Interferential therapy using electrical currents to reduce pain and inflammation.'
+    },
+    {
+      name: 'Pelvic & Cervical Traction',
+      description: 'Mechanical pulling of the spine or pelvis to relieve pressure on spinal nerves and relieve pain.'
+    },
+    {
+      name: 'CPM Machine',
+      description: 'Continuous passive motion therapy to improve joint mobility post-surgery or injury.'
+    },
+    {
+      name: 'Laser Therapy',
+      description: 'Use of focused light to reduce inflammation, pain, and accelerate tissue repair.'
+    },
+    {
+      name: 'Ultrasonic Therapy',
+      description: 'Ultrasound waves used to promote tissue healing and reduce pain.'
+    },
+    {
+      name: 'Hot Pack Therapy',
+      description: 'Application of heat to relax muscles and improve blood flow.'
+    },
+    {
+      name: 'Wax Therapy',
+      description: 'Use of warm paraffin wax to relieve stiffness and pain in joints.'
+    },
+    {
+      name: 'Infra-Red Lamp Therapy',
+      description: 'Heat therapy using infrared lamps to increase circulation and reduce muscle pain.'
+    },
+    {
+      name: 'Electrical Stimulation',
+      description: 'Application of electrical currents to muscles to improve strength and reduce pain.'
+    },
+    {
+      name: 'Microwave Diathermy',
+      description: 'Deep heating therapy using microwave energy to relieve pain and promote healing.'
+    }
+  ],
+  education: [
+    {
+      degree: 'Bachelor of Physiotherapy (BPT)',
+      institution: 'Meenakshi Medical College, Chennai',
+      year: ''
+    },
+    {
+      degree: 'Master Of Physiotherapy (MPT) - Yoga Therapy',
+      institution: 'Saveetha Medical College, Chennai',
+      year: ''
+    },
+    {
+      degree: 'Post Graduate Diploma In Yoga (COMT)',
+      institution: 'Annamalai University, Chidambaram',
+      year: ''
+    },
+    {
+      degree: 'Certificate Of Manual Therapy (COMT)',
+      institution: '',
+      year: ''
+    }
+  ],
+  memberships: [],
+  awards: [],
+  publications: [],
+  contact: {
+    email: '',
+    phone: '+919263630500',
+    clinic: 'Raj Hospital, Main Road, Ranchi',
+    address: 'Opposite Roshpa Tower, Mahatma Gandhi Main Rd, Ranchi, Jharkhand'
+  }
+},
+
+//psychiatry & mental health
+
+// no doctors avl
+
+
+
+
+
+
+
+
+
+
 
 
 
