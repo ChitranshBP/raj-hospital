@@ -1202,7 +1202,7 @@ export const doctorsData = [
   qualifications: 'MBBS, MD (ENT), MS (ENT), FARS',
   specialty: 'ENT',
   experience: '14+ Years',
-  image: '',
+  image: 'assets/specialties/ENT/ENT-dr.side.png',
   specialtyIcon: medicalIcons.ent,
   description:
     'Dr. Abhishek KR Ramadhin is a leading ENT specialist at Raj Hospital, Ranchi, with over 14 years of experience. He specializes in Rhinology, Advanced Skull Base Treatment, Allergy Rhinitis, and Sleep Apnea. Dr. Ramadhin is known for his accurate diagnosis, empathetic patient care, and expertise in complex ENT surgeries.',
@@ -1423,7 +1423,7 @@ export const doctorsData = [
   qualifications: 'BPT, MPT, PGDYT, COMT, MIAP',
   specialty: 'Physiotherapy',
   experience: '25+ Years',
-  image: '',
+  image: 'assets/specialties/Physiotherapy & Rehabilitation/Physiotherapy-side.png',
   specialtyIcon: medicalIcons.physiotherapy,
   description:
     'Dr. Abhay Kr Pandey is a senior physiotherapist at Raj Hospital, Ranchi, with over 25 years of experience specializing in orthopedic and traumatology physiotherapy, yoga therapy, and manual therapy. His interests include cardiology, heart problems, and chest-related issues.',

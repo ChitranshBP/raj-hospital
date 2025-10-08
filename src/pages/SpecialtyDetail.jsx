@@ -1536,7 +1536,7 @@ ent: {
       name: 'Dr. Abhishek Kr. Ramadhin',
       qualification: 'MBBS, MD, MS, FARS',
       experience: '15+ Years',
-      image: 'assets/specialties/ENT/dr-abhishek-ramadhin.jpg',
+      image: 'assets/specialties/ENT/ENT-dr.side.png',
       specialization: 'Advanced ENT Surgeries & Voice Disorders'
     },
     // {
@@ -1810,7 +1810,7 @@ physiotherapy: {
       id: '801',
       name: 'Dr. Abhay Kr Pandey',
       qualification: 'PT, BPT, MPT, PGDYT, COMT, MIAP',
-      image: 'assets/specialties/PHYSIOTHERAPY/dr-abhay-pandey.jpg',
+      image: 'assets/specialties/Physiotherapy & Rehabilitation/Physiotherapy-dr.front.png',
       specialization: 'Orthopaedic, Neurological, and Cardiac Rehabilitation',
       profileLink: 'https://rajhospitals.com/dr-abhay-kr-pandey.php'
     }
