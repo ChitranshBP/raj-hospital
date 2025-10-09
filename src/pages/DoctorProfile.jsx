@@ -25,7 +25,7 @@ const medicalIcons = {
 // Centralized doctors data — add more objects here to extend the app
 export const doctorsData = [
   {
-    id: '1',
+    id: 'rajesh-sinha',
     name: 'Dr. Rajesh Kumar Sinha',
     qualifications: 'MBBS, MD, DM',
     specialty: 'Cardiology',
@@ -126,7 +126,7 @@ export const doctorsData = [
 
   // Example second doctor — extend or copy this block to add more
   {
-    id: '2',
+    id: 'meera-sharma',
     name: 'Dr. Meera Sharma',
     qualifications: 'MBBS, MD',
     specialty: 'Neurology',
@@ -163,7 +163,7 @@ export const doctorsData = [
   },
 
  {
-  id: '3',
+  id: 'rajesh-jha',
   name: 'Dr. Rajesh Kumar Jha',
   qualifications: 'MBBS, MD, DM',
   specialty: 'Cardiology',
@@ -212,7 +212,7 @@ export const doctorsData = [
 
 //critical care
 {
-  id: '4',
+  id: 'fuzail-sarwer',
   name: 'Dr. Fuzail Sarwer',
   qualifications: 'MBBS, MD (Anaesthesiology), PDCC (Cardiac Anaesthesia)',
   specialty: 'Critical Care',
@@ -254,7 +254,7 @@ export const doctorsData = [
 },
 
 {
-  id: '5',
+  id: 'shyam-prasad',
   name: 'Dr. Shyam Prasad',
   qualifications: 'MBBS, MD MEM',
   specialty: 'Emergency',
@@ -288,7 +288,7 @@ export const doctorsData = [
 
 //gastroenterology
 {
-  id: '6',
+  id: 'ravish-ranjan',
   name: 'Dr. Ravish Ranjan',
   qualifications: 'MBBS, MD (Internal Medicine), DNB Super Specialty',
   specialty: 'Gastroenterology',
@@ -325,7 +325,7 @@ export const doctorsData = [
   }
 },
  {
-  id: '7',
+  id: 'ashish-modi',
   name: 'Dr. Ashish Kumar Modi',
   qualifications: 'MBBS, MS (General Surgery)',
   specialty: 'Bariatric Surgery, General & Laparoscopic Surgery',
@@ -362,7 +362,7 @@ export const doctorsData = [
 
 //internal medicine
 {
-  id: '8',
+  id: 'ak-agarwal',
   name: 'Dr. A K Agarwal',
   qualifications: 'MBBS, MD (Medicine)',
   specialty: 'Internal Medicine',
@@ -394,7 +394,7 @@ export const doctorsData = [
 },
 
 {
-  id: '9',
+  id: 'ak-sinha',
   name: 'Dr. A K Sinha',
   qualifications: 'MBBS, MD (Medicine)',
   specialty: 'Internal Medicine',
@@ -423,7 +423,7 @@ export const doctorsData = [
   }
 },
 {
-  id: '17',
+  id: 'neelam',
   name: 'Dr. Neelam',
   qualifications: 'MBBS, MD, DNB (Orthopaedics)',
   specialty: 'Internal Medicine',
@@ -468,7 +468,7 @@ export const doctorsData = [
 
 //nephrology
 {
-  id: '10',
+  id: 'avinash-dubey',
   name: 'Dr. Avinash Kumar Dubey',
   qualifications: 'MBBS (Gold Medalist), MD (Internal Medicine), DM (Nephrology)',
   specialty: 'Nephrology',
@@ -505,7 +505,7 @@ export const doctorsData = [
 
 //neuroscience
 {
-  id: '11',
+  id: 'vivek-raj',
   name: 'Dr. Vivek Raj',
   qualifications: 'MBBS, ECFMG Certified (USA) Neurosurgery, DNB Neurosurgery (Brain & Spine Surgery)',
   specialty: 'Neurosurgery',
@@ -543,12 +543,12 @@ export const doctorsData = [
 
 //oncology
 {
-  id: '12',
+  id: 'pk-raina',
   name: 'Dr. P K Raina',
   qualifications: 'MBBS, MS (Surgery)',
   specialty: 'Oncology',
   experience: '14+ Years',
-  image: '',
+  image: 'assets/specialties/Oncology/Dr.image-front.jpg',
   specialtyIcon: medicalIcons.oncology,
   description:
     'Dr. P K Raina is a skilled oncologist and surgeon with over 14 years of experience. His areas of interest include Head & Neck Cancer, Breast Cancer, and Gynae Oncology, focusing on comprehensive cancer care and surgical oncology.',
@@ -583,7 +583,7 @@ export const doctorsData = [
 
 //orthopaedics & joint replacement
 {
-  id: '13',
+  id: 'abhijit-kumar',
   name: 'Dr. Abhijit Kumar',
   qualifications: 'MBBS, MS (Otolaryngology), PDCC (Head and Neck Oncology)',
   specialty: 'Otolaryngology & Head and Neck Surgery',
@@ -685,12 +685,12 @@ export const doctorsData = [
 },
 
 {
-  id: '14',
+  id: 'Muzammil-pheroz',
   name: 'Dr. Muzammil Pheroz',
   qualifications: 'MBBS, MS (Orthopaedics), DNB (Orthopaedics)',
   specialty: 'Orthopaedics & Joint Replacement',
   experience: '9+ Years',
-  image: '',
+  image: 'assets/specialties/Orthopaedics/Dr.front.jpg',
   specialtyIcon: medicalIcons.orthopaedics,
   description:
     'Dr. Muzammil Pheroz is an experienced orthopaedist with over 9 years of practice. His expertise includes trauma surgery, geriatric trauma, joint replacement (hip and knee), arthroscopic surgery, spine surgery, paediatric orthopaedics, and deformity correction.',
@@ -741,7 +741,7 @@ export const doctorsData = [
   }
 },
 {
-  id: '15',
+  id: 'abhishek-roy',
   name: 'Dr. Abhishek Roy',
   qualifications: 'MBBS, MS (Orthopaedics), FIJR, FIASM',
   specialty: 'Orthopaedics (Sports Injury & Joint Replacement)',
@@ -801,7 +801,7 @@ export const doctorsData = [
 
 //pulmonology
 {
-  id: '16',
+  id: 'suprova-chakraborty',
   name: 'Dr. Suprova Chakraborty',
   qualifications: 'DNB Respiratory Medicine',
   specialty: 'Pulmonology',
@@ -841,7 +841,7 @@ export const doctorsData = [
 //urology
 
 {
-  id: '18',
+  id: 'sunil-kumar',
   name: 'Dr. Sunil Kumar',
   qualifications: 'MBBS, MS (General Surgery), MCh (Urology)',
   specialty: 'Urology',
@@ -893,7 +893,7 @@ export const doctorsData = [
   }
 },
 {
-  id: '19',
+  id: 'ved-prakash',
   name: 'Dr. Ved Prakash',
   qualifications: 'MBBS, MS (General Surgery), MCh (Urology)',
   specialty: 'Urology',
@@ -949,7 +949,7 @@ export const doctorsData = [
 //obstetrics & gynecology
 
 {
-  id: '20',
+  id: 'anupama-mahli',
   name: 'Dr. Anupama Mahli',
   qualifications: 'MBBS, MS (Obstetrics), DNB (Obs & Gyn), D.MAS',
   specialty: 'Obstetrics & Gynaecology',
@@ -1001,7 +1001,7 @@ export const doctorsData = [
   }
 },
 {
-  id: '21',
+  id: 'pushpa-sinha',
   name: 'Dr. Pushpa Sinha',
   qualifications: 'MBBS, MD (OBG), DGO',
   specialty: 'Obstetrics & Gynaecology',
@@ -1052,7 +1052,7 @@ export const doctorsData = [
 //aesthetics & critical care
 
 {
-  id: '22',
+  id: 'pankaj-kumar',
   name: 'Dr. Pankaj Kumar',
   qualifications: 'MBBS, MS (General Surgery), MCh (Plastic Surgery)',
   specialty: 'Aesthetic and Reconstructive Surgery',
@@ -1097,7 +1097,7 @@ export const doctorsData = [
 
 //dental care
 {
-  id: '23',
+  id: 'suraj-mani-bhattacharjee',
   name: 'Dr. Suraj Mani Bhattacharjee',
   qualifications: 'BDS',
   specialty: 'Dentistry',
@@ -1149,12 +1149,12 @@ export const doctorsData = [
 
 //dermatology
 {
-  id: '24',
+  id: 'piyali-banerjee',
   name: 'Dr. Piyali Banerjee',
   qualifications: 'MBBS, DVDL (Dermatology, Venereology, Leprosy)',
   specialty: 'Dermatology and Cosmetology',
   experience: '5+ Years',
-  image: '',
+  image: 'assets/specialties/Dermatology/front.jpeg',
   specialtyIcon: medicalIcons.dermatology,
   description:
     'Dr. Piyali Banerjee is a skilled dermatologist and cosmetologist with over 5 years of experience, specializing in hair disorders, acne, and cosmetology. She has held advisory roles and received multiple awards for her academic and clinical excellence.',
@@ -1197,7 +1197,7 @@ export const doctorsData = [
 
 //ent
 {
-  id: '25',
+  id: 'abhishek-ramadhin',
   name: 'Dr. Abhishek KR Ramadhin',
   qualifications: 'MBBS, MD (ENT), MS (ENT), FARS',
   specialty: 'ENT',
@@ -1257,7 +1257,7 @@ export const doctorsData = [
 
 //chatgpt content about ent doctor
 {
-  id: '26',
+  id: 'tg-n-sinha',
   name: 'Dr. T G N Sinha',
   qualifications: 'MBBS, MS, FICS',
   specialty: 'ENT',
@@ -1307,7 +1307,7 @@ export const doctorsData = [
 },
 
 {
-  id: '27',
+  id: 'ranajan-jha',
   name: 'Dr. Ranajan Kumar Jha',
   qualifications: 'MBBS, MS, FESS',
   specialty: 'ENT',
@@ -1373,7 +1373,7 @@ export const doctorsData = [
 
 //pediatrics 
 {
-  id: '28',
+  id: 'sainik-dutta',
   name: 'Dr. Sainik Dutta',
   qualifications: 'MBBS, MD Pediatrics',
   specialty: 'Pediatrics and Neonatology',
@@ -1418,7 +1418,7 @@ export const doctorsData = [
 
 //physiotherapy & rehabilitation
 {
-  id: '29',
+  id: 'abhay-pandey',
   name: 'Dr. Abhay Kr Pandey',
   qualifications: 'BPT, MPT, PGDYT, COMT, MIAP',
   specialty: 'Physiotherapy',

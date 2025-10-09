@@ -167,21 +167,7 @@ const SpecialtyDetail = () => {
         { title: 'Pancreatitis, Reflux, Peptic Ulcer Treatment', description: 'Expert medical and procedural management of pancreatitis, acid reflux, and peptic ulcers.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Pancreatitis,-Reflux,-Peptic-Ulcer-Treatment.png' },
         { title: 'Abdominal Pain & Fatty Liver Treatment', description: 'Diagnosis and treatment of chronic abdominal pain and fatty liver disease.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Abdominal-Pain & Fatty-Liver-Treatment.png' },
         { title: 'Bile Duct Surgery & GI Stenting', description: 'Surgical treatments and stenting for bile duct and gastrointestinal tract disorders.', image: 'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Bile-Duct-Surgery & GI-Stenting.png' },
-        { title: 'Therapeutic and Diagnostic Upper GI Endoscopy', description: 'Advanced diagnostic and therapeutic procedures for the upper gastrointestinal tract.', image: '/assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Therapeutic and Diagnostic.png'},
-        { title: 'Lower GI Endoscopy (Colonoscopy)', description: 'Examination and treatment of the lower gastrointestinal tract using colonoscopy techniques.', image:'assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Lower GI Endoscopy (Colonoscopy).png' },
-        { title: 'ERCP (Endoscopic Retrograde Cholangiopancreatography)', description: 'Diagnostic and therapeutic procedure to treat biliary and pancreatic duct disorders.', image: '/assets/specialties/Gastroenterology/ercp.png' },
-        { title: 'Endoscopic Ultrasound (EUS)', description: 'Advanced imaging technique combining endoscopy and ultrasound to diagnose pancreatic and GI disorders.', image: '/assets/specialties/Gastroenterology/eus.png' },
-        { title: 'Inflammatory Bowel Disease (IBD) Clinic', description: 'Specialized care for Crohn\'s disease, ulcerative colitis, and other inflammatory bowel diseases.', image: '/assets/specialties/Gastroenterology/ibd-clinic.png' },
-        { title: 'Hepatology Clinic', description: 'Expert management of liver diseases including hepatitis and fatty liver disease.', image: '/assets/specialties/Gastroenterology/hepatology.png' },
-        { title: 'Pancreatic Disorder Management', description: 'Comprehensive diagnosis and treatment of pancreatic disorders including pancreatitis.', image: '/assets/specialties/Gastroenterology/pancreatic-disorder.png' },
-        { title: 'Esophageal Disorders', description: 'Diagnosis and treatment of esophageal diseases such as reflux and motility disorders.', image: '/assets/specialties/Gastroenterology/esophageal-disorders.png' },
-        { title: 'Enteral Stenting', description: 'Minimally invasive stenting procedures for obstructive gastrointestinal conditions.', image: '/assets/specialties/Gastroenterology/enteral-stenting.png' },
-        { title: 'Endoscopy & Colonoscopy', description: 'Comprehensive endoscopic examinations of the digestive tract for diagnosis and treatment.', image: '/assets/specialties/Gastroenterology/endoscopy-colonoscopy.png' },
-        { title: 'ERCP, EUS, Hepatitis Care', description: 'Diagnostic and therapeutic services including ERCP, EUS, and hepatitis management.', image: '/assets/specialties/Gastroenterology/ercp-eus-hepatitis.png' },
-        { title: 'Pancreatitis, Reflux, Peptic Ulcer Treatment', description: 'Expert medical and procedural management of pancreatitis, acid reflux, and peptic ulcers.', image: '/assets/specialties/Gastroenterology/pancreatitis-reflux-peptic.png' },
-        { title: 'Abdominal Pain & Fatty Liver Treatment', description: 'Diagnosis and treatment of chronic abdominal pain and fatty liver disease.', image: '/assets/specialties/Gastroenterology/abdominal-pain-fatty-liver.png' },
-        { title: 'Bile Duct Surgery & GI Stenting', description: 'Surgical treatments and stenting for bile duct and gastrointestinal tract disorders.', image: '/assets/specialties/Gastroenterology/bile-duct-surgery.png' }
-      ],
+        ],
 
       facilities: [
         'Minimally Invasive Laparoscopic and Endoscopic Surgery',
@@ -254,28 +240,28 @@ const SpecialtyDetail = () => {
     id: 'criticalEmergency',
     title: 'Critical Care & Emergency',
     icon: FiActivity, 
-    bannerImage: 'assets/specialties/CriticalCare/banner-critical-emergency.png',
+    bannerImage: 'assets/specialties/Critical Care & Emergency/Critical-Care & Emergency.png',
     shortDescription: 'Comprehensive 24/7 Emergency & Critical Care, trauma, surgical, neuro & cardiac ICU services under one roof.',
     longDescription: 'At Raj Hospitals, the Critical Care & Emergency Department provides seamless, multidisciplinary care for all acute, life-threatening illnesses and injuries. With a state-of-the-art ICU, trauma center, advanced ICUs on Wheels (ambulances), and a dedicated team of consultants in emergency, critical care, cardiology, neurology, surgery, nephrology, and more, we ensure rapid response and advanced management for every medical and trauma emergency.',
     services: [
-      { title: '24 × 7 Emergency & Critical Care Consultant', description: 'Continuously available consultants to handle every acute medical, trauma or accident emergency.', image: '/assets/specialties/CriticalCare/consultant.png' },
-      { title: 'Cardiac & Neuro ICU', description: 'Expert cardiac and neurological intensive care with dedicated beds and advanced monitoring systems.', image: '/assets/specialties/CriticalCare/cardio-neuro-icu.png' },
-      { title: 'Medical & Surgical ICU', description: 'Round the clock ICU support for all complex medical and surgical cases.', image: '/assets/specialties/CriticalCare/medical-icu.png' },
-      { title: 'Emergency, Trauma & Acute Care', description: 'Immediate management for accidents, trauma, acute illnesses and multi-organ failures.', image: '/assets/specialties/CriticalCare/emergency-trauma.png' },
-      { title: 'ICU On Wheels (Advanced Life-Support Ambulances)', description: 'Ambulances equipped as mobile ICUs start critical care during transit.', image: '/assets/specialties/CriticalCare/ambulance.png' },
-      { title: 'Dedicated Emergency Unit (10 Beds)', description: 'Multiple well-equipped emergency beds for simultaneous management of cases.', image: '/assets/specialties/CriticalCare/emergency-beds.png' },
-      { title: 'Neuro Critical Care', description: 'Comprehensive care for stroke, head injuries, and neurological emergencies.', image: '/assets/specialties/CriticalCare/neuro-care.png' },
-      { title: 'Multidisciplinary ICU Team', description: 'Specialists include emergency physicians, surgeons, cardiologists, orthopaedists, nephrologists, urologists, and more.', image: '/assets/specialties/CriticalCare/multidisciplinary-team.png' },
-      { title: 'Haemodialysis', description: 'Renal support and dialysis services for patients with kidney injury.', image: '/assets/specialties/CriticalCare/dialysis.png' },
-      { title: 'Advanced Ventilatory Support (Mechanical Ventilation)', description: 'Non-invasive and invasive ventilation for respiratory emergencies.', image: '/assets/specialties/CriticalCare/ventilator.png' },
-      { title: 'Temporary Pacemaker & Cardiac Emergency', description: 'Emergency cardiac pacing and acute cardiac intervention for life-threatening arrhythmias.', image: '/assets/specialties/CriticalCare/cardiac-pacing.png' },
-      { title: 'ECMO (Extra Corporeal Membrane Oxygenation)', description: 'Advanced life support for severe cardiac and respiratory conditions.', image: '/assets/specialties/CriticalCare/ecmo.png' },
-      { title: 'Difficult Airway Management', description: 'Expert handling of challenging airway scenarios for safe ventilation.', image: '/assets/specialties/CriticalCare/airway-management.png' },
-      { title: 'Positive & Negative Pressure Isolation Rooms', description: 'Infection control zones to manage high-risk infectious cases.', image: '/assets/specialties/CriticalCare/isolation-room.png' },
-      { title: 'Pre & Post-Procedure Monitoring', description: 'Continuous observation for patients before and after emergency interventions.', image: '/assets/specialties/CriticalCare/monitoring.png' },
-      { title: 'Ultrasound in ICU (POCUS)', description: 'Bedside ultrasound diagnostics for rapid assessment.', image: '/assets/specialties/CriticalCare/ultrasound.png' },
-      { title: 'Special Minor Procedure Room', description: 'Dedicated for immediate surgical and therapeutic procedures.', image: '/assets/specialties/CriticalCare/procedure-room.png' },
-      { title: 'Research in Critical Care', description: 'Ongoing innovation and research for improving critical outcomes.', image: '/assets/specialties/CriticalCare/research.png' }
+      { title: '24 × 7 Emergency & Critical Care Consultant', description: 'Continuously available consultants to handle every acute medical, trauma or accident emergency.', image: 'assets/specialties/Critical Care & Emergency/24-7consultant.png' },
+      { title: 'Cardiac & Neuro ICU', description: 'Expert cardiac and neurological intensive care with dedicated beds and advanced monitoring systems.', image: 'assets/specialties/Critical Care & Emergency/Cardiac & Neuro ICU.png' },
+      { title: 'Medical & Surgical ICU', description: 'Round the clock ICU support for all complex medical and surgical cases.', image: 'assets/specialties/Critical Care & Emergency/Medical & Surgical-ICU.png' },
+      { title: 'Emergency, Trauma & Acute Care', description: 'Immediate management for accidents, trauma, acute illnesses and multi-organ failures.', image: 'assets/specialties/Critical Care & Emergency/Trauma.png' },
+      { title: 'ICU On Wheels (Advanced Life-Support Ambulances)', description: 'Ambulances equipped as mobile ICUs start critical care during transit.', image: 'assets/specialties/Critical Care & Emergency/ICU-On-Wheels.png' },
+      { title: 'Dedicated Emergency Unit (10 Beds)', description: 'Multiple well-equipped emergency beds for simultaneous management of cases.', image: 'assets/specialties/Critical Care & Emergency/bed.png' },
+      { title: 'Neuro Critical Care', description: 'Comprehensive care for stroke, head injuries, and neurological emergencies.', image: 'assets/specialties/Critical Care & Emergency/Neuro-Care.png' },
+      { title: 'Multidisciplinary ICU Team', description: 'Specialists include emergency physicians, surgeons, cardiologists, orthopaedists, nephrologists, urologists, and more.', image: 'assets/specialties/Critical Care & Emergency/Multidisciplinary.png' },
+      { title: 'Haemodialysis', description: 'Renal support and dialysis services for patients with kidney injury.', image: 'assets/specialties/Critical Care & Emergency/Haemodialysis.png' },
+      { title: 'Advanced Ventilatory Support (Mechanical Ventilation)', description: 'Non-invasive and invasive ventilation for respiratory emergencies.', image: 'assets/specialties/Critical Care & Emergency/Advanced-Ventilatory-Support.png' },
+      { title: 'Temporary Pacemaker & Cardiac Emergency', description: 'Emergency cardiac pacing and acute cardiac intervention for life-threatening arrhythmias.', image: 'assets/specialties/Critical Care & Emergency/Temporary-Pacemaker.png' },
+      { title: 'ECMO (Extra Corporeal Membrane Oxygenation)', description: 'Advanced life support for severe cardiac and respiratory conditions.', image: 'assets/specialties/Critical Care & Emergency/ECMO.png' },
+      { title: 'Difficult Airway Management', description: 'Expert handling of challenging airway scenarios for safe ventilation.', image: 'assets/specialties/Critical Care & Emergency/Difficult-Airway-Management.png' },
+      { title: 'Positive & Negative Pressure Isolation Rooms', description: 'Infection control zones to manage high-risk infectious cases.', image: 'assets/specialties/Critical Care & Emergency/Positive & Negative-Pressure-Isolation-Rooms.png' },
+      { title: 'Pre & Post-Procedure Monitoring', description: 'Continuous observation for patients before and after emergency interventions.', image: 'assets/specialties/Critical Care & Emergency/Pre & Post-Procedure-Monitoring.png' },
+      { title: 'Ultrasound in ICU (POCUS)', description: 'Bedside ultrasound diagnostics for rapid assessment.', image: 'assets/specialties/Critical Care & Emergency/Ultrasound-in-ICU.png' },
+      { title: 'Special Minor Procedure Room', description: 'Dedicated for immediate surgical and therapeutic procedures.', image: 'assets/specialties/Critical Care & Emergency/Special-Minor-Procedure-Room.png' },
+      { title: 'Research in Critical Care', description: 'Ongoing innovation and research for improving critical outcomes.', image: 'assets/specialties/Critical Care & Emergency/Research in-Critical-Care.png' }
     ],
     facilities: [
       'State-of-the-art ICU & Emergency infrastructure',
@@ -314,17 +300,17 @@ const SpecialtyDetail = () => {
       id: 'minimalaccessSurgery',
       title: 'Minimal Access Surgery',
       icon: FiUser,
-      bannerImage: 'assets/specialties/GeneralSurgery/banner-general-surgery.png',
+      bannerImage: 'assets/specialties/Minimal Access Surgery/Minimal-Access-Surgery.png',
       shortDescription: 'Advanced laparoscopic, laser, and general surgery with highly skilled surgeons and comprehensive care in Ranchi.',
       longDescription: 'The Department of General and Minimally Invasive Surgery at Raj Hospitals offers complete evaluation, diagnosis, and surgical treatment for a wide range of disorders. Our surgeons provide state-of-the-art patient care, using minimally invasive and laser techniques for improved recovery and outcomes. We specialize in abdominal, breast, skin, hernia, and soft tissue surgeries, delivering personalized care and excellent results. ICU and emergency services ensure patients receive the highest level of surgical care, with a multidisciplinary team approach.',
 
       services: [
-        { title: 'Laparoscopic & Laser Surgery', description: 'Gall Bladder, Hernia, Appendix & advanced general surgery using minimal access and laser technology.', image: '/assets/specialties/GeneralSurgery/laparoscopic-laser.png' },
-        { title: 'Thoracoscopic (Lung) Surgeries', description: 'Minimally invasive surgical management of chest and lung conditions.', image: '/assets/specialties/GeneralSurgery/thoracoscopic.png' },
-        { title: 'Bariatric (Weight Loss) & GI Surgeries', description: 'Weight-loss and gastrointestinal surgeries for obesity and digestive disorders.', image: '/assets/specialties/GeneralSurgery/bariatric-gi.png' },
-        { title: 'Laparoscopy Surgery', description: 'Keyhole procedures for faster recovery, less scarring and better results.', image: '/assets/specialties/GeneralSurgery/laparoscopy.png' },
-        { title: 'Laser Surgery For Proctology', description: 'Painless, advanced treatment for fissures, fistulas, piles, and hemorrhoids using laser.', image: '/assets/specialties/GeneralSurgery/laser-proctology.png' },
-        { title: 'Diagnostic and Therapeutic Endoscopy', description: 'Procedures for both diagnosis and treatment using advanced endoscopic techniques.', image: '/assets/specialties/GeneralSurgery/endoscopy.png' }
+        { title: 'Laparoscopic & Laser Surgery', description: 'Gall Bladder, Hernia, Appendix & advanced general surgery using minimal access and laser technology.', image: 'assets/specialties/Minimal Access Surgery/Laparoscopic & Laser-Surgery.png' },
+        { title: 'Thoracoscopic (Lung) Surgeries', description: 'Minimally invasive surgical management of chest and lung conditions.', image: 'assets/specialties/Minimal Access Surgery/Thoracoscopic.png' },
+        { title: 'Bariatric (Weight Loss) & GI Surgeries', description: 'Weight-loss and gastrointestinal surgeries for obesity and digestive disorders.', image: 'assets/specialties/Minimal Access Surgery/Bariatric.png' },
+        { title: 'Laparoscopy Surgery', description: 'Keyhole procedures for faster recovery, less scarring and better results.', image: 'assets/specialties/Minimal Access Surgery/Laparoscopy-Surgery.png' },
+        { title: 'Laser Surgery For Proctology', description: 'Painless, advanced treatment for fissures, fistulas, piles, and hemorrhoids using laser.', image: 'assets/specialties/Minimal Access Surgery/Laser-Surgery-For-Proctology.png' },
+        { title: 'Diagnostic and Therapeutic Endoscopy', description: 'Procedures for both diagnosis and treatment using advanced endoscopic techniques.', image: 'assets/specialties/Minimal Access Surgery/Diagnostic-and-Therapeutic-Endoscopy.png' }
       ],
 
       facilities: [
@@ -398,6 +384,7 @@ const SpecialtyDetail = () => {
       }
     },
 
+//nephrology
       nephrology: {
       id: 'nephrology',
       title: 'Nephrology',
@@ -606,16 +593,16 @@ const SpecialtyDetail = () => {
       id: 'oncology',
       title: 'Oncology',
       icon: FiAward, 
-      bannerImage: 'assets/specialties/Oncology/banner-oncology.png',
+      bannerImage: 'assets/specialties/Oncology/Oncology.png',
       shortDescription: 'World-class cancer care and radiation oncology services in Ranchi with multi-disciplinary, personalized treatments.',
       longDescription: 'The Department of Oncology at Raj Hospitals is committed to providing comprehensive cancer care, including screening, diagnosis, staging, treatment, and management of various cancer types. We offer surgical oncology, chemotherapy, radiation therapy, and supportive care for all solid organ malignancies including head & neck, breast, GI, gynae, and uro oncology. Our experienced oncologists use advanced diagnostic tools and individualized treatment protocols to ensure the best outcomes.',
       
       services: [
-        { title: 'Medical Oncology & Chemotherapy', description: 'Safe administration of chemotherapy and advanced drug therapies for various cancers.', image: '/assets/specialties/Oncology/medical-oncology.png' },
-        { title: 'Surgical Oncology', description: 'Expert surgeries for cancer including head & neck, breast, lung, abdominal cancers, and more.', image: '/assets/specialties/Oncology/surgical-oncology.png' },
-        { title: 'Head & Neck Cancer Treatment', description: 'Specialized surgical and non-surgical treatments targeting cancers of the head and neck region.', image: '/assets/specialties/Oncology/head-neck.png' },
-        { title: 'Breast Cancer Treatment', description: 'Comprehensive care involving breast conservative surgery, reconstruction, and medical therapies.', image: '/assets/specialties/Oncology/breast-cancer.png' },
-        { title: 'Gynaecologic Oncology', description: 'Treatment for cancers of female reproductive organs including radical hysterectomy and ovarian surgery.', image: '/assets/specialties/Oncology/gynae-oncology.png' }
+        { title: 'Medical Oncology & Chemotherapy', description: 'Safe administration of chemotherapy and advanced drug therapies for various cancers.', image: 'assets/specialties/Oncology/Medical-Oncology.jpg' },
+        { title: 'Surgical Oncology', description: 'Expert surgeries for cancer including head & neck, breast, lung, abdominal cancers, and more.', image: 'assets/specialties/Oncology/Surgical-Oncology.jpg' },
+        { title: 'Head & Neck Cancer Treatment', description: 'Specialized surgical and non-surgical treatments targeting cancers of the head and neck region.', image: '/assets/specialties/Oncology/Head & Neck-Cancer.jpg' },
+        { title: 'Breast Cancer Treatment', description: 'Comprehensive care involving breast conservative surgery, reconstruction, and medical therapies.', image: '/assets/specialties/Oncology/breast-cancer.jpg' },
+        { title: 'Gynaecologic Oncology', description: 'Treatment for cancers of female reproductive organs including radical hysterectomy and ovarian surgery.', image: '/assets/specialties/Oncology/Gynaecologic-Oncology.jpg' }
       ],
       
       facilities: [
@@ -633,7 +620,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. P K Raina',
           qualification: 'MBBS, MS',
           experience: '20+ Years',
-          image: '/assets/specialties/Oncology/dr-pk-raina.jpg',
+          image: '/assets/specialties/Oncology/Dr.side.jpg',
           specialization: 'Oncology & Surgical Oncology'
         },
         {
@@ -696,18 +683,18 @@ const SpecialtyDetail = () => {
       id: 'orthopedics',
       title: 'Orthopaedics & Joint Replacement',
       icon: FiActivity, 
-      bannerImage: 'assets/specialties/Orthopedics/banner-orthopedics.png', 
+      bannerImage: 'assets/specialties/Orthopaedics/Orthopaedics.jpg', 
       shortDescription: 'Comprehensive orthopaedic and joint replacement care with advanced surgical techniques in Ranchi.',
       longDescription: 'The Department of Orthopaedics & Joint Replacement at Raj Hospitals provides expert treatment for musculoskeletal conditions including joint pain, trauma, sports injuries, and deformities. Our specialised surgeons perform minimally invasive surgeries, joint replacements, arthroscopy, and complex trauma management using latest technology for optimal patient outcomes and speedy recovery. We also offer pediatric orthopaedics and comprehensive rehabilitation services.',
       
       services: [
-        { title: 'Joint Replacements – Knee, Hip, Shoulder, Elbow & Ankle', description: 'Advanced joint replacement surgeries for multiple joints ensuring mobility and pain relief.', image: 'assets/specialties/Orthopedics/joint-replacement.png' },
-        { title: 'Arthroscopy and Sports Injury', description: 'Minimally invasive procedures and expert care for sports-related injuries.', image: 'assets/specialties/Orthopedics/arthroscopy-sports.png' },
-        { title: 'Bone Deformity and CTEV Correction', description: 'Surgical correction of bone deformities including clubfoot (CTEV).', image: 'assets/specialties/Orthopedics/deformity-correction.png' },
-        { title: 'Trauma Surgery and Geriatric Care', description: 'Emergency trauma management and specialized geriatric orthopaedic care.', image: 'assets/specialties/Orthopedics/trauma-geriatric.png' },
-        { title: 'Complex Trauma and Multiple Ligament Injuries', description: 'Comprehensive care for severe trauma and ligament reconstructions like ACL, PCL.', image: 'assets/specialties/Orthopedics/complex-trauma.png' },
-        { title: 'Arthritis and Autoimmune Disorders', description: 'Treatment for osteoarthritis, rheumatoid arthritis, and associated autoimmune issues.', image: 'assets/specialties/Orthopedics/arthritis.png' },
-        { title: 'Paediatric Orthopaedics', description: 'Specialized treatment for children including deformity corrections and injury management.', image: 'assets/specialties/Orthopedics/paediatric-orthopedics.png' }
+        { title: 'Joint Replacements – Knee, Hip, Shoulder, Elbow & Ankle', description: 'Advanced joint replacement surgeries for multiple joints ensuring mobility and pain relief.', image: 'assets/specialties/Orthopaedics/Joint-Replacements.jpg' },
+        { title: 'Bone Deformity and CTEV Correction', description: 'Surgical correction of bone deformities including clubfoot (CTEV).', image: 'assets/specialties/Orthopaedics/Bone Deformity.jpg' },
+        { title: 'Trauma Surgery and Geriatric Care', description: 'Emergency trauma management and specialized geriatric orthopaedic care.', image: 'assets/specialties/Orthopaedics/Trauma-Surgery.jpg' },
+        { title: 'Complex Trauma and Multiple Ligament Injuries', description: 'Comprehensive care for severe trauma and ligament reconstructions like ACL, PCL.', image: 'assets/specialties/Orthopaedics/Complex-Trauma.jpg' },
+        { title: 'Arthroscopy and Sports Injury', description: 'Minimally invasive procedures and expert care for sports-related injuries.', image: 'assets/specialties/Orthopaedics/Arthroscopy-sports.jpg' },
+        { title: 'Arthritis and Autoimmune Disorders', description: 'Treatment for osteoarthritis, rheumatoid arthritis, and associated autoimmune issues.', image: 'assets/specialties/Orthopaedics/arthritis.jpg' },
+        { title: 'Paediatric Orthopaedics', description: 'Specialized treatment for children including deformity corrections and injury management.', image: 'assets/specialties/Orthopaedics/Paediatric-Orthopaedics.jpg' },
       ],
       
       facilities: [
@@ -725,7 +712,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Mozammil Pheroz',
           qualification: 'MBBS, MS (Orthopaedics), DNB',
           experience: '11+ Years',
-          image: 'assets/specialties/Orthopedics/dr-mozammil-pheroz.jpg',
+          image: 'assets/specialties/Orthopaedics/Dr.side.jpg',
           specialization: 'Orthopaedics & Joint Replacement Surgery'
         },
        
@@ -1452,7 +1439,7 @@ dermatology: {
       name: 'Dr. Piyali Banerjee',
       qualification: 'MBBS, DVDL',
       experience: '12+ Years',
-      image: 'assets/specialties/Dermatology/dr-piyali-banerjee.jpg',
+      image: 'assets/specialties/Dermatology/priya.jpeg',
       specialization: 'Dermatology, Cosmetology & Hair Disorders'
     }
   ],
@@ -1536,7 +1523,7 @@ ent: {
       name: 'Dr. Abhishek Kr. Ramadhin',
       qualification: 'MBBS, MD, MS, FARS',
       experience: '15+ Years',
-      image: 'assets/specialties/ENT/ENT-dr.side.png',
+      image: 'assets/specialties/ENT/ENT-dr.png',
       specialization: 'Advanced ENT Surgeries & Voice Disorders'
     },
     // {
