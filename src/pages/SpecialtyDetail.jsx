@@ -273,9 +273,9 @@ const SpecialtyDetail = () => {
       'On-site multidisciplinary medical team 24/7'
     ],
     specialists: [
-      { id: '301', name: 'Dr. Shyam Prasad', qualification: 'MBBS, MD MEM', experience: '14+ Years', image: '/assets/specialties/Emergency/dr-shyam-prasad.jpg', specialization: 'Emergency Medicine' },
+      { id: '301', name: 'Dr. Shyam Prasad', qualification: 'MBBS, MD MEM', experience: '14+ Years', image: 'assets/Doc-Front/Emergency - Dr. Shyam Prasad.png', specialization: 'Emergency Medicine' },
       { id: '302', name: 'Dr. Mohib Ahmed', qualification: 'MBBS, MD, IDCCM, EDM', experience: '12+ Years', image: '/assets/specialties/CriticalCare/dr-mohib-ahmed.jpg', specialization: 'Critical Care & ICU' },
-      { id: '303', name: 'Dr. Fuzail Sarwer', qualification: 'MBBS, MD, PDCC', experience: '10+ Years', image: '/assets/specialties/CriticalCare/dr-fuzail-sarwer.jpg', specialization: 'Critical Care & ICU' },
+      { id: '303', name: 'Dr. Fuzail Sarwer', qualification: 'MBBS, MD, PDCC', experience: '10+ Years', image: 'assets/Doc-Front/Anaesthesiologist - Dr. Fuzail Sarwar.png', specialization: 'Critical Care & ICU' },
       { id: '304', name: 'Dr. Rahul Roy', qualification: 'MBBS, DA, IDCCM', experience: '8+ Years', image: '/assets/specialties/CriticalCare/dr-rahul-roy.jpg', specialization: 'Critical Care & Anesthesia' }
     ],
     successStories: [
@@ -777,22 +777,22 @@ const SpecialtyDetail = () => {
       id: 'pulmonology',
       title: 'Pulmonology',
       icon: FiActivity, 
-      bannerImage: 'assets/specialties/Pulmonology/banner-pulmonology.png', 
+      bannerImage: 'assets/specialties/Pulmonology/Pulmonology.png', 
       shortDescription: 'High-quality pulmonology care in Ranchi by expert pulmonologists with comprehensive lung and respiratory treatment.',
       longDescription: 'Raj Hospital in Ranchi is proud to offer specialized pulmonology services to patients suffering from lung and respiratory system conditions. Our experienced pulmonologists provide personalized care for diseases such as asthma, COPD, pneumonia, tuberculosis, sleep disorders, and more. Equipped with advanced diagnostic and treatment facilities, we ensure accurate diagnosis and effective management tailored to every patient’s needs.',
 
       services: [
-        { title: 'Asthma & COPD', description: 'Comprehensive management of asthma, chronic obstructive pulmonary disease, and related lung conditions.', image: '/assets/specialties/Pulmonology/asthma-copd.png' },
-        { title: 'Chronic Bronchitis', description: 'Diagnosis and treatment of chronic bronchitis to improve respiratory function.', image: '/assets/specialties/Pulmonology/chronic-bronchitis.png' },
-        { title: 'Sleep Disorders', description: 'Expert care for sleep-related breathing disorders including obstructive sleep apnea.', image: '/assets/specialties/Pulmonology/sleep-disorders.png' },
-        { title: 'All Lungs & Chest Ailments', description: 'Treatment of various lung and chest diseases including infections and inflammatory conditions.', image: '/assets/specialties/Pulmonology/lung-chest-ailments.png' },
-        { title: 'Allergology & Allergies', description: 'Diagnosis and management of respiratory allergies and immunologic conditions.', image: '/assets/specialties/Pulmonology/allergies.png' },
-        { title: 'Asthma & Lung Disease Treatment', description: 'Tailored treatments to manage asthma and a variety of lung diseases.', image: '/assets/specialties/Pulmonology/asthma-lung.png' },
-        { title: 'Obstructive Sleep Apnea & Other Sleep Disorders', description: 'Diagnosis and treatment options including CPAP therapy for sleep apnea.', image: '/assets/specialties/Pulmonology/sleep-apnea.png' },
-        { title: 'Tuberculosis & Bronchitis', description: 'Comprehensive care for tuberculosis, bronchitis, and other chronic lung infections.', image: '/assets/specialties/Pulmonology/tuberculosis-bronchitis.png' },
-        { title: 'Pneumonia & COVID Care', description: 'Treatment of pneumonia due to lung inflammation, including COVID-19 management.', image: '/assets/specialties/Pulmonology/pneumonia-covid.png' },
-        { title: 'Pulmonary Rehabilitation', description: 'Rehabilitation for COPD, interstitial lung disease (ILD), and recovery from long COVID.', image: '/assets/specialties/Pulmonology/pulmonary-rehab.png' },
-        { title: 'Pulmonary Function Test', description: 'Advanced tests to assess lung function and capacity.', image: '/assets/specialties/Pulmonology/pulmonary-function-test.png' }
+        { title: 'Asthma & COPD', description: 'Comprehensive management of asthma, chronic obstructive pulmonary disease, and related lung conditions.', image: 'assets/specialties/Pulmonology/Asthma & COPD.png' },
+        { title: 'Chronic Bronchitis', description: 'Diagnosis and treatment of chronic bronchitis to improve respiratory function.', image: 'assets/specialties/Pulmonology/Chronic-Bronchitis.png' },
+        { title: 'Sleep Disorders', description: 'Expert care for sleep-related breathing disorders including obstructive sleep apnea.', image: 'assets/specialties/Pulmonology/Sleep-Disorders.png' },
+        { title: 'All Lungs & Chest Ailments', description: 'Treatment of various lung and chest diseases including infections and inflammatory conditions.', image: 'assets/specialties/Pulmonology/Lungs & Chest-Ailments.png' },
+        { title: 'Allergology & Allergies', description: 'Diagnosis and management of respiratory allergies and immunologic conditions.', image: 'assets/specialties/Pulmonology/Allergology.png' },
+        { title: 'Asthma & Lung Disease Treatment', description: 'Tailored treatments to manage asthma and a variety of lung diseases.', image: 'assets/specialties/Pulmonology/Asthma & Lung-Disease.png' },
+        { title: 'Obstructive Sleep Apnea & Other Sleep Disorders', description: 'Diagnosis and treatment options including CPAP therapy for sleep apnea.', image: 'assets/specialties/Pulmonology/Obstructive-Sleep-Apnea.png' },
+        { title: 'Tuberculosis & Bronchitis', description: 'Comprehensive care for tuberculosis, bronchitis, and other chronic lung infections.', image: 'assets/specialties/Pulmonology/Tuberculosis & Bronchitis.png' },
+        { title: 'Pneumonia & COVID Care', description: 'Treatment of pneumonia due to lung inflammation, including COVID-19 management.', image: 'assets/specialties/Pulmonology/Pneumonia & COVID Care.png' },
+        { title: 'Pulmonary Rehabilitation', description: 'Rehabilitation for COPD, interstitial lung disease (ILD), and recovery from long COVID.', image: 'assets/specialties/Pulmonology/Pulmonary-Rehabilitation.png' },
+        { title: 'Pulmonary Function Test', description: 'Advanced tests to assess lung function and capacity.', image: 'assets/specialties/Pulmonology/Pulmonary-Function-Test.png' }
       ],
 
       facilities: [
@@ -809,7 +809,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Suprova Chakraborty',
           qualification: 'DNB',
           experience: '10+ Years',
-          image: '/assets/specialties/Pulmonology/dr-suprova-chakraborty.jpg',
+          image: 'assets/Doc-Front/Pulmonologist - Dr. Suprova Chakraborty.png',
           specialization: 'Pulmonology & Respiratory Medicine'
         }
       ],
@@ -861,7 +861,7 @@ const SpecialtyDetail = () => {
       id: 'internalmedicine',
       title: 'Internal Medicine',
       icon: FiActivity, 
-      bannerImage: 'assets/specialties/InternalMedicine/internal-medicine-ranchi-banner.png', 
+      bannerImage: 'assets/specialties/Internal Medicine//Internal Medicine/Internal-Medicine.png', 
       shortDescription: 'Best Internal Medicine Hospital in Ranchi with expert doctors for diabetes, heart, chest, gastro & chronic diseases.',
       longDescription: 'Raj Hospitals is recognized as one of the best Internal Medicine hospitals in Ranchi, Jharkhand. Our department provides advanced diagnostic services, preventive care, and treatment for lifestyle and chronic diseases. With a team of highly experienced physicians and state-of-the-art technology, we specialize in diabetes care, heart problems, chest and lung diseases, gastroenterology, infectious diseases, and more. We focus on holistic patient wellness with preventive counselling, lifestyle guidance, and compassionate care for both acute and long-term illnesses.',
 
@@ -869,57 +869,57 @@ const SpecialtyDetail = () => {
         { 
           title: 'Medicine', 
           description: 'Comprehensive Internal Medicine care in Ranchi for acute and chronic illnesses with expert diagnosis and treatment.', 
-          image: '/assets/specialties/InternalMedicine/general-medicine-ranchi.png' 
+          image: 'assets/specialties/Internal Medicine/Internal Medicine/Medicine.png' 
         },
         { 
           title: 'Heart Problems', 
           description: 'Best doctors in Ranchi for diagnosis and management of heart diseases, hypertension, and cardiovascular conditions.', 
-          image: '/assets/specialties/InternalMedicine/heart-care-ranchi.png' 
+          image: '/assets/specialties/Internal Medicine/Internal Medicine/Heart-Problems.png' 
         },
         { 
           title: 'Chest Related Issues', 
           description: 'Expert care in Ranchi for chest pain, lung infections, tuberculosis, and thoracic conditions.', 
-          image: '/assets/specialties/InternalMedicine/chest-treatment-ranchi.png' 
+          image: '/assets/specialties/Internal Medicine/Internal Medicine/Chest-Related-Issues.png' 
         },
         { 
           title: 'Pulmonary Medicine', 
           description: 'Specialized treatment in Ranchi for asthma, COPD, allergies, and other lung diseases by pulmonary specialists.', 
-          image: '/assets/specialties/InternalMedicine/pulmonary-medicine-ranchi.png' 
+          image: '/assets/specialties/Internal Medicine/Internal Medicine/Pulmonary-Medicine.png' 
         },
         { 
           title: 'Gastroenterology', 
           description: 'Advanced care for digestive system disorders including acidity, ulcers, liver and intestinal diseases in Ranchi.', 
-          image: '/assets/specialties/InternalMedicine/gastroenterology-ranchi.png' 
+          image: '/assets/specialties/Internal Medicine/Internal Medicine/Gastroenterology.png' 
         },
         { 
           title: 'Cardiology', 
           description: 'Expert cardiologists in Ranchi providing diagnosis, preventive care, and treatment for heart problems.', 
-          image: '/assets/specialties/InternalMedicine/cardiology-ranchi.png' 
+          image: '/assets/specialties/Internal Medicine/Internal Medicine/Cardiology.png' 
         },
         { 
           title: 'Infectious Diseases', 
           description: 'Comprehensive care for viral, bacterial, and parasitic infections with infection control measures in Ranchi.', 
-          image: '/assets/specialties/InternalMedicine/infectious-diseases-ranchi.png' 
+          image: '/assets/specialties/Internal Medicine/Internal Medicine/Infectious-Diseases.png' 
         },
         { 
           title: 'Diabetes & Endocrinology', 
           description: 'Best diabetes hospital in Ranchi with specialized endocrinologists for diabetes, thyroid, and hormonal disorders.', 
-          image: '/assets/specialties/InternalMedicine/diabetes-treatment-ranchi.png' 
+          image: '/assets/specialties/Internal Medicine/Internal Medicine/Diabetes & Endocrinology.png' 
         },
         { 
           title: 'Non-Communicable Diseases', 
           description: 'Management of lifestyle diseases including obesity, high blood pressure, and high cholesterol in Ranchi.', 
-          image: '/assets/specialties/InternalMedicine/ncd-ranchi.png' 
+          image: '/assets/specialties/Internal Medicine/Internal Medicine/Non-Communicable-Diseases.png' 
         },
         { 
           title: 'Chronic Medical Conditions', 
           description: 'Long-term management of chronic conditions such as diabetes, hypertension, arthritis, and kidney diseases in Ranchi.', 
-          image: '/assets/specialties/InternalMedicine/chronic-care-ranchi.png' 
+          image: '/assets/specialties/Internal Medicine/Internal Medicine/Chronic-Medical-Conditions.png' 
         },
         { 
           title: 'Master Health Checkup', 
           description: 'Affordable master health checkup packages in Ranchi for early detection and preventive healthcare.', 
-          image: '/assets/specialties/InternalMedicine/health-checkup-ranchi.png' 
+          image: '/assets/specialties/Internal Medicine/Internal Medicine/Master-Health-Checkup.png' 
         }
       ],
 
@@ -940,7 +940,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. A K Agarwal',
           qualification: 'MBBS, M.D (Medicine) P.M.C.H',
           experience: '20+ Years',
-          image: '/assets/specialties/InternalMedicine/dr-ak-agarwal-ranchi.jpg',
+          image: 'assets/Doc-Front/Internal Medicine - Dr. A K Agrawal.png',
           specialization: 'Internal Medicine & Diabetes Specialist in Ranchi'
         },
         {
@@ -948,15 +948,15 @@ const SpecialtyDetail = () => {
           name: 'Dr. A K Sinha',
           qualification: 'MBBS, MD',
           experience: '18+ Years',
-          image: '/assets/specialties/InternalMedicine/dr-ak-sinha-ranchi.jpg',
+          image: 'assets/Doc-Front/Internal Medicine - Dr. A K Sinha.png',
           specialization: 'General Medicine & Preventive Care'
         },
         {
           id: '2103',
-          name: 'Dr. Neelam',
+          name: 'Dr. Neelam', 
           qualification: 'MBBS, MD',
           experience: '15+ Years',
-          image: '/assets/specialties/InternalMedicine/dr-neelam-ranchi.jpg',
+          image: '/assets/specialties/InternalMedicine/dr-neelam-ranchi.jpg', // not avl
           specialization: 'Internal Medicine & Lifestyle Diseases'
         }
       ],

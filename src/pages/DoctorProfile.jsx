@@ -31,7 +31,7 @@ export const doctorsData = [
     specialty: 'Cardiology',
     experience: '16+ Years',
     image:
-      'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/46a6b6ca-d18f-4dc7-9b36-60b052f0f535.png',
+      'assets/Doc-Side/Cardiologist - Dr. Rajesh Kumar Jha.png',
     specialtyIcon: medicalIcons.cardiology,
     description:
       'Dr. Rajesh Kumar Sinha is a Senior Consultant Cardiologist with over 16 years of experience in the field. He specializes in interventional cardiology, complex cardiac procedures, angioplasty, and comprehensive heart disease management.',
@@ -168,7 +168,7 @@ export const doctorsData = [
   qualifications: 'MBBS, MD, DM',
   specialty: 'Cardiology',
   experience: '16+ Years',
-  image: 'assets/specialties/Cardiology/cardio-1.JPG',
+  image: 'assets/Doc-Side/Cardiologist - Dr. Rajesh Kumar Jha.png',
   specialtyIcon: medicalIcons.cardiology,
   description: 'Dr. Rajesh Kumar Jha is a Cardiologist with over 16 years of experience specializing in interventional cardiology.',
   expertise: ['Interventional Cardiology'],
@@ -217,7 +217,7 @@ export const doctorsData = [
   qualifications: 'MBBS, MD (Anaesthesiology), PDCC (Cardiac Anaesthesia)',
   specialty: 'Critical Care',
   experience: '8+ Years',
-  image: '', // No image provided
+  image: 'assets/Doc-Side/Anaesthesiologist - Dr. Fuzail Sarwar.png', 
   specialtyIcon: '', // No icon provided
   description: 'Dr. Fuzail Sarwer is a renowned Anaesthesiologist and Critical Care specialist with over 20 years of experience. He is known for his precise diagnosis and empathetic patient care.',
   expertise: [
@@ -259,7 +259,7 @@ export const doctorsData = [
   qualifications: 'MBBS, MD MEM',
   specialty: 'Emergency',
   experience: '5+ Years',
-  image: '', // No image provided
+  image: 'assets/Doc-Side/Emergency - Dr. Shyam Prasad.png',
   specialtyIcon: '', // No icon provided
   description: 'Dr. Shyam Prasad is an experienced emergency medicine specialist with over 5 years of practice. He serves as the Consultant Head of the Department of Emergency at Raj Hospital and is affiliated with SEMI. He is dedicated to handling all kinds of emergency medical situations and trauma care.',
   expertise: [
@@ -367,7 +367,7 @@ export const doctorsData = [
   qualifications: 'MBBS, MD (Medicine)',
   specialty: 'Internal Medicine',
   experience: '18+ Years',
-  image: '', // No image provided
+  image: 'assets/Doc-Side/Internal Medicine - Dr. A K Agrawal.png', 
   specialtyIcon: '', // No icon provided
   description: 'Dr. A K Agarwal is a seasoned Internal Medicine specialist with over 18 years of experience, focusing on heart and chest-related issues.',
   expertise: [
@@ -399,7 +399,7 @@ export const doctorsData = [
   qualifications: 'MBBS, MD (Medicine)',
   specialty: 'Internal Medicine',
   experience: '25+ Years',
-  image: '', // No image provided
+  image: 'assets/Doc-Side/Internal Medicine - Dr. A K Sinha.png', 
   specialtyIcon: '', // No icon provided
   description: 'Dr. A K Sinha is a highly experienced Internal Medicine specialist with over 25 years of practice, focusing on cardiology, heart problems, and chest-related issues.',
   expertise: [
@@ -806,7 +806,7 @@ export const doctorsData = [
   qualifications: 'DNB Respiratory Medicine',
   specialty: 'Pulmonology',
   experience: '18+ Years',
-  image: '',
+  image: 'assets/Doc-Side/Pulmonologist - Dr. Suprova Chakraborty.png',
   specialtyIcon: medicalIcons.pulmonology,
   description:
     'Dr. Suprova Chakraborty is an experienced pulmonologist with over 18 years specializing in respiratory medicine. She has worked as Senior Resident at IPGMER-SSKM Hospital Kolkata and AIIMS Deoghar, and as Consultant at Hayat Hospital & Down Town Hospital in Guwahati.',
