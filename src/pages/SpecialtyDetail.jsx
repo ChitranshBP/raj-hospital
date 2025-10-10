@@ -2434,113 +2434,70 @@ function SidebarSpecialistsSlider({ specialists }) {
             </div>
 
             {/* Sidebar - Quick Info */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="space-y-8">
-
-              {/* Appointment Card */}
-              {/* <div className="bg-gradient-to-br from-primary-50 to-secondary-50 p-6 rounded-xl shadow-md">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Book an Appointment</h3>
-                <p className="text-gray-700 mb-6">Schedule a consultation with our {specialty.title} specialists.</p>
-                <button className="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2">
-                  <SafeIcon icon={FiCalendar} className="w-5 h-5" />
-                  <span>Book Now</span>
-                </button>
-              </div> */}
-
-              {/* Department Stats 
-                                                                                                   <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
-                                                                                                    <h3 className="text-xl font-bold text-gray-900 mb-4">Department Statistics</h3>
-                                                                                                    <div className="space-y-4">
-                                                                                                      <div className="flex justify-between items-center">
-                                                                                                        <div className="text-gray-700">Successful Procedures</div>
-                                                                                                        <div className="text-xl font-bold text-primary-600">5,000+</div>
-                                                                                                      </div>
-                                                                                                      <div className="flex justify-between items-center">
-                                                                                                        <div className="text-gray-700">Specialist Doctors</div>
-                                                                                                        <div className="text-xl font-bold text-primary-600">{specialty.specialists.length}+</div>
-                                                                                                      </div>
-                                                                                                      <div className="flex justify-between items-center">
-                                                                                                        <div className="text-gray-700">Patient Satisfaction</div>
-                                                                                                        <div className="text-xl font-bold text-primary-600">98%</div>
-                                                                                                      </div>
-                                                                                                      <div className="flex justify-between items-center">
-                                                                                                        <div className="text-gray-700">Years of Excellence</div>
-                                                                                                        <div className="text-xl font-bold text-primary-600">15+</div>
-                                                                                                      </div>
-                                                                                                    </div>
-                                                                                                   </div>
-                                                                                                   */}
-              {/* Emergency Contact */}
-              {/* <div className="bg-accent-50 p-6 rounded-xl border border-accent-100">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <SafeIcon icon={FiAlertCircle} className="w-5 h-5 text-accent-600 mr-2" />
-                  Emergency Contact
-                </h3>
-                <p className="text-gray-700 mb-4">For medical emergencies related to {specialty.title.split(' ')[0]} conditions:</p>
-                <div className="bg-white p-4 rounded-lg">
-                  <a href="tel:+919771488888" className="text-2xl font-bold text-accent-600 hover:text-accent-700 transition-colors flex items-center justify-center">
-                    <SafeIcon icon={FiPhone} className="w-5 h-5 mr-2" />
-                    +91 977 14 88888
-                  </a>
-                  <p className="text-center text-sm text-gray-500 mt-1">Available 24/7</p>
-                </div>
-              </div> */}
-               <h3 className="text-2xl font-bold text-gray-900 mb-4 flex justify-center items-center">
-                  {/* <SafeIcon icon={FiAlertCircle} className="w-5 h-5 text-accent-600 mr-2" /> */}
-                    Meet Our Specialists
-                </h3>
-                <div className="flex flex-wrap justify-center gap-8">
-      {specialty.specialists.map((doctor, index) =>
-            <motion.div
-              key={doctor.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full sm:w-[320px] md:w-[300px] lg:w-[340px]">
-
-          <div className="relative h-48 overflow-hidden">
-            <img
-                  src={doctor.image}
-                  alt={doctor.name}
-                  className="w-full h-full object-cover object-top"
-                  onError={(e) => {
-                    e.target.src =
+   <motion.div
+      initial={{ opacity: 0, x: 30 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="space-y-8"
+    >
+      <h3 className="text-2xl font-bold text-gray-900 mb-4 flex justify-center items-center">
+        Meet Our Specialists
+      </h3>
+      <div
+        className="flex flex-col gap-8 overflow-y-auto"
+        style={{ maxHeight: "1000px", maxWidth: "340px", margin: "0 auto" }}
+      >
+        {specialty.specialists.map((doctor, index) => (
+          <motion.div
+            key={doctor.id}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full"
+            style={{ minHeight: "500px" }}
+          >
+            <div className="relative h-48 overflow-hidden">
+              <img
+                src={doctor.image}
+                alt={doctor.name}
+                className="w-full h-full object-cover object-top"
+                onError={(e) => {
+                  e.target.src =
                     "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80";
-                  }} />
-
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-          </div>
-          <div className="p-6">
-            <h3 className="text-xl font-bold text-gray-900 mb-1">
-              {doctor.name}
-            </h3>
-            <p className="text-primary-600 font-medium mb-2">
-              {doctor.qualification}
-            </p>
-            <p className="text-secondary-600 text-sm mb-3">
-              {doctor.specialization}
-            </p>
-            <div className="flex items-center text-sm text-gray-500 mb-4">
-              <SafeIcon icon={FiAward} className="w-4 h-4 mr-2" />
-              <span>{doctor.experience} Experience</span>
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
             </div>
-            <Link
-                  to={`/doctors/${doctor.id}`}
-                  className="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2">
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-1">{doctor.name}</h3>
+              <p className="text-primary-600 font-medium mb-2">{doctor.qualification}</p>
+              <p className="text-secondary-600 text-sm mb-3">{doctor.specialization}</p>
+              <div className="flex items-center text-sm text-gray-500 mb-4">
+                <FiAward className="w-4 h-4 mr-2" />
+                <span>{doctor.experience} Experience</span>
+              </div>
+              <Link
+                to={`/doctors/${doctor.id}`}
+                className="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 mb-2"
+              >
+                <FiCalendar className="w-4 h-4" />
+                <span>Book Appointment</span>
+              </Link>
+              <Link
+                to={`/doctors/${doctor.id}`}
+                className="w-full bg-white text-primary-600 py-2 rounded-lg border border-primary-600 hover:bg-primary-50 transition-colors font-medium flex items-center justify-center space-x-2"
+              >
+                <FiUser className="w-4 h-4" />
+                <span>View Profile</span>
+              </Link>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
 
-              <SafeIcon icon={FiCalendar} className="w-4 h-4" />
-              <span>Book Appointment</span>
-            </Link>
-          </div>
-        </motion.div>
-            )}
-    </div>
-            </motion.div>
             
           </div>
         </div>
