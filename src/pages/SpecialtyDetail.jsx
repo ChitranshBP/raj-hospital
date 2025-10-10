@@ -260,7 +260,7 @@ const SpecialtyDetail = () => {
       { title: 'Positive & Negative Pressure Isolation Rooms', description: 'Infection control zones to manage high-risk infectious cases.', image: 'assets/specialties/Critical Care & Emergency/Positive & Negative-Pressure-Isolation-Rooms.png' },
       { title: 'Pre & Post-Procedure Monitoring', description: 'Continuous observation for patients before and after emergency interventions.', image: 'assets/specialties/Critical Care & Emergency/Pre & Post-Procedure-Monitoring.png' },
       { title: 'Ultrasound in ICU (POCUS)', description: 'Bedside ultrasound diagnostics for rapid assessment.', image: 'assets/specialties/Critical Care & Emergency/Ultrasound-in-ICU.png' },
-      { title: 'Special Minor Procedure Room', description: 'Dedicated for immediate surgical and therapeutic procedures.', image: 'assets/specialties/Critical Care & Emergency/Special-Minor-Procedure-Room.png' },
+      { title: 'Special Minor Procedure Room', description: 'Dedicated for immediate surgical and therapeutic procedures.', image: 'assets/specialties/Critical Care & Emergency/Special-Mino- Procedure-Room.png' },
       { title: 'Research in Critical Care', description: 'Ongoing innovation and research for improving critical outcomes.', image: 'assets/specialties/Critical Care & Emergency/Research in-Critical-Care.png' }
     ],
     facilities: [

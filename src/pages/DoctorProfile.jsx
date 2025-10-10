@@ -168,7 +168,7 @@ export const doctorsData = [
   qualifications: 'MBBS, MD, DM',
   specialty: 'Cardiology',
   experience: '16+ Years',
-  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/sample-doc.png',
+  image: 'assets/specialties/Cardiology/cardio-1.JPG',
   specialtyIcon: medicalIcons.cardiology,
   description: 'Dr. Rajesh Kumar Jha is a Cardiologist with over 16 years of experience specializing in interventional cardiology.',
   expertise: ['Interventional Cardiology'],
