@@ -1567,235 +1567,358 @@ const DoctorProfile = () => {
 
   return (
     <div>
-      <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-20 py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          {/* Two column layout container */}
-          <div className="md:flex md:items-start md:gap-12">
-            {/* Left Column: All doctor info */}
-            <div className="md:flex-1 space-y-8">
-              {/* Hero top: Image + Info */}
-              <div className="flex flex-col md:flex-row md:items-center md:gap-8">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8 }}
-                  className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl flex-shrink-0">
-
-                  <img
-                    src={doctor.image}
-                    alt={doctor.name}
-                    className="w-full h-full object-cover object-center"
-                    onError={(e) => {
-                      e.currentTarget.src =
-                        'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80';
-                    }}
-                  />
-
-                  <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-white rounded-full p-2 shadow-lg border-2 border-primary-100">
-                    <img src={doctor.specialtyIcon} alt={doctor.specialty} className="w-full h-full object-contain" />
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                  className="text-center md:text-left flex-1 mt-6 md:mt-0">
-
-                  <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{doctor.name}</h1>
-                  <p className="text-xl text-primary-600 font-medium mb-2">{doctor.qualifications}</p>
-                  <p className="text-lg text-secondary-600 font-medium mb-4">{doctor.specialty}</p>
-
-                  <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-6">
-                    <span className="flex items-center text-gray-700">
-                      <SafeIcon icon={FiUser} className="w-5 h-5 mr-2" />
-                      {doctor.experience} Experience
-                    </span>
-                    <span className="flex items-center text-gray-700">
-                      <SafeIcon icon={FiMapPin} className="w-5 h-5 mr-2" />
-                      {doctor.contact?.address || 'Location not specified'}
-                    </span>
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <button
-                      onClick={() => setShowAppointmentForm(true)}
-                      className="bg-primary-500 text-white px-6 py-3 rounded-lg hover:bg-primary-600 transition-colors font-semibold flex items-center justify-center space-x-2">
-
-                      <SafeIcon icon={FiCalendar} className="w-5 h-5" />
-                      <span>Book Appointment</span>
-                    </button>
-
-                    <a
-                      href={`tel:${doctor.contact?.phone || ''}`}
-                      className="bg-secondary-500 text-white px-6 py-3 rounded-lg hover:bg-secondary-600 transition-colors font-semibold flex items-center justify-center space-x-2">
-
-                      <SafeIcon icon={FiPhone} className="w-5 h-5" />
-                      <span>Contact Now</span>
-                    </a>
-                  </div>
-                </motion.div>
+<section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-20 py-16">
+  <div className="max-w-7xl mx-auto px-4">
+    <div className="md:flex md:items-start md:gap-12">
+      {/* Left Column: All doctor info */}
+      <div className="md:flex-1 space-y-8">
+        {/* Hero top: Image + Info */}
+        <div className="flex flex-col md:flex-row md:items-center md:gap-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl flex-shrink-0"
+          >
+            <img
+              src={
+                doctor.image?.trim()
+                  ? doctor.image
+                  : "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+              }
+              alt={doctor.name}
+              className="w-full h-full object-cover object-center"
+            />
+            {doctor.specialtyIcon && (
+              <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-white rounded-full p-2 shadow-lg border-2 border-primary-100">
+                <img
+                  src={doctor.specialtyIcon}
+                  alt={doctor.specialty}
+                  className="w-full h-full object-contain"
+                />
               </div>
+            )}
+          </motion.div>
 
-              {/* About Section */}
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="space-y-8 mt-12">
-                <div className="bg-white p-8 rounded-2xl shadow-md">
-                  <div className="flex items-center mb-6">
-                    <h2 className="text-2xl font-bold text-gray-900">About {doctor.name}</h2>
-                  </div>
-                  <p className="text-gray-700 leading-relaxed mb-6">{doctor.description}</p>
-                </div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-center md:text-left flex-1 mt-6 md:mt-0"
+          >
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+              {doctor.name}
+            </h1>
+            {doctor.qualifications && (
+              <p className="text-xl text-primary-600 font-medium mb-2">
+                {doctor.qualifications}
+              </p>
+            )}
+            {doctor.specialty && (
+              <p className="text-lg text-secondary-600 font-medium mb-4">
+                {doctor.specialty}
+              </p>
+            )}
 
-                {/* Expertise */}
-                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="bg-white p-8 rounded-2xl shadow-md">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-6">Areas of Expertise</h2>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    {doctor.expertise.map((skill) => (
-                      <motion.div
-                        key={skill}
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="flex items-center space-x-3">
-
-                        <div className="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0" />
-                        <span className="text-gray-700">{skill}</span>
-                      </motion.div>
-                    ))}
-                  </div>
-
-                  <div className="mt-8 pt-8 border-t border-gray-100">
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Procedures Performed</h3>
-                    <div className="grid md:grid-cols-2 gap-6">
-                      {doctor.procedures.map((procedure) => (
-                        <motion.div key={procedure.name} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="bg-gray-50 p-4 rounded-xl">
-                          <div className="flex justify-between items-start mb-2">
-                            <h4 className="font-semibold text-gray-900">{procedure.name}</h4>
-                            <span className="text-sm text-primary-600 font-semibold">{procedure.count}</span>
-                          </div>
-                          <p className="text-sm text-gray-600">{procedure.description}</p>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </div>
-                </motion.div>
-
-                {/* Education & Training */}
-                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="bg-white p-8 rounded-2xl shadow-md">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-6">Education & Training</h2>
-                  <div className="space-y-8">
-                    {doctor.education.map((edu, index) => (
-                      <motion.div key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.1 }} className="flex">
-                        <div className="mr-4">
-                          <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
-                            {/* <span className="text-primary-600 font-bold">{edu.year.substring(2)}</span> */}
-                            
-                            <span className="text-primary-600 font-bold">{edu.year ? edu.year.substring(2) : 'N/A'}</span>
-
-                          </div>
-                          <div className="h-full w-0.5 bg-primary-100 mx-auto mt-2"></div>
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-semibold text-gray-900">{edu.degree}</h3>
-                          <p className="text-gray-600">{edu.institution}</p>
-                          <p className="text-sm text-gray-500">{edu.year}</p>
-                        </div>
-                      </motion.div>
-                    ))}
-                  </div>
-
-                  <div className="mt-8 pt-8 border-t border-gray-100">
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Professional Memberships</h3>
-                    <ul className="space-y-3">
-                      {doctor.memberships.map((membership, idx) => (
-                        <motion.li key={idx} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3, delay: idx * 0.05 }} className="flex items-center space-x-3">
-                          <SafeIcon icon={FiCheck} className="w-5 h-5 text-primary-500" />
-                          <span className="text-gray-700">{membership}</span>
-                        </motion.li>
-                      ))}
-                    </ul>
-                  </div>
-                </motion.div>
-
-                {/* Awards & Recognition */}
-                <div className="bg-white p-8 rounded-2xl shadow-md">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Awards & Recognition</h3>
-                  <div className="space-y-4">
-                    {doctor.awards.map((award, index) => (
-                      <div key={index} className="flex">
-                        <div className="mr-4 mt-1">
-                          <SafeIcon icon={FiAward} className="w-5 h-5 text-secondary-500" />
-                        </div>
-                        <div>
-                          <h4 className="font-medium text-gray-900">{award.title}</h4>
-                          <p className="text-gray-600">{award.organization}, {award.year}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Publications */}
-                <div className="bg-white p-8 rounded-2xl shadow-md">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Publications</h3>
-                  <div className="space-y-4">
-                    {doctor.publications.map((publication, index) => (
-                      <div key={index} className="pb-4 border-b border-gray-100 last:border-0">
-                        <h4 className="font-medium text-gray-900">{publication.title}</h4>
-                        <p className="text-gray-600">{publication.journal}, {publication.year}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-
-            {/* Right Column: Sticky Form */}
-            <div className="w-full md:w-96 md:sticky md:top-32 self-start rounded-2xl shadow-md bg-white p-6 border border-gray-100 mt-12 md:mt-0">
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Quick Contact</h3>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                  <input type="text" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="Enter your name" required />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Mobile Number</label>
-                  <input type="tel" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="Enter mobile number" required />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                  <input type="email" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="Enter email" required />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Your Query</label>
-                  <textarea rows={3} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="Type your query" required />
-                </div>
-
-                <button type="submit" className="w-full bg-primary-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-primary-600 transition-colors">Submit</button>
-              </form>
-
-              {/* Appointment modal / inline form */}
-              {showAppointmentForm && (
-                <div className="mt-6 bg-primary-50 p-4 rounded-lg">
-                  <div className="flex justify-between items-center mb-3">
-                    <h4 className="font-semibold">Book Appointment with {doctor.name}</h4>
-                    <button onClick={() => setShowAppointmentForm(false)} className="text-sm text-gray-600">Close</button>
-                  </div>
-                  <form onSubmit={(e) => { e.preventDefault(); setShowAppointmentForm(false); }} className="space-y-3">
-                    <input type="text" placeholder="Your name" className="w-full px-3 py-2 border rounded" required />
-                    <input type="tel" placeholder="Mobile" className="w-full px-3 py-2 border rounded" required />
-                    <input type="date" className="w-full px-3 py-2 border rounded" required />
-                    <button type="submit" className="w-full bg-primary-500 text-white px-3 py-2 rounded">Confirm</button>
-                  </form>
-                </div>
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-6 text-gray-700">
+              {doctor.experience && (
+                <span className="flex items-center">
+                  <SafeIcon icon={FiUser} className="w-5 h-5 mr-2" />
+                  {doctor.experience} Experience
+                </span>
+              )}
+              {doctor.contact?.address && (
+                <span className="flex items-center">
+                  <SafeIcon icon={FiMapPin} className="w-5 h-5 mr-2" />
+                  {doctor.contact.address}
+                </span>
               )}
             </div>
-          </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <button
+                onClick={() => setShowAppointmentForm(true)}
+                className="bg-primary-500 text-white px-6 py-3 rounded-lg hover:bg-primary-600 transition-colors font-semibold flex items-center justify-center space-x-2"
+              >
+                <SafeIcon icon={FiCalendar} className="w-5 h-5" />
+                <span>Book Appointment</span>
+              </button>
+
+              {doctor.contact?.phone && (
+                <a
+                  href={`tel:${doctor.contact.phone}`}
+                  className="bg-secondary-500 text-white px-6 py-3 rounded-lg hover:bg-secondary-600 transition-colors font-semibold flex items-center justify-center space-x-2"
+                >
+                  <SafeIcon icon={FiPhone} className="w-5 h-5" />
+                  <span>Contact Now</span>
+                </a>
+              )}
+            </div>
+          </motion.div>
         </div>
-      </section>
+
+        {/* About Section */}
+        {doctor.description && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="bg-white p-8 rounded-2xl shadow-md"
+          >
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              About {doctor.name}
+            </h2>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              {doctor.description}
+            </p>
+          </motion.div>
+        )}
+
+        {/* Expertise */}
+        {doctor.expertise?.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="bg-white p-8 rounded-2xl shadow-md"
+          >
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              Areas of Expertise
+            </h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              {doctor.expertise.map((skill, i) => (
+                <div key={i} className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-primary-500 rounded-full" />
+                  <span className="text-gray-700">{skill}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        )}
+
+        {/* Procedures */}
+        {doctor.procedures?.length > 0 && (
+          <div className="bg-white p-8 rounded-2xl shadow-md">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Procedures Performed
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              {doctor.procedures.map((p, i) => (
+                <div key={i} className="bg-gray-50 p-4 rounded-xl">
+                  <h4 className="font-semibold text-gray-900 mb-1">
+                    {p.name}
+                  </h4>
+                  {p.count && (
+                    <span className="text-sm text-primary-600 font-semibold">
+                      {p.count}
+                    </span>
+                  )}
+                  {p.description && (
+                    <p className="text-sm text-gray-600 mt-1">
+                      {p.description}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Education & Memberships */}
+        {(doctor.education?.length > 0 || doctor.memberships?.length > 0) && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="bg-white p-8 rounded-2xl shadow-md"
+          >
+            {doctor.education?.length > 0 && (
+              <>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                  Education & Training
+                </h2>
+                <div className="space-y-6">
+                  {doctor.education.map((edu, i) => (
+                    <div key={i}>
+                      <h3 className="text-lg font-semibold text-gray-900">
+                        {edu.degree}
+                      </h3>
+                      {edu.institution && (
+                        <p className="text-gray-600">{edu.institution}</p>
+                      )}
+                      {edu.year && (
+                        <p className="text-sm text-gray-500">{edu.year}</p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+
+            {doctor.memberships?.length > 0 && (
+              <div className="mt-8 pt-8 border-t border-gray-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Professional Memberships
+                </h3>
+                <ul className="space-y-3">
+                  {doctor.memberships.map((m, i) => (
+                    <li key={i} className="flex items-center space-x-3">
+                      <SafeIcon
+                        icon={FiCheck}
+                        className="w-5 h-5 text-primary-500"
+                      />
+                      <span className="text-gray-700">{m}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </motion.div>
+        )}
+
+        {/* Awards */}
+        {doctor.awards?.length > 0 && (
+          <div className="bg-white p-8 rounded-2xl shadow-md">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">
+              Awards & Recognition
+            </h3>
+            <div className="space-y-4">
+              {doctor.awards.map((a, i) => (
+                <div key={i} className="flex">
+                  <SafeIcon
+                    icon={FiAward}
+                    className="w-5 h-5 text-secondary-500 mr-3"
+                  />
+                  <div>
+                    <h4 className="font-medium text-gray-900">{a.title}</h4>
+                    {(a.organization || a.year) && (
+                      <p className="text-gray-600">
+                        {a.organization}
+                        {a.year && `, ${a.year}`}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Publications */}
+        {doctor.publications?.length > 0 && (
+          <div className="bg-white p-8 rounded-2xl shadow-md">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">
+              Publications
+            </h3>
+            <div className="space-y-4">
+              {doctor.publications.map((pub, i) => (
+                <div
+                  key={i}
+                  className="pb-4 border-b border-gray-100 last:border-0"
+                >
+                  <h4 className="font-medium text-gray-900">{pub.title}</h4>
+                  {(pub.journal || pub.year) && (
+                    <p className="text-gray-600">
+                      {pub.journal}
+                      {pub.year && `, ${pub.year}`}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Right Column: Sticky Form */}
+      <div className="w-full md:w-96 md:sticky md:top-32 self-start rounded-2xl shadow-md bg-white p-6 border border-gray-100 mt-12 md:mt-0">
+        <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+          <h3 className="text-xl font-bold text-gray-900 mb-4">Quick Contact</h3>
+
+          <input
+            type="text"
+            placeholder="Enter your name"
+            required
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+          />
+          <input
+            type="tel"
+            placeholder="Enter mobile number"
+            required
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+          />
+          <input
+            type="email"
+            placeholder="Enter email"
+            required
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+          />
+          <textarea
+            rows={3}
+            placeholder="Type your query"
+            required
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+          />
+          <button
+            type="submit"
+            className="w-full bg-primary-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-primary-600 transition-colors"
+          >
+            Submit
+          </button>
+        </form>
+
+        {/* Appointment form toggle */}
+        {showAppointmentForm && (
+          <div className="mt-6 bg-primary-50 p-4 rounded-lg">
+            <div className="flex justify-between items-center mb-3">
+              <h4 className="font-semibold">
+                Book Appointment with {doctor.name}
+              </h4>
+              <button
+                onClick={() => setShowAppointmentForm(false)}
+                className="text-sm text-gray-600"
+              >
+                Close
+              </button>
+            </div>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                setShowAppointmentForm(false);
+              }}
+              className="space-y-3"
+            >
+              <input
+                type="text"
+                placeholder="Your name"
+                required
+                className="w-full px-3 py-2 border rounded"
+              />
+              <input
+                type="tel"
+                placeholder="Mobile"
+                required
+                className="w-full px-3 py-2 border rounded"
+              />
+              <input
+                type="date"
+                required
+                className="w-full px-3 py-2 border rounded"
+              />
+              <button
+                type="submit"
+                className="w-full bg-primary-500 text-white px-3 py-2 rounded"
+              >
+                Confirm
+              </button>
+            </form>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 };
