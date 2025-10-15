@@ -32,7 +32,7 @@ export const doctorsData = [
     experience: '16+ Years',
     image:
       'assets/Doc-Side/Cardiologist - Dr. Rajesh Kumar Jha.png',
-    specialtyIcon: medicalIcons.cardiology,
+    // specialtyIcon: medicalIcons.cardiology,
     description:
       'Dr. Rajesh Kumar Sinha is a Senior Consultant Cardiologist with over 16 years of experience in the field. He specializes in interventional cardiology, complex cardiac procedures, angioplasty, and comprehensive heart disease management.',
     expertise: [
