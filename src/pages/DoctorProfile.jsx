@@ -746,7 +746,7 @@ export const doctorsData = [
   qualifications: 'MBBS, MS (Orthopaedics), FIJR, FIASM',
   specialty: 'Orthopaedics (Sports Injury & Joint Replacement)',
   experience: '6+ Years',
-  image: '',
+  image: 'assets/specialties/Orthopaedics/Dr. Abhishek Roy.png',
   specialtyIcon: medicalIcons.orthopaedics,
   description:
     'Dr. Abhishek Roy specializes in orthopaedics with a focus on sports injury and joint replacement. He has over 6 years of experience and expertise in managing complex trauma, arthritis, and autoimmune neurological disorders.',

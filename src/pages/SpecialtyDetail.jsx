@@ -719,7 +719,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Abhishek Roy',
           qualification: 'MBBS, MS, MAMC, FIJR, FIASM',
           experience: '15+ Years',
-          image: 'assets/specialties/Orthopedics/dr-abhishek-roy.jpg',
+          image: 'assets/specialties/Orthopaedics/Dr. Abhishek Roy.png',
           specialization: 'Orthopaedics & Joint Replacement'
         }
       ],
