@@ -710,7 +710,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Muzammil Pheroz',
           qualification: 'MBBS, MS (Orthopaedics), DNB',
           experience: '11+ Years',
-          image: 'assets/specialties/Orthopaedics/Dr.side.jpg',
+          image: 'assets/specialties/Orthopaedics/Doctor-Orthio-w.png',
           specialization: 'Orthopaedics & Joint Replacement Surgery'
         },
 

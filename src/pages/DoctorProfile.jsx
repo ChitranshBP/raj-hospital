@@ -24,105 +24,105 @@ const medicalIcons = {
 
 // Centralized doctors data — add more objects here to extend the app
 export const doctorsData = [
-  {
-    id: 'rajesh-sinha',
-    name: 'Dr. Rajesh Kumar Sinha',
-    qualifications: 'MBBS, MD, DM',
-    specialty: 'Cardiology',
-    experience: '16+ Years',
-    image:
-      'assets/Doc-Side/Cardiologist - Dr. Rajesh Kumar Jha.png',
-    specialtyIcon: medicalIcons.cardiology,
-    description:
-      'Dr. Rajesh Kumar Sinha is a Senior Consultant Cardiologist with over 16 years of experience in the field. He specializes in interventional cardiology, complex cardiac procedures, angioplasty, and comprehensive heart disease management.',
-    expertise: [
-      'Interventional Cardiology',
-      'Angioplasty & Stenting',
-      'Cardiac Catheterization',
-      'Heart Failure Management',
-      'Preventive Cardiology',
-      'Coronary Artery Disease',
-      'Echocardiography',
-      'Cardiac Rehabilitation',
-    ],
-    procedures: [
-      {
-        name: 'Angiography & Angioplasty',
-        count: '1000+',
-        description:
-          'Diagnostic imaging of blood vessels and minimally invasive treatment of blockages',
-      },
-      {
-        name: 'Echocardiography',
-        count: '3000+',
-        description:
-          'Ultrasound imaging of the heart to assess structure and function',
-      },
-      {
-        name: 'Cardiac Stenting',
-        count: '800+',
-        description: 'Placement of stents to keep arteries open and improve blood flow',
-      },
-      {
-        name: 'Pacemaker Implantation',
-        count: '400+',
-        description: 'Implantation of devices to regulate heart rhythm',
-      },
-    ],
-    education: [
-      {
-        degree: 'DM Cardiology',
-        institution: 'All India Institute of Medical Sciences (AIIMS), Delhi',
-        year: '2008',
-      },
-      {
-        degree: 'MD Medicine',
-        institution: 'Patna Medical College and Hospital',
-        year: '2005',
-      },
-      {
-        degree: 'MBBS',
-        institution: 'Patna Medical College and Hospital',
-        year: '2001',
-      },
-    ],
-    memberships: [
-      'Cardiological Society of India (CSI)',
-      'Indian Medical Association (IMA)',
-      'Association of Physicians of India (API)',
-      'Indian College of Cardiology (ICC)',
-      'American College of Cardiology (International Associate)',
-    ],
-    awards: [
-      { title: 'Best Cardiologist Award', organization: 'Jharkhand Medical Association', year: '2022' },
-      { title: 'Excellence in Heart Care', organization: 'Indian Cardiac Society', year: '2019' },
-      { title: 'Young Investigator Award', organization: 'Cardiological Society of India', year: '2012' },
-    ],
-    publications: [
-      {
-        title:
-          'Outcomes of Primary Angioplasty in Acute Myocardial Infarction: A Single Center Experience',
-        journal: 'Indian Heart Journal',
-        year: '2021',
-      },
-      {
-        title: 'Prevalence of Coronary Artery Disease in Eastern India: A Retrospective Study',
-        journal: 'Journal of Clinical Cardiology',
-        year: '2018',
-      },
-      {
-        title: 'Management of Heart Failure in Rural Settings: Challenges and Solutions',
-        journal: 'Indian Journal of Medical Research',
-        year: '2016',
-      },
-    ],
-    contact: {
-      email: 'dr.rajesh@rajhospitals.com',
-      phone: '+919771488888',
-      clinic: 'Raj Hospitals, Cardiology Department, 3rd Floor',
-      address: 'Ranchi, Jharkhand, India',
-    },
-  },
+  // {
+  //   id: 'rajesh-sinha',
+  //   name: 'Dr. Rajesh Kumar Sinha',
+  //   qualifications: 'MBBS, MD, DM',
+  //   specialty: 'Cardiology',
+  //   experience: '16+ Years',
+  //   image:
+  //     'assets/Doc-Side/Cardiologist - Dr. Rajesh Kumar Jha.png',
+  //   specialtyIcon: medicalIcons.cardiology,
+  //   description:
+  //     'Dr. Rajesh Kumar Sinha is a Senior Consultant Cardiologist with over 16 years of experience in the field. He specializes in interventional cardiology, complex cardiac procedures, angioplasty, and comprehensive heart disease management.',
+  //   expertise: [
+  //     'Interventional Cardiology',
+  //     'Angioplasty & Stenting',
+  //     'Cardiac Catheterization',
+  //     'Heart Failure Management',
+  //     'Preventive Cardiology',
+  //     'Coronary Artery Disease',
+  //     'Echocardiography',
+  //     'Cardiac Rehabilitation',
+  //   ],
+  //   procedures: [
+  //     {
+  //       name: 'Angiography & Angioplasty',
+  //       count: '1000+',
+  //       description:
+  //         'Diagnostic imaging of blood vessels and minimally invasive treatment of blockages',
+  //     },
+  //     {
+  //       name: 'Echocardiography',
+  //       count: '3000+',
+  //       description:
+  //         'Ultrasound imaging of the heart to assess structure and function',
+  //     },
+  //     {
+  //       name: 'Cardiac Stenting',
+  //       count: '800+',
+  //       description: 'Placement of stents to keep arteries open and improve blood flow',
+  //     },
+  //     {
+  //       name: 'Pacemaker Implantation',
+  //       count: '400+',
+  //       description: 'Implantation of devices to regulate heart rhythm',
+  //     },
+  //   ],
+  //   education: [
+  //     {
+  //       degree: 'DM Cardiology',
+  //       institution: 'All India Institute of Medical Sciences (AIIMS), Delhi',
+  //       year: '2008',
+  //     },
+  //     {
+  //       degree: 'MD Medicine',
+  //       institution: 'Patna Medical College and Hospital',
+  //       year: '2005',
+  //     },
+  //     {
+  //       degree: 'MBBS',
+  //       institution: 'Patna Medical College and Hospital',
+  //       year: '2001',
+  //     },
+  //   ],
+  //   memberships: [
+  //     'Cardiological Society of India (CSI)',
+  //     'Indian Medical Association (IMA)',
+  //     'Association of Physicians of India (API)',
+  //     'Indian College of Cardiology (ICC)',
+  //     'American College of Cardiology (International Associate)',
+  //   ],
+  //   awards: [
+  //     { title: 'Best Cardiologist Award', organization: 'Jharkhand Medical Association', year: '2022' },
+  //     { title: 'Excellence in Heart Care', organization: 'Indian Cardiac Society', year: '2019' },
+  //     { title: 'Young Investigator Award', organization: 'Cardiological Society of India', year: '2012' },
+  //   ],
+  //   publications: [
+  //     {
+  //       title:
+  //         'Outcomes of Primary Angioplasty in Acute Myocardial Infarction: A Single Center Experience',
+  //       journal: 'Indian Heart Journal',
+  //       year: '2021',
+  //     },
+  //     {
+  //       title: 'Prevalence of Coronary Artery Disease in Eastern India: A Retrospective Study',
+  //       journal: 'Journal of Clinical Cardiology',
+  //       year: '2018',
+  //     },
+  //     {
+  //       title: 'Management of Heart Failure in Rural Settings: Challenges and Solutions',
+  //       journal: 'Indian Journal of Medical Research',
+  //       year: '2016',
+  //     },
+  //   ],
+  //   contact: {
+  //     email: 'dr.rajesh@rajhospitals.com',
+  //     phone: '+919771488888',
+  //     clinic: 'Raj Hospitals, Cardiology Department, 3rd Floor',
+  //     address: 'Ranchi, Jharkhand, India',
+  //   },
+  // },
 
   // Example second doctor — extend or copy this block to add more
   {
@@ -690,7 +690,7 @@ export const doctorsData = [
   qualifications: 'MBBS, MS (Orthopaedics), DNB (Orthopaedics)',
   specialty: 'Orthopaedics & Joint Replacement',
   experience: '9+ Years',
-  image: 'assets/specialties/Orthopaedics/Dr.front.jpg',
+  image: 'assets/specialties/Orthopaedics/Doctor-Orthio-w.png',
   specialtyIcon: medicalIcons.orthopaedics,
   description:
     'Dr. Muzammil Pheroz is an experienced orthopaedist with over 9 years of practice. His expertise includes trauma surgery, geriatric trauma, joint replacement (hip and knee), arthroscopic surgery, spine surgery, paediatric orthopaedics, and deformity correction.',
