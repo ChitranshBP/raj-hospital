@@ -93,7 +93,7 @@ const SpecialtyDetail = () => {
 
       specialists: [
       {
-        id: '1',
+        id: 'rajesh-jha',
         name: 'Dr. Rajesh Kr. Jha',
         qualification: 'MBBS, MD, DM (Cardiology)',
         experience: '16+ Years',
@@ -101,11 +101,11 @@ const SpecialtyDetail = () => {
         specialization: 'Interventional Cardiology'
       },
       {
-        id: '51',
-        name: 'Dr. Awnindra Kr. Jha',
-        qualification: 'MBBS, MD, DM (Cardiology)',
+        id: 'rajesh-sinha',
+        name: 'Dr. Rajesh Kumar Sinha',
+        qualification: 'MBBS, MD, DM',
         experience: '16+ Years',
-        image: '/assets/specialties/Cardiology/cardio-2.JPG',
+        image: 'assets/Doc-Side/Cardiologist - Dr. Rajesh Kumar Jha.png',
         specialization: 'Interventional Cardiology'
       }],
 
@@ -181,7 +181,7 @@ const SpecialtyDetail = () => {
 
       specialists: [
         {
-          id: '201',
+          id: 'ravish-ranjan',
           name: 'Dr. Ravish Ranjan',
           qualification: 'MBBS, MD, DNB (Gastroenterology)',
           experience: '15+ Years',
@@ -273,10 +273,8 @@ const SpecialtyDetail = () => {
       'On-site multidisciplinary medical team 24/7'
     ],
     specialists: [
-      { id: '301', name: 'Dr. Shyam Prasad', qualification: 'MBBS, MD MEM', experience: '14+ Years', image: 'assets/Doc-Front/Emergency - Dr. Shyam Prasad.png', specialization: 'Emergency Medicine' },
-      { id: '302', name: 'Dr. Mohib Ahmed', qualification: 'MBBS, MD, IDCCM, EDM', experience: '12+ Years', image: '/assets/specialties/CriticalCare/dr-mohib-ahmed.jpg', specialization: 'Critical Care & ICU' },
-      { id: '303', name: 'Dr. Fuzail Sarwer', qualification: 'MBBS, MD, PDCC', experience: '10+ Years', image: 'assets/Doc-Front/Anaesthesiologist - Dr. Fuzail Sarwar.png', specialization: 'Critical Care & ICU' },
-      { id: '304', name: 'Dr. Rahul Roy', qualification: 'MBBS, DA, IDCCM', experience: '8+ Years', image: '/assets/specialties/CriticalCare/dr-rahul-roy.jpg', specialization: 'Critical Care & Anesthesia' }
+      { id: 'shyam-prasad', name: 'Dr. Shyam Prasad', qualification: 'MBBS, MD MEM', experience: '14+ Years', image: 'assets/Doc-Front/Emergency - Dr. Shyam Prasad.png', specialization: 'Emergency Medicine' },
+      { id: 'fuzail-sarwer', name: 'Dr. Fuzail Sarwer', qualification: 'MBBS, MD, PDCC', experience: '10+ Years', image: 'assets/Doc-Front/Anaesthesiologist - Dr. Fuzail Sarwar.png', specialization: 'Critical Care & ICU' }
     ],
     successStories: [
       { title: 'Stroke Survival & ICU Recovery', patient: 'Mr. Gupta, 62', story: 'Received rapid neurocritical care after a major stroke, including mechanical ventilation and advanced monitoring. Recovered mobility and speech with ICU and post-care rehabilitation.', outcome: 'Regained independence after 3 months.' },
@@ -324,7 +322,7 @@ const SpecialtyDetail = () => {
 
       specialists: [
         {
-          id: '501',
+          id: 'ashish-modi',
           name: 'Dr. Ashish Kumar Modi',
           qualification: 'MBBS, MS',
           experience: '15+ Years',
@@ -416,7 +414,7 @@ const SpecialtyDetail = () => {
       ],
       specialists: [
         {
-          id: '601',
+          id: 'avinash-dubey',
           name: 'Dr. Avinash Kumar Dubey',
           qualification: 'MBBS, MD, DM',
           experience: '12+ Years',
@@ -424,7 +422,7 @@ const SpecialtyDetail = () => {
           specialization: 'Nephrology & Dialysis'
         },
         {
-          
+
             id: '602',
             name: 'Dr. Yogendra Rai',
             qualification: '',
@@ -524,15 +522,15 @@ const SpecialtyDetail = () => {
       ],
       specialists: [
         {
-          id: '701',
-          name: 'Dr. Vijay Raj',
+          id: 'vivek-raj',
+          name: 'Dr. Vivek Raj',
           qualification: 'MBBS, MS, MCh',
           experience: '18+ Years',
           image: '/assets/specialties/Neurosciences/dr-vijay-raj.jpg',
           specialization: 'Neurology & Neurosurgery'
         },
         {
-          id: '702',
+          id: 'vivek-raj-2',
           name: 'Dr. Vivek Raj',
           qualification: 'MBBS, ECFMG, DNB',
           experience: '15+ Years',
@@ -616,7 +614,7 @@ const SpecialtyDetail = () => {
       
       specialists: [
         {
-          id: '801',
+          id: 'pk-raina',
           name: 'Dr. P K Raina',
           qualification: 'MBBS, MS',
           experience: '20+ Years',
@@ -624,7 +622,7 @@ const SpecialtyDetail = () => {
           specialization: 'Oncology & Surgical Oncology'
         },
         {
-          id: '802',
+          id: 'pk-raina-2',
           name: 'Dr. Abhijit Kumar',
           qualification: 'MBBS, MS, PDCC',
           experience: '16+ Years',
@@ -708,16 +706,16 @@ const SpecialtyDetail = () => {
       
       specialists: [
         {
-          id: '901',
-          name: 'Dr. Mozammil Pheroz',
+          id: 'Muzammil-pheroz',
+          name: 'Dr. Muzammil Pheroz',
           qualification: 'MBBS, MS (Orthopaedics), DNB',
           experience: '11+ Years',
           image: 'assets/specialties/Orthopaedics/Dr.side.jpg',
           specialization: 'Orthopaedics & Joint Replacement Surgery'
         },
-       
+
         {
-          id: '904',
+          id: 'abhishek-roy',
           name: 'Dr. Abhishek Roy',
           qualification: 'MBBS, MS, MAMC, FIJR, FIASM',
           experience: '15+ Years',
@@ -805,7 +803,7 @@ const SpecialtyDetail = () => {
 
       specialists: [
         {
-          id: '1001',
+          id: 'suprova-chakraborty',
           name: 'Dr. Suprova Chakraborty',
           qualification: 'DNB',
           experience: '10+ Years',
@@ -936,7 +934,7 @@ const SpecialtyDetail = () => {
 
       specialists: [
         {
-          id: '2101',
+          id: 'ak-agarwal',
           name: 'Dr. A K Agarwal',
           qualification: 'MBBS, M.D (Medicine) P.M.C.H',
           experience: '20+ Years',
@@ -944,7 +942,7 @@ const SpecialtyDetail = () => {
           specialization: 'Internal Medicine & Diabetes Specialist in Ranchi'
         },
         {
-          id: '2102',
+          id: 'ak-sinha',
           name: 'Dr. A K Sinha',
           qualification: 'MBBS, MD',
           experience: '18+ Years',
@@ -1041,7 +1039,7 @@ urology: {
 
   specialists: [
     {
-      id: '1201',
+      id: 'sunil-kumar',
       name: 'Dr. Sunil Kumar',
       qualification: 'MBBS, MS (Gen Surgery), MCh (Urology)',
       experience: '18+ Years',
@@ -1049,7 +1047,7 @@ urology: {
       specialization: 'Urology & Surgical Oncology'
     },
     {
-      id: '1202',
+      id: 'ved-prakash',
       name: 'Dr. Ved Prakash',
       qualification: 'MBBS, MS (Gen Surgery), MCh (Urology)',
       experience: '15+ Years',
@@ -1134,7 +1132,7 @@ obstetricsGynaecology: {
 
   specialists: [
     {
-      id: '201',
+      id: 'anupama-mahli',
       name: 'Dr. Anupama Mahli',
       qualification: 'MBBS, MS, DNB, D.MAS',
       experience: '10+ Years',
@@ -1142,7 +1140,7 @@ obstetricsGynaecology: {
       specialization: 'Obstetrics & Gynaecology'
     },
     {
-      id: '202',
+      id: 'pushpa-sinha',
       name: 'Dr. Pushpa Sinha',
       qualification: 'MBBS, MD, DGO',
       experience: '15+ Years',
@@ -1248,7 +1246,7 @@ obstetricsGynaecology: {
 
   specialists: [
     {
-      id: '301',
+      id: 'pankaj-kumar',
       name: 'Dr. Pankaj Kumar',
       qualification: 'MBBS, MS, M.Ch (Plastic Surgery)',
       experience: '12+ Years',
@@ -1353,7 +1351,7 @@ dental: {
 
   specialists: [
     {
-      id: '401',
+      id: 'suraj-mani-bhattacharjee',
       name: 'Dr. Suraj Mani Bhattacharjee',
       qualification: 'BDS',
       experience: '10+ Years',
@@ -1435,7 +1433,7 @@ dermatology: {
 
   specialists: [
     {
-      id: '501',
+      id: 'piyali-banerjee',
       name: 'Dr. Piyali Banerjee',
       qualification: 'MBBS, DVDL',
       experience: '12+ Years',
@@ -1519,15 +1517,31 @@ ent: {
 
   specialists: [
     {
-      id: '601',
+      id: 'abhishek-ramadhin',
       name: 'Dr. Abhishek Kr. Ramadhin',
       qualification: 'MBBS, MD, MS, FARS',
       experience: '15+ Years',
       image: 'assets/specialties/ENT/ENT-dr.png',
       specialization: 'Advanced ENT Surgeries & Voice Disorders'
     },
+    {
+      id: 'tg-n-sinha',
+      name: 'Dr. T G N Sinha',
+      qualification: 'MBBS, MS, FICS',
+      experience: '40+ Years',
+      image: '',
+      specialization: 'ENT (Ear, Nose & Throat)'
+    },
+    {
+      id: 'ranajan-jha',
+      name: 'Dr. Ranajan Kumar Jha',
+      qualification: 'MBBS, MS, FESS',
+      experience: '15+ Years',
+      image: '',
+      specialization: 'ENT Surgery'
+    }
     // {
-    //   id: '602',
+    //   id: '602-old',
     //   name: 'Dr. T G N Sinha',
     //   qualification: 'MBBS, MS, FICS',
     //   experience: '20+ Years',
@@ -1706,7 +1720,7 @@ paediatrics: {
 
   specialists: [
     {
-      id: '701',
+      id: 'sainik-dutta',
       name: 'Dr. Sainik Dutta',
       qualification: 'MBBS, DCH',
       image: 'assets/specialties/PAEDIATRICS/dr-sainik-dutta.jpg',
@@ -1714,7 +1728,7 @@ paediatrics: {
       profileLink: 'https://rajhospitals.com/dr-sainik-dutta.php'
     },
     // {
-    //   id: '702',
+    //   id: '702-old',
     //   name: 'Dr. Ravi Shekhar Singh',
     //   qualification: 'MBBS, DCH',
     //   image: 'assets/specialties/PAEDIATRICS/dr-ravi-shekhar-singh.jpg',
@@ -1794,7 +1808,7 @@ physiotherapy: {
 
   specialists: [
     {
-      id: '801',
+      id: 'abhay-pandey',
       name: 'Dr. Abhay Kr Pandey',
       qualification: 'PT, BPT, MPT, PGDYT, COMT, MIAP',
       image: 'assets/specialties/Physiotherapy & Rehabilitation/Physiotherapy-dr.front.png',

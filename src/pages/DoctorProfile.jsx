@@ -368,7 +368,7 @@ export const doctorsData = [
   specialty: 'Internal Medicine',
   experience: '18+ Years',
   image: 'assets/Doc-Side/Internal Medicine - Dr. A K Agrawal.png', 
-  specialtyIcon: '', // No icon provided
+  // specialtyIcon: '', // No icon provided
   description: 'Dr. A K Agarwal is a seasoned Internal Medicine specialist with over 18 years of experience, focusing on heart and chest-related issues.',
   expertise: [
     'Medicine',
