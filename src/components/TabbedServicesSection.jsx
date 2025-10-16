@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 
@@ -8,6 +9,22 @@ const { FiHeart, FiBrain, FiDroplet, FiShield, FiUser, FiSettings, FiZap, FiMic,
 const TabbedServicesSection = () => {
   const [activeTab, setActiveTab] = useState(0);
   const scrollRef = useRef(null);
+
+  // Map service IDs to specialty page slugs
+  const serviceToSpecialtyMap = {
+    'cardiology': 'cardiology',
+    'neurosciences': 'neurosciences',
+    'nephrology': 'nephrology',
+    'oncology': 'oncology-cancer-care',
+    'obstetrics': 'obstetrics-and-gynaecology',
+    'orthopedics': 'orthopaedics-and-joint-replacement',
+    'surgery': 'minimal-access-surgery',
+    'ent': 'ent',
+    'gastroenterology': 'gastroenterology',
+    'emergency': 'critical-care-and-emergency',
+    'pediatrics': 'pediatrics-and-neonatology',
+    'urology': 'urology'
+  };
 
   const services = [
   {
@@ -292,14 +309,12 @@ const TabbedServicesSection = () => {
               )}
 
               {/* View All Services Button */}
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              <button
+                onClick={() => scrollRef.current?.scrollTo({ left: scrollRef.current.scrollWidth, behavior: 'smooth' })}
                 className="flex-shrink-0 px-6 py-3 rounded-full font-medium text-sm bg-secondary-100 text-secondary-600 border border-secondary-200 hover:bg-secondary-200 transition-all duration-300 flex items-center space-x-2 whitespace-nowrap">
-
                 <SafeIcon icon={FiPlus} className="w-4 h-4" />
                 <span>View All</span>
-              </motion.button>
+              </button>
             </div>
           </div>
         </div>
@@ -371,13 +386,11 @@ const TabbedServicesSection = () => {
                     <span>Book Consultation</span>
                     <SafeIcon icon={FiArrowRight} className="w-4 h-4" />
                   </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="bg-gray-100 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors font-medium">
-
+                  <Link
+                    to={`/specialties/${serviceToSpecialtyMap[services[activeTab].id] || services[activeTab].id}`}
+                    className="bg-gray-100 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors font-medium text-center">
                     Learn More
-                  </motion.button>
+                  </Link>
                 </div>
               </div>
 

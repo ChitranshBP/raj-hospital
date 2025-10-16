@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 
@@ -9,167 +10,139 @@ const DoctorsSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
 
-  // Updated doctors data with correct images from Raj Hospitals website
+  // Real doctors data from Raj Hospitals
   const doctors = [
   {
-    name: 'Dr. Anupama Mahi',
-    qualifications: 'MBBS, MS, DNB, D MAS',
-    specialty: 'Obstetrics & Gynecology',
-    experience: '15+ Years',
-    image: 'https://images.unsplash.com/photo-1592393532405-fb1f165c4a1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMEFudXBhbWElMjBNYWhpJTJDJTIwYSUyMHNlbmlvciUyMGNvbnN1bHRhbnQlMjBpbiUyME9ic3RldHJpY3MlMjAlMjYlMjBHeW5lY29sb2d5JTJDJTIwd2VhcmluZyUyMGElMjB3aGl0ZSUyMGNvYXQlMjBhbmQlMjBzbWlsaW5nLnxlbnwwfHx8fDE3NTUwODcwNTB8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant in Obstetrics & Gynecology. Expert in high-risk pregnancies, minimally invasive gynecological procedures, and comprehensive women\'s health care.',
-    expertise: ['High-Risk Pregnancy Management', 'Laparoscopic Surgery', 'Infertility Treatment', 'Gynecological Oncology'],
-    availability: 'Mon-Sat: 10:00 AM - 6:00 PM'
-  },
-  {
-    name: 'Dr. Ashish Kumar Modi',
-    qualifications: 'MBBS, MS, FMAS',
-    specialty: 'Laparoscopic & General Surgery',
-    experience: '18+ Years',
-    image: 'https://images.unsplash.com/photo-1592393532405-fb1f165c4a1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMEFzaGlzaCUyMEt1bWFyJTIwTW9kaSUyQyUyMGElMjBzZW5pb3IlMjBjb25zdWx0YW50JTIwaW4lMjBsYXBhcm9zY29waWMlMjBhbmQlMjBnZW5lcmFsJTIwc3VyZ2VyeS58ZW58MHx8fHwxNzU1MDg2OTk1fDA&ixlib=rb-4.1.0&q=80&w=200$w=400',
-    description: 'Senior Consultant in Laparoscopic & General Surgery. Specialized in advanced laparoscopic procedures, bariatric surgery, and minimally invasive surgical techniques.',
-    expertise: ['Advanced Laparoscopy', 'Bariatric Surgery', 'Hernia Repair', 'Gallbladder Surgery'],
-    availability: 'Mon-Fri: 9:00 AM - 5:00 PM'
-  },
-  {
-    name: 'Dr. Avinash Kumar',
-    qualifications: 'MBBS, MD, DM',
-    specialty: 'Nephrology',
-    experience: '12+ Years',
-    image: 'https://images.unsplash.com/photo-1531339413195-cc6c17163974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMEF2aW5hc2glMjBLdW1hciUyQyUyMGElMjBTZW5pb3IlMjBDb25zdWx0YW50JTIwTmVwaHJvbG9naXN0JTJDJTIwd2VhcmluZyUyMGElMjB3aGl0ZSUyMGNvYXQlMjBhbmQlMjBzbWlsaW5nLnxlbnwwfHx8fDE3NTUwODcwNDN8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant Nephrologist. Expert in kidney diseases, dialysis management, kidney transplantation, and chronic kidney disease care.',
-    expertise: ['Kidney Transplantation', 'Dialysis Management', 'Chronic Kidney Disease', 'Hypertension Management'],
-    availability: 'Tue-Sat: 11:00 AM - 7:00 PM'
-  },
-  {
-    name: 'Dr. Binay Kumar',
-    qualifications: 'MBBS, MS, FIAGES',
-    specialty: 'Laparoscopic & General Surgery',
-    experience: '20+ Years',
-    image: 'https://images.unsplash.com/photo-1509242547758-3ce17361523b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMEJpbmF5JTIwS3VtYXIlMkMlMjBhJTIwc2VuaW9yJTIwY29uc3VsdGFudCUyMHN1cmdlb24lMkMlMjBkaXNwbGF5ZWQlMjBvbiUyMHRoZSUyMFJhaiUyMEhvc3BpdGFscyUyMHdlYnNpdGUufGVufDB8fHx8MTc1NTA4NzA0N3ww&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant Surgeon with extensive experience in complex abdominal surgeries, endoscopic procedures, and advanced surgical techniques.',
-    expertise: ['Complex Abdominal Surgery', 'Endoscopic Procedures', 'Trauma Surgery', 'Colorectal Surgery'],
-    availability: 'Mon-Wed-Fri: 10:00 AM - 4:00 PM'
-  },
-  {
-    name: 'Dr. Rajesh Kumar Sinha',
+    id: 'rajesh-jha',
+    name: 'Dr. Rajesh Kumar Jha',
     qualifications: 'MBBS, MD, DM',
     specialty: 'Cardiology',
     experience: '16+ Years',
-    image: 'https://images.unsplash.com/photo-1580471260026-2a8acbc7c7a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFJhamVzaCUyMEt1bWFyJTIwU2luaGElMkMlMjBhJTIwc2VuaW9yJTIwY29uc3VsdGFudCUyMGNhcmRpb2xvZ2lzdCUyQyUyMGRpc3BsYXllZCUyMG9uJTIwdGhlJTIwUmFqJTIwSG9zcGl0YWxzJTIwd2Vic2l0ZS58ZW58MHx8fHwxNzU1MDg3MTAzfDA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant Cardiologist. Interventional cardiologist specializing in complex cardiac procedures, angioplasty, and comprehensive heart disease management.',
-    expertise: ['Interventional Cardiology', 'Angioplasty & Stenting', 'Cardiac Catheterization', 'Heart Failure Management'],
-    availability: 'Mon-Sat: 8:00 AM - 6:00 PM'
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Cardiologist - Dr. Rajesh-Kumar Jha.png',
+    description: 'Dr. Rajesh Kumar Jha is a Cardiologist with over 16 years of experience specializing in interventional cardiology.',
+    expertise: ['Interventional Cardiology'],
+    availability: ''
   },
   {
-    name: 'Dr. Priya Kumari',
-    qualifications: 'MBBS, MD',
-    specialty: 'Pediatrics',
-    experience: '10+ Years',
-    image: 'https://images.unsplash.com/photo-1580471260026-2a8acbc7c7a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFByaXlhJTIwS3VtYXJpJTJDJTIwYSUyMHNlbmlvciUyMGNvbnN1bHRhbnQlMjBwZWRpYXRyaWNpYW4lMkMlMjBkaXNwbGF5ZWQlMjBvbiUyMHRoZSUyMFJhaiUyMEhvc3BpdGFscyUyMHdlYnNpdGUufGVufDB8fHx8MTc1NTA4NzA5N3ww&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant Pediatrician with expertise in child development, immunization, pediatric emergencies, and comprehensive child healthcare.',
-    expertise: ['Pediatric Emergency Care', 'Immunization', 'Growth & Development', 'Neonatal Care'],
-    availability: 'Daily: 9:00 AM - 8:00 PM'
-  },
-  {
-    name: 'Dr. Suresh Kumar Jha',
-    qualifications: 'MBBS, MS, MCh',
-    specialty: 'Neurosurgery',
-    experience: '14+ Years',
-    image: 'https://images.unsplash.com/photo-1580471260026-2a8acbc7c7a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFN1cmVzaCUyMEt1bWFyJTIwSmhhJTJDJTIwYSUyMHNlbmlvciUyMGNvbnN1bHRhbnQlMjBuZXVyb3N1cmdlb24lMkMlMjBkaXNwbGF5ZWQlMjBvbiUyMHRoZSUyMFJhaiUyMEhvc3BpdGFscyUyMHdlYnNpdGUufGVufDB8fHx8MTc1NTA4NzA4OHww&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant Neurosurgeon specializing in brain and spine surgeries, neurovascular procedures, and complex neurological conditions.',
-    expertise: ['Brain Surgery', 'Spine Surgery', 'Neurovascular Procedures', 'Trauma Neurosurgery'],
-    availability: 'Mon-Thu-Sat: 9:00 AM - 5:00 PM'
-  },
-  {
-    name: 'Dr. Meera Devi',
-    qualifications: 'MBBS, MS',
-    specialty: 'Ophthalmology',
-    experience: '11+ Years',
-    image: 'https://images.unsplash.com/photo-1580471260026-2a8acbc7c7a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyME1lZXJhJTIwRGV2aSUyQyUyMGElMjBzZW5pb3IlMjBjb25zdWx0YW50JTIwb3BodGhhbG1vbG9naXN0JTJDJTIwZGlzcGxheWVkJTIwb24lMjB0aGUlMjBSYWolMjBIb3NwaXRhbHMlMjB3ZWJzaXRlLnxlbnwwfHx8fDE3NTUwODcwNjh8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant Ophthalmologist specialized in cataract surgery, retinal disorders, glaucoma management, and comprehensive eye care.',
-    expertise: ['Cataract Surgery', 'Retinal Disorders', 'Glaucoma Management', 'Pediatric Ophthalmology'],
-    availability: 'Mon-Fri: 10:00 AM - 6:00 PM'
-  },
-  {
-    name: 'Dr. Ravi Kumar Sinha',
-    qualifications: 'MBBS, MS (Ortho)',
-    specialty: 'Orthopedics',
-    experience: '16+ Years',
-    image: 'https://images.unsplash.com/photo-1509242547758-3ce17361523b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFJhdmklMjBLdW1hciUyMFNpbmhhJTJDJTIwYW4lMjBvcnRob3BlZGljJTIwc3VyZ2VvbiUyQyUyMGRpc3BsYXllZCUyMG9uJTIwdGhlJTIwUmFqJTIwSG9zcGl0YWxzJTIwd2Vic2l0ZS58ZW58MHx8fHwxNzU1MDg3MDYxfDA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant Orthopedic Surgeon specializing in joint replacement, spine surgery, and sports medicine with expertise in minimally invasive techniques.',
-    expertise: ['Joint Replacement', 'Spine Surgery', 'Sports Medicine', 'Arthroscopic Surgery'],
-    availability: 'Mon-Sat: 9:00 AM - 5:00 PM'
-  },
-  {
-    name: 'Dr. Sanjay Kumar',
-    qualifications: 'MBBS, MS (ENT)',
-    specialty: 'ENT (Ear, Nose & Throat)',
-    experience: '13+ Years',
-    image: 'https://images.unsplash.com/photo-1584827172806-ea64d6d30fac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFNhbmpheSUyMEt1bWFyJTJDJTIwYSUyMHNlbmlvciUyMGNvbnN1bHRhbnQlMjBFTlQlMjBzdXJnZW9uJTJDJTIwZGlzcGxheWVkJTIwb24lMjB0aGUlMjBSYWolMjBIb3NwaXRhbHMlMjB3ZWJzaXRlLnxlbnwwfHx8fDE3NTUwODcwNjN8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant ENT Surgeon with expertise in microsurgery, endoscopic procedures, and comprehensive ear, nose, and throat care.',
-    expertise: ['Microsurgery', 'Endoscopic Surgery', 'Hearing Disorders', 'Voice Disorders'],
-    availability: 'Tue-Sat: 10:00 AM - 6:00 PM'
-  },
-  {
-    name: 'Dr. Santosh Kumar',
-    qualifications: 'MBBS, MD (Medicine)',
-    specialty: 'Internal Medicine',
-    experience: '18+ Years',
-    image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFNhbnRvc2glMjBLdW1hciUyQyUyMGElMjBzZW5pb3IlMjBjb25zdWx0YW50JTIwcGh5c2ljaWFuJTIwc3BlY2lhbGl6aW5nJTIwaW4lMjBpbnRlcm5hbCUyMG1lZGljaW5lJTJDJTIwZGlhYmV0ZXMlMjBtYW5hZ2VtZW50JTJDJTIwYW5kJTIwcHJldmVudGl2ZSUyMGhlYWx0aGNhcmUufGVufDB8fHx8MTc1NTA4NzEwNnww&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant Physician specializing in internal medicine, diabetes management, and preventive healthcare with comprehensive patient care approach.',
-    expertise: ['Diabetes Management', 'Hypertension Care', 'Preventive Medicine', 'General Medicine'],
-    availability: 'Mon-Sat: 8:00 AM - 7:00 PM'
-  },
-  {
-    name: 'Dr. Deepak Kumar',
-    qualifications: 'MBBS, MD (Anesthesia)',
-    specialty: 'Anesthesiology',
-    experience: '15+ Years',
-    image: 'https://images.unsplash.com/photo-1584827172806-ea64d6d30fac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMERlZXBhayUyMEt1bWFyJTJDJTIwYSUyMHNlbmlvciUyMGNvbnN1bHRhbnQlMjBhbmVzdGhlc2lvbG9naXN0JTJDJTIwZGlzcGxheWVkJTIwb24lMjB0aGUlMjBSYWolMjBIb3NwaXRhbHMlMjB3ZWJzaXRlLnxlbnwwfHx8fDE3NTUwODcwNjV8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant Anesthesiologist with expertise in critical care, pain management, and advanced anesthetic techniques for all surgical procedures.',
-    expertise: ['Critical Care', 'Pain Management', 'Surgical Anesthesia', 'Emergency Care'],
-    availability: 'Available for Surgeries'
-  },
-  {
-    name: 'Dr. Manish Kumar',
+    id: 'ashish-modi',
+    name: 'Dr. Ashish Kumar Modi',
     qualifications: 'MBBS, MS (General Surgery)',
-    specialty: 'General Surgery',
-    experience: '14+ Years',
-    image: 'https://images.unsplash.com/photo-1584827172806-ea64d6d30fac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyME1hbmlzaCUyMEt1bWFyJTJDJTIwYSUyMHNlbmlvciUyMGNvbnN1bHRhbnQlMjBnZW5lcmFsJTIwc3VyZ2VvbiUyQyUyMGRpc3BsYXllZCUyMG9uJTIwdGhlJTIwUmFqJTIwSG9zcGl0YWxzJTIwd2Vic2l0ZS58ZW58MHx8fHwxNzU1MDg3MDU0fDA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant General Surgeon with expertise in abdominal surgeries, trauma care, and emergency surgical procedures.',
-    expertise: ['Abdominal Surgery', 'Trauma Care', 'Emergency Surgery', 'Wound Management'],
-    availability: 'Mon-Sat: 9:00 AM - 5:00 PM'
-  },
-  {
-    name: 'Dr. Pankaj Kumar',
-    qualifications: 'MBBS, MS (Orthopedics)',
-    specialty: 'Orthopedics',
+    specialty: 'Bariatric Surgery, General & Laparoscopic Surgery',
     experience: '12+ Years',
-    image: 'https://images.unsplash.com/photo-1584827172806-ea64d6d30fac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFBhbmthaiUyMEt1bWFyJTJDJTIwYW4lMjBvcnRob3BlZGljJTIwc3VyZ2VvbiUyQyUyMGRpc3BsYXllZCUyMG9uJTIwdGhlJTIwUmFqJTIwSG9zcGl0YWxzJTIwd2Vic2l0ZS58ZW58MHx8fHwxNzU1MDg3MTAxfDA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant Orthopedic Surgeon specializing in fracture management, joint care, and sports injury treatment.',
-    expertise: ['Fracture Management', 'Joint Care', 'Sports Injuries', 'Bone Surgery'],
-    availability: 'Tue-Sat: 10:00 AM - 6:00 PM'
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/General Surgeon - Dr. Ashish-Kumar-Modi.png',
+    description: 'Dr. Ashish Kumar Modi is a highly skilled bariatric and laparoscopic surgeon with over 12 years of experience.',
+    expertise: ['Laparoscopy Surgery', 'Laser Surgery For Proctology', 'Diagnostic and Therapeutic Endoscopy'],
+    availability: ''
   },
   {
-    name: 'Dr. Shashi Bhushan',
-    qualifications: 'MBBS, MD (Medicine)',
-    specialty: 'Internal Medicine',
-    experience: '16+ Years',
-    image: 'https://images.unsplash.com/photo-1584827172806-ea64d6d30fac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFNoYXNoaSUyMEJodXNoYW4lMkMlMjBhJTIwc2VuaW9yJTIwY29uc3VsdGFudCUyMHBoeXNpY2lhbiUyQyUyMGRpc3BsYXllZCUyMG9uJTIwdGhlJTIwUmFqJTIwSG9zcGl0YWxzJTIwd2Vic2l0ZS58ZW58MHx8fHwxNzU1MDg3MDczfDA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant Physician with expertise in general medicine, chronic disease management, and preventive healthcare.',
-    expertise: ['General Medicine', 'Chronic Disease Management', 'Preventive Care', 'Health Screening'],
-    availability: 'Mon-Fri: 8:00 AM - 6:00 PM'
+    id: 'avinash-dubey',
+    name: 'Dr. Avinash Kumar Dubey',
+    qualifications: 'MD (Internal Medicine), DM (Nephrology)',
+    specialty: 'Nephrology',
+    experience: '10+ Years',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Nephrologist - Dr. Avinas- Kumar-Dubey.png',
+    description: 'Dr. Avinash Kumar Dubey is a distinguished Nephrologist with over 10 years of experience.',
+    expertise: ['Kidney transplantation', 'Chronic Kidney Disease (CKD)', 'Preventive Nephrology'],
+    availability: ''
   },
   {
-    name: 'Dr. Vikash Kumar',
-    qualifications: 'MBBS, MS (ENT)',
-    specialty: 'ENT Surgery',
-    experience: '11+ Years',
-    image: 'https://images.unsplash.com/photo-1584827172806-ea64d6d30fac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMFZpa2FzaCUyMEt1bWFyJTJDJTIwYW4lMjBFTlQlMjBzdXJnZW9uJTJDJTIwZGlzcGxheWVkJTIwb24lMjB0aGUlMjBSYWolMjBIb3NwaXRhbHMlMjB3ZWJzaXRlLnxlbnwwfHx8fDE3NTUwODcwOTR8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
-    description: 'Senior Consultant ENT Surgeon specializing in head and neck surgery, hearing disorders, and advanced ENT procedures.',
-    expertise: ['Head & Neck Surgery', 'Hearing Disorders', 'Sinus Surgery', 'ENT Procedures'],
-    availability: 'Mon-Wed-Fri: 11:00 AM - 5:00 PM'
+    id: 'ravish-ranjan',
+    name: 'Dr. Ravish Ranjan',
+    qualifications: 'MBBS, MD (Internal Medicine), DNB Super Specialty',
+    specialty: 'Gastroenterology',
+    experience: '12 Years',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gastroenterologist - Dr. Ravish-Ranjan.png',
+    description: 'Dr. Ravish Ranjan is an experienced gastroenterologist specializing in advanced diagnostic and therapeutic endoscopy.',
+    expertise: ['Gastroenterology', 'Therapeutic and Diagnostic Upper GI Endoscopy', 'ERCP'],
+    availability: ''
+  },
+  {
+    id: 'fuzail-sarwer',
+    name: 'Dr. Fuzail Sarwer',
+    qualifications: 'MBBS, MD (Anaesthesiology), PDCC (Cardiac Anaesthesia)',
+    specialty: 'Critical Care',
+    experience: '8+ Years',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Fuzail-Sarwar.png',
+    description: 'Dr. Fuzail Sarwer is a renowned Anaesthesiologist and Critical Care specialist with over 20 years of experience.',
+    expertise: ['Anaesthesiology & Pain Management', 'Critical Care Medicine', 'Trauma Care & Emergency Medicine'],
+    availability: ''
+  },
+  {
+    id: 'Muzammil-pheroz',
+    name: 'Dr. Muzammil Feroz',
+    qualifications: 'MBBS, MS (Orthopaedics), DNB (Orthopaedics)',
+    specialty: 'Orthopaedics & Joint Replacement',
+    experience: '9+ Years',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Muzammil-Feroz.png',
+    description: 'Dr. Muzammil Pheroz is an experienced orthopaedist with over 9 years of practice.',
+    expertise: ['Trauma Surgery', 'Geriatric Trauma', 'Hip & Knee Joint Replacement'],
+    availability: ''
+  },
+  {
+    id: 'tanushree-chatterjee',
+    name: 'Dr. Tanushree Chatterjee',
+    qualifications: 'MBBS, MS (Obstetrics), DNB (Obs & Gyn), D.MAS',
+    specialty: 'Obstetrics & Gynaecology',
+    experience: '10+ Years',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Tanushree-Chatterjee.png',
+    description: 'Dr. Tanushree Chatterjee has over 10 years of experience in obstetrics and gynaecology.',
+    expertise: ['Laparoscopy & Hysteroscopy', 'Infertility', 'Sonologist (USG)'],
+    availability: ''
+  },
+  {
+    id: 'pk-raina',
+    name: 'Dr. P K Raina',
+    qualifications: 'MBBS, MS (Surgery)',
+    specialty: 'Oncology',
+    experience: '14+ Years',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Oncologist - Dr. P-K-Raina.png',
+    description: 'Dr. P K Raina is a skilled oncologist and surgeon with over 14 years of experience.',
+    expertise: ['Head & Neck Cancer', 'Breast Cancer', 'Gynae Oncology'],
+    availability: ''
+  },
+  {
+    id: 'suprova-chakraborty',
+    name: 'Dr. Suprova Chakraborty',
+    qualifications: 'DNB Respiratory Medicine',
+    specialty: 'Pulmonology',
+    experience: '18+ Years',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Pulmonologist - Dr. Suprova-Chakraborty.png',
+    description: 'Dr. Suprova Chakraborty is an experienced pulmonologist with over 18 years specializing in respiratory medicine.',
+    expertise: ['Allergies', 'Asthma and Lung Disease Treatment', 'Tuberculosis, Bronchitis'],
+    availability: ''
+  },
+  {
+    id: 'sunil-kumar',
+    name: 'Dr. Sunil Kumar',
+    qualifications: 'MBBS, MS (General Surgery), MCh (Urology)',
+    specialty: 'Urology',
+    experience: '12+ Years',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Sunil-Kumar.png',
+    description: 'Dr. Sunil Kumar is a senior urologist with over 12 years of experience.',
+    expertise: ['Robotic Surgery', 'Renal Transplantation', 'Laparoscopic Surgery'],
+    availability: ''
+  },
+  {
+    id: 'ved-prakash',
+    name: 'Dr. Ved Prakash Verma',
+    qualifications: 'MBBS, MS (General Surgery), MCh (Urology)',
+    specialty: 'Urology',
+    experience: '9+ Years',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Ved-Prakash-Verma.png',
+    description: 'Dr. Ved Prakash is a urologist with over 9 years of experience.',
+    expertise: ['Endourology', 'Reconstructive Urology', 'Uro-oncology'],
+    availability: ''
+  },
+  {
+    id: 'abhay-pandey',
+    name: 'Dr. Abhay Kumar Pandey',
+    qualifications: 'BPT, MPT, PGDYT, COMT, MIAP',
+    specialty: 'Physiotherapy',
+    experience: '25+ Years',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Physiotherapist - Dr. Abhay-Kumar-Pandey.png',
+    description: 'Dr. Abhay Kr Pandey is a senior physiotherapist at Raj Hospital, Ranchi.',
+    expertise: ['Orthopedic & Traumatology Physiotherapy', 'Yoga Therapy', 'Manual Therapy'],
+    availability: ''
   }];
 
 
@@ -253,17 +226,18 @@ const DoctorsSection = () => {
 
               {doctors.map((doctor, index) =>
               <div
-                key={doctor.name}
+                key={doctor.id || doctor.name}
                 className={`flex-shrink-0 px-4 ${
                 slidesToShow === 3 ? 'w-1/3' : slidesToShow === 2 ? 'w-1/2' : 'w-full'}`
                 }>
 
-                  <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group h-full">
+                  <Link to={`/doctors/${doctor.id}`}>
+                    <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group h-full cursor-pointer">
 
                     {/* Doctor Image */}
                     <div className="relative overflow-hidden">
@@ -293,19 +267,19 @@ const DoctorsSection = () => {
                       <p className="text-secondary-600 font-medium mb-3">
                         {doctor.specialty}
                       </p>
-                      <div className="flex items-center text-sm text-gray-500 mb-3">
+                      {/* <div className="flex items-center text-sm text-gray-500 mb-3">
                         <SafeIcon icon={FiUser} className="w-4 h-4 mr-2" />
                         <span>{doctor.experience} Experience</span>
-                      </div>
+                      </div> */}
 
-                      {doctor.description &&
+                      {/* {doctor.description &&
                     <p className="text-gray-600 text-sm mb-4 line-clamp-3">
                           {doctor.description}
                         </p>
-                    }
+                    } */}
 
                       {/* Expertise Tags */}
-                      {doctor.expertise &&
+                      {/* {doctor.expertise &&
                     <div className="mb-4">
                           <div className="flex flex-wrap gap-1">
                             {doctor.expertise.slice(0, 2).map((skill, idx) =>
@@ -318,21 +292,22 @@ const DoctorsSection = () => {
                         )}
                           </div>
                         </div>
-                    }
+                    } */}
 
                       {/* Availability */}
-                      {doctor.availability &&
+                      {/* {doctor.availability &&
                     <div className="text-sm text-gray-500 mb-4">
                           <strong>Available:</strong> {doctor.availability}
                         </div>
-                    }
+                    } */}
 
                       <button className="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2">
                         <SafeIcon icon={FiCalendar} className="w-4 h-4" />
-                        <span>Book Appointment</span>
+                        <span>View Profile</span>
                       </button>
                     </div>
                   </motion.div>
+                  </Link>
                 </div>
               )}
             </motion.div>
@@ -375,9 +350,9 @@ const DoctorsSection = () => {
           viewport={{ once: true }}
           className="text-center mt-12">
 
-          <button className="bg-secondary-500 text-white px-8 py-4 rounded-lg hover:bg-secondary-600 transition-colors font-semibold text-lg">
+          <Link to="/doctors" className="inline-block bg-secondary-500 text-white px-8 py-4 rounded-lg hover:bg-secondary-600 transition-colors font-semibold text-lg">
             View All Doctors
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>);

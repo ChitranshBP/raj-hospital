@@ -479,7 +479,7 @@ const SpecialtyDetail = () => {
     // Neuroscience
 
       neurosciences: {
-      id: 'neurology',
+      id: 'neurosciences',
       title: 'neurology',
       icon: FiBrain,
       bannerImage: 'assets/specialties/Neuroscience/Neurological-Diagnostics.png',
