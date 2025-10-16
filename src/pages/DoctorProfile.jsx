@@ -182,25 +182,25 @@ export const doctorsData = [
     'Cardiological Society of India (CSI)'
   ],
   procedures: [
-    {
-      name: 'Angioplasty & Stenting',
-      description: 'Minimally invasive procedure to open blocked coronary arteries',
+    // {
+    //   name: 'Angioplasty & Stenting',
+    //   description: 'Minimally invasive procedure to open blocked coronary arteries',
       
-    },
-    {
-      name: 'Coronary Angiography',
-      description: 'Diagnostic imaging of coronary arteries',
+    // },
+    // {
+    //   name: 'Coronary Angiography',
+    //   description: 'Diagnostic imaging of coronary arteries',
       
-    },
-    {
-      name: 'Pacemaker Implantation',
-      description: 'Implantation of devices to regulate abnormal heart rhythms',
+    // },
+    // {
+    //   name: 'Pacemaker Implantation',
+    //   description: 'Implantation of devices to regulate abnormal heart rhythms',
       
-    }
+    // }
   ],
   awards: [
-    { title: 'Excellence in Cardiac Care', organization: 'Indian Cardiac Society', year: '2021' },
-    { title: 'Outstanding Cardiologist Award', organization: 'AFESC', year: '2019' }
+    // { title: 'Excellence in Cardiac Care', organization: 'Indian Cardiac Society', year: '2021' },
+    // { title: 'Outstanding Cardiologist Award', organization: 'AFESC', year: '2019' }
   ],
    publications: [
     //  no publications listed
@@ -379,7 +379,7 @@ export const doctorsData = [
     { degree: 'MBBS', institution: '', year: '' },
     { degree: 'MD (Medicine)', institution: 'PMCH, Patna', year: '' },
     { degree: 'Senior Residency (Cardiology)', institution: 'GB Pant Hospital, New Delhi', year: '' },
-    { degree: '', institution: 'RIMS', year: '' }
+    { degree: 'Senior Residency (Medicine)', institution: 'RIMS', year: '' }
   ],
   memberships: [], // Not specified
   awards: [], // Not specified
@@ -470,7 +470,7 @@ export const doctorsData = [
 {
   id: 'avinash-dubey',
   name: 'Dr. Avinash Kumar Dubey',
-  qualifications: 'MBBS (Gold Medalist), MD (Internal Medicine), DM (Nephrology)',
+  qualifications: 'MD (Internal Medicine), DM (Nephrology)',
   specialty: 'Nephrology',
   experience: '10+ Years',
   image: '', // No image provided
@@ -787,8 +787,6 @@ export const doctorsData = [
   { title: 'MBBS Gold Medalist', year: '' },
   { title: 'Delhi Orthopaedic Association Best Paper Award', year: '' },
   { title: 'Healthcare Excellence Award, FIAMA', year: '' },
-  { title: 'Position in ISHTM National Hematology Quiz (State Level GMC Bhopal)', year: '2011 & 2012' },
-  { title: 'Position in Oral Presentation (DM Thesis Work, Puducherry ISNSCCON)', year: '2017' }
 ],
   publications: [],
   contact: {
@@ -1243,9 +1241,9 @@ export const doctorsData = [
     'American Rhinologic Society',
     'Fellowship of the American Rhinologic Society (FARS)'
   ],
-  awards: [
-    { title: 'Award in ENT Surgery', year: '' }
-  ],
+  // awards: [
+  //   { title: 'Award in ENT Surgery', year: '' }
+  // ],
   publications: [],
   contact: {
     email: '',
@@ -1923,7 +1921,7 @@ const DoctorProfile = () => {
         )}
 
         {/* Procedures */}
-        {doctor.procedures?.length > 0 && (
+        {/* {doctor.procedures?.length > 0 && (
           <div className="bg-white p-8 rounded-2xl shadow-md">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Procedures Performed
@@ -1948,7 +1946,7 @@ const DoctorProfile = () => {
               ))}
             </div>
           </div>
-        )}
+        )} */}
 
         {/* Education & Memberships */}
         {(doctor.education?.length > 0 || doctor.memberships?.length > 0) && (

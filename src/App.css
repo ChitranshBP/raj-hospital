@@ -129,3 +129,27 @@ select:focus {
     width: 100%;
   }
 }
+
+/* Add this to your global CSS file or component styles */
+select {
+  max-width: 100%;
+}
+
+select option {
+  padding: 8px;
+  font-size: 14px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* For mobile devices */
+@media (max-width: 640px) {
+  select {
+    font-size: 14px;
+  }
+  
+  select option {
+    font-size: 13px;
+    padding: 6px;
+  }
+}
