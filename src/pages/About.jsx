@@ -40,7 +40,7 @@ const About = () => {
   const milestones = [
   {
     year: "1991",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ffee0efd-09c0-46af-95f4-cab22f98cba5.png",
+    image: "assets/About-img/The-Hospital.png",
     achievements: [
     "Inaugurated on November 3rd with 17 private rooms, labor room & OT",
     "Started Brain & Spine, Orthopedic & Maternity Surgeries",
@@ -59,7 +59,7 @@ const About = () => {
   },
   {
     year: "1995",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/1c7b93ee-2de9-4f60-aa2d-c7c80281057d.png",
+    image: "assets/About-img/1995.png",
     achievements: [
     "Opened 25-bedded General Ward (total 63 beds)",
     "Installed C-Arm in OT",
@@ -69,14 +69,14 @@ const About = () => {
   },
   {
     year: "1997",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/97e84c53-c6d6-4747-a566-5153fd349d84.png",
+    image: "assets/About-img/1997.png",
     achievements: [
     "Became first private hospital in the region recognized by Ministry of Health & Family Welfare for Central Govt. beneficiaries"]
 
   },
   {
     year: "2001",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f73c15cc-e505-40ea-b27c-b1a83b39c70e.png",
+    image: "assets/About-img/2001.png",
     achievements: [
     "New 14-bed ICU inaugurated by Jharkhand's first CM, Shri Babulal Marandi",
     "Started Dialysis services"]
@@ -84,7 +84,7 @@ const About = () => {
   },
   {
     year: "2003–05",
-    image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=200&fit=crop",
+    image: "assets/About-img/2003-05.png",
     achievements: [
     "First private center for HIV management in Jharkhand",
     "Started Joint Replacement surgeries",
@@ -94,7 +94,7 @@ const About = () => {
   },
   {
     year: "2008",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7bd1ee32-0776-4f42-b0a6-80f29b1ec193.png",
+    image: "assets/About-img/2008.png",
     achievements: [
     "Mr. Sahil Gambhir (now CEO) joined; launched 24/7 in-house Pharmacy",
     "Expanded ICU to 20 beds & added 10-bedded HDU"]
@@ -102,7 +102,7 @@ const About = () => {
   },
   {
     year: "2011–13",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/af19871c-820a-4891-b4e3-c514e726198e.png",
+    image: "assets/About-img/20011-13.png",
     achievements: [
     "Started Knee Replacement surgeries (with international collaboration)",
     "Installed PSA-based Oxygen Generation facility",
@@ -112,7 +112,7 @@ const About = () => {
   },
   {
     year: "2015",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/28391532-9014-4156-b298-61def4bf3eff.png",
+    image: "assets/About-img/As-we-move-into-the-fourth.png",
     achievements: [
     "Major infrastructural overhaul",
     "Added 4 Modular OTs for critical surgeries",
@@ -124,21 +124,21 @@ const About = () => {
   },
   {
     year: "2018",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/67de5ab5-38ae-4223-bd84-da34f5b6cbc6.png",
+    image: "assets/About-img/2018.png",
     achievements: [
     "Launched Cath Lab & Interventional Cardiology (with Artemis Healthcare)"]
 
   },
   {
     year: "2019",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ae943d30-379a-4c6a-a289-e2cf84fb8bb5.png",
+    image: "assets/About-img/2019.png",
     achievements: [
     "Pre-Accredited by NABH for Patient Safety & Quality"]
 
   },
   {
     year: "2020–21",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/cd4ce479-ea50-493e-9be5-3dd2d67ed504.png",
+    image: "assets/About-img/2020-21.png",
     achievements: [
     "Key role in COVID-19 fight; successfully treated 1000+ patients",
     "Among first private hospitals in Jharkhand to start Vaccination Drive"]
@@ -167,7 +167,7 @@ const About = () => {
   },
   {
     "year": "July 2023",
-    "image": "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f7b9a31d-cc98-4ac1-a047-5463af7250f1.jpg",
+    "image": "assets/About-img/The-New-Hospital.png",
     "achievements": [
     "Launched the advanced Leica-Provido Operating Microscope at Raj Hospitals, Ranchi",
     "Capabilities include complicated brain tumor surgeries, complex spine surgeries, and vascular surgeries",

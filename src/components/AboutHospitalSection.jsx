@@ -100,7 +100,7 @@ const AboutHospitalSection = () => {
             {/* Main Hospital Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/8ca4205c-5e55-4caf-a4c6-09d0c5f5acba.png"
+                src="assets/About-img/The-New-Hospital.png"
                 alt="Raj Hospitals Building"
                 className="w-full h-[500px] object-cover" />
 

@@ -12,42 +12,42 @@ const WhyChooseUs = () => {
     title: '30+ Years of Excellence',
     description: 'Three decades of trusted healthcare service in Ranchi',
     color: 'primary',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/4b7d8650-3649-4291-af1d-0348dbd5ae51.png'
+    image: 'assets/home-img/Why-Choose-Raj Hospitals/30+ Years-of-Excellence.png'
   },
   {
     icon: FiSettings,
     title: 'State-of-the-art Technology',
     description: 'Latest medical equipment and advanced treatment facilities',
     color: 'secondary',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/5d3c6aaa-80d1-4bf6-a251-94473bd1fda2.png'
+    image: 'assets/home-img/Why-Choose-Raj Hospitals/State-of-the-art-Technology.png'
   },
   {
     icon: FiUsers,
     title: 'Experienced Medical Team',
     description: 'Highly qualified doctors and skilled healthcare professionals',
     color: 'accent',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/eabcadd6-f753-4f2b-8e2c-6be036878918.png'
+    image: 'assets/home-img/Why-Choose-Raj Hospitals/Experienced-Medical-Team.png'
   },
   {
     icon: FiClock,
     title: '24/7 Emergency Services',
     description: 'Round-the-clock emergency care and critical support',
     color: 'primary',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/25a07976-a879-4d79-b147-694dc90103bd.png'
+    image: 'assets/home-img/Why-Choose-Raj Hospitals/24-7-Emergency-Services.png'
   },
   {
     icon: FiHeart,
     title: 'ICU/NICU/SICU Facilities',
     description: 'Specialized intensive care units for critical patient care',
     color: 'secondary',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/eadba9ff-63a6-4d9b-a1f2-eca07afe6d07.png'
+    image: 'assets/home-img/Why-Choose-Raj Hospitals/SICU-Facilities.png'
   },
   {
     icon: FiZap,
     title: 'Rooftop Helipad',
     description: 'Air ambulance facility for critical emergency cases',
     color: 'accent',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/740ee279-6944-4ae9-9d7c-6438b0e16f2e.png'
+    image: 'assets/home-img/Why-Choose-Raj Hospitals/.png'
   }];
 
 
