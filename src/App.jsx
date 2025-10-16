@@ -5,7 +5,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Doctors from './pages/Doctors';
 import DoctorProfile from './pages/DoctorProfile';
-import Specialties from './pages/Specialties';
 import SpecialtyDetail from './pages/SpecialtyDetail';
 import Testimonials from './pages/Testimonials';
 import Careers from './pages/Careers';
@@ -27,7 +26,6 @@ function App() {
             <Route path="/doctors" element={<Doctors />} />
             <Route path="/doctor/:doctorId" element={<DoctorProfile />} />
             <Route path="/doctors/:doctorId" element={<DoctorProfile />} />
-            <Route path="/specialties" element={<Specialties />} />
             <Route path="/specialties/:specialtyId" element={<SpecialtyDetail />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/careers" element={<Careers />} />

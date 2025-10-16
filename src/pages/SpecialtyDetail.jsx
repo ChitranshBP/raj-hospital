@@ -97,15 +97,15 @@ const SpecialtyDetail = () => {
         name: 'Dr. Rajesh Kr. Jha',
         qualification: 'MBBS, MD, DM (Cardiology)',
         experience: '16+ Years',
-        image: '/assets/specialties/Cardiology/cardio-1.JPG',
+        image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Cardiologist - Dr. Rajesh-Kumar Jha.png',
         specialization: 'Interventional Cardiology'
       },
       {
-        id: 'rajesh-sinha',
-        name: 'Dr. Rajesh Kumar Sinha',
+        id: 'awnindra-singh',
+        name: 'Dr. Awnindra Kumar Singh',
         qualification: 'MBBS, MD, DM',
         experience: '16+ Years',
-        image: 'assets/Doc-Side/Cardiologist - Dr. Rajesh Kumar Jha.png',
+        image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/-Dr. Awnindra-Kumar-Singh-Cardiologist.png',
         specialization: 'Interventional Cardiology'
       }],
 
@@ -185,7 +185,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Ravish Ranjan',
           qualification: 'MBBS, MD, DNB (Gastroenterology)',
           experience: '15+ Years',
-          image: '/assets/specialties/Gastroenterology/dr-ravish-ranjan.jpg',
+          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gastroenterologist - Dr. Ravish-Ranjan.png',
           specialization: 'Gastroenterology & Endoscopy'
         }
       ],
@@ -236,8 +236,8 @@ const SpecialtyDetail = () => {
     },
 
     // Critical care & emergency
-    criticalEmergency: {
-    id: 'criticalEmergency',
+    'critical-care-and-emergency': {
+    id: 'critical-care-and-emergency',
     title: 'Critical Care & Emergency',
     icon: FiActivity, 
     bannerImage: 'assets/specialties/Critical Care & Emergency/Critical-Care & Emergency.png',
@@ -294,8 +294,8 @@ const SpecialtyDetail = () => {
   },
 
   // minimal access surgery
-      minimalaccessSurgery: {
-      id: 'minimalaccessSurgery',
+      'minimal-access-surgery': {
+      id: 'minimal-access-surgery',
       title: 'Minimal Access Surgery',
       icon: FiUser,
       bannerImage: 'assets/specialties/Minimal Access Surgery/Minimal-Access-Surgery.png',
@@ -326,7 +326,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Ashish Kumar Modi',
           qualification: 'MBBS, MS',
           experience: '15+ Years',
-          image: '/assets/specialties/GeneralSurgery/dr-ashish-kumar-modi.jpg',
+          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/General Surgeon - Dr. Ashish-Kumar-Modi.png',
           specialization: 'General & Laparoscopic Surgery'
         }
       ],
@@ -418,7 +418,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Avinash Kumar Dubey',
           qualification: 'MBBS, MD, DM',
           experience: '12+ Years',
-          image: '/assets/specialties/Nephrology/dr-avinash-kumar-dubey.jpg',
+          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Nephrologist - Dr. Avinas- Kumar-Dubey.png',
           specialization: 'Nephrology & Dialysis'
         },
         {
@@ -479,8 +479,8 @@ const SpecialtyDetail = () => {
     // Neuroscience
 
       neurosciences: {
-      id: 'neurosciences',
-      title: 'Neurosciences',
+      id: 'neurology',
+      title: 'neurology',
       icon: FiBrain,
       bannerImage: 'assets/specialties/Neuroscience/Neurological-Diagnostics.png',
       shortDescription: 'Best Neurologist Hospital in Ranchi offering comprehensive brain and spine care by expert neuro physicians.',
@@ -587,8 +587,8 @@ const SpecialtyDetail = () => {
 
     //Oncology(cancer care)
 
-      oncology: {
-      id: 'oncology',
+      'oncology-cancer-care': {
+      id: 'oncology-cancer-care',
       title: 'Oncology',
       icon: FiAward, 
       bannerImage: 'assets/specialties/Oncology/Oncology.png',
@@ -618,7 +618,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. P K Raina',
           qualification: 'MBBS, MS',
           experience: '20+ Years',
-          image: '/assets/specialties/Oncology/Dr.side.jpg',
+          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Oncologist - Dr. P-K-Raina.png',
           specialization: 'Oncology & Surgical Oncology'
         },
         {
@@ -677,8 +677,8 @@ const SpecialtyDetail = () => {
     },
 
     //orthopaedics - joint replacement
-      orthopedics: {
-      id: 'orthopedics',
+      'orthopaedics-and-joint-replacement': {
+      id: 'orthopaedics-and-joint-replacement',
       title: 'Orthopaedics & Joint Replacement',
       icon: FiActivity, 
       bannerImage: 'assets/specialties/Orthopaedics/Orthopaedics.jpg', 
@@ -707,10 +707,10 @@ const SpecialtyDetail = () => {
       specialists: [
         {
           id: 'Muzammil-pheroz',
-          name: 'Dr. Muzammil Pheroz',
+          name: 'Dr. Muzammil Feroz',
           qualification: 'MBBS, MS (Orthopaedics), DNB',
           experience: '11+ Years',
-          image: 'assets/specialties/Orthopaedics/Doctor-Orthio-w.png',
+          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Muzammil-Feroz.png',
           specialization: 'Orthopaedics & Joint Replacement Surgery'
         },
 
@@ -719,7 +719,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Abhishek Roy',
           qualification: 'MBBS, MS, MAMC, FIJR, FIASM',
           experience: '15+ Years',
-          image: 'assets/specialties/Orthopaedics/Dr. Abhishek Roy.png',
+          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Abhishek-Roy.png',
           specialization: 'Orthopaedics & Joint Replacement'
         }
       ],
@@ -807,7 +807,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Suprova Chakraborty',
           qualification: 'DNB',
           experience: '10+ Years',
-          image: 'assets/Doc-Front/Pulmonologist - Dr. Suprova Chakraborty.png',
+          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Pulmonologist - Dr. Suprova-Chakraborty.png',
           specialization: 'Pulmonology & Respiratory Medicine'
         }
       ],
@@ -855,8 +855,8 @@ const SpecialtyDetail = () => {
     
   // Internal Medicine
 
-    internalMedicine: {
-      id: 'internalmedicine',
+    'internal-medicine': {
+      id: 'internal-medicine',
       title: 'Internal Medicine',
       icon: FiActivity, 
       bannerImage: 'assets/specialties/Internal Medicine//Internal Medicine/Internal-Medicine.png', 
@@ -938,7 +938,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. A K Agarwal',
           qualification: 'MBBS, M.D (Medicine) P.M.C.H',
           experience: '20+ Years',
-          image: 'assets/Doc-Front/Internal Medicine - Dr. A K Agrawal.png',
+          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Internal Medicine - Dr. A K-Agrawal.png',
           specialization: 'Internal Medicine & Diabetes Specialist in Ranchi'
         },
         {
@@ -946,15 +946,15 @@ const SpecialtyDetail = () => {
           name: 'Dr. A K Sinha',
           qualification: 'MBBS, MD',
           experience: '18+ Years',
-          image: 'assets/Doc-Front/Internal Medicine - Dr. A K Sinha.png',
+          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Internal Medicine - Dr. A K-Sinha.png',
           specialization: 'General Medicine & Preventive Care'
         },
         {
-          id: '2103',
-          name: 'Dr. Neelam', 
+          id: 'neelam-kumari',
+          name: 'Dr. Neelam Kumari',
           qualification: 'MBBS, MD',
           experience: '15+ Years',
-          image: '/assets/specialties/InternalMedicine/dr-neelam-ranchi.jpg', // not avl
+          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/General Physician - Dr. Neelam-Kumari.png',
           specialization: 'Internal Medicine & Lifestyle Diseases'
         }
       ],
@@ -1043,15 +1043,15 @@ urology: {
       name: 'Dr. Sunil Kumar',
       qualification: 'MBBS, MS (Gen Surgery), MCh (Urology)',
       experience: '18+ Years',
-      image: '/assets/specialties/Urology/dr-sunil-kumar.jpg',
+      image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Sunil-Kumar.png',
       specialization: 'Urology & Surgical Oncology'
     },
     {
       id: 'ved-prakash',
-      name: 'Dr. Ved Prakash',
+      name: 'Dr. Ved Prakash Verma',
       qualification: 'MBBS, MS (Gen Surgery), MCh (Urology)',
       experience: '15+ Years',
-      image: '/assets/specialties/Urology/dr-ved-prakash.jpg',
+      image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Ved-Prakash-Verma.png',
       specialization: 'Urology'
     }
   ],
@@ -1098,8 +1098,8 @@ urology: {
 }, 
 
 //obstetrics & gynecology
-obstetricsGynaecology: {
-  id: 'obstetrics-gynaecology',
+'obstetrics-and-gynaecology': {
+  id: 'obstetrics-and-gynaecology',
   title: 'Obstetrics & Gynaecology',
   icon: FiHeart, 
   bannerImage: 'assets/specialties/Obstetrics & Gynaecology/Obstetrics & Gynaecology.png',
@@ -1132,11 +1132,11 @@ obstetricsGynaecology: {
 
   specialists: [
     {
-      id: 'anupama-mahli',
-      name: 'Dr. Anupama Mahli',
+      id: 'tanushree-chatterjee',
+      name: 'Dr. Tanushree Chatterjee',
       qualification: 'MBBS, MS, DNB, D.MAS',
       experience: '10+ Years',
-      image: 'assets/specialties/Gynaecology/dr-anupama-mahli.jpg',
+      image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Tanushree-Chatterjee.png',
       specialization: 'Obstetrics & Gynaecology'
     },
     {
@@ -1144,7 +1144,7 @@ obstetricsGynaecology: {
       name: 'Dr. Pushpa Sinha',
       qualification: 'MBBS, MD, DGO',
       experience: '15+ Years',
-      image: 'assets/specialties/Gynaecology/dr-pushpa-sinha.jpg',
+      image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr.-Pushpa-Sinha.png',
       specialization: 'Obstetrics & Gynaecology'
     },
     // {
@@ -1211,8 +1211,8 @@ obstetricsGynaecology: {
 },
 
 // Specialties List
-  aestheticReconstructive: {
-  id: 'aesthetic-reconstructive',
+  'aesthetic-and-reconstructive-surgery': {
+  id: 'aesthetic-and-reconstructive-surgery',
   title: 'Aesthetic & Reconstructive Surgery',
   icon: FiSmile,
   bannerImage: 'assets/specialties/Aesthetic & Reconstructive Surgery/Aesthetic & Reconstructive-Surgery.png',
@@ -1355,8 +1355,16 @@ dental: {
       name: 'Dr. Suraj Mani Bhattacharjee',
       qualification: 'BDS',
       experience: '10+ Years',
-      image: 'assets/specialties/Dental/dr-suraj-mani-bhattacharjee.jpg',
+      image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dental-Surgeon - Dr. Surajmani-bhattacharjee.png',
       specialization: 'Cosmetic Dentistry, Implantology & Preventive Dentistry'
+    },
+    {
+      id: 'abhishek-bhattacharjee',
+      name: 'Dr. Abhishek Bhattacharjee',
+      qualification: 'BDS, MDS',
+      experience: '12+ Years',
+      image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Maxillofacial Surgeon - Dr. Abhishek-Bhattacharjee.png',
+      specialization: 'Maxillofacial Surgery & Dental Implants'
     }
   ],
 
@@ -1437,7 +1445,7 @@ dermatology: {
       name: 'Dr. Piyali Banerjee',
       qualification: 'MBBS, DVDL',
       experience: '12+ Years',
-      image: 'assets/specialties/Dermatology/priya.jpeg',
+      image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dermatologist - Dr. Piyali-Banerjee.png',
       specialization: 'Dermatology, Cosmetology & Hair Disorders'
     }
   ],
@@ -1529,7 +1537,7 @@ ent: {
       name: 'Dr. T G N Sinha',
       qualification: 'MBBS, MS, FICS',
       experience: '40+ Years',
-      image: '',
+      image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/ENT - Dr. T G N-Sinha.png',
       specialization: 'ENT (Ear, Nose & Throat)'
     },
     {
@@ -1605,8 +1613,8 @@ ent: {
 
 //Eye Care
 
-eye: {
-  id: 'eye',
+'eye-care': {
+  id: 'eye-care',
   title: 'Eye Care',
   icon: FiEye, 
   bannerImage: 'assets/specialties/Eye Care/Eye-Care.jpg',
@@ -1692,8 +1700,8 @@ eye: {
   }
 },
 // Paediatrics & Neonatology
-paediatrics: {
-  id: 'paediatrics',
+'pediatrics-and-neonatology': {
+  id: 'pediatrics-and-neonatology',
   title: 'Paediatrics & Neonatology',
   icon: FiUser, 
   bannerImage: 'assets/specialties/Paediatrics & Neonatology/Paediatrics & Neonatology.jpg',
@@ -1779,8 +1787,8 @@ paediatrics: {
 },
 
 
-physiotherapy: {
-  id: 'physiotherapy',
+'physiotherapy-and-rehabilitation': {
+  id: 'physiotherapy-and-rehabilitation',
   title: 'Physiotherapy & Rehabilitation',
   icon: FiActivity, 
   bannerImage: 'assets/specialties/Physiotherapy & Rehabilitation/Physiotherapy & Rehabilitation.jpg',
@@ -1809,9 +1817,9 @@ physiotherapy: {
   specialists: [
     {
       id: 'abhay-pandey',
-      name: 'Dr. Abhay Kr Pandey',
+      name: 'Dr. Abhay Kumar Pandey',
       qualification: 'PT, BPT, MPT, PGDYT, COMT, MIAP',
-      image: 'assets/specialties/Physiotherapy & Rehabilitation/Physiotherapy-dr.front.png',
+      image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Physiotherapist - Dr. Abhay-Kumar-Pandey.png',
       specialization: 'Orthopaedic, Neurological, and Cardiac Rehabilitation',
       profileLink: 'https://rajhospitals.com/dr-abhay-kr-pandey.php'
     }
@@ -1862,8 +1870,8 @@ physiotherapy: {
 
 //Nutrition & Dietetics- chatgpt generated data
 
-nutritionDietetics: {
-  id: 'nutritionDietetics',
+'nutrition-and-dietetics': {
+  id: 'nutrition-and-dietetics',
   title: 'Nutrition & Dietetics',
   icon: FiActivity, 
   bannerImage: 'assets/specialties/Nutrition & Dietetics/Nutrition & Dietetics.jpg',
@@ -1948,8 +1956,8 @@ nutritionDietetics: {
 
 //psychiatry & mental health - chatgpt generated data
 
-psychiatryMentalHealth: {
-  id: 'psychiatryMentalHealth',
+'psychiatry-and-mental-health': {
+  id: 'psychiatry-and-mental-health',
   title: 'Psychiatry & Mental Health',
   icon: FiHeart, 
   bannerImage: 'assets/specialties/Psychiatry & Mental Health/Psychiatry & Mental-Health.jpg',

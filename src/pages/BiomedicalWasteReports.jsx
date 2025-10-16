@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 
-const { FiDownload, FiEye, FiFileText, FiCalendar, FiShield, FiCheckCircle } = FiIcons;
+const { FiDownload, FiFileText, FiCalendar, FiShield } = FiIcons;
 
 const BiomedicalWasteReports = () => {
   const [selectedYear, setSelectedYear] = useState('2024');
@@ -48,16 +48,11 @@ const BiomedicalWasteReports = () => {
     alert(`Downloading ${report.month} ${report.year} Biomedical Waste Report\nFile size: ${report.size}`);
   };
 
-  const handlePreview = (report) => {
-    // Placeholder for PDF preview functionality
-    // Users can replace this with actual preview logic
-    alert(`Opening preview for ${report.month} ${report.year} Biomedical Waste Report`);
-  };
 
   return (
     <div>
       {/* Hero Section with Breadcrumb */}
-      <section className="bg-gradient-to-br from-blue-50 to-orange-50 mt-32 py-16">
+      <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-32 py-16">
         <div className="max-w-7xl mx-auto px-4">
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
@@ -73,11 +68,11 @@ const BiomedicalWasteReports = () => {
             className="text-center">
 
             <div className="flex items-center justify-center mb-6">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                <SafeIcon icon={FiShield} className="w-8 h-8 text-green-600" />
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                <SafeIcon icon={FiShield} className="w-8 h-8 text-primary-600" />
               </div>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
-                Biomedical Waste <span className="text-green-600">Reports</span>
+                Biomedical Waste <span className="text-primary-600">Reports</span>
               </h1>
             </div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -96,10 +91,10 @@ const BiomedicalWasteReports = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-2xl border border-green-100">
+              className="bg-gradient-to-r from-primary-50 to-secondary-50 p-6 rounded-2xl border border-primary-100">
 
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                <SafeIcon icon={FiShield} className="w-6 h-6 text-green-600" />
+              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                <SafeIcon icon={FiShield} className="w-6 h-6 text-primary-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Environmental Safety</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -112,10 +107,10 @@ const BiomedicalWasteReports = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-r from-blue-50 to-orange-50 p-6 rounded-2xl border border-blue-100">
+              className="bg-gradient-to-r from-secondary-50 to-primary-50 p-6 rounded-2xl border border-secondary-100">
 
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <SafeIcon icon={FiFileText} className="w-6 h-6 text-blue-600" />
+              <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
+                <SafeIcon icon={FiFileText} className="w-6 h-6 text-secondary-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Detailed Reports</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -128,10 +123,10 @@ const BiomedicalWasteReports = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-r from-orange-50 to-green-50 p-6 rounded-2xl border border-orange-100">
+              className="bg-gradient-to-r from-primary-50 to-secondary-50 p-6 rounded-2xl border border-primary-100">
 
-              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                <SafeIcon icon={FiCheckCircle} className="w-6 h-6 text-orange-600" />
+              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                <SafeIcon icon={FiShield} className="w-6 h-6 text-primary-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Compliance</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -177,25 +172,14 @@ const BiomedicalWasteReports = () => {
               viewport={{ once: true }}
               className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 border border-gray-100">
 
-                {/* Status Badge */}
-                <div className="flex items-center justify-between mb-4">
-                  <div className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${
-                report.status === 'completed' ?
-                'bg-green-100 text-green-800' :
-                'bg-yellow-100 text-yellow-800'}`
-                }>
-                    <SafeIcon
-                    icon={report.status === 'completed' ? FiCheckCircle : FiCalendar}
-                    className="w-3 h-3 mr-1" />
-
-                    {report.status}
-                  </div>
+                {/* File Size */}
+                <div className="flex items-center justify-end mb-4">
                   <span className="text-xs text-gray-500">{report.size}</span>
                 </div>
 
                 {/* Report Icon */}
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-100 to-green-100 rounded-2xl flex items-center justify-center mb-4 mx-auto">
-                  <SafeIcon icon={FiFileText} className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-gradient-to-r from-primary-100 to-secondary-100 rounded-2xl flex items-center justify-center mb-4 mx-auto">
+                  <SafeIcon icon={FiFileText} className="w-8 h-8 text-primary-600" />
                 </div>
 
                 {/* Report Details */}
@@ -204,25 +188,13 @@ const BiomedicalWasteReports = () => {
                   <p className="text-sm text-gray-600">Biomedical Waste Report</p>
                 </div>
 
-                {/* Action Buttons */}
-                <div className="grid grid-cols-2 gap-2">
-                  <button
-                  onClick={() => handlePreview(report)}
-                  className="flex items-center justify-center px-3 py-2 text-sm font-medium text-blue-600 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
-                  disabled={report.status === 'pending'}>
-
-                    <SafeIcon icon={FiEye} className="w-4 h-4 mr-1" />
-                    Preview
-                  </button>
-                  <button
+                {/* Action Button */}
+                <button
                   onClick={() => handleDownload(report)}
-                  className="flex items-center justify-center px-3 py-2 text-sm font-medium text-green-600 bg-green-50 rounded-lg hover:bg-green-100 transition-colors"
-                  disabled={report.status === 'pending'}>
-
-                    <SafeIcon icon={FiDownload} className="w-4 h-4 mr-1" />
-                    Download
-                  </button>
-                </div>
+                  className="w-full flex items-center justify-center px-4 py-3 text-sm font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 transition-colors">
+                  <SafeIcon icon={FiDownload} className="w-4 h-4 mr-2" />
+                  Download Report
+                </button>
               </motion.div>
             )}
           </div>
@@ -286,23 +258,23 @@ const BiomedicalWasteReports = () => {
       </section>
 
       {/* Information Footer */}
-      <section className="py-12 bg-gradient-to-r from-blue-600 to-green-600">
+      <section className="py-12 bg-gradient-to-r from-primary-500 to-secondary-500">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h3 className="text-2xl font-bold text-white mb-4">Need Help with Reports?</h3>
-          <p className="text-blue-100 mb-6">
-            For any queries regarding biomedical waste reports or compliance requirements, 
+          <p className="text-primary-100 mb-6">
+            For any queries regarding biomedical waste reports or compliance requirements,
             please contact our environmental safety team.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a
               href="mailto:waste-management@rajhospital.com"
-              className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
+              className="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
 
               Email Us
             </a>
             <a
               href="tel:+919771488888"
-              className="bg-transparent border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+              className="bg-transparent border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
 
               Call: +91 97714 88888
             </a>

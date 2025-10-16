@@ -109,6 +109,16 @@ const Header = () => {
   'Awards & Recognition'];
 
 
+  // Helper function to convert specialty names to URL slugs
+  const specialtyToSlug = (specialtyName) => {
+    return specialtyName
+      .toLowerCase()
+      .replace(/&/g, 'and')
+      .replace(/\s+/g, '-')
+      .replace(/[()]/g, '')
+      .replace(/--+/g, '-');
+  };
+
   const scrollToSection = (sectionId) => {
     if (location.pathname === '/') {
       const element = document.getElementById(sectionId);
@@ -4457,10 +4467,10 @@ const Header = () => {
             {category.items.map((specialty) =>
                             <Link
                               key={specialty}
-                              to="/specialties"
+                              to={`/specialties/${specialtyToSlug(specialty)}`}
                               className="px-3 py-2 text-gray-700 leading-tight
                            hover:bg-orange-50 hover:text-orange-600
-                           hover:scale-[1.01] transition-all duration-200 
+                           hover:scale-[1.01] transition-all duration-200
                            rounded-lg border border-transparent
                            hover:border-orange-200 text-left
                            /* Mobile: smaller text and padding */
@@ -6100,9 +6110,6 @@ const Header = () => {
                 </Link>
                 <Link to="/doctors" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                   Doctors
-                </Link>
-                <Link to="/specialties" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                  Specialities
                 </Link>
                 <Link to="/biomedical-waste-reports" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                   Waste Reports

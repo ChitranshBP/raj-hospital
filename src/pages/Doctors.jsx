@@ -150,7 +150,7 @@ useEffect(() => {
                 <img
                   src={doctor.image}
                   alt={doctor.name}
-                  className="w-full h-56 object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"
                   onError={(e) => {
                     e.target.src =
                       "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80";
