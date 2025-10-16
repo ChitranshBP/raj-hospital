@@ -125,42 +125,42 @@ export const doctorsData = [
   // },
 
   // Example second doctor — extend or copy this block to add more
-  {
-    id: 'meera-sharma',
-    name: 'Dr. Meera Sharma',
-    qualifications: 'MBBS, MD',
-    specialty: 'Neurology',
-    experience: '12+ Years',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/sample-doc.png',
-    specialtyIcon: medicalIcons.neurology,
-    description: 'Dr. Meera Sharma is an expert Neurologist with experience in stroke care and epilepsy management.',
-    expertise: ['Epilepsy Management', 'Stroke Care', 'Neurodegenerative Disorders', 'Neurophysiology'],
-    procedures: [
-      {
-        name: 'EEG & Video EEG',
-        description: 'Electrophysiological monitoring for seizure diagnosis',
-      },
-      {
-        name: 'Thrombolysis for Acute Stroke',
-        description: 'Acute reperfusion therapy for ischemic stroke',
-      },
-    ],
-    education: [
-      { degree: 'MD Neurology', institution: 'NIMHANS, Bangalore', year: '2011' },
-      { degree: 'MBBS', institution: 'Delhi University', year: '2007' },
-    ],
-    memberships: ['Indian Academy of Neurology', 'Indian Medical Association (IMA)'],
-    awards: [{ title: 'Best Neurologist Award', organization: 'INA', year: '2020' }],
-    publications: [
-      { title: 'Advancements in Epilepsy Treatment', journal: 'Neurology India', year: '2019' },
-    ],
-    contact: {
-      email: 'dr.meera@cityhospital.com',
-      phone: '+919876543210',
-      clinic: 'City Hospital, Neuro Department',
-      address: 'Bangalore, India',
-    },
-  },
+  // {
+  //   id: 'meera-sharma',
+  //   name: 'Dr. Meera Sharma',
+  //   qualifications: 'MBBS, MD',
+  //   specialty: 'Neurology',
+  //   experience: '12+ Years',
+  //   image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/sample-doc.png',
+  //   specialtyIcon: medicalIcons.neurology,
+  //   description: 'Dr. Meera Sharma is an expert Neurologist with experience in stroke care and epilepsy management.',
+  //   expertise: ['Epilepsy Management', 'Stroke Care', 'Neurodegenerative Disorders', 'Neurophysiology'],
+  //   procedures: [
+  //     {
+  //       name: 'EEG & Video EEG',
+  //       description: 'Electrophysiological monitoring for seizure diagnosis',
+  //     },
+  //     {
+  //       name: 'Thrombolysis for Acute Stroke',
+  //       description: 'Acute reperfusion therapy for ischemic stroke',
+  //     },
+  //   ],
+  //   education: [
+  //     { degree: 'MD Neurology', institution: 'NIMHANS, Bangalore', year: '2011' },
+  //     { degree: 'MBBS', institution: 'Delhi University', year: '2007' },
+  //   ],
+  //   memberships: ['Indian Academy of Neurology', 'Indian Medical Association (IMA)'],
+  //   awards: [{ title: 'Best Neurologist Award', organization: 'INA', year: '2020' }],
+  //   publications: [
+  //     { title: 'Advancements in Epilepsy Treatment', journal: 'Neurology India', year: '2019' },
+  //   ],
+  //   contact: {
+  //     email: 'dr.meera@cityhospital.com',
+  //     phone: '+919876543210',
+  //     clinic: 'City Hospital, Neuro Department',
+  //     address: 'Bangalore, India',
+  //   },
+  // },
 
  {
   id: 'rajesh-jha',
@@ -1051,49 +1051,49 @@ export const doctorsData = [
 
 //aesthetics & critical care
 
-{
-  id: 'pankaj-kumar',
-  name: 'Dr. Pankaj Kumar',
-  qualifications: 'MBBS, MS (General Surgery), MCh (Plastic Surgery)',
-  specialty: 'Aesthetic and Reconstructive Surgery',
-  experience: '10+ Years',
-  image: '',
-  specialtyIcon: medicalIcons.plasticSurgery,
-  description:
-    'Dr. Pankaj Kumar is a renowned Plastic, Cosmetic, and Reconstructive Surgeon based in Ranchi with over 10 years of experience. He is associated with Raj Hospital and Srijan Plastic Cosmetic and Micro Surgery Clinic, known for attention to accurate diagnosis and empathetic patient care.',
-  expertise: [
-    'Nose Reshaping',
-    'Lower Body Lift',
-    'Scar Revision Surgery',
-    'Ear Reconstruction',
-    'Acne/Pimple Scar Treatment',
-    'Non-Surgical Eye Lift'
-  ],
-  procedures: [],
-  education: [
-    {
-      degree: 'MCh (Plastic Surgery)',
-      institution: 'Patna Medical College',
-      year: ''
-    },
-    {
-      degree: 'MBBS',
-      institution: 'Tilka Manjhi Bhagalpur University',
-      year: ''
-    }
-  ],
-  memberships: [],
-  awards: [
-    { title: 'Global Healthcare Excellence Award', year: '' }
-  ],
-  publications: [],
-  contact: {
-    email: '',
-    phone: '+919263630500',
-    clinic: 'Srijan Plastic Cosmetic & Micro Surgery Clinic, Kanka, Ranchi',
-    address: '2nd Floor, Roshpa Tower, Mahatma Gandhi Main Road, Ranchi'
-  }
-},
+// {
+//   id: 'pankaj-kumar',
+//   name: 'Dr. Pankaj Kumar',
+//   qualifications: 'MBBS, MS (General Surgery), MCh (Plastic Surgery)',
+//   specialty: 'Aesthetic and Reconstructive Surgery',
+//   experience: '10+ Years',
+//   image: '',
+//   specialtyIcon: medicalIcons.plasticSurgery,
+//   description:
+//     'Dr. Pankaj Kumar is a renowned Plastic, Cosmetic, and Reconstructive Surgeon based in Ranchi with over 10 years of experience. He is associated with Raj Hospital and Srijan Plastic Cosmetic and Micro Surgery Clinic, known for attention to accurate diagnosis and empathetic patient care.',
+//   expertise: [
+//     'Nose Reshaping',
+//     'Lower Body Lift',
+//     'Scar Revision Surgery',
+//     'Ear Reconstruction',
+//     'Acne/Pimple Scar Treatment',
+//     'Non-Surgical Eye Lift'
+//   ],
+//   procedures: [],
+//   education: [
+//     {
+//       degree: 'MCh (Plastic Surgery)',
+//       institution: 'Patna Medical College',
+//       year: ''
+//     },
+//     {
+//       degree: 'MBBS',
+//       institution: 'Tilka Manjhi Bhagalpur University',
+//       year: ''
+//     }
+//   ],
+//   memberships: [],
+//   awards: [
+//     { title: 'Global Healthcare Excellence Award', year: '' }
+//   ],
+//   publications: [],
+//   contact: {
+//     email: '',
+//     phone: '+919263630500',
+//     clinic: 'Srijan Plastic Cosmetic & Micro Surgery Clinic, Kanka, Ranchi',
+//     address: '2nd Floor, Roshpa Tower, Mahatma Gandhi Main Road, Ranchi'
+//   }
+// },
 
 //dental care
 {
@@ -1202,7 +1202,7 @@ export const doctorsData = [
   qualifications: 'MBBS, MD (ENT), MS (ENT), FARS',
   specialty: 'ENT',
   experience: '14+ Years',
-  image: 'assets/specialties/ENT/ENT-dr.side.png',
+  image: '',
   specialtyIcon: medicalIcons.ent,
   description:
     'Dr. Abhishek KR Ramadhin is a leading ENT specialist at Raj Hospital, Ranchi, with over 14 years of experience. He specializes in Rhinology, Advanced Skull Base Treatment, Allergy Rhinitis, and Sleep Apnea. Dr. Ramadhin is known for his accurate diagnosis, empathetic patient care, and expertise in complex ENT surgeries.',
@@ -1256,55 +1256,55 @@ export const doctorsData = [
 },
 
 //chatgpt content about ent doctor
-{
-  id: 'tg-n-sinha',
-  name: 'Dr. T G N Sinha',
-  qualifications: 'MBBS, MS, FICS',
-  specialty: 'ENT',
-  experience: '40+ Years',
-  image: '',
-  specialtyIcon: medicalIcons.ent,
-  description:
-    'Dr. T G N Sinha is a distinguished ENT specialist at Raj Hospital, Ranchi, with over 40 years of experience. He is renowned for providing expert care in diagnosing and treating a wide range of ear, nose, and throat disorders with advanced technology and personalized patient care.',
-  expertise: [
-    'Ear, Nose, and Throat Disorders',
-    'Phonosurgery',
-    'Laryngology',
-    'Voice Disorders',
-    'ENT Emergencies',
-    'Audiology',
-    'Speech Therapy'
-  ],
-  procedures: [],
-  education: [
-    {
-      degree: 'MBBS',
-      institution: '',
-      year: ''
-    },
-    {
-      degree: 'MS',
-      institution: '',
-      year: ''
-    },
-    {
-      degree: 'Fellow of the International College of Surgeons (FICS)',
-      institution: '',
-      year: ''
-    }
-  ],
-  memberships: [
-    'International College of Surgeons (FICS)'
-  ],
-  awards: [],
-  publications: [],
-  contact: {
-    email: '',
-    phone: '+919263630500',
-    clinic: 'Raj Hospital, Ranchi',
-    address: 'Behind Central, Opposite Roshpa Tower, Ratu Road, Ranchi'
-  }
-},
+// {
+//   id: 'tg-n-sinha',
+//   name: 'Dr. T G N Sinha',
+//   qualifications: 'MBBS, MS, FICS',
+//   specialty: 'ENT',
+//   experience: '40+ Years',
+//   image: '',
+//   specialtyIcon: medicalIcons.ent,
+//   description:
+//     'Dr. T G N Sinha is a distinguished ENT specialist at Raj Hospital, Ranchi, with over 40 years of experience. He is renowned for providing expert care in diagnosing and treating a wide range of ear, nose, and throat disorders with advanced technology and personalized patient care.',
+//   expertise: [
+//     'Ear, Nose, and Throat Disorders',
+//     'Phonosurgery',
+//     'Laryngology',
+//     'Voice Disorders',
+//     'ENT Emergencies',
+//     'Audiology',
+//     'Speech Therapy'
+//   ],
+//   procedures: [],
+//   education: [
+//     {
+//       degree: 'MBBS',
+//       institution: '',
+//       year: ''
+//     },
+//     {
+//       degree: 'MS',
+//       institution: '',
+//       year: ''
+//     },
+//     {
+//       degree: 'Fellow of the International College of Surgeons (FICS)',
+//       institution: '',
+//       year: ''
+//     }
+//   ],
+//   memberships: [
+//     'International College of Surgeons (FICS)'
+//   ],
+//   awards: [],
+//   publications: [],
+//   contact: {
+//     email: '',
+//     phone: '+919263630500',
+//     clinic: 'Raj Hospital, Ranchi',
+//     address: 'Behind Central, Opposite Roshpa Tower, Ratu Road, Ranchi'
+//   }
+// },
 
 {
   id: 'ranajan-jha',
@@ -1520,6 +1520,232 @@ export const doctorsData = [
 //psychiatry & mental health
 
 // no doctors avl
+
+{
+  id: 'shaista-huma',
+  name: 'Dr. Shaista Huma',
+  qualifications: 'M.B.B.S (Gold Medalist), M.D. (Dermatology, Venereology & Leprosy), M.D. (Physiology), A.C.S.I Fellowship in Dermatosurgery',
+  specialty: 'Dermatology, Dermatosurgery & Aesthetics',
+  experience: '10+ Years',
+  image: '', // No image provided
+  specialtyIcon: '', // No icon provided
+  description:
+      'Dr. Shaista Huma is a respected dermatologist and dermatosurgeon with over 10 years of experience. She specializes in clinical dermatology, aesthetic dermatology, and advanced dermatosurgical procedures, committed to patient-centric, modern skin care treatments.',
+    
+  expertise: [
+    'Clinical dermatology (acne, melasma, eczema, psoriasis, autoimmune blistering diseases, connective tissue diseases etc.)',
+    'Dermatosurgery (vitiligo surgery, nail surgery, electro surgery etc.)',
+    'Mole removal',
+    'Cyst excision',
+    'Acne scar revision & post traumatic scar revision surgery',
+    'Freckles',
+    'Chemical peels',
+    'Platelet rich plasma therapy for hair loss and face',
+    'Hair loss and other hair disorders',
+    'Microneedling with prp',
+    'Micro dermabrasion, dermaroller, dermapen etc.',
+    'Laser skin toning',
+    'Laser hair reduction',
+    'Fractional laser resurfacing',
+    'Mnrf (microneedling radiofrequency)'
+  ],
+  education: [
+    { degree: 'M.B.B.S (Gold Medalist)', institution: 'M.G.M Medical College, Jamshedpur', year: '' },
+    { degree: 'M.D. (Dermatology, Venereology & Leprosy)', institution: 'R.I.M.S, Ranchi', year: '' },
+    { degree: 'M.D. (Physiology)', institution: 'R.I.M.S, Ranchi', year: '' },
+    { degree: 'A.C.S.I Fellowship in Dermatosurgery', institution: 'Shivani Skin Care & Cosmetic Clinic, Surat, Gujarat (Under Dr. Yogesh Bhingradia)', year: '' }
+  ],
+  memberships: [
+    'Life member of I.A.D.V.L. (Indian Association of Dermatologists, Venereologists & Leprologists)',
+    'Life member of A.C.S.I. (Association of Cutaneous Surgeons of India)'
+  ],
+  awards: [
+    { title: 'Presented multiple papers at various national and international dermatology conferences', organization: '', year: '' },
+    { title: 'Received intensive training in clinical dermatology, aesthetics & lasers under various renowned dermatologists in Bengaluru', organization: '', year: '' },
+    { title: 'Publications in national and international journals', organization: '', year: '' }
+  ],
+  procedures: [], // Not specified
+  publications: [], // Not specified separately
+  contact: {
+    phone: '+919263630500',
+    email: '', // Not specified
+    clinic: '', // Not specified
+    address: '' // Not specified
+  }
+},
+
+{
+  id: 'ahmad-hussain',
+  name: 'Dr. Ahmad Hussain',
+  qualifications: 'M.B.B.S (PMCH - Dhanbad), MD (Medicine - PMCH, Patna), DrNB (Neurology - Sir Gangaram Hospital, Delhi)',
+  specialty: 'Neurosciences',
+  experience: '5+ Years',
+  image: '', // No image provided
+  specialtyIcon: '', // No icon provided
+ description:
+      'Dr. Ahmad Hussain is a neurologist with over 5 years of experience in managing complex neurological conditions including stroke, epilepsy, dementias, movement disorders, and neuro-infectious diseases.',
+  
+  expertise: [
+    'Stroke (Ischemic & Haemorrhagic)',
+    'Epilepsy',
+    'Dementias (Alzheimer\'s Disease, Vascular Dementia etc.)',
+    'Parkinson\'s Disease and Atypical Parkinsonism',
+    'Autoimmune & Demyelinating Disorders (Multiple Sclerosis, ADEM, NMOSD & MOGAD)',
+    'Myasthenia Gravis',
+    'Neuro Infectious Disorders (Meningitis, Encephalitis, CNS Tuberculosis, Pott\'s Spine etc.)',
+    'Neuropathies (GBS, CIDP etc.)',
+    'MND (Motor Neuron Disease)',
+    'Myopathies',
+    'Movement Disorders'
+  ],
+  education: [
+    { degree: 'M.B.B.S', institution: 'PMCH - Dhanbad', year: '' },
+    { degree: 'MD (Medicine)', institution: 'PMCH - Patna', year: '' },
+    { degree: 'DrNB (Neurology)', institution: 'Sir Gangaram Hospital - Delhi', year: '' }
+  ],
+  memberships: [], // Not specified
+  awards: [], // Not specified
+  procedures: [], // Not specified
+  publications: [], // Not specified
+  contact: {
+    phone: '+919263630500',
+    email: '', // Not specified
+    clinic: '', // Not specified
+    address: '' // Not specified
+  }
+},
+
+{
+  id: 'abhishek-bhattacharjee',
+  name: 'Dr. Abhishek Bhattacharjee',
+  qualifications: 'MBBS, MDS (Oral & Maxillofacial Surgery – Rajiv Gandhi University of Health Sciences, Bangalore, Karnataka)',
+  specialty: 'Oral & Maxillofacial Surgery',
+  experience: '10+ Years',
+  image: '', // No image provided
+  specialtyIcon: '', // No icon provided
+  description: 'Dr. Abhishek Bhattacharjee has over 10 years of clinical experience, treating more than 3000 satisfied patients and performing over 2500 surgeries, including 1000+ major surgeries. He is the Chief Oral and Maxillofacial Surgeon in Asia’s largest dental chain across Delhi and Bangalore. Dr. Bhattacharjee has worked with Mahavir International NGO in Delhi and has served as a consultant at renowned hospitals such as Batra Hospital Delhi, Max Hospital Malvia Nagar Delhi, Krush Divine Hospital Noida, and Sapthagiri Institute of Medical Sciences and Research Centre Bangalore.',
+  expertise: [
+    'Dental Implants', 
+    'Tooth Extraction', 
+    'Surgical Extraction', 
+    'Complex Maxillofacial Trauma', 
+    'Oral Pathology (Cyst and Tumors)', 
+    'Orofacial Infections', 
+    'Dentofacial Deformity Correction', 
+    'Facial Esthetic Procedures', 
+    'Oral Cancer Detection and Treatment', 
+    'Decreased Mouth Opening Treatment', 
+    'Temporomandibular Joint Diseases', 
+    'Minor and Major Oral Surgical Procedures', 
+    'Root Canal Treatment (RCT)', 
+    'Crowns & Bridges', 
+    'Dental Filling', 
+    'Scaling & Polishing'
+  ],
+  education: [
+    { degree: 'MBBS', institution: '', year: '' },
+    { degree: 'MDS', institution: 'Rajiv Gandhi University of Health Sciences, Bangalore', year: '' }
+  ],
+  memberships: [
+    'Member of the Indian Association of Oral and Maxillofacial Surgeons',
+    'Member of the Indian Dental Association'
+  ],
+  awards: [
+    { title: 'Certification in Hair Transplant Surgery', organization: '', year: '' }
+  ],
+  procedures: [], // Not specified
+  publications: [], // Not specified
+  contact: {
+    phone: '+919263630500',
+    email: '', // Not specified
+    clinic: '', // Not specified
+    address: '' // Not specified
+  }
+},
+
+{
+  id: 'mohib-ahmed',
+  name: 'Dr. Mohib Ahmed',
+  qualifications: 'MBBS (JNMCH, AMU), MD (JNMCH, AMU), IDCCM (TMH), EDM (Govind Academy, Singapore)',
+  specialty: 'Critical Care',
+  experience: '16+ Years',
+  image: '', // No image provided
+  specialtyIcon: '', // No icon provided
+  description: 'Dr. Mohib Ahmed is an experienced Critical Care specialist with over 16 years of expertise in managing acute and complex conditions. He is proficient in Neuro Critical Care, Airway Management, and Ultrasound in ICU (POCUS), dedicated to providing evidence-based and compassionate care.',
+  expertise: [
+    'Critical Care',
+    'Neuro Critical Care',
+    'Research',
+    'Airway Management',
+    'Ultrasound in ICU (POCUS)'
+  ],
+  education: [
+    { degree: 'MBBS', institution: 'JNMCH, AMU', year: '' },
+    { degree: 'MD', institution: 'JNMCH, AMU', year: '' },
+    { degree: 'IDCCM', institution: 'TMH', year: '' },
+    { degree: 'EDM', institution: 'Govind Academy, Singapore', year: '' }
+  ],
+  memberships: [
+    'Member of American College of Chest Physician (ACCP)',
+    'Member of European Society of Intensive Care Medicine (ESICM)',
+    'Member of Neuro Critical Care Society (NCS)',
+    'Member of Indian Society Of Critical Care Medicine (ISCCM)',
+    'Member of Research Society Of Anaesthesia And Clinical Pharmacology (RSACP)',
+    'Member of Indian Medical Association (IMA)',
+    'Founder Member of Ranchi Critical Care Society (RCCS, ISCCM)',
+    'Treasurer - Ranchi Critical Care Society (RCCS, ISCCM)'
+  ],
+  awards: [], // Not specified
+  procedures: [], // Not specified
+  publications: [], // Not specified
+  contact: {
+    phone: '+919263630500',
+    email: '', // Not specified
+    clinic: '', // Not specified
+    address: '' // Not specified
+  }
+},
+
+{
+  id: 'vikash-sharma',
+  name: 'Dr. Vikash Sharma',
+  qualifications: 'BDS - Army College Of Dental Science, Secunderabad; MDS - Government Dental College And Hospital, Ahmedabad',
+  specialty: 'Oral And Maxillofacial Surgery',
+  experience: '9+ Years',
+  description: `Dr. Vikash Sharma is an experienced oral and maxillofacial surgeon with over 9 years of clinical practice. His areas of expertise include dental surgery, smile design, dental rehabilitation, dental implants, maxillofacial trauma and pathology, TMJ surgery, orthognathic surgery, facial aesthetic surgery, and head and neck oncology. He is known for providing comprehensive treatment in advanced dental and maxillofacial procedures.`,
+  expertise: [
+    'Dental Surgery',
+    'Smile Design',
+    'Dental Rehabilitation',
+    'Dental Implants',
+    'Maxillofacial Trauma',
+    'Maxillofacial Pathology',
+    'TMJ Surgery',
+    'Orthognathic Surgery',
+    'Facial Aesthetic Surgery',
+    'Head And Neck Oncology'
+  ],
+  education: [
+    { degree: 'BDS', institution: 'Army College Of Dental Science, Secunderabad', year: '' },
+    { degree: 'MDS', institution: 'Government Dental College And Hospital, Ahmedabad', year: '' }
+  ],
+  memberships: [], // Not specified
+  awards: [], // Not specified
+  procedures: [], // Not specified
+  publications: [], // Not specified
+  contact: {
+    phone: '+919263630500',
+    email: '',
+    clinic: '',
+    address: ''
+  }
+},
+
+
+
+
+
+
 
 
 
