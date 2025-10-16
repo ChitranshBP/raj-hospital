@@ -1013,19 +1013,19 @@ urology: {
   
   services: [
     { title: 'Prostate Surgeries – TURP', description: 'Treatment for benign prostatic hyperplasia and related conditions using Transurethral Resection of Prostate.', image: 'assets/specialties/Urology/Prostate-Surgeries.png' },
-    { title: 'Kidney Stone Surgeries', description: 'Minimally invasive and surgical removal of kidney and bladder stones.', image: '/assets/specialties/Urology/Kidney-Stones-Surgeries.png' },
-    { title: 'Female Urology Surgeries', description: 'Treatment for female urinary tract conditions including incontinence and prolapse.', image: '/assets/specialties/Urology/female-urology.png' },
-    { title: 'Infertility Treatment', description: 'Care and surgical management of male and female infertility in the reproductive age group.', image: '/assets/specialties/Urology/infertility.png' },
-    { title: 'Lithotripsy', description: 'Non-invasive shock wave therapy for breaking down kidney stones.', image: '/assets/specialties/Urology/lithotripsy.png' },
-    { title: 'Robotic Surgery', description: 'Advanced robotic-assisted surgical techniques for precision and quicker recovery.', image: '/assets/specialties/Urology/robotic-surgery.png' },
-    { title: 'Renal Transplantation', description: 'Comprehensive pre-op and post-op care and surgery for kidney transplant patients.', image: '/assets/specialties/Urology/kidney-transplant.png' },
-    { title: 'Laparoscopic Surgery', description: 'Minimally invasive surgeries for urological conditions including tumors and reconstructions.', image: '/assets/specialties/Urology/laparoscopy.png' },
-    { title: 'Pancreatic Disorders', description: 'Diagnosis and treatment of pancreatic and adjacent genitourinary disorders.', image: '/assets/specialties/Urology/pancreatic-disorder.png' },
-    { title: 'Endourology', description: 'Minimally invasive procedures for urinary tract disorders via endoscopic techniques.', image: '/assets/specialties/Urology/endourology.png' },
-    { title: 'Uro-Oncology', description: 'Management of urological cancers including bladder, prostate, and renal tumors.', image: '/assets/specialties/Urology/uro-oncology.png' },
-    { title: 'Male Infertility & Andrology', description: 'Evaluation and treatment of male reproductive health issues.', image: '/assets/specialties/Urology/andrology.png' },
-    { title: 'Vascular Access for Hemodialysis (AVF)', description: 'Creation and maintenance of arteriovenous fistulas for dialysis patients.', image: '/assets/specialties/Urology/vascular-access.png' },
-    { title: 'Reconstructive Urology', description: 'Surgical repair and reconstruction of genitourinary tract anomalies.', image: '/assets/specialties/Urology/reconstructive-urology.png' }
+    { title: 'Kidney Stone Surgeries', description: 'Minimally invasive and surgical removal of kidney and bladder stones.', image: '/assets/specialties/Urology/Kidney-Stone-Surgeries.png' },
+    { title: 'Female Urology Surgeries', description: 'Treatment for female urinary tract conditions including incontinence and prolapse.', image: '/assets/specialties/Urology/Female-Urology-Surgeries.png' },
+    { title: 'Infertility Treatment', description: 'Care and surgical management of male and female infertility in the reproductive age group.', image: '/assets/specialties/Urology/Infertility-Treatment.png' },
+    { title: 'Lithotripsy', description: 'Non-invasive shock wave therapy for breaking down kidney stones.', image: '/assets/specialties/Urology/Lithotripsy.png' },
+    { title: 'Robotic Surgery', description: 'Advanced robotic-assisted surgical techniques for precision and quicker recovery.', image: '/assets/specialties/Urology/Robotic-Surgery.png' },
+    { title: 'Renal Transplantation', description: 'Comprehensive pre-op and post-op care and surgery for kidney transplant patients.', image: '/assets/specialties/Urology/Renal-Transplantation.png' },
+    { title: 'Laparoscopic Surgery', description: 'Minimally invasive surgeries for urological conditions including tumors and reconstructions.', image: '/assets/specialties/Urology/Laparoscopi- Surgery.png' },
+    { title: 'Pancreatic Disorders', description: 'Diagnosis and treatment of pancreatic and adjacent genitourinary disorders.', image: '/assets/specialties/Urology/Pancreatic-Disorders.png' },
+    { title: 'Endourology', description: 'Minimally invasive procedures for urinary tract disorders via endoscopic techniques.', image: '/assets/specialties/Urology/Endourology.png' },
+    { title: 'Uro-Oncology', description: 'Management of urological cancers including bladder, prostate, and renal tumors.', image: '/assets/specialties/Urology/Uro-Oncology.png' },
+    { title: 'Male Infertility & Andrology', description: 'Evaluation and treatment of male reproductive health issues.', image: '/assets/specialties/Urology/Mal- Infertility.png' },
+    { title: 'Vascular Access for Hemodialysis (AVF)', description: 'Creation and maintenance of arteriovenous fistulas for dialysis patients.', image: '/assets/specialties/Urology/Vascular-Access for-Hemodialysis.png' },
+    { title: 'Reconstructive Urology', description: 'Surgical repair and reconstruction of genitourinary tract anomalies.', image: '/assets/specialties/Urology/Reconstructive-Urology.png' }
   ],
 
   facilities: [
@@ -1215,22 +1215,22 @@ obstetricsGynaecology: {
   id: 'aesthetic-reconstructive',
   title: 'Aesthetic & Reconstructive Surgery',
   icon: FiSmile,
-  bannerImage: 'assets/specialties/Aesthetic/banner-aesthetic.png',
+  bannerImage: 'assets/specialties/Aesthetic & Reconstructive Surgery/Aesthetic & Reconstructive-Surgery.png',
   shortDescription: 'Best hospital for aesthetic & reconstructive surgery in Ranchi with expert plastic surgeons and cutting-edge technology.',
   longDescription: 'The Department of Aesthetic & Reconstructive Surgery at Raj Hospitals, Ranchi, combines advanced cosmetic procedures with reconstructive expertise to deliver world-class care. Established by eminent plastic surgeons, the department provides individualized treatments for scars, birth defects, facial reconstruction, and body reshaping. Using state-of-the-art technology and minimally invasive techniques, our expert plastic and maxillofacial surgeons improve aesthetics, self-esteem, and functional outcomes. Whether it is corrective surgery after trauma, congenital defect management, or cosmetic enhancement, Raj Hospitals ensures safe, precise, and natural-looking results.',
 
   services: [
-    { title: 'Brow Lift', description: 'Enhance forehead and eye appearance by correcting sagging brows.', image: 'assets/specialties/Aesthetic/brow-lift.png' },
-    { title: 'Facial Implants', description: 'Jaw, cheek, and chin implants to balance facial aesthetics.', image: 'assets/specialties/Aesthetic/facial-implants.png' },
-    { title: 'Wrinkle Filling', description: 'Safe dermal fillers to reduce signs of aging and restore youthful look.', image: 'assets/specialties/Aesthetic/wrinkle-filling.png' },
-    { title: 'Lip Augmentation', description: 'Enhancement procedures to improve lip shape and volume.', image: 'assets/specialties/Aesthetic/lip-augmentation.png' },
-    { title: 'Hair Restoration Surgery', description: 'Advanced hair transplantation and restoration techniques.', image: 'assets/specialties/Aesthetic/hair-restoration.png' },
-    { title: 'Buttock & Thigh Lift', description: 'Reshaping procedures for better contour and body proportion.', image: 'assets/specialties/Aesthetic/buttock-thigh-lift.png' },
-    { title: 'Liposuction', description: 'Surgical fat removal for body shaping and sculpting.', image: 'assets/specialties/Aesthetic/liposuction.png' },
-    { title: 'Blepharoplasty (Eyelid Surgery)', description: 'Correct drooping eyelids and rejuvenate the eye area.', image: 'assets/specialties/Aesthetic/blepharoplasty.png' },
-    { title: 'Chin & Facial Surgery', description: 'Corrective surgeries to enhance jawline and chin structure.', image: 'assets/specialties/Aesthetic/chin-surgery.png' },
-    { title: 'Non-surgical Face Rejuvenation', description: 'Advanced non-invasive treatments for anti-aging & skin tightening.', image: 'assets/specialties/Aesthetic/face-rejuvenation.png' },
-    { title: 'Non-surgical Rhinoplasty', description: 'Non-invasive reshaping of the nose for balanced facial aesthetics.', image: 'assets/specialties/Aesthetic/rhinoplasty.png' }
+    { title: 'Brow Lift', description: 'Enhance forehead and eye appearance by correcting sagging brows.', image: 'assets/specialties/Aesthetic & Reconstructive Surgery/Brow-Lift.png' },
+    { title: 'Facial Implants', description: 'Jaw, cheek, and chin implants to balance facial aesthetics.', image: 'assets/specialties/Aesthetic & Reconstructive Surgery/Facia- Implants.png' },
+    { title: 'Wrinkle Filling', description: 'Safe dermal fillers to reduce signs of aging and restore youthful look.', image: 'assets/specialties/Aesthetic & Reconstructive Surgery/Wrinkle-Filling.png' },
+    { title: 'Lip Augmentation', description: 'Enhancement procedures to improve lip shape and volume.', image: 'assets/specialties/Aesthetic & Reconstructive Surgery/Lip-Augmentation.png' },
+    { title: 'Hair Restoration Surgery', description: 'Advanced hair transplantation and restoration techniques.', image: 'assets/specialties/Aesthetic & Reconstructive Surgery/Hair-Restoration-Surgery.png' },
+    { title: 'Buttock & Thigh Lift', description: 'Reshaping procedures for better contour and body proportion.', image: 'assets/specialties/Aesthetic & Reconstructive Surgery/Buttock & Thigh-Lift.png' },
+    { title: 'Liposuction', description: 'Surgical fat removal for body shaping and sculpting.', image: 'assets/specialties/Aesthetic & Reconstructive Surgery/Liposuction.png' },
+    { title: 'Blepharoplasty (Eyelid Surgery)', description: 'Correct drooping eyelids and rejuvenate the eye area.', image: 'assets/specialties/Aesthetic & Reconstructive Surgery/Blepharoplasty.png' },
+    { title: 'Chin & Facial Surgery', description: 'Corrective surgeries to enhance jawline and chin structure.', image: 'assets/specialties/Aesthetic & Reconstructive Surgery/Chin & Facial-Surgery.png' },
+    { title: 'Non-surgical Face Rejuvenation', description: 'Advanced non-invasive treatments for anti-aging & skin tightening.', image: 'assets/specialties/Aesthetic & Reconstructive Surgery/Non-surgical-Face-Rejuvenation.png' },
+    { title: 'Non-surgical Rhinoplasty', description: 'Non-invasive reshaping of the nose for balanced facial aesthetics.', image: 'assets/specialties/Aesthetic & Reconstructive Surgery/Non-surgical-Rhinoplasty.png' }
   ],
 
   facilities: [
