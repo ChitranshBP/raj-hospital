@@ -1974,20 +1974,20 @@ psychiatryMentalHealth: {
   ],
 
   specialists: [
-    {
-      id: '1001',
-      name: 'Dr. Neha Sharma',
-      qualification: 'MD Psychiatry',
-      image: 'assets/specialties/PSYCHIATRY/dr-neha-sharma.jpg',
-      specialization: 'Adult and Geriatric Psychiatry'
-    },
-    {
-      id: '1002',
-      name: 'Dr. Rajeev Kumar',
-      qualification: 'MD Psychiatry',
-      image: 'assets/specialties/PSYCHIATRY/dr-rajeev-kumar.jpg',
-      specialization: 'Child and Adolescent Psychiatry'
-    }
+    // {
+    //   id: '1001',
+    //   name: 'Dr. Neha Sharma',
+    //   qualification: 'MD Psychiatry',
+    //   image: 'assets/specialties/PSYCHIATRY/dr-neha-sharma.jpg',
+    //   specialization: 'Adult and Geriatric Psychiatry'
+    // },
+    // {
+    //   id: '1002',
+    //   name: 'Dr. Rajeev Kumar',
+    //   qualification: 'MD Psychiatry',
+    //   image: 'assets/specialties/PSYCHIATRY/dr-rajeev-kumar.jpg',
+    //   specialization: 'Child and Adolescent Psychiatry'
+    // }
   ],
 
   successStories: [
