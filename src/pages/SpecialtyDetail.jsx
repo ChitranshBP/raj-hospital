@@ -480,7 +480,7 @@ const SpecialtyDetail = () => {
 
       neurosciences: {
       id: 'neurosciences',
-      title: 'neurology',
+      title: 'Neurology',
       icon: FiBrain,
       bannerImage: 'assets/specialties/Neuroscience/Neurological-Diagnostics.png',
       shortDescription: 'Best Neurologist Hospital in Ranchi offering comprehensive brain and spine care by expert neuro physicians.',
