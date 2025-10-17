@@ -370,7 +370,7 @@ const Header = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.25, ease: "easeOut" }}
-                      className="absolute top-full mt-4 z-20
+                      className="absolute top-full mt-4 z-20 right-0
                /* Mobile: full width with margin */
                w-[calc(100vw-2rem)] mx-4
                /* Small screens: slightly smaller */
