@@ -529,16 +529,16 @@ const SpecialtyDetail = () => {
           image: '/assets/specialties/Neurosciences/dr-vijay-raj.jpg',
           specialization: 'Neurology & Neurosurgery'
         },
+        // {
+        //   id: 'vivek-raj-2',
+        //   name: 'Dr. Vivek Raj',
+        //   qualification: 'MBBS, ECFMG, DNB',
+        //   experience: '15+ Years',
+        //   image: '/assets/specialties/Neurosciences/dr-vivek-raj.jpg',
+        //   specialization: 'Neurology'
+        // },
         {
-          id: 'vivek-raj-2',
-          name: 'Dr. Vivek Raj',
-          qualification: 'MBBS, ECFMG, DNB',
-          experience: '15+ Years',
-          image: '/assets/specialties/Neurosciences/dr-vivek-raj.jpg',
-          specialization: 'Neurology'
-        },
-        {
-          id: '703',
+          id: 'ahmad-hussain',
           name: 'Dr. Ahmad Hussain',
           qualification: 'MBBS, MD, DrNB',
           experience: '12+ Years',
@@ -622,7 +622,7 @@ const SpecialtyDetail = () => {
           specialization: 'Oncology & Surgical Oncology'
         },
         {
-          id: 'pk-raina-2',
+          id: 'abhijit-kumar',
           name: 'Dr. Abhijit Kumar',
           qualification: 'MBBS, MS, PDCC',
           experience: '16+ Years',

@@ -370,18 +370,22 @@ const Header = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.25, ease: "easeOut" }}
-                      className="absolute top-full mt-4 z-20 right-0
+                      className="absolute top-full mt-4 z-20
+               /* Position: right-aligned but with left constraint to prevent overflow */
+               left-auto right-0
                /* Mobile: full width with margin */
-               w-[calc(100vw-2rem)] mx-4
+               w-[calc(100vw-2rem)]
                /* Small screens: slightly smaller */
-               sm:w-[calc(100vw-4rem)] sm:mx-8
+               sm:w-[calc(100vw-4rem)]
                /* Medium screens: fixed width */
-               md:w-[600px] md:mx-0
+               md:w-[600px]
                /* Large screens: larger width */
                lg:w-[800px]
                /* Extra large screens: max width */
                xl:w-[900px]
-               bg-white rounded-2xl shadow-2xl border border-gray-100 z-20
+               /* Ensure it doesn't overflow left */
+               max-w-[calc(100vw-2rem)]
+               bg-white rounded-2xl shadow-2xl border border-gray-100
                /* Mobile: smaller padding */
                py-4 px-4
                /* Medium screens: larger padding */

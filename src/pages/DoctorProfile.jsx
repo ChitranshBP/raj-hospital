@@ -423,7 +423,7 @@ export const doctorsData = [
   }
 },
 {
-  id: 'neelam',
+  id: 'neelam-kumari',
   name: 'Dr. Neelam Kumari',
   qualifications: 'MBBS, MD, DNB (Orthopaedics)',
   specialty: 'Internal Medicine',
