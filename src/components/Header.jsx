@@ -150,13 +150,13 @@ const Header = () => {
       <div className="hidden md:flex items-center justify-center space-x-6">
         {/* Social Media Icons */}
         <div className="flex items-center space-x-3">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+          <a href="https://www.facebook.com/RajHospitals" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
             <SafeIcon icon={FiFacebook} className="w-5 h-5" />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
             <SafeIcon icon={FiInstagram} className="w-5 h-5" />
           </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+          <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
             <SafeIcon icon={FiYoutube} className="w-5 h-5" />
           </a>
         </div>
@@ -371,17 +371,21 @@ const Header = () => {
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.25, ease: "easeOut" }}
                       className="absolute top-full mt-4 z-20
+               /* Position: right-aligned but with left constraint to prevent overflow */
+               left-auto right-0
                /* Mobile: full width with margin */
-               w-[calc(100vw-2rem)] mx-4
+               w-[calc(100vw-2rem)]
                /* Small screens: slightly smaller */
-               sm:w-[calc(100vw-4rem)] sm:mx-8
+               sm:w-[calc(100vw-4rem)]
                /* Medium screens: fixed width */
-               md:w-[600px] md:mx-0
+               md:w-[600px]
                /* Large screens: larger width */
                lg:w-[800px]
                /* Extra large screens: max width */
                xl:w-[900px]
-               bg-white rounded-2xl shadow-2xl border border-gray-100 z-20
+               /* Ensure it doesn't overflow left */
+               max-w-[calc(100vw-2rem)]
+               bg-white rounded-2xl shadow-2xl border border-gray-100
                /* Mobile: smaller padding */
                py-4 px-4
                /* Medium screens: larger padding */

@@ -577,8 +577,8 @@ const SpecialtyDetail = () => {
     // Neuroscience
 
       neurosciences: {
-      id: 'neurology',
-      title: 'neurology',
+      id: 'neurosciences',
+      title: 'Neurology',
       icon: FiBrain,
       bannerImage: 'assets/specialties/Neuroscience/Neurological-Diagnostics.png',
       shortDescription: 'Best Neurologist Hospital in Ranchi offering comprehensive brain and spine care by expert neuro physicians.',
@@ -627,16 +627,16 @@ const SpecialtyDetail = () => {
           image: '/assets/specialties/Neurosciences/dr-vijay-raj.jpg',
           specialization: 'Neurology & Neurosurgery'
         },
+        // {
+        //   id: 'vivek-raj-2',
+        //   name: 'Dr. Vivek Raj',
+        //   qualification: 'MBBS, ECFMG, DNB',
+        //   experience: '15+ Years',
+        //   image: '/assets/specialties/Neurosciences/dr-vivek-raj.jpg',
+        //   specialization: 'Neurology'
+        // },
         {
-          id: 'vivek-raj-2',
-          name: 'Dr. Vivek Raj',
-          qualification: 'MBBS, ECFMG, DNB',
-          experience: '15+ Years',
-          image: '/assets/specialties/Neurosciences/dr-vivek-raj.jpg',
-          specialization: 'Neurology'
-        },
-        {
-          id: '703',
+          id: 'ahmad-hussain',
           name: 'Dr. Ahmad Hussain',
           qualification: 'MBBS, MD, DrNB',
           experience: '12+ Years',
@@ -720,7 +720,7 @@ const SpecialtyDetail = () => {
           specialization: 'Oncology & Surgical Oncology'
         },
         {
-          id: 'pk-raina-2',
+          id: 'abhijit-kumar',
           name: 'Dr. Abhijit Kumar',
           qualification: 'MBBS, MS, PDCC',
           experience: '16+ Years',
@@ -2967,7 +2967,7 @@ function SidebarSpecialistsSlider({ specialists }) {
         className="flex flex-col gap-8 overflow-y-auto"
         style={{ maxHeight: "1000px", maxWidth: "340px", margin: "0 auto" }}
       >
-        {specialty.specialists.map((doctor, index) => (
+        {[...specialty.specialists].sort((a, b) => a.name.localeCompare(b.name)).map((doctor, index) => (
           <motion.div
             key={doctor.id}
             initial={{ opacity: 0, y: 30 }}
@@ -2987,7 +2987,7 @@ function SidebarSpecialistsSlider({ specialists }) {
                     "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80";
                 }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+              <div className="absolute inset-0"></div>
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-1">{doctor.name}</h3>
