@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 
-const { FiHeart, FiBrain, FiDroplet, FiShield, FiUser, FiSettings, FiZap, FiMic, FiActivity, FiAlertCircle, FiSmile, FiSun, FiMoon, FiAperture, FiPlus, FiArrowRight, FiChevronLeft, FiChevronRight } = FiIcons;
+const { FiHeart, FiBrain,FiTool,  FiAlertTriangle,FiScissors,FiTrendingUp,  FiDroplet, FiShield, FiUser, FiSettings, FiZap, FiMic, FiActivity, FiAlertCircle, FiSmile, FiSun, FiMoon, FiAperture, FiPlus, FiArrowRight, FiChevronLeft, FiChevronRight } = FiIcons;
 
 const TabbedServicesSection = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -16,185 +16,168 @@ const TabbedServicesSection = () => {
     shortTitle: 'Cardiology',
     icon: FiHeart,
     image: 'assets/home-img/Cardiology.png',
-    description: 'Comprehensive heart care with advanced cardiac procedures, interventional cardiology, and preventive heart health programs.',
+    description: 'Specialized cardiac care including advanced diagnostics, interventional procedures, and heart failure management.',
     features: [
-    'Advanced Cardiac Catheterization',
-    'Angioplasty & Stent Placement',
-    'Bypass Surgery (CABG)',
-    'Pacemaker Implantation',
-    'Heart Failure Management',
-    'Preventive Cardiology'],
-
+      'Daycare Angiography',
+      'Angioplasty',
+      'IVUS, Coiling, RFA',
+      'Leadless Pacemaker',
+      'Heart Attack (MI)',
+      'Heart Failure Management'
+    ],
     stats: { procedures: '2000+', experience: '15+ Years' }
   },
+
   {
-    id: 'neurosciences',
-    title: 'Neurosciences',
+    id: 'neurology',
+    title: 'Neurology',
     shortTitle: 'Neurology',
-    icon: FiBrain,
-    image: 'assets/home-img/Neurosciences.png',
-    description: 'Expert neurological care for brain, spine, and nervous system disorders with state-of-the-art technology and minimally invasive techniques.',
+    icon: FiAperture,
+    image: 'assets/home-img/Neurology.png',
+    description: 'Comprehensive brain and spine care for injuries, strokes, and neurological disorders.',
     features: [
-    'Brain & Spine Surgery',
-    'Stroke Treatment & Prevention',
-    'Epilepsy Management',
-    'Movement Disorders',
-    'Neurocritical Care',
-    'Neurological Rehabilitation'],
-
-    stats: { procedures: '1500+', experience: '12+ Years' }
+      'Head Injuries',
+      'Brain Stroke Unit & Seizures',
+      'Endoscopic Spine Surgery',
+      'Stereotactic Tumor Surgery',
+      'Trauma, Tumor & TB Surgeries'
+    ],
+    stats: { procedures: '2000+', experience: '15+ Years' }
   },
-  {
-    id: 'nephrology',
-    title: 'Nephrology',
-    shortTitle: 'Nephrology',
-    icon: FiDroplet,
-    image: 'assets/home-img/Neurosciences.png',
-    description: 'Complete kidney care including dialysis services, kidney transplantation, and chronic kidney disease management with compassionate care.',
-    features: [
-    'Hemodialysis & Peritoneal Dialysis',
-    'Kidney Transplantation',
-    'Chronic Kidney Disease Management',
-    'Kidney Stone Treatment',
-    'Hypertension Management',
-    'Acute Kidney Injury Care'],
 
-    stats: { procedures: '3000+', experience: '18+ Years' }
-  },
-  {
-    id: 'oncology',
-    title: 'Oncology',
-    shortTitle: 'Oncology',
-    icon: FiShield,
-    image: 'assets/home-img/Oncology.png',
-    description: 'Comprehensive cancer treatment with medical oncology, surgical oncology, and radiation therapy in a supportive environment.',
-    features: [
-    'Medical Oncology',
-    'Surgical Oncology',
-    'Radiation Therapy',
-    'Chemotherapy',
-    'Immunotherapy',
-    'Palliative Care'],
-
-    stats: { procedures: '1200+', experience: '14+ Years' }
-  },
-  {
-    id: 'obstetrics',
+ {
+    id: 'gynecology',
     title: 'Obstetrics & Gynecology',
     shortTitle: 'Gynecology',
     icon: FiUser,
-    image: 'assets/home-img/Obstetrics & Gynecology.png',
-    description: 'Complete women\'s health services including maternity care, gynecological surgeries, and fertility treatments with personalized care.',
+    image: 'assets/home-img/Gynecology.png',
+    description: 'Specialized care for women’s health, pregnancy, and gynecological conditions.',
     features: [
-    'Normal & High-Risk Deliveries',
-    'Cesarean Sections',
-    'Laparoscopic Gynecology',
-    'Fertility Treatments',
-    'Menopause Management',
-    'Gynecological Oncology'],
+      'Comprehensive Obstetrics & Gynecology Services',
+      'High-Risk Pregnancy Management',
+      'Gynecological Surgeries'
+    ],
+    stats: { procedures: '2000+', experience: '15+ Years' }
+  },
 
-    stats: { procedures: '4000+', experience: '16+ Years' }
+ {
+    id: 'nephrology',
+    title: 'Nephrology',
+    shortTitle: 'Nephrology',
+    icon: FiAperture,
+    image: 'assets/home-img/Nephrology.png',
+    description: 'Advanced kidney care with dialysis and continuous renal replacement therapy.',
+    features: [
+      'Hypertensive & Diabetic Kidney Disease',
+      'Hemodialysis, Peritoneal Dialysis',
+      'Acute Kidney Injury, CKD',
+      'CRRT (Continuous Renal Replacement Therapy)'
+    ],
+    stats: { procedures: '2000+', experience: '15+ Years' }
   },
   {
-    id: 'orthopedics',
-    title: 'Orthopedics',
-    shortTitle: 'Orthopedics',
-    icon: FiSettings,
-    image: 'assets/home-img/Orthopedics.png',
-    description: 'Advanced bone and joint care including joint replacement surgeries, sports medicine, and trauma care with latest techniques.',
+    id: 'oncology',
+    title: 'Oncology (Cancer Care)',
+    shortTitle: 'Oncology',
+    icon: FiAperture,
+    image: 'assets/home-img/Oncology.png',
+    description: 'Comprehensive cancer care through chemotherapy and specialized surgical oncology.',
     features: [
-    'Joint Replacement Surgery',
-    'Arthroscopic Procedures',
-    'Sports Medicine',
-    'Trauma & Fracture Care',
-    'Spine Surgery',
-    'Pediatric Orthopedics'],
-
+      'Clinical Oncology (Chemotherapy)',
+      'Surgical Oncology - Head & Neck, Breast, Lungs, Abdominal etc.'
+    ],
+    stats: { procedures: '2000+', experience: '15+ Years' }
+  },
+   {
+    id: 'orthopaedics',
+    title: 'Orthopaedics & Joint Replacement',
+    shortTitle: 'Orthopaedics',
+    icon: FiAperture,
+    image: 'assets/home-img/Orthopaedics.png',
+    description: 'Comprehensive bone and joint care including replacements and sports injury management.',
+    features: [
+      'Joint Replacements - Knee, Hip, Shoulder, Elbow & Ankle',
+      'Arthroscopy, Sports Injury',
+      'Bone Deformity Surgeries'
+    ],
     stats: { procedures: '2500+', experience: '20+ Years' }
   },
+
   {
     id: 'surgery',
-    title: 'General Surgery',
+    title: 'Minimal Access Surgery',
     shortTitle: 'Surgery',
-    icon: FiZap,
-    image: 'assets/home-img/General-Surgery.png',
-    description: 'Advanced surgical procedures using minimally invasive techniques for faster recovery and better outcomes.',
+    icon: FiScissors,
+    image: 'assets/home-img/MinimalAccess.png',
+    description: 'Laparoscopic and laser surgeries for faster recovery and minimal invasiveness.',
     features: [
-    'Laparoscopic Surgery',
-    'Bariatric Surgery',
-    'Hernia Repair',
-    'Gallbladder Surgery',
-    'Colorectal Surgery',
-    'Emergency Surgery'],
-
+      'Laparoscopic & Laser Surgery - Gall Bladder',
+      'Hernia, Appendix, General Surgery',
+      'Thoracoscopic (Lung) Surgeries',
+      'Bariatric (Weight loss) & GI Surgeries'
+    ],
     stats: { procedures: '3500+', experience: '22+ Years' }
   },
   {
     id: 'ent',
-    title: 'ENT',
+    title: 'ENT (Ear, Nose & Throat)',
     shortTitle: 'ENT',
     icon: FiMic,
-    image: 'assets/home-img/.png',
-    description: 'Specialized ear, nose, and throat care with advanced microsurgical techniques and comprehensive treatment options.',
+    image: 'assets/home-img/ENT.png',
+    description: 'Comprehensive ear, nose, and throat care for all age groups.',
     features: [
-    'Hearing Tests & Treatments',
-    'Sinus Surgery',
-    'Tonsillectomy',
-    'Voice Disorders',
-    'Sleep Apnea Treatment',
-    'Head & Neck Surgery'],
-
+      'Diagnosis and Treatment of ENT Disorders',
+      'Hearing and Sinus Surgeries',
+      'Voice and Throat Care'
+    ],
     stats: { procedures: '1800+', experience: '14+ Years' }
   },
-  {
+
+
+ {
     id: 'gastroenterology',
     title: 'Gastroenterology',
-    shortTitle: 'Gastro',
-    icon: FiActivity,
+    shortTitle: 'Gastrology',
+    icon: FiTrendingUp,
     image: 'assets/home-img/Gastroenterology.png',
-    description: 'Comprehensive digestive system care including advanced endoscopy and treatment of gastrointestinal disorders.',
+    description: 'Advanced digestive and liver care through endoscopy and minimally invasive treatments.',
     features: [
-    'Upper & Lower Endoscopy',
-    'Colonoscopy Screening',
-    'Liver Disease Treatment',
-    'IBD Management',
-    'Pancreatic Disorders',
-    'Gastrointestinal Cancer Care'],
-
+      'Endoscopy & Colonoscopy',
+      'ERCP, EUS, Hepatitis',
+      'Pancreatitis, Reflux, Peptic Ulcer',
+      'Abdominal Pain, Fatty Liver',
+      'Bile Duct Obstruction & GI Stenting'
+    ],
     stats: { procedures: '2200+', experience: '16+ Years' }
   },
   {
     id: 'emergency',
-    title: 'Emergency Care',
+    title: 'Emergency & Trauma Care',
     shortTitle: 'Emergency',
-    icon: FiAlertCircle,
-    image: 'assets/home-img/Emergency-Care.png',
-    description: '24/7 emergency services with advanced life support, trauma care, and critical care facilities for immediate medical attention.',
+    icon: FiAperture,
+    image: 'assets/home-img/Emergency.png',
+    description: '24x7 emergency and acute trauma services with life support and evacuation facilities.',
     features: [
-    '24/7 Emergency Services',
-    'Advanced Life Support',
-    'Trauma Care Center',
-    'Critical Care Units',
-    'Emergency Surgery',
-    'Air Ambulance Services'],
-
+      'Advance Life Support Ambulance',
+      'Rooftop Helipad for Emergency Evacuation',
+      '24x7 Emergency Care Consultants',
+      'Emergency Trauma & Acute Care Services'
+    ],
     stats: { procedures: '10000+', experience: '24/7 Available' }
   },
+  
   {
     id: 'pediatrics',
-    title: 'Pediatrics',
+    title: 'Pediatrics & Neonatology',
     shortTitle: 'Pediatrics',
     icon: FiSmile,
     image: 'assets/home-img/Pediatrics.png',
-    description: 'Specialized healthcare for children from infancy through adolescence with child-friendly facilities and expert pediatric care.',
+    description: 'Comprehensive healthcare for infants, children, and adolescents.',
     features: [
-    'Newborn Care & NICU',
-    'Pediatric Surgery',
-    'Immunization Programs',
-    'Growth & Development',
-    'Pediatric Emergency Care',
-    'Child Psychology Services'],
-
+      'Child and Newborn Care',
+      'Pediatric Medicine & Immunization',
+      'Growth and Development Monitoring'
+    ],
     stats: { procedures: '5000+', experience: '18+ Years' }
   },
   {
@@ -203,16 +186,16 @@ const TabbedServicesSection = () => {
     shortTitle: 'Urology',
     icon: FiDroplet,
     image: 'assets/home-img/Urology.png',
-    description: 'Complete urological care for kidney, bladder, and male reproductive system disorders with minimally invasive techniques.',
+    description: 'Advanced urological care including prostate, kidney, and infertility treatments.',
     features: [
-    'Kidney Stone Treatment',
-    'Prostate Surgery',
-    'Urinary Incontinence',
-    'Male Infertility Treatment',
-    'Bladder Cancer Care',
-    'Reconstructive Urology'],
-
+      'Prostate Surgeries - TURP',
+      'Kidney Stone Surgeries',
+      'Female Urology Surgeries',
+      'Infertility Treatment',
+      'Lithotripsy'
+    ],
     stats: { procedures: '1600+', experience: '15+ Years' }
+  
   }];
 
 

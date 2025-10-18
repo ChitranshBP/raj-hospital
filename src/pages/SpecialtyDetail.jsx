@@ -5,6 +5,7 @@ import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 
 const {
+  
   FiEye,
   FiHeart,
   FiFeather,
@@ -2134,17 +2135,416 @@ ent: {
     appointmentLink: 'https://rajhospitals.com/contact.php',
     address: 'Raj Hospitals, Ranchi, Jharkhand'
   }
-}
+},
 
 
+// // Advanced Dignosis
 
 
+laboratoryInvestigations: {
+  id: 'laboratory-investigations',
+  title: 'All Blood and Laboratory Investigations',
+  icon: FiActivity,
+  bannerImage: 'assets/specialties/Laboratory/banner-laboratory.png',
+  shortDescription: 'Comprehensive and reliable blood tests and laboratory investigations in Ranchi with advanced diagnostic technology.',
+  longDescription: 'The All Blood and Laboratory Investigations Department at Raj Hospitals, Ranchi, offers precise, reliable, and timely diagnostic services that support early disease detection and effective treatment decisions. Equipped with state-of-the-art analyzers and automated systems, our modern laboratory ensures high accuracy for every test conducted. From basic blood work and hormone analysis to specialized investigations like FNAC and Biopsy, all tests are performed under strict quality control by experienced medical experts. Raj Hospitals is known for top-tier diagnostic accuracy, efficiency, and patient safety across Ranchi and Jharkhand.',
 
+  services: [
+    { title: 'Comprehensive Blood Testing', description: 'Routine and advanced testing including CBC, lipid profile, blood glucose, liver and kidney function, thyroid and hormonal analysis.', image: 'assets/specialties/Laboratory/blood-tests.png' },
+    { title: 'FNAC (Fine Needle Aspiration Cytology)', description: 'A safe and minimally invasive procedure to evaluate swellings, nodules, and suspected tumors for quick diagnosis.', image: 'assets/specialties/Laboratory/fnac.png' },
+    { title: 'Biopsy Evaluation', description: 'Accurate tissue examination for cancer detection, chronic inflammations, or abnormal growths.', image: 'assets/specialties/Laboratory/biopsy.png' },
+    { title: 'Infection Marker Analysis', description: 'Diagnostic testing for infections including CRP, dengue, HIV, hepatitis, and other markers.', image: 'assets/specialties/Laboratory/infection-marker.png' },
+    { title: 'Preventive Health Checkups', description: 'Comprehensive preventive screening packages designed for early detection of health issues.', image: 'assets/specialties/Laboratory/preventive-checkup.png' }
+  ],
 
+  facilities: [
+    'Fully automated, computerized laboratory',
+    '24/7 availability for emergency diagnostics',
+    'Strict sample safety and hygiene protocols',
+    'Specialized testing for hormonal and metabolic disorders',
+    'Digital reporting and online result access',
+    'Quality control adherence to NABL guidelines',
+    'Highly skilled technicians and pathologists',
+    'Rapid turnaround time for results'
+  ],
 
+  specialists: [
+    // {
+    //   id: '701',
+    //   name: 'Dr. Anil Kumar Pathak',
+    //   qualification: 'MBBS, MD (Pathology)',
+    //   experience: '18+ Years',
+    //   image: 'assets/specialties/Laboratory/dr-anil-pathak.jpg',
+    //   specialization: 'Pathology & Diagnostic Medicine'
+    // }
+  ],
 
+  successStories: [
+    // {
+    //   title: 'Accurate Diagnosis through FNAC',
+    //   patient: 'Suman',
+    //   story: 'Raj Hospital’s laboratory team diagnosed my thyroid nodule accurately using FNAC. The results helped start treatment early and effectively.',
+    //   outcome: 'Early detection and timely treatment ensured full recovery.'
+    // },
+    // {
+    //   title: 'Comprehensive Preventive Testing',
+    //   patient: 'Ramesh',
+    //   story: 'The preventive checkup helped detect high cholesterol and early diabetes indicators. The detailed report guided my doctor effectively.',
+    //   outcome: 'Preventive care led to better long-term health management.'
+    // }
+  ],
 
+  faqs: [
+    {
+      question: 'What blood tests can I get at Raj Hospitals?',
+      answer: 'We offer all types of blood and biochemical tests including CBC, LFT, KFT, lipid profile, thyroid, infection markers, and hormonal assays.'
+    },
+    {
+      question: 'What is FNAC and when is it needed?',
+      answer: 'FNAC is a fine needle aspiration cytology test used to evaluate lumps or swellings for infections, benign, or cancerous conditions.'
+    },
+    {
+      question: 'How soon are test results available?',
+      answer: 'Most routine test results are available within a few hours. Specialized investigations may take 24 to 48 hours depending on complexity.'
+    },
+    {
+      question: 'Is the testing process safe?',
+      answer: 'Yes, all samples are handled in sterile, controlled conditions under NABL guidelines to ensure patient safety and test accuracy.'
+    },
+    {
+      question: 'Do you provide digital reports?',
+      answer: 'Yes, Raj Hospitals provides secure digital reporting and email/SMS alerts once the reports are ready.'
+    }
+  ],
 
+  contactInfo: {
+    helpline: '+91 97714 88888',
+    appointmentLink: 'https://rajhospitals.com/contact.php',
+    address: 'Raj Hospitals, Ranchi, Jharkhand'
+  }
+},
+
+advanceneurology: {
+  id: 'neurology-ad',
+  title: 'Neurology',
+  icon: FiBrain,
+  bannerImage: 'assets/specialties/Neurology/banner-neurology.png',
+  shortDescription: 'Comprehensive neurology care in Ranchi with advanced EEG, NCS, and expert neurologists for accurate diagnosis and treatment.',
+  longDescription: 'The Department of Neurology at Raj Hospitals, Ranchi, provides cutting-edge diagnosis and treatment for disorders of the brain, nerves, and muscles. Our team of highly qualified neurologists specializes in managing conditions such as stroke, epilepsy, migraine, neuropathy, Parkinson’s disease, and muscle disorders. Supported by advanced neuro-diagnostic tools like EEG (Electroencephalogram) and NCS (Nerve Conduction Study), we ensure accurate detection and effective management of neurological conditions. Focused on patient comfort, efficiency, and clinical precision, Raj Hospitals continues to be a leader in neurological care across Ranchi and Jharkhand.',
+
+  services: [
+    { title: 'EEG (Electroencephalogram)', description: 'A painless test to record brain’s electrical activity used for diagnosing epilepsy, seizures, and sleep disorders.', image: 'assets/specialties/Neurology/eeg.png' },
+    { title: 'NCS (Nerve Conduction Study)', description: 'Measures the speed and strength of electrical signals in the nerves to detect neuropathy and nerve injuries.', image: 'assets/specialties/Neurology/ncs.png' },
+    { title: 'Stroke & Neuro-Rehabilitation', description: 'Comprehensive rehabilitation and therapy plans for patients recovering from stroke and neurological impairment.', image: 'assets/specialties/Neurology/stroke-rehab.png' },
+    { title: 'Migraine & Headache Management', description: 'Advanced diagnosis and personalized treatment plans for chronic headaches and migraines.', image: 'assets/specialties/Neurology/migraine.png' },
+    { title: 'Epilepsy Treatment & Monitoring', description: 'Specialized programs for epilepsy management including regular EEG monitoring and medication review.', image: 'assets/specialties/Neurology/epilepsy.png' },
+    { title: 'Neuropathy & Muscle Disorder Care', description: 'Targeted therapies and diagnostics for nerve pain, muscle weakness, and neuromuscular disorders.', image: 'assets/specialties/Neurology/neuropathy.png' }
+  ],
+
+  facilities: [
+    'Modern EEG and NCS testing facilities',
+    'Advanced neuro-diagnostic systems with digital data monitoring',
+    '24/7 emergency support for stroke and neurological care',
+    'Team approach involving neurologists and neurosurgeons',
+    'Comfortable and safe test environment',
+    'Accurate and timely digital reporting',
+    'Rehabilitation and physiotherapy support',
+    'Skilled and trained neuro-technicians'
+  ],
+
+  specialists: [
+    // {
+    //   id: '801',
+    //   name: 'Dr. Prakash Chandra',
+    //   qualification: 'MBBS, MD, DM (Neurology)',
+    //   experience: '18+ Years',
+    //   image: 'assets/specialties/Neurology/dr-prakash-chandra.jpg',
+    //   specialization: 'Neurology, Epileptology, and Neurophysiology'
+    // },
+    // {
+    //   id: '802',
+    //   name: 'Dr. Vijay Raj',
+    //   qualification: 'MBBS, MD, DM (Neurology)',
+    //   experience: '15+ Years',
+    //   image: 'assets/specialties/Neurology/dr-vijay-raj.jpg',
+    //   specialization: 'Neurodiagnostics and Stroke Management'
+    // },
+    // {
+    //   id: '803',
+    //   name: 'Dr. Ujjwal Roy',
+    //   qualification: 'MBBS, DM (Neurology)',
+    //   experience: '10+ Years',
+    //   image: 'assets/specialties/Neurology/dr-ujjwal-roy.jpg',
+    //   specialization: 'Headache, Migraine, and Movement Disorders'
+    // }
+  ],
+
+  successStories: [
+    // {
+    //   title: 'Accurate Epilepsy Diagnosis with EEG',
+    //   patient: 'Sunita',
+    //   story: 'I visited Raj Hospitals for recurring seizures. The EEG test quickly helped diagnose epilepsy and the doctor started the right treatment immediately.',
+    //   outcome: 'Seizures well-controlled with targeted medication and care.'
+    // },
+    // {
+    //   title: 'Recovery from Stroke',
+    //   patient: 'Ravi',
+    //   story: 'After a stroke, I received neurology care and rehabilitation at Raj Hospitals. The coordinated approach by doctors and therapists helped me regain strength and balance.',
+    //   outcome: 'Steady recovery and improved quality of life post-stroke.'
+    // }
+  ],
+
+  faqs: [
+    {
+      question: 'What conditions are treated in the Neurology Department?',
+      answer: 'We treat epilepsy, stroke, migraine, neuropathy, Parkinson’s disease, multiple sclerosis, and muscle disorders among others.'
+    },
+    {
+      question: 'What is an EEG test used for?',
+      answer: 'EEG helps record the brain’s electrical activity to detect conditions like seizures, epilepsy, and sleep disorders.'
+    },
+    {
+      question: 'What is the purpose of NCS?',
+      answer: 'Nerve Conduction Study measures how well signals pass through nerves, helping diagnose neuropathy, nerve injuries, and muscle weakness.'
+    },
+    {
+      question: 'Are EEG and NCS painful?',
+      answer: 'No, both EEG and NCS are safe, non-invasive, and painless diagnostic procedures.'
+    },
+    {
+      question: 'Do you offer emergency neurology care?',
+      answer: 'Yes, Raj Hospitals has 24/7 emergency neurology support for stroke, seizures, and other acute conditions.'
+    }
+  ],
+
+  contactInfo: {
+    helpline: '+91 97714 88888',
+    appointmentLink: 'https://rajhospitals.com/contact.php',
+    address: 'Raj Hospitals, Ranchi, Jharkhand'
+  }
+},
+
+'advancedcardiology': {
+    id: 'cardiology-ad',
+    title: 'Cardiology',
+    icon: FiHeart,
+    bannerImage: 'assets/specialties/Cardiology/cardiology-banner.png',
+    shortDescription: 'Comprehensive heart care with advanced diagnostics, expert cardiologists, and complete cardiac evaluation under one roof.',
+    longDescription: 'Raj Hospital’s Department of Cardiology in Ranchi provides advanced diagnostic and preventive heart care with the latest technology and expert supervision. The department ensures accurate testing through non-invasive procedures such as ECG, ECHO, TMT, Stress ECHO, and Holter Monitoring. Managed by skilled cardiologists and trained technicians, the center offers safe, precise, and compassionate cardiac evaluation to guide effective treatment plans.',
+
+    services: [
+      {
+        title: 'ECG (Electrocardiogram)',
+        description: 'A simple and quick test recording the heart’s electrical activity. Detects arrhythmias, heart attacks, and other cardiac issues.',
+        image: 'assets/specialties/Cardiology/ECG.png'
+      },
+      {
+        title: 'ECHO (Echocardiography)',
+        description: 'Ultrasound-based test showing heart structure and function. Diagnoses valve disorders, heart failure, and congenital defects.',
+        image: 'assets/specialties/Cardiology/ECHO.png'
+      },
+      {
+        title: 'TMT (Treadmill Test)',
+        description: 'Stress test evaluating heart performance during exercise. Identifies coronary artery disease and exercise-related issues.',
+        image: 'assets/specialties/Cardiology/TMT.png'
+      },
+      {
+        title: 'Stress ECHO',
+        description: 'Combines echocardiography with exercise or medical stress to assess blood flow and detect blockages or weak heart areas.',
+        image: 'assets/specialties/Cardiology/Stress-ECHO.png'
+      },
+      {
+        title: 'Holter Monitoring',
+        description: 'Portable ECG device worn for 24–48 hours to record continuous heart activity and identify irregular rhythms not captured in a standard ECG.',
+        image: 'assets/specialties/Cardiology/Holter-Monitoring.png'
+      }
+    ],
+
+    facilities: [
+      'Modern ECG, ECHO, TMT, and Stress ECHO machines',
+      '24x7 Cardiac Monitoring Unit',
+      'Holter Monitoring Facility',
+      'Non-invasive and Preventive Cardiac Care Unit',
+      'Dedicated Cardiology Technicians and Support Staff',
+      'Computerized Diagnostic Reporting System',
+      'Comfortable and Patient-centered Diagnostic Environment'
+    ],
+
+    specialists: [
+      // {
+      //   id: '401',
+      //   name: 'Dr. Rajesh Kr. Jha',
+      //   qualification: 'MBBS, MD, DM (Cardiology)',
+      //   experience: '16+ Years',
+      //   image: 'assets/specialties/Cardiology/dr-rajesh-jha.png',
+      //   specialization: 'Interventional Cardiology'
+      // },
+      // {
+      //   id: '402',
+      //   name: 'Dr. Awnindra Kr. Jha',
+      //   qualification: 'MBBS, MD, DM (Cardiology)',
+      //   experience: '16+ Years',
+      //   image: 'assets/specialties/Cardiology/dr-awnindra-jha.png',
+      //   specialization: 'Interventional Cardiology'
+      // }
+    ],
+
+    successStories: [
+      // {
+      //   title: 'Timely Diagnosis Prevented Cardiac Arrest',
+      //   patient: 'Mr. Suresh, 55',
+      //   story: 'During a routine checkup, ECG and TMT revealed early-stage blockage. Immediate medication and lifestyle corrections prevented a potential cardiac arrest.',
+      //   outcome: 'Full recovery with normal heart function.'
+      // },
+      // {
+      //   title: 'Advanced ECHO Testing Saved a Life',
+      //   patient: 'Mrs. Lata, 62',
+      //   story: 'Echocardiography detected a valve disorder that required prompt intervention. After treatment, her heart health stabilized within weeks.',
+      //   outcome: 'Improved heart performance and continued recovery.'
+      // }
+    ],
+
+    faqs: [
+      {
+        question: 'How often should I get a heart checkup?',
+        answer: 'Adults over 40 or with risk factors like diabetes, high blood pressure, or family history should undergo annual cardiac screening.'
+      },
+      {
+        question: 'Is the TMT safe for older adults?',
+        answer: 'Yes, TMT is conducted under medical supervision with continuous monitoring to ensure safety and immediate response if needed.'
+      },
+      {
+        question: 'What does the ECHO test reveal?',
+        answer: 'ECHO evaluates heart valves, pumping efficiency, structure, and blood flow, helping in detection of heart disease or weakness.'
+      },
+      {
+        question: 'How should I prepare for a cardiac test?',
+        answer: 'Wear comfortable clothes, avoid heavy meals before TMT, and bring your medications or previous cardiac reports for review.'
+      },
+      {
+        question: 'Can heart diseases be prevented?',
+        answer: 'Yes, with regular exercise, balanced diet, stress management, avoiding smoking and alcohol, and routine checkups.'
+      }
+    ],
+
+    contactInfo: {
+      helpline: '+91 97714 66634',
+      appointmentLink: 'https://rajhospitals.com/contact.php',
+      address: 'Raj Hospitals, Ranchi, Jharkhand'
+    }
+  },
+
+'radiology': {
+    id: 'radiology',
+    title: 'Radiology',
+    icon: FiActivity,
+    bannerImage: 'assets/specialties/Radiology/radiology-banner.png',
+    shortDescription: 'Comprehensive, high-precision radiology and imaging services with advanced MRI, CT, Ultrasound, and more under one roof.',
+    longDescription: 'Raj Hospital’s Department of Radiology in Ranchi offers a complete range of imaging and diagnostic facilities under one roof. Equipped with cutting-edge MRI, CT Scan, OPG, MRCP, Ultrasound, Full Body BMD, and Image Intensifier systems, our unit ensures the most accurate diagnosis to guide effective treatment. Managed by expert radiologists and technologists, we combine precision, safety, and compassionate care to deliver the best outcomes for every patient.',
+
+    services: [
+      {
+        title: 'MRI (Magnetic Resonance Imaging)',
+        description: 'Provides detailed, high-resolution images of the brain, spine, joints, and internal organs without radiation exposure. Ideal for neurological, orthopedic, and soft-tissue evaluations.',
+        image: 'assets/specialties/Radiology/MRI.png'
+      },
+      {
+        title: 'CT Scan (Computed Tomography)',
+        description: 'Produces cross-sectional images of organs, bones, and blood vessels to help detect tumors, fractures, and internal injuries.',
+        image: 'assets/specialties/Radiology/CT-Scan.png'
+      },
+      {
+        title: 'OPG (Orthopantomogram)',
+        description: 'Panoramic dental X-ray of teeth, jawbones, and surrounding structures. Essential for dental and orthodontic planning.',
+        image: 'assets/specialties/Radiology/OPG.png'
+      },
+      {
+        title: 'MRCP (Magnetic Resonance Cholangiopancreatography)',
+        description: 'Specialized MRI to visualize the liver, gallbladder, bile ducts, and pancreas to detect stones or obstructions.',
+        image: 'assets/specialties/Radiology/MRCP.png'
+      },
+      {
+        title: 'Ultrasound',
+        description: 'A safe and painless non-invasive procedure using sound waves to visualize soft tissues, organs, and blood flow.',
+        image: 'assets/specialties/Radiology/Ultrasound.png'
+      },
+      {
+        title: 'Full Body BMD (Bone Mineral Densitometry)',
+        description: 'Measures bone density to evaluate osteoporosis risk and monitor bone health.',
+        image: 'assets/specialties/Radiology/BMD.png'
+      },
+      {
+        title: 'Image Intensifier',
+        description: 'Real-time X-ray imaging used in surgeries and orthopedic procedures for precision and safety.',
+        image: 'assets/specialties/Radiology/Image-Intensifier.png'
+      }
+    ],
+
+    facilities: [
+      'Fully Digital Radiology and Imaging Department',
+      'State-of-the-art MRI and CT Scan Units',
+      'Ultrasound and Color Doppler Imaging',
+      'Dental Imaging and OPG',
+      'Advanced MRCP and BMD Services',
+      'Real-time Surgical Imaging (Image Intensifier)',
+      'Certified and Experienced Radiology Technicians'
+    ],
+
+    specialists: [
+      // {
+      //   id: '301',
+      //   name: 'Dr. [Your Radiologist Name]',
+      //   qualification: 'MBBS, MD (Radiodiagnosis)',
+      //   experience: '15+ Years',
+      //   image: 'assets/specialties/Radiology/dr-sample.png',
+      //   specialization: 'Consultant Radiologist'
+      // }
+    ],
+
+    successStories: [
+      // {
+      //   title: 'Early Tumor Detection through MRI',
+      //   patient: 'Mr. Rakesh, 52',
+      //   story: 'An MRI scan performed at Raj Hospital detected a small brain tumor at an early stage, enabling timely surgery and successful recovery.',
+      //   outcome: 'Full recovery after treatment with no complications.'
+      // },
+      // {
+      //   title: 'Accurate Bone Density Diagnosis',
+      //   patient: 'Mrs. Anita, 60',
+      //   story: 'BMD testing helped diagnose osteoporosis early, allowing preventive treatment that improved her mobility and bone health.',
+      //   outcome: 'Improved bone strength and quality of life.'
+      // }
+    ],
+
+    faqs: [
+      {
+        question: 'Are the imaging tests safe?',
+        answer: 'Yes, all imaging tests are conducted using international safety protocols, with minimal or no radiation exposure depending on the type of scan.'
+      },
+      {
+        question: 'Do I need a doctor’s referral for diagnostic tests?',
+        answer: 'It is recommended to have a referral for appropriate test selection, but some basic screenings can be booked directly.'
+      },
+      {
+        question: 'How long does it take to get scan reports?',
+        answer: 'Most reports are available within a few hours, while specialized scans may take up to 24 hours.'
+      },
+      {
+        question: 'What should I bring for my diagnostic test?',
+        answer: 'Bring your valid ID, any previous medical reports, and prescriptions related to your current condition.'
+      },
+      {
+        question: 'How do you ensure patient comfort during scans?',
+        answer: 'We use modern, low-noise scanners, comfortable patient positioning, and a caring staff to ensure stress-free experience.'
+      }
+    ],
+
+    contactInfo: {
+      helpline: '+91 97714 66634',
+      appointmentLink: 'https://rajhospitals.com/contact.php',
+      address: 'Raj Hospitals, Ranchi, Jharkhand'
+    }
+  },
 
 
 
