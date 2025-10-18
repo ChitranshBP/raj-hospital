@@ -236,62 +236,159 @@ const SpecialtyDetail = () => {
     },
 
     // Critical care & emergency
-    'critical-care-and-emergency': {
-    id: 'critical-care-and-emergency',
-    title: 'Critical Care & Emergency',
-    icon: FiActivity, 
-    bannerImage: 'assets/specialties/Critical Care & Emergency/Critical-Care & Emergency.png',
-    shortDescription: 'Comprehensive 24/7 Emergency & Critical Care, trauma, surgical, neuro & cardiac ICU services under one roof.',
-    longDescription: 'At Raj Hospitals, the Critical Care & Emergency Department provides seamless, multidisciplinary care for all acute, life-threatening illnesses and injuries. With a state-of-the-art ICU, trauma center, advanced ICUs on Wheels (ambulances), and a dedicated team of consultants in emergency, critical care, cardiology, neurology, surgery, nephrology, and more, we ensure rapid response and advanced management for every medical and trauma emergency.',
-    services: [
-      { title: '24 × 7 Emergency & Critical Care Consultant', description: 'Continuously available consultants to handle every acute medical, trauma or accident emergency.', image: 'assets/specialties/Critical Care & Emergency/24-7consultant.png' },
-      { title: 'Cardiac & Neuro ICU', description: 'Expert cardiac and neurological intensive care with dedicated beds and advanced monitoring systems.', image: 'assets/specialties/Critical Care & Emergency/Cardiac & Neuro ICU.png' },
-      { title: 'Medical & Surgical ICU', description: 'Round the clock ICU support for all complex medical and surgical cases.', image: 'assets/specialties/Critical Care & Emergency/Medical & Surgical-ICU.png' },
-      { title: 'Emergency, Trauma & Acute Care', description: 'Immediate management for accidents, trauma, acute illnesses and multi-organ failures.', image: 'assets/specialties/Critical Care & Emergency/Trauma.png' },
-      { title: 'ICU On Wheels (Advanced Life-Support Ambulances)', description: 'Ambulances equipped as mobile ICUs start critical care during transit.', image: 'assets/specialties/Critical Care & Emergency/ICU-On-Wheels.png' },
-      { title: 'Dedicated Emergency Unit (10 Beds)', description: 'Multiple well-equipped emergency beds for simultaneous management of cases.', image: 'assets/specialties/Critical Care & Emergency/bed.png' },
-      { title: 'Neuro Critical Care', description: 'Comprehensive care for stroke, head injuries, and neurological emergencies.', image: 'assets/specialties/Critical Care & Emergency/Neuro-Care.png' },
-      { title: 'Multidisciplinary ICU Team', description: 'Specialists include emergency physicians, surgeons, cardiologists, orthopaedists, nephrologists, urologists, and more.', image: 'assets/specialties/Critical Care & Emergency/Multidisciplinary.png' },
-      { title: 'Haemodialysis', description: 'Renal support and dialysis services for patients with kidney injury.', image: 'assets/specialties/Critical Care & Emergency/Haemodialysis.png' },
-      { title: 'Advanced Ventilatory Support (Mechanical Ventilation)', description: 'Non-invasive and invasive ventilation for respiratory emergencies.', image: 'assets/specialties/Critical Care & Emergency/Advanced-Ventilatory-Support.png' },
-      { title: 'Temporary Pacemaker & Cardiac Emergency', description: 'Emergency cardiac pacing and acute cardiac intervention for life-threatening arrhythmias.', image: 'assets/specialties/Critical Care & Emergency/Temporary-Pacemaker.png' },
-      { title: 'ECMO (Extra Corporeal Membrane Oxygenation)', description: 'Advanced life support for severe cardiac and respiratory conditions.', image: 'assets/specialties/Critical Care & Emergency/ECMO.png' },
-      { title: 'Difficult Airway Management', description: 'Expert handling of challenging airway scenarios for safe ventilation.', image: 'assets/specialties/Critical Care & Emergency/Difficult-Airway-Management.png' },
-      { title: 'Positive & Negative Pressure Isolation Rooms', description: 'Infection control zones to manage high-risk infectious cases.', image: 'assets/specialties/Critical Care & Emergency/Positive & Negative-Pressure-Isolation-Rooms.png' },
-      { title: 'Pre & Post-Procedure Monitoring', description: 'Continuous observation for patients before and after emergency interventions.', image: 'assets/specialties/Critical Care & Emergency/Pre & Post-Procedure-Monitoring.png' },
-      { title: 'Ultrasound in ICU (POCUS)', description: 'Bedside ultrasound diagnostics for rapid assessment.', image: 'assets/specialties/Critical Care & Emergency/Ultrasound-in-ICU.png' },
-      { title: 'Special Minor Procedure Room', description: 'Dedicated for immediate surgical and therapeutic procedures.', image: 'assets/specialties/Critical Care & Emergency/Special-Mino- Procedure-Room.png' },
-      { title: 'Research in Critical Care', description: 'Ongoing innovation and research for improving critical outcomes.', image: 'assets/specialties/Critical Care & Emergency/Research in-Critical-Care.png' }
-    ],
-    facilities: [
-      'State-of-the-art ICU & Emergency infrastructure',
-      'Advanced monitors and ventilators',
-      'Central oxygen/vacuum lines, minor procedure room',
-      'Pre- and post-treatment patient areas',
-      'Dedicated isolation rooms with advanced filtration',
-      'ICU-equipped ambulances (ICUs on Wheels)',
-      'On-site multidisciplinary medical team 24/7'
-    ],
-    specialists: [
-      { id: 'shyam-prasad', name: 'Dr. Shyam Prasad', qualification: 'MBBS, MD MEM', experience: '14+ Years', image: 'assets/Doc-Front/Emergency - Dr. Shyam Prasad.png', specialization: 'Emergency Medicine' },
-      { id: 'fuzail-sarwer', name: 'Dr. Fuzail Sarwer', qualification: 'MBBS, MD, PDCC', experience: '10+ Years', image: 'assets/Doc-Front/Anaesthesiologist - Dr. Fuzail Sarwar.png', specialization: 'Critical Care & ICU' }
-    ],
-    successStories: [
-      { title: 'Stroke Survival & ICU Recovery', patient: 'Mr. Gupta, 62', story: 'Received rapid neurocritical care after a major stroke, including mechanical ventilation and advanced monitoring. Recovered mobility and speech with ICU and post-care rehabilitation.', outcome: 'Regained independence after 3 months.' },
-      { title: 'Cardiac Emergency Saved', patient: 'Mr. Rajesh, 59', story: 'Rushed in with a heart attack, treatment began in ambulance and continued in ICU. Fully recovered after prompt intervention and ICU support.', outcome: 'Discharged in stable condition.' }
-    ],
-    faqs: [
-      { question: 'What types of emergencies are managed?', answer: 'All acute medical, trauma, cardiac, neurological, respiratory and multi-organ system emergencies are managed 24/7.' },
-      { question: 'How are ambulance services equipped?', answer: 'Ambulances at Raj Hospitals function as ICUs on Wheels with full life support systems and rapid response.' },
-      { question: 'Is the ICU and Emergency Unit available 24/7?', answer: 'Yes, all critical and emergency services have round-the-clock consultants and staff.' },
-      { question: 'How is infection controlled in critical areas?', answer: 'Strict protocols, filtered isolation rooms and monitored zones ensure safety.' }
-    ],
-    contactInfo: {
-      helpline: '+91 97714 88888',
-      appointmentLink: 'https://rajhospitals.com/contact.php',
-      address: 'Raj Hospitals, Ranchi, Jharkhand'
-    }
+  //   'critical-care-and-emergency': {
+  //   id: 'critical-care-and-emergency',
+  //   title: 'Critical Care & Emergency',
+  //   icon: FiActivity, 
+  //   bannerImage: 'assets/specialties/Critical Care & Emergency/Critical-Care & Emergency.png',
+  //   shortDescription: 'Comprehensive 24/7 Emergency & Critical Care, trauma, surgical, neuro & cardiac ICU services under one roof.',
+  //   longDescription: 'At Raj Hospitals, the Critical Care & Emergency Department provides seamless, multidisciplinary care for all acute, life-threatening illnesses and injuries. With a state-of-the-art ICU, trauma center, advanced ICUs on Wheels (ambulances), and a dedicated team of consultants in emergency, critical care, cardiology, neurology, surgery, nephrology, and more, we ensure rapid response and advanced management for every medical and trauma emergency.',
+  //   services: [
+  //     { title: '24 × 7 Emergency & Critical Care Consultant', description: 'Continuously available consultants to handle every acute medical, trauma or accident emergency.', image: 'assets/specialties/Critical Care & Emergency/24-7consultant.png' },
+  //     { title: 'Cardiac & Neuro ICU', description: 'Expert cardiac and neurological intensive care with dedicated beds and advanced monitoring systems.', image: 'assets/specialties/Critical Care & Emergency/Cardiac & Neuro ICU.png' },
+  //     { title: 'Medical & Surgical ICU', description: 'Round the clock ICU support for all complex medical and surgical cases.', image: 'assets/specialties/Critical Care & Emergency/Medical & Surgical-ICU.png' },
+  //     { title: 'Emergency, Trauma & Acute Care', description: 'Immediate management for accidents, trauma, acute illnesses and multi-organ failures.', image: 'assets/specialties/Critical Care & Emergency/Trauma.png' },
+  //     { title: 'ICU On Wheels (Advanced Life-Support Ambulances)', description: 'Ambulances equipped as mobile ICUs start critical care during transit.', image: 'assets/specialties/Critical Care & Emergency/ICU-On-Wheels.png' },
+  //     { title: 'Dedicated Emergency Unit (10 Beds)', description: 'Multiple well-equipped emergency beds for simultaneous management of cases.', image: 'assets/specialties/Critical Care & Emergency/bed.png' },
+  //     { title: 'Neuro Critical Care', description: 'Comprehensive care for stroke, head injuries, and neurological emergencies.', image: 'assets/specialties/Critical Care & Emergency/Neuro-Care.png' },
+  //     { title: 'Multidisciplinary ICU Team', description: 'Specialists include emergency physicians, surgeons, cardiologists, orthopaedists, nephrologists, urologists, and more.', image: 'assets/specialties/Critical Care & Emergency/Multidisciplinary.png' },
+  //     { title: 'Haemodialysis', description: 'Renal support and dialysis services for patients with kidney injury.', image: 'assets/specialties/Critical Care & Emergency/Haemodialysis.png' },
+  //     { title: 'Advanced Ventilatory Support (Mechanical Ventilation)', description: 'Non-invasive and invasive ventilation for respiratory emergencies.', image: 'assets/specialties/Critical Care & Emergency/Advanced-Ventilatory-Support.png' },
+  //     { title: 'Temporary Pacemaker & Cardiac Emergency', description: 'Emergency cardiac pacing and acute cardiac intervention for life-threatening arrhythmias.', image: 'assets/specialties/Critical Care & Emergency/Temporary-Pacemaker.png' },
+  //     { title: 'ECMO (Extra Corporeal Membrane Oxygenation)', description: 'Advanced life support for severe cardiac and respiratory conditions.', image: 'assets/specialties/Critical Care & Emergency/ECMO.png' },
+  //     { title: 'Difficult Airway Management', description: 'Expert handling of challenging airway scenarios for safe ventilation.', image: 'assets/specialties/Critical Care & Emergency/Difficult-Airway-Management.png' },
+  //     { title: 'Positive & Negative Pressure Isolation Rooms', description: 'Infection control zones to manage high-risk infectious cases.', image: 'assets/specialties/Critical Care & Emergency/Positive & Negative-Pressure-Isolation-Rooms.png' },
+  //     { title: 'Pre & Post-Procedure Monitoring', description: 'Continuous observation for patients before and after emergency interventions.', image: 'assets/specialties/Critical Care & Emergency/Pre & Post-Procedure-Monitoring.png' },
+  //     { title: 'Ultrasound in ICU (POCUS)', description: 'Bedside ultrasound diagnostics for rapid assessment.', image: 'assets/specialties/Critical Care & Emergency/Ultrasound-in-ICU.png' },
+  //     { title: 'Special Minor Procedure Room', description: 'Dedicated for immediate surgical and therapeutic procedures.', image: 'assets/specialties/Critical Care & Emergency/Special-Mino- Procedure-Room.png' },
+  //     { title: 'Research in Critical Care', description: 'Ongoing innovation and research for improving critical outcomes.', image: 'assets/specialties/Critical Care & Emergency/Research in-Critical-Care.png' }
+  //   ],
+  //   facilities: [
+  //     'State-of-the-art ICU & Emergency infrastructure',
+  //     'Advanced monitors and ventilators',
+  //     'Central oxygen/vacuum lines, minor procedure room',
+  //     'Pre- and post-treatment patient areas',
+  //     'Dedicated isolation rooms with advanced filtration',
+  //     'ICU-equipped ambulances (ICUs on Wheels)',
+  //     'On-site multidisciplinary medical team 24/7'
+  //   ],
+  //   specialists: [
+  //     { id: 'shyam-prasad', name: 'Dr. Shyam Prasad', qualification: 'MBBS, MD MEM', experience: '14+ Years', image: 'assets/Doc-Front/Emergency - Dr. Shyam Prasad.png', specialization: 'Emergency Medicine' },
+  //     { id: 'fuzail-sarwer', name: 'Dr. Fuzail Sarwer', qualification: 'MBBS, MD, PDCC', experience: '10+ Years', image: 'assets/Doc-Front/Anaesthesiologist - Dr. Fuzail Sarwar.png', specialization: 'Critical Care & ICU' }
+  //   ],
+  //   successStories: [
+  //     { title: 'Stroke Survival & ICU Recovery', patient: 'Mr. Gupta, 62', story: 'Received rapid neurocritical care after a major stroke, including mechanical ventilation and advanced monitoring. Recovered mobility and speech with ICU and post-care rehabilitation.', outcome: 'Regained independence after 3 months.' },
+  //     { title: 'Cardiac Emergency Saved', patient: 'Mr. Rajesh, 59', story: 'Rushed in with a heart attack, treatment began in ambulance and continued in ICU. Fully recovered after prompt intervention and ICU support.', outcome: 'Discharged in stable condition.' }
+  //   ],
+  //   faqs: [
+  //     { question: 'What types of emergencies are managed?', answer: 'All acute medical, trauma, cardiac, neurological, respiratory and multi-organ system emergencies are managed 24/7.' },
+  //     { question: 'How are ambulance services equipped?', answer: 'Ambulances at Raj Hospitals function as ICUs on Wheels with full life support systems and rapid response.' },
+  //     { question: 'Is the ICU and Emergency Unit available 24/7?', answer: 'Yes, all critical and emergency services have round-the-clock consultants and staff.' },
+  //     { question: 'How is infection controlled in critical areas?', answer: 'Strict protocols, filtered isolation rooms and monitored zones ensure safety.' }
+  //   ],
+  //   contactInfo: {
+  //     helpline: '+91 97714 88888',
+  //     appointmentLink: 'https://rajhospitals.com/contact.php',
+  //     address: 'Raj Hospitals, Ranchi, Jharkhand'
+  //   }
+  // },
+
+  'critical-care': {
+  id: 'critical-care',
+  title: 'Critical Care',
+  icon: FiActivity,
+  bannerImage: 'assets/specialties/Critical Care & Emergency/Critical-Care & Emergency.png',
+  shortDescription: 'Advanced ICU services for medical, surgical, cardiac, and neuro-critical patients.',
+  longDescription: 'Raj Hospitals’ Critical Care Department provides intensive, round-the-clock monitoring and management for patients with life-threatening medical and surgical conditions. With modern ICUs, specialized life-support technology, and an expert multidisciplinary team, we deliver world-class care to critically ill patients.',
+  services: [
+    { title: 'Cardiac & Neuro ICU', description: 'Expert cardiac and neurological intensive care with advanced monitoring systems.', image: 'assets/specialties/Critical Care & Emergency/Cardiac & Neuro ICU.png' },
+    { title: 'Medical & Surgical ICU', description: '24/7 support for complex medical and surgical cases.', image: 'assets/specialties/Critical Care & Emergency/Medical & Surgical-ICU.png' },
+    { title: 'Neuro Critical Care', description: 'Comprehensive neurocritical management for stroke and head injuries.', image: 'assets/specialties/Critical Care & Emergency/Neuro-Care.png' },
+    { title: 'Haemodialysis', description: 'Critical renal support for acute or chronic kidney injuries.', image: 'assets/specialties/Critical Care & Emergency/Haemodialysis.png' },
+    { title: 'Advanced Ventilatory Support', description: 'Invasive and non-invasive ventilation for respiratory distress.', image: 'assets/specialties/Critical Care & Emergency/Advanced-Ventilatory-Support.png' },
+    { title: 'Temporary Pacemaker & Cardiac Support', description: 'Emergency pacing and cardiac stabilization procedures.', image: 'assets/specialties/Critical Care & Emergency/Temporary-Pacemaker.png' },
+    { title: 'ECMO (Extra Corporeal Membrane Oxygenation)', description: 'Life-saving advanced circulatory and respiratory support.', image: 'assets/specialties/Critical Care & Emergency/ECMO.png' },
+    { title: 'Difficult Airway Management', description: 'Expert critical airway handling for ventilated patients.', image: 'assets/specialties/Critical Care & Emergency/Difficult-Airway-Management.png' },
+    { title: 'Isolation Rooms', description: 'Positive and negative pressure rooms for infection-controlled therapy.', image: 'assets/specialties/Critical Care & Emergency/Positive & Negative-Pressure-Isolation-Rooms.png' },
+    { title: 'ICU Ultrasound (POCUS)', description: 'Bedside ultrasound diagnostics and interventions.', image: 'assets/specialties/Critical Care & Emergency/Ultrasound-in-ICU.png' },
+    { title: 'Pre & Post-Procedure Monitoring', description: 'Continuous patient observation before and after interventions.', image: 'assets/specialties/Critical Care & Emergency/Pre & Post-Procedure-Monitoring.png' },
+    { title: 'Research in Critical Care', description: 'Ongoing innovation in life support and intensive monitoring.', image: 'assets/specialties/Critical Care & Emergency/Research in-Critical-Care.png' }
+  ],
+  facilities: [
+    'Dedicated medical, surgical, neuro & cardiac ICUs',
+    'Ventilators, dialysis units, and monitoring beds',
+    'Infection-controlled isolation rooms',
+    'Central oxygen and vacuum lines',
+    'Round-the-clock intensivist availability'
+  ],
+  specialists: 
+  [
+  {
+    id: 'mohib-ahmed',
+    name: 'Dr. Mohib Ahmed',
+    qualification: 'MBBS, MD, IDCCM, EDM',
+    experience: '16+ Years',
+    image: 'assets/Doc-Front/Anaesthesiologist - Dr. Mohib Ahmed.png',
+    specialization: 'Critical Care, Neuro Critical Care, Research, Airway Management, Ultrasound in ICU (POCUS)'
   },
+
+  
+    { id: 'fuzail-sarwer', name: 'Dr. Fuzail Sarwer', qualification: 'MBBS, MD, PDCC', experience: '10+ Years', image: 'assets/Doc-Front/Anaesthesiologist - Dr. Fuzail Sarwar.png', specialization: 'Critical Care & ICU' }
+  ],
+  successStories: [
+    { title: 'Stroke Survival & ICU Recovery', patient: 'Mr. Gupta, 62', story: 'Recovered with neurocritical care, ventilatory support, and comprehensive ICU rehabilitation.', outcome: 'Regained independence after 3 months.' }
+  ],
+  faqs: [
+    { question: 'What conditions are treated in Critical Care?', answer: 'Critically ill patients with cardiac, neurological, respiratory, or post-surgical complications receive 24/7 care.' },
+    { question: 'Are isolation rooms available?', answer: 'Yes, both positive and negative pressure isolation rooms are provided for infection control.' }
+  ],
+  contactInfo: {
+    helpline: '+91 97714 88888',
+    appointmentLink: 'https://rajhospitals.com/contact.php',
+    address: 'Raj Hospitals, Ranchi, Jharkhand'
+  }
+},
+
+'emergency': {
+  id: 'emergency',
+  title: 'Emergency',
+  icon: FiActivity,
+  bannerImage: 'assets/specialties/Critical Care & Emergency/Critical-Care & Emergency.png',
+  shortDescription: '24/7 Emergency & Trauma Care with rapid response systems.',
+  longDescription: 'The Emergency Medicine Department at Raj Hospitals ensures immediate and effective care for all acute medical and trauma cases. Our experienced emergency consultants, trained paramedics, and ICUs on Wheels team guarantee lifesaving interventions within the golden hour.',
+  services: [
+    { title: '24 × 7 Emergency Consultant', description: 'Immediate response to medical, trauma, cardiac, and accident emergencies.', image: 'assets/specialties/Critical Care & Emergency/24-7consultant.png' },
+    { title: 'Emergency, Trauma & Acute Care', description: 'Swift management of accidents, trauma, and acute medical conditions.', image: 'assets/specialties/Critical Care & Emergency/Trauma.png' },
+    { title: 'ICU On Wheels', description: 'Fully equipped ambulances start advanced life support during transfer.', image: 'assets/specialties/Critical Care & Emergency/ICU-On-Wheels.png' },
+    { title: 'Dedicated Emergency Unit (10 Beds)', description: 'Multi-bed setup to handle concurrent emergencies.', image: 'assets/specialties/Critical Care & Emergency/bed.png' },
+    { title: 'Special Minor Procedure Room', description: 'Space for emergency surgical and stabilizing procedures.', image: 'assets/specialties/Critical Care & Emergency/Special-Mino- Procedure-Room.png' },
+    { title: 'Multidisciplinary Emergency Team', description: 'Emergency physicians, surgeons, cardiologists, and orthopaedists working in coordination.', image: 'assets/specialties/Critical Care & Emergency/Multidisciplinary.png' }
+  ],
+  facilities: [
+    '24/7 staffed emergency bay',
+    'Dedicated triage and resuscitation zones',
+    'On-site trauma and cardiac response',
+    'Rapid diagnostics and imaging access',
+    'Ambulance dispatch for critical transfers'
+  ],
+  specialists: 
+  [
+    { id: 'shyam-prasad', name: 'Dr. Shyam Prasad', qualification: 'MBBS, MD MEM', experience: '14+ Years', image: 'assets/Doc-Front/Emergency - Dr. Shyam Prasad.png', specialization: 'Emergency Medicine' }
+  ],
+  successStories: [
+    { title: 'Cardiac Emergency Saved', patient: 'Mr. Rajesh, 59', story: 'Immediate intervention started en route in ambulance and continued in ICU.', outcome: 'Discharged in stable condition.' }
+  ],
+  faqs: [
+    { question: 'Is the emergency unit operational 24/7?', answer: 'Yes, all emergency services are available round the clock.' },
+    { question: 'How are trauma cases handled?', answer: 'A trauma protocol is activated instantly involving emergency, surgical, and critical care teams.' }
+  ],
+  contactInfo: {
+    helpline: '+91 97714 88888',
+    appointmentLink: 'https://rajhospitals.com/contact.php',
+    address: 'Raj Hospitals, Ranchi, Jharkhand'
+  }
+},
+
 
   // minimal access surgery
       'minimal-access-surgery': {

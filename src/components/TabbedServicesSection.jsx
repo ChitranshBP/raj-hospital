@@ -49,7 +49,7 @@ const TabbedServicesSection = () => {
     title: 'Neurosciences',
     shortTitle: 'Neurology',
     icon: FiBrain,
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/69f8ef93-154c-488e-9dfe-781dd286c641.png',
+    image: 'assets/home-img/Neurosciences.png',
     description: 'Expert neurological care for brain, spine, and nervous system disorders with state-of-the-art technology and minimally invasive techniques.',
     features: [
     'Brain & Spine Surgery',
@@ -66,7 +66,7 @@ const TabbedServicesSection = () => {
     title: 'Nephrology',
     shortTitle: 'Nephrology',
     icon: FiDroplet,
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6e48b8a7-bca0-4bc4-acbb-3ba5f5674077.png',
+    image: 'assets/home-img/Neurosciences.png',
     description: 'Complete kidney care including dialysis services, kidney transplantation, and chronic kidney disease management with compassionate care.',
     features: [
     'Hemodialysis & Peritoneal Dialysis',
@@ -83,7 +83,7 @@ const TabbedServicesSection = () => {
     title: 'Oncology',
     shortTitle: 'Oncology',
     icon: FiShield,
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/fa4c25d9-2812-4a78-aca1-8f31f67ebe83.png',
+    image: 'assets/home-img/Oncology.png',
     description: 'Comprehensive cancer treatment with medical oncology, surgical oncology, and radiation therapy in a supportive environment.',
     features: [
     'Medical Oncology',
@@ -100,7 +100,7 @@ const TabbedServicesSection = () => {
     title: 'Obstetrics & Gynecology',
     shortTitle: 'Gynecology',
     icon: FiUser,
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ce3dd90e-63eb-40f5-a9e9-2d1dc378b232.png',
+    image: 'assets/home-img/Obstetrics & Gynecology.png',
     description: 'Complete women\'s health services including maternity care, gynecological surgeries, and fertility treatments with personalized care.',
     features: [
     'Normal & High-Risk Deliveries',
@@ -117,7 +117,7 @@ const TabbedServicesSection = () => {
     title: 'Orthopedics',
     shortTitle: 'Orthopedics',
     icon: FiSettings,
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/697b8ebb-3648-4a6b-ad86-a8d0089d3fbd.png',
+    image: 'assets/home-img/Orthopedics.png',
     description: 'Advanced bone and joint care including joint replacement surgeries, sports medicine, and trauma care with latest techniques.',
     features: [
     'Joint Replacement Surgery',
@@ -134,7 +134,7 @@ const TabbedServicesSection = () => {
     title: 'General Surgery',
     shortTitle: 'Surgery',
     icon: FiZap,
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/3b9f0cf1-6571-42bc-855f-4850c129f411.png',
+    image: 'assets/home-img/General-Surgery.png',
     description: 'Advanced surgical procedures using minimally invasive techniques for faster recovery and better outcomes.',
     features: [
     'Laparoscopic Surgery',
@@ -151,7 +151,7 @@ const TabbedServicesSection = () => {
     title: 'ENT',
     shortTitle: 'ENT',
     icon: FiMic,
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/47c6ebb8-defe-4061-9bf9-a2d44d3e2cfa.png',
+    image: 'assets/home-img/.png',
     description: 'Specialized ear, nose, and throat care with advanced microsurgical techniques and comprehensive treatment options.',
     features: [
     'Hearing Tests & Treatments',
@@ -168,7 +168,7 @@ const TabbedServicesSection = () => {
     title: 'Gastroenterology',
     shortTitle: 'Gastro',
     icon: FiActivity,
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/989ec42a-aa58-4b37-b9f3-ec419fcd10a2.png',
+    image: 'assets/home-img/Gastroenterology.png',
     description: 'Comprehensive digestive system care including advanced endoscopy and treatment of gastrointestinal disorders.',
     features: [
     'Upper & Lower Endoscopy',
@@ -185,7 +185,7 @@ const TabbedServicesSection = () => {
     title: 'Emergency Care',
     shortTitle: 'Emergency',
     icon: FiAlertCircle,
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/072af0f3-f9be-48db-92cc-2521221152ac.png',
+    image: 'assets/home-img/Emergency-Care.png',
     description: '24/7 emergency services with advanced life support, trauma care, and critical care facilities for immediate medical attention.',
     features: [
     '24/7 Emergency Services',
@@ -202,7 +202,7 @@ const TabbedServicesSection = () => {
     title: 'Pediatrics',
     shortTitle: 'Pediatrics',
     icon: FiSmile,
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6182c792-a792-425b-ba05-b8f321019396.png',
+    image: 'assets/home-img/Pediatrics.png',
     description: 'Specialized healthcare for children from infancy through adolescence with child-friendly facilities and expert pediatric care.',
     features: [
     'Newborn Care & NICU',
@@ -219,7 +219,7 @@ const TabbedServicesSection = () => {
     title: 'Urology',
     shortTitle: 'Urology',
     icon: FiDroplet,
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/48da1ef2-833a-4d51-9e18-a09bf9008e4d.png',
+    image: 'assets/home-img/Urology.png',
     description: 'Complete urological care for kidney, bladder, and male reproductive system disorders with minimally invasive techniques.',
     features: [
     'Kidney Stone Treatment',
