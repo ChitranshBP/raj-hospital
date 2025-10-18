@@ -1420,19 +1420,19 @@ dental: {
   longDescription: 'The Dental Care Department at Raj Hospitals, Ranchi, offers comprehensive oral health care ranging from preventive dentistry to advanced cosmetic and maxillofacial surgeries. With a specialized team of dentists, oral surgeons, implantologists, orthodontists, periodontists, and dental hygienists, we deliver world-class dental treatments with precision and safety. Our focus is on pain-free, affordable, and aesthetic oral health services, helping patients achieve healthy gums, perfect teeth alignment, and confident smiles. Equipped with the latest dental technology, Raj Hospitals is committed to providing personalized treatment plans, minimally invasive procedures, and safe recovery protocols for both adults and children.',
 
   services: [
-    { title: 'Cosmetic Dentistry & Smile Designing', description: 'Aesthetic treatments including smile designing, veneers, and teeth whitening to enhance your smile.', image: 'assets/specialties/Dental/cosmetic-dentistry.png' },
-    { title: 'Dental Filling', description: 'Advanced tooth-colored fillings to treat cavities and restore teeth functionally and aesthetically.', image: 'assets/specialties/Dental/dental-filling.png' },
-    { title: 'Root Canal Treatment (RCT)', description: 'Pain-free root canal treatments with advanced rotary endodontics for permanent tooth preservation.', image: 'assets/specialties/Dental/rct.png' },
-    { title: 'Crowns & Bridges', description: 'Prosthetic restorations for missing or damaged teeth ensuring long-lasting strength and functionality.', image: 'assets/specialties/Dental/crowns-bridges.png' },
-    { title: 'Scaling & Polishing', description: 'Professional cleaning to maintain oral hygiene and prevent gum disease.', image: 'assets/specialties/Dental/scaling-polishing.png' },
-    { title: 'Preventive Dentistry', description: 'Regular cleanings, fluoride treatments, and sealants to prevent cavities and gum issues early.', image: 'assets/specialties/Dental/preventive-dentistry.png' },
-    { title: 'Teeth Whitening (Bleaching)', description: 'Safe and effective whitening treatments to brighten stained or yellowed teeth.', image: 'assets/specialties/Dental/teeth-whitening.png' },
-    { title: 'Removable & Complete Dentures', description: 'Custom dentures for lost teeth ensuring functional bite and natural aesthetics.', image: 'assets/specialties/Dental/dentures.png' },
-    { title: 'Extractions & Surgical Extractions', description: 'Safe tooth extractions, including complex impacted wisdom tooth removal.', image: 'assets/specialties/Dental/extractions.png' },
-    { title: 'Implant Surgery', description: 'Permanent solution for missing teeth with titanium dental implants.', image: 'assets/specialties/Dental/implants.png' },
-    { title: 'Laser Gum Surgery & Pyorrhea Care', description: 'Advanced laser treatments for gum diseases and periodontal therapy.', image: 'assets/specialties/Dental/laser-gum-surgery.png' },
-    { title: 'Orthodontics & Braces', description: 'Treatment for crooked teeth including traditional braces and modern aligners.', image: 'assets/specialties/Dental/orthodontics.png' },
-    { title: 'Paediatric Dentistry', description: 'Comprehensive dental care for children including preventive and corrective treatments.', image: 'assets/specialties/Dental/paediatric-dentistry.png' }
+    { title: 'Cosmetic Dentistry & Smile Designing', description: 'Aesthetic treatments including smile designing, veneers, and teeth whitening to enhance your smile.', image: 'assets/specialties/Dental/Cosmetic-Dentistry & Smile-Designing.png' },
+    { title: 'Dental Filling', description: 'Advanced tooth-colored fillings to treat cavities and restore teeth functionally and aesthetically.', image: 'assets/specialties/Dental/Dental-Filling.png' },
+    { title: 'Root Canal Treatment (RCT)', description: 'Pain-free root canal treatments with advanced rotary endodontics for permanent tooth preservation.', image: 'assets/specialties/Dental/Root-Canal-Treatment.png' },
+    { title: 'Crowns & Bridges', description: 'Prosthetic restorations for missing or damaged teeth ensuring long-lasting strength and functionality.', image: 'assets/specialties/Dental/Crowns & Bridges.png' },
+    { title: 'Scaling & Polishing', description: 'Professional cleaning to maintain oral hygiene and prevent gum disease.', image: 'assets/specialties/Dental/Scaling & Polishing.png' },
+    { title: 'Preventive Dentistry', description: 'Regular cleanings, fluoride treatments, and sealants to prevent cavities and gum issues early.', image: 'assets/specialties/Dental/Preventive-Dentistry.png' },
+    { title: 'Teeth Whitening (Bleaching)', description: 'Safe and effective whitening treatments to brighten stained or yellowed teeth.', image: 'assets/specialties/Dental/Teeth-Whitening.png' },
+    { title: 'Removable & Complete Dentures', description: 'Custom dentures for lost teeth ensuring functional bite and natural aesthetics.', image: 'assets/specialties/Dental/Removable & Complete-Dentures.png' },
+    { title: 'Extractions & Surgical Extractions', description: 'Safe tooth extractions, including complex impacted wisdom tooth removal.', image: 'assets/specialties/Dental/Extractions & Surgical-Extractions.png' },
+    { title: 'Implant Surgery', description: 'Permanent solution for missing teeth with titanium dental implants.', image: 'assets/specialties/Dental/Implant-Surgery.png' },
+    { title: 'Laser Gum Surgery & Pyorrhea Care', description: 'Advanced laser treatments for gum diseases and periodontal therapy.', image: 'assets/specialties/Dental/Laser-Gum-Surgery & Pyorrhea-Care.png' },
+    { title: 'Orthodontics & Braces', description: 'Treatment for crooked teeth including traditional braces and modern aligners.', image: 'assets/specialties/Dental/Orthodontics & Braces.png' },
+    { title: 'Paediatric Dentistry', description: 'Comprehensive dental care for children including preventive and corrective treatments.', image: 'assets/specialties/Dental/Paediatric-Dentistry.png' }
   ],
 
   facilities: [
