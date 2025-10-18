@@ -2567,7 +2567,7 @@ function SidebarSpecialistsSlider({ specialists }) {
         className="flex flex-col gap-8 overflow-y-auto"
         style={{ maxHeight: "1000px", maxWidth: "340px", margin: "0 auto" }}
       >
-        {specialty.specialists.map((doctor, index) => (
+        {[...specialty.specialists].sort((a, b) => a.name.localeCompare(b.name)).map((doctor, index) => (
           <motion.div
             key={doctor.id}
             initial={{ opacity: 0, y: 30 }}
@@ -2587,7 +2587,7 @@ function SidebarSpecialistsSlider({ specialists }) {
                     "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80";
                 }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+              <div className="absolute inset-0"></div>
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-1">{doctor.name}</h3>
