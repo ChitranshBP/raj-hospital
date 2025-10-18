@@ -624,7 +624,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Vivek Raj',
           qualification: 'MBBS, MS, MCh',
           experience: '18+ Years',
-          image: '/assets/specialties/Neurosciences/dr-vijay-raj.jpg',
+          image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Neurosurgeon - Dr. Vivek-Raj.png',
           specialization: 'Neurology & Neurosurgery'
         },
         // {
@@ -1230,21 +1230,20 @@ urology: {
 
   specialists: [
     {
-      id: 'tanushree-chatterjee',
-      name: 'Dr. Tanushree Chatterjee',
+      id: 'anupama-mahli',
+      name: 'Dr. Anupama Mahli',
       qualification: 'MBBS, MS, DNB, D.MAS',
       experience: '10+ Years',
-      image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Tanushree-Chatterjee.png',
-      specialization: 'Obstetrics & Gynaecology'
-    },
-    {
+      image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Anupama-Mahli.png',
+      },
+      {
       id: 'pushpa-sinha',
       name: 'Dr. Pushpa Sinha',
       qualification: 'MBBS, MD, DGO',
       experience: '15+ Years',
-      image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr.-Pushpa-Sinha.png',
+      image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Obstetrics & Gynaecology - Dr. Pushpa Sinha.png',
       specialization: 'Obstetrics & Gynaecology'
-    },
+      },
     // {
     //   id: '203',
     //   name: 'Dr. Neena Jha',

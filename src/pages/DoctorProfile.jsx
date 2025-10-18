@@ -510,7 +510,7 @@ export const doctorsData = [
   qualifications: 'MBBS, ECFMG Certified (USA) Neurosurgery, DNB Neurosurgery (Brain & Spine Surgery)',
   specialty: 'Neurosurgery',
   experience: '9+ Years',
-  image: '', // No image provided
+  image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Neurosurgeon - Dr. Vivek-Raj.png', 
   specialtyIcon: '', // No icon provided
   description: 'Dr. Vivek Raj is a skilled neurosurgeon with expertise in brain and spine tumor surgery, pediatric brain surgery, and emergency spine trauma. He is committed to providing advanced surgical care including awake brain surgery for better patient outcomes.',
   expertise: [
@@ -947,12 +947,12 @@ export const doctorsData = [
 //obstetrics & gynecology
 
 {
-  id: 'tanushree-chatterjee',
-  name: 'Dr. Tanushree Chatterjee',
+  id: 'anupama-mahli',
+  name: 'Dr. Anupama Mahli',
   qualifications: 'MBBS, MS (Obstetrics), DNB (Obs & Gyn), D.MAS',
   specialty: 'Obstetrics & Gynaecology',
   experience: '10+ Years',
-  image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Tanushree-Chatterjee.png',
+  image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Anupama-Mahli.png',
   specialtyIcon: medicalIcons.obstetricsGynecology,
   description:
     'Dr. Anupama Mahli has over 10 years of experience in obstetrics and gynaecology with expertise in laparoscopy, hysteroscopy, infertility treatment, and sonology (ultrasound).',
