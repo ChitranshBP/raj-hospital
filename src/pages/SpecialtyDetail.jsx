@@ -578,36 +578,37 @@ const SpecialtyDetail = () => {
 
       neurosciences: {
       id: 'neurosciences',
-      title: 'Neurology',
+      title: 'Neurosciences',
       icon: FiBrain,
       bannerImage: 'assets/specialties/Neuroscience/Neurological-Diagnostics.png',
       shortDescription: 'Best Neurologist Hospital in Ranchi offering comprehensive brain and spine care by expert neuro physicians.',
       longDescription:
         'The Department of Neurosciences at Raj Hospitals provides comprehensive and multidisciplinary care for brain and spine disorders. Our team of expert neurologists, neurosurgeons, and interventional neuro-radiologists utilize the latest technologies to diagnose and treat a wide range of neurological conditions. We provide integrated care for stroke, epilepsy, movement disorders, neuro infections, brain tumors, spinal injuries, and more with specialized emergency and surgical services.',
       services: [
-        { title: 'Stroke- (Ischemic & Haemorrhagic)', description: 'Comprehensive care and rehabilitation for all kinds of stroke.', image: 'assets/specialties/Neuroscience/Stroke.png' },
-        { title: 'Epilepsy', description: 'Diagnosis, medical management, and surgical options for seizure disorders.', image: 'assets/specialties/Neuroscience/Epilepsy-Management.png' },
-        { title: 'Dementias', description: 'Evaluation and treatment of Alzheimer’s disease, vascular dementia, and other dementias.', image: '/assets/specialties/Neuroscience/dementia.png' },
-        { title: 'Parkinson\'s Disease and Atypical Parkinsonism', description: 'Advanced management of Parkinson’s and related movement disorders.', image: '/assets/specialties/Neuroscience/Movement-Disorders.png' },
-        { title: 'Autoimmune & Demyelinating Disorders', description: 'Care for Multiple Sclerosis, ADEM, NMOSD & MOGAD.', image: '/assets/specialties/Neuroscience/demyelinating.png' },
-        { title: 'Myasthenia Gravis', description: 'Diagnosis and treatment of this neuromuscular condition.', image: '/assets/specialties/Neuroscience/myasthenia-gravis.png' },
-        { title: 'Neuro Infectious Disorders', description: 'Treatment for meningitis, encephalitis, CNS tuberculosis, Pott’s spine, etc.', image: '/assets/specialties/Neuroscience/neuro-infections.png' },
-        { title: 'Neuropathies', description: 'Management of GBS, CIDP and other peripheral nerve disorders.', image: '/assets/specialties/Neuroscience/neuropathies.png' },
-        { title: 'Motor Neuron Disease', description: 'Comprehensive care and symptom management.', image: '/assets/specialties/Neuroscience/mn-disease.png' },
-        { title: 'Myopathies', description: 'Diagnosis and treatment of muscle disorders.', image: '/assets/specialties/Neuroscience/myopathies.png' },
-        { title: 'Movement Disorders', description: 'Extensive care for complex movement disorders.', image: 'assets/specialties/Neuroscience/movement-disorders.png' },
-        { title: 'Head Injuries', description: 'Emergency and rehabilitative care for traumatic brain injuries.', image: '/assets/specialties/Neuroscience/head-injuries.png' },
-        { title: 'Brain Stroke Unit & Seizures', description: 'Specialized stroke unit with continuous monitoring and seizure control.', image: '/assets/specialties/Neuroscience/stroke-unit.png' },
-        { title: 'Spinal Cord Injury, Spine Surgery', description: 'Expert treatment and surgeries for spine trauma and disorders.', image: '/assets/specialties/Neuroscience/spine-injury.png' },
-        { title: 'Stereotactic & Tumor Surgeries', description: 'Minimally invasive procedures for brain tumors and neurological lesions.', image: '/assets/specialties/Neuroscience/tumor-surgery.png' },
-        { title: 'Trauma, Tumor & TB Surgeries', description: 'Specialized surgical interventions for neurological trauma and tubercular involvement.', image: '/assets/specialties/Neuroscience/trauma-surgery.png' },
-        { title: 'Headache', description: 'Diagnosis and treatment of chronic and severe headaches.', image: '/assets/specialties/Neuroscience/headache.png' },
-        { title: 'Backache & Stroke', description: 'Comprehensive management of back pain and stroke complications.', image: '/assets/specialties/Neuroscience/backache.png' },
-        { title: 'Brain & Spine Tumor Surgery', description: 'Advanced neurosurgical removal and care for tumors.', image: '/assets/specialties/Neuroscience/brain-spine-tumor.png' },
-        { title: 'Pediatric Brain Surgery', description: 'Expert neurosurgery for pediatric neurological conditions.', image: '/assets/specialties/Neuroscience/pediatric-brain-surgery.png' },
-        { title: 'Emergency & Spine Trauma Surgery', description: 'Urgent surgical care for traumatic neurologic injuries.', image: '/assets/specialties/Neuroscience/emergency-trauma.png' },
-        { title: 'Awake Brain Surgery', description: 'State-of-the-art awake craniotomy for tumor and functional brain surgery.', image: '/assets/specialties/Neuroscience/awake-brain-surgery.png' }
-      ],
+       { title: 'Autoimmune & Demyelinating Disorders', description: 'Care for Multiple Sclerosis, ADEM, NMOSD & MOGAD.', image: 'assets/specialties/Neurology/Autoimmune & Demyelinating -isorders.png' },
+        { title: 'Awake Brain Surgery', description: 'State-of-the-art awake craniotomy for tumor and functional brain surgery.', image: 'assets/specialties/Neurology/Awake-Brain-Surgery.png' },
+        { title: 'Backache & Stroke', description: 'Comprehensive management of back pain and stroke complications.', image: 'assets/specialties/Neurology/Backache & Stroke.png' },
+        { title: 'Brain Stroke Unit & Seizures', description: 'Specialized stroke unit with continuous monitoring and seizure control.', image: 'assets/specialties/Neurology/Brai- Stroke-Unit & Seizures.png' },
+        { title: 'Brain & Spine Tumor Surgery', description: 'Advanced neurosurgical removal and care for tumors.', image: 'assets/specialties/Neurology/Brain & Spine-Tumor-Surgery.png' },
+        { title: 'Dementias', description: 'Evaluation and treatment of Alzheimer’s disease, vascular dementia, and other dementias.', image: 'assets/specialties/Neurology/Dementias.png' },
+        { title: 'Emergency & Spine', description: 'Urgent surgical care for traumatic neurologic injuries.', image: 'assets/specialties/Neurology/Emergency & Spine.png' },
+        { title: 'Epilepsy', description: 'Diagnosis, medical management, and surgical options for seizure disorders.', image: 'assets/specialties/Neurology/Epilepsy.png' },
+        { title: 'Headache', description: 'Diagnosis and treatment of chronic and severe headaches.', image: 'assets/specialties/Neurology/Headache.png' },
+        { title: 'Head Injuries', description: 'Emergency and rehabilitative care for traumatic brain injuries.', image: 'assets/specialties/Neurology/Head-Injuries.png' },
+        { title: 'Motor Neuron Disease', description: 'Comprehensive care and symptom management.', image: 'assets/specialties/Neurology/Motor-Neuron-Disease.png' },
+        { title: 'Movement Disorders', description: 'Extensive care for complex movement disorders.', image: 'assets/specialties/Neurology/Movement-Disorders.png' },
+        { title: 'Myasthenia Gravis', description: 'Diagnosis and treatment of this neuromuscular condition.', image: 'assets/specialties/Neurology/Myasthenia-Gravis.png' },
+        { title: 'Myopathies', description: 'Diagnosis and treatment of muscle disorders.', image: 'assets/specialties/Neurology/Myopathies.png' },
+        { title: 'Neuro Infectious Disorders', description: 'Treatment for meningitis, encephalitis, CNS tuberculosis, Pott’s spine, etc.', image: 'assets/specialties/Neurology/Neur- Infectious-Disorders.png' },
+        { title: 'Neurology', description: 'Comprehensive neurological evaluations and treatments.', image: 'assets/specialties/Neurology/Neurology.png' },
+        { title: 'Neuropathies', description: 'Management of GBS, CIDP and other peripheral nerve disorders.', image: 'assets/specialties/Neurology/Neuropathies.png' },
+        { title: 'Parkinson’s Disease and Atypical Parkinsonism', description: 'Advanced management of Parkinson’s and related movement disorders.', image: 'assets/specialties/Neurology/parkin.png' },
+        { title: 'Pediatric Brain Surgery', description: 'Expert neurosurgery for pediatric neurological conditions.', image: 'assets/specialties/Neurology/Pediatric-Brain-Surgery.png' },
+        { title: 'Spinal Cord Injury', description: 'Expert treatment and surgeries for spine trauma and disorders.', image: 'assets/specialties/Neurology/Spinal-Cor- Injury.png' },
+        { title: 'Stereotactic & Tumor Surgeries', description: 'Minimally invasive procedures for brain tumors and neurological lesions.', image: 'assets/specialties/Neurology/stereotactic & tumor-surgeries.png' },
+        { title: 'Stroke', description: 'Comprehensive care and rehabilitation for all kinds of stroke.', image: 'assets/specialties/Neurology/Stroke.png' },
+        { title: 'Trauma, Tumor & TB Surgeries', description: 'Specialized surgical interventions for neurological trauma and tubercular involvement.', image: 'assets/specialties/Neurology/Trauma,-Tumor & TB Surgeries.png' }
+        ],
   
       facilities: [
         'Advanced neuroimaging (MRI, CT, PET)',
@@ -2179,18 +2180,18 @@ laboratoryInvestigations: {
   ],
 
   successStories: [
-    // {
-    //   title: 'Accurate Diagnosis through FNAC',
-    //   patient: 'Suman',
-    //   story: 'Raj Hospital’s laboratory team diagnosed my thyroid nodule accurately using FNAC. The results helped start treatment early and effectively.',
-    //   outcome: 'Early detection and timely treatment ensured full recovery.'
-    // },
-    // {
-    //   title: 'Comprehensive Preventive Testing',
-    //   patient: 'Ramesh',
-    //   story: 'The preventive checkup helped detect high cholesterol and early diabetes indicators. The detailed report guided my doctor effectively.',
-    //   outcome: 'Preventive care led to better long-term health management.'
-    // }
+    {
+      title: 'Accurate Diagnosis through FNAC',
+      patient: 'Suman',
+      story: 'Raj Hospital’s laboratory team diagnosed my thyroid nodule accurately using FNAC. The results helped start treatment early and effectively.',
+      outcome: 'Early detection and timely treatment ensured full recovery.'
+    },
+    {
+      title: 'Comprehensive Preventive Testing',
+      patient: 'Ramesh',
+      story: 'The preventive checkup helped detect high cholesterol and early diabetes indicators. The detailed report guided my doctor effectively.',
+      outcome: 'Preventive care led to better long-term health management.'
+    }
   ],
 
   faqs: [
@@ -2279,18 +2280,18 @@ advanceneurology: {
   ],
 
   successStories: [
-    // {
-    //   title: 'Accurate Epilepsy Diagnosis with EEG',
-    //   patient: 'Sunita',
-    //   story: 'I visited Raj Hospitals for recurring seizures. The EEG test quickly helped diagnose epilepsy and the doctor started the right treatment immediately.',
-    //   outcome: 'Seizures well-controlled with targeted medication and care.'
-    // },
-    // {
-    //   title: 'Recovery from Stroke',
-    //   patient: 'Ravi',
-    //   story: 'After a stroke, I received neurology care and rehabilitation at Raj Hospitals. The coordinated approach by doctors and therapists helped me regain strength and balance.',
-    //   outcome: 'Steady recovery and improved quality of life post-stroke.'
-    // }
+    {
+      title: 'Accurate Epilepsy Diagnosis with EEG',
+      patient: 'Sunita',
+      story: 'I visited Raj Hospitals for recurring seizures. The EEG test quickly helped diagnose epilepsy and the doctor started the right treatment immediately.',
+      outcome: 'Seizures well-controlled with targeted medication and care.'
+    },
+    {
+      title: 'Recovery from Stroke',
+      patient: 'Ravi',
+      story: 'After a stroke, I received neurology care and rehabilitation at Raj Hospitals. The coordinated approach by doctors and therapists helped me regain strength and balance.',
+      outcome: 'Steady recovery and improved quality of life post-stroke.'
+    }
   ],
 
   faqs: [
@@ -2389,18 +2390,18 @@ advanceneurology: {
     ],
 
     successStories: [
-      // {
-      //   title: 'Timely Diagnosis Prevented Cardiac Arrest',
-      //   patient: 'Mr. Suresh, 55',
-      //   story: 'During a routine checkup, ECG and TMT revealed early-stage blockage. Immediate medication and lifestyle corrections prevented a potential cardiac arrest.',
-      //   outcome: 'Full recovery with normal heart function.'
-      // },
-      // {
-      //   title: 'Advanced ECHO Testing Saved a Life',
-      //   patient: 'Mrs. Lata, 62',
-      //   story: 'Echocardiography detected a valve disorder that required prompt intervention. After treatment, her heart health stabilized within weeks.',
-      //   outcome: 'Improved heart performance and continued recovery.'
-      // }
+      {
+        title: 'Timely Diagnosis Prevented Cardiac Arrest',
+        patient: 'Mr. Suresh, 55',
+        story: 'During a routine checkup, ECG and TMT revealed early-stage blockage. Immediate medication and lifestyle corrections prevented a potential cardiac arrest.',
+        outcome: 'Full recovery with normal heart function.'
+      },
+      {
+        title: 'Advanced ECHO Testing Saved a Life',
+        patient: 'Mrs. Lata, 62',
+        story: 'Echocardiography detected a valve disorder that required prompt intervention. After treatment, her heart health stabilized within weeks.',
+        outcome: 'Improved heart performance and continued recovery.'
+      }
     ],
 
     faqs: [
@@ -2501,18 +2502,18 @@ advanceneurology: {
     ],
 
     successStories: [
-      // {
-      //   title: 'Early Tumor Detection through MRI',
-      //   patient: 'Mr. Rakesh, 52',
-      //   story: 'An MRI scan performed at Raj Hospital detected a small brain tumor at an early stage, enabling timely surgery and successful recovery.',
-      //   outcome: 'Full recovery after treatment with no complications.'
-      // },
-      // {
-      //   title: 'Accurate Bone Density Diagnosis',
-      //   patient: 'Mrs. Anita, 60',
-      //   story: 'BMD testing helped diagnose osteoporosis early, allowing preventive treatment that improved her mobility and bone health.',
-      //   outcome: 'Improved bone strength and quality of life.'
-      // }
+      {
+        title: 'Early Tumor Detection through MRI',
+        patient: 'Mr. Rakesh, 52',
+        story: 'An MRI scan performed at Raj Hospital detected a small brain tumor at an early stage, enabling timely surgery and successful recovery.',
+        outcome: 'Full recovery after treatment with no complications.'
+      },
+      {
+        title: 'Accurate Bone Density Diagnosis',
+        patient: 'Mrs. Anita, 60',
+        story: 'BMD testing helped diagnose osteoporosis early, allowing preventive treatment that improved her mobility and bone health.',
+        outcome: 'Improved bone strength and quality of life.'
+      }
     ],
 
     faqs: [
