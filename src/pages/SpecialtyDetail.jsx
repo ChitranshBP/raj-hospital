@@ -294,7 +294,7 @@ const SpecialtyDetail = () => {
   //   }
   // },
 
-  'critical-care': {
+  'critical-care-': {
   id: 'critical-care',
   title: 'Critical Care',
   icon: FiActivity,

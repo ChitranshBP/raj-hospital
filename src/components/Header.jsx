@@ -62,7 +62,8 @@ const Header = () => {
     category: "Centres of Excellence",
     items: [
     "Cardiology",
-    "Critical Care & Emergency",
+    "Critical Care ",
+     "Emergency",
     "Gastroenterology",
     "Minimal Access Surgery",
     "Nephrology",
