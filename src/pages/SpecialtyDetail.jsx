@@ -2141,7 +2141,7 @@ ent: {
 // // Advanced Dignosis
 
 
-laboratoryInvestigations: {
+'laboratory-investigations': {
   id: 'laboratory-investigations',
   title: 'All Blood and Laboratory Investigations',
   icon: FiActivity,
@@ -2224,7 +2224,7 @@ laboratoryInvestigations: {
   }
 },
 
-advanceneurology: {
+'neurology-ad': {
   id: 'neurology-ad',
   title: 'Neurology',
   icon: FiBrain,
@@ -2324,7 +2324,7 @@ advanceneurology: {
   }
 },
 
-'advancedcardiology': {
+'cardiology-ad': {
     id: 'cardiology-ad',
     title: 'Cardiology',
     icon: FiHeart,

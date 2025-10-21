@@ -110,8 +110,26 @@ const Header = () => {
   'Awards & Recognition'];
 
 
+  // Custom URL mapping for specific specialties in Advanced Diagnostics
+  const specialtyUrlMap = {
+    'Cardiology': {
+      'Advanced Diagnostics': 'cardiology-ad'
+    },
+    'Neurology': {
+      'Advanced Diagnostics': 'neurology-ad'
+    },
+    'FNAC, Biopsy, Blood & Laboratory Investigations': {
+      'Advanced Diagnostics': 'laboratory-investigations'
+    }
+  };
+
   // Helper function to convert specialty names to URL slugs
-  const specialtyToSlug = (specialtyName) => {
+  const specialtyToSlug = (specialtyName, category = '') => {
+    // Check if there's a custom mapping for this specialty in this category
+    if (specialtyUrlMap[specialtyName] && specialtyUrlMap[specialtyName][category]) {
+      return specialtyUrlMap[specialtyName][category];
+    }
+
     return specialtyName
       .toLowerCase()
       .replace(/&/g, 'and')
@@ -4472,7 +4490,7 @@ const Header = () => {
             {category.items.map((specialty) =>
                             <Link
                               key={specialty}
-                              to={`/specialties/${specialtyToSlug(specialty)}`}
+                              to={`/specialties/${specialtyToSlug(specialty, category.category)}`}
                               className="px-3 py-2 text-gray-700 leading-tight
                            hover:bg-orange-50 hover:text-orange-600
                            hover:scale-[1.01] transition-all duration-200
