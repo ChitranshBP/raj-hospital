@@ -2137,25 +2137,46 @@ ent: {
   }
 },
 
-
-// // Advanced Dignosis
+// Advanced Dignosis
 
 
 'laboratory-investigations': {
   id: 'laboratory-investigations',
   title: 'All Blood and Laboratory Investigations',
   icon: FiActivity,
-  bannerImage: 'assets/specialties/Laboratory/banner-laboratory.png',
+  bannerImage: 'assets/specialties/Blood and Laboratory Investigations/Blood and Laboratory.jpg',
   shortDescription: 'Comprehensive and reliable blood tests and laboratory investigations in Ranchi with advanced diagnostic technology.',
   longDescription: 'The All Blood and Laboratory Investigations Department at Raj Hospitals, Ranchi, offers precise, reliable, and timely diagnostic services that support early disease detection and effective treatment decisions. Equipped with state-of-the-art analyzers and automated systems, our modern laboratory ensures high accuracy for every test conducted. From basic blood work and hormone analysis to specialized investigations like FNAC and Biopsy, all tests are performed under strict quality control by experienced medical experts. Raj Hospitals is known for top-tier diagnostic accuracy, efficiency, and patient safety across Ranchi and Jharkhand.',
 
   services: [
-    { title: 'Comprehensive Blood Testing', description: 'Routine and advanced testing including CBC, lipid profile, blood glucose, liver and kidney function, thyroid and hormonal analysis.', image: 'assets/specialties/Laboratory/blood-tests.png' },
-    { title: 'FNAC (Fine Needle Aspiration Cytology)', description: 'A safe and minimally invasive procedure to evaluate swellings, nodules, and suspected tumors for quick diagnosis.', image: 'assets/specialties/Laboratory/fnac.png' },
-    { title: 'Biopsy Evaluation', description: 'Accurate tissue examination for cancer detection, chronic inflammations, or abnormal growths.', image: 'assets/specialties/Laboratory/biopsy.png' },
-    { title: 'Infection Marker Analysis', description: 'Diagnostic testing for infections including CRP, dengue, HIV, hepatitis, and other markers.', image: 'assets/specialties/Laboratory/infection-marker.png' },
-    { title: 'Preventive Health Checkups', description: 'Comprehensive preventive screening packages designed for early detection of health issues.', image: 'assets/specialties/Laboratory/preventive-checkup.png' }
-  ],
+  
+      {
+        title: 'Comprehensive Blood Testing',
+        description: 'Routine and advanced testing including CBC, lipid profile, blood glucose, liver and kidney function, thyroid and hormonal analysis.',
+        image: 'assets/specialties/Blood and Laboratory Investigations/Comprehensive-Blood-Testing.jpg'
+      },
+      {
+        title: 'FNAC (Fine Needle Aspiration Cytology)',
+        description: 'A safe and minimally invasive procedure to evaluate swellings, nodules, and suspected tumors for quick diagnosis.',
+        image: 'assets/specialties/Blood and Laboratory Investigations/fnac.jpg'
+      },
+      {
+        title: 'Biopsy Evaluation',
+        description: 'Accurate tissue examination for cancer detection, chronic inflammations, or abnormal growths.',
+        image: 'assets/specialties/Blood and Laboratory Investigations/Biopsy-Evaluation.jpg'
+      },
+      {
+        title: 'Infection Marker Analysis',
+        description: 'Diagnostic testing for infections including CRP, dengue, HIV, hepatitis, and other markers.',
+        image: 'assets/specialties/Blood and Laboratory Investigations/Infection-Marker-Analysis.jpg'
+      },
+      {
+        title: 'Preventive Health Checkups',
+        description: 'Comprehensive preventive screening packages designed for early detection of health issues.',
+        image: 'assets/specialties/Blood and Laboratory Investigations/Preventive-Health-Checkups.jpg'
+      }
+
+ ],
 
   facilities: [
     'Fully automated, computerized laboratory',
@@ -2228,18 +2249,43 @@ ent: {
   id: 'neurology-ad',
   title: 'Neurology',
   icon: FiBrain,
-  bannerImage: 'assets/specialties/Neurology/banner-neurology.png',
+  bannerImage: 'assets/specialties/Neurology-ad/Neurology.jpg',
   shortDescription: 'Comprehensive neurology care in Ranchi with advanced EEG, NCS, and expert neurologists for accurate diagnosis and treatment.',
   longDescription: 'The Department of Neurology at Raj Hospitals, Ranchi, provides cutting-edge diagnosis and treatment for disorders of the brain, nerves, and muscles. Our team of highly qualified neurologists specializes in managing conditions such as stroke, epilepsy, migraine, neuropathy, Parkinson’s disease, and muscle disorders. Supported by advanced neuro-diagnostic tools like EEG (Electroencephalogram) and NCS (Nerve Conduction Study), we ensure accurate detection and effective management of neurological conditions. Focused on patient comfort, efficiency, and clinical precision, Raj Hospitals continues to be a leader in neurological care across Ranchi and Jharkhand.',
 
   services: [
-    { title: 'EEG (Electroencephalogram)', description: 'A painless test to record brain’s electrical activity used for diagnosing epilepsy, seizures, and sleep disorders.', image: 'assets/specialties/Neurology/eeg.png' },
-    { title: 'NCS (Nerve Conduction Study)', description: 'Measures the speed and strength of electrical signals in the nerves to detect neuropathy and nerve injuries.', image: 'assets/specialties/Neurology/ncs.png' },
-    { title: 'Stroke & Neuro-Rehabilitation', description: 'Comprehensive rehabilitation and therapy plans for patients recovering from stroke and neurological impairment.', image: 'assets/specialties/Neurology/stroke-rehab.png' },
-    { title: 'Migraine & Headache Management', description: 'Advanced diagnosis and personalized treatment plans for chronic headaches and migraines.', image: 'assets/specialties/Neurology/migraine.png' },
-    { title: 'Epilepsy Treatment & Monitoring', description: 'Specialized programs for epilepsy management including regular EEG monitoring and medication review.', image: 'assets/specialties/Neurology/epilepsy.png' },
-    { title: 'Neuropathy & Muscle Disorder Care', description: 'Targeted therapies and diagnostics for nerve pain, muscle weakness, and neuromuscular disorders.', image: 'assets/specialties/Neurology/neuropathy.png' }
-  ],
+      {
+        title: 'EEG (Electroencephalogram)',
+        description: 'A painless test to record brain’s electrical activity used for diagnosing epilepsy, seizures, and sleep disorders.',
+        image: 'assets/specialties/Neurology-ad/EEG.jpg'
+      },
+      {
+        title: 'NCS (Nerve Conduction Study)',
+        description: 'Measures the speed and strength of electrical signals in the nerves to detect neuropathy and nerve injuries.',
+        image: 'assets/specialties/Neurology-ad/NCS.jpg'
+      },
+      {
+        title: 'Stroke & Neuro-Rehabilitation',
+        description: 'Comprehensive rehabilitation and therapy plans for patients recovering from stroke and neurological impairment.',
+        image: 'assets/specialties/Neurology-ad/Stroke.jpg'
+      },
+      {
+        title: 'Migraine & Headache Management',
+        description: 'Advanced diagnosis and personalized treatment plans for chronic headaches and migraines.',
+        image: 'assets/specialties/Neurology-ad/Migraine & Headache.jpg'
+      },
+      {
+        title: 'Epilepsy Treatment & Monitoring',
+        description: 'Specialized programs for epilepsy management including regular EEG monitoring and medication review.',
+        image: 'assets/specialties/Neurology-ad/Epilepsy-Treatment.jpg'
+      },
+      {
+        title: 'Neuropathy & Muscle Disorder Care',
+        description: 'Targeted therapies and diagnostics for nerve pain, muscle weakness, and neuromuscular disorders.',
+        image: 'assets/specialties/Neurology-ad/Neuropathy.jpg'
+      }
+
+ ],
 
   facilities: [
     'Modern EEG and NCS testing facilities',
@@ -2328,7 +2374,7 @@ ent: {
     id: 'cardiology-ad',
     title: 'Cardiology',
     icon: FiHeart,
-    bannerImage: 'assets/specialties/Cardiology/cardiology-banner.png',
+    bannerImage: 'assets/specialties/Cardiology-ad/Cardiology-banner.jpg',
     shortDescription: 'Comprehensive heart care with advanced diagnostics, expert cardiologists, and complete cardiac evaluation under one roof.',
     longDescription: 'Raj Hospital’s Department of Cardiology in Ranchi provides advanced diagnostic and preventive heart care with the latest technology and expert supervision. The department ensures accurate testing through non-invasive procedures such as ECG, ECHO, TMT, Stress ECHO, and Holter Monitoring. Managed by skilled cardiologists and trained technicians, the center offers safe, precise, and compassionate cardiac evaluation to guide effective treatment plans.',
 
@@ -2336,27 +2382,27 @@ ent: {
       {
         title: 'ECG (Electrocardiogram)',
         description: 'A simple and quick test recording the heart’s electrical activity. Detects arrhythmias, heart attacks, and other cardiac issues.',
-        image: 'assets/specialties/Cardiology/ECG.png'
+        image: 'assets/specialties/Cardiology-ad/ECG.jpg'
       },
       {
         title: 'ECHO (Echocardiography)',
         description: 'Ultrasound-based test showing heart structure and function. Diagnoses valve disorders, heart failure, and congenital defects.',
-        image: 'assets/specialties/Cardiology/ECHO.png'
+        image: 'assets/specialties/Cardiology-ad/ECHO.jpg'
       },
       {
         title: 'TMT (Treadmill Test)',
         description: 'Stress test evaluating heart performance during exercise. Identifies coronary artery disease and exercise-related issues.',
-        image: 'assets/specialties/Cardiology/TMT.png'
+        image: 'assets/specialties/Cardiology-ad/TMT.jpg'
       },
       {
         title: 'Stress ECHO',
         description: 'Combines echocardiography with exercise or medical stress to assess blood flow and detect blockages or weak heart areas.',
-        image: 'assets/specialties/Cardiology/Stress-ECHO.png'
+        image: 'assets/specialties/Cardiology-ad/Stress-ECHO.jpg'
       },
       {
         title: 'Holter Monitoring',
         description: 'Portable ECG device worn for 24–48 hours to record continuous heart activity and identify irregular rhythms not captured in a standard ECG.',
-        image: 'assets/specialties/Cardiology/Holter-Monitoring.png'
+        image: 'assets/specialties/Cardiology-ad/Holter-Monitoring.jpg'
       }
     ],
 
@@ -2438,46 +2484,89 @@ ent: {
     id: 'radiology',
     title: 'Radiology',
     icon: FiActivity,
-    bannerImage: 'assets/specialties/Radiology/radiology-banner.png',
+    bannerImage: 'assets/specialties/Radiology-ad/radiology banner.jpg',
     shortDescription: 'Comprehensive, high-precision radiology and imaging services with advanced MRI, CT, Ultrasound, and more under one roof.',
     longDescription: 'Raj Hospital’s Department of Radiology in Ranchi offers a complete range of imaging and diagnostic facilities under one roof. Equipped with cutting-edge MRI, CT Scan, OPG, MRCP, Ultrasound, Full Body BMD, and Image Intensifier systems, our unit ensures the most accurate diagnosis to guide effective treatment. Managed by expert radiologists and technologists, we combine precision, safety, and compassionate care to deliver the best outcomes for every patient.',
 
     services: [
-      {
-        title: 'MRI (Magnetic Resonance Imaging)',
-        description: 'Provides detailed, high-resolution images of the brain, spine, joints, and internal organs without radiation exposure. Ideal for neurological, orthopedic, and soft-tissue evaluations.',
-        image: 'assets/specialties/Radiology/MRI.png'
-      },
-      {
-        title: 'CT Scan (Computed Tomography)',
-        description: 'Produces cross-sectional images of organs, bones, and blood vessels to help detect tumors, fractures, and internal injuries.',
-        image: 'assets/specialties/Radiology/CT-Scan.png'
-      },
-      {
-        title: 'OPG (Orthopantomogram)',
-        description: 'Panoramic dental X-ray of teeth, jawbones, and surrounding structures. Essential for dental and orthodontic planning.',
-        image: 'assets/specialties/Radiology/OPG.png'
-      },
-      {
-        title: 'MRCP (Magnetic Resonance Cholangiopancreatography)',
-        description: 'Specialized MRI to visualize the liver, gallbladder, bile ducts, and pancreas to detect stones or obstructions.',
-        image: 'assets/specialties/Radiology/MRCP.png'
-      },
-      {
-        title: 'Ultrasound',
-        description: 'A safe and painless non-invasive procedure using sound waves to visualize soft tissues, organs, and blood flow.',
-        image: 'assets/specialties/Radiology/Ultrasound.png'
-      },
-      {
-        title: 'Full Body BMD (Bone Mineral Densitometry)',
-        description: 'Measures bone density to evaluate osteoporosis risk and monitor bone health.',
-        image: 'assets/specialties/Radiology/BMD.png'
-      },
-      {
-        title: 'Image Intensifier',
-        description: 'Real-time X-ray imaging used in surgeries and orthopedic procedures for precision and safety.',
-        image: 'assets/specialties/Radiology/Image-Intensifier.png'
-      }
+      
+        {
+          title: 'MRI (Magnetic Resonance Imaging)',
+          description: 'Provides detailed, high-resolution images of the brain, spine, joints, and internal organs without radiation exposure. Ideal for neurological, orthopedic, and soft-tissue evaluations.',
+          image: 'assets/specialties/Radiology-ad/MRI.jpg'
+        },
+        {
+          title: 'CT Scan (Computed Tomography)',
+          description: 'Produces cross-sectional images of organs, bones, and blood vessels to help detect tumors, fractures, and internal injuries.',
+          image: 'assets/specialties/Radiology-ad/CT Scan.jpg'
+        },
+        {
+          title: 'OPG (Orthopantomogram)',
+          description: 'Panoramic dental X-ray of teeth, jawbones, and surrounding structures. Essential for dental and orthodontic planning.',
+          image: 'assets/specialties/Radiology-ad/OPG.jpg'
+        },
+        {
+          title: 'MRCP (Magnetic Resonance Cholangiopancreatography)',
+          description: 'Specialized MRI to visualize the liver, gallbladder, bile ducts, and pancreas to detect stones or obstructions.',
+          image: 'assets/specialties/Radiology-ad/MRCP.jpg'
+        },
+        {
+          title: 'Ultrasound',
+          description: 'A safe and painless non-invasive procedure using sound waves to visualize soft tissues, organs, and blood flow.',
+          image: 'assets/specialties/Radiology-ad/Ultrasound.jpg'
+        },
+        {
+          title: 'Full Body BMD (Bone Mineral Densitometry)',
+          description: 'Measures bone density to evaluate osteoporosis risk and monitor bone health.',
+          image: 'assets/specialties/Radiology-ad/Full Body BMD.jpg'
+        },
+        {
+          title: 'Image Intensifier',
+          description: 'Real-time X-ray imaging used in surgeries and orthopedic procedures for precision and safety.',
+          image: 'assets/specialties/Radiology-ad/Image Intensifier.jpg'
+        }
+
+
+
+
+
+
+
+      // {
+      //   title: 'MRI (Magnetic Resonance Imaging)',
+      //   description: 'Provides detailed, high-resolution images of the brain, spine, joints, and internal organs without radiation exposure. Ideal for neurological, orthopedic, and soft-tissue evaluations.',
+      //   image: 'assets/specialties/Radiology/MRI.png'
+      // },
+      // {
+      //   title: 'CT Scan (Computed Tomography)',
+      //   description: 'Produces cross-sectional images of organs, bones, and blood vessels to help detect tumors, fractures, and internal injuries.',
+      //   image: 'assets/specialties/Radiology/CT-Scan.png'
+      // },
+      // {
+      //   title: 'OPG (Orthopantomogram)',
+      //   description: 'Panoramic dental X-ray of teeth, jawbones, and surrounding structures. Essential for dental and orthodontic planning.',
+      //   image: 'assets/specialties/Radiology/OPG.png'
+      // },
+      // {
+      //   title: 'MRCP (Magnetic Resonance Cholangiopancreatography)',
+      //   description: 'Specialized MRI to visualize the liver, gallbladder, bile ducts, and pancreas to detect stones or obstructions.',
+      //   image: 'assets/specialties/Radiology/MRCP.png'
+      // },
+      // {
+      //   title: 'Ultrasound',
+      //   description: 'A safe and painless non-invasive procedure using sound waves to visualize soft tissues, organs, and blood flow.',
+      //   image: 'assets/specialties/Radiology/Ultrasound.png'
+      // },
+      // {
+      //   title: 'Full Body BMD (Bone Mineral Densitometry)',
+      //   description: 'Measures bone density to evaluate osteoporosis risk and monitor bone health.',
+      //   image: 'assets/specialties/Radiology/BMD.png'
+      // },
+      // {
+      //   title: 'Image Intensifier',
+      //   description: 'Real-time X-ray imaging used in surgeries and orthopedic procedures for precision and safety.',
+      //   image: 'assets/specialties/Radiology/Image-Intensifier.png'
+      // }
     ],
 
     facilities: [
