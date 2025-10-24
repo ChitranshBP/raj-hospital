@@ -22,19 +22,19 @@ const HeroSection = () => {
 
   const slides = [
   {
-    desktop: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/bc43a805-6045-42e8-91bd-c7175d289af0.png',
+    desktop: 'assets/Home-Banners/Raj-Banners-2.jpg',
     mobile: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
   },
   {
-    desktop: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/feba88c8-eae0-47af-acba-b09465673731.png',
+    desktop: 'assets/Home-Banners/Raj-Banner-1.jpg',
     mobile: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
   },
   {
-    desktop: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/8f9d7646-b5dc-4f4a-8b95-3d67630baa04.png',
+    desktop: 'assets/Home-Banners/Raj-Banner-1.jpg',
     mobile: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
   },
   {
-    desktop: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f65b0380-448a-43da-bf13-109fd6a09ae6.png',
+    desktop: 'assets/Home-Banners/Raj-Banner-1.jpg',
     mobile: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
   }];
 
@@ -55,7 +55,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full h-[50vh] min-h-[300px] overflow-hidden" style={{ marginTop: '80px' }}>
+    <section className="relative w-full h-[60vh] min-h-[300px] overflow-hidden mt-24" style={{ marginTop: '80px' }}>
       {/* Background Carousel */}
       <div className="absolute inset-0">
         <AnimatePresence initial={false} custom={currentSlide}>
@@ -95,7 +95,7 @@ const HeroSection = () => {
               <img
                 src={isMobile ? slides[currentSlide].mobile : slides[currentSlide].desktop}
                 alt={`Slide ${currentSlide + 1}`}
-                className="w-full h-full object-contain lg:object-cover bg-gray-100"
+                className="w-full h-full object-cover"
                 style={{
                   objectPosition: 'center center'
                 }} />
