@@ -22,19 +22,19 @@ const HeroSection = () => {
 
   const slides = [
   {
-    desktop: 'assets/Home-Banners/Raj-Banners-2.jpg',
+    desktop: 'assets/Home-Banners/raj-bannner-1.jpg',
     mobile: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
   },
   {
-    desktop: 'assets/Home-Banners/Raj-Banner-1.jpg',
+    desktop: 'assets/Home-Banners/raj-bannner-2.jpg',
     mobile: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
   },
   {
-    desktop: 'assets/Home-Banners/Raj-Banner-1.jpg',
+    desktop: 'assets/Home-Banners/raj-bannner-2.jpg',
     mobile: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
   },
   {
-    desktop: 'assets/Home-Banners/Raj-Banner-1.jpg',
+    desktop: 'assets/Home-Banners/raj-bannner-1.jpg',
     mobile: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
   }];
 
@@ -90,12 +90,12 @@ const HeroSection = () => {
                 duration: 0.8
               }}
               className="w-full h-full relative">
-              
+
               {/* Image element for better control */}
               <img
                 src={isMobile ? slides[currentSlide].mobile : slides[currentSlide].desktop}
                 alt={`Slide ${currentSlide + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain lg:object-cover bg-gray-100"
                 style={{
                   objectPosition: 'center center'
                 }} />
