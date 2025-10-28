@@ -55,7 +55,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full h-[60vh] min-h-[300px] overflow-hidden mt-24" style={{ marginTop: '80px' }}>
+    <section className="relative w-full h-[60vh] min-h-[300px] overflow-hidden mt-24" style={{ marginTop: '120px' }}>
       {/* Background Carousel */}
       <div className="absolute inset-0">
         <AnimatePresence initial={false} custom={currentSlide}>
