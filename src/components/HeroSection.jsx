@@ -30,11 +30,11 @@ const HeroSection = () => {
     mobile: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
   },
   {
-    desktop: 'assets/Home-Banners/raj-bannner-2.jpg',
+    desktop: 'assets/Home-Banners/Banners-raj-4.jpg',
     mobile: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
   },
   {
-    desktop: 'assets/Home-Banners/raj-bannner-1.jpg',
+    desktop: 'assets/Home-Banners/banners-4-raj.jpg',
     mobile: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
   }];
 

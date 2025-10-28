@@ -262,7 +262,7 @@ const About = () => {
             {/* Chairman Image */}
             <div className="md:w-1/3">
               <img
-                  src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7e8b49d0-d180-4632-9377-daff6b3f256c.png"
+                  src="assets/home-img/Picture1.png"
                   alt="Chairman - Raj Hospital"
                   className="w-full h-64 md:h-full object-cover" />
 
@@ -442,8 +442,8 @@ const About = () => {
                 </div>
 
                 {/* Image on opposite side */}
-                <div className="hidden md:block w-3/12">
-                  <div className="relative h-48 bg-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+                <div className="hidden md:block w-4/12">
+                  <div className="relative h-52 bg-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
                     <img
                       src={milestone.image}
                       alt={`Raj Hospital ${milestone.year}`}
