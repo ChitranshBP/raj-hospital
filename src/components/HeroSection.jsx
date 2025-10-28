@@ -87,7 +87,7 @@ const HeroSection = () => {
               transition={{
                 type: "tween",
                 ease: [0.22, 1, 0.36, 1],
-                duration: 0.8
+                duration: 1.2,
               }}
               className="w-full h-full relative">
 

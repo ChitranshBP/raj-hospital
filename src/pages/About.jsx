@@ -102,7 +102,7 @@ const About = () => {
   },
   {
     year: "2011–13",
-    image: "assets/About-img/20011-13.png",
+    image: "assets/About-img/Comprehensive-Neuro.png",
     achievements: [
     "Started Knee Replacement surgeries (with international collaboration)",
     "Installed PSA-based Oxygen Generation facility",
@@ -146,7 +146,7 @@ const About = () => {
   },
   {
     "year": "January 2022",
-    "image": "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/47f34d9e-b7c1-4797-8a62-e208fef73c13.jpg",
+    "image": "assets/About-img/CRRT-pic.jpg",
     "achievements": [
     "Launched State-of-the-Art Gastroenterology Suite at Raj Hospitals, Ranchi",
     "Facilities include Endoscopy, ERCP, Colonoscopy, Capsule Endoscopy, and Sigmoidoscopy",
@@ -157,7 +157,7 @@ const About = () => {
   },
   {
     "year": "12th May 2023",
-    "image": "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/47ae173a-d49c-42ba-9d2a-63b6c279e973.jpg",
+    "image": "assets/About-img/Gastro-pic.jpg",
     "achievements": [
     "Introduced Advanced Kidney Care with Continuous Renal Replacement Therapy (CRRT) at Raj Hospitals, Ranchi",
     "Led by Dr. Avinash Kumar Dubey (MD Medicine, DM Nephrology) and Dr. Ravish Ranjan (MD Medicine, DNB Gastroenterology)",
@@ -167,7 +167,7 @@ const About = () => {
   },
   {
     "year": "July 2023",
-    "image": "assets/About-img/The-New-Hospital.png",
+    "image": "public/assets/About-img/neuro-pic.webp",
     "achievements": [
     "Launched the advanced Leica-Provido Operating Microscope at Raj Hospitals, Ranchi",
     "Capabilities include complicated brain tumor surgeries, complex spine surgeries, and vascular surgeries",
