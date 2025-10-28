@@ -292,12 +292,12 @@ const TabbedServicesSection = () => {
               )}
 
               {/* View All Services Button */}
-              <button
+              {/* <button
                 onClick={() => scrollRef.current?.scrollTo({ left: scrollRef.current.scrollWidth, behavior: 'smooth' })}
                 className="flex-shrink-0 px-6 py-3 rounded-full font-medium text-sm bg-secondary-100 text-secondary-600 border border-secondary-200 hover:bg-secondary-200 transition-all duration-300 flex items-center space-x-2 whitespace-nowrap">
                 <SafeIcon icon={FiPlus} className="w-4 h-4" />
                 <span>View All</span>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
@@ -330,9 +330,9 @@ const TabbedServicesSection = () => {
                       <h3 className="text-2xl font-bold text-gray-900">
                         {services[activeTab].title}
                       </h3>
-                      <div className="flex items-center space-x-4 text-sm text-gray-500 mt-1">
+                      {/* <div className="flex items-center space-x-4 text-sm text-gray-500 mt-1">
                         <span>{services[activeTab].stats.procedures} Procedures</span>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <p className="text-gray-600 leading-relaxed text-lg">
@@ -393,27 +393,7 @@ const TabbedServicesSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
 
                   {/* Floating Stats Card */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.3 }}
-                    className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-4">
-
-                    <div className="grid grid-cols-2 gap-4 text-center">
-                      <div>
-                        <div className="text-2xl font-bold text-primary-600">
-                          {services[activeTab].stats.procedures}
-                        </div>
-                        <div className="text-sm text-gray-600">Procedures</div>
-                      </div>
-                      <div>
-                        <div className="text-2xl font-bold text-secondary-600">
-                          {services[activeTab].stats.experience.split(' ')[0]}
-                        </div>
-                        <div className="text-sm text-gray-600">Experience</div>
-                      </div>
-                    </div>
-                  </motion.div>
+                 
                 </motion.div>
               </div>
             </motion.div>

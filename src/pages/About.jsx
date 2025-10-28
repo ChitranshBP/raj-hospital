@@ -131,7 +131,7 @@ const About = () => {
   },
   {
     year: "2019",
-    image: "assets/About-img/2019.png",
+    image: "public/assets/About-img/NABH.png",
     achievements: [
     "Pre-Accredited by NABH for Patient Safety & Quality"]
 

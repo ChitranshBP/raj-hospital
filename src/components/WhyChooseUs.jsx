@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
     title: 'Rooftop Helipad',
     description: 'Air ambulance facility for critical emergency cases',
     color: 'accent',
-    image: 'assets/home-img/Why-Choose-Raj Hospitals/.png'
+    image: 'public/assets/home-img/Picture1.jpg'
   }];
 
 
