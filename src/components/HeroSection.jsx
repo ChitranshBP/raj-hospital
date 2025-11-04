@@ -23,19 +23,19 @@ const HeroSection = () => {
   const slides = [
   {
     desktop: 'assets/Home-Banners/jharkhand-banner.webp',
-    mobile: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
+    mobile: 'assets/Home-Banners/jharkhand-mob-banner.webp'
   },
   {
     desktop: 'assets/Home-Banners/quality-health-care.webp',
-    mobile: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
+    mobile: 'assets/Home-Banners/raj-quality-healthcare-mob.webp'
   },
   {
     desktop: 'assets/Home-Banners/specialty-banner.webp',
-    mobile: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
+    mobile: 'assets/Home-Banners/raj-specialty-mob-banner.webp'
   },
   {
     desktop: 'assets/Home-Banners/why-choose-banner.webp',
-    mobile: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80'
+    mobile: 'assets/Home-Banners/raj-why-choose-mob-banner.webp'
   }];
 
 
@@ -55,7 +55,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full h-[60vh] min-h-[300px] overflow-hidden mt-24" style={{ marginTop: '120px' }}>
+    <section className="relative w-full h-[60vh] min-h-[300px] overflow-hidden" style={{ marginTop: isMobile ? '136px' : '120px' }}>
       {/* Background Carousel */}
       <div className="absolute inset-0">
         <AnimatePresence initial={false} custom={currentSlide}>

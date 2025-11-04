@@ -166,32 +166,32 @@ const Header = () => {
     {/* Mobile Layout - Stacked */}
     <div className="flex flex-col space-y-2 sm:hidden">
       {/* Top Row - Social Media & Location */}
-      <div className="hidden md:flex items-center justify-center space-x-6">
+      <div className="flex items-center justify-center space-x-4">
         {/* Social Media Icons */}
         <div className="flex items-center space-x-3">
           <a href="https://www.facebook.com/RajHospitals" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
-            <SafeIcon icon={FiFacebook} className="w-5 h-5" />
+            <SafeIcon icon={FiFacebook} className="w-4 h-4" />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
-            <SafeIcon icon={FiInstagram} className="w-5 h-5" />
+            <SafeIcon icon={FiInstagram} className="w-4 h-4" />
           </a>
           <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
-            <SafeIcon icon={FiYoutube} className="w-5 h-5" />
+            <SafeIcon icon={FiYoutube} className="w-4 h-4" />
           </a>
         </div>
-        
+
         {/* Location Icon */}
         <a href="/location" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
-          <SafeIcon icon={FiMapPin} className="w-5 h-5" />
-          <span className="text-sm font-medium">Location</span>
+          <SafeIcon icon={FiMapPin} className="w-4 h-4" />
+          <span className="text-xs font-medium">Location</span>
         </a>
       </div>
-      
+
       {/* Bottom Row - Helpline */}
       <div className="flex items-center justify-center">
         <div className="flex items-center space-x-2">
           <SafeIcon icon={FiBell} className="w-4 h-4 text-red-300" />
-          <a href="tel:+919771488888" className="text-sm font-medium hover:underline">
+          <a href="tel:+919771488888" className="text-xs font-medium hover:underline">
             (24×7) Helpline: +91 97714 88888
           </a>
         </div>
@@ -238,7 +238,7 @@ const Header = () => {
 
       {/* Main Header with dynamic height */}
       <header className={`fixed w-full z-40 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-lg top-6' : 'bg-white top-6'}`
+      isScrolled ? 'bg-white shadow-lg top-[48px] sm:top-6' : 'bg-white top-[48px] sm:top-6'}`
       }>
         <div className="max-w-7xl mx-auto px-4">
           {/* Logo and Main Container with fixed height - responsive */}
@@ -256,8 +256,8 @@ const Header = () => {
                   alt="Main Logo"
                   className={`object-contain transition-all duration-300 ${
                   showMiddleRow ?
-                  'w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] md:w-[100px] md:h-[100px] lg:w-[140px] lg:h-[140px]' // Both rows visible
-                  : 'w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[110px] md:h-[110px] lg:w-[120px] lg:h-[120px]' // One row visible - larger than before
+                  'w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px]' // Both rows visible
+                  : 'w-[80px] h-[80px] sm:w-[110px] sm:h-[110px] md:w-[130px] md:h-[130px] lg:w-[140px] lg:h-[140px]' // One row visible - mobile stays same size
                   }`} />
 
 
@@ -265,34 +265,22 @@ const Header = () => {
                   <div className={`flex transition-all duration-300 ${
                 showMiddleRow ?
                 'space-x-1 sm:space-x-2 md:space-x-2 lg:space-x-2' :
-                'space-x-2 sm:space-x-3 md:space-x-2 lg:space-x-2'}`
+                'space-x-1 sm:space-x-3 md:space-x-2 lg:space-x-2'}`
                 }>
                     <img
                     src="/assets/Header/NABL_logo-1.png"
                     alt="NABH Logo 1"
-                    className={`object-contain transition-all duration-300 ${
-                    showMiddleRow ?
-                    'w-[30px] h-[30px] ' :
-                    'w-[35px] h-[35px] ' // Larger when one row
-                    }`} />
+                    className="object-contain w-[30px] h-[30px]" />
 
                     <img
                     src="/assets/Header/NABL-Logo-2.png"
                     alt="NABH Logo 2"
-                    className={`object-contain transition-all duration-300 ${
-                    showMiddleRow ?
-                    'w-[30px] h-[30px] ' :
-                    'w-[35px] h-[35px]'}`
-                    } />
+                    className="object-contain w-[30px] h-[30px]" />
 
                     <img
                     src="/assets/Header/NABL-Logo-3.png"
                     alt="NABH Logo 3"
-                    className={`object-contain transition-all duration-300 ${
-                    showMiddleRow ?
-                    'w-[30px] h-[30px]' :
-                    'w-[35px] h-[35px]'}`
-                    } />
+                    className="object-contain w-[30px] h-[30px]" />
 
                   </div>
                 </div>
