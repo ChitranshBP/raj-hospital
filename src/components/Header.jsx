@@ -14,6 +14,7 @@ const Header = () => {
   const [isRajGroupOpen, setIsRajGroupOpen] = useState(false);
   const [isNewsOpen, setIsNewsOpen] = useState(false);
   const [isAcademicsOpen, setIsAcademicsOpen] = useState(false);
+  const [openCategory, setOpenCategory] = useState(null);
 
   // New states for scroll direction
   const [scrollDirection, setScrollDirection] = useState('up');
@@ -6106,39 +6107,84 @@ const Header = () => {
             exit={{ opacity: 0, height: 0 }}
             className="lg:hidden bg-white border-t border-gray-100 max-h-[80vh] overflow-y-auto">
 
-              <div className="px-4 py-4 space-y-4">
-                <Link to="/about" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+              <div className="px-4 py-4 space-y-3">
+                <Link to="/" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                  Home
+                </Link>
+
+                <Link to="/about" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
                   About Raj
                 </Link>
-                <Link to="/contact" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                  Health Check-Ups
+
+                <div className="border-t border-gray-200 pt-3">
+                  <button
+                    onClick={() => {
+                      setIsSpecialtiesOpen(!isSpecialtiesOpen);
+                      if (isSpecialtiesOpen) setOpenCategory(null);
+                    }}
+                    className="w-full flex items-center justify-between py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium">
+                    <span>Specialties</span>
+                    <SafeIcon icon={FiChevronDown} className={`w-4 h-4 transition-transform ${isSpecialtiesOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {isSpecialtiesOpen && (
+                    <div className="pl-2 mt-2 space-y-1">
+                      {specialties.map((category, idx) => (
+                        <div key={category.category} className="border-b border-gray-100 pb-2">
+                          <button
+                            onClick={() => setOpenCategory(openCategory === idx ? null : idx)}
+                            className="w-full flex items-center justify-between py-2 px-2 text-orange-600 hover:bg-orange-50 rounded transition-colors">
+                            <span className="text-sm font-semibold uppercase">{category.category}</span>
+                            <SafeIcon icon={FiChevronDown} className={`w-3 h-3 transition-transform ${openCategory === idx ? 'rotate-180' : ''}`} />
+                          </button>
+                          {openCategory === idx && (
+                            <div className="pl-4 mt-1 space-y-1 max-h-48 overflow-y-auto">
+                              {category.items.map((specialty) => (
+                                <Link
+                                  key={specialty}
+                                  to={`/specialties/${specialtyToSlug(specialty, category.category)}`}
+                                  className="block py-1.5 text-sm text-gray-600 hover:text-orange-600 transition-colors"
+                                  onClick={() => {
+                                    setIsMobileMenuOpen(false);
+                                    setOpenCategory(null);
+                                  }}>
+                                  {specialty}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                <Link to="/doctors" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                  Find a Doctor
                 </Link>
-                <Link to="/news" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+
+                <Link to="/news" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
                   News & Media
                 </Link>
-                <Link to="/contact" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                  Contact Us
+
+                <Link to="/testimonials" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                  Testimonials
                 </Link>
-                <Link to="/doctors" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                  Doctors
+
+                <Link to="/careers" className="block py-2 text-orange-500 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                  Careers
                 </Link>
-                <Link to="/biomedical-waste-reports" className="block py-2 text-gray-700 hover:text-blue-600 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+
+                <Link to="/biomedical-waste-reports" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
                   Waste Reports
                 </Link>
-                
-                <div className="pt-4 space-y-3">
-                  <button
-                  onClick={() => {
-                    setIsMobileMenuOpen(false);
-                    scrollToSection('contact');
-                  }}
-                  className="w-full bg-orange-500 text-white py-3 rounded-lg font-medium">
 
+                <div className="pt-4 border-t border-gray-200">
+                  <Link
+                    to="/contact"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="block w-full bg-orange-500 text-white py-3 rounded-lg font-medium text-center hover:bg-orange-600 transition-colors">
                     Book Appointment
-                  </button>
-                  <button className="w-full bg-yellow-500 text-black py-3 rounded-lg font-medium">
-                    Write to Chairman
-                  </button>
+                  </Link>
                 </div>
               </div>
             </motion.div>

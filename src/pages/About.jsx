@@ -131,7 +131,7 @@ const About = () => {
   },
   {
     year: "2019",
-    image: "public/assets/About-img/NABH.png",
+    image: "assets/About-img/NABH.png",
     achievements: [
     "Pre-Accredited by NABH for Patient Safety & Quality"]
 
@@ -167,7 +167,7 @@ const About = () => {
   },
   {
     "year": "July 2023",
-    "image": "public/assets/About-img/neuro-pic.webp",
+    "image": "assets/About-img/neuro-pic.webp",
     "achievements": [
     "Launched the advanced Leica-Provido Operating Microscope at Raj Hospitals, Ranchi",
     "Capabilities include complicated brain tumor surgeries, complex spine surgeries, and vascular surgeries",
