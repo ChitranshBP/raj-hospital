@@ -55,7 +55,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full h-[60vh] min-h-[300px] overflow-hidden" style={{ marginTop: isMobile ? '136px' : '120px' }}>
+    <section className="relative w-full h-[60vh] min-h-[300px] overflow-hidden" style={{ marginTop: isMobile ? '118px' : '120px' }}>
       {/* Background Carousel */}
       <div className="absolute inset-0">
         <AnimatePresence initial={false} custom={currentSlide}>
@@ -95,7 +95,7 @@ const HeroSection = () => {
               <img
                 src={isMobile ? slides[currentSlide].mobile : slides[currentSlide].desktop}
                 alt={`Slide ${currentSlide + 1}`}
-                className="w-full h-full object-contain lg:object-cover bg-gray-100"
+                className="w-full h-full object-contain md:object-cover bg-gray-100"
                 style={{
                   objectPosition: 'center center'
                 }} />

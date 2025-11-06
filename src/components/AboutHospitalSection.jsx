@@ -90,11 +90,8 @@ const AboutHospitalSection = () => {
           </motion.div>
 
           {/* Image Column */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+          <div
+      
             className="relative">
 
             {/* Main Hospital Image */}
@@ -131,7 +128,7 @@ const AboutHospitalSection = () => {
                 <div className="text-xs text-gray-500 mt-1">Trusted Since</div>
               </div>
             </motion.div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>);
