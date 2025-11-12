@@ -2656,8 +2656,10 @@ ent: {
 
 
   // Conditions data for each specialty
-  const conditionsData = {
-    cardiology: [
+ 
+const conditionsData = {
+  // 1. Cardiology
+   cardiology: [
     'Coronary Artery Disease',
     'Heart Attack (Myocardial Infarction)',
     'Heart Failure',
@@ -2675,47 +2677,11 @@ ent: {
     'Peripheral Artery Disease',
     'Congenital Heart Defects',
     'Bradycardia & Tachycardia',
-    'Heart Murmurs'],
+    'Heart Murmurs'
+  ],
 
-    neurology: [
-    'Stroke (Ischemic & Hemorrhagic)',
-    'Brain Tumors',
-    'Epilepsy & Seizure Disorders',
-    'Parkinson\'s Disease',
-    'Multiple Sclerosis',
-    'Alzheimer\'s Disease & Dementia',
-    'Migraine & Headache Disorders',
-    'Spinal Cord Injuries',
-    'Traumatic Brain Injury',
-    'Movement Disorders',
-    'Neuropathy',
-    'Meningitis & Encephalitis',
-    'Brain Aneurysms',
-    'Hydrocephalus',
-    'Cerebral Palsy',
-    'Huntington\'s Disease',
-    'Sleep Disorders',
-    'Vertigo & Balance Disorders'],
-
-    orthopedics: [
-    'Fractures & Trauma',
-    'Arthritis (Osteo & Rheumatoid)',
-    'Joint Replacement (Hip, Knee)',
-    'Sports Injuries',
-    'Spinal Disorders',
-    'Herniated Disc',
-    'Osteoporosis',
-    'Torn Ligaments & Tendons',
-    'Carpal Tunnel Syndrome',
-    'Shoulder Impingement',
-    'Tennis Elbow',
-    'Plantar Fasciitis',
-    'Scoliosis',
-    'Bone Tumors',
-    'Muscle Strains',
-    'Joint Dislocation'],
-
-    gastroenterology: [
+  // 2. Gastroenterology
+   gastroenterology: [
     'Acid Reflux (GERD)',
     'Peptic Ulcer Disease',
     'Inflammatory Bowel Disease',
@@ -2733,97 +2699,73 @@ ent: {
     'Fatty Liver Disease',
     'Hemorrhoids'],
 
-    oncology: [
-    'Lung Cancer',
-    'Breast Cancer',
-    'Colorectal Cancer',
-    'Prostate Cancer',
-    'Leukemia',
-    'Lymphoma',
-    'Brain Tumors',
-    'Ovarian Cancer',
-    'Pancreatic Cancer',
-    'Liver Cancer',
-    'Skin Cancer (Melanoma)',
-    'Kidney Cancer',
-    'Bladder Cancer',
-    'Cervical Cancer',
-    'Thyroid Cancer',
-    'Bone Cancer'],
 
-    pediatrics: [
-    'Childhood Asthma',
-    'Allergies',
-    'Growth Disorders',
-    'Developmental Delays',
-    'ADHD',
-    'Autism Spectrum Disorder',
-    'Childhood Obesity',
-    'Ear Infections',
-    'Respiratory Infections',
-    'Skin Conditions (Eczema)',
-    'Childhood Diabetes',
-    'Digestive Disorders',
-    'Sleep Disorders',
-    'Behavioral Issues',
-    'Immunization Schedules',
-    'Nutritional Deficiencies'],
+  // 3. Critical Care
+  'critical-care-': [
+    'Sepsis & Septic Shock',
+    'Acute Respiratory Distress Syndrome (ARDS)',
+    'Multi-Organ Failure',
+    'Respiratory Failure',
+    'Cardiac Arrest & Post-Cardiac Arrest Care',
+    'Severe Trauma & Polytrauma',
+    'Acute Kidney Injury (AKI)',
+    'Diabetic Ketoacidosis (DKA)',
+    'Status Epilepticus',
+    'Severe Pneumonia',
+    'Acute Liver Failure',
+    'Hemorrhagic Shock',
+    'Severe Burns',
+    'Acute Pancreatitis (Severe)',
+    'Cardiogenic Shock',
+    'Neurocritical Emergencies',
+    'Post-Operative Critical Care',
+    'Ventilator-Associated Complications'
+  ],
 
-    urology: [
-    'Kidney Stones',
-    'Urinary Tract Infections',
-    'Prostate Enlargement (BPH)',
-    'Prostate Cancer',
-    'Bladder Cancer',
-    'Kidney Cancer',
-    'Erectile Dysfunction',
-    'Male Infertility',
-    'Urinary Incontinence',
-    'Overactive Bladder',
-    'Kidney Disease',
-    'Testicular Disorders',
-    'Varicocele',
-    'Hydrocele',
-    'Penile Disorders',
-    'Urethral Stricture'],
+  // 4. Emergency
+  emergency: [
+    'Acute Chest Pain & Heart Attack',
+    'Stroke & TIA (Transient Ischemic Attack)',
+    'Trauma & Major Injuries',
+    'Severe Bleeding & Hemorrhage',
+    'Fractures & Dislocations',
+    'Head Injuries & Concussions',
+    'Burns & Smoke Inhalation',
+    'Poisoning & Overdose',
+    'Allergic Reactions & Anaphylaxis',
+    'Asthma Attacks & Severe Breathlessness',
+    'Seizures & Convulsions',
+    'Acute Abdominal Pain',
+    'Road Traffic Accidents',
+    'Snake Bites & Animal Attacks',
+    'Drowning & Near-Drowning',
+    'Electric Shock Injuries',
+    'Heatstroke & Hypothermia',
+    'Foreign Body Ingestion'
+  ],
 
-    obstetrics: [
-    'Pregnancy Care',
-    'High-Risk Pregnancy',
-    'Gestational Diabetes',
-    'Preeclampsia',
-    'Miscarriage Management',
-    'Infertility Treatment',
-    'PCOS',
-    'Endometriosis',
-    'Ovarian Cysts',
-    'Uterine Fibroids',
-    'Menstrual Disorders',
-    'Menopause Management',
-    'Cervical Cancer Screening',
-    'Contraceptive Counseling',
-    'STD Testing & Treatment',
-    'Pelvic Pain'],
+  // 5. Minimal Access Surgery
+  'minimal-access-surgery': [
+    'Laparoscopic Cholecystectomy (Gallbladder Removal)',
+    'Laparoscopic Appendectomy',
+    'Hernia Repair (Inguinal, Umbilical, Hiatal)',
+    'Laparoscopic Bariatric Surgery',
+    'Laparoscopic Colorectal Surgery',
+    'Laparoscopic Gastric Surgery',
+    'Thyroid & Parathyroid Surgery',
+    'Breast Surgery (Lumps, Fibroadenomas)',
+    'Soft Tissue Tumor Excision',
+    'Varicose Veins Treatment',
+    'Pilonidal Sinus Surgery',
+    'Fistula-in-Ano Treatment',
+    'Hemorrhoids (Piles) Surgery',
+    'Laser Surgery for Various Conditions',
+    'Abdominal Wall Reconstruction',
+    'Splenic Surgery'
+  ],
 
-    ent: [
-    'Hearing Loss',
-    'Ear Infections',
-    'Tinnitus',
-    'Sinusitis',
-    'Nasal Polyps',
-    'Deviated Septum',
-    'Tonsillitis',
-    'Throat Infections',
-    'Voice Disorders',
-    'Sleep Apnea',
-    'Vertigo',
-    'Allergic Rhinitis',
-    'Thyroid Nodules',
-    'Salivary Gland Disorders',
-    'Facial Trauma',
-    'Head & Neck Cancers'],
-
-    nephrology: [
+  // 6. Nephrology
+  nephrology: [
     'Chronic Kidney Disease',
     'Kidney Failure',
     'Dialysis Management',
@@ -2839,9 +2781,453 @@ ent: {
     'Acid-Base Disorders',
     'Fluid Retention',
     'Diabetic Nephropathy',
-    'Autoimmune Kidney Disease']
+    'Autoimmune Kidney Disease'
+  ],
 
-  };
+  // 7. Neurosciences
+  neurosciences: [
+    'Stroke (Ischemic & Hemorrhagic)',
+    'Brain Tumors (Benign & Malignant)',
+    'Spinal Cord Tumors',
+    'Traumatic Brain Injury (TBI)',
+    'Spinal Cord Injuries',
+    'Brain Aneurysms & AVM',
+    'Hydrocephalus',
+    'Epilepsy & Seizure Disorders',
+    'Parkinson\'s Disease',
+    'Brain Hemorrhage & Hematoma',
+    'Spinal Stenosis',
+    'Herniated Disc & Sciatica',
+    'Trigeminal Neuralgia',
+    'Movement Disorders',
+    'Cerebrovascular Diseases',
+    'Spinal Deformities',
+    'Peripheral Nerve Disorders',
+    'Neuro-Infections'
+  ],
+
+  // 8. Oncology (Cancer Care)
+  'oncology-cancer-care': [
+    'Breast Cancer',
+    'Lung Cancer',
+    'Colorectal Cancer',
+    'Stomach Cancer',
+    'Liver Cancer',
+    'Pancreatic Cancer',
+    'Prostate Cancer',
+    'Ovarian Cancer',
+    'Cervical Cancer',
+    'Uterine Cancer',
+    'Head & Neck Cancers',
+    'Thyroid Cancer',
+    'Kidney Cancer',
+    'Bladder Cancer',
+    'Esophageal Cancer',
+    'Oral Cancer',
+    'Skin Cancer & Melanoma',
+    'Bone & Soft Tissue Sarcomas'
+  ],
+
+  // 9. Orthopaedics & Joint Replacement
+  'orthopaedics-and-joint-replacement': [
+    'Knee Replacement (Total & Partial)',
+    'Hip Replacement',
+    'Shoulder Replacement',
+    'Osteoarthritis',
+    'Rheumatoid Arthritis',
+    'Fractures & Trauma',
+    'Sports Injuries',
+    'ACL & PCL Tears',
+    'Meniscus Tears',
+    'Rotator Cuff Injuries',
+    'Spinal Disorders & Deformities',
+    'Herniated Disc & Sciatica',
+    'Osteoporosis',
+    'Bone Infections',
+    'Limb Deformities',
+    'Pediatric Orthopaedic Conditions',
+    'Joint Dislocations',
+    'Tendon & Ligament Injuries'
+  ],
+
+  // 10. Pulmonology
+  pulmonology: [
+    'Chronic Obstructive Pulmonary Disease (COPD)',
+    'Asthma',
+    'Pneumonia',
+    'Tuberculosis (TB)',
+    'Bronchitis (Acute & Chronic)',
+    'Interstitial Lung Disease',
+    'Pulmonary Fibrosis',
+    'Lung Cancer',
+    'Pleural Effusion',
+    'Pneumothorax (Collapsed Lung)',
+    'Pulmonary Embolism',
+    'Sleep Apnea',
+    'Bronchiectasis',
+    'Pulmonary Hypertension',
+    'Sarcoidosis',
+    'Occupational Lung Diseases',
+    'Allergic Respiratory Disorders',
+    'Respiratory Infections'
+  ],
+
+  // 11. Internal Medicine
+  'internal-medicine': [
+    'Diabetes Mellitus (Type 1 & 2)',
+    'Hypertension',
+    'Thyroid Disorders (Hypo/Hyperthyroidism)',
+    'Chronic Kidney Disease',
+    'Anemia & Blood Disorders',
+    'Infectious Diseases',
+    'Dengue Fever',
+    'Malaria',
+    'Typhoid',
+    'Viral Infections',
+    'Metabolic Syndrome',
+    'Obesity Management',
+    'Dyslipidemia (High Cholesterol)',
+    'Rheumatological Disorders',
+    'Autoimmune Diseases',
+    'Chronic Fatigue Syndrome',
+    'Fever of Unknown Origin',
+    'Lifestyle Disease Management'
+  ],
+
+  // 12. Urology
+  urology: [
+    'Kidney Stones (Urolithiasis)',
+    'Urinary Tract Infections (UTI)',
+    'Benign Prostatic Hyperplasia (BPH)',
+    'Prostate Cancer',
+    'Bladder Cancer',
+    'Kidney Cancer (Renal Cell Carcinoma)',
+    'Erectile Dysfunction',
+    'Male Infertility',
+    'Urinary Incontinence',
+    'Overactive Bladder (OAB)',
+    'Testicular Cancer',
+    'Varicocele',
+    'Hydrocele',
+    'Urethral Stricture',
+    'Pelvic Organ Prolapse',
+    'Penile Disorders',
+    'Pediatric Urological Conditions',
+    'Hematuria (Blood in Urine)'
+  ],
+
+  // 13. Obstetrics & Gynaecology
+  'obstetrics-and-gynaecology': [
+    'Normal & High-Risk Pregnancy Care',
+    'Gestational Diabetes',
+    'Preeclampsia & Eclampsia',
+    'Miscarriage Management',
+    'Infertility Treatment',
+    'Polycystic Ovary Syndrome (PCOS)',
+    'Endometriosis',
+    'Uterine Fibroids',
+    'Ovarian Cysts',
+    'Menstrual Disorders',
+    'Menopause Management',
+    'Cervical Cancer',
+    'Ovarian Cancer',
+    'Uterine Cancer',
+    'Pelvic Inflammatory Disease',
+    'Ectopic Pregnancy',
+    'Cesarean Section',
+    'Gynecological Laparoscopic Surgery'
+  ],
+
+  // 14. Aesthetic & Reconstructive Surgery
+  'aesthetic-and-reconstructive-surgery': [
+    'Cleft Lip & Palate Repair',
+    'Burn Reconstruction',
+    'Scar Revision & Management',
+    'Facial Trauma Reconstruction',
+    'Breast Reconstruction',
+    'Hand Surgery & Reconstruction',
+    'Congenital Deformity Correction',
+    'Post-Accident Reconstructive Surgery',
+    'Rhinoplasty (Nose Reshaping)',
+    'Facial Aesthetic Procedures',
+    'Liposuction',
+    'Body Contouring',
+    'Hair Transplantation',
+    'Skin Grafting',
+    'Microvascular Surgery',
+    'Craniofacial Surgery'
+  ],
+
+  // 15. Dental
+  dental: [
+    'Tooth Decay & Cavities',
+    'Gum Disease (Gingivitis & Periodontitis)',
+    'Tooth Extraction',
+    'Root Canal Treatment',
+    'Dental Implants',
+    'Orthodontic Treatment (Braces)',
+    'Teeth Whitening',
+    'Dental Crowns & Bridges',
+    'Dentures (Removable)',
+    'Oral Cancer',
+    'Jaw Disorders (TMJ)',
+    'Impacted Wisdom Teeth',
+    'Dental Trauma',
+    'Pediatric Dental Care',
+    'Cosmetic Dentistry',
+    'Maxillofacial Surgery',
+    'Oral Infections & Abscesses',
+    'Teeth Alignment Issues'
+  ],
+
+  // 16. Dermatology
+  dermatology: [
+    'Acne & Acne Scars',
+    'Eczema (Atopic Dermatitis)',
+    'Psoriasis',
+    'Vitiligo',
+    'Hair Loss (Alopecia)',
+    'Dandruff & Scalp Disorders',
+    'Skin Infections (Bacterial, Fungal)',
+    'Pigmentation Disorders',
+    'Melasma',
+    'Skin Allergies',
+    'Warts & Moles',
+    'Skin Cancer',
+    'Rosacea',
+    'Urticaria (Hives)',
+    'Contact Dermatitis',
+    'Aging Skin & Wrinkles',
+    'Chemical Peels',
+    'Laser Skin Treatments'
+  ],
+
+  // 17. ENT (Ear, Nose, Throat)
+  ent: [
+    'Hearing Loss (Conductive & Sensorineural)',
+    'Ear Infections (Otitis Media)',
+    'Tinnitus (Ringing in Ears)',
+    'Chronic Sinusitis',
+    'Nasal Polyps',
+    'Deviated Nasal Septum',
+    'Allergic Rhinitis',
+    'Tonsillitis & Adenoiditis',
+    'Throat Infections',
+    'Voice Disorders & Hoarseness',
+    'Sleep Apnea & Snoring',
+    'Vertigo & Balance Disorders',
+    'Thyroid & Neck Swellings',
+    'Salivary Gland Disorders',
+    'Head & Neck Tumors',
+    'Facial Nerve Disorders',
+    'Foreign Bodies in Ear/Nose/Throat',
+    'Nosebleeds (Epistaxis)'
+  ],
+
+  // 18. Eye Care
+  'eye-care': [
+    'Cataract',
+    'Glaucoma',
+    'Diabetic Retinopathy',
+    'Age-Related Macular Degeneration',
+    'Refractive Errors (Myopia, Hyperopia)',
+    'LASIK & Refractive Surgery',
+    'Corneal Disorders',
+    'Retinal Detachment',
+    'Conjunctivitis (Pink Eye)',
+    'Dry Eye Syndrome',
+    'Eye Infections',
+    'Strabismus (Squint)',
+    'Amblyopia (Lazy Eye)',
+    'Pterygium',
+    'Eye Injuries & Trauma',
+    'Uveitis',
+    'Pediatric Eye Disorders',
+    'Low Vision Rehabilitation'
+  ],
+
+  // 19. Paediatrics & Neonatology
+  'pediatrics-and-neonatology': [
+    'Neonatal Jaundice',
+    'Premature Birth Complications',
+    'Birth Asphyxia',
+    'Neonatal Infections',
+    'Congenital Anomalies',
+    'Childhood Asthma',
+    'Pneumonia in Children',
+    'Diarrhea & Dehydration',
+    'Malnutrition',
+    'Growth & Development Disorders',
+    'Childhood Diabetes',
+    'Epilepsy in Children',
+    'ADHD & Behavioral Issues',
+    'Autism Spectrum Disorder',
+    'Childhood Obesity',
+    'Immunization & Vaccination',
+    'Pediatric Infections',
+    'Congenital Heart Disease'
+  ],
+
+  // 20. Physiotherapy & Rehabilitation
+  'physiotherapy-and-rehabilitation': [
+    'Post-Stroke Rehabilitation',
+    'Post-Surgical Rehabilitation',
+    'Sports Injury Rehabilitation',
+    'Joint Pain & Stiffness',
+    'Back Pain & Neck Pain',
+    'Spinal Cord Injury Rehabilitation',
+    'Fracture Rehabilitation',
+    'Arthritis Management',
+    'Neurological Rehabilitation',
+    'Cardiac Rehabilitation',
+    'Respiratory Physiotherapy',
+    'Pediatric Developmental Delays',
+    'Geriatric Rehabilitation',
+    'Balance & Gait Training',
+    'Post-Amputation Rehabilitation',
+    'Chronic Pain Management',
+    'Ergonomic Consultations',
+    'ICU Mobility Programs'
+  ],
+
+  // 21. Nutrition & Dietetics
+  'nutrition-and-dietetics': [
+    'Diabetes Diet Management',
+    'Weight Loss Programs',
+    'Obesity Management',
+    'Cardiovascular Disease Diet',
+    'Renal Diet Planning',
+    'Liver Disease Nutrition',
+    'Gastrointestinal Diet Management',
+    'Pregnancy & Lactation Nutrition',
+    'Pediatric Nutrition',
+    'Sports Nutrition',
+    'Eating Disorders',
+    'Food Allergies & Intolerances',
+    'Malnutrition',
+    'Post-Surgical Nutrition',
+    'Cancer Nutrition Support',
+    'Thyroid Disorder Diet',
+    'PCOS Diet Management',
+    'Geriatric Nutrition'
+  ],
+
+  // 22. Psychiatry & Mental Health
+  'psychiatry-and-mental-health': [
+    'Depression',
+    'Anxiety Disorders',
+    'Bipolar Disorder',
+    'Schizophrenia',
+    'Obsessive-Compulsive Disorder (OCD)',
+    'Post-Traumatic Stress Disorder (PTSD)',
+    'Panic Attacks',
+    'Phobias',
+    'Attention Deficit Hyperactivity Disorder (ADHD)',
+    'Eating Disorders (Anorexia, Bulimia)',
+    'Substance Abuse & Addiction',
+    'Sleep Disorders',
+    'Personality Disorders',
+    'Stress Management',
+    'Suicidal Tendencies',
+    'Dementia & Cognitive Disorders',
+    'Relationship Issues',
+    'Child & Adolescent Psychiatry'
+  ],
+
+  // 23. Neurology-ad
+  'neurology-ad': [
+    'Stroke (Acute Management)',
+    'Epilepsy & Seizures',
+    'Migraine & Headaches',
+    'Parkinson\'s Disease',
+    'Multiple Sclerosis',
+    'Alzheimer\'s Disease',
+    'Neuropathy (Peripheral Nerve Damage)',
+    'Myasthenia Gravis',
+    'Motor Neuron Disease',
+    'Bell\'s Palsy',
+    'Vertigo & Dizziness',
+    'Dementia',
+    'Memory Disorders',
+    'Tremors & Movement Disorders',
+    'Meningitis & Encephalitis',
+    'Brain Fog & Cognitive Issues',
+    'Nerve Conduction Studies',
+    'EEG Monitoring'
+  ],
+
+  // 24. Cardiology-ad
+  'cardiology-ad': [
+    'Coronary Artery Disease',
+    'Heart Attack Prevention',
+    'Cardiac Arrhythmias',
+    'Heart Failure Management',
+    'Hypertension Control',
+    'Lipid Disorders',
+    'Valvular Heart Disease',
+    'Cardiomyopathy',
+    'Atrial Fibrillation',
+    'Ventricular Tachycardia',
+    'Stress Testing & Evaluation',
+    'ECG & Echocardiography',
+    'Holter Monitoring',
+    'Treadmill Test (TMT)',
+    'Stress ECHO',
+    'Cardiac Risk Assessment',
+    'Preventive Cardiology',
+    'Post-Heart Attack Care'
+  ],
+
+  // 25. Radiology
+  radiology: [
+    'MRI Imaging (Brain, Spine, Joints)',
+    'CT Scan (Head, Chest, Abdomen)',
+    'Ultrasound (Abdominal, Pelvic, Obstetric)',
+    'X-Ray Imaging',
+    'Mammography (Breast Screening)',
+    'MRCP (Pancreatic & Biliary)',
+    'Bone Density Scan (BMD)',
+    'OPG (Dental Panoramic X-Ray)',
+    'Image Intensifier Studies',
+    'Contrast Studies',
+    'Doppler Studies',
+    'Interventional Radiology',
+    'Fluoroscopy',
+    'Nuclear Medicine Imaging',
+    'Cardiac Imaging',
+    'Vascular Imaging',
+    'Emergency Radiology',
+    'Pediatric Imaging'
+  ],
+
+  // 26. Laboratory Investigations
+  'laboratory-investigations': [
+    'Complete Blood Count (CBC)',
+    'Blood Sugar (Fasting & PP)',
+    'HbA1c (Diabetes Monitoring)',
+    'Liver Function Test (LFT)',
+    'Kidney Function Test (KFT)',
+    'Lipid Profile',
+    'Thyroid Function Test (TSH, T3, T4)',
+    'Urine Routine & Microscopy',
+    'Blood Culture & Sensitivity',
+    'Cardiac Markers (Troponin, CPK-MB)',
+    'Dengue NS1 & Antibodies',
+    'Malaria Test',
+    'COVID-19 RT-PCR',
+    'Vitamin D & B12',
+    'Tumor Markers (PSA, CEA, AFP)',
+    'Pregnancy Test (Beta hCG)',
+    'Semen Analysis',
+    'Histopathology & Biopsy',
+    'Fine Needle Aspiration Cytology (FNAC)',
+    'Hormonal Assays'
+  ]
+};
+
+
+
+  
 function SidebarSpecialistsSlider({ specialists }) {
   const [index, setIndex] = useState(0);
 
