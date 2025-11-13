@@ -1916,9 +1916,14 @@ ent: {
   rehabilitationDescription: `Rehabilitation at Raj Hospitals is a holistic process aimed at restoring optimal function and independence after injury, surgery, or illness. Our multidisciplinary approach integrates physiotherapy, occupational therapy, pain management, and functional training tailored to individual patient needs. Rehabilitation programs cover stroke recovery, orthopedic post-operative care, cardiac rehabilitation, neurological conditions, and sports injury management. We focus on improving mobility, strength, balance, coordination, and daily living skills to help patients return to their normal lives with confidence and improved quality of life.`,
 
   services: [
-    { title: 'Cardiology', description: 'Specialized physiotherapy protocols for cardiac rehabilitation addressing heart problems and chest-related issues.', image: 'assets/specialties/Physiotherapy & Rehabilitation/Cardiology.jpg' },
-    { title: 'Heart problems', description: 'Recovery and exercise plans for patients with heart conditions, post-cardiac event or surgery.', image: 'assets/specialties/Physiotherapy & Rehabilitation/Heart-problems.jpg' },
-    { title: 'Chest related issues', description: 'Chest physiotherapy for respiratory problems, post-operative care, and pulmonary rehabilitation.', image: 'assets/specialties/Physiotherapy & Rehabilitation/Chest-related-issues.jpg' }
+    { title: 'Osteopathy', description: 'Holistic manual therapy focusing on treating musculoskeletal conditions through manipulation and movement.', image: 'assets/specialties/Physiotherapy & Rehabilitation/Osteopathy.jpg' },
+    { title: 'Cupping Therapy', description: 'Traditional therapy using suction cups to improve blood flow and relieve muscle tension.', image: 'assets/specialties/Physiotherapy & Rehabilitation/Cupping-therapy.jpg' },
+    { title: 'Cardiology Rehabilitation', description: 'Specialized physiotherapy protocols for cardiac rehabilitation and recovery post-cardiac events.', image: 'assets/specialties/Physiotherapy & Rehabilitation/Cardiology-Rehabilitation.jpg' },
+    { title: 'Spinal Rehabilitation', description: 'Comprehensive treatment for spinal injuries, back pain, and postural corrections.', image: 'assets/specialties/Physiotherapy & Rehabilitation/Spinal-Rehabilitation.jpg' },
+    { title: 'Post Traumatic Physiotherapy', description: 'Recovery programs for patients following trauma, accidents, or major injuries.', image: 'assets/specialties/Physiotherapy & Rehabilitation/Post-Traumatic-Physiotherapy.jpg' },
+    { title: 'Sport Rehabilitation', description: 'Specialized rehabilitation for sports injuries helping athletes return to peak performance.', image: 'assets/specialties/Physiotherapy & Rehabilitation/Sport-Rehabilitation.jpg' },
+    { title: 'Dry Needling', description: 'Technique using fine needles to release muscle tension and treat trigger points.', image: 'assets/specialties/Physiotherapy & Rehabilitation/Dry-Needling.jpg' },
+    { title: 'IASTM', description: 'Instrument-Assisted Soft Tissue Mobilization for treating soft tissue dysfunction and promoting healing.', image: 'assets/specialties/Physiotherapy & Rehabilitation/IASTM.jpg' }
   ],
 
   facilities: [
@@ -1936,8 +1941,9 @@ ent: {
     {
       id: 'abhay-pandey',
       name: 'Dr. Abhay Kumar Pandey',
-      qualification: 'PT, BPT, MPT, PGDYT, COMT, MIAP',
+      qualification: 'BPT, MPT, PGDYT, FOMT, FDM, FNMT, MIAP',
       image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Physiotherapist - Dr. Abhay-Kumar-Pandey.png',
+      experience: '16+ Years',
       specialization: 'Orthopaedic, Neurological, and Cardiac Rehabilitation',
       profileLink: 'https://rajhospitals.com/dr-abhay-kr-pandey.php'
     }
@@ -2274,9 +2280,39 @@ ent: {
   longDescription: 'The Department of Neurology at Raj Hospitals, Ranchi, provides cutting-edge diagnosis and treatment for disorders of the brain, nerves, and muscles. Our team of highly qualified neurologists specializes in managing conditions such as stroke, epilepsy, migraine, neuropathy, Parkinson’s disease, and muscle disorders. Supported by advanced neuro-diagnostic tools like EEG (Electroencephalogram) and NCS (Nerve Conduction Study), we ensure accurate detection and effective management of neurological conditions. Focused on patient comfort, efficiency, and clinical precision, Raj Hospitals continues to be a leader in neurological care across Ranchi and Jharkhand.',
 
   services: [
+        {
+        title: 'Stroke & Neuro-Rehabilitation',
+        description: 'Comprehensive rehabilitation and therapy plans for patients recovering from stroke and neurological impairment.',
+        image: 'assets/specialties/Neurology-ad/Stroke.jpg'
+      },
+           {
+        title: 'Epilepsy Treatment & Monitoring',
+        description: 'Specialized programs for epilepsy management including regular EEG monitoring and medication review.',
+        image: 'assets/specialties/Neurology-ad/Epilepsy-Treatment.jpg'
+      },
+      {
+        title: 'Neuro Infectious Disorder',
+        description: "Expert management of neurological infections including Meningitis, Encephalitis, CNS Tuberculosis, and Pott's Spine.",
+        image: 'assets/specialties/Neurology-ad/Neuro-Infectious-Disorder.jpg'
+      },
+      {
+        title: 'Movement Disorder',
+        description: 'Comprehensive care for movement disorders including Tremor, Dystonia, Chorea, and Athetosis.',
+        image: 'assets/specialties/Neurology-ad/Movement-Disorder.jpg'
+      },
+      {
+        title: 'Parkinson Disease and Atypical Parkinsonism',
+        description: "Specialized treatment and management for Parkinson's Disease and Atypical Parkinsonism.",
+        image: 'assets/specialties/Neurology-ad/Parkinson-Disease.jpg'
+      },
+      {
+        title: 'Spine Disorders',
+        description: 'Treatment for spine-related neurological conditions including Cervical and Lumbosacral Spondylosis.',
+        image: 'assets/specialties/Neurology-ad/Spine-Disorders.jpg'
+      },
       {
         title: 'EEG (Electroencephalogram)',
-        description: 'A painless test to record brain’s electrical activity used for diagnosing epilepsy, seizures, and sleep disorders.',
+        description: 'A painless test to record brain\'s electrical activity used for diagnosing epilepsy, seizures, and sleep disorders.',
         image: 'assets/specialties/Neurology-ad/EEG.jpg'
       },
       {
@@ -2284,21 +2320,13 @@ ent: {
         description: 'Measures the speed and strength of electrical signals in the nerves to detect neuropathy and nerve injuries.',
         image: 'assets/specialties/Neurology-ad/NCS.jpg'
       },
-      {
-        title: 'Stroke & Neuro-Rehabilitation',
-        description: 'Comprehensive rehabilitation and therapy plans for patients recovering from stroke and neurological impairment.',
-        image: 'assets/specialties/Neurology-ad/Stroke.jpg'
-      },
+  
       {
         title: 'Migraine & Headache Management',
         description: 'Advanced diagnosis and personalized treatment plans for chronic headaches and migraines.',
         image: 'assets/specialties/Neurology-ad/Migraine & Headache.jpg'
       },
-      {
-        title: 'Epilepsy Treatment & Monitoring',
-        description: 'Specialized programs for epilepsy management including regular EEG monitoring and medication review.',
-        image: 'assets/specialties/Neurology-ad/Epilepsy-Treatment.jpg'
-      },
+ 
       {
         title: 'Neuropathy & Muscle Disorder Care',
         description: 'Targeted therapies and diagnostics for nerve pain, muscle weakness, and neuromuscular disorders.',
@@ -2319,6 +2347,14 @@ ent: {
   ],
 
   specialists: [
+        {
+          id: 'ahmad-hussain',
+          name: 'Dr. Ahmad Hussain',
+          qualification: 'MBBS, MD, DrNB',
+          experience: '12+ Years',
+          image: '/assets/specialties/Neurosciences/dr-ahmad-hussain.jpg',
+          specialization: 'Neurology'
+        }
     // {
     //   id: '801',
     //   name: 'Dr. Prakash Chandra',
@@ -3462,7 +3498,7 @@ function SidebarSpecialistsSlider({ specialists }) {
         className="flex flex-col gap-8 overflow-y-auto"
         style={{ maxHeight: "1000px", maxWidth: "340px", margin: "0 auto" }}
       >
-        {[...specialty.specialists].sort((a, b) => a.name.localeCompare(b.name)).map((doctor, index) => (
+        {specialty.specialists.map((doctor, index) => (
           <motion.div
             key={doctor.id}
             initial={{ opacity: 0, y: 30 }}
