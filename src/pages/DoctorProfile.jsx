@@ -685,15 +685,15 @@ export const doctorsData = [
 },
 
 {
-  id: 'Muzammil-pheroz',
-  name: 'Dr. Muzammil Feroz',
+  id: 'Mozammil-pheroz',
+  name: 'Dr. Mozammil Feroz',
   qualifications: 'MBBS, MS (Orthopaedics), DNB (Orthopaedics)',
   specialty: 'Orthopaedics & Joint Replacement',
   experience: '9+ Years',
   image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Muzammil-Feroz.png',
   specialtyIcon: medicalIcons.orthopaedics,
   description:
-    'Dr. Muzammil Pheroz is an experienced orthopaedist with over 9 years of practice. His expertise includes trauma surgery, geriatric trauma, joint replacement (hip and knee), arthroscopic surgery, spine surgery, paediatric orthopaedics, and deformity correction.',
+    'Dr. Mozammil Pheroz is an experienced orthopaedist with over 9 years of practice. His expertise includes trauma surgery, geriatric trauma, joint replacement (hip and knee), arthroscopic surgery, spine surgery, paediatric orthopaedics, and deformity correction.',
   expertise: [
     'Trauma Surgery',
     'Geriatric Trauma',
@@ -1194,64 +1194,64 @@ export const doctorsData = [
 },
 
 //ent
-{
-  id: 'abhishek-ramadhin',
-  name: 'Dr. Abhishek KR Ramadhin',
-  qualifications: 'MBBS, MD (ENT), MS (ENT), FARS',
-  specialty: 'ENT',
-  experience: '14+ Years',
-  image: '',
-  specialtyIcon: medicalIcons.ent,
-  description:
-    'Dr. Abhishek KR Ramadhin is a leading ENT specialist at Raj Hospital, Ranchi, with over 14 years of experience. He specializes in Rhinology, Advanced Skull Base Treatment, Allergy Rhinitis, and Sleep Apnea. Dr. Ramadhin is known for his accurate diagnosis, empathetic patient care, and expertise in complex ENT surgeries.',
-  expertise: [
-    'Rhinology',
-    'Advanced Skull Base Treatment',
-    'Allergy Rhinitis',
-    'Sleep Apnea'
-  ],
-  procedures: [
-    'Functional Endoscopic Sinus Surgery (FESS)',
-    'Reconstructive Middle Ear Surgery',
-    'Skull Base Surgery'
-  ],
-  education: [
-    {
-      degree: 'MBBS',
-      institution: 'G.S. Medical College',
-      year: ''
-    },
-    {
-      degree: 'MS (ENT)',
-      institution: 'Jawaharlal Nehru Medical College',
-      year: ''
-    },
-    {
-      degree: 'MD (ENT)',
-      institution: 'American Rhinologic Society, USA',
-      year: ''
-    },
-    {
-      degree: 'Fellowship of the American Rhinologic Society (FARS)',
-      institution: '',
-      year: ''
-    }
-  ],
-  memberships: [
-    'American Rhinologic Society',
-    'Fellowship of the American Rhinologic Society (FARS)'
-  ],
-  // awards: [
-  //   { title: 'Award in ENT Surgery', year: '' }
-  // ],
-  publications: [],
-  contact: {
-    email: '',
-    phone: '+919263630500',
-    clinic: 'Raj Hospital, Ranchi',
-    address: 'Behind Central, Opposite Roshpa Tower, Ratu Road, Ranchi'
-  }
-},
+// {
+//   id: 'abhishek-ramadhin',
+//   name: 'Dr. Abhishek KR Ramadhin',
+//   qualifications: 'MBBS, MD (ENT), MS (ENT), FARS',
+//   specialty: 'ENT',
+//   experience: '14+ Years',
+//   image: '',
+//   specialtyIcon: medicalIcons.ent,
+//   description:
+//     'Dr. Abhishek KR Ramadhin is a leading ENT specialist at Raj Hospital, Ranchi, with over 14 years of experience. He specializes in Rhinology, Advanced Skull Base Treatment, Allergy Rhinitis, and Sleep Apnea. Dr. Ramadhin is known for his accurate diagnosis, empathetic patient care, and expertise in complex ENT surgeries.',
+//   expertise: [
+//     'Rhinology',
+//     'Advanced Skull Base Treatment',
+//     'Allergy Rhinitis',
+//     'Sleep Apnea'
+//   ],
+//   procedures: [
+//     'Functional Endoscopic Sinus Surgery (FESS)',
+//     'Reconstructive Middle Ear Surgery',
+//     'Skull Base Surgery'
+//   ],
+//   education: [
+//     {
+//       degree: 'MBBS',
+//       institution: 'G.S. Medical College',
+//       year: ''
+//     },
+//     {
+//       degree: 'MS (ENT)',
+//       institution: 'Jawaharlal Nehru Medical College',
+//       year: ''
+//     },
+//     {
+//       degree: 'MD (ENT)',
+//       institution: 'American Rhinologic Society, USA',
+//       year: ''
+//     },
+//     {
+//       degree: 'Fellowship of the American Rhinologic Society (FARS)',
+//       institution: '',
+//       year: ''
+//     }
+//   ],
+//   memberships: [
+//     'American Rhinologic Society',
+//     'Fellowship of the American Rhinologic Society (FARS)'
+//   ],
+//   // awards: [
+//   //   { title: 'Award in ENT Surgery', year: '' }
+//   // ],
+//   publications: [],
+//   contact: {
+//     email: '',
+//     phone: '+919263630500',
+//     clinic: 'Raj Hospital, Ranchi',
+//     address: 'Behind Central, Opposite Roshpa Tower, Ratu Road, Ranchi'
+//   }
+// },
 
 //chatgpt content about ent doctor
 // {
@@ -1370,49 +1370,49 @@ export const doctorsData = [
 
 
 //pediatrics 
-{
-  id: 'sainik-dutta',
-  name: 'Dr. Sainik Dutta',
-  qualifications: 'MBBS, MD Pediatrics',
-  specialty: 'Pediatrics and Neonatology',
-  experience: '10+ Years',
-  image: '',
-  specialtyIcon: medicalIcons.pediatrics,
-  description:
-    'Dr. Sainik Dutta is a senior consultant in Pediatrics and Neonatology with expertise in respiratory distress requiring ventilatory support, neonatal jaundice, neonatal sepsis, convulsions, and common pediatric ailments such as pneumonia and allergic disorders.',
-  expertise: [
-    'Respiratory distress requiring ventilatory support and surfactant therapy',
-    'Neonatal jaundice requiring DVET',
-    'Neonatal sepsis',
-    'Neonatal convulsion',
-    'Pneumonia',
-    'Pediatric asthma and allergic disorders',
-    'Gastrointestinal diseases',
-    'Convulsions'
-  ],
-  procedures: [],
-  education: [
-    {
-      degree: 'MD Pediatrics',
-      institution: 'PGIMS, Rohtak',
-      year: ''
-    },
-    {
-      degree: 'MBBS',
-      institution: 'N.R.S Medical College, Kolkata',
-      year: ''
-    }
-  ],
-  memberships: [],
-  awards: [],
-  publications: [],
-  contact: {
-    email: '',
-    phone: '+919263630500',
-    clinic: '',
-    address: ''
-  }
-},
+// {
+//   id: 'sainik-dutta',
+//   name: 'Dr. Sainik Dutta',
+//   qualifications: 'MBBS, MD Pediatrics',
+//   specialty: 'Pediatrics and Neonatology',
+//   experience: '10+ Years',
+//   image: '',
+//   specialtyIcon: medicalIcons.pediatrics,
+//   description:
+//     'Dr. Sainik Dutta is a senior consultant in Pediatrics and Neonatology with expertise in respiratory distress requiring ventilatory support, neonatal jaundice, neonatal sepsis, convulsions, and common pediatric ailments such as pneumonia and allergic disorders.',
+//   expertise: [
+//     'Respiratory distress requiring ventilatory support and surfactant therapy',
+//     'Neonatal jaundice requiring DVET',
+//     'Neonatal sepsis',
+//     'Neonatal convulsion',
+//     'Pneumonia',
+//     'Pediatric asthma and allergic disorders',
+//     'Gastrointestinal diseases',
+//     'Convulsions'
+//   ],
+//   procedures: [],
+//   education: [
+//     {
+//       degree: 'MD Pediatrics',
+//       institution: 'PGIMS, Rohtak',
+//       year: ''
+//     },
+//     {
+//       degree: 'MBBS',
+//       institution: 'N.R.S Medical College, Kolkata',
+//       year: ''
+//     }
+//   ],
+//   memberships: [],
+//   awards: [],
+//   publications: [],
+//   contact: {
+//     email: '',
+//     phone: '+919263630500',
+//     clinic: '',
+//     address: ''
+//   }
+// },
 
 //physiotherapy & rehabilitation
 {

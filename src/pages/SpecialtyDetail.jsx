@@ -108,7 +108,16 @@ const SpecialtyDetail = () => {
         experience: '16+ Years',
         image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/-Dr. Awnindra-Kumar-Singh-Cardiologist.png',
         specialization: 'Interventional Cardiology'
-      }],
+      }
+      // {
+      //   id: 'anup jha',
+      //   name: 'Dr. Awnindra Kumar Singh',
+      //   qualification: 'MBBS, MD, DM',
+      //   experience: '16+ Years',
+      //   image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/-Dr. Awnindra-Kumar-Singh-Cardiologist.png',
+      //   specialization: 'Interventional Cardiology'
+      // }
+    ],
 
 
 
@@ -374,7 +383,7 @@ const SpecialtyDetail = () => {
   ],
   specialists: 
   [
-    { id: 'shyam-prasad', name: 'Dr. Shyam Prasad', qualification: 'MBBS, MD MEM', experience: '14+ Years', image: 'assets/Doc-Front/Emergency - Dr. Shyam Prasad.png', specialization: 'Emergency Medicine' }
+    { id: 'shyam-prasad', name: 'Dr. Shyam Prasad', qualification: 'MBBS, MD MEM', experience: '12+ Years', image: 'assets/Doc-Front/Emergency - Dr. Shyam Prasad.png', specialization: 'Emergency Medicine' }
   ],
   successStories: [
     { title: 'Cardiac Emergency Saved', patient: 'Mr. Rajesh, 59', story: 'Immediate intervention started en route in ambulance and continued in ICU.', outcome: 'Discharged in stable condition.' }
@@ -492,7 +501,7 @@ const SpecialtyDetail = () => {
         { title: 'Hypertensive & Diabetic Kidney Disease', description: 'Specialized management and treatment of kidney disorders caused by hypertension and diabetes.', image: 'assets/specialties/Nephrology/Hypertensive & Diabetic-Kidney-Disease.png' },
         { title: 'Hemodialysis', description: 'Regular and emergency dialysis treatments using state-of-the-art dialysis machines.', image: 'assets/specialties/Nephrology/Hemodialysis.png' },
         { title: 'Peritoneal Dialysis', description: 'Continuous ambulatory peritoneal dialysis (CAPD) for chronic kidney disease patients.', image: 'assets/specialties/Nephrology/Peritoneal-Dialysis.png' },
-        { title: 'Acute Kidney Injury & CKD', description: 'Expert care for acute kidney injury and chronic kidney disease, including assessment, management, and rehabilitation.', image: 'assets/specialties/Nephrology/Acute-Kidney Injury & CKD.png' },
+        { title: 'Acute Kidney Injury & CKD(Chronic Kidney Disease)', description: 'Expert care for acute kidney injury and chronic kidney disease, including assessment, management, and rehabilitation.', image: 'assets/specialties/Nephrology/Acute-Kidney Injury & CKD.png' },
         { title: 'CRRT (Continuous Renal Replacement Therapy)', description: 'Advanced therapy for critically ill patients requiring continuous renal support.', image: 'assets/specialties/Nephrology/CRRT.png' },
       //   { title: 'Kidney Biopsy', description: 'Diagnosis of kidney conditions through percutaneous biopsy procedures.', image: '/assets/specialties/Nephrology/kidney-biopsy.png' },
       //   { title: 'Kidney Stone Treatment', description: 'Management of kidney stones through medications, minimally invasive procedures, and surgery.', image: '/assets/specialties/Nephrology/kidney-stones.png' },
@@ -504,7 +513,7 @@ const SpecialtyDetail = () => {
       ],
       facilities: [
         'Dedicated nephrology ward and dialysis center',
-        'State-of-the-art dialysis machines for adult and pediatric patients',
+        'State-of-the-art dialysis machines for adult',
         'Continuous monitoring and expert nursing care',
         'Advanced diagnostic lab services',
         'Kidney transplant preparation and post-care support',
@@ -515,7 +524,7 @@ const SpecialtyDetail = () => {
           id: 'avinash-dubey',
           name: 'Dr. Avinash Kumar Dubey',
           qualification: 'MBBS, MD, DM',
-          experience: '12+ Years',
+          experience: '15+ Years',
           image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Nephrologist - Dr. Avinas- Kumar-Dubey.png',
           specialization: 'Nephrology & Dialysis'
         },
@@ -720,14 +729,14 @@ const SpecialtyDetail = () => {
           image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Oncologist - Dr. P-K-Raina.png',
           specialization: 'Oncology & Surgical Oncology'
         },
-        {
-          id: 'abhijit-kumar',
-          name: 'Dr. Abhijit Kumar',
-          qualification: 'MBBS, MS, PDCC',
-          experience: '16+ Years',
-          image: '/assets/specialties/Oncology/dr-abhijit-kumar.jpg',
-          specialization: 'Medical Oncology'
-        }
+        // {
+        //   id: 'abhijit-kumar',
+        //   name: 'Dr. Abhijit Kumar',
+        //   qualification: 'MBBS, MS, PDCC',
+        //   experience: '16+ Years',
+        //   image: '/assets/specialties/Oncology/dr-abhijit-kumar.jpg',
+        //   specialization: 'Medical Oncology'
+        // }
       ],
       
       successStories: [
@@ -785,6 +794,17 @@ const SpecialtyDetail = () => {
       longDescription: 'The Department of Orthopaedics & Joint Replacement at Raj Hospitals provides expert treatment for musculoskeletal conditions including joint pain, trauma, sports injuries, and deformities. Our specialised surgeons perform minimally invasive surgeries, joint replacements, arthroscopy, and complex trauma management using latest technology for optimal patient outcomes and speedy recovery. We also offer pediatric orthopaedics and comprehensive rehabilitation services.',
       
       services: [
+        { 
+            title: 'Spine Osteoporosis', 
+            description: 'Comprehensive diagnosis and treatment for spine osteoporosis to prevent fractures and maintain bone strength.', 
+            image: 'assets/specialties/Orthopaedics/Spine-Osteoporosis.jpg' 
+          },
+          { 
+            title: 'Arthritis', 
+            description: 'Expert care and advanced therapies for arthritis to reduce pain, improve joint function, and enhance quality of life.', 
+            image: 'assets/specialties/Orthopaedics/Arthritis.jpg' 
+          },
+
         { title: 'Joint Replacements – Knee, Hip, Shoulder, Elbow & Ankle', description: 'Advanced joint replacement surgeries for multiple joints ensuring mobility and pain relief.', image: 'assets/specialties/Orthopaedics/Joint-Replacements.jpg' },
         { title: 'Bone Deformity and CTEV Correction', description: 'Surgical correction of bone deformities including clubfoot (CTEV).', image: 'assets/specialties/Orthopaedics/Bone Deformity.jpg' },
         { title: 'Trauma Surgery and Geriatric Care', description: 'Emergency trauma management and specialized geriatric orthopaedic care.', image: 'assets/specialties/Orthopaedics/Trauma-Surgery.jpg' },
@@ -805,8 +825,8 @@ const SpecialtyDetail = () => {
       
       specialists: [
         {
-          id: 'Muzammil-pheroz',
-          name: 'Dr. Muzammil Feroz',
+          id: 'Mozammil-pheroz',
+          name: 'Dr Mozammil Pheroz',
           qualification: 'MBBS, MS (Orthopaedics), DNB',
           experience: '11+ Years',
           image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Muzammil-Feroz.png',
@@ -905,7 +925,7 @@ const SpecialtyDetail = () => {
           id: 'suprova-chakraborty',
           name: 'Dr. Suprova Chakraborty',
           qualification: 'DNB',
-          experience: '10+ Years',
+          experience: '12+ Years',
           image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Pulmonologist - Dr. Suprova-Chakraborty.png',
           specialization: 'Pulmonology & Respiratory Medicine'
         }
@@ -1149,7 +1169,7 @@ urology: {
       id: 'ved-prakash',
       name: 'Dr. Ved Prakash Verma',
       qualification: 'MBBS, MS (Gen Surgery), MCh (Urology)',
-      experience: '15+ Years',
+      experience: '18+ Years',
       image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Ved-Prakash-Verma.png',
       specialization: 'Urology'
     }
@@ -1622,14 +1642,14 @@ ent: {
   ],
 
   specialists: [
-    {
-      id: 'abhishek-ramadhin',
-      name: 'Dr. Abhishek Kr. Ramadhin',
-      qualification: 'MBBS, MD, MS, FARS',
-      experience: '15+ Years',
-      image: 'assets/specialties/ENT/ENT-dr.png',
-      specialization: 'Advanced ENT Surgeries & Voice Disorders'
-    },
+    // {
+    //   id: 'abhishek-ramadhin',
+    //   name: 'Dr. Abhishek Kr. Ramadhin',
+    //   qualification: 'MBBS, MD, MS, FARS',
+    //   experience: '15+ Years',
+    //   image: 'assets/specialties/ENT/ENT-dr.png',
+    //   specialization: 'Advanced ENT Surgeries & Voice Disorders'
+    // },
     {
       id: 'tg-n-sinha',
       name: 'Dr. T G N Sinha',
@@ -1825,14 +1845,14 @@ ent: {
   ],
 
   specialists: [
-    {
-      id: 'sainik-dutta',
-      name: 'Dr. Sainik Dutta',
-      qualification: 'MBBS, DCH',
-      image: 'assets/specialties/PAEDIATRICS/dr-sainik-dutta.jpg',
-      specialization: 'Pediatric Medicine & Neonatal Care',
-      profileLink: 'https://rajhospitals.com/dr-sainik-dutta.php'
-    },
+    // {
+    //   id: 'sainik-dutta',
+    //   name: 'Dr. Sainik Dutta',
+    //   qualification: 'MBBS, DCH',
+    //   image: 'assets/specialties/PAEDIATRICS/dr-sainik-dutta.jpg',
+    //   specialization: 'Pediatric Medicine & Neonatal Care',
+    //   profileLink: 'https://rajhospitals.com/dr-sainik-dutta.php'
+    // },
     // {
     //   id: '702-old',
     //   name: 'Dr. Ravi Shekhar Singh',
