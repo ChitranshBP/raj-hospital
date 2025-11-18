@@ -201,9 +201,9 @@ const sections = {
   ],
   technology: [
     {
-      name: "Advanced Kidney Care with Continuous Renal Replacement Therapy (CRRT) at Raj Hospitals, Ranchi",
+      name: "Advanced Kidney Care with Continuous Renal Replacement Therapy (CRRT)",
       desc: "Minimally invasive with quick recovery",
-      image: "assets/About-img/CRRT-pic.jpg",
+      image: "assets/home-img/crrt-raj-home.webp",
     },
     {
       name: "State-of-the-Art Gastroenterology Suite at Raj Hospitals, Ranchi",
@@ -213,7 +213,7 @@ const sections = {
     {
       name: "advanced Leica-Provido Operating Microscope at Raj Hospitals,",
       desc: "Complex brain and spine procedures",
-      image: "assets/About-img/neuro-pic.webp",
+      image: "public/assets/home-img/Complex-brain.webp",
     },
   ],
   doctorTalks: [
@@ -268,7 +268,7 @@ const sections = {
   blogs: [
     {
       title: "10 Tips for Heart Health",
-      img: "/assets/blog1.jpg",
+      img: "https://rajhospitals.com/blog/wp-content/uploads/2025/11/Copy-of-Raj-Hospitals-4.jpg",
       excerpt: "Simple habits for a healthier heart.",
       url: "#",
     },
@@ -326,16 +326,22 @@ const sections = {
   ],
   testimonials: [
     {
-      videoId: "ZxYwVuTsRQ",
-      patient: "Mrs. S. Kapoor",
+      videoId: "Gi1WhJ1dR6g",
+      patient: "Emergency Brain Care That Saved Prem Kumar Singh | Raj Hospitals",
       desc: "I felt cared for every step of the way.",
-      thumbnail: "https://img.youtube.com/vi/ZxYwVuTsRQ/maxresdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
     },
     {
-      videoId: "JkLmNoPqRs",
-      patient: "Mr. R. Gupta",
+      videoId: "Gi1WhJ1dR6g",
+      patient: "Emergency Brain Care That Saved Prem Kumar Singh | Raj Hospitals",
       desc: "The doctors and staff were exceptional.",
-      thumbnail: "https://img.youtube.com/vi/JkLmNoPqRs/maxresdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
+    },
+        {
+      videoId: "Gi1WhJ1dR6g",
+      patient: "Emergency Brain Care That Saved Prem Kumar Singh | Raj Hospitals",
+      desc: "The doctors and staff were exceptional.",
+      thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
     },
   ],
   patients: [
@@ -888,7 +894,7 @@ export default function HomePage() {
       </div>
 
       {/* Patient Stories Section */}
-      <Section
+      {/* <Section
         title="Patient Stories"
         description="Lives transformed. Healing journeys."
       >
@@ -915,7 +921,7 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-      </Section>
+      </Section> */}
 
       {/* Our Blogs Section */}
       <div className="bg-gray-50">
