@@ -961,7 +961,9 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
         showViewAll={true}
         viewAllLink="/technology"
       >
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Mobile: Horizontal Scroll, Desktop: Grid */}
+        <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
+          <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
           {sections.technology.map((tech, index) => (
             <motion.div
               key={tech.name}
@@ -969,7 +971,7 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 "
+              className="flex-shrink-0 w-[85%] md:w-auto snap-center group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100"
             >
               {/* Full-width Image */}
               <div className="relative w-full h-48 bg-gradient-to-br from-[#0191C7]/5 to-[#F9771B]/5 overflow-hidden">
@@ -992,11 +994,10 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
               </div>
             </motion.div>
           ))}
+          </div>
         </div>
       </Section>
       </div>
-
- 
 
       {/* Doctors Talk Section */}
       <div className="bg-gray-50">
@@ -1006,11 +1007,13 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
         showViewAll={true}
         viewAllLink="/doctors-talk"
       >
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Mobile: Horizontal Scroll, Desktop: Grid */}
+        <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
+          <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
           {sections.doctorTalks.map((video) => (
             <div
               key={video.videoId}
-              className="bg-white border border-[#F9771B]/25 rounded-xl shadow-md flex flex-col overflow-hidden"
+              className="flex-shrink-0 w-[85%] md:w-auto snap-center bg-white border border-[#F9771B]/25 rounded-xl shadow-md flex flex-col overflow-hidden"
             >
               <button
                 onClick={() => setModalVideoId(video.videoId)}
@@ -1039,9 +1042,10 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
                   Watch on YouTube
                 </a> */}
               </div>
-              
+
             </div>
           ))}
+          </div>
         </div>
       </Section>
       </div>
@@ -1054,11 +1058,13 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
         showViewAll={true}
         viewAllLink="/testimonials"
       >
-        <div className="grid md:grid-cols-4 gap-8">
+        {/* Mobile: Horizontal Scroll, Desktop: Grid */}
+        <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
+          <div className="flex md:grid md:grid-cols-4 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
           {sections.testimonials.map((test) => (
             <div
               key={test.videoId}
-              className="bg-white border border-[#F9771B]/25 rounded-xl shadow-md flex flex-col overflow-hidden"
+              className="flex-shrink-0 w-[85%] md:w-auto snap-center bg-white border border-[#F9771B]/25 rounded-xl shadow-md flex flex-col overflow-hidden"
             >
               <button
                 onClick={() => setModalVideoId(test.videoId)}
@@ -1090,6 +1096,7 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
               </div>
             </div>
           ))}
+          </div>
         </div>
       </Section>
       </div>
@@ -1132,12 +1139,14 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
         showViewAll={true}
         viewAllLink="/blogs"
       >
-        <div className="grid md:grid-cols-4 gap-8">
+        {/* Mobile: Horizontal Scroll, Desktop: Grid */}
+        <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
+          <div className="flex md:grid md:grid-cols-4 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
           {sections.blogs.map((blog) => (
             <a
               key={blog.title}
               href={blog.url}
-              className="bg-white border border-[#F9771B]/20 rounded-xl overflow-hidden flex flex-col shadow hover:shadow-lg transition group"
+              className="flex-shrink-0 w-[85%] md:w-auto snap-center bg-white border border-[#F9771B]/20 rounded-xl overflow-hidden flex flex-col shadow hover:shadow-lg transition group"
             >
               <img
                 src={blog.img}
@@ -1153,6 +1162,7 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
               </div>
             </a>
           ))}
+          </div>
         </div>
       </Section>
       </div>
