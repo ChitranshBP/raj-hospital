@@ -84,9 +84,9 @@ const Footer = () => {
 
                 <div className="flex items-center justify-center lg:justify-start space-x-3 ">
                   <img
-                    src="/assets/Header/main-logo_ranchi.png"
+                    src="/assets/Header/main-logo_ranchi-below.png"
                     alt="Raj Hospitals Logo"
-                    className="h-48 w-auto filter brightness-0 invert object-contain" />
+                    className="h-28 w-auto filter brightness-0 invert object-contain" />
 
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Quality Health Care </h3>
@@ -158,9 +158,9 @@ const Footer = () => {
                 {/* Logo */}
                 <div className="mb-6">
                   <img
-                    src="/assets/Header/main-logo_ranchi.png"
+                    src="/assets/Header/main-logo_ranchi-below.png"
                     alt="Raj Hospitals Logo"
-                    className="h-48 w-auto filter brightness-0 invert object-contain"
+                    className="h-28 w-auto filter brightness-0 invert object-contain"
                   />
                 </div>
                 <p className="text-gray-300 leading-relaxed mb-4">
