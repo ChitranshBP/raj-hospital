@@ -932,13 +932,13 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
             </motion.div>
 
             {/* Right Side - Image */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="relative"
-            >
+            > */}
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="assets/home-img/about-hospital.jpg"
@@ -948,7 +948,7 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
               </div>
               {/* Decorative Element */}
               {/* <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-[#0191C7]/10 rounded-full -z-10"></div> */}
-            </motion.div>
+            {/* </motion.div> */}
           </div>
         </div>
       </section>
