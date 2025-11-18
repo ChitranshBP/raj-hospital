@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import SafeIcon from "../common/SafeIcon"; // Adjust import as per your structure
 import * as FiIcons from "react-icons/fi";
 import HeroSection from "../components/HeroSection";
@@ -26,7 +27,7 @@ const specialties = [
     stats: { procedures: "2000+", experience: "15+ Years" },
   },
   {
-    id: "neurology",
+    id: "neurosciences",
     title: "Neurology",
     shortTitle: "Neurology",
     icon: FiIcons.FiAperture,
@@ -43,7 +44,7 @@ const specialties = [
     stats: { procedures: "2000+", experience: "15+ Years" },
   },
   {
-    id: "gynecology",
+    id: "obstetrics-and-gynaecology",
     title: "Obstetrics & Gynecology",
     shortTitle: "Gynecology",
     icon: FiIcons.FiUser,
@@ -58,7 +59,7 @@ const specialties = [
     stats: { procedures: "2000+", experience: "15+ Years" },
   },
   {
-    id: "orthopaedics",
+    id: "orthopaedics-and-joint-replacement",
     title: "Orthopaedics & Joint Replacement",
     shortTitle: "Orthopaedics",
     icon: FiIcons.FiAperture,
@@ -73,7 +74,7 @@ const specialties = [
     stats: { procedures: "2500+", experience: "20+ Years" },
   },
   {
-    id: "surgery",
+    id: "minimal-access-surgery",
     title: "Minimal Access Surgery",
     shortTitle: "Surgery",
     icon: FiIcons.FiScissors,
@@ -118,7 +119,7 @@ const specialties = [
     stats: { procedures: "2000+", experience: "15+ Years" },
   },
   {
-    id: "oncology",
+    id: "oncology-cancer-care",
     title: "Oncology (Cancer Care)",
     shortTitle: "Oncology",
     icon: FiIcons.FiAperture,
@@ -162,7 +163,7 @@ const specialties = [
     stats: { procedures: "10000+", experience: "24/7 Available" },
   },
   {
-    id: "pediatrics",
+    id: "pediatrics-and-neonatology",
     title: "Pediatrics & Neonatology",
     shortTitle: "Pediatrics",
     icon: FiIcons.FiSmile,
@@ -679,12 +680,18 @@ const TabbedSpecialtiesSection = () => {
             </ul>
 
             <div className="mt-auto pt-6 space-x-4 flex flex-wrap gap-3">
-              <button className="bg-[#F9771B] hover:bg-[#F9771B]/90 text-white px-6 py-2 rounded-lg font-semibold shadow transition">
+              <Link
+                to="/contact"
+                className="bg-[#F9771B] hover:bg-[#F9771B]/90 text-white px-6 py-2 rounded-lg font-semibold shadow transition inline-block"
+              >
                 Book Consultation
-              </button>
-              <button className="bg-[#0191C7] hover:bg-[#0191C7]/90 text-white px-6 py-2 rounded-lg font-semibold shadow transition">
+              </Link>
+              <Link
+                to={`/specialties/${specialties[activeTab].id}`}
+                className="bg-[#0191C7] hover:bg-[#0191C7]/90 text-white px-6 py-2 rounded-lg font-semibold shadow transition inline-block"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -705,6 +712,147 @@ const TabbedSpecialtiesSection = () => {
 
 // Quick Navigation CTA Bar Component
 function QuickNavigationBar() {
+  const [searchQuery, setSearchQuery] = useState("");
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [filteredSuggestions, setFilteredSuggestions] = useState([]);
+
+  // Search data for all doctors and specialties (matching Header.jsx and SpecialtyDetail.jsx)
+  const searchData = {
+    specialties: [
+      // Centres of Excellence
+      { name: "Cardiology", type: "specialty", link: "#/specialties/cardiology", keywords: ["cardiology-ad", "heart", "cardiac", "angiography", "angioplasty", "pacemaker", "heart attack"] },
+      { name: "Critical Care", type: "specialty", link: "#/specialties/critical-care-", keywords: ["critical-care-ad", "icu", "intensive care", "critical"] },
+      { name: "Emergency", type: "specialty", link: "#/specialties/emergency", keywords: ["emergency-ad", "trauma", "ambulance", "24x7", "accident", "acute care"] },
+      { name: "Gastroenterology", type: "specialty", link: "#/specialties/gastroenterology", keywords: ["gastroenterology-ad", "stomach", "gastro", "endoscopy", "liver", "digestive", "colonoscopy"] },
+      { name: "Minimal Access Surgery", type: "specialty", link: "#/specialties/minimal-access-surgery", keywords: ["surgery-ad", "minimal-access-ad", "laparoscopic", "laser", "hernia", "operation"] },
+      { name: "Nephrology", type: "specialty", link: "#/specialties/nephrology", keywords: ["nephrology-ad", "kidney", "dialysis", "renal", "hemodialysis"] },
+      { name: "Neurosciences", type: "specialty", link: "#/specialties/neurosciences", keywords: ["neurosciences-ad", "neurology-ad", "brain", "neuro", "stroke", "spine", "head injury", "neurosurgery"] },
+      { name: "Oncology (Cancer Care)", type: "specialty", link: "#/specialties/oncology-cancer-care", keywords: ["oncology-ad", "cancer", "chemotherapy", "tumor", "radiation"] },
+      { name: "Orthopaedics & Joint Replacement", type: "specialty", link: "#/specialties/orthopaedics-and-joint-replacement", keywords: ["orthopedics-ad", "orthopaedics-ad", "bone", "ortho", "joint", "knee", "hip", "arthroscopy"] },
+      { name: "Pulmonology", type: "specialty", link: "#/specialties/pulmonology", keywords: ["pulmonology-ad", "lung", "respiratory", "asthma", "copd", "breathing"] },
+      { name: "Internal Medicine", type: "specialty", link: "#/specialties/internal-medicine", keywords: ["internal-medicine-ad", "general medicine", "physician", "internal"] },
+      { name: "Urology", type: "specialty", link: "#/specialties/urology", keywords: ["urology-ad", "prostate", "kidney stone", "urinary", "bladder", "infertility"] },
+      { name: "Obstetrics & Gynaecology", type: "specialty", link: "#/specialties/obstetrics-and-gynaecology", keywords: ["gynecology-ad", "gynaecology-ad", "women", "pregnancy", "obstetrics", "maternity"] },
+
+      // Allied Specialties
+      { name: "Aesthetic & Reconstructive Surgery", type: "specialty", link: "#/specialties/aesthetic-and-reconstructive-surgery", keywords: ["plastic-surgery-ad", "aesthetic-ad", "cosmetic", "reconstructive", "plastic"] },
+      { name: "Dental", type: "specialty", link: "#/specialties/dental", keywords: ["dental-ad", "teeth", "dentist", "root canal", "implants", "orthodontics"] },
+      { name: "Dermatology", type: "specialty", link: "#/specialties/dermatology", keywords: ["dermatology-ad", "skin", "derma", "cosmetic", "laser therapy", "skin cancer"] },
+      { name: "ENT", type: "specialty", link: "#/specialties/ent", keywords: ["ent-ad", "ear", "nose", "throat", "sinus", "hearing"] },
+      { name: "Eye Care", type: "specialty", link: "#/specialties/eye-care", keywords: ["eye-care-ad", "ophthalmology-ad", "eye", "vision", "cataract", "lasik", "glaucoma"] },
+      { name: "Nutrition & Dietetics", type: "specialty", link: "#/specialties/nutrition-and-dietetics", keywords: ["nutrition-ad", "diet", "dietetics", "nutritionist", "dietician"] },
+      { name: "Pediatrics & Neonatology", type: "specialty", link: "#/specialties/pediatrics-and-neonatology", keywords: ["pediatrics-ad", "child", "kids", "newborn", "neonatology", "baby", "immunization"] },
+      { name: "Physiotherapy & Rehabilitation", type: "specialty", link: "#/specialties/physiotherapy-and-rehabilitation", keywords: ["physiotherapy-ad", "rehab", "physical therapy", "exercise", "rehabilitation"] },
+      { name: "Psychiatry & Mental Health", type: "specialty", link: "#/specialties/psychiatry-and-mental-health", keywords: ["psychiatry-ad", "mental health", "counseling", "depression", "anxiety", "therapy"] },
+
+      // Advanced Diagnostics
+      { name: "Radiology", type: "specialty", link: "#/specialties/radiology", keywords: ["radiology-ad", "xray", "ct scan", "mri", "ultrasound", "imaging"] },
+      { name: "Cardiology (Advanced Diagnostics)", type: "specialty", link: "#/specialties/cardiology-ad", keywords: ["cardiology-ad", "cardiac diagnostics", "ecg", "echo", "tmt"] },
+      { name: "Neurology (Advanced Diagnostics)", type: "specialty", link: "#/specialties/neurology-ad", keywords: ["neurology-ad", "neuro diagnostics", "eeg", "nerve conduction"] },
+      { name: "Laboratory Investigations", type: "specialty", link: "#/specialties/laboratory-investigations", keywords: ["lab-ad", "laboratory-ad", "blood test", "biopsy", "fnac", "pathology"] },
+    ],
+    doctors: [
+      // Cardiology
+      { name: "Dr. Rajesh Kumar Jha", specialty: "Cardiology", type: "doctor", link: "#/doctors/rajesh-jha" },
+
+      // Critical Care
+      { name: "Dr. Fuzail Sarwer", specialty: "Critical Care", type: "doctor", link: "#/doctors/fuzail-sarwer" },
+      { name: "Dr. Mohib Ahmed", specialty: "Critical Care", type: "doctor", link: "#/doctors/mohib-ahmed" },
+
+      // Emergency
+      { name: "Dr. Shyam Prasad", specialty: "Emergency", type: "doctor", link: "#/doctors/shyam-prasad" },
+
+      // Gastroenterology
+      { name: "Dr. Ravish Ranjan", specialty: "Gastroenterology", type: "doctor", link: "#/doctors/ravish-ranjan" },
+
+      // Surgery
+      { name: "Dr. Ashish Kumar Modi", specialty: "Bariatric Surgery, General & Laparoscopic Surgery", type: "doctor", link: "#/doctors/ashish-modi" },
+
+      // Internal Medicine
+      { name: "Dr. A K Agarwal", specialty: "Internal Medicine", type: "doctor", link: "#/doctors/ak-agarwal" },
+      { name: "Dr. A K Sinha", specialty: "Internal Medicine", type: "doctor", link: "#/doctors/ak-sinha" },
+      { name: "Dr. Neelam Kumari", specialty: "Internal Medicine", type: "doctor", link: "#/doctors/neelam-kumari" },
+
+      // Nephrology
+      { name: "Dr. Avinash Kumar Dubey", specialty: "Nephrology", type: "doctor", link: "#/doctors/avinash-dubey" },
+
+      // Neurosciences
+      { name: "Dr. Vivek Raj", specialty: "Neurosurgery", type: "doctor", link: "#/doctors/vivek-raj" },
+      { name: "Dr. Ahmad Hussain", specialty: "Neurosciences", type: "doctor", link: "#/doctors/ahmad-hussain" },
+
+      // Oncology
+      { name: "Dr. P K Raina", specialty: "Oncology", type: "doctor", link: "#/doctors/pk-raina" },
+
+      // ENT
+      { name: "Dr. Abhijit Kumar", specialty: "Otolaryngology & Head and Neck Surgery", type: "doctor", link: "#/doctors/abhijit-kumar" },
+      { name: "Dr. Ranajan Kumar Jha", specialty: "ENT", type: "doctor", link: "#/doctors/ranajan-jha" },
+
+      // Orthopaedics
+      { name: "Dr. Mozammil Feroz", specialty: "Orthopaedics & Joint Replacement", type: "doctor", link: "#/doctors/Mozammil-pheroz" },
+      { name: "Dr. Abhishek Roy", specialty: "Orthopaedics (Sports Injury & Joint Replacement)", type: "doctor", link: "#/doctors/abhishek-roy" },
+
+      // Pulmonology
+      { name: "Dr. Suprova Chakraborty", specialty: "Pulmonology", type: "doctor", link: "#/doctors/suprova-chakraborty" },
+
+      // Urology
+      { name: "Dr. Sunil Kumar", specialty: "Urology", type: "doctor", link: "#/doctors/sunil-kumar" },
+      { name: "Dr. Ved Prakash Verma", specialty: "Urology", type: "doctor", link: "#/doctors/ved-prakash" },
+
+      // Obstetrics & Gynaecology
+      { name: "Dr. Anupama Mahli", specialty: "Obstetrics & Gynaecology", type: "doctor", link: "#/doctors/anupama-mahli" },
+      { name: "Dr. Pushpa Sinha", specialty: "Obstetrics & Gynaecology", type: "doctor", link: "#/doctors/pushpa-sinha" },
+
+      // Dentistry
+      { name: "Dr. Suraj Mani Bhattacharjee", specialty: "Dentistry", type: "doctor", link: "#/doctors/suraj-mani-bhattacharjee" },
+      { name: "Dr. Abhishek Bhattacharjee", specialty: "Oral & Maxillofacial Surgery", type: "doctor", link: "#/doctors/abhishek-bhattacharjee" },
+      { name: "Dr. Vikash Sharma", specialty: "Oral And Maxillofacial Surgery", type: "doctor", link: "#/doctors/vikash-sharma" },
+
+      // Dermatology
+      { name: "Dr. Piyali Banerjee", specialty: "Dermatology and Cosmetology", type: "doctor", link: "#/doctors/piyali-banerjee" },
+      { name: "Dr. Shaista Huma", specialty: "Dermatology, Dermatosurgery & Aesthetics", type: "doctor", link: "#/doctors/shaista-huma" },
+
+      // Physiotherapy
+      { name: "Dr. Abhay Kumar Pandey", specialty: "Physiotherapy", type: "doctor", link: "#/doctors/abhay-pandey" },
+    ],
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      // Redirect to search page or doctors page with query
+      window.location.href = `/doctors?search=${encodeURIComponent(searchQuery)}`;
+    }
+  };
+
+  const handleInputChange = (e) => {
+    const query = e.target.value;
+    setSearchQuery(query);
+
+    if (query.trim().length > 0) {
+      // Filter suggestions with keyword support
+      const specialtyMatches = searchData.specialties.filter(item =>
+        item.name.toLowerCase().includes(query.toLowerCase()) ||
+        item.keywords.some(keyword => keyword.toLowerCase().includes(query.toLowerCase()))
+      );
+      const doctorMatches = searchData.doctors.filter(item =>
+        item.name.toLowerCase().includes(query.toLowerCase()) ||
+        item.specialty.toLowerCase().includes(query.toLowerCase())
+      );
+
+      setFilteredSuggestions([...specialtyMatches, ...doctorMatches].slice(0, 8));
+      setShowSuggestions(true);
+    } else {
+      setShowSuggestions(false);
+      setFilteredSuggestions([]);
+    }
+  };
+
+  const handleSuggestionClick = (link) => {
+    setShowSuggestions(false);
+    setSearchQuery("");
+    window.location.href = link;
+  };
+
   const actionButtons = [
     {
       title: "Book Appointment",
@@ -761,14 +909,58 @@ function QuickNavigationBar() {
         {/* Search Bar */}
         <div className="mb-6">
           <div className="relative max-w-2xl mx-auto">
-            <input
-              type="text"
-              placeholder="Search for Doctors and Specialties"
-              className="w-full px-6 py-3.5 pr-12 rounded-full border-2 border-gray-200 focus:border-[#F9771B] focus:outline-none text-gray-700 placeholder-gray-500 shadow-sm"
-            />
-            <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#F9771B] hover:bg-[#F9771B]/90 text-white p-2.5 rounded-full transition-colors">
-              <SafeIcon icon={FiIcons.FiSearch} className="w-5 h-5" />
-            </button>
+            <form onSubmit={handleSearch} className="relative">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={handleInputChange}
+                onFocus={() => searchQuery.trim() && setShowSuggestions(true)}
+                onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
+                placeholder="Search for Doctors and Specialties"
+                className="w-full px-6 py-3.5 pr-12 rounded-full border-2 border-gray-200 focus:border-[#F9771B] focus:outline-none text-gray-700 placeholder-gray-500 shadow-sm"
+              />
+              <button
+                type="submit"
+                className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#F9771B] hover:bg-[#F9771B]/90 text-white p-2.5 rounded-full transition-colors"
+              >
+                <SafeIcon icon={FiIcons.FiSearch} className="w-5 h-5" />
+              </button>
+            </form>
+
+            {/* Search Suggestions Dropdown */}
+            {showSuggestions && filteredSuggestions.length > 0 && (
+              <div className="absolute top-full mt-2 w-full bg-white rounded-xl shadow-2xl border border-gray-200 overflow-hidden z-50">
+                {filteredSuggestions.map((suggestion, index) => (
+                  <button
+                    key={index}
+                    onClick={() => handleSuggestionClick(suggestion.link)}
+                    className="w-full px-6 py-3 hover:bg-gray-50 flex items-center justify-between transition-colors text-left border-b border-gray-100 last:border-b-0"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className={`p-2 rounded-full ${suggestion.type === 'specialty' ? 'bg-[#0191C7]/10' : 'bg-[#F9771B]/10'}`}>
+                        <SafeIcon
+                          icon={suggestion.type === 'specialty' ? FiIcons.FiActivity : FiIcons.FiUser}
+                          className={`w-4 h-4 ${suggestion.type === 'specialty' ? 'text-[#0191C7]' : 'text-[#F9771B]'}`}
+                        />
+                      </div>
+                      <div>
+                        <p className="font-medium text-gray-900">{suggestion.name}</p>
+                        {suggestion.specialty && (
+                          <p className="text-sm text-gray-500">{suggestion.specialty}</p>
+                        )}
+                      </div>
+                    </div>
+                    <span className={`text-xs px-2 py-1 rounded-full ${
+                      suggestion.type === 'specialty'
+                        ? 'bg-[#0191C7]/10 text-[#0191C7]'
+                        : 'bg-[#F9771B]/10 text-[#F9771B]'
+                    }`}>
+                      {suggestion.type === 'specialty' ? 'Specialty' : 'Doctor'}
+                    </span>
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 
@@ -941,7 +1133,7 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
             > */}
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="assets/home-img/about-hospital.jpg"
+                  src="assets\home-img\Raj-hospital-image.webp"
                   alt="About Raj Hospitals"
                   className="w-full h-full object-cover"
                 />

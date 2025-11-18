@@ -82,11 +82,11 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="text-center lg:text-left">
 
-                <div className="flex items-center justify-center lg:justify-start space-x-3 mb-4">
+                <div className="flex items-center justify-center lg:justify-start space-x-3 ">
                   <img
                     src="/assets/Header/main-logo_ranchi.png"
                     alt="Raj Hospitals Logo"
-                    className="h-24 w-auto filter brightness-0 invert object-contain" />
+                    className="h-48 w-auto filter brightness-0 invert object-contain" />
 
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Quality Health Care </h3>
@@ -155,7 +155,14 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="lg:col-span-1">
 
-                <h4 className="text-xl font-bold mb-6 text-primary-400">About Raj Hospitals</h4>
+                {/* Logo */}
+                <div className="mb-6">
+                  <img
+                    src="/assets/Header/main-logo_ranchi.png"
+                    alt="Raj Hospitals Logo"
+                    className="h-48 w-auto filter brightness-0 invert object-contain"
+                  />
+                </div>
                 <p className="text-gray-300 leading-relaxed mb-4">
                   A leading super specialty hospital in Ranchi, providing world-class healthcare with cutting-edge technology and compassionate care for over 30 years.
                 </p>
