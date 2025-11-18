@@ -4,7 +4,7 @@ import SafeIcon from "../common/SafeIcon"; // Adjust import as per your structur
 import * as FiIcons from "react-icons/fi";
 import HeroSection from "../components/HeroSection";
 
-const { FiChevronLeft, FiChevronRight } = FiIcons;
+const { FiChevronLeft, FiChevronRight, FiX } = FiIcons;
 
 const specialties = [
   {
@@ -213,7 +213,7 @@ const sections = {
     {
       name: "advanced Leica-Provido Operating Microscope at Raj Hospitals,",
       desc: "Complex brain and spine procedures",
-      image: "public/assets/home-img/Complex-brain.webp",
+      image: "assets/home-img/Complex-brain.webp",
     },
   ],
   doctorTalks: [
@@ -235,52 +235,58 @@ const sections = {
   ],
   whyChoose: [
     {
-      image: "assets/why-choose/expert-doctors.png",
-      title: "Expert Doctors",
-      desc: "Get treated by nationally renowned specialists and super-specialists with decades of experience.",
+      image: "assets/home-img/Why-Choose-Raj Hospitals/30+ Years-of-Excellence.png",
+      title: "30+ Years of Excellence",
+      desc: "Three decades of trusted healthcare service in Ranchi",
     },
     {
-      image: "assets/why-choose/advanced-technology.png",
-      title: "Advanced Technology",
-      desc: "From robotics to next-gen diagnostics, our technology ensures precision and safety in every procedure.",
+      image: "assets/home-img/Why-Choose-Raj Hospitals/State-of-the-art-Technology.png",
+      title: "State-of-the-art Technology",
+      desc: "Latest medical equipment and advanced treatment facilities",
     },
     {
-      image: "assets/why-choose/personalized-care.png",
-      title: "Personalized Compassion",
-      desc: "Every patient receives tailored care with a holistic, family-centered approach at every step.",
+      image: "assets/home-img/Why-Choose-Raj Hospitals/Experienced-Medical-Team.png",
+      title: "Experienced Medical Team",
+      desc: "Highly qualified doctors and skilled healthcare professionals",
     },
     {
-      image: "assets/why-choose/award-winning.png",
-      title: "Award-Winning Standards",
-      desc: "Accredited by top organizations for clinical quality, patient safety, and innovation.",
+      image: "assets/home-img/Why-Choose-Raj Hospitals/24-7-Emergency-Services.png",
+      title: "24/7 Emergency Services",
+      desc: "Round-the-clock emergency care and critical support",
     },
     {
-      image: "assets/why-choose/accessible-network.png",
-      title: "Accessible Network",
-      desc: "Multiple locations in your city, all connected digitally for seamless patient journeys.",
+      image: "assets/home-img/Why-Choose-Raj Hospitals/SICU-Facilities.png",
+      title: "ICU/NICU/SICU Facilities",
+      desc: "Specialized intensive care units for critical patient care",
     },
     {
-      image: "assets/why-choose/minimal-wait.png",
-      title: "Minimal Wait Times",
-      desc: "Efficient process, online bookings, and extended hours for your convenience.",
+      image: "assets/home-img/Picture1.jpg",
+      title: "Rooftop Helipad",
+      desc: "Air ambulance facility for critical emergency cases",
     },
   ],
   blogs: [
     {
       title: "10 Tips for Heart Health",
-      img: "https://rajhospitals.com/blog/wp-content/uploads/2025/11/Copy-of-Raj-Hospitals-4.jpg",
+      img: "assets/home-img/blogs/Blogs-1.webp",
       excerpt: "Simple habits for a healthier heart.",
       url: "#",
     },
     {
       title: "Back Pain: Myths & Facts",
-      img: "/assets/blog2.jpg",
+      img: "assets/home-img/blogs/Blogs-2.webp",
       excerpt: "How to prevent and manage back pain effectively.",
       url: "#",
     },
     {
       title: "Understanding Robotic Surgery",
-      img: "/assets/blog3.jpg",
+      img: "assets/home-img/blogs/Blogs-3.webp",
+      excerpt: "What is it, and who is it for?",
+      url: "#",
+    },
+        {
+      title: "Understanding Robotic Surgery",
+      img: "assets/home-img/blogs/Blogs-3.webp",
       excerpt: "What is it, and who is it for?",
       url: "#",
     },
@@ -343,6 +349,12 @@ const sections = {
       desc: "The doctors and staff were exceptional.",
       thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
     },
+            {
+      videoId: "Gi1WhJ1dR6g",
+      patient: "Emergency Brain Care That Saved Prem Kumar Singh | Raj Hospitals",
+      desc: "The doctors and staff were exceptional.",
+      thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
+    },
   ],
   patients: [
     {
@@ -380,10 +392,21 @@ const sections = {
   ],
 };
 
-function Section({ title, description, children }) {
+function Section({ title, description, children, showViewAll, viewAllLink }) {
   return (
     <section className="py-12 px-4 max-w-7xl mx-auto">
-      <h2 className="text-2xl font-bold text-[#F9771B] mb-2">{title}</h2>
+      <div className="flex justify-between items-center mb-2">
+        <h2 className="text-2xl font-bold text-[#F9771B]">{title}</h2>
+        {showViewAll && (
+          <a
+            href={viewAllLink || "#"}
+            className="text-[#0191C7] hover:text-[#F9771B] font-semibold text-sm flex items-center gap-2 transition-colors"
+          >
+            View All
+            <SafeIcon icon={FiIcons.FiArrowRight} className="w-4 h-4" />
+          </a>
+        )}
+      </div>
       {description && <p className="text-gray-700 mb-8">{description}</p>}
       {children}
     </section>
@@ -470,10 +493,17 @@ function NewsMediaCompact() {
   return (
     <section className="py-12 max-w-7xl mx-auto px-4">
       {/* Section Header */}
-      <div className="text-start mb-8">
-        <h2 className="text-2xl font-bold text-[#F9771B] mb-2">News & Media</h2>
-        <p className="text-gray-700">Stay updated with our latest announcements and achievements.</p>
+      <div className="flex justify-between items-center mb-2">
+        <h2 className="text-2xl font-bold text-[#F9771B]">News & Media</h2>
+        <a
+          href="/news"
+          className="text-[#0191C7] hover:text-[#F9771B] font-semibold text-sm flex items-center gap-2 transition-colors"
+        >
+          View All
+          <SafeIcon icon={FiIcons.FiArrowRight} className="w-4 h-4" />
+        </a>
       </div>
+      <p className="text-gray-700 mb-8">Stay updated with our latest announcements and achievements.</p>
 
       {/* News Content */}
       <div className="flex flex-col md:flex-row items-start gap-8">
@@ -759,7 +789,54 @@ function QuickNavigationBar() {
   );
 }
 
+// YouTube Video Modal Component
+function YouTubeModal({ videoId, isOpen, onClose }) {
+  if (!isOpen) return null;
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm px-4"
+        onClick={onClose}
+      >
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          exit={{ scale: 0.9, opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          className="relative w-full max-w-4xl bg-gray-900 rounded-xl overflow-hidden shadow-2xl"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* Close Button */}
+          <button
+            onClick={onClose}
+            className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 group"
+          >
+            <SafeIcon icon={FiX} className="w-6 h-6 text-white group-hover:rotate-90 transition-transform duration-300" />
+          </button>
+
+          {/* YouTube Video */}
+          <div className="relative pb-[56.25%]">
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
+
 export default function HomePage() {
+  const [modalVideoId, setModalVideoId] = useState(null);
   return (
     <main className="bg-white">
           <HeroSection />
@@ -772,11 +849,117 @@ export default function HomePage() {
       {/* Why Choose Raj Hospitals */}
       <WhyChooseRaj />
 
+           {/* About Raj Hospitals Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Side - Content & Statistics */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-3xl font-bold text-[#F9771B] mb-4">About Raj Hospitals</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+For over three decades, Raj Hospitals has been the cornerstone of healthcare excellence in Ranchi, Jharkhand. What started as a vision to provide world-class medical care has evolved into one of the region's most trusted super specialty hospitals.
+
+Our commitment to patient care, combined with state-of-the-art technology and a team of highly qualified medical professionals, has made us the preferred choice for thousands of families across Jharkhand and neighboring states.              </p>
+
+              {/* Compact Statistics Grid - 2x2 */}
+              <div className="grid grid-cols-2 gap-3 mt-5">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  className="text-center bg-gradient-to-br from-[#F9771B]/10 to-[#F9771B]/5 rounded-lg p-3 border border-[#F9771B]/20"
+                >
+                  <h3 className="text-2xl font-bold text-[#0191C7]">30+</h3>
+                  <p className="text-gray-600 text-xs font-medium">Years Excellence</p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="text-center bg-gradient-to-br from-[#0191C7]/10 to-[#0191C7]/5 rounded-lg p-3 border border-[#0191C7]/20"
+                >
+                  <h3 className="text-2xl font-bold text-[#F9771B]">200+</h3>
+                  <p className="text-gray-600 text-xs font-medium">Expert Doctors</p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  className="text-center bg-gradient-to-br from-[#0191C7]/10 to-[#0191C7]/5 rounded-lg p-3 border border-[#0191C7]/20"
+                >
+                  <h3 className="text-2xl font-bold text-[#F9771B]">1L+</h3>
+                  <p className="text-gray-600 text-xs font-medium">Patients Treated</p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  className="text-center bg-gradient-to-br from-[#F9771B]/10 to-[#F9771B]/5 rounded-lg p-3 border border-[#F9771B]/20"
+                >
+                  <h3 className="text-2xl font-bold text-[#0191C7]">24/7</h3>
+                  <p className="text-gray-600 text-xs font-medium">Emergency Care</p>
+                </motion.div>
+              </div>
+
+              {/* CTA Button */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="mt-6"
+              >
+                <a
+                  href="/about"
+                  className="inline-flex items-center gap-2 text-[#0191C7] hover:text-[#F9771B] font-semibold text-sm flex items-center gap-2 transition-colors"
+                >
+                  Learn More About Us
+                  <SafeIcon icon={FiIcons.FiArrowRight} className="w-5 h-5" />
+                </a>
+              </motion.div>
+            </motion.div>
+
+            {/* Right Side - Image */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative"
+            >
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="assets/home-img/about-hospital.jpg"
+                  alt="About Raj Hospitals"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Decorative Element */}
+              <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-[#0191C7]/10 rounded-full -z-10"></div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Technology Section */}
-      <div className="bg-gray-50">
+      <div className="bg-white">
       <Section
         title="Our Technology"
         description="Investing in globally advanced medical technology for care you can trust."
+        showViewAll={true}
+        viewAllLink="/technology"
       >
         <div className="grid md:grid-cols-3 gap-8">
           {sections.technology.map((tech, index) => (
@@ -813,10 +996,15 @@ export default function HomePage() {
       </Section>
       </div>
 
+ 
+
       {/* Doctors Talk Section */}
+      <div className="bg-gray-50">
       <Section
         title="Doctors Talk"
         description="Our experts share health tips and awareness."
+        showViewAll={true}
+        viewAllLink="/doctors-talk"
       >
         <div className="grid md:grid-cols-3 gap-8">
           {sections.doctorTalks.map((video) => (
@@ -824,17 +1012,22 @@ export default function HomePage() {
               key={video.videoId}
               className="bg-white border border-[#F9771B]/25 rounded-xl shadow-md flex flex-col overflow-hidden"
             >
-              <a
-                href={`https://www.youtube.com/watch?v=${video.videoId}`}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => setModalVideoId(video.videoId)}
+                className="relative group w-full text-left cursor-pointer"
               >
                 <img
                   src={video.thumbnail}
                   alt={video.title}
                   className="w-full h-48 object-cover"
                 />
-              </a>
+                {/* Play Button Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all">
+                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <SafeIcon icon={FiIcons.FiPlay} className="w-8 h-8 text-[#F9771B] ml-1" />
+                  </div>
+                </div>
+              </button>
               <div className="p-4 flex-1 flex flex-col">
                 <div className="font-semibold text-[#0191C7]">{video.title}</div>
                 {/* <a
@@ -851,41 +1044,49 @@ export default function HomePage() {
           ))}
         </div>
       </Section>
+      </div>
 
       {/* Video Testimonials Section */}
-      <div className="bg-gray-50">
+      <div className="bg-white">
       <Section
         title="Video Testimonials"
         description="Hear from our patients their experiences and healing journeys."
+        showViewAll={true}
+        viewAllLink="/testimonials"
       >
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           {sections.testimonials.map((test) => (
             <div
               key={test.videoId}
               className="bg-white border border-[#F9771B]/25 rounded-xl shadow-md flex flex-col overflow-hidden"
             >
-              <a
-                href={`https://www.youtube.com/watch?v=${test.videoId}`}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => setModalVideoId(test.videoId)}
+                className="relative group w-full text-left cursor-pointer"
               >
                 <img
                   src={test.thumbnail}
                   alt={`Testimonial by ${test.patient}`}
                   className="w-full h-48 object-cover"
                 />
-              </a>
+                {/* Play Button Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all">
+                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <SafeIcon icon={FiIcons.FiPlay} className="w-8 h-8 text-[#F9771B] ml-1" />
+                  </div>
+                </div>
+              </button>
               <div className="p-4 flex-1 flex flex-col">
                 <div className="font-semibold text-[#0191C7] mb-1">{test.patient}</div>
                 <div className="text-gray-600 flex-1">{test.desc}</div>
-                <a
+                {/* <a
                   href={`https://www.youtube.com/watch?v=${test.videoId}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-3 text-sm text-white bg-[#F9771B] hover:bg-[#0191C7] px-4 py-2 rounded inline-block text-center"
                 >
                   Watch Testimonial
-                </a>
+                </a> */}
               </div>
             </div>
           ))}
@@ -928,8 +1129,10 @@ export default function HomePage() {
       <Section
         title="Our Blogs"
         description="Insights, health tips, and hospital updates."
+        showViewAll={true}
+        viewAllLink="/blogs"
       >
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           {sections.blogs.map((blog) => (
             <a
               key={blog.title}
@@ -955,7 +1158,16 @@ export default function HomePage() {
       </div>
 
       {/* News & Media Section */}
+      <div className="bg-white">
       <NewsMediaCompact />
+      </div>
+
+      {/* YouTube Video Modal */}
+      <YouTubeModal
+        videoId={modalVideoId}
+        isOpen={!!modalVideoId}
+        onClose={() => setModalVideoId(null)}
+      />
     </main>
   );
 }

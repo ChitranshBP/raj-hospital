@@ -316,71 +316,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Certifications & Awards */}
-        <div className="bg-gray-800 py-12 border-t border-gray-700">
-          <div className="max-w-7xl mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="text-center mb-8">
-              <h4 className="text-2xl font-bold text-primary-400 mb-4 flex items-center justify-center space-x-2">
-                <SafeIcon icon={FiAward} className="w-6 h-6" />
-                <span>Certifications & Accreditations</span>
-              </h4>
-              <p className="text-gray-300">Recognized for excellence in healthcare quality and patient safety</p>
-            </motion.div>
+   
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {certifications.map((cert, index) =>
-                <motion.div
-                  key={cert.name}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="text-center bg-gray-700/50 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 border border-gray-600/30 hover:border-primary-500/50">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-white rounded-xl p-2 flex items-center justify-center shadow-lg">
-                    <img
-                      src={cert.image}
-                      alt={cert.name}
-                      className="w-full h-full object-contain" />
-                  </div>
-                  <h5 className="text-lg font-bold text-primary-400 mb-2">{cert.name}</h5>
-                  <p className="text-gray-300 text-sm">{cert.description}</p>
-                </motion.div>
-              )}
-            </div>
-          </div>
-        </div>
-
-        {/* Newsletter Section */}
-        <div className="bg-gradient-to-r from-primary-600 to-secondary-600 py-12 border-t border-gray-700">
-          <div className="max-w-7xl mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="text-center">
-              <h4 className="text-2xl font-bold text-white mb-3">Stay Connected with Raj Hospitals</h4>
-              <p className="text-primary-100 mb-6 max-w-2xl mx-auto">
-                Subscribe to our newsletter for health tips, medical updates, and special offers
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  className="flex-1 px-6 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50 text-gray-900"
-                />
-                <button className="bg-white text-primary-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold whitespace-nowrap">
-                  Subscribe Now
-                </button>
-              </div>
-            </motion.div>
-          </div>
-        </div>
 
         {/* Bottom Footer */}
         <div className="bg-gray-900 border-t border-gray-700 py-8">
