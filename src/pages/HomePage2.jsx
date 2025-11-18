@@ -947,7 +947,7 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
                 />
               </div>
               {/* Decorative Element */}
-              <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-[#0191C7]/10 rounded-full -z-10"></div>
+              {/* <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-[#0191C7]/10 rounded-full -z-10"></div> */}
             </motion.div>
           </div>
         </div>
