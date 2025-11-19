@@ -11,6 +11,7 @@ import SpecialtyDetail from './pages/SpecialtyDetail';
 import Testimonials from './pages/Testimonials';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
+import NewsMedia from './pages/NewsMedia';
 import BiomedicalWasteReports from './pages/BiomedicalWasteReports';
 import Footer from './components/Footer';
 import { Toaster } from 'sonner';
@@ -34,6 +35,7 @@ function App() {
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/news-media" element={<NewsMedia />} />
             <Route path="/biomedical-waste-reports" element={<BiomedicalWasteReports />} />
           </Routes>
         </main>

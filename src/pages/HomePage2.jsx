@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import SafeIcon from "../common/SafeIcon"; // Adjust import as per your structure
@@ -491,76 +491,160 @@ function WhyChooseRaj() {
 }
 
 function NewsMediaCompact() {
+  const [newsTab, setNewsTab] = useState('digital'); // 'digital' or 'print'
+
   return (
     <section className="py-12 max-w-7xl mx-auto px-4">
       {/* Section Header */}
       <div className="flex justify-between items-center mb-2">
         <h2 className="text-2xl font-bold text-[#F9771B]">News & Media</h2>
-        <a
-          href="/news"
+        <Link
+          to="/news-media"
           className="text-[#0191C7] hover:text-[#F9771B] font-semibold text-sm flex items-center gap-2 transition-colors"
         >
           View All
           <SafeIcon icon={FiIcons.FiArrowRight} className="w-4 h-4" />
-        </a>
+        </Link>
       </div>
-      <p className="text-gray-700 mb-8">Stay updated with our latest announcements and achievements.</p>
+      <p className="text-gray-700 mb-4">Stay updated with our latest announcements and achievements.</p>
 
-      {/* News Content */}
-      <div className="flex flex-col md:flex-row items-start gap-8">
-        {/* News Image */}
-        <div className="hidden md:block md:w-1/3">
-          <div className="w-full h-[450px] rounded-xl overflow-hidden ">
-            <img
-              src="assets\home-img\Why-Choose-Raj Hospitals\breaking-news-raj.png"
-              alt="News & Media"
-              className="w-full h-full object-cover"
-            />
+      {/* Tabs */}
+      <div className="flex gap-4 mb-6">
+        <button
+          onClick={() => setNewsTab('digital')}
+          className={`px-4 py-2 rounded-lg font-semibold transition-all ${
+            newsTab === 'digital'
+              ? 'bg-[#F9771B] text-white shadow'
+              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+          }`}
+        >
+          Digital
+        </button>
+        <button
+          onClick={() => setNewsTab('print')}
+          className={`px-4 py-2 rounded-lg font-semibold transition-all ${
+            newsTab === 'print'
+              ? 'bg-[#F9771B] text-white shadow'
+              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+          }`}
+        >
+          Print
+        </button>
+      </div>
+
+      {/* Digital Tab Content */}
+      {newsTab === 'digital' && (
+        <div className="flex flex-col md:flex-row items-start gap-8">
+          {/* News Image */}
+          <div className="hidden md:block md:w-1/3">
+            <div className="w-full h-[450px] rounded-xl overflow-hidden ">
+              <img
+                src="assets\home-img\Why-Choose-Raj Hospitals\breaking-news-raj.png"
+                alt="News & Media"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Left news cards */}
+          <div className="md:w-1/3 space-y-4">
+            {sections.news.slice(0, 3).map((news, idx) => (
+              <a
+                key={`${news.title}-${idx}`}
+                href={news.url}
+                className="block bg-white border border-[#F9771B]/30 rounded-lg p-4 shadow-sm hover:shadow-md transition max-w-xl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3 className="text-[#0191C7] font-semibold text-lg mb-1">
+                  {news.title}
+                </h3>
+                <time className="text-xs text-gray-500">{news.date}</time>
+                <p className="text-gray-700 mt-1 line-clamp-3">{news.excerpt}</p>
+              </a>
+            ))}
+          </div>
+
+          {/* Right news cards */}
+          <div className="md:w-1/3 space-y-4">
+            {sections.news.slice(3, 6).map((news, idx) => (
+              <a
+                key={`${news.title}-${idx + 3}`}
+                href={news.url}
+                className="block bg-white border border-[#F9771B]/30 rounded-lg p-4 shadow-sm hover:shadow-md transition max-w-xl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3 className="text-[#0191C7] font-semibold text-lg mb-1">
+                  {news.title}
+                </h3>
+                <time className="text-xs text-gray-500">{news.date}</time>
+                <p className="text-gray-700 mt-1 line-clamp-3">{news.excerpt}</p>
+              </a>
+            ))}
           </div>
         </div>
+      )}
 
+      {/* Print Tab Content */}
+      {newsTab === 'print' && (
+        <div className="flex flex-col md:flex-row items-start gap-8">
+          {/* Vector Image */}
+          <div className="hidden md:block md:w-1/3">
+            <div className="w-full h-[450px] rounded-xl overflow-hidden ">
+              <img
+                src="assets\home-img\Why-Choose-Raj Hospitals\breaking-news-raj.png"
+                alt="News & Media"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
 
+          {/* Left newspaper clippings */}
+          <div className="md:w-1/3 space-y-4">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
+              <div className="h-64 overflow-hidden">
+                <img
+                  src="assets/dummy/dummy-news-1.jpg"
+                  alt="Newspaper Clipping"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
+              <div className="h-64 overflow-hidden">
+                <img
+                  src="assets/dummy/dummy-news-2.jpg"
+                  alt="Newspaper Clipping"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+          </div>
 
-      {/* Left news cards */}
-      <div className="md:w-1/3 space-y-4">
-        {sections.news.slice(0, 3).map((news, idx) => (
-          <a
-            key={`${news.title}-${idx}`}
-            href={news.url}
-            className="block bg-white border border-[#F9771B]/30 rounded-lg p-4 shadow-sm hover:shadow-md transition max-w-xl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h3 className="text-[#0191C7] font-semibold text-lg mb-1">
-              {news.title}
-            </h3>
-            <time className="text-xs text-gray-500">{news.date}</time>
-            <p className="text-gray-700 mt-1 line-clamp-3">{news.excerpt}</p>
-          </a>
-        ))}
-      </div>
-
-    
-
-      {/* Right news cards */}
-      <div className="md:w-1/3 space-y-4">
-        {sections.news.slice(3, 6).map((news, idx) => (
-          <a
-            key={`${news.title}-${idx + 3}`}
-            href={news.url}
-            className="block bg-white border border-[#F9771B]/30 rounded-lg p-4 shadow-sm hover:shadow-md transition max-w-xl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h3 className="text-[#0191C7] font-semibold text-lg mb-1">
-              {news.title}
-            </h3>
-            <time className="text-xs text-gray-500">{news.date}</time>
-            <p className="text-gray-700 mt-1 line-clamp-3">{news.excerpt}</p>
-          </a>
-        ))}
-      </div>
-      </div>
+          {/* Right newspaper clippings */}
+          <div className="md:w-1/3 space-y-4">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
+              <div className="h-64 overflow-hidden">
+                <img
+                  src="assets/dummy/dummy-news-3.jpg"
+                  alt="Newspaper Clipping"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
+              <div className="h-64 overflow-hidden">
+                <img
+                  src="assets/dummy/dummy-news-4.jpg"
+                  alt="Newspaper Clipping"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
@@ -1029,6 +1113,32 @@ function YouTubeModal({ videoId, isOpen, onClose }) {
 
 export default function HomePage() {
   const [modalVideoId, setModalVideoId] = useState(null);
+  const [blogs, setBlogs] = useState([]);
+  const [loadingBlogs, setLoadingBlogs] = useState(true);
+
+  // Fetch blogs from Raj Hospitals WordPress API
+  useEffect(() => {
+    fetch("https://rajhospitals.com/blog/wp-json/wp/v2/posts?_embed&per_page=4")
+      .then(res => res.json())
+      .then(posts => {
+        const formattedBlogs = posts.map(post => ({
+          title: post.title.rendered,
+          img: post._embedded?.['wp:featuredmedia']?.[0]?.source_url || 'assets/home-img/blogs/default-blog.jpg',
+          excerpt: post.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 100) + '...',
+          url: post.link,
+          date: new Date(post.date).toLocaleDateString()
+        }));
+        setBlogs(formattedBlogs);
+        setLoadingBlogs(false);
+      })
+      .catch(error => {
+        console.error('Error fetching blogs:', error);
+        // Fallback to static blogs if API fails
+        setBlogs(sections.blogs);
+        setLoadingBlogs(false);
+      });
+  }, []);
+
   return (
     <main className="bg-white">
           <HeroSection />
@@ -1333,28 +1443,39 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
       >
         {/* Mobile: Horizontal Scroll, Desktop: Grid */}
         <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
-          <div className="flex md:grid md:grid-cols-4 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
-          {sections.blogs.map((blog) => (
-            <a
-              key={blog.title}
-              href={blog.url}
-              className="flex-shrink-0 w-[85%] md:w-auto snap-center bg-white border border-[#F9771B]/20 rounded-xl overflow-hidden flex flex-col shadow hover:shadow-lg transition group"
-            >
-              <img
-                src={blog.img}
-                alt={blog.title}
-                className="w-full h-36 object-cover group-hover:opacity-90 transition"
-              />
-              <div className="p-4 flex-1 flex flex-col">
-                <div className="font-bold text-[#0191C7] mb-1">{blog.title}</div>
-                <div className="text-gray-600 mb-2 flex-1">{blog.excerpt}</div>
-                <span className="text-[#F9771B] text-sm mt-auto hover:underline">
-                  Read More
-                </span>
-              </div>
-            </a>
-          ))}
-          </div>
+          {loadingBlogs ? (
+            <div className="flex justify-center items-center py-12">
+              <div className="text-gray-500">Loading blogs...</div>
+            </div>
+          ) : (
+            <div className="flex md:grid md:grid-cols-4 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
+              {blogs.map((blog, index) => (
+                <a
+                  key={blog.title + index}
+                  href={blog.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-shrink-0 w-[85%] md:w-auto snap-center bg-white border border-[#F9771B]/20 rounded-xl overflow-hidden flex flex-col shadow hover:shadow-lg transition group"
+                >
+                  <img
+                    src={blog.img}
+                    alt={blog.title}
+                    className="w-full h-36 object-cover group-hover:opacity-90 transition"
+                  />
+                  <div className="p-4 flex-1 flex flex-col">
+                    <div className="font-bold text-[#0191C7] mb-1">{blog.title}</div>
+                    {blog.date && (
+                      <p className="text-xs text-gray-500 mb-2">{blog.date}</p>
+                    )}
+                    <div className="text-gray-600 text-sm mb-2 flex-1">{blog.excerpt}</div>
+                    <span className="text-[#F9771B] text-sm mt-auto hover:underline">
+                      Read More
+                    </span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       </Section>
       </div>
