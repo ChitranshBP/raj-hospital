@@ -295,40 +295,40 @@ const sections = {
   news: [
 
     {
-      title: "Raj Hospital launches new Cardiac Care Unit",
-      date: "Oct 7, 2025",
+      title: "राज अस्पताल के आपातकालीन विभाग को एनएबीएच की मान्यता मिली",
+      date: "Feburary 24, 2025",
       excerpt: "State-of-the-art facility dedicated to cardiac patients.",
-      url: "#",
+      url: "/#/news-media",
     },
     {
-      title: "Dr. Mehta recognized for research on cancer treatment",
-      date: "Sep 20, 2025",
+      title: "रांची: राज अस्पताल में नेशनल कार्डियक लाइफ सपोर्ट प्रशिक्षण शिविर का आयोजन",
+      date: "August 29, 2024",
       excerpt: "Awarded at the National Medical Congress.",
-      url: "#",
+      url: "https://lagatar.in/cardiac-life-support-training-camp-organized",
     },
     {
-      title: "Raj Hospital hosts free health camp in city park",
-      date: "Aug 15, 2025",
+      title: "रांचीः बाई-पास सर्जरी के लिए अब नहीं जाना होगा बाहर, राज अस्पताल में मिल रही सुविधाोजन किया",
+      date: "1 January, 2024",
       excerpt: "Thousands benefited from free screenings and consultations.",
-      url: "#",
+      url: "/#/news-media",
     },
     {
-      title: "New Pediatric Wing inaugurated",
-      date: "Jul 30, 2025",
+      title: "राज अस्पताल में पहली बार IVUS (इंट्रावास्कुलर अल्ट्रासाउंड) तकनीक से एंजियोप्लास्टी की गई।",
+      date: "22 july, 2023",
       excerpt: "Specialized care for children with advanced neonatal ICU.",
-      url: "#",
+      url: "/#/news-media",
     },
     {
-      title: "Raj Hospitals partners with local NGO for health awareness",
-      date: "Jul 5, 2025",
+      title: "राज अस्पताल, रांची में मनाया गया 77वां स्वतंत्रता दिवस, ध्वजारोहण कर दी तिरंगे को सलामी: आयोजन किया",
+      date: "23 august, 2023",
       excerpt: "Community outreach programs expanding across the city.",
-      url: "#",
+      url: "/#/news-media",
     },
     {
-      title: "Award for Excellence in Patient Care",
-      date: "Jun 20, 2025",
+      title: "रांची: 28 जुलाई को मनाया जायेगा विश्व हेपेटाइटिस दिवस",
+      date: "28 july, 2023",
       excerpt: "Received recognition for outstanding patient satisfaction scores.",
-      url: "#",
+      url: "/#/news-media",
     },
   ],
   testimonials: [
@@ -339,10 +339,10 @@ const sections = {
       thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
     },
     {
-      videoId: "Gi1WhJ1dR6g",
-      patient: "Emergency Brain Care That Saved Prem Kumar Singh | Raj Hospitals",
+      videoId: "HARE579wkdY",
+      patient: "Knee replacement surgery | Raj Hospitals",
       desc: "The doctors and staff were exceptional.",
-      thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/HARE579wkdY/maxresdefault.jpg",
     },
         {
       videoId: "Gi1WhJ1dR6g",
@@ -351,10 +351,10 @@ const sections = {
       thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
     },
             {
-      videoId: "Gi1WhJ1dR6g",
-      patient: "Emergency Brain Care That Saved Prem Kumar Singh | Raj Hospitals",
+      videoId: "HARE579wkdY",
+      patient: "Knee replacement surgery | Raj Hospitals",
       desc: "The doctors and staff were exceptional.",
-      thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/HARE579wkdY/maxresdefault.jpg",
     },
   ],
   patients: [
@@ -560,7 +560,7 @@ function NewsMediaCompact() {
                   {news.title}
                 </h3>
                 <time className="text-xs text-gray-500">{news.date}</time>
-                <p className="text-gray-700 mt-1 line-clamp-3">{news.excerpt}</p>
+                {/* <p className="text-gray-700 mt-1 line-clamp-3">{news.excerpt}</p> */}
               </a>
             ))}
           </div>
@@ -579,7 +579,7 @@ function NewsMediaCompact() {
                   {news.title}
                 </h3>
                 <time className="text-xs text-gray-500">{news.date}</time>
-                <p className="text-gray-700 mt-1 line-clamp-3">{news.excerpt}</p>
+                {/* <p className="text-gray-700 mt-1 line-clamp-3">{news.excerpt}</p> */}
               </a>
             ))}
           </div>
@@ -1386,7 +1386,7 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
               </button>
               <div className="p-4 flex-1 flex flex-col">
                 <div className="font-semibold text-[#0191C7] mb-1">{test.patient}</div>
-                <div className="text-gray-600 flex-1">{test.desc}</div>
+                {/* <div className="text-gray-600 flex-1">{test.desc}</div> */}
                 {/* <a
                   href={`https://www.youtube.com/watch?v=${test.videoId}`}
                   target="_blank"

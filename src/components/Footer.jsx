@@ -71,77 +71,7 @@ const Footer = () => {
       {/* Main Footer Content */}
       <div className="relative z-10">
         {/* Top Section - Hospital Info & Quick Actions */}
-        <div className="bg-secondary-500 py-8">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-              {/* Hospital Branding */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="text-center lg:text-left">
-
-                <div className="flex items-center justify-center lg:justify-start space-x-3 ">
-                  <img
-                    src="/assets/Header/main-logo_ranchi-below.png"
-                    alt="Raj Hospitals Logo"
-                    className="h-28 w-auto filter brightness-0 invert object-contain" />
-
-                </div>
-                <h3 className="text-2xl font-bold mb-2">Quality Health Care </h3>
-                <p className="text-primary-100">For all stages of life</p>
-              </motion.div>
-
-              {/* Emergency Contact */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-center">
-
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                  <h4 className="text-xl font-bold mb-3 flex items-center justify-center space-x-2">
-                    <SafeIcon icon={FiPhone} className="w-6 h-6" />
-                    <span>24/7 Emergency</span>
-                  </h4>
-                  <a
-                    href="tel:+919771488888"
-                    className="text-3xl font-bold hover:text-primary-200 transition-colors block mb-2">
-
-                    +91 977 14 88888
-                  </a>
-                  <p className="text-primary-100 text-sm">Always available for you</p>
-                </div>
-              </motion.div>
-
-              {/* Quick Action Buttons */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="text-center lg:text-right space-y-3">
-
-                <Link
-                  to="/contact"
-                  className="w-full lg:w-auto bg-white text-primary-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold flex items-center justify-center space-x-2">
-
-                  <SafeIcon icon={FiCalendar} className="w-5 h-5" />
-                  <span>Book Appointment</span>
-                </Link>
-                <Link
-                  to="/specialties"
-                  className="w-full lg:w-auto bg-primary-500 text-white px-8 py-3 rounded-lg hover:bg-primary-600 transition-colors font-semibold flex items-center justify-center space-x-2">
-
-                  <SafeIcon icon={FiHeart} className="w-5 h-5" />
-                  <span>Health Checkup</span>
-                </Link>
-              </motion.div>
-            </div>
-          </div>
-        </div>
+   
 
         {/* Main Footer Content */}
         <div className="py-16">

@@ -9,7 +9,7 @@ const NewsMedia = () => {
   const digitalNews = [
     {
       id: 1,
-      title: 'Digital News Title 1',
+      title: 'राज अस्पताल के आपातकालीन विभाग को एनएबीएच की मान्यता मिली',
       description: 'Brief description of the digital news article or social media post.',
       image: 'assets/digital-news/digital-1.jpg',
       link: 'https://example.com/digital-post-1', // Add your custom link here
