@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 
-const { FiCalendar, FiAward, FiUser, FiMapPin, FiPhone, FiCheck } = FiIcons;
+const { FiCalendar, FiAward, FiUser, FiMapPin, FiPhone, FiCheck, FiX } = FiIcons;
 
 // Shared specialty icons (easy to extend)
 const medicalIcons = {
@@ -2093,49 +2093,162 @@ const DoctorProfile = () => {
 
         {/* Appointment form toggle */}
         {showAppointmentForm && (
-          <div className="mt-6 bg-primary-50 p-4 rounded-lg">
-            <div className="flex justify-between items-center mb-3">
-              <h4 className="font-semibold">
-                Book Appointment with {doctor.name}
-              </h4>
-              <button
-                onClick={() => setShowAppointmentForm(false)}
-                className="text-sm text-gray-600"
-              >
-                Close
-              </button>
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[9999] p-2">
+            <div className="bg-white rounded-lg shadow-2xl max-w-lg w-full max-h-[85vh] overflow-y-auto">
+              {/* Modal Header */}
+              <div className="sticky top-0 bg-white border-b border-gray-200 px-4 py-2.5 flex justify-between items-center rounded-t-lg z-10">
+                <h4 className="font-bold text-gray-900 text-base">
+                  Book Appointment
+                </h4>
+                <button
+                  onClick={() => setShowAppointmentForm(false)}
+                  className="text-gray-500 hover:text-gray-700 transition-colors"
+                >
+                  <SafeIcon icon={FiX} className="w-5 h-5" />
+                </button>
+              </div>
+
+              <div className="p-4">
+                {/* Doctor Info Summary */}
+                <div className="bg-gray-50 rounded-lg p-3 mb-4 border border-gray-200">
+                  <div className="grid grid-cols-2 gap-3 text-xs">
+                    <div>
+                      <p className="text-gray-600 mb-0.5">Doctor</p>
+                      <p className="font-semibold text-gray-900">{doctor.name}</p>
+                    </div>
+                    <div>
+                      <p className="text-gray-600 mb-0.5">Specialty</p>
+                      <p className="font-semibold text-gray-900">{doctor.specialty}</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Appointment Booking Form */}
+                <form
+                  action="YOUR_FORMESTER_FORM_URL"
+                  method="POST"
+                  className="space-y-3"
+                >
+                  {/* Hidden fields for doctor info */}
+                  <input type="hidden" name="doctor_name" value={doctor.name} />
+                  <input type="hidden" name="specialty" value={doctor.specialty} />
+
+                  {/* Patient Name */}
+                  <div>
+                    <label htmlFor="patient_name" className="block text-xs font-medium text-gray-700 mb-1">
+                      Patient Name <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="patient_name"
+                      name="patient_name"
+                      required
+                      className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      placeholder="Enter your full name"
+                    />
+                  </div>
+
+                  {/* Phone Number */}
+                  <div>
+                    <label htmlFor="phone" className="block text-xs font-medium text-gray-700 mb-1">
+                      Phone Number <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required
+                      pattern="[0-9]{10}"
+                      className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      placeholder="Enter 10-digit mobile number"
+                    />
+                  </div>
+
+                  {/* Email */}
+                  <div>
+                    <label htmlFor="email" className="block text-xs font-medium text-gray-700 mb-1">
+                      Email Address <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+
+                  {/* Preferred Date and Time */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label htmlFor="preferred_date" className="block text-xs font-medium text-gray-700 mb-1">
+                        Date <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="date"
+                        id="preferred_date"
+                        name="preferred_date"
+                        required
+                        min={new Date().toISOString().split('T')[0]}
+                        className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="preferred_time" className="block text-xs font-medium text-gray-700 mb-1">
+                        Time <span className="text-red-500">*</span>
+                      </label>
+                      <select
+                        id="preferred_time"
+                        name="preferred_time"
+                        required
+                        className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      >
+                        <option value="">Select slot</option>
+                        <option value="09:00 AM - 10:00 AM">09:00 AM - 10:00 AM</option>
+                        <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+                        <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+                        <option value="12:00 PM - 01:00 PM">12:00 PM - 01:00 PM</option>
+                        <option value="02:00 PM - 03:00 PM">02:00 PM - 03:00 PM</option>
+                        <option value="03:00 PM - 04:00 PM">03:00 PM - 04:00 PM</option>
+                        <option value="04:00 PM - 05:00 PM">04:00 PM - 05:00 PM</option>
+                        <option value="05:00 PM - 06:00 PM">05:00 PM - 06:00 PM</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  {/* Reason for Visit */}
+                  <div>
+                    <label htmlFor="reason" className="block text-xs font-medium text-gray-700 mb-1">
+                      Reason for Visit
+                    </label>
+                    <textarea
+                      id="reason"
+                      name="reason"
+                      rows="2"
+                      className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      placeholder="Brief description (optional)"
+                    ></textarea>
+                  </div>
+
+                  {/* Submit Button */}
+                  <button
+                    type="submit"
+                    className="w-full bg-primary-500 hover:bg-primary-600 text-white px-4 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 text-sm"
+                  >
+                    <SafeIcon icon={FiCalendar} className="w-4 h-4" />
+                    Submit Request
+                  </button>
+                </form>
+
+                {/* Note Section */}
+                <div className="mt-3 p-2.5 bg-blue-50 border border-blue-200 rounded-lg">
+                  <p className="text-xs text-blue-800">
+                    <strong>Note:</strong> Our team will contact you within 24 hours to confirm.
+                  </p>
+                </div>
+              </div>
             </div>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                setShowAppointmentForm(false);
-              }}
-              className="space-y-3"
-            >
-              <input
-                type="text"
-                placeholder="Your name"
-                required
-                className="w-full px-3 py-2 border rounded"
-              />
-              <input
-                type="tel"
-                placeholder="Mobile"
-                required
-                className="w-full px-3 py-2 border rounded"
-              />
-              <input
-                type="date"
-                required
-                className="w-full px-3 py-2 border rounded"
-              />
-              <button
-                type="submit"
-                className="w-full bg-primary-500 text-white px-3 py-2 rounded"
-              >
-                Confirm
-              </button>
-            </form>
           </div>
         )}
       </div>

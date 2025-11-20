@@ -403,32 +403,32 @@ const About = () => {
         </div>
 
         {/* Compact Alternating Timeline */}
-        <div className="relative">
+        <div className="relative px-4 md:px-0">
           {/* Central Line */}
-          <div className="absolute left-6 md:left-1/2 md:transform md:-translate-x-0.5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-orange-500 to-orange-600"></div>
+          <div className="absolute left-8 md:left-1/2 md:transform md:-translate-x-0.5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-orange-500 to-orange-600"></div>
 
           {/* Timeline Items */}
           <div className="space-y-8">
             {milestones.map((milestone, index) =>
               <div
                 key={index}
-                className={`relative flex items-start gap-6 ${
+                className={`relative flex flex-col md:flex-row items-start gap-6 ${
                 index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`
                 }>
 
                 {/* Year Circle */}
-                <div className="absolute left-3 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-3 border-orange-500 rounded-full shadow-md">
+                <div className="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-3 border-orange-500 rounded-full shadow-md">
                   <div className="w-1.5 h-1.5 bg-orange-500 rounded-full"></div>
                 </div>
 
                 {/* Content Card */}
-                <div className="w-full md:w-5/12 ml-12 md:ml-0">
+                <div className="w-full md:w-5/12 pl-16 md:pl-0">
                   <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 p-4 border-l-3 border-orange-500">
                     {/* Year Badge */}
                     <div className="inline-flex items-center px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-semibold mb-3">
                       {milestone.year}
                     </div>
-                    
+
                     {/* Achievements */}
                     <div className="space-y-2">
                       {milestone.achievements.map((achievement, achievementIndex) =>
@@ -441,27 +441,19 @@ const About = () => {
                   </div>
                 </div>
 
-                {/* Image on opposite side */}
+                {/* Image on opposite side - Desktop */}
                 <div className="hidden md:block w-4/12">
                   <div className="relative h-52 bg-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
                     <img
                       src={milestone.image}
                       alt={`Raj Hospital ${milestone.year}`}
                       className="w-full h-full object-cover object-top  hover:scale-105 transition-transform duration-300" />
-                      {/*
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                      <div className="absolute bottom-3 left-3 right-3">
-                      <div className="text-white text-xs font-medium bg-black/50 px-2 py-1 rounded backdrop-blur-sm">
-                      {milestone.year} Milestone
-                      </div>
-                      </div>
-                      */}
                   </div>
                 </div>
 
                 {/* Mobile Image - Below card on mobile */}
-                <div className="md:hidden ml-12 mt-3">
-                  <div className="relative h-32 bg-gray-200 rounded-lg overflow-hidden shadow-md">
+                <div className="md:hidden w-full pl-16">
+                  <div className="relative h-40 bg-gray-200 rounded-lg overflow-hidden shadow-md">
                     <img
                       src={milestone.image}
                       alt={`Raj Hospital ${milestone.year}`}
