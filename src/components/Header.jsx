@@ -104,11 +104,11 @@ const Header = () => {
 
 
 
-  const newsItems = [
-  'Press Releases',
-  'Health News',
-  'Medical Updates',
-  'Awards & Recognition'];
+  // const newsItems = [
+  // 'Press Releases',
+  // 'Health News',
+  // 'Medical Updates',
+  // 'Awards & Recognition'];
 
 
   // Custom URL mapping for specific specialties in Advanced Diagnostics
@@ -306,7 +306,7 @@ const Header = () => {
                   </Link>
                 
 
-                      <div
+                      {/* <div
                     className="relative cursor-pointer"
                     onMouseEnter={() => setIsNewsOpen(true)}
                     onMouseLeave={() => setIsNewsOpen(false)}>
@@ -333,7 +333,7 @@ const Header = () => {
                             </motion.div>
                       }
                         </AnimatePresence>
-                      </div>
+                      </div> */}
 
                    
 
@@ -345,8 +345,8 @@ const Header = () => {
                         Careers
                       </Link>
                       
-                      <Link to="/biomedical-waste-reports" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
-                        Waste Reports
+                      <Link to="/news-media" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                        News & Media
                       </Link>
 
                
@@ -6174,8 +6174,8 @@ const Header = () => {
                   Careers
                 </Link>
 
-                <Link to="/biomedical-waste-reports" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-                  Waste Reports
+                <Link to="/news-media" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                  News & Media
                 </Link>
 
                 <div className="pt-4 border-t border-gray-200">

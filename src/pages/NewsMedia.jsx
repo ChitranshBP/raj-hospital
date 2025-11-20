@@ -6,65 +6,166 @@ const NewsMedia = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   // DIGITAL NEWS CARDS
-  const digitalNews = [
-    {
-      id: 1,
-      title: 'राज अस्पताल के आपातकालीन विभाग को एनएबीएच की मान्यता मिली',
-      description: 'Brief description of the digital news article or social media post.',
-      image: 'assets/digital-news/digital-1.jpg',
-      link: 'https://example.com/digital-post-1', // Add your custom link here
-      date: 'March 20, 2024',
-    },
-    {
-      id: 2,
-      title: 'Digital News Title 2',
-      description: 'Brief description of the digital news article or social media post.',
-      image: 'assets/digital-news/digital-2.jpg',
-      link: 'https://example.com/digital-post-2', // Add your custom link here
-      date: 'March 18, 2024',
-    },
-    {
-      id: 3,
-      title: 'Digital News Title 3',
-      description: 'Brief description of the digital news article or social media post.',
-      image: 'assets/digital-news/digital-3.jpg',
-      link: 'https://example.com/digital-post-3', // Add your custom link here
-      date: 'March 15, 2024',
-    },
-    {
-      id: 4,
-      title: 'Digital News Title 4',
-      description: 'Brief description of the digital news article or social media post.',
-      image: 'assets/digital-news/digital-4.jpg',
-      link: 'https://example.com/digital-post-4', // Add your custom link here
-      date: 'March 12, 2024',
-    },
-    {
-      id: 5,
-      title: 'Digital News Title 5',
-      description: 'Brief description of the digital news article or social media post.',
-      image: 'assets/digital-news/digital-5.jpg',
-      link: 'https://example.com/digital-post-5', // Add your custom link here
-      date: 'March 10, 2024',
-    },
-    {
-      id: 6,
-      title: 'Digital News Title 6',
-      description: 'Brief description of the digital news article or social media post.',
-      image: 'assets/digital-news/digital-6.jpg',
-      link: 'https://example.com/digital-post-6', // Add your custom link here
-      date: 'March 08, 2024',
-    },
-  ];
+const digitalNews = [
+  {
+    id: 1,
+    title: 'राज अस्पताल, रांची में ASI झारखंड चैप्टर द्वारा लेज़र प्रॉक्टोलॉजी पर वर्कशॉप आयोजित',
+    description: 'Workshop organised at Raj Hospital Ranchi by ASI Jharkhand Chapter.',
+    image: 'img/img-01.png',
+    link: 'https://www.facebook.com/share/p/18r7HmKaz4/',
+    date: 'August 25, 2024',
+  },
+  {
+    id: 2,
+    title: 'रांचीः बाई-पास सर्जरी के लिए अब नहीं जाना होगा बाहर, राज अस्पताल में मिल रही सुविधा',
+    description: 'Bypass surgery facility now available at Raj Hospital Ranchi.',
+    image: 'img/img-01.png',
+    link: 'https://lagatar.in/ranchi-now-you-will-not-have-to-go-out-for-by-pass-surgery-facility-is-available-in-raj-hospital',
+    date: 'January 1, 2024',
+  },
+  {
+    id: 3,
+    title: 'रांची: शनिवार को नगड़ी स्थित केंद्रीय तसर अनुसंधान एवं प्रशिक्षण संस्थान में चिकित्सा शिविर का आयोजन',
+    description: 'Medical camp organised at Central Tasar Research Institute.',
+    image: 'img/img 1 (1).jpg',
+    link: 'rachi-news.php',
+    date: 'August 26, 2023',
+  },
+  {
+    id: 4,
+    title: 'राज अस्पताल, रांची में मनाया गया 77वां स्वतंत्रता दिवस, ध्वजारोहण कर दी तिरंगे को सलामी',
+    description: '77th Independence Day celebration at Raj Hospital.',
+    image: 'img/img7.webp',
+    link: 'independence-day-23.php',
+    date: 'August 23, 2023',
+  },
+  {
+    id: 5,
+    title: 'रांची: 28 जुलाई को मनाया जायेगा विश्व हेपेटाइटिस दिवस',
+    description: 'World Hepatitis Day will be observed on 28 July.',
+    image: 'img/doc.jpg',
+    link: 'https://lagatar.in/ranchi-world-hepatitis-day-to-be-celebrated-on-july',
+    date: 'July 28, 2023',
+  },
+  {
+    id: 6,
+    title: 'राज अस्पताल में पहली बार IVUS तकनीक से की गई एंजियोप्लास्टी',
+    description: 'IVUS-based angioplasty performed for the first time at Raj Hospital.',
+    image: 'img/cover img.jpg',
+    link: 'https://lagatar.in/angioplasty-done-with-ivus-technique-for-the-first-time-in-raj-hospital/',
+    date: 'July 22, 2023',
+  },
+  {
+    id: 7,
+    title: 'नर्सों की जितनी प्रशंसा की जाए कम है : साहिल गंभीर',
+    description: 'Nurses appreciation ceremony at Raj Hospital.',
+    image: 'img/Untitled design-00.jpg',
+    link: 'https://lagatar.in/the-praise-of-nurses-is-less-sahil-gambhir/',
+    date: 'May 14, 2023',
+  },
+  {
+    id: 8,
+    title: 'रांची : राज अस्पताल में अग्निशमन विभाग की ओर से मॉक ड्रिल का आयोजन',
+    description: 'Fire safety week mock drill conducted at Raj Hospital.',
+    image: 'img/1223.jpg',
+    link: 'https://lagatar.in/ranchi-mock-drill-organized-by-the-fire-department-in-raj-hospital-the-methods-of-fire-prevention/',
+    date: 'April 16, 2023',
+  },
+  {
+    id: 9,
+    title: '15 cases of black fungus in Jharkhand, Centre to hold discussions today.',
+    description: 'TOI coverage of black fungus cases in Jharkhand.',
+    image: 'img/Untitled design.jpg',
+    link: 'https://timesofindia.indiatimes.com/city/ranchi/15-cases-of-black-fungus-in-state-centre-to-hold-discussions-today/articleshow/82679927.cms',
+    date: 'May 17, 2021',
+  },
+  {
+    id: 10,
+    title: 'सेवा सदन का ओपीडी आज से शुरू होगा, राज अस्पताल में मिल रहा है परामर्श',
+    description: 'Seva Sadan OPD begins, consultations available at Raj Hospital.',
+    image: 'img/Untitled design.jpg',
+    link: 'https://www.prabhatkhabar.com/state/jharkhand/ranchi/opd-of-seva-sadan-will-start-from-today-counseling-is-being-provided-in-raj-hospital',
+    date: 'May 12, 2021',
+  },
+  {
+    id: 11,
+    title: 'राज अस्पताल के डॉक्टर्स का कमाल, 92 वर्षीय महिला के पेट से निकाला 15 किलो का ट्यूमर',
+    description: 'Doctors at Raj Hospital remove a 15-kg abdominal tumor.',
+    image: 'img/Untitled design.jpg',
+    link: 'https://lagatar.in/amazing-doctors-of-raj-hospital-a-15-kg-tumor-removed-from-a-92-year-old-womans-abdomen/',
+    date: 'January 15, 2021',
+  },
+  {
+    id: 12,
+    title: 'Jharkhand to start vax drive for senior citizens from today',
+    description: 'Senior citizen vaccination drive begins in Jharkhand.',
+    image: 'img/Untitled design.jpg',
+    link: 'http://timesofindia.indiatimes.com/articleshow/81262067.cms',
+    date: 'March 1, 2021',
+  },
+  {
+    id: 13,
+    title: 'Only 2 of 71 private hospitals offering jabs in Ranchi',
+    description: 'Vaccination availability report in private hospitals.',
+    image: 'img/Untitled design (1).jpg',
+    link: 'https://www.telegraphindia.com/jharkhand/only-2-of-71-private-hospitals-offering-jabs-in-ranchi/cid/1808398',
+    date: 'March 12, 2021',
+  },
+  {
+    id: 14,
+    title: '450 pvt hospitals to administer vaccine from today',
+    description: '450 private hospitals authorized for vaccination.',
+    image: 'img/Untitled design (2).jpg',
+    link: 'https://www.dailypioneer.com/2021/state-editions/450-pvt-hospitals-to-administer-vaccine-from-today.html',
+    date: 'March 1, 2021',
+  },
+  {
+    id: 15,
+    title: 'State allows private hospitals to run 24x7 vaccination programme',
+    description: 'Government permits round-the-clock vaccination.',
+    image: 'img/Untitled design (3).jpg',
+    link: 'https://www.dailypioneer.com/2021/state-editions/state-allows-private-hospitals-to-run-24x7-vaccination-programme.html',
+    date: 'June 21, 2021',
+  }
+];
 
   // PRINT IMAGES ONLY
   const newspaperClippings = [
-    { id: 1, image: 'assets/dummy/dummy-news-1.jpg' },
-    { id: 2, image: 'assets/dummy/dummy-news-2.jpg' },
-    { id: 3, image: 'assets/dummy/dummy-news-3.jpg' },
-    { id: 4, image: 'assets/dummy/dummy-news-4.jpg' },
-    { id: 5, image: 'assets/dummy/dummy-news-5.jpg' },
-    { id: 6, image: 'assets/dummy/dummy-news-6.jpg' },
+    { id: 1, image: 'assets/press/news-1-r.jpg' },
+    { id: 2, image: 'assets/press/news-2-raj.jpg' },
+    { id: 3, image: 'assets/press/news-3-raj.jpg' },
+    { id: 4, image: 'assets/press/Raj-hsopital-news-1_290824.jpg' },
+    { id: 5, image: 'assets/press/Raj-hsopital-news-2_290824.jpg' },
+    { id: 6, image: 'assets/press/Raj-hsopital-news-3_290824.jpg' },
+    { id: 7, image: 'assets/press/Raj-hsopital-news-4_290824.jpg' },
+    { id: 8, image: 'assets/press/Raj-hsopital-news-5_290824.jpg' },
+    { id: 9, image: 'assets/press/Raj-hsopital-news-6_290824.jpg' },
+    { id: 10, image: 'assets/press/Raj-hsopital-news-7_290824.jpg' },
+    { id: 11, image: 'assets/press/CCT.jpeg' },
+    { id: 12, image: 'assets/press/CCT-1.jpeg' },
+    { id: 13, image: 'assets/press/Dr. Suprova.jpeg' },
+    { id: 14, image: 'assets/press/Dr. Suprova-1.jpeg' },
+    { id: 15, image: 'assets/press/Dr-Rajesh-BLS-training-in-mecon.jpeg' },
+    { id: 16, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.16.27 PM.jpeg' },
+    { id: 17, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.16.28 PM.jpeg' },
+    { id: 18, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.16.32 PM.jpeg' },
+    { id: 19, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.18.05 PM.jpeg' },
+    { id: 20, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.18.06 PM.jpeg' },
+    { id: 21, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.18.07 PM.jpeg' },
+    { id: 22, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.39 PM.jpeg' },
+    { id: 23, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.40 PM.jpeg' },
+    { id: 24, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.41 PM.jpeg' },
+    { id: 25, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.42 PM.jpeg' },
+    { id: 26, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.43 PM.jpeg' },
+    { id: 27, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.44 PM.jpeg' },
+    { id: 28, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.45 PM.jpeg' },
+    { id: 29, image: 'assets/press/WhatsApp Image 2024-08-09 at 10.05.21 AM.jpeg' },
+    { id: 30, image: 'assets/press/WhatsApp Image 2024-08-09 at 10.05.22 AM.jpeg' },
+    { id: 31, image: 'assets/press/WhatsApp Image 2024-08-09 at 10.05.23 AM.jpeg' },
+    { id: 32, image: 'assets/press/IMG-20250222-WA0004.jpg' },
+    { id: 33, image: 'assets/press/IMG-20250222-WA0005.jpg' },
+    { id: 34, image: 'assets/press/IMG-20250222-WA0006.jpg' },
+    { id: 35, image: 'assets/press/IMG-20250222-WA0007.jpg' },
   ];
 
   return (
@@ -136,8 +237,8 @@ const NewsMedia = () => {
                 Explore our digital articles, features, and media highlights
               </p>
 
-              {/* DIGITAL NEWS CARDS */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* DIGITAL NEWS CARDS - Text Only Design */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 {digitalNews.map((news, index) => (
                   <motion.a
@@ -149,35 +250,12 @@ const NewsMedia = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer"
+                    className="block bg-white border border-[#F9771B]/30 rounded-lg p-4 shadow-sm hover:shadow-md transition"
                   >
-                    <div className="relative h-56 bg-gray-200 overflow-hidden">
-                      <img
-                        src={news.image}
-                        alt={news.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        onError={(e) => {
-                          e.target.src = 'assets/home-img/default-news.jpg';
-                        }}
-                      />
-                      <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-xs font-semibold text-[#0191C7]">
-                        {news.date}
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#F9771B] transition-colors">
-                        {news.title}
-                      </h3>
-                      <p className="text-gray-600 mb-4 line-clamp-3">
-                        {news.description}
-                      </p>
-                      <div className="flex items-center gap-2 text-[#F9771B] font-semibold group-hover:text-[#0191C7] transition-colors">
-                        Read More
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </div>
-                    </div>
+                    <h3 className="text-[#0191C7] font-semibold text-lg mb-1">
+                      {news.title}
+                    </h3>
+                    <time className="text-xs text-gray-500">{news.date}</time>
                   </motion.a>
                 ))}
 

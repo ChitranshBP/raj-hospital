@@ -605,7 +605,7 @@ function NewsMediaCompact() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="assets/dummy/dummy-news-1.jpg"
+                  src="assets/press/news-1-r.jpg"
                   alt="Newspaper Clipping"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -614,7 +614,7 @@ function NewsMediaCompact() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="assets/dummy/dummy-news-2.jpg"
+                  src="assets/press/news-2-raj.jpg"
                   alt="Newspaper Clipping"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -627,7 +627,7 @@ function NewsMediaCompact() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="assets/dummy/dummy-news-3.jpg"
+                  src="assets/press/news-3-raj.jpg"
                   alt="Newspaper Clipping"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -636,7 +636,7 @@ function NewsMediaCompact() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="assets/dummy/dummy-news-4.jpg"
+                  src="assets/press/Raj-hsopital-news-1_290824.jpg"
                   alt="Newspaper Clipping"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />

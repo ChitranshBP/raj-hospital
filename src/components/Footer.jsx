@@ -28,6 +28,7 @@ const Footer = () => {
   { name: 'Emergency Care', action: () => scrollToSection('hero') },
   { name: 'Patient Portal', action: () => scrollToSection('contact') },
   { name: 'Health Checkups', path: '/specialties' },
+  { name: 'Biomedical Waste Reports', path: '/biomedical-waste-reports' },
   { name: 'Careers', path: '/contact' }];
 
 
