@@ -351,10 +351,10 @@ const sections = {
       thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
     },
             {
-      videoId: "HARE579wkdY",
-      patient: "Knee replacement surgery | Raj Hospitals",
-      desc: "The doctors and staff were exceptional.",
-      thumbnail: "https://img.youtube.com/vi/HARE579wkdY/maxresdefault.jpg",
+      videoId: "vg59yGKWz_s",
+      patient: "Neurosurgery Success Story at Raj Hospitals",
+      desc: "Under the expert care of Dr. Ahmad Hussain (Neurosurgeon) and Dr. Neelam Kumari, our patient has made an incredible recovery.",
+      thumbnail: "https://img.youtube.com/vi/vg59yGKWz_s/maxresdefault.jpg",
     },
   ],
   patients: [
