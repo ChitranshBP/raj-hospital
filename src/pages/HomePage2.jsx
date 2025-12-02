@@ -285,7 +285,7 @@ const sections = {
       excerpt: "What is it, and who is it for?",
       url: "#",
     },
-        {
+    {
       title: "Understanding Robotic Surgery",
       img: "assets/home-img/blogs/Blogs-3.webp",
       excerpt: "What is it, and who is it for?",
@@ -344,13 +344,13 @@ const sections = {
       desc: "The doctors and staff were exceptional.",
       thumbnail: "https://img.youtube.com/vi/HARE579wkdY/maxresdefault.jpg",
     },
-        {
+    {
       videoId: "Gi1WhJ1dR6g",
       patient: "Emergency Brain Care That Saved Prem Kumar Singh | Raj Hospitals",
       desc: "The doctors and staff were exceptional.",
       thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
     },
-            {
+    {
       videoId: "vg59yGKWz_s",
       patient: "Neurosurgery Success Story at Raj Hospitals",
       desc: "Under the expert care of Dr. Ahmad Hussain (Neurosurgeon) and Dr. Neelam Kumari, our patient has made an incredible recovery.",
@@ -368,7 +368,7 @@ const sections = {
       desc: "Complex spine surgery restores mobility.",
       img: "/assets/patient2.jpg",
     },
-        {
+    {
       name: "Overcoming the Impossible",
       desc: "Complex spine surgery restores mobility.",
       img: "/assets/patient2.jpg",
@@ -512,21 +512,19 @@ function NewsMediaCompact() {
       <div className="flex gap-4 mb-6">
         <button
           onClick={() => setNewsTab('digital')}
-          className={`px-4 py-2 rounded-lg font-semibold transition-all ${
-            newsTab === 'digital'
+          className={`px-4 py-2 rounded-lg font-semibold transition-all ${newsTab === 'digital'
               ? 'bg-[#F9771B] text-white shadow'
               : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-          }`}
+            }`}
         >
           Digital
         </button>
         <button
           onClick={() => setNewsTab('print')}
-          className={`px-4 py-2 rounded-lg font-semibold transition-all ${
-            newsTab === 'print'
+          className={`px-4 py-2 rounded-lg font-semibold transition-all ${newsTab === 'print'
               ? 'bg-[#F9771B] text-white shadow'
               : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-          }`}
+            }`}
         >
           Print
         </button>
@@ -720,17 +718,15 @@ const TabbedSpecialtiesSection = () => {
                 onClick={() => setActiveTab(index)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className={`flex items-center space-x-2 whitespace-nowrap px-5 py-2 rounded-full font-medium text-sm border transition ${
-                  activeTab === index
+                className={`flex items-center space-x-2 whitespace-nowrap px-5 py-2 rounded-full font-medium text-sm border transition ${activeTab === index
                     ? "bg-[#F9771B] text-white shadow-lg border-transparent"
                     : "bg-white text-gray-600 border border-gray-300 hover:border-[#F9771B] hover:text-[#F9771B]"
-                }`}
+                  }`}
               >
                 <SafeIcon
                   icon={spec.icon}
-                  className={`w-5 h-5 ${
-                    activeTab === index ? "text-white" : "text-[#F9771B]"
-                  }`}
+                  className={`w-5 h-5 ${activeTab === index ? "text-white" : "text-[#F9771B]"
+                    }`}
                 />
                 <span>{spec.shortTitle}</span>
               </motion.button>
@@ -831,7 +827,7 @@ function QuickNavigationBar() {
 
       // Advanced Diagnostics
       { name: "Radiology", type: "specialty", link: "#/specialties/radiology", keywords: ["radiology-ad", "xray", "ct scan", "mri", "ultrasound", "imaging"] },
-      { name: "Cardiology (Advanced Diagnostics)", type: "specialty", link: "#/specialties/cardiology-ad", keywords: ["cardiology-ad", "cardiac diagnostics", "ecg", "echo", "tmt"] },
+      //{ name: "Cardiology (Advanced Diagnostics)", type: "specialty", link: "#/specialties/cardiology-ad", keywords: ["cardiology-ad", "cardiac diagnostics", "ecg", "echo", "tmt"] },
       { name: "Neurology (Advanced Diagnostics)", type: "specialty", link: "#/specialties/neurology-ad", keywords: ["neurology-ad", "neuro diagnostics", "eeg", "nerve conduction"] },
       { name: "Laboratory Investigations", type: "specialty", link: "#/specialties/laboratory-investigations", keywords: ["lab-ad", "laboratory-ad", "blood test", "biopsy", "fnac", "pathology"] },
     ],
@@ -1034,11 +1030,10 @@ function QuickNavigationBar() {
                         )}
                       </div>
                     </div>
-                    <span className={`text-xs px-2 py-1 rounded-full ${
-                      suggestion.type === 'specialty'
+                    <span className={`text-xs px-2 py-1 rounded-full ${suggestion.type === 'specialty'
                         ? 'bg-[#0191C7]/10 text-[#0191C7]'
                         : 'bg-[#F9771B]/10 text-[#F9771B]'
-                    }`}>
+                      }`}>
                       {suggestion.type === 'specialty' ? 'Specialty' : 'Doctor'}
                     </span>
                   </button>
@@ -1141,7 +1136,7 @@ export default function HomePage() {
 
   return (
     <main className="bg-white">
-          <HeroSection />
+      <HeroSection />
       {/* Quick Navigation Bar */}
       <QuickNavigationBar />
 
@@ -1151,7 +1146,7 @@ export default function HomePage() {
       {/* Why Choose Raj Hospitals */}
       <WhyChooseRaj />
 
-           {/* About Raj Hospitals Section */}
+      {/* About Raj Hospitals Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -1164,9 +1159,9 @@ export default function HomePage() {
             >
               <h2 className="text-3xl font-bold text-[#F9771B] mb-4">About Raj Hospitals</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-For over three decades, Raj Hospitals has been the cornerstone of healthcare excellence in Ranchi, Jharkhand. What started as a vision to provide world-class medical care has evolved into one of the region's most trusted super specialty hospitals.
+                For over three decades, Raj Hospitals has been the cornerstone of healthcare excellence in Ranchi, Jharkhand. What started as a vision to provide world-class medical care has evolved into one of the region's most trusted super specialty hospitals.
 
-Our commitment to patient care, combined with state-of-the-art technology and a team of highly qualified medical professionals, has made us the preferred choice for thousands of families across Jharkhand and neighboring states.              </p>
+                Our commitment to patient care, combined with state-of-the-art technology and a team of highly qualified medical professionals, has made us the preferred choice for thousands of families across Jharkhand and neighboring states.              </p>
 
               {/* Compact Statistics Grid - 2x2 */}
               <div className="grid grid-cols-2 gap-3 mt-5">
@@ -1241,15 +1236,15 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
               transition={{ duration: 0.6 }}
               className="relative"
             > */}
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="assets\home-img\Raj-hospital-image.webp"
-                  alt="About Raj Hospitals"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Decorative Element */}
-              {/* <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-[#0191C7]/10 rounded-full -z-10"></div> */}
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="assets\home-img\Raj-hospital-image.webp"
+                alt="About Raj Hospitals"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* Decorative Element */}
+            {/* <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-[#0191C7]/10 rounded-full -z-10"></div> */}
             {/* </motion.div> */}
           </div>
         </div>
@@ -1257,85 +1252,85 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
 
       {/* Technology Section */}
       <div className="bg-white">
-      <Section
-        title="Our Technology"
-        description="Investing in globally advanced medical technology for care you can trust."
-        showViewAll={true}
-        viewAllLink="/technology"
-      >
-        {/* Mobile: Horizontal Scroll, Desktop: Grid */}
-        <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
-          <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
-          {sections.technology.map((tech, index) => (
-            <motion.div
-              key={tech.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex-shrink-0 w-[85%] md:w-auto snap-center group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100"
-            >
-              {/* Full-width Image */}
-              <div className="relative w-full h-48 bg-gradient-to-br from-[#0191C7]/5 to-[#F9771B]/5 overflow-hidden">
-                <img
-                  src={tech.image}
-                  alt={tech.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div> */}
-              </div>
+        <Section
+          title="Our Technology"
+          description="Investing in globally advanced medical technology for care you can trust."
+          showViewAll={true}
+          viewAllLink="/technology"
+        >
+          {/* Mobile: Horizontal Scroll, Desktop: Grid */}
+          <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
+            <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
+              {sections.technology.map((tech, index) => (
+                <motion.div
+                  key={tech.name}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="flex-shrink-0 w-[85%] md:w-auto snap-center group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100"
+                >
+                  {/* Full-width Image */}
+                  <div className="relative w-full h-48 bg-gradient-to-br from-[#0191C7]/5 to-[#F9771B]/5 overflow-hidden">
+                    <img
+                      src={tech.image}
+                      alt={tech.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div> */}
+                  </div>
 
-              {/* Content */}
-              <div className="p-6">
-                <h3 className="font-semibold text-[#0191C7] text-xl mb-2 ">
-                  {tech.name}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {tech.desc}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+                  {/* Content */}
+                  <div className="p-6">
+                    <h3 className="font-semibold text-[#0191C7] text-xl mb-2 ">
+                      {tech.name}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {tech.desc}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
-        </div>
-      </Section>
+        </Section>
       </div>
 
       {/* Doctors Talk Section */}
       <div className="bg-gray-50">
-      <Section
-        title="Doctors Talk"
-        description="Our experts share health tips and awareness."
-        showViewAll={true}
-        viewAllLink="/doctors-talk"
-      >
-        {/* Mobile: Horizontal Scroll, Desktop: Grid */}
-        <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
-          <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
-          {sections.doctorTalks.map((video) => (
-            <div
-              key={video.videoId}
-              className="flex-shrink-0 w-[85%] md:w-auto snap-center bg-white border border-[#F9771B]/25 rounded-xl shadow-md flex flex-col overflow-hidden"
-            >
-              <button
-                onClick={() => setModalVideoId(video.videoId)}
-                className="relative group w-full text-left cursor-pointer"
-              >
-                <img
-                  src={video.thumbnail}
-                  alt={video.title}
-                  className="w-full h-48 object-cover"
-                />
-                {/* Play Button Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all">
-                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <SafeIcon icon={FiIcons.FiPlay} className="w-8 h-8 text-[#F9771B] ml-1" />
-                  </div>
-                </div>
-              </button>
-              <div className="p-4 flex-1 flex flex-col">
-                <div className="font-semibold text-[#0191C7]">{video.title}</div>
-                {/* <a
+        <Section
+          title="Doctors Talk"
+          description="Our experts share health tips and awareness."
+          showViewAll={true}
+          viewAllLink="/doctors-talk"
+        >
+          {/* Mobile: Horizontal Scroll, Desktop: Grid */}
+          <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
+            <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
+              {sections.doctorTalks.map((video) => (
+                <div
+                  key={video.videoId}
+                  className="flex-shrink-0 w-[85%] md:w-auto snap-center bg-white border border-[#F9771B]/25 rounded-xl shadow-md flex flex-col overflow-hidden"
+                >
+                  <button
+                    onClick={() => setModalVideoId(video.videoId)}
+                    className="relative group w-full text-left cursor-pointer"
+                  >
+                    <img
+                      src={video.thumbnail}
+                      alt={video.title}
+                      className="w-full h-48 object-cover"
+                    />
+                    {/* Play Button Overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all">
+                      <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <SafeIcon icon={FiIcons.FiPlay} className="w-8 h-8 text-[#F9771B] ml-1" />
+                      </div>
+                    </div>
+                  </button>
+                  <div className="p-4 flex-1 flex flex-col">
+                    <div className="font-semibold text-[#0191C7]">{video.title}</div>
+                    {/* <a
                   href={`https://www.youtube.com/watch?v=${video.videoId}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1343,51 +1338,51 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
                 >
                   Watch on YouTube
                 </a> */}
-              </div>
+                  </div>
 
+                </div>
+              ))}
             </div>
-          ))}
           </div>
-        </div>
-      </Section>
+        </Section>
       </div>
 
       {/* Video Testimonials Section */}
       <div className="bg-white">
-      <Section
-        title="Video Testimonials"
-        description="Hear from our patients their experiences and healing journeys."
-        showViewAll={true}
-        viewAllLink="/testimonials"
-      >
-        {/* Mobile: Horizontal Scroll, Desktop: Grid */}
-        <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
-          <div className="flex md:grid md:grid-cols-4 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
-          {sections.testimonials.map((test) => (
-            <div
-              key={test.videoId}
-              className="flex-shrink-0 w-[85%] md:w-auto snap-center bg-white border border-[#F9771B]/25 rounded-xl shadow-md flex flex-col overflow-hidden"
-            >
-              <button
-                onClick={() => setModalVideoId(test.videoId)}
-                className="relative group w-full text-left cursor-pointer"
-              >
-                <img
-                  src={test.thumbnail}
-                  alt={`Testimonial by ${test.patient}`}
-                  className="w-full h-48 object-cover"
-                />
-                {/* Play Button Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all">
-                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <SafeIcon icon={FiIcons.FiPlay} className="w-8 h-8 text-[#F9771B] ml-1" />
-                  </div>
-                </div>
-              </button>
-              <div className="p-4 flex-1 flex flex-col">
-                <div className="font-semibold text-[#0191C7] mb-1">{test.patient}</div>
-                {/* <div className="text-gray-600 flex-1">{test.desc}</div> */}
-                {/* <a
+        <Section
+          title="Video Testimonials"
+          description="Hear from our patients their experiences and healing journeys."
+          showViewAll={true}
+          viewAllLink="/testimonials"
+        >
+          {/* Mobile: Horizontal Scroll, Desktop: Grid */}
+          <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
+            <div className="flex md:grid md:grid-cols-4 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
+              {sections.testimonials.map((test) => (
+                <div
+                  key={test.videoId}
+                  className="flex-shrink-0 w-[85%] md:w-auto snap-center bg-white border border-[#F9771B]/25 rounded-xl shadow-md flex flex-col overflow-hidden"
+                >
+                  <button
+                    onClick={() => setModalVideoId(test.videoId)}
+                    className="relative group w-full text-left cursor-pointer"
+                  >
+                    <img
+                      src={test.thumbnail}
+                      alt={`Testimonial by ${test.patient}`}
+                      className="w-full h-48 object-cover"
+                    />
+                    {/* Play Button Overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all">
+                      <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <SafeIcon icon={FiIcons.FiPlay} className="w-8 h-8 text-[#F9771B] ml-1" />
+                      </div>
+                    </div>
+                  </button>
+                  <div className="p-4 flex-1 flex flex-col">
+                    <div className="font-semibold text-[#0191C7] mb-1">{test.patient}</div>
+                    {/* <div className="text-gray-600 flex-1">{test.desc}</div> */}
+                    {/* <a
                   href={`https://www.youtube.com/watch?v=${test.videoId}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1395,12 +1390,12 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
                 >
                   Watch Testimonial
                 </a> */}
-              </div>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
           </div>
-        </div>
-      </Section>
+        </Section>
       </div>
 
       {/* Patient Stories Section */}
@@ -1435,54 +1430,54 @@ Our commitment to patient care, combined with state-of-the-art technology and a 
 
       {/* Our Blogs Section */}
       <div className="bg-gray-50">
-      <Section
-        title="Our Blogs"
-        description="Insights, health tips, and hospital updates."
-        showViewAll={true}
-        viewAllLink="/blogs"
-      >
-        {/* Mobile: Horizontal Scroll, Desktop: Grid */}
-        <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
-          {loadingBlogs ? (
-            <div className="flex justify-center items-center py-12">
-              <div className="text-gray-500">Loading blogs...</div>
-            </div>
-          ) : (
-            <div className="flex md:grid md:grid-cols-4 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
-              {blogs.map((blog, index) => (
-                <a
-                  key={blog.title + index}
-                  href={blog.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-shrink-0 w-[85%] md:w-auto snap-center bg-white border border-[#F9771B]/20 rounded-xl overflow-hidden flex flex-col shadow hover:shadow-lg transition group"
-                >
-                  <img
-                    src={blog.img}
-                    alt={blog.title}
-                    className="w-full h-36 object-cover group-hover:opacity-90 transition"
-                  />
-                  <div className="p-4 flex-1 flex flex-col">
-                    <div className="font-bold text-[#0191C7] mb-1">{blog.title}</div>
-                    {blog.date && (
-                      <p className="text-xs text-gray-500 mb-2">{blog.date}</p>
-                    )}
-                    <div className="text-gray-600 text-sm mb-2 flex-1">{blog.excerpt}</div>
-                    <span className="text-[#F9771B] text-sm mt-auto hover:underline">
-                      Read More
-                    </span>
-                  </div>
-                </a>
-              ))}
-            </div>
-          )}
-        </div>
-      </Section>
+        <Section
+          title="Our Blogs"
+          description="Insights, health tips, and hospital updates."
+          showViewAll={true}
+          viewAllLink="/blogs"
+        >
+          {/* Mobile: Horizontal Scroll, Desktop: Grid */}
+          <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
+            {loadingBlogs ? (
+              <div className="flex justify-center items-center py-12">
+                <div className="text-gray-500">Loading blogs...</div>
+              </div>
+            ) : (
+              <div className="flex md:grid md:grid-cols-4 gap-6 md:gap-8 snap-x snap-mandatory md:snap-none">
+                {blogs.map((blog, index) => (
+                  <a
+                    key={blog.title + index}
+                    href={blog.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 w-[85%] md:w-auto snap-center bg-white border border-[#F9771B]/20 rounded-xl overflow-hidden flex flex-col shadow hover:shadow-lg transition group"
+                  >
+                    <img
+                      src={blog.img}
+                      alt={blog.title}
+                      className="w-full h-36 object-cover group-hover:opacity-90 transition"
+                    />
+                    <div className="p-4 flex-1 flex flex-col">
+                      <div className="font-bold text-[#0191C7] mb-1">{blog.title}</div>
+                      {blog.date && (
+                        <p className="text-xs text-gray-500 mb-2">{blog.date}</p>
+                      )}
+                      <div className="text-gray-600 text-sm mb-2 flex-1">{blog.excerpt}</div>
+                      <span className="text-[#F9771B] text-sm mt-auto hover:underline">
+                        Read More
+                      </span>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        </Section>
       </div>
 
       {/* News & Media Section */}
       <div className="bg-white">
-      <NewsMediaCompact />
+        <NewsMediaCompact />
       </div>
 
       {/* YouTube Video Modal */}

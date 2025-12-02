@@ -59,47 +59,47 @@ const Header = () => {
   }, [location]);
 
   const specialties = [
-  {
-    category: "Centres of Excellence",
-    items: [
-    "Cardiology",
-    "Critical Care ",
-     "Emergency",
-    "Gastroenterology",
-    "Minimal Access Surgery",
-    "Nephrology",
-    "Neurosciences",
-    "Oncology (Cancer Care)",
-    "Orthopaedics & Joint Replacement",
-    "Pulmonology",
-    "Internal Medicine",
-    "Urology",
-    "Obstetrics & Gynaecology"]
+    {
+      category: "Centres of Excellence",
+      items: [
+        "Cardiology",
+        "Critical Care ",
+        "Emergency",
+        "Gastroenterology",
+        "Minimal Access Surgery",
+        "Nephrology",
+        "Neurosciences",
+        "Oncology (Cancer Care)",
+        "Orthopaedics & Joint Replacement",
+        "Pulmonology",
+        "Internal Medicine",
+        "Urology",
+        "Obstetrics & Gynaecology"]
 
-  },
-  {
-    category: "Allied Specialties",
-    items: [
-    "Aesthetic & Reconstructive Surgery",
-    "Dental",
-    "Dermatology",
-    "ENT",
-    "Eye Care",
-    "Nutrition & Dietetics",
-    "Pediatrics & Neonatology",
-    "Physiotherapy & Rehabilitation",
-    "Psychiatry & Mental Health"]
+    },
+    {
+      category: "Allied Specialties",
+      items: [
+        "Aesthetic & Reconstructive Surgery",
+        "Dental",
+        "Dermatology",
+        "ENT",
+        "Eye Care",
+        "Nutrition & Dietetics",
+        "Pediatrics & Neonatology",
+        "Physiotherapy & Rehabilitation",
+        "Psychiatry & Mental Health"]
 
-  },
-  {
-    category: "Advanced Diagnostics",
-    items: [
-    "Radiology",
-    "Cardiology",
-    "Neurology",
-    "FNAC, Biopsy, Blood & Laboratory Investigations"]
+    },
+    {
+      category: "Advanced Diagnostics",
+      items: [
+        "Radiology",
+        // "Cardiology",
+        "Neurology",
+        "FNAC, Biopsy, Blood & Laboratory Investigations"]
 
-  }];
+    }];
 
 
 
@@ -161,152 +161,148 @@ const Header = () => {
   return (
     <>
       {/* Top Orange Bar with light orange background */}
- <div className="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-2 sm:py-1 fixed top-0 left-0 right-0 z-50 shadow-sm">
-  <div className="max-w-7xl mx-auto px-3 sm:px-4">
-    
-    {/* Mobile Layout - Stacked */}
-    <div className="flex flex-col space-y-2 sm:hidden">
-      {/* Top Row - Social Media & Location */}
-      <div className="flex items-center justify-center space-x-4">
-        {/* Social Media Icons */}
-        <div className="flex items-center space-x-3">
-          <a href="https://www.facebook.com/RajHospitals" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
-            <SafeIcon icon={FiFacebook} className="w-4 h-4" />
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
-            <SafeIcon icon={FiInstagram} className="w-4 h-4" />
-          </a>
-          <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
-            <SafeIcon icon={FiYoutube} className="w-4 h-4" />
-          </a>
-        </div>
+      <div className="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-2 sm:py-1 fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4">
 
-        {/* Location Icon */}
-        <a href="/location" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
-          <SafeIcon icon={FiMapPin} className="w-4 h-4" />
-          <span className="text-xs font-medium">Location</span>
-        </a>
-      </div>
+          {/* Mobile Layout - Stacked */}
+          <div className="flex flex-col space-y-2 sm:hidden">
+            {/* Top Row - Social Media & Location */}
+            <div className="flex items-center justify-center space-x-4">
+              {/* Social Media Icons */}
+              <div className="flex items-center space-x-3">
+                <a href="https://www.facebook.com/RajHospitals" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+                  <SafeIcon icon={FiFacebook} className="w-4 h-4" />
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+                  <SafeIcon icon={FiInstagram} className="w-4 h-4" />
+                </a>
+                <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+                  <SafeIcon icon={FiYoutube} className="w-4 h-4" />
+                </a>
+              </div>
 
-      {/* Bottom Row - Helpline */}
-      <div className="flex items-center justify-center">
-        <div className="flex items-center space-x-2">
-          <SafeIcon icon={FiBell} className="w-4 h-4 text-red-300" />
-          <a href="tel:+919771488888" className="text-xs font-medium hover:underline">
-            (24×7) Helpline: +91 97714 88888
-          </a>
-        </div>
-      </div>
-    </div>
+              {/* Location Icon */}
+              <a href="/location" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+                <SafeIcon icon={FiMapPin} className="w-4 h-4" />
+                <span className="text-xs font-medium">Location</span>
+              </a>
+            </div>
 
-    {/* Desktop Layout - Horizontal */}
-    <div className="hidden sm:flex justify-between items-center gap-4">
-      {/* Left Side - Social Media Icons & Location */}
-      <div className="flex items-center space-x-4">
-        {/* Social Media Icons */}
-        <div className="flex items-center space-x-2">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
-            <SafeIcon icon={FiFacebook} className="w-4 h-4" />
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
-            <SafeIcon icon={FiInstagram} className="w-4 h-4" />
-          </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
-            <SafeIcon icon={FiYoutube} className="w-4 h-4" />
-          </a>
-        </div>
-        
-        {/* Location Icon */}
-        <a href="/location" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
-          <SafeIcon icon={FiMapPin} className="w-4 h-4" />
-          <span className="text-sm font-medium">Location</span>
-        </a>
-      </div>
+            {/* Bottom Row - Helpline */}
+            <div className="flex items-center justify-center">
+              <div className="flex items-center space-x-2">
+                <SafeIcon icon={FiBell} className="w-4 h-4 text-red-300" />
+                <a href="tel:+919771488888" className="text-xs font-medium hover:underline">
+                  (24×7) Helpline: +91 97714 88888
+                </a>
+              </div>
+            </div>
+          </div>
 
-      {/* Right Side - Helpline */}
-      <div className="flex items-center">
-        <div className="flex items-center space-x-2">
-          <SafeIcon icon={FiBell} className="w-4 h-4 text-red-300" />
-          <a href="tel:+919771488888" className="text-sm font-medium hover:underline">
-            (24×7) Helpline: +91 97714 88888
-          </a>
+          {/* Desktop Layout - Horizontal */}
+          <div className="hidden sm:flex justify-between items-center gap-4">
+            {/* Left Side - Social Media Icons & Location */}
+            <div className="flex items-center space-x-4">
+              {/* Social Media Icons */}
+              <div className="flex items-center space-x-2">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+                  <SafeIcon icon={FiFacebook} className="w-4 h-4" />
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+                  <SafeIcon icon={FiInstagram} className="w-4 h-4" />
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+                  <SafeIcon icon={FiYoutube} className="w-4 h-4" />
+                </a>
+              </div>
+
+              {/* Location Icon */}
+              <a href="/location" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+                <SafeIcon icon={FiMapPin} className="w-4 h-4" />
+                <span className="text-sm font-medium">Location</span>
+              </a>
+            </div>
+
+            {/* Right Side - Helpline */}
+            <div className="flex items-center">
+              <div className="flex items-center space-x-2">
+                <SafeIcon icon={FiBell} className="w-4 h-4 text-red-300" />
+                <a href="tel:+919771488888" className="text-sm font-medium hover:underline">
+                  (24×7) Helpline: +91 97714 88888
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
       </div>
 
 
       {/* Main Header with dynamic height */}
-      <header className={`fixed w-full z-40 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-lg top-[48px] sm:top-6' : 'bg-white top-[48px] sm:top-6'}`
+      <header className={`fixed w-full z-40 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg top-[48px] sm:top-6' : 'bg-white top-[48px] sm:top-6'}`
       }>
         <div className="max-w-7xl mx-auto px-4">
           {/* Logo and Main Container with fixed height - responsive */}
           <div className="flex items-center justify-between h-16 md:h-20 lg:h-24">
-              {/* Logo with responsive and dynamic sizing */}
-              <Link to="/" className="flex items-center">
-                <div className={`flex items-center transition-all duration-300 ${
-              showMiddleRow ?
-              'space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-6' :
-              'space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6'}`
+            {/* Logo with responsive and dynamic sizing */}
+            <Link to="/" className="flex items-center">
+              <div className={`flex items-center transition-all duration-300 ${showMiddleRow ?
+                  'space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-6' :
+                  'space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6'}`
               }>
-                  {/* Main Logo - Responsive and dynamic sizing */}
-                  <img
+                {/* Main Logo - Responsive and dynamic sizing */}
+                <img
                   src="/assets/Header/main-logo_ranchi.png"
                   alt="Main Logo"
-                  className={`object-contain transition-all duration-300 ${
-                  showMiddleRow ?
-                  'w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px]' // Both rows visible
-                  : 'w-[80px] h-[80px] sm:w-[110px] sm:h-[110px] md:w-[130px] md:h-[130px] lg:w-[140px] lg:h-[140px]' // One row visible - mobile stays same size
-                  }`} />
+                  className={`object-contain transition-all duration-300 ${showMiddleRow ?
+                      'w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px]' // Both rows visible
+                      : 'w-[80px] h-[80px] sm:w-[110px] sm:h-[110px] md:w-[130px] md:h-[130px] lg:w-[140px] lg:h-[140px]' // One row visible - mobile stays same size
+                    }`} />
 
 
-                  {/* NABH Logos - Responsive and dynamic sizing */}
-                  <div className={`flex transition-all duration-300 ${
-                showMiddleRow ?
-                'space-x-1 sm:space-x-2 md:space-x-2 lg:space-x-2' :
-                'space-x-1 sm:space-x-3 md:space-x-2 lg:space-x-2'}`
+                {/* NABH Logos - Responsive and dynamic sizing */}
+                <div className={`flex transition-all duration-300 ${showMiddleRow ?
+                    'space-x-1 sm:space-x-2 md:space-x-2 lg:space-x-2' :
+                    'space-x-1 sm:space-x-3 md:space-x-2 lg:space-x-2'}`
                 }>
-                    <img
+                  <img
                     src="/assets/Header/NABL_logo-1.png"
                     alt="NABH Logo 1"
                     className="object-contain w-[30px] h-[30px]" />
 
-                    <img
+                  <img
                     src="/assets/Header/NABL-Logo-2.png"
                     alt="NABH Logo 2"
                     className="object-contain w-[30px] h-[30px]" />
 
-                    <img
+                  <img
                     src="/assets/Header/NABL-Logo-3.png"
                     alt="NABH Logo 3"
                     className="object-contain w-[30px] h-[30px]" />
 
-                  </div>
                 </div>
-              </Link>
+              </div>
+            </Link>
 
-              {/* Navigation Container - Responsive */}
-              <div className="hidden md:flex lg:flex flex-col items-end space-y-1 lg:space-y-2">
-                
-                {/* First Row of Navigation - Animated hide/show */}
-                <AnimatePresence>
-                  {showMiddleRow &&
-                <motion.nav
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.3, ease: 'easeInOut' }}
-                  className="flex items-center space-x-3 md:space-x-4 lg:space-x-6 overflow-hidden">
+            {/* Navigation Container - Responsive */}
+            <div className="hidden md:flex lg:flex flex-col items-end space-y-1 lg:space-y-2">
 
-               
-                                      <Link to="/" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
-                    Home
-                  </Link>
-                
+              {/* First Row of Navigation - Animated hide/show */}
+              <AnimatePresence>
+                {showMiddleRow &&
+                  <motion.nav
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3, ease: 'easeInOut' }}
+                    className="flex items-center space-x-3 md:space-x-4 lg:space-x-6 overflow-hidden">
 
-                      {/* <div
+
+                    <Link to="/" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                      Home
+                    </Link>
+
+
+                    {/* <div
                     className="relative cursor-pointer"
                     onMouseEnter={() => setIsNewsOpen(true)}
                     onMouseLeave={() => setIsNewsOpen(false)}>
@@ -335,50 +331,50 @@ const Header = () => {
                         </AnimatePresence>
                       </div> */}
 
-                   
 
-                               <Link to="/testimonials" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
-                    Testimonials
-                  </Link>
 
-                     <Link to="/careers" className="text-orange-500 hover:text-orange-600 transition-colors font-medium text-sm lg:text-base">
-                        Careers
-                      </Link>
-                      
-                      <Link to="/news-media" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
-                        News & Media
-                      </Link>
+                    <Link to="/testimonials" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                      Testimonials
+                    </Link>
 
-               
-                    </motion.nav>
+                    <Link to="/careers" className="text-orange-500 hover:text-orange-600 transition-colors font-medium text-sm lg:text-base">
+                      Careers
+                    </Link>
+
+                    <Link to="/news-media" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                      News & Media
+                    </Link>
+
+
+                  </motion.nav>
                 }
-                </AnimatePresence>
+              </AnimatePresence>
 
-                {/* Second Row of Navigation - Always visible, responsive */}
-                <nav className="flex items-center space-x-3 md:space-x-4 lg:space-x-6">
+              {/* Second Row of Navigation - Always visible, responsive */}
+              <nav className="flex items-center space-x-3 md:space-x-4 lg:space-x-6">
 
 
-        <Link to="/about" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
-                        About Raj
-                      </Link>
+                <Link to="/about" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                  About Raj
+                </Link>
 
-                  <div
+                <div
                   className="relative cursor-pointer"
                   onMouseEnter={() => setIsSpecialtiesOpen(true)}
                   onMouseLeave={() => setIsSpecialtiesOpen(false)}>
 
-                    <div className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
-                      <span>Specialities</span>
-                      <SafeIcon icon={FiChevronDown} className="w-3 h-3" />
-                    </div>
-                    <AnimatePresence>
-                  {isSpecialtiesOpen &&
-                    <motion.div
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      transition={{ duration: 0.25, ease: "easeOut" }}
-                      className="absolute top-full mt-4 z-20
+                  <div className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                    <span>Specialities</span>
+                    <SafeIcon icon={FiChevronDown} className="w-3 h-3" />
+                  </div>
+                  <AnimatePresence>
+                    {isSpecialtiesOpen &&
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.25, ease: "easeOut" }}
+                        className="absolute top-full mt-4 z-20
                /* Position: right-aligned but with left constraint to prevent overflow */
                left-auto right-0
                /* Mobile: full width with margin */
@@ -2739,7 +2735,7 @@ const Header = () => {
 
 
 
-    <div className="grid gap-6
+                        <div className="grid gap-6
                     /* Mobile: single column */
                     grid-cols-1
                     /* Small tablets: 2 columns */
@@ -3682,10 +3678,10 @@ const Header = () => {
 
 
 
-      {specialties.map((category, idx) =>
-                        <div key={idx} className="flex flex-col">
-          {/* Category Heading */}
-          <h4 className="font-semibold text-orange-600 uppercase tracking-wide mb-3 
+                          {specialties.map((category, idx) =>
+                            <div key={idx} className="flex flex-col">
+                              {/* Category Heading */}
+                              <h4 className="font-semibold text-orange-600 uppercase tracking-wide mb-3 
                          border-b border-orange-200 pb-2
                          /* Mobile: smaller text */
                          text-xs
@@ -4471,16 +4467,16 @@ const Header = () => {
 
 
 
-            {category.category}
-          </h4>
-          
-          {/* Items */}
-          <div className="flex flex-col gap-1.5">
-            {category.items.map((specialty) =>
-                            <Link
-                              key={specialty}
-                              to={`/specialties/${specialtyToSlug(specialty, category.category)}`}
-                              className="px-3 py-2 text-gray-700 leading-tight
+                                {category.category}
+                              </h4>
+
+                              {/* Items */}
+                              <div className="flex flex-col gap-1.5">
+                                {category.items.map((specialty) =>
+                                  <Link
+                                    key={specialty}
+                                    to={`/specialties/${specialtyToSlug(specialty, category.category)}`}
+                                    className="px-3 py-2 text-gray-700 leading-tight
                            hover:bg-orange-50 hover:text-orange-600
                            hover:scale-[1.01] transition-all duration-200
                            rounded-lg border border-transparent
@@ -6052,60 +6048,60 @@ const Header = () => {
 
 
 
-                {specialty}
-              </Link>
-                            )}
-          </div>
-        </div>
-                        )}
-    </div>
-    
-    {/* Mobile: Add scroll indicator if needed */}
-    <div className="block sm:hidden mt-4 text-center">
-      <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto"></div>
-    </div>
-  </motion.div>
+                                    {specialty}
+                                  </Link>
+                                )}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+
+                        {/* Mobile: Add scroll indicator if needed */}
+                        <div className="block sm:hidden mt-4 text-center">
+                          <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto"></div>
+                        </div>
+                      </motion.div>
                     }
-                    </AnimatePresence>
-                  </div>
+                  </AnimatePresence>
+                </div>
 
-            
 
-                  <Link to="/doctors" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
-                    Find a Doctor
-                  </Link>
 
-             
+                <Link to="/doctors" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                  Find a Doctor
+                </Link>
 
- <div className="flex items-center space-x-3 ml-2 lg:ml-4">
-  <Link
+
+
+                <div className="flex items-center space-x-3 ml-2 lg:ml-4">
+                  <Link
                     to="/contact"
                     className="bg-orange-500 text-white px-4 lg:px-7 py-2 lg:py-2.5 rounded-full hover:bg-orange-600 transition-colors font-semibold text-sm lg:text-base shadow-md">
 
-    Book Appointment
-  </Link>
+                    Book Appointment
+                  </Link>
                 </div>
-                </nav>
-              </div>
+              </nav>
+            </div>
 
-              {/* Mobile Menu Button - Responsive */}
-              <button
+            {/* Mobile Menu Button - Responsive */}
+            <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="md:hidden p-2 text-gray-700">
 
-                <SafeIcon icon={isMobileMenuOpen ? FiX : FiMenu} className="w-5 h-5 sm:w-6 sm:h-6" />
-              </button>
-            </div>
+              <SafeIcon icon={isMobileMenuOpen ? FiX : FiMenu} className="w-5 h-5 sm:w-6 sm:h-6" />
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
         <AnimatePresence>
           {isMobileMenuOpen &&
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-gray-100 max-h-[80vh] overflow-y-auto">
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="lg:hidden bg-white border-t border-gray-100 max-h-[80vh] overflow-y-auto">
 
               <div className="px-4 py-4 space-y-3">
                 <Link to="/" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
@@ -6193,7 +6189,7 @@ const Header = () => {
       </header>
 
       {/* Responsive Dynamic Spacer for fixed header */}
-     
+
     </>);
 
 };
