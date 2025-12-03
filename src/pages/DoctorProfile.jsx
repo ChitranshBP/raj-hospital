@@ -229,8 +229,8 @@ export const doctorsData = [
       'Medical Education & Research Methodology'
     ],
     education: [
-      { degree: 'MBBS', institution: 'Kaithal Medical College', year: '' },
-      { degree: 'MD (Anaesthesiology)', institution: 'Kaithal Medical College', year: '' },
+      { degree: 'MBBS', institution: 'Kathihar Medical College', year: '' },
+      { degree: 'MD (Anaesthesiology)', institution: 'Kathihar Medical College', year: '' },
       { degree: 'PDCC (Cardiac Anaesthesia)', institution: 'RIMS, Ranchi', year: '' }
     ],
     memberships: [
@@ -296,10 +296,10 @@ export const doctorsData = [
     name: 'Dr. Shyam Prasad',
     qualifications: 'MBBS, MD MEM',
     specialty: 'Emergency',
-    experience: '5+ Years',
+    experience: '12+ Years',
     image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Emergency - Dr. Shyam-Prasad.png',
     specialtyIcon: '', // No icon provided
-    description: 'Dr. Shyam Prasad is an experienced emergency medicine specialist with over 5 years of practice. He serves as the Consultant Head of the Department of Emergency at Raj Hospital and is affiliated with SEMI. He is dedicated to handling all kinds of emergency medical situations and trauma care.',
+    description: 'Dr. Shyam Prasad is an experienced emergency medicine specialist with over 12 years of practice. He serves as the Consultant Head of the Department of Emergency at Raj Hospital and is affiliated with SEMI. He is dedicated to handling all kinds of emergency medical situations and trauma care.',
     expertise: [
       'Emergency Medical Care',
       'All Types of Trauma'
@@ -331,7 +331,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Internal Medicine), DNB Super Specialty',
     specialty: 'Gastroenterology',
     experience: '12 Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gastroenterologist - Dr. Ravish-Ranjan.png',
+    image: '/assets/Doc-Side/Gastroenterologist - Dr. Ravish Ranjan.png',
     specialtyIcon: '', // No icon provided
     description: 'Dr. Ravish Ranjan is an experienced gastroenterologist specializing in advanced diagnostic and therapeutic endoscopy with 12 years of expertise. He is dedicated to providing personalized and comprehensive care for complex gastrointestinal conditions.',
     expertise: [
@@ -510,11 +510,11 @@ export const doctorsData = [
     name: 'Dr. Avinash Kumar Dubey',
     qualifications: 'MD (Internal Medicine), DM (Nephrology)',
     specialty: 'Nephrology',
-    experience: '10+ Years',
+    experience: '15+ Years',
     image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Nephrologist - Dr. Avinas- Kumar-Dubey.png',
     specialtyIcon: '', // No icon provided
     description:
-      'Dr. Avinash Kumar Dubey is a distinguished Nephrologist with over 10 years of experience, specializing in kidney transplantation, chronic kidney disease, and preventive nephrology. He is recognized for his thorough diagnostic approach and compassionate patient care.',
+      'Dr. Avinash Kumar Dubey is a distinguished Nephrologist with over 15 years of experience, specializing in kidney transplantation, chronic kidney disease, and preventive nephrology. He is recognized for his thorough diagnostic approach and compassionate patient care.',
     expertise: [
       'Kidney transplantation',
       'Chronic Kidney Disease (CKD)',
@@ -585,11 +585,11 @@ export const doctorsData = [
     name: 'Dr. P K Raina',
     qualifications: 'MBBS, MS (Surgery)',
     specialty: 'Oncology',
-    experience: '14+ Years',
+    experience: '20+ Years',
     image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Oncologist - Dr. P-K-Raina.png',
     specialtyIcon: medicalIcons.oncology,
     description:
-      'Dr. P K Raina is a skilled oncologist and surgeon with over 14 years of experience. His areas of interest include Head & Neck Cancer, Breast Cancer, and Gynae Oncology, focusing on comprehensive cancer care and surgical oncology.',
+      'Dr. P K Raina is a skilled oncologist and surgeon with over 20 years of experience. His areas of interest include Head & Neck Cancer, Breast Cancer, and Gynae Oncology, focusing on comprehensive cancer care and surgical oncology.',
     expertise: [
       'Head & Neck Cancer',
       'Breast Cancer',
@@ -962,11 +962,11 @@ export const doctorsData = [
     name: 'Dr. Suprova Chakraborty',
     qualifications: 'DNB Respiratory Medicine',
     specialty: 'Pulmonology',
-    experience: '18+ Years',
+    experience: '12+ Years',
     image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Pulmonologist - Dr. Suprova-Chakraborty.png',
     specialtyIcon: medicalIcons.pulmonology,
     description:
-      'Dr. Suprova Chakraborty is an experienced pulmonologist with over 18 years specializing in respiratory medicine. She has worked as Senior Resident at IPGMER-SSKM Hospital Kolkata and AIIMS Deoghar, and as Consultant at Hayat Hospital & Down Town Hospital in Guwahati.',
+      'Dr. Suprova Chakraborty is an experienced pulmonologist with over 12 years specializing in respiratory medicine. She has worked as Senior Resident at IPGMER-SSKM Hospital Kolkata and AIIMS Deoghar, and as Consultant at Hayat Hospital & Down Town Hospital in Guwahati.',
     expertise: [
       'Allergies',
       'Asthma and Lung Disease Treatment',
@@ -1002,11 +1002,11 @@ export const doctorsData = [
     name: 'Dr. Sunil Kumar',
     qualifications: 'MBBS, MS (General Surgery), MCh (Urology)',
     specialty: 'Urology',
-    experience: '12+ Years',
+    experience: '18+ Years',
     image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Sunil-Kumar.png',
     specialtyIcon: medicalIcons.urology,
     description:
-      'Dr. Sunil Kumar is a senior urologist with over 12 years of experience. He specializes in robotic surgery, renal transplantation, laparoscopic procedures, endourology, uro-oncology, male infertility, and vascular access for hemodialysis.',
+      'Dr. Sunil Kumar is a senior urologist with over 18 years of experience. He specializes in robotic surgery, renal transplantation, laparoscopic procedures, endourology, uro-oncology, male infertility, and vascular access for hemodialysis.',
     expertise: [
       'Robotic Surgery',
       'Renal Transplantation',
@@ -1054,11 +1054,11 @@ export const doctorsData = [
     name: 'Dr. Ved Prakash Verma',
     qualifications: 'MBBS, MS (General Surgery), MCh (Urology)',
     specialty: 'Urology',
-    experience: '9+ Years',
+    experience: '18+ Years',
     image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Ved-Prakash-Verma.png',
     specialtyIcon: medicalIcons.urology,
     description:
-      'Dr. Ved Prakash is a urologist with over 9 years of experience specializing in endourology, reconstructive urology, uro-oncology, laparoscopic surgery, and andrology including male infertility.',
+      'Dr. Ved Prakash is a urologist with over 18 years of experience specializing in endourology, reconstructive urology, uro-oncology, laparoscopic surgery, and andrology including male infertility.',
     expertise: [
       'Endourology',
       'Reconstructive Urology',
@@ -1162,11 +1162,11 @@ export const doctorsData = [
     name: 'Dr. Pushpa Sinha',
     qualifications: 'MBBS, MD (OBG), DGO',
     specialty: 'Obstetrics & Gynaecology',
-    experience: '10+ Years',
+    experience: '15+ Years',
     image: '/assets/Doc-Side/Gyanecologist - Dr. Pushpa Sinha.png',
     specialtyIcon: medicalIcons.obstetricsGynecology,
     description:
-      'Dr. Pushpa Sinha has over 10 years of experience in obstetrics and gynaecology, with interests in research on gynae and obstetric care, high-risk pregnancy, adolescent gynecology, puberty, infertility, menopause, infectious diseases, and ultrasound with color Doppler.',
+      'Dr. Pushpa Sinha has over 15 years of experience in obstetrics and gynaecology, with interests in research on gynae and obstetric care, high-risk pregnancy, adolescent gynecology, puberty, infertility, menopause, infectious diseases, and ultrasound with color Doppler.',
     expertise: [
       'Research in Gynae & Obstetric Care',
       'High Risk of Pregnancy',
@@ -1208,49 +1208,49 @@ export const doctorsData = [
 
   //aesthetics & critical care
 
-  // {
-  //   id: 'pankaj-kumar',
-  //   name: 'Dr. Pankaj Kumar',
-  //   qualifications: 'MBBS, MS (General Surgery), MCh (Plastic Surgery)',
-  //   specialty: 'Aesthetic and Reconstructive Surgery',
-  //   experience: '10+ Years',
-  //   image: '',
-  //   specialtyIcon: medicalIcons.plasticSurgery,
-  //   description:
-  //     'Dr. Pankaj Kumar is a renowned Plastic, Cosmetic, and Reconstructive Surgeon based in Ranchi with over 10 years of experience. He is associated with Raj Hospital and Srijan Plastic Cosmetic and Micro Surgery Clinic, known for attention to accurate diagnosis and empathetic patient care.',
-  //   expertise: [
-  //     'Nose Reshaping',
-  //     'Lower Body Lift',
-  //     'Scar Revision Surgery',
-  //     'Ear Reconstruction',
-  //     'Acne/Pimple Scar Treatment',
-  //     'Non-Surgical Eye Lift'
-  //   ],
-  //   procedures: [],
-  //   education: [
-  //     {
-  //       degree: 'MCh (Plastic Surgery)',
-  //       institution: 'Patna Medical College',
-  //       year: ''
-  //     },
-  //     {
-  //       degree: 'MBBS',
-  //       institution: 'Tilka Manjhi Bhagalpur University',
-  //       year: ''
-  //     }
-  //   ],
-  //   memberships: [],
-  //   awards: [
-  //     { title: 'Global Healthcare Excellence Award', year: '' }
-  //   ],
-  //   publications: [],
-  //   contact: {
-  //     email: '',
-  //     phone: '+919263630500',
-  //     clinic: 'Srijan Plastic Cosmetic & Micro Surgery Clinic, Kanka, Ranchi',
-  //     address: '2nd Floor, Roshpa Tower, Mahatma Gandhi Main Road, Ranchi'
-  //   }
-  // },
+  {
+    id: 'pankaj-kumar',
+    name: 'Dr. Pankaj Kumar',
+    qualifications: 'MBBS, MS (General Surgery), MCh (Plastic Surgery)',
+    specialty: 'Aesthetic and Reconstructive Surgery',
+    experience: '12+ Years',
+    image: '',
+    specialtyIcon: medicalIcons.plasticSurgery,
+    description:
+      'Dr. Pankaj Kumar is a renowned Plastic, Cosmetic, and Reconstructive Surgeon based in Ranchi with over 10 years of experience. He is associated with Raj Hospital and Srijan Plastic Cosmetic and Micro Surgery Clinic, known for attention to accurate diagnosis and empathetic patient care.',
+    expertise: [
+      'Nose Reshaping',
+      'Lower Body Lift',
+      'Scar Revision Surgery',
+      'Ear Reconstruction',
+      'Acne/Pimple Scar Treatment',
+      'Non-Surgical Eye Lift'
+    ],
+    procedures: [],
+    education: [
+      {
+        degree: 'MCh (Plastic Surgery)',
+        institution: 'Patna Medical College',
+        year: ''
+      },
+      {
+        degree: 'MBBS',
+        institution: 'Tilka Manjhi Bhagalpur University',
+        year: ''
+      }
+    ],
+    memberships: [],
+    awards: [
+      { title: 'Global Healthcare Excellence Award', year: '' }
+    ],
+    publications: [],
+    contact: {
+      email: '',
+      phone: '+919263630500',
+      clinic: 'Srijan Plastic Cosmetic & Micro Surgery Clinic, Kanka, Ranchi',
+      address: '2nd Floor, Roshpa Tower, Mahatma Gandhi Main Road, Ranchi'
+    }
+  },
 
   // new profile added
 
@@ -1360,11 +1360,11 @@ export const doctorsData = [
     name: 'Dr. Piyali Banerjee',
     qualifications: 'MBBS, DVDL (Dermatology, Venereology, Leprosy)',
     specialty: 'Dermatology and Cosmetology',
-    experience: '5+ Years',
+    experience: '12+ Years',
     image: 'assets/Doc-Side/Dr Piyali Banerjee(Derma).webp',
     specialtyIcon: medicalIcons.dermatology,
     description:
-      'Dr. Piyali Banerjee is a skilled dermatologist and cosmetologist with over 5 years of experience, specializing in hair disorders, acne, and cosmetology. She has held advisory roles and received multiple awards for her academic and clinical excellence.',
+      'Dr. Piyali Banerjee is a skilled dermatologist and cosmetologist with over 12 years of experience, specializing in hair disorders, acne, and cosmetology. She has held advisory roles and received multiple awards for her academic and clinical excellence.',
     expertise: [
       'Hair Disorder',
       'Acne',
@@ -1631,11 +1631,11 @@ export const doctorsData = [
     name: 'Dr. Abhay Kumar Pandey',
     qualifications: 'BPT, MPT, PGDYT, COMT, MIAP',
     specialty: 'Physiotherapy',
-    experience: '25+ Years',
+    experience: '16+ Years',
     image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Physiotherapist - Dr. Abhay-Kumar-Pandey.png',
     specialtyIcon: medicalIcons.physiotherapy,
     description:
-      'Dr. Abhay Kr Pandey is a senior physiotherapist at Raj Hospital, Ranchi, with over 25 years of experience specializing in orthopedic and traumatology physiotherapy, yoga therapy, and manual therapy. His interests include cardiology, heart problems, and chest-related issues.',
+      'Dr. Abhay Kr Pandey is a senior physiotherapist at Raj Hospital, Ranchi, with over 16 years of experience specializing in orthopedic and traumatology physiotherapy, yoga therapy, and manual therapy. His interests include cardiology, heart problems, and chest-related issues.',
     expertise: [
       'Orthopedic & Traumatology Physiotherapy',
       'Yoga Therapy',
@@ -1736,7 +1736,7 @@ export const doctorsData = [
     qualifications: 'M.B.B.S (Gold Medalist), M.D. (Dermatology, Venereology & Leprosy), M.D. (Physiology), A.C.S.I Fellowship in Dermatosurgery',
     specialty: 'Dermatology, Dermatosurgery & Aesthetics',
     experience: '10+ Years',
-    image: '', // No image provided
+    image: 'assets/Doc-Front/Dr-Shaista-Huma.png', // No image provided
     specialtyIcon: '', // No icon provided
     description:
       'Dr. Shaista Huma is a respected dermatologist and dermatosurgeon with over 10 years of experience. She specializes in clinical dermatology, aesthetic dermatology, and advanced dermatosurgical procedures, committed to patient-centric, modern skin care treatments.',
@@ -1915,40 +1915,40 @@ export const doctorsData = [
     }
   },
 
-  {
-    id: 'vikash-sharma',
-    name: 'Dr. Vikash Sharma',
-    qualifications: 'BDS - Army College Of Dental Science, Secunderabad; MDS - Government Dental College And Hospital, Ahmedabad',
-    specialty: 'Oral And Maxillofacial Surgery',
-    experience: '9+ Years',
-    description: `Dr. Vikash Sharma is an experienced oral and maxillofacial surgeon with over 9 years of clinical practice. His areas of expertise include dental surgery, smile design, dental rehabilitation, dental implants, maxillofacial trauma and pathology, TMJ surgery, orthognathic surgery, facial aesthetic surgery, and head and neck oncology. He is known for providing comprehensive treatment in advanced dental and maxillofacial procedures.`,
-    expertise: [
-      'Dental Surgery',
-      'Smile Design',
-      'Dental Rehabilitation',
-      'Dental Implants',
-      'Maxillofacial Trauma',
-      'Maxillofacial Pathology',
-      'TMJ Surgery',
-      'Orthognathic Surgery',
-      'Facial Aesthetic Surgery',
-      'Head And Neck Oncology'
-    ],
-    education: [
-      { degree: 'BDS', institution: 'Army College Of Dental Science, Secunderabad', year: '' },
-      { degree: 'MDS', institution: 'Government Dental College And Hospital, Ahmedabad', year: '' }
-    ],
-    memberships: [], // Not specified
-    awards: [], // Not specified
-    procedures: [], // Not specified
-    publications: [], // Not specified
-    contact: {
-      phone: '+919263630500',
-      email: '',
-      clinic: '',
-      address: ''
-    }
-  },
+  // {
+  //   id: 'vikash-sharma',
+  //   name: 'Dr. Vikash Sharma',
+  //   qualifications: 'BDS - Army College Of Dental Science, Secunderabad; MDS - Government Dental College And Hospital, Ahmedabad',
+  //   specialty: 'Oral And Maxillofacial Surgery',
+  //   experience: '9+ Years',
+  //   description: `Dr. Vikash Sharma is an experienced oral and maxillofacial surgeon with over 9 years of clinical practice. His areas of expertise include dental surgery, smile design, dental rehabilitation, dental implants, maxillofacial trauma and pathology, TMJ surgery, orthognathic surgery, facial aesthetic surgery, and head and neck oncology. He is known for providing comprehensive treatment in advanced dental and maxillofacial procedures.`,
+  //   expertise: [
+  //     'Dental Surgery',
+  //     'Smile Design',
+  //     'Dental Rehabilitation',
+  //     'Dental Implants',
+  //     'Maxillofacial Trauma',
+  //     'Maxillofacial Pathology',
+  //     'TMJ Surgery',
+  //     'Orthognathic Surgery',
+  //     'Facial Aesthetic Surgery',
+  //     'Head And Neck Oncology'
+  //   ],
+  //   education: [
+  //     { degree: 'BDS', institution: 'Army College Of Dental Science, Secunderabad', year: '' },
+  //     { degree: 'MDS', institution: 'Government Dental College And Hospital, Ahmedabad', year: '' }
+  //   ],
+  //   memberships: [], // Not specified
+  //   awards: [], // Not specified
+  //   procedures: [], // Not specified
+  //   publications: [], // Not specified
+  //   contact: {
+  //     phone: '+919263630500',
+  //     email: '',
+  //     clinic: '',
+  //     address: ''
+  //   }
+  // },
 
   // laboratory
 
@@ -2057,7 +2057,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Pathology), Post Doctoral Fellowship (Oncopathology)',
     specialty: 'Pathology',
     experience: '3+ Years',
-    image: '', // No image provided
+    image: '/assets/Doc-Side/Dr kirti_kaira_lab.webp',
     specialtyIcon: '', // No icon provided
     description: '', // No description provided
 

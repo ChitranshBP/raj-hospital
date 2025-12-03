@@ -1,0 +1,106 @@
+{
+  "totalSpecialtyDoctors": 15,
+  "totalProfileDoctors": 36,
+  "matches": 12,
+  "mismatches": 3,
+  "details": {
+    "matches": [
+      {
+        "specialty": "Gastroenterology & Endoscopy",
+        "specialtyId": "gastroenterology",
+        "doctorId": "ravish-ranjan",
+        "doctorName": "Dr. Ravish Ranjan"
+      },
+      {
+        "specialty": "Nephrology",
+        "specialtyId": "nephrology",
+        "doctorId": "avinash-dubey",
+        "doctorName": "Dr. Avinash Kumar Dubey"
+      },
+      {
+        "specialty": "Neurosciences",
+        "specialtyId": "neurosciences",
+        "doctorId": "vivek-raj",
+        "doctorName": "Dr. Vivek Raj"
+      },
+      {
+        "specialty": "Neurosciences",
+        "specialtyId": "neurosciences",
+        "doctorId": "ahmad-hussain",
+        "doctorName": "Dr. Ahmad Hussain"
+      },
+      {
+        "specialty": "Pulmonology",
+        "specialtyId": "pulmonology",
+        "doctorId": "suprova-chakraborty",
+        "doctorName": "Dr. Suprova Chakraborty"
+      },
+      {
+        "specialty": "Urology",
+        "specialtyId": "urology",
+        "doctorId": "sunil-kumar",
+        "doctorName": "Dr. Sunil Kumar"
+      },
+      {
+        "specialty": "Urology",
+        "specialtyId": "urology",
+        "doctorId": "ved-prakash",
+        "doctorName": "Dr. Ved Prakash Verma"
+      },
+      {
+        "specialty": "Dental",
+        "specialtyId": "dental",
+        "doctorId": "suraj-mani-bhattacharjee",
+        "doctorName": "Dr. Suraj Mani Bhattacharjee"
+      },
+      {
+        "specialty": "Dental",
+        "specialtyId": "dental",
+        "doctorId": "abhishek-bhattacharjee",
+        "doctorName": "Dr. Abhishek Bhattacharjee"
+      },
+      {
+        "specialty": "Dermatology",
+        "specialtyId": "dermatology",
+        "doctorId": "piyali-banerjee",
+        "doctorName": "Dr. Piyali Banerjee"
+      },
+      {
+        "specialty": "Dermatology",
+        "specialtyId": "dermatology",
+        "doctorId": "shaista-huma",
+        "doctorName": "Dr. Shaista Huma"
+      },
+      {
+        "specialty": "ENT",
+        "specialtyId": "ent",
+        "doctorId": "ranajan-jha",
+        "doctorName": "Dr. Ranajan Kumar Jha"
+      }
+    ],
+    "mismatches": [
+      {
+        "specialty": "Cardiology",
+        "specialtyId": "cardiology",
+        "doctorId": "rajesh-jha",
+        "doctorName": "Dr. Rajesh Kr. Jha",
+        "profileName": "Dr. Rajesh Kumar Jha",
+        "issue": "Doctor name mismatch"
+      },
+      {
+        "specialty": "Cardiology",
+        "specialtyId": "cardiology",
+        "doctorId": "awnindra-singh",
+        "doctorName": "Dr. Awnindra Kumar Singh",
+        "issue": "Doctor ID not found in DoctorProfile.jsx"
+      },
+      {
+        "specialty": "ENT",
+        "specialtyId": "ent",
+        "doctorId": "tg-n-sinha",
+        "doctorName": "Dr. T G N Sinha",
+        "issue": "Doctor ID not found in DoctorProfile.jsx"
+      }
+    ]
+  }
+}

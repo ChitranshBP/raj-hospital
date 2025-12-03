@@ -204,7 +204,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Ravish Ranjan',
           qualification: 'MBBS, MD, DNB (Gastroenterology)',
           experience: '15+ Years',
-          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gastroenterologist - Dr. Ravish-Ranjan.png',
+          image: '/assets/Doc-Side/Gastroenterologist - Dr. Ravish Ranjan.png',
           specialization: 'Gastroenterology & Endoscopy'
         }
       ],
@@ -1610,7 +1610,16 @@ const SpecialtyDetail = () => {
           experience: '12+ Years',
           image: 'assets/Doc-Side/Dr Piyali Banerjee(Derma).webp',
           specialization: 'Dermatology, Cosmetology & Hair Disorders'
+        },
+        {
+          id: 'shaista-huma',
+          name: 'Dr. Shaista Huma',
+          qualification: 'M.B.B.S (Gold Medalist), M.D. (Dermatology, Venereology & Leprosy), M.D. (Physiology), A.C.S.I Fellowship in Dermatosurgery',
+          experience: '10+ Years',
+          image: 'assets/Doc-Front/Dr-Shaista-Huma.png',
+          specialization: 'Dermatology, Cosmetology & Aesthetics'
         }
+
       ],
 
       successStories: [
@@ -2284,7 +2293,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Kriti Kaira',
           qualification: 'MBBS, MD (Pathology), Post Doctoral Fellowship (Oncopathology)',
           experience: '3+ Years',
-          image: '', // No image provided
+          image: '/assets/Doc-Side/Dr kirti_kaira_lab.webp',
           specialization: 'Pathology, Histopathology, Cytology, Hematology, Clinical Pathology'
         },
 
@@ -2602,6 +2611,132 @@ const SpecialtyDetail = () => {
     //     address: 'Raj Hospitals, Ranchi, Jharkhand'
     //   }
     // },
+
+    //  oral & maxillofacial surgery
+    'oral-maxillofacial-surgery-ad': {
+      id: 'oral-maxillofacial-surgery-ad',
+      title: 'Oral & Maxillofacial Surgery',
+      icon: FiActivity,
+      bannerImage: 'assets/specialties/OralMaxillofacial-ad/oral-maxillofacial-banner.jpg',
+
+      shortDescription:
+        'Specialized surgical care for the mouth, teeth, jaws, and facial structures with advanced techniques and expert oral & maxillofacial surgeons.',
+
+      longDescription:
+        'Raj Hospital’s Department of Oral & Maxillofacial Surgery in Ranchi provides comprehensive surgical care for conditions affecting the mouth, jawbones, teeth, and facial region. Our specialized surgeons are trained in managing complex facial trauma, jaw misalignment, cysts and tumors, impacted wisdom teeth, TMJ disorders, and oral pathology. With advanced diagnostic support, sterile OT environments, and minimally invasive techniques, we ensure safe, precise, and comfortable treatment with faster healing and long-term results.',
+
+      services: [
+        {
+          title: 'Wisdom Tooth (Third Molar) Removal',
+          description:
+            'Expert extraction of impacted or partially erupted wisdom teeth using minimally invasive techniques to reduce pain, swelling, and complications.',
+          image: 'assets/specialties/OralMaxillofacial-ad/wisdom-tooth-removal.jpg'
+        },
+        {
+          title: 'Facial & Jaw Trauma Surgery',
+          description:
+            'Comprehensive treatment for fractures of the jaw, cheekbone, nasal bone, and eye socket. Restores facial function, symmetry, and aesthetics.',
+          image: 'assets/specialties/OralMaxillofacial-ad/facial-trauma-surgery.jpg'
+        },
+        {
+          title: 'Cyst & Tumor Removal (Oral Pathology)',
+          description:
+            'Diagnosis and surgical removal of oral cysts, benign tumors, and other abnormal growths to prevent infection, bone loss, or recurrence.',
+          image: 'assets/specialties/OralMaxillofacial-ad/cyst-tumor-removal.jpg'
+        },
+        {
+          title: 'Orthognathic (Corrective Jaw) Surgery',
+          description:
+            'Corrective surgery for jaw deformities, bite problems, and facial asymmetry using digital planning and modern surgical techniques.',
+          image: 'assets/specialties/OralMaxillofacial-ad/orthognathic-surgery.jpg'
+        },
+        {
+          title: 'TMJ Disorder Management',
+          description:
+            'Diagnosis and treatment of temporomandibular joint disorders causing jaw pain, locking, clicking, or restricted movement.',
+          image: 'assets/specialties/OralMaxillofacial-ad/tmj-treatment.jpg'
+        },
+        {
+          title: 'Dental Implants & Bone Grafting',
+          description:
+            'Implant placement for missing teeth supported by sinus lift, ridge augmentation, and bone grafting when required.',
+          image: 'assets/specialties/OralMaxillofacial-ad/dental-implants.jpg'
+        },
+        {
+          title: 'Pre-Prosthetic Surgery',
+          description:
+            'Adjustments to jawbone and soft tissues to improve denture fit and comfort, ensuring long-term stability.',
+          image: 'assets/specialties/OralMaxillofacial-ad/pre-prosthetic-surgery.jpg'
+        }
+      ],
+
+      facilities: [
+        'Dedicated Oral & Maxillofacial Surgery OT',
+        'Advanced Digital X-ray, OPG & CBCT Imaging',
+        'Modern Dental Implant Systems',
+        'Emergency Facial Trauma Management Unit',
+        'Sedation & Anesthesia Support for Surgeries',
+        'Sterile and Patient-friendly Surgical Environment',
+        'Computerized Treatment Planning for Jaw Surgery'
+      ],
+
+      specialists: [
+        // not avialable
+      ],
+
+      successStories: [
+        {
+          title: 'Complex Jaw Fracture Repaired Successfully',
+          patient: 'Mr. Arvind, 28',
+          story:
+            'After a road accident, the patient suffered fractures in the lower jaw and cheekbone. The surgical team performed open reduction and fixation using titanium plates.',
+          outcome: 'Full recovery with restored facial symmetry and normal jaw function.'
+        },
+        {
+          title: 'Pain-free Wisdom Tooth Extraction',
+          patient: 'Ms. Ruchi, 21',
+          story:
+            'The patient had severe pain due to an impacted wisdom tooth. A minimally invasive extraction was performed with no postoperative complications.',
+          outcome: 'Quick healing with complete symptom relief.'
+        }
+      ],
+
+      faqs: [
+        {
+          question: 'When should wisdom teeth be removed?',
+          answer:
+            'Impacted, infected, or painful wisdom teeth should be removed early to prevent swelling, decay, or damage to nearby teeth.'
+        },
+        {
+          question: 'Is jaw surgery painful?',
+          answer:
+            'Jaw surgery is performed under anesthesia, and pain is well-managed with medications. Most patients return to normal activities within a few weeks.'
+        },
+        {
+          question: 'How are facial fractures treated?',
+          answer:
+            'Surgeons use titanium plates and screws to realign and stabilize fractured bones, restoring function and appearance.'
+        },
+        {
+          question: 'Are dental implants safe?',
+          answer:
+            'Yes, dental implants are highly safe and have a success rate of over 95% when placed by trained oral surgeons using proper planning.'
+        },
+        {
+          question: 'How long is recovery after oral surgery?',
+          answer:
+            'Recovery varies by procedure, but most minor surgeries heal in 3–7 days, while larger surgeries may take a few weeks.'
+        }
+      ],
+
+      contactInfo: {
+        helpline: '+91 97714 66634',
+        appointmentLink: 'https://rajhospitals.com/contact.php',
+        address: 'Raj Hospitals, Ranchi, Jharkhand'
+      }
+    },
+
+
 
     'radiology': {
       id: 'radiology',
