@@ -891,14 +891,14 @@ export const doctorsData = [
   },
 
 
-  {
-    id: 'ujjwal-sinha1',
-    name: 'Dr. Ujjwal Sinha',
-    qualification: 'MBBS, MS, DNB (Ortho), MNAMS, Fellowship in Sports Medicine',
-    experience: '15+ Years',
-    image: '/assets/Doc-Side/ujjwal_sinha_ortho.webp',
-    specialization: 'Joint Replacement, Arthroscopy, Sports Medicine, Complex Trauma, Pediatric Orthopaedics, Deformity Correction, Polytrauma'
-  },
+  // {
+  //   id: 'ujjwal-sinha1',
+  //   name: 'Dr. Ujjwal Sinha',
+  //   qualification: 'MBBS, MS, DNB (Ortho), MNAMS, Fellowship in Sports Medicine',
+  //   experience: '15+ Years',
+  //   image: '/assets/Doc-Side/ujjwal_sinha_ortho.webp',
+  //   specialization: 'Joint Replacement, Arthroscopy, Sports Medicine, Complex Trauma, Pediatric Orthopaedics, Deformity Correction, Polytrauma'
+  // },
   {
     id: 'abhishek-roy',
     name: 'Dr. Abhishek Roy',
