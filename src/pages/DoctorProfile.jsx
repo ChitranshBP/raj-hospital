@@ -892,7 +892,7 @@ export const doctorsData = [
 
 
   {
-    id: 'ujjwal-sinha',
+    id: 'ujjwal-sinha1',
     name: 'Dr. Ujjwal Sinha',
     qualification: 'MBBS, MS, DNB (Ortho), MNAMS, Fellowship in Sports Medicine',
     experience: '15+ Years',
