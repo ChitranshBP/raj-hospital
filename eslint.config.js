@@ -4,10 +4,10 @@ import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 
 export default [
-{ ignores: ['dist'] },
+{ ignores: ['dist', 'verify-doctor-links.mjs'] },
 js.configs.recommended,
 {
-  files: ['**/*.{js,jsx}'],
+  files: ['**/*.{js,jsx,mjs}'],
   languageOptions: {
     ecmaVersion: 2020,
     globals: {
