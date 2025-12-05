@@ -345,10 +345,10 @@ const sections = {
       thumbnail: "https://img.youtube.com/vi/HARE579wkdY/maxresdefault.jpg",
     },
     {
-      videoId: "Gi1WhJ1dR6g",
-      patient: "Emergency Brain Care That Saved Prem Kumar Singh | Raj Hospitals",
+      videoId: "mHiO2RYdgds",
+      patient: "Cancer treatment | Patient Testimonial ",
       desc: "The doctors and staff were exceptional.",
-      thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/mHiO2RYdgds/maxresdefault.jpg",
     },
     {
       videoId: "vg59yGKWz_s",
@@ -401,6 +401,8 @@ function Section({ title, description, children, showViewAll, viewAllLink }) {
         {showViewAll && (
           <a
             href={viewAllLink || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-[#0191C7] hover:text-[#F9771B] font-semibold text-sm flex items-center gap-2 transition-colors"
           >
             View All
@@ -1353,7 +1355,7 @@ export default function HomePage() {
           title="Video Testimonials"
           description="Hear from our patients their experiences and healing journeys."
           showViewAll={true}
-          viewAllLink="/testimonials"
+          viewAllLink="https://youtube.com/playlist?list=PL_ZdqB1Ag8tI_BsrN7gNPrgE1_PDryEXQ&si=REeg2R8SWr258-Ob"
         >
           {/* Mobile: Horizontal Scroll, Desktop: Grid */}
           <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
