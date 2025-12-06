@@ -379,7 +379,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (General Surgery)',
     specialty: 'Bariatric Surgery, General & Laparoscopic Surgery',
     experience: '12+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/General Surgeon - Dr. Ashish-Kumar-Modi.png',
+    image: '/assets/Doc-Side/General Surgeon - Dr. Ashish Kumar Modi.webp',
     specialtyIcon: '', // No icon provided
     description: 'Dr. Ashish Kumar Modi is a highly skilled bariatric and laparoscopic surgeon with over 12 years of experience. He specializes in advanced laparoscopic procedures, laser surgery for proctology, and diagnostic and therapeutic endoscopy, known for his precise surgical skills and compassionate patient care.',
     expertise: [
@@ -2318,13 +2318,7 @@ export const doctorsData = [
       'Laparoscopy Surgery',
       'Laser Surgery for Proctology',
       'Diagnostic and Therapeutic Endoscopy',
-      '', // 4
-      '', // 5
-      '', // 6
-      '', // 7
-      '', // 8
-      '', // 9
-      ''  // 10
+
     ],
 
     education: [

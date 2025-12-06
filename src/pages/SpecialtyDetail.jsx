@@ -458,7 +458,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Ashish Kumar Modi',
           qualification: 'MBBS, MS',
           experience: '15+ Years',
-          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/General Surgeon - Dr. Ashish-Kumar-Modi.png',
+          image: '/assets/Doc-Side/General Surgeon - Dr. Ashish Kumar Modi.webp',
           specialization: 'General & Laparoscopic Surgery'
         }
       ],
