@@ -858,7 +858,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Deepak Verma',
           qualification: 'MBBS, MS (Ortho)',
           experience: '25+ Years',
-          image: 'assets/Doc-Side/Orthopedic Surgeon - Dr. Deepak Verma.png',
+          image: '/assets/Doc-Side/Orthopedic Surgeon - Dr. Deepak Verma.webp',
           specialization: 'Fractures, Difficult Trauma, Total Hip Replacement, Total Knee Replacement'
         },
 
@@ -2099,7 +2099,7 @@ const SpecialtyDetail = () => {
           name: 'Mr. Parijat Sarkar',
           qualification: 'B.Sc (Dietetics & Nutrition), M.Sc (Sports Nutrition Specialist), ISSA, B.Ed',
           experience: '6+ Years',
-          image: '', // No image provided
+          image: '/assets/Doc-Side/Mr. Parijat Sarkar (Dietetian).jpg',
           specialization: 'Clinical Dietetics, Sports Nutrition, Preventive Healthcare, Metabolic & Lifestyle Disorder Nutrition'
         },
 

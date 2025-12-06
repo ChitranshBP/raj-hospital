@@ -638,7 +638,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (Ortho)',
     specialty: '', // No specific specialty provided
     experience: '25+ Years',
-    image: '/assets/Doc-Side/Orthopedic Surgeon - Dr. Deepak Verma.png',
+    image: '/assets/Doc-Side/Orthopedic Surgeon - Dr. Deepak Verma.webp',
     specialtyIcon: '', // No icon provided
     description: '', // No description provided
 
@@ -2637,7 +2637,7 @@ export const doctorsData = [
     qualifications: 'B.Sc (Dietetics & Nutrition), M.Sc (Sports Nutrition Specialist), ISSA (Life Science), B.Ed',
     specialty: '',
     experience: '6+ Years',
-    image: '', // No image provided
+    image: '/assets/Doc-Side/Mr. Parijat Sarkar (Dietetian).jpg', // No image provided
     specialtyIcon: '',
     description: '',
 
