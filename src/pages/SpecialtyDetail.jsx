@@ -108,15 +108,16 @@ const SpecialtyDetail = () => {
           experience: '16+ Years',
           image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/-Dr. Awnindra-Kumar-Singh-Cardiologist.png',
           specialization: 'Interventional Cardiology'
-        }
-        // {
-        //   id: 'anup jha',
-        //   name: 'Dr. Awnindra Kumar Singh',
-        //   qualification: 'MBBS, MD, DM',
-        //   experience: '16+ Years',
-        //   image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/-Dr. Awnindra-Kumar-Singh-Cardiologist.png',
-        //   specialization: 'Interventional Cardiology'
-        // }
+        },
+        {
+          id: 'anup-kumar-jha',
+          name: 'Dr. Anup Kumar Jha',
+          qualification: 'MBBS, Cardio-Physician (NI), IGNOU',
+          experience: '30+ Years',
+          image: 'assets/Doc-Side/Dr Anup Kumar Jha_.webp',
+          specialization: 'Non-Invasive Cardiology'
+        },
+
       ],
 
 
@@ -204,7 +205,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Ravish Ranjan',
           qualification: 'MBBS, MD, DNB (Gastroenterology)',
           experience: '15+ Years',
-          image: '/assets/Doc-Side/Gastroenterologist - Dr. Ravish Ranjan.png',
+          image: '/assets/Doc-Side/Gastroenterologist - Dr. Ravish Ranjan.webp',
           specialization: 'Gastroenterology & Endoscopy'
         }
       ],
@@ -673,8 +674,8 @@ const SpecialtyDetail = () => {
           id: 'ahmad-hussain',
           name: 'Dr. Ahmad Hussain',
           qualification: 'MBBS, MD, DrNB',
-          experience: '12+ Years',
-          image: '/assets/specialties/Neurosciences/dr-ahmad-hussain.jpg',
+          experience: '5+ Years',
+          image: 'assets/Doc-Side/Dr Ahmad Hussain.webp',
           specialization: 'Neurology'
         },
         // add new profile 
@@ -755,14 +756,15 @@ const SpecialtyDetail = () => {
           image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Oncologist - Dr. P-K-Raina.png',
           specialization: 'Oncology & Surgical Oncology'
         },
-        // {
-        //   id: 'abhijit-kumar',
-        //   name: 'Dr. Abhijit Kumar',
-        //   qualification: 'MBBS, MS, PDCC',
-        //   experience: '16+ Years',
-        //   image: '/assets/specialties/Oncology/dr-abhijit-kumar.jpg',
-        //   specialization: 'Medical Oncology'
-        // }
+        {
+          id: 'anamika-kumari',
+          name: 'Dr. Anamika Kumari',
+          qualification: 'MBBS, DNB (Radiotherapy)',
+          experience: '11+ Years',
+          image: 'assets/Doc-Side/Dr Anamika Onco photo.webp',
+          specialization: 'Radiotherapy, Head & Neck Oncology, Breast Oncology'
+        },
+
       ],
 
       successStories: [
@@ -1119,6 +1121,14 @@ const SpecialtyDetail = () => {
           experience: '15+ Years',
           image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/General Physician - Dr. Neelam-Kumari.png',
           specialization: 'Internal Medicine & Lifestyle Diseases'
+        },
+        {
+          id: 'sony',
+          name: 'Dr. Sony',
+          qualification: 'MBBS, DNB (Anaesthesiology), PDCC (IAPC), CCEPC',
+          experience: '4+ Years',
+          image: 'assets/Doc-Side/Dr Sony (Interventional Pain Medicine).webp', // No image provided
+          specialization: 'Interventional Pain Medicine, Regenerative Therapy, Spine Interventions, Chronic Pain Management'
         }
       ],
 
@@ -1306,7 +1316,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Pushpa Sinha',
           qualification: 'MBBS, MD, DGO',
           experience: '15+ Years',
-          image: '/assets/Doc-Side/Gyanecologist - Dr. Pushpa Sinha.png',
+          image: '/assets/Doc-Side/Gyanecologist - Dr. Pushpa Sinha.webp',
           specialization: 'Obstetrics & Gynaecology'
         },
         // {
@@ -1705,13 +1715,14 @@ const SpecialtyDetail = () => {
         //   specialization: 'Advanced ENT Surgeries & Voice Disorders'
         // },
         {
-          id: 'tg-n-sinha',
-          name: 'Dr. T G N Sinha',
+          id: 'tgn-sinha',
+          name: 'Dr. T.G.N. Sinha',
           qualification: 'MBBS, MS, FICS',
-          experience: '40+ Years',
-          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/ENT - Dr. T G N-Sinha.png',
-          specialization: 'ENT (Ear, Nose & Throat)'
+          experience: '45+ Years',
+          image: '/assets/Doc-Side/Dr T G N Sinha ( ENT).webp',
+          specialization: 'ENT, Head & Neck Surgery'
         },
+
         {
           id: 'ranajan-jha',
           name: 'Dr. Ranajan Kumar Jha',
@@ -1817,6 +1828,15 @@ const SpecialtyDetail = () => {
 
       specialists: [
         // Doctors & specialist details not available;
+        {
+          id: 'abid-akhtar',
+          name: 'Dr. Abid Akhtar',
+          qualification: 'MBBS, MS (Ophthalmology)',
+          experience: '20+ Years',
+          image: 'assets/Doc-Side/Dr. Abid Akhtar (Opthal).webp', // No image provided
+          specialization: 'Anterior Segment Surgeon, Cataract & Refractive Surgery, Cornea & External Diseases'
+        },
+
       ],
 
       successStories: [
@@ -1907,14 +1927,14 @@ const SpecialtyDetail = () => {
         //   specialization: 'Pediatric Medicine & Neonatal Care',
         //   profileLink: 'https://rajhospitals.com/dr-sainik-dutta.php'
         // },
-        // {
-        //   id: '702-old',
-        //   name: 'Dr. Ravi Shekhar Singh',
-        //   qualification: 'MBBS, DCH',
-        //   image: 'assets/specialties/PAEDIATRICS/dr-ravi-shekhar-singh.jpg',
-        //   specialization: 'Pediatric Medicine & Critical Care',
-        //   profileLink: 'https://rajhospitals.com/dr-ravi-shekhar-singh.php'
-        // }
+        {
+          id: 'ravi-shekhar-singh',
+          name: 'Dr. Ravi Shekhar Singh',
+          qualification: 'MBBS, DCH',
+          image: 'assets/specialties/PAEDIATRICS/dr-ravi-shekhar-singh.jpg',
+          specialization: 'Pediatric Medicine & Critical Care',
+          profileLink: 'https://rajhospitals.com/dr-ravi-shekhar-singh.php'
+        }
       ],
 
       successStories: [
@@ -2074,13 +2094,15 @@ const SpecialtyDetail = () => {
       ],
 
       specialists: [
-        // {
-        //   id: '901',
-        //   name: 'Ms. Anjali Kumar',
-        //   qualification: 'M.Sc. Dietetics & Nutrition',
-        //   image: 'assets/specialties/NUTRITION/ms-anjali-kumar.jpg',
-        //   specialization: 'Clinical Dietetics and Nutritional Counseling'
-        // },
+        {
+          id: 'parijat-sarkar',
+          name: 'Mr. Parijat Sarkar',
+          qualification: 'B.Sc (Dietetics & Nutrition), M.Sc (Sports Nutrition Specialist), ISSA, B.Ed',
+          experience: '6+ Years',
+          image: '', // No image provided
+          specialization: 'Clinical Dietetics, Sports Nutrition, Preventive Healthcare, Metabolic & Lifestyle Disorder Nutrition'
+        },
+
         // {
         //   id: '902',
         //   name: 'Mr. Rahul Verma',
@@ -2160,13 +2182,15 @@ const SpecialtyDetail = () => {
       ],
 
       specialists: [
-        // {
-        //   id: '1001',
-        //   name: 'Dr. Neha Sharma',
-        //   qualification: 'MD Psychiatry',
-        //   image: 'assets/specialties/PSYCHIATRY/dr-neha-sharma.jpg',
-        //   specialization: 'Adult and Geriatric Psychiatry'
-        // },
+        {
+          id: 'anil-kumar',
+          name: 'Dr. Anil Kumar',
+          qualification: 'MBBS, MD (Psychiatry)',
+          experience: '40+ Years',
+          image: 'assets/Doc-Side/Dr Anil Kumar (Psychiatry).webp', // No image provided
+          specialization: 'Neuro-Psychiatry, Clinical Neurology, CBT, EMG/EEG Techniques'
+        },
+
         // {
         //   id: '1002',
         //   name: 'Dr. Rajeev Kumar',
@@ -2296,6 +2320,24 @@ const SpecialtyDetail = () => {
           image: '/assets/Doc-Side/Dr kirti_kaira_lab.webp',
           specialization: 'Pathology, Histopathology, Cytology, Hematology, Clinical Pathology'
         },
+        {
+          id: 'shweta-sushmita',
+          name: 'Dr. Shweta Sushmita',
+          qualification: 'MBBS, MD (Pathology)',
+          experience: '10+ Years',
+          image: 'assets/Doc-Side/Lab - Dr. Sweta Sushmita.webp',
+          specialization: 'Pathology, Histopathology, Cytopathology, Hematology'
+        },
+        {
+          id: 'praveen-kumar',
+          name: 'Dr. Praveen Kumar',
+          qualification: 'MBBS, DCP (Pathology)',
+          experience: '8+ Years',
+          image: 'assets/Doc-Side/Dr Praveen Kumar (Lab).webp',
+          specialization: 'Consultant Pathology, Clinical Hematology, Cytology, Bone Marrow Biopsy, Histopathology'
+        },
+
+
 
 
 
@@ -2427,26 +2469,26 @@ const SpecialtyDetail = () => {
           id: 'ahmad-hussain',
           name: 'Dr. Ahmad Hussain',
           qualification: 'MBBS, MD, DrNB',
-          experience: '12+ Years',
-          image: '',
+          experience: '5+ Years',
+          image: 'assets/Doc-Side/Dr Ahmad Hussain.webp',
           specialization: 'Neurology'
-        }
-        // {
-        //   id: '801',
-        //   name: 'Dr. Prakash Chandra',
-        //   qualification: 'MBBS, MD, DM (Neurology)',
-        //   experience: '18+ Years',
-        //   image: 'assets/specialties/Neurology/dr-prakash-chandra.jpg',
-        //   specialization: 'Neurology, Epileptology, and Neurophysiology'
-        // },
-        // {
-        //   id: '802',
-        //   name: 'Dr. Vijay Raj',
-        //   qualification: 'MBBS, MD, DM (Neurology)',
-        //   experience: '15+ Years',
-        //   image: 'assets/specialties/Neurology/dr-vijay-raj.jpg',
-        //   specialization: 'Neurodiagnostics and Stroke Management'
-        // },
+        },
+        {
+          id: '801',
+          name: 'Dr. Prakash Chandra',
+          qualification: 'MBBS, MS, MCH',
+          experience: '18+ Years',
+          image: "assets/Doc-Side/Dr. Prakash Chandra (Neuro Surgeon).webp",
+          specialization: 'Neurology, Epileptology, and Neurophysiology'
+        },
+        {
+          id: 'vijay-raj',
+          name: 'Dr. Vijay Raj',
+          qualification: 'MBBS, MD, DM (Neurology)',
+          experience: '15+ Years',
+          image: 'assets/Doc-Side/vijayraj.webp',
+          specialization: 'Neurodiagnostics and Stroke Management'
+        },
         // {
         //   id: '803',
         //   name: 'Dr. Ujjwal Roy',
@@ -2681,7 +2723,14 @@ const SpecialtyDetail = () => {
       ],
 
       specialists: [
-        // not avialable
+        {
+          id: 'abhishek-bhattacharjee',
+          name: 'Dr. Abhishek Bhattacharjee',
+          qualification: 'BDS, MDS',
+          experience: '12+ Years',
+          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Maxillofacial Surgeon - Dr. Abhishek-Bhattacharjee.png',
+          specialization: 'Maxillofacial Surgery & Dental Implants'
+        }
       ],
 
       successStories: [
@@ -2785,46 +2834,6 @@ const SpecialtyDetail = () => {
         }
 
 
-
-
-
-
-
-        // {
-        //   title: 'MRI (Magnetic Resonance Imaging)',
-        //   description: 'Provides detailed, high-resolution images of the brain, spine, joints, and internal organs without radiation exposure. Ideal for neurological, orthopedic, and soft-tissue evaluations.',
-        //   image: 'assets/specialties/Radiology/MRI.png'
-        // },
-        // {
-        //   title: 'CT Scan (Computed Tomography)',
-        //   description: 'Produces cross-sectional images of organs, bones, and blood vessels to help detect tumors, fractures, and internal injuries.',
-        //   image: 'assets/specialties/Radiology/CT-Scan.png'
-        // },
-        // {
-        //   title: 'OPG (Orthopantomogram)',
-        //   description: 'Panoramic dental X-ray of teeth, jawbones, and surrounding structures. Essential for dental and orthodontic planning.',
-        //   image: 'assets/specialties/Radiology/OPG.png'
-        // },
-        // {
-        //   title: 'MRCP (Magnetic Resonance Cholangiopancreatography)',
-        //   description: 'Specialized MRI to visualize the liver, gallbladder, bile ducts, and pancreas to detect stones or obstructions.',
-        //   image: 'assets/specialties/Radiology/MRCP.png'
-        // },
-        // {
-        //   title: 'Ultrasound',
-        //   description: 'A safe and painless non-invasive procedure using sound waves to visualize soft tissues, organs, and blood flow.',
-        //   image: 'assets/specialties/Radiology/Ultrasound.png'
-        // },
-        // {
-        //   title: 'Full Body BMD (Bone Mineral Densitometry)',
-        //   description: 'Measures bone density to evaluate osteoporosis risk and monitor bone health.',
-        //   image: 'assets/specialties/Radiology/BMD.png'
-        // },
-        // {
-        //   title: 'Image Intensifier',
-        //   description: 'Real-time X-ray imaging used in surgeries and orthopedic procedures for precision and safety.',
-        //   image: 'assets/specialties/Radiology/Image-Intensifier.png'
-        // }
       ],
 
       facilities: [
@@ -2838,14 +2847,15 @@ const SpecialtyDetail = () => {
       ],
 
       specialists: [
-        // {
-        //   id: '301',
-        //   name: 'Dr. [Your Radiologist Name]',
-        //   qualification: 'MBBS, MD (Radiodiagnosis)',
-        //   experience: '15+ Years',
-        //   image: 'assets/specialties/Radiology/dr-sample.png',
-        //   specialization: 'Consultant Radiologist'
-        // }
+        {
+          id: 'shekhar-sharma',
+          name: 'Dr. Shekhar Sharma',
+          qualification: 'MBBS, DMRD (Radiodiagnosis)',
+          experience: '20+ Years',
+          image: 'assets/Doc-Side/Dr Shekhar Sharma (Radiologist).webp', // No image provided
+          specialization: 'Radiodiagnosis, MRI, CT, Conventional Radiology'
+        },
+
       ],
 
       successStories: [
@@ -2892,6 +2902,53 @@ const SpecialtyDetail = () => {
         address: 'Raj Hospitals, Ranchi, Jharkhand'
       }
     },
+
+
+    //new doctors added- no specialists mentioned 
+    // {
+    //   id: 'ashok-kr-agarwal',
+    //   name: 'Dr. Ashok Kr Agarwal',
+    //   qualification: 'MBBS, MD (Medicine)',
+    //   experience: '8 Years',
+    //   image: '', // No image provided
+    //   specialization: 'Consultant Physician, Diabetic Specialist, Heart Specialist, Chest Specialist'
+    // },
+    //   {
+    //   id: 'ajeet-singh',
+    //     name: 'Dr. Ajeet Singh',
+    //       qualification: 'MBBS (1982), Post Graduate Diploma (1988)',
+    //         experience: '38 Years',
+    //           image: '', // No image provided
+    //             specialization: 'Strategic Planning, Compliance, COVID-19 Nodal Officer, Health Programs, CME Training'
+    // },
+    // {
+    // id: 'sanjeev-kumar-ravi',
+    //   name: 'Dr. Sanjeev Kumar Ravi',
+    //     qualification: 'MBBS, Ultrasound Training Course, Diploma in Family Medicine',
+    //       experience: '20 Years',
+    //         image: '', // No image provided
+    //             specialization: 'Ultrasonography, Casualty, ICU, HDU, General Ward'
+    // },
+    // {
+    //   id: 'ashish-kumar',
+    //   name: 'Dr. Ashish Kumar',
+    //   qualification: 'MBBS, MS (General Surgery)',
+    //   experience: '12 Years',
+    //   image: '', // No image provided
+    //   specialization: 'Laparoscopic Surgery, Laser Proctology, Diagnostic & Therapeutic Endoscopy'
+    // },
+    //     {
+    //   id: 'shubham-shekhar',
+    //   name: 'Dr. Shubham Shekhar',
+    //   qualification: 'ACLS, BLS',
+    //   experience: '2 Years',
+    //   image: '', // No image provided
+    //   specialization: 'Emergency Medicine, Trauma Care, ICU, Casualty, OPD Management'
+    // },
+
+
+
+
 
 
 

@@ -331,37 +331,48 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Internal Medicine), DNB Super Specialty',
     specialty: 'Gastroenterology',
     experience: '12 Years',
-    image: '/assets/Doc-Side/Gastroenterologist - Dr. Ravish Ranjan.png',
+    image: '/assets/Doc-Side/Gastroenterologist - Dr. Ravish Ranjan.webp',
     specialtyIcon: '', // No icon provided
-    description: 'Dr. Ravish Ranjan is an experienced gastroenterologist specializing in advanced diagnostic and therapeutic endoscopy with 12 years of expertise. He is dedicated to providing personalized and comprehensive care for complex gastrointestinal conditions.',
+
+    description:
+      'Dr. Ravish Ranjan is an experienced gastroenterologist specializing in advanced diagnostic and therapeutic endoscopy with 12 years of expertise. He is dedicated to providing personalized and comprehensive care for complex gastrointestinal conditions.',
+
     expertise: [
-      'Gastroenterology',
-      'Therapeutic and Diagnostic Upper GI Endoscopy',
-      'Lower GI Endoscopy',
-      'ERCP',
-      'Endoscopy and EUS',
+      'Therapeutic and Diagnostic Advance Upper GI Endoscopy',
+      'Therapeutic and Diagnostic Advance Lower GI Endoscopy (Colonoscopy)',
+      'ERCP – Management of advanced CBD, Pancreatic Duct & Gallbladder Diseases',
+      'EUS',
+      'Fibro Scan',
+      'Capsule Endoscopy',
+      'Hepatology Unit – Dealing with ALF and Complications of CLD',
+      'Breath Test',
+      'Manometry – Esophageal & Anal',
       'IBD Clinic',
-      'Hepatology Clinic',
       'Pancreatic Disorder',
-      'Esophageal Disorders',
+      'Esophageal Disorder',
       'Enteral Stenting'
     ],
+
     education: [
       { degree: 'MBBS', institution: 'RIMS', year: '' },
       { degree: 'MD (Internal Medicine)', institution: 'PMCH, Patna', year: '' },
       { degree: 'DNB Super Specialty', institution: 'IGIMS, Patna', year: '' }
     ],
+
     memberships: [], // No memberships listed
     awards: [], // No awards listed
     procedures: [], // No specific procedures listed
-    publications: [], // No publications listed
+
+    publications: [], // None provided
+
     contact: {
       phone: '+919263630500',
-      email: '', // No email provided
-      clinic: '', // No clinic address provided
-      address: '' // No physical address provided
+      email: '',
+      clinic: '',
+      address: ''
     }
   },
+
   {
     id: 'ashish-modi',
     name: 'Dr. Ashish Kumar Modi',
@@ -777,24 +788,30 @@ export const doctorsData = [
 
   {
     id: 'Mozammil-pheroz',
-    name: 'Dr. Mozammil Feroz',
-    qualifications: 'MBBS, MS (Orthopaedics), DNB (Orthopaedics)',
+    name: 'Dr. Mozammil Pheroz',
+    qualifications:
+      'MBBS, MS (Orthopaedics), MECA, DNB (Orthopaedics), Dip. Sports Medicine (FIFA, Switzerland), MNAMS',
     specialty: 'Orthopaedics & Joint Replacement',
     experience: '9+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Muzammil-Feroz.png',
+    image:
+      '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Muzammil-Feroz.png',
     specialtyIcon: medicalIcons.orthopaedics,
+
     description:
-      'Dr. Mozammil Pheroz is an experienced orthopaedist with over 9 years of practice. His expertise includes trauma surgery, geriatric trauma, joint replacement (hip and knee), arthroscopic surgery, spine surgery, paediatric orthopaedics, and deformity correction.',
+      'Dr. Mozammil Pheroz is a distinguished Orthopaedic Surgeon at Raj Hospitals Ranchi, with years of dedicated experience and an impressive array of qualifications. His advanced training equips him with strong expertise in joint replacement surgery, arthroscopy, and complex trauma management. He is known for his patient-centred approach, deep understanding of musculoskeletal disorders, and commitment to innovative treatment methodologies and research aimed at improving surgical outcomes. Dr. Mozammil communicates effectively in both English and Hindi, ensuring patients remain well-informed throughout their treatment journey.',
+
     expertise: [
-      'Trauma Surgery',
-      'Geriatric Trauma',
-      'Hip & Knee Joint Replacement',
-      'Arthroscopic Surgery',
-      'Spine Surgery',
-      'Paediatric Orthopaedics',
-      'Deformity Correction'
+      'Knee & Hip Total Joint Replacement',
+      'Arthroscopic Surgery – Knee & Shoulder Ligament Reconstruction',
+      'Arthritis',
+      'Osteoporosis',
+      'Complex Trauma Management',
+      'Sports Injury Care',
+      'Musculoskeletal Disorder Management'
     ],
+
     procedures: [],
+
     education: [
       {
         degree: 'MS (Orthopaedics)',
@@ -803,27 +820,48 @@ export const doctorsData = [
       },
       {
         degree: 'DNB (Orthopaedics)',
-        institution: 'VMMC, CIO Safdarjung, New Delhi',
+        institution: 'VMMC & CIO Safdarjung, New Delhi',
         year: ''
       },
       {
         degree: 'MBBS',
         institution: 'Patna Medical College and Hospital (PMCH)',
         year: ''
+      },
+      {
+        degree: 'Dip Sports Medicine',
+        institution: 'FIFA, Switzerland',
+        year: ''
       }
     ],
+
     memberships: [
-      'National Academy Of Medical Science (MNAMS), New Delhi',
-      'Delhi Orthopaedics Association (DOA)',
-      'JOA',
-      'CZIOA',
-      'Indian Orthopaedic Association (IOA)',
-      'SICOT',
-      'Spine Surgery',
-      'Sports Medicine, Switzerland'
+      'Indian Medical Association',
+      'Indian Arthroscopy Society',
+      'Indian Orthopaedics Association',
+      'Delhi Medical Association',
+      'International Society of Arthroscopy, Knee Surgery & Orthopaedic Sports Medicine (ISAKOS)',
+      'Jharkhand Orthopaedics Association',
+      'Central Zone of Indian Orthopaedic Association',
+      'Delhi Orthopaedics Association',
+      'National Academy of Medical Science (MNAMS)'
     ],
+
     awards: [],
-    publications: [],
+
+    publications: [
+      {
+        title: 'Research Publications in National & International Orthopaedic Journals',
+        journal: 'Various Indexed Journals',
+        year: ''
+      },
+      {
+        title: 'Highly Cited Orthopaedic Research Papers',
+        journal: 'Google Scholar Indexed',
+        year: ''
+      }
+    ],
+
     contact: {
       email: '',
       phone: '+919263630500',
@@ -831,6 +869,7 @@ export const doctorsData = [
       address: ''
     }
   },
+
   // new profile added
   //orthopaedics
   {
@@ -892,7 +931,7 @@ export const doctorsData = [
 
 
   // {
-  //   id: 'ujjwal-sinha1',
+  //   id: 'ujjwal-sinha',
   //   name: 'Dr. Ujjwal Sinha',
   //   qualification: 'MBBS, MS, DNB (Ortho), MNAMS, Fellowship in Sports Medicine',
   //   experience: '15+ Years',
@@ -1163,7 +1202,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (OBG), DGO',
     specialty: 'Obstetrics & Gynaecology',
     experience: '15+ Years',
-    image: '/assets/Doc-Side/Gyanecologist - Dr. Pushpa Sinha.png',
+    image: '/assets/Doc-Side/Gyanecologist - Dr. Pushpa Sinha.webp',
     specialtyIcon: medicalIcons.obstetricsGynecology,
     description:
       'Dr. Pushpa Sinha has over 15 years of experience in obstetrics and gynaecology, with interests in research on gynae and obstetric care, high-risk pregnancy, adolescent gynecology, puberty, infertility, menopause, infectious diseases, and ultrasound with color Doppler.',
@@ -1214,7 +1253,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (General Surgery), MCh (Plastic Surgery)',
     specialty: 'Aesthetic and Reconstructive Surgery',
     experience: '12+ Years',
-    image: '',
+    image: 'assets/Doc-Side/Dr Pankaj Kumar.webp',
     specialtyIcon: medicalIcons.plasticSurgery,
     description:
       'Dr. Pankaj Kumar is a renowned Plastic, Cosmetic, and Reconstructive Surgeon based in Ranchi with over 10 years of experience. He is associated with Raj Hospital and Srijan Plastic Cosmetic and Micro Surgery Clinic, known for attention to accurate diagnosis and empathetic patient care.',
@@ -1464,56 +1503,53 @@ export const doctorsData = [
   //   }
   // },
 
-  //chatgpt content about ent doctor
-  // {
-  //   id: 'tg-n-sinha',
-  //   name: 'Dr. T G N Sinha',
-  //   qualifications: 'MBBS, MS, FICS',
-  //   specialty: 'ENT',
-  //   experience: '40+ Years',
-  //   image: '',
-  //   specialtyIcon: medicalIcons.ent,
-  //   description:
-  //     'Dr. T G N Sinha is a distinguished ENT specialist at Raj Hospital, Ranchi, with over 40 years of experience. He is renowned for providing expert care in diagnosing and treating a wide range of ear, nose, and throat disorders with advanced technology and personalized patient care.',
-  //   expertise: [
-  //     'Ear, Nose, and Throat Disorders',
-  //     'Phonosurgery',
-  //     'Laryngology',
-  //     'Voice Disorders',
-  //     'ENT Emergencies',
-  //     'Audiology',
-  //     'Speech Therapy'
-  //   ],
-  //   procedures: [],
-  //   education: [
-  //     {
-  //       degree: 'MBBS',
-  //       institution: '',
-  //       year: ''
-  //     },
-  //     {
-  //       degree: 'MS',
-  //       institution: '',
-  //       year: ''
-  //     },
-  //     {
-  //       degree: 'Fellow of the International College of Surgeons (FICS)',
-  //       institution: '',
-  //       year: ''
-  //     }
-  //   ],
-  //   memberships: [
-  //     'International College of Surgeons (FICS)'
-  //   ],
-  //   awards: [],
-  //   publications: [],
-  //   contact: {
-  //     email: '',
-  //     phone: '+919263630500',
-  //     clinic: 'Raj Hospital, Ranchi',
-  //     address: 'Behind Central, Opposite Roshpa Tower, Ratu Road, Ranchi'
-  //   }
-  // },
+  //ent
+  {
+    id: 'tgn-sinha',
+    name: 'Dr. T.G.N. Sinha',
+    qualifications: 'MBBS, MS, FICS',
+    specialty: 'ENT Head & Neck',
+    experience: '45+ Years',
+    image: '/assets/Doc-Side/Dr T G N Sinha ( ENT).webp', // No image provided
+    specialtyIcon: '',
+    description: '',
+
+    expertise: [
+
+    ],
+
+    education: [
+      { degree: 'MBBS', institution: 'RMCH, Ranchi', year: '' },
+      { degree: 'MS, FICS', institution: 'PMCH, Patna', year: '' }
+    ],
+
+    memberships: [
+
+    ],
+
+    awards: [],
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
 
   {
     id: 'ranajan-jha',
@@ -1629,7 +1665,7 @@ export const doctorsData = [
   {
     id: 'abhay-pandey',
     name: 'Dr. Abhay Kumar Pandey',
-    qualifications: 'BPT, MPT, PGDYT, COMT, MIAP',
+    qualifications: 'BPT, MPT, PGDYT, FOMT, FDM, FNMT, MIAP',
     specialty: 'Physiotherapy',
     experience: '16+ Years',
     image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Physiotherapist - Dr. Abhay-Kumar-Pandey.png',
@@ -1789,7 +1825,7 @@ export const doctorsData = [
     qualifications: 'M.B.B.S (PMCH - Dhanbad), MD (Medicine - PMCH, Patna), DrNB (Neurology - Sir Gangaram Hospital, Delhi)',
     specialty: 'Neurosciences',
     experience: '5+ Years',
-    image: '', // No image provided
+    image: 'assets/Doc-Side/Dr Ahmad Hussain.webp',
     specialtyIcon: '', // No icon provided
     description:
       'Dr. Ahmad Hussain is a neurologist with over 5 years of experience in managing complex neurological conditions including stroke, epilepsy, dementias, movement disorders, and neuro-infectious diseases.',
@@ -2002,7 +2038,7 @@ export const doctorsData = [
     }
   },
 
-  //microbiology
+
   {
     id: 'jitendra-prasad',
     name: 'Dr. Jitendra Prasad',
@@ -2050,7 +2086,7 @@ export const doctorsData = [
       }
     }
   },
-  //pathology
+
   {
     id: 'kriti-kaira',
     name: 'Dr. Kriti Kaira',
@@ -2102,7 +2138,779 @@ export const doctorsData = [
         address: ''
       }
     }
-  }
+  },
+  //medicine
+  {
+    id: 'ashok-kr-agarwal',
+    name: 'Dr. Ashok Kr Agarwal',
+    qualifications: 'MBBS, MD (Medicine)',
+    specialty: 'MD (Medicine)',
+    experience: '8 Years',
+    image: '', // No image provided
+    specialtyIcon: '', // No icon provided
+    description: '', // No description provided
+
+    expertise: [
+      'Consultant Physician',
+      'Diabetic, Heart, Chest Specialist',
+    ],
+
+    education: [
+      { degree: 'MBBS', institution: '', year: '' },
+      { degree: 'MD (Medicine)', institution: 'P.M.C.H', year: '' },
+      { degree: 'Senior Residency (Cardiology)', institution: 'G.B Pant Hospital, New Delhi', year: '' },
+      { degree: 'Senior Residency (Medicine)', institution: 'R.I.M.S', year: '' }
+    ],
+
+    memberships: [
+
+    ],
+
+    awards: [], // No awards listed
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '', // No phone provided
+      email: '', // No email provided
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+
+
+  },
+  //administration
+  {
+    id: 'ajeet-singh',
+    name: 'Dr. Ajeet Singh',
+    qualifications: 'MBBS (1982), Post Graduate Diploma (1988)',
+    specialty: '', // No specific specialty provided
+    experience: '38 Years',
+    image: '', // No image provided
+    specialtyIcon: '',
+    description: '',
+
+    expertise: [
+
+      'Strategic Planning Policies and Procedure Compliance',
+      'Member and Committee & HIC Committee',
+      'Nodal Officer COVID-19 Disease / Vaccination Drive',
+      'Member On-board for MOU with CGHS, ESI, ECHS, Railways, CILETA',
+      'Imparting AB-PMJAY Scheme as a Business Module',
+      'Imparting CME PWG for Doctors and Nursing Staff',
+      'Supervision of Health Check-up Program',
+
+    ],
+
+    education: [
+      { degree: 'MBBS', institution: 'MGM Medical College, JSR', year: '1982' },
+      { degree: 'Post Graduate Diploma', institution: 'Ranchi University', year: '1988' }
+    ],
+
+    memberships: [
+
+      'Chairman (CIL) Award for Prevention of Disease and Health Awareness',
+      'Publication of Service Focused Journal',
+      'Presentation of Scientific Paper on National Level'
+    ],
+
+    awards: [],
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
+  //family-medicine
+  {
+    id: 'sanjeev-kumar-ravi',
+    name: 'Dr. Sanjeev Kumar Ravi',
+    qualifications: 'MBBS, Ultrasound Training Course (New Delhi), Diploma in Family Medicine',
+    specialty: '', // No specific specialty provided
+    experience: '20 Years',
+    image: '', // No image provided
+    specialtyIcon: '', // No icon provided
+    description: '', // No description provided
+
+    expertise: [
+      'Ultrasonography',
+      'Casualty',
+      'ICU',
+      'HDU Ward',
+      'GEN Ward',
+    ],
+
+    education: [
+      { degree: 'MBBS', institution: '', year: '' },
+      { degree: 'Ultrasound Training Course', institution: 'New Delhi', year: '' },
+      { degree: 'Diploma in Family Medicine', institution: 'Jawahar Lal Nehru, Apollo Hospital, New Delhi', year: '' },
+      { degree: 'Diploma in Family Medicine', institution: 'Bhagalpur Medical College', year: '' }
+    ],
+
+    memberships: [
+      'Ultra Sound Society of India',
+
+    ],
+
+    awards: [],
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
+  //general-surgery
+  {
+    id: 'ashish-kumar',
+    name: 'Dr. Ashish Kumar',
+    qualifications: 'MBBS, MS (General Surgery)',
+    specialty: 'Laparoscopic Surgery (Basic and Advanced)',
+    experience: '12 Years',
+    image: '', // No image provided
+    specialtyIcon: '',
+    description: '',
+
+    expertise: [
+      'Laparoscopy Surgery',
+      'Laser Surgery for Proctology',
+      'Diagnostic and Therapeutic Endoscopy',
+      '', // 4
+      '', // 5
+      '', // 6
+      '', // 7
+      '', // 8
+      '', // 9
+      ''  // 10
+    ],
+
+    education: [
+      { degree: 'MBBS', institution: 'JLNMCH, Bhagalpur', year: '' },
+      { degree: 'MS (General Surgery)', institution: 'RIMS, Ranchi', year: '' }
+    ],
+
+    memberships: [
+      'F.MAS',
+      'F.IAGE',
+      'Member of ASI',
+      'Member of Diabetic Foot',
+      'Treasurer in ASI Jharkhand Chapter'
+    ],
+
+    awards: [],
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
+  //emergency-medicine
+  {
+    id: 'shubham-shekhar',
+    name: 'Dr. Shubham Shekhar',
+    qualifications: 'ACLS, BLS',
+    specialty: 'Emergency Medicine and Trauma Care',
+    experience: '2 Years',
+    image: '', // No image provided
+    specialtyIcon: '',
+    description: '',
+
+    expertise: [
+      'ICU Ward, Casualty, OPD Management',
+      'Assistant Consultant',
+      'Patient Counselling',
+      'Minor Surgery',
+      'Patient Administration',
+
+    ],
+
+    education: [
+      { degree: 'ACLS, BLS', institution: 'IMS, SUM Hospital Institute of Medical Science and SUM Hospital, Bhubaneswar', year: '' }
+    ],
+
+    memberships: [
+      'ACLS, BLS',
+
+    ],
+
+    awards: [],
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
+  //cardiology
+  {
+    id: 'anup-kumar-jha',
+    name: 'Dr. Anup Kumar Jha',
+    qualifications: 'MBBS, Cardio-Physician (NI), IGNOU',
+    specialty: 'Non-Invasive Cardiology',
+    experience: '30+ Years',
+    image: 'assets/Doc-Side/Dr Anup Kumar Jha_.webp', // No image provided
+    specialtyIcon: '',
+    description: '',
+
+    expertise: [
+
+    ],
+
+    education: [
+      { degree: 'MBBS', institution: 'Volgograd State Medical Academy', year: '' },
+      { degree: 'Cardio-Physician (NI), IGNOU', institution: 'Fortis Escorts, New Delhi', year: '' }
+    ],
+
+    memberships: [
+      'Indian Medical Association',
+      'ACLS Provider',
+
+    ],
+
+    awards: [],
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
+  //lab
+  {
+    id: 'shweta-sushmita',
+    name: 'Dr. Shweta Sushmita',
+    qualifications: 'MBBS, MD (Pathology)',
+    specialty: 'Pathology',
+    experience: '10+ Years',
+    image: 'assets/Doc-Side/Lab - Dr. Sweta Sushmita.webp',
+    specialtyIcon: '',
+    description: '',
+
+    expertise: [
+      'Histopathology',
+      'Cytopathology',
+      'Hematology',
+
+    ],
+
+    education: [
+      { degree: 'MBBS', institution: 'M.G.M Medical College Kishanganj', year: '' },
+      { degree: 'MD (Pathology)', institution: 'KIMS, KIIT University (Bhubaneswar)', year: '' },
+      { degree: 'Senior Residency', institution: 'VMMC & Safdarjung Hospital, New Delhi', year: '' }
+    ],
+
+    memberships: [
+      'Got Award for Blood Bank - Incharge Khunti',
+
+    ],
+
+    awards: [],
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
+  //pathology
+  {
+    id: 'praveen-kumar',
+    name: 'Dr. Praveen Kumar',
+    qualifications: 'MBBS, DCP (Pathology)',
+    specialty: 'Consultant Pathology',
+    experience: '8+ Years',
+    image: 'assets/Doc-Side/Dr Praveen Kumar (Lab).webp',
+    specialtyIcon: '',
+    description: '',
+
+    expertise: [
+      'Clinical Hematology',
+      'Cell Cytology',
+      'Bone Marrow Cytology / Biopsy',
+      'Histopathology',
+
+    ],
+
+    education: [
+      { degree: 'MBBS, DCP (Pathology)', institution: 'RIMS, Ranchi, Jharkhand', year: '' }
+    ],
+
+    memberships: [
+      'ISO-15189-2022 Trained',
+
+    ],
+
+    awards: [],
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
+  //pain-medicine
+  {
+    id: 'sony',
+    name: 'Dr. Sony',
+    qualifications:
+      'MBBS, DNB (Anaesthesiology), PDCC (Interventional Pain Medicine), CCEPEC (IAPC)',
+    specialty: 'Interventional Pain Medicine',
+    experience: '4+ Years',
+    image: 'assets/Doc-Side/Dr Sony (Interventional Pain Medicine).webp',
+    specialtyIcon: '',
+    description: '',
+
+    expertise: [
+      'Regenerative Therapy (GFC / PRP)',
+      'Chronic Joint Pain (Knee, Shoulder, Elbow, Ankle, Heel, Plantar Fasciitis)',
+      'Minimally Invasive Pain & Spine Interventions (MIPSI)',
+      'Low Back Pain',
+      'Neck Pain',
+      'Neuralgias',
+      'Headache Interventions (Cervicogenic, Trigeminal Neuralgia, Cluster Headaches, Migraine)',
+      'Entrapment Neuropathies',
+      'Post-Traumatic Pain Syndromes',
+      'Post-Surgical Pain Syndromes',
+      'Cancer Pain'
+    ],
+
+    education: [
+      { degree: 'MBBS', institution: 'A.N.M.M.C.H', year: '' },
+      { degree: 'DNB (Anaesthesiology)', institution: 'Fortis Hospitals Ltd., Bangalore', year: '' },
+      { degree: 'PDCC – Interventional Pain Medicine', institution: 'AIIMS Rishikesh', year: '' },
+      { degree: 'CCEPEC (IAPC)', institution: '', year: '' }
+    ],
+
+    memberships: [
+      'Dr. Ashok Kumar Gupta YAA (East Zone – ISACON 2025)',
+      'Young Researcher Award (InSc – 2023)',
+      'Lifetime Member – ISA',
+      'Lifetime Member – ISPC',
+      'Multiple National & International Publications'
+    ],
+
+    awards: [],
+
+    procedures: [],
+
+    publications: [
+      // You may add formatted publication entries here
+    ],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
+
+  //dietetics-nutrition
+  {
+    id: 'parijat-sarkar',
+    name: 'Mr. Parijat Sarkar',
+    qualifications: 'B.Sc (Dietetics & Nutrition), M.Sc (Sports Nutrition Specialist), ISSA (Life Science), B.Ed',
+    specialty: '',
+    experience: '6+ Years',
+    image: '', // No image provided
+    specialtyIcon: '',
+    description: '',
+
+    expertise: [
+      'Clinical Dietetics & Nutrition',
+      'Sports Dietetics & Nutrition',
+      'Preventive Healthcare Nutrition',
+      'Metabolic Disorder Management',
+      'MNT of Lifestyle Disorder',
+      'Body Recomposition',
+
+    ],
+
+    education: [
+      { degree: 'B.Sc (Dietetics & Nutrition)', institution: 'NSHM Knowledge Campus, Durgapur', year: '' },
+      { degree: 'M.Sc (Sports Nutrition Specialist)', institution: '', year: '' },
+      { degree: 'ISSA (Life Science)', institution: '', year: '' },
+      { degree: 'B.Ed', institution: '', year: '' }
+    ],
+
+    memberships: [
+
+    ],
+
+    awards: [],
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
+  //eye care
+  {
+    id: 'abid-akhtar',
+    name: 'Dr. Abid Akhtar',
+    qualifications: 'MBBS, MS (Ophthalmology)',
+    specialty: 'Anterior Segment Surgeon',
+    experience: '20+ Years',
+    image: 'assets/Doc-Side/Dr. Abid Akhtar (Opthal).webp', // No image provided
+    specialtyIcon: '',
+    description: '',
+
+    expertise: [
+      'Cataract and Refractive Surgery',
+      'Cornea and External Diseases',
+
+    ],
+
+    education: [
+      { degree: 'MBBS, MS (Ophthalmology)', institution: 'PMCH, Patna, Bihar', year: '' }
+    ],
+
+    memberships: [
+
+    ],
+
+    awards: [],
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
+  //neuro-psychiatry
+  {
+    id: 'anil-kumar',
+    name: 'Dr. Anil Kumar',
+    qualifications: 'MBBS, MD (Psychiatry)',
+    specialty: 'Neuro-Psychiatric',
+    experience: '40+ Years',
+    image: 'assets/Doc-Side/Dr Anil Kumar (Psychiatry).webp', // No image provided
+    specialtyIcon: '',
+    description: '',
+
+    expertise: [
+      'Electrophysiology EMG and EEG Techniques',
+      'Neuro-Psychiatric',
+      'Clinical Neurology',
+      'Cognitive Behavioral Therapy',
+
+    ],
+
+    education: [
+      { degree: 'MBBS', institution: 'Meerut Medical College', year: '' },
+      { degree: 'MD (Psychiatry)', institution: 'Patna Medical College', year: '' }
+    ],
+
+    memberships: [
+      'Fellow Indian Psychiatric Society',
+      'Association Member Neurology Society of India',
+
+    ],
+
+    awards: [],
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
+
+  {
+    id: 'anamika-kumari',
+    name: 'Dr. Anamika Kumari',
+    qualifications: 'MBBS, DNB (Radiotherapy)',
+    specialty: 'Radiotherapy',
+    experience: '11+ Years',
+    image: 'assets/Doc-Side/Dr Anamika Onco photo.webp',
+    specialtyIcon: '',
+    description: '',
+
+    expertise: [
+      'Head & Neck Oncology',
+      'Breast Oncology',
+
+    ],
+
+    education: [
+      { degree: 'MBBS (Radiotherapy)', institution: 'Patna Medical College, Patna', year: '' },
+      { degree: 'DNB (Radiotherapy)', institution: 'Mahavir Cancer Sansthan, Patna', year: '' }
+    ],
+
+    memberships: [
+      'Association of Radiation Oncologist of India',
+
+    ],
+
+    awards: [],
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
+  //radiology
+  {
+    id: 'shekhar-sharma',
+    name: 'Dr. Shekhar Sharma',
+    qualifications: 'MBBS, DMRD (Radiodiagnosis)',
+    specialty: 'Radiodiagnosis',
+    experience: '20+ Years',
+    image: 'assets/Doc-Side/Dr Shekhar Sharma (Radiologist).webp', // No image provided
+    specialtyIcon: '',
+    description: '',
+
+    expertise: [
+      'MRI, CT & Conventional Radiology',
+
+    ],
+
+    education: [
+      { degree: 'MBBS (Radiodiagnosis)', institution: 'MGM Jamshedpur', year: '' },
+      { degree: 'DMRD', institution: 'RIMS Ranchi', year: '' }
+    ],
+
+    memberships: [
+      'Life Member IMA',
+      'Life Member IRA',
+      'Life Member Academic Medical Forum',
+
+    ],
+
+    awards: [],
+    procedures: [],
+    publications: [],
+
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
