@@ -4029,7 +4029,7 @@ const SpecialtyDetail = () => {
         </div>
       </section>
 
-      {/* FAQs */}
+      {/* FAQs and Contact Form */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
@@ -4040,38 +4040,132 @@ const SpecialtyDetail = () => {
               Common questions about {specialty.title} conditions and treatments
             </p>
           </div>
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-6">
-              {specialty.faqs.map((faq, index) =>
-                <div
-                  key={index}
-                  className="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer"
-                  onClick={() => setOpenIndex(openIndex === index ? null : index)}>
 
-                  <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                      {faq.question}
-                    </h3>
-                    {openIndex === index ?
-                      <FiIcons.FiMinus className="text-2xl text-primary-500" /> :
-
-                      <FiIcons.FiPlus className="text-2xl text-primary-500" />
-                    }
-                  </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* FAQs Column */}
+            <div>
+              <div className="space-y-4">
+                {specialty.faqs.map((faq, index) =>
                   <div
-                    className={`text-gray-700 transition-max-height duration-300 overflow-hidden ${openIndex === index ? "max-h-40" : "max-h-0"}`
-                    }>
+                    key={index}
+                    className="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer"
+                    onClick={() => setOpenIndex(openIndex === index ? null : index)}>
 
-                    {openIndex === index &&
-                      <p>
-                        {faq.answer}
-                      </p>
-                    }
+                    <div className="flex justify-between items-center">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                        {faq.question}
+                      </h3>
+                      {openIndex === index ?
+                        <FiIcons.FiMinus className="text-2xl text-primary-500 flex-shrink-0 ml-4" /> :
+                        <FiIcons.FiPlus className="text-2xl text-primary-500 flex-shrink-0 ml-4" />
+                      }
+                    </div>
+                    <div
+                      className={`text-gray-700 transition-max-height duration-300 overflow-hidden ${openIndex === index ? "max-h-40" : "max-h-0"}`
+                      }>
+
+                      {openIndex === index &&
+                        <p>
+                          {faq.answer}
+                        </p>
+                      }
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
+              </div>
             </div>
 
+            {/* Contact Form Column */}
+            <div className="lg:sticky lg:top-24 h-fit">
+              <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl p-6 shadow-lg">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  Have More Questions?
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Get in touch with our {specialty.title} specialists
+                </p>
+
+                <form className="space-y-4">
+                  {/* Name */}
+                  <div>
+                    <label htmlFor="inquiry_name" className="block text-sm font-medium text-gray-700 mb-1">
+                      Full Name <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="inquiry_name"
+                      name="inquiry_name"
+                      required
+                      className="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+
+                  {/* Email */}
+                  <div>
+                    <label htmlFor="inquiry_email" className="block text-sm font-medium text-gray-700 mb-1">
+                      Email Address <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="inquiry_email"
+                      name="inquiry_email"
+                      required
+                      className="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+
+                  {/* Phone */}
+                  <div>
+                    <label htmlFor="inquiry_phone" className="block text-sm font-medium text-gray-700 mb-1">
+                      Phone Number <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="tel"
+                      id="inquiry_phone"
+                      name="inquiry_phone"
+                      required
+                      pattern="[0-9]{10}"
+                      className="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      placeholder="Enter 10-digit mobile number"
+                    />
+                  </div>
+
+                  {/* Message */}
+                  <div>
+                    <label htmlFor="inquiry_message" className="block text-sm font-medium text-gray-700 mb-1">
+                      Your Question <span className="text-red-500">*</span>
+                    </label>
+                    <textarea
+                      id="inquiry_message"
+                      name="inquiry_message"
+                      required
+                      rows="4"
+                      className="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      placeholder="Describe your question or concern..."
+                    ></textarea>
+                  </div>
+
+                  {/* Hidden field for specialty */}
+                  <input type="hidden" name="specialty" value={specialty.title} />
+
+                  {/* Submit Button */}
+                  <button
+                    type="submit"
+                    className="w-full bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2"
+                  >
+                    <FiIcons.FiSend className="w-5 h-5" />
+                    Submit Inquiry
+                  </button>
+
+                  {/* Info Text */}
+                  <p className="text-xs text-gray-600 text-center mt-3">
+                    Our team will respond within 24 hours
+                  </p>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
