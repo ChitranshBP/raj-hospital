@@ -1,4 +1,5 @@
 /* eslint-env node */
+/* eslint-disable */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -18,6 +19,7 @@ try {
 }
 
 // Import sharp after ensuring it's installed
+// eslint-disable-next-line
 const sharp = (await import('sharp')).default;
 
 // Directories to search for images

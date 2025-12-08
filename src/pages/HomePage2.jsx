@@ -942,6 +942,8 @@ function QuickNavigationBar() {
       bgColor: "bg-[#F9771B]",
       textColor: "text-white",
       hoverBg: "hover:bg-[#F9771B]/90",
+      link: "/contact",
+      subject: "Book Appointment"
     },
     {
       title: "Second Opinion",
@@ -950,6 +952,8 @@ function QuickNavigationBar() {
       textColor: "text-gray-700",
       hoverBg: "hover:bg-gray-50",
       border: "border border-gray-200",
+      link: "/contact",
+      subject: "Second Opinion"
     },
     {
       title: "Get Health Checkup",
@@ -958,22 +962,8 @@ function QuickNavigationBar() {
       textColor: "text-gray-700",
       hoverBg: "hover:bg-gray-50",
       border: "border border-gray-200",
-    },
-    // {
-    //   title: "Book A Virtual Consultation",
-    //   icon: FiIcons.FiVideo,
-    //   bgColor: "bg-white",
-    //   textColor: "text-gray-700",
-    //   hoverBg: "hover:bg-gray-50",
-    //   border: "border border-gray-200",
-    // },
-    {
-      title: "Homecare",
-      icon: FiIcons.FiHome,
-      bgColor: "bg-white",
-      textColor: "text-gray-700",
-      hoverBg: "hover:bg-gray-50",
-      border: "border border-gray-200",
+      link: "/contact",
+      subject: "Get Health Checkup"
     },
     {
       title: "Book a Test",
@@ -982,6 +972,8 @@ function QuickNavigationBar() {
       textColor: "text-gray-700",
       hoverBg: "hover:bg-gray-50",
       border: "border border-gray-200",
+      link: "/contact",
+      subject: "Book a Test"
     },
   ];
 
@@ -1048,13 +1040,15 @@ function QuickNavigationBar() {
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-3">
           {actionButtons.map((button, index) => (
-            <button
+            <Link
               key={index}
+              to={button.link}
+              state={{ subject: button.subject }}
               className={`${button.bgColor} ${button.textColor} ${button.hoverBg} ${button.border || ''} px-5 py-3 rounded-lg font-medium text-sm transition-all duration-300 flex items-center gap-2 shadow-sm hover:shadow-md`}
             >
               <SafeIcon icon={button.icon} className="w-5 h-5" />
               <span>{button.title}</span>
-            </button>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 
 const { FiPhone, FiMapPin, FiMail, FiClock, FiSend, FiMessageSquare } = FiIcons;
 
 const Contact = () => {
+  const location = useLocation();
+  const [selectedSubject, setSelectedSubject] = useState('');
+
+  useEffect(() => {
+    if (location.state?.subject) {
+      setSelectedSubject(location.state.subject);
+    }
+  }, [location]);
   return (
     <div>
       {/* Hero Section */}
@@ -121,13 +130,20 @@ const Contact = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Subject *
                   </label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                  <select
+                    value={selectedSubject}
+                    onChange={(e) => setSelectedSubject(e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  >
                     <option value="">Select a subject</option>
-                    <option value="appointment">Book Appointment</option>
-                    <option value="inquiry">General Inquiry</option>
-                    <option value="emergency">Emergency</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="other">Other</option>
+                    <option value="Book Appointment">Book Appointment</option>
+                    <option value="Second Opinion">Second Opinion</option>
+                    <option value="Get Health Checkup">Get Health Checkup</option>
+                    <option value="Book a Test">Book a Test</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Emergency">Emergency</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
                 <div>

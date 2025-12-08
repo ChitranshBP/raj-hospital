@@ -1,10 +1,47 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Link, useLocation } from 'react-router-dom';
-import * as FiIcons from 'react-icons/fi';
-import SafeIcon from '../common/SafeIcon';
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
+import * as FiIcons from "react-icons/fi";
+import SafeIcon from "../common/SafeIcon";
 
-const { FiPhone, FiSearch, FiMapPin, FiYoutube, FiInstagram, FiFacebook, FiMenu, FiX, FiChevronDown, FiPenTool, FiBell } = FiIcons;
+const {
+  FiPhone,
+  FiSearch,
+  FiMapPin,
+  FiYoutube,
+  FiInstagram,
+  FiFacebook,
+  FiMenu,
+  FiX,
+  FiChevronDown,
+  FiPenTool,
+  FiBell,
+  FiHeart,
+  FiActivity,
+  FiAlertCircle,
+  FiAperture,
+  FiTarget,
+  FiDroplet,
+  FiBrain,
+  FiShield,
+  FiUsers,
+  FiWind,
+  FiCrosshair,
+  FiZap,
+  FiTrendingUp,
+  FiScissors,
+  FiSmile,
+  FiFeather,
+  FiMic,
+  FiEye,
+  FiCoffee,
+  FiBaby,
+  FiMove,
+  FiMessageCircle,
+  FiCamera,
+  FiMoon,
+  FiFile,
+} = FiIcons;
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,7 +54,7 @@ const Header = () => {
   const [openCategory, setOpenCategory] = useState(null);
 
   // New states for scroll direction
-  const [scrollDirection, setScrollDirection] = useState('up');
+  const [scrollDirection, setScrollDirection] = useState("up");
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showMiddleRow, setShowMiddleRow] = useState(true);
 
@@ -33,19 +70,19 @@ const Header = () => {
       // Determine scroll direction
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         // Scrolling down & past threshold
-        setScrollDirection('down');
+        setScrollDirection("down");
         setShowMiddleRow(false);
       } else if (currentScrollY < lastScrollY) {
         // Scrolling up
-        setScrollDirection('up');
+        setScrollDirection("up");
         setShowMiddleRow(true);
       }
 
       setLastScrollY(currentScrollY);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
   // Close mobile menu when route changes
@@ -57,6 +94,35 @@ const Header = () => {
     setIsNewsOpen(false);
     setIsAcademicsOpen(false);
   }, [location]);
+
+  // Icon mapping for each specialty
+  const specialtyIcons = {
+    Cardiology: FiHeart,
+    "Critical Care ": FiActivity,
+    Emergency: FiAlertCircle,
+    Gastroenterology: FiAperture,
+    "Minimal Access Surgery": FiTarget,
+    Nephrology: FiDroplet,
+    Neurosciences: FiCoffee,
+    "Oncology (Cancer Care)": FiShield,
+    "Orthopaedics & Joint Replacement": FiUsers,
+    Pulmonology: FiWind,
+    "Internal Medicine": FiCrosshair,
+    Urology: FiZap,
+    "Obstetrics & Gynaecology": FiTrendingUp,
+    "Aesthetic & Reconstructive Surgery": FiScissors,
+    Dental: FiSmile,
+    Dermatology: FiFeather,
+    ENT: FiMic,
+    "Eye Care": FiEye,
+    "Nutrition & Dietetics": FiCoffee,
+    "Pediatrics & Neonatology": FiCoffee,
+    "Physiotherapy & Rehabilitation": FiMove,
+    "Psychiatry & Mental Health": FiMessageCircle,
+    Radiology: FiCamera,
+    Neurology: FiMoon,
+    "FNAC, Biopsy, Blood & Laboratory Investigations": FiFile,
+  };
 
   const specialties = [
     {
@@ -74,8 +140,8 @@ const Header = () => {
         "Pulmonology",
         "Internal Medicine",
         "Urology",
-        "Obstetrics & Gynaecology"]
-
+        "Obstetrics & Gynaecology",
+      ],
     },
     {
       category: "Allied Specialties",
@@ -88,8 +154,8 @@ const Header = () => {
         "Nutrition & Dietetics",
         "Pediatrics & Neonatology",
         "Physiotherapy & Rehabilitation",
-        "Psychiatry & Mental Health"]
-
+        "Psychiatry & Mental Health",
+      ],
     },
     {
       category: "Advanced Diagnostics",
@@ -97,12 +163,10 @@ const Header = () => {
         "Radiology",
         // "Cardiology",
         "Neurology",
-        "FNAC, Biopsy, Blood & Laboratory Investigations"]
-
-    }];
-
-
-
+        "FNAC, Biopsy, Blood & Laboratory Investigations",
+      ],
+    },
+  ];
 
   // const newsItems = [
   // 'Press Releases',
@@ -110,40 +174,42 @@ const Header = () => {
   // 'Medical Updates',
   // 'Awards & Recognition'];
 
-
   // Custom URL mapping for specific specialties in Advanced Diagnostics
   const specialtyUrlMap = {
-    'Cardiology': {
-      'Advanced Diagnostics': 'cardiology-ad'
+    Cardiology: {
+      "Advanced Diagnostics": "cardiology-ad",
     },
-    'Neurology': {
-      'Advanced Diagnostics': 'neurology-ad'
+    Neurology: {
+      "Advanced Diagnostics": "neurology-ad",
     },
-    'FNAC, Biopsy, Blood & Laboratory Investigations': {
-      'Advanced Diagnostics': 'laboratory-investigations'
-    }
+    "FNAC, Biopsy, Blood & Laboratory Investigations": {
+      "Advanced Diagnostics": "laboratory-investigations",
+    },
   };
 
   // Helper function to convert specialty names to URL slugs
-  const specialtyToSlug = (specialtyName, category = '') => {
+  const specialtyToSlug = (specialtyName, category = "") => {
     // Check if there's a custom mapping for this specialty in this category
-    if (specialtyUrlMap[specialtyName] && specialtyUrlMap[specialtyName][category]) {
+    if (
+      specialtyUrlMap[specialtyName] &&
+      specialtyUrlMap[specialtyName][category]
+    ) {
       return specialtyUrlMap[specialtyName][category];
     }
 
     return specialtyName
       .toLowerCase()
-      .replace(/&/g, 'and')
-      .replace(/\s+/g, '-')
-      .replace(/[()]/g, '')
-      .replace(/--+/g, '-');
+      .replace(/&/g, "and")
+      .replace(/\s+/g, "-")
+      .replace(/[()]/g, "")
+      .replace(/--+/g, "-");
   };
 
   const scrollToSection = (sectionId) => {
-    if (location.pathname === '/') {
+    if (location.pathname === "/") {
       const element = document.getElementById(sectionId);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
     setIsMobileMenuOpen(false);
@@ -163,26 +229,43 @@ const Header = () => {
       {/* Top Orange Bar with light orange background */}
       <div className="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-2 sm:py-1 fixed top-0 left-0 right-0 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-3 sm:px-4">
-
           {/* Mobile Layout - Stacked */}
           <div className="flex flex-col space-y-2 sm:hidden">
             {/* Top Row - Social Media & Location */}
             <div className="flex items-center justify-center space-x-4">
               {/* Social Media Icons */}
               <div className="flex items-center space-x-3">
-                <a href="https://www.facebook.com/RajHospitals" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+                <a
+                  href="https://www.facebook.com/RajHospitals"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange-200 transition-colors"
+                >
                   <SafeIcon icon={FiFacebook} className="w-4 h-4" />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange-200 transition-colors"
+                >
                   <SafeIcon icon={FiInstagram} className="w-4 h-4" />
                 </a>
-                <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+                <a
+                  href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange-200 transition-colors"
+                >
                   <SafeIcon icon={FiYoutube} className="w-4 h-4" />
                 </a>
               </div>
 
               {/* Location Icon */}
-              <a href="/location" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+              <a
+                href="/location"
+                className="flex items-center space-x-1 hover:text-orange-200 transition-colors"
+              >
                 <SafeIcon icon={FiMapPin} className="w-4 h-4" />
                 <span className="text-xs font-medium">Location</span>
               </a>
@@ -192,7 +275,10 @@ const Header = () => {
             <div className="flex items-center justify-center">
               <div className="flex items-center space-x-2">
                 <SafeIcon icon={FiBell} className="w-4 h-4 text-red-300" />
-                <a href="tel:+919771488888" className="text-xs font-medium hover:underline">
+                <a
+                  href="tel:+919771488888"
+                  className="text-xs font-medium hover:underline"
+                >
                   (24×7) Helpline: +91 97714 88888
                 </a>
               </div>
@@ -205,19 +291,37 @@ const Header = () => {
             <div className="flex items-center space-x-4">
               {/* Social Media Icons */}
               <div className="flex items-center space-x-2">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange-200 transition-colors"
+                >
                   <SafeIcon icon={FiFacebook} className="w-4 h-4" />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange-200 transition-colors"
+                >
                   <SafeIcon icon={FiInstagram} className="w-4 h-4" />
                 </a>
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors">
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange-200 transition-colors"
+                >
                   <SafeIcon icon={FiYoutube} className="w-4 h-4" />
                 </a>
               </div>
 
               {/* Location Icon */}
-              <a href="/location" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+              <a
+                href="/location"
+                className="flex items-center space-x-1 hover:text-orange-200 transition-colors"
+              >
                 <SafeIcon icon={FiMapPin} className="w-4 h-4" />
                 <span className="text-sm font-medium">Location</span>
               </a>
@@ -227,7 +331,10 @@ const Header = () => {
             <div className="flex items-center">
               <div className="flex items-center space-x-2">
                 <SafeIcon icon={FiBell} className="w-4 h-4 text-red-300" />
-                <a href="tel:+919771488888" className="text-sm font-medium hover:underline">
+                <a
+                  href="tel:+919771488888"
+                  className="text-sm font-medium hover:underline"
+                >
                   (24×7) Helpline: +91 97714 88888
                 </a>
               </div>
@@ -236,71 +343,84 @@ const Header = () => {
         </div>
       </div>
 
-
       {/* Main Header with dynamic height */}
-      <header className={`fixed w-full z-40 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg top-[48px] sm:top-6' : 'bg-white top-[48px] sm:top-6'}`
-      }>
+      <header
+        className={`fixed w-full z-40 transition-all duration-300 ${
+          isScrolled
+            ? "bg-white shadow-lg top-[48px] sm:top-6"
+            : "bg-white top-[48px] sm:top-6"
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4">
           {/* Logo and Main Container with fixed height - responsive */}
-          <div className="flex items-center justify-between h-16 md:h-20 lg:h-24">
+          <div className="flex relative items-center justify-between h-16 md:h-20 lg:h-24">
             {/* Logo with responsive and dynamic sizing */}
             <Link to="/" className="flex items-center">
-              <div className={`flex items-center transition-all duration-300 ${showMiddleRow ?
-                  'space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-6' :
-                  'space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6'}`
-              }>
+              <div
+                className={`flex items-center transition-all duration-300 ${
+                  showMiddleRow
+                    ? "space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-6"
+                    : "space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6"
+                }`}
+              >
                 {/* Main Logo - Responsive and dynamic sizing */}
                 <img
                   src="/assets/Header/main-logo_ranchi.webp"
                   alt="Main Logo"
-                  className={`object-contain transition-all duration-300 ${showMiddleRow ?
-                      'w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px]' // Both rows visible
-                      : 'w-[80px] h-[80px] sm:w-[110px] sm:h-[110px] md:w-[130px] md:h-[130px] lg:w-[140px] lg:h-[140px]' // One row visible - mobile stays same size
-                    }`} />
-
+                  className={`object-contain transition-all duration-300 ${
+                    showMiddleRow
+                      ? "w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px]" // Both rows visible
+                      : "w-[80px] h-[80px] sm:w-[110px] sm:h-[110px] md:w-[130px] md:h-[130px] lg:w-[140px] lg:h-[140px]" // One row visible - mobile stays same size
+                  }`}
+                />
 
                 {/* NABH Logos - Responsive and dynamic sizing */}
-                <div className={`flex transition-all duration-300 ${showMiddleRow ?
-                    'space-x-1 sm:space-x-2 md:space-x-2 lg:space-x-2' :
-                    'space-x-1 sm:space-x-3 md:space-x-2 lg:space-x-2'}`
-                }>
+                <div
+                  className={`flex transition-all duration-300 ${
+                    showMiddleRow
+                      ? "space-x-1 sm:space-x-2 md:space-x-2 lg:space-x-2"
+                      : "space-x-1 sm:space-x-3 md:space-x-2 lg:space-x-2"
+                  }`}
+                >
                   <img
                     src="/assets/Header/NABL_logo-1.webp"
                     alt="NABH Logo 1"
-                    className="object-contain w-[30px] h-[30px]" />
+                    className="object-contain w-[30px] h-[30px]"
+                  />
 
                   <img
                     src="/assets/Header/NABL-Logo-2.webp"
                     alt="NABH Logo 2"
-                    className="object-contain w-[30px] h-[30px]" />
+                    className="object-contain w-[30px] h-[30px]"
+                  />
 
                   <img
                     src="/assets/Header/NABL-Logo-3.webp"
                     alt="NABH Logo 3"
-                    className="object-contain w-[30px] h-[30px]" />
-
+                    className="object-contain w-[30px] h-[30px]"
+                  />
                 </div>
               </div>
             </Link>
 
             {/* Navigation Container - Responsive */}
             <div className="hidden md:flex lg:flex flex-col items-end space-y-1 lg:space-y-2">
-
               {/* First Row of Navigation - Animated hide/show */}
               <AnimatePresence>
-                {showMiddleRow &&
+                {showMiddleRow && (
                   <motion.nav
                     initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
+                    animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.3, ease: 'easeInOut' }}
-                    className="flex items-center space-x-3 md:space-x-4 lg:space-x-6 overflow-hidden">
-
-
-                    <Link to="/" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    className="flex items-center space-x-3 md:space-x-4 lg:space-x-6 overflow-hidden"
+                  >
+                    <Link
+                      to="/"
+                      className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base"
+                    >
                       Home
                     </Link>
-
 
                     {/* <div
                     className="relative cursor-pointer"
@@ -331,52 +451,58 @@ const Header = () => {
                         </AnimatePresence>
                       </div> */}
 
-
-
-                    <Link to="/testimonials" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                    <Link
+                      to="/testimonials"
+                      className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base"
+                    >
                       Testimonials
                     </Link>
 
-                    <Link to="/careers" className="text-orange-500 hover:text-orange-600 transition-colors font-medium text-sm lg:text-base">
+                    <Link
+                      to="/careers"
+                      className="text-orange-500 hover:text-orange-600 transition-colors font-medium text-sm lg:text-base"
+                    >
                       Careers
                     </Link>
 
-                    <Link to="/news-media" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                    <Link
+                      to="/news-media"
+                      className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base"
+                    >
                       News & Media
                     </Link>
-
-
                   </motion.nav>
-                }
+                )}
               </AnimatePresence>
 
               {/* Second Row of Navigation - Always visible, responsive */}
               <nav className="flex items-center space-x-3 md:space-x-4 lg:space-x-6">
-
-
-                <Link to="/about" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                <Link
+                  to="/about"
+                  className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base"
+                >
                   About Raj
                 </Link>
 
                 <div
-                  className="relative cursor-pointer"
+                  className=" cursor-pointer"
                   onMouseEnter={() => setIsSpecialtiesOpen(true)}
-                  onMouseLeave={() => setIsSpecialtiesOpen(false)}>
-
+                  onMouseLeave={() => setIsSpecialtiesOpen(false)}
+                >
                   <div className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
                     <span>Specialities</span>
                     <SafeIcon icon={FiChevronDown} className="w-3 h-3" />
                   </div>
                   <AnimatePresence>
-                    {isSpecialtiesOpen &&
+                    {isSpecialtiesOpen && (
                       <motion.div
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.25, ease: "easeOut" }}
-                        className="absolute top-full mt-4 z-20
+                        className="absolute top-full z-20
                /* Position: right-aligned but with left constraint to prevent overflow */
-               left-auto right-0
+                  left-auto right-0
                /* Mobile: full width with margin */
                w-[calc(100vw-2rem)]
                /* Small screens: slightly smaller */
@@ -393,5667 +519,62 @@ const Header = () => {
                /* Mobile: smaller padding */
                py-4 px-4
                /* Medium screens: larger padding */
-               md:py-6 md:px-6">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <div className="grid gap-6
+               md:py-6 md:px-6"
+                      >
+                        <div
+                          className="grid gap-6
                     /* Mobile: single column */
                     grid-cols-1
                     /* Small tablets: 2 columns */
                     sm:grid-cols-2
                     /* Large tablets and desktop: 3 columns */
-                    lg:grid-cols-3">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                          {specialties.map((category, idx) =>
+                    lg:grid-cols-3"
+                        >
+                          {specialties.map((category, idx) => (
                             <div key={idx} className="flex flex-col">
                               {/* Category Heading */}
-                              <h4 className="font-semibold text-orange-600 uppercase tracking-wide mb-3 
-                         border-b border-orange-200 pb-2
-                         /* Mobile: smaller text */
-                         text-xs
-                         /* Medium screens: larger text */
-                         md:text-sm">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                              <h4
+                                className="font-semibold text-orange-600 uppercase tracking-wide mb-3
+                         border-b border-gray-200 pb-2
+                         text-xs md:text-sm"
+                              >
                                 {category.category}
                               </h4>
 
                               {/* Items */}
-                              <div className="flex flex-col gap-1.5">
-                                {category.items.map((specialty) =>
-                                  <Link
-                                    key={specialty}
-                                    to={`/specialties/${specialtyToSlug(specialty, category.category)}`}
-                                    className="px-3 py-2 text-gray-700 leading-tight
-                           hover:bg-orange-50 hover:text-orange-600
-                           hover:scale-[1.01] transition-all duration-200
-                           rounded-lg border border-transparent
-                           hover:border-orange-200 text-left
-                           /* Mobile: smaller text and padding */
-                           text-xs py-1.5
-                           /* Small screens: medium text */
-                           sm:text-sm sm:py-2
-                           /* Ensure proper line height for wrapping */
-                           leading-relaxed break-words">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    {specialty}
-                                  </Link>
-                                )}
+                              <div className="flex flex-col gap-1">
+                                {category.items.map((specialty) => {
+                                  const IconComponent =
+                                    specialtyIcons[specialty];
+                                  return (
+                                    <Link
+                                      key={specialty}
+                                      to={`/specialties/${specialtyToSlug(
+                                        specialty,
+                                        category.category
+                                      )}`}
+                                      className="group flex items-center gap-2 py-2 text-gray-700
+                                 hover:text-orange-600 transition-colors duration-200
+                                 text-left text-xs sm:text-sm leading-relaxed"
+                                    >
+                                      {/* Icon */}
+                                      {IconComponent && (
+                                        <SafeIcon
+                                          icon={IconComponent}
+                                          className="w-5 h-5 text-orange-500 flex-shrink-0"
+                                        />
+                                      )}
+
+                                      {/* Specialty Name */}
+                                      <span className="flex-1">
+                                        {specialty}
+                                      </span>
+                                    </Link>
+                                  );
+                                })}
                               </div>
                             </div>
-                          )}
+                          ))}
                         </div>
 
                         {/* Mobile: Add scroll indicator if needed */}
@@ -6061,23 +582,22 @@ const Header = () => {
                           <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto"></div>
                         </div>
                       </motion.div>
-                    }
+                    )}
                   </AnimatePresence>
                 </div>
 
-
-
-                <Link to="/doctors" className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                <Link
+                  to="/doctors"
+                  className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base"
+                >
                   Find a Doctor
                 </Link>
-
-
 
                 <div className="flex items-center space-x-3 ml-2 lg:ml-4">
                   <Link
                     to="/contact"
-                    className="bg-orange-500 text-white px-4 lg:px-7 py-2 lg:py-2.5 rounded-full hover:bg-orange-600 transition-colors font-semibold text-sm lg:text-base shadow-md">
-
+                    className="bg-orange-500 text-white px-4 lg:px-7 py-2 lg:py-2.5 rounded-full hover:bg-orange-600 transition-colors font-semibold text-sm lg:text-base shadow-md"
+                  >
                     Book Appointment
                   </Link>
                 </div>
@@ -6087,28 +607,39 @@ const Header = () => {
             {/* Mobile Menu Button - Responsive */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 text-gray-700">
-
-              <SafeIcon icon={isMobileMenuOpen ? FiX : FiMenu} className="w-5 h-5 sm:w-6 sm:h-6" />
+              className="md:hidden p-2 text-gray-700"
+            >
+              <SafeIcon
+                icon={isMobileMenuOpen ? FiX : FiMenu}
+                className="w-5 h-5 sm:w-6 sm:h-6"
+              />
             </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         <AnimatePresence>
-          {isMobileMenuOpen &&
+          {isMobileMenuOpen && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
+              animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-white border-t border-gray-100 max-h-[80vh] overflow-y-auto">
-
+              className="lg:hidden bg-white border-t border-gray-100 max-h-[80vh] overflow-y-auto"
+            >
               <div className="px-4 py-4 space-y-3">
-                <Link to="/" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link
+                  to="/"
+                  className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   Home
                 </Link>
 
-                <Link to="/about" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link
+                  to="/about"
+                  className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   About Raj
                 </Link>
 
@@ -6118,31 +649,54 @@ const Header = () => {
                       setIsSpecialtiesOpen(!isSpecialtiesOpen);
                       if (isSpecialtiesOpen) setOpenCategory(null);
                     }}
-                    className="w-full flex items-center justify-between py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium">
+                    className="w-full flex items-center justify-between py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium"
+                  >
                     <span>Specialties</span>
-                    <SafeIcon icon={FiChevronDown} className={`w-4 h-4 transition-transform ${isSpecialtiesOpen ? 'rotate-180' : ''}`} />
+                    <SafeIcon
+                      icon={FiChevronDown}
+                      className={`w-4 h-4 transition-transform ${
+                        isSpecialtiesOpen ? "rotate-180" : ""
+                      }`}
+                    />
                   </button>
                   {isSpecialtiesOpen && (
                     <div className="pl-2 mt-2 space-y-1">
                       {specialties.map((category, idx) => (
-                        <div key={category.category} className="border-b border-gray-100 pb-2">
+                        <div
+                          key={category.category}
+                          className="border-b border-gray-100 pb-2"
+                        >
                           <button
-                            onClick={() => setOpenCategory(openCategory === idx ? null : idx)}
-                            className="w-full flex items-center justify-between py-2 px-2 text-orange-600 hover:bg-orange-50 rounded transition-colors">
-                            <span className="text-sm font-semibold uppercase">{category.category}</span>
-                            <SafeIcon icon={FiChevronDown} className={`w-3 h-3 transition-transform ${openCategory === idx ? 'rotate-180' : ''}`} />
+                            onClick={() =>
+                              setOpenCategory(openCategory === idx ? null : idx)
+                            }
+                            className="w-full flex items-center justify-between py-2 px-2 text-orange-600 hover:bg-orange-50 rounded transition-colors"
+                          >
+                            <span className="text-sm font-semibold uppercase">
+                              {category.category}
+                            </span>
+                            <SafeIcon
+                              icon={FiChevronDown}
+                              className={`w-3 h-3 transition-transform ${
+                                openCategory === idx ? "rotate-180" : ""
+                              }`}
+                            />
                           </button>
                           {openCategory === idx && (
                             <div className="pl-4 mt-1 space-y-1 max-h-48 overflow-y-auto">
                               {category.items.map((specialty) => (
                                 <Link
                                   key={specialty}
-                                  to={`/specialties/${specialtyToSlug(specialty, category.category)}`}
+                                  to={`/specialties/${specialtyToSlug(
+                                    specialty,
+                                    category.category
+                                  )}`}
                                   className="block py-1.5 text-sm text-gray-600 hover:text-orange-600 transition-colors"
                                   onClick={() => {
                                     setIsMobileMenuOpen(false);
                                     setOpenCategory(null);
-                                  }}>
+                                  }}
+                                >
                                   {specialty}
                                 </Link>
                               ))}
@@ -6154,23 +708,43 @@ const Header = () => {
                   )}
                 </div>
 
-                <Link to="/doctors" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link
+                  to="/doctors"
+                  className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   Find a Doctor
                 </Link>
 
-                <Link to="/news" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link
+                  to="/news"
+                  className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   News & Media
                 </Link>
 
-                <Link to="/testimonials" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link
+                  to="/testimonials"
+                  className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   Testimonials
                 </Link>
 
-                <Link to="/careers" className="block py-2 text-orange-500 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link
+                  to="/careers"
+                  className="block py-2 text-orange-500 hover:text-orange-600 transition-colors font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   Careers
                 </Link>
 
-                <Link to="/news-media" className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link
+                  to="/news-media"
+                  className="block py-2 text-gray-700 hover:text-orange-600 transition-colors font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   News & Media
                 </Link>
 
@@ -6178,20 +752,20 @@ const Header = () => {
                   <Link
                     to="/contact"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block w-full bg-orange-500 text-white py-3 rounded-lg font-medium text-center hover:bg-orange-600 transition-colors">
+                    className="block w-full bg-orange-500 text-white py-3 rounded-lg font-medium text-center hover:bg-orange-600 transition-colors"
+                  >
                     Book Appointment
                   </Link>
                 </div>
               </div>
             </motion.div>
-          }
+          )}
         </AnimatePresence>
       </header>
 
       {/* Responsive Dynamic Spacer for fixed header */}
-
-    </>);
-
+    </>
+  );
 };
 
 export default Header;
