@@ -690,7 +690,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (Otolaryngology), PDCC (Head and Neck Oncology)',
     specialty: 'Otolaryngology & Head and Neck Surgery',
     experience: '16+ Years',
-    image: '',
+    image: 'assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: medicalIcons.ent,
     description:
       'Dr. Abhijit Kumar is a Consultant Otolaryngologist and Head & Neck Surgeon with over 16 years of experience across premier surgical centers in India. His special interest includes endoscopic skull base surgery, head and neck cancer surgeries, cochlear implants, and implantable hearing aids. He has extensive academic and clinical experience, along with numerous research publications in national and international journals.',
@@ -1557,7 +1557,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS, FESS',
     specialty: 'ENT',
     experience: '15+ Years',
-    image: '',
+    image: 'assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: medicalIcons.ent,
     description:
       'Dr. Ranajan Kumar Jha is an experienced ENT specialist at Raj Hospital, Ranchi, with expertise in functional endoscopic sinus surgery (FESS) and comprehensive treatment of ear, nose, and throat conditions. He is recognized for his patient-centric approach and advanced surgical skills.',
@@ -1994,7 +1994,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Biochemistry)',
     specialty: 'Consultant - Biochemistry',
     experience: '10+ Years',
-    image: '', // No image provided
+    image: 'assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '', // No icon provided
     description: '', // No description provided
 
@@ -2045,7 +2045,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Microbiology)',
     specialty: 'Microbiology',
     experience: '9+ Years',
-    image: '', // No image provided
+    image: 'assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '', // No icon provided
     description: '', // No description provided
 
@@ -2146,7 +2146,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Medicine)',
     specialty: 'MD (Medicine)',
     experience: '8 Years',
-    image: '', // No image provided
+    image: 'assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '', // No icon provided
     description: '', // No description provided
 
@@ -2198,7 +2198,7 @@ export const doctorsData = [
     qualifications: 'MBBS (1982), Post Graduate Diploma (1988)',
     specialty: '', // No specific specialty provided
     experience: '38 Years',
-    image: '', // No image provided
+    image: 'assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '',
     description: '',
 
@@ -2256,7 +2256,7 @@ export const doctorsData = [
     qualifications: 'MBBS, Ultrasound Training Course (New Delhi), Diploma in Family Medicine',
     specialty: '', // No specific specialty provided
     experience: '20 Years',
-    image: '', // No image provided
+    image: 'assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '', // No icon provided
     description: '', // No description provided
 
@@ -2310,7 +2310,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (General Surgery)',
     specialty: 'Laparoscopic Surgery (Basic and Advanced)',
     experience: '12 Years',
-    image: '', // No image provided
+    image: 'assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '',
     description: '',
 
@@ -2364,7 +2364,7 @@ export const doctorsData = [
     qualifications: 'ACLS, BLS',
     specialty: 'Emergency Medicine and Trauma Care',
     experience: '2 Years',
-    image: '', // No image provided
+    image: 'assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '',
     description: '',
 
