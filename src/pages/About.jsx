@@ -231,10 +231,16 @@ const About = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}>
 
-              <img
-                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Hospital Building"
-                className="w-full rounded-2xl shadow-2xl" />
+              <video
+                src="assets/raj-video/raj-video.mp4"
+                autoPlay
+                muted
+                loop
+                controls
+                className="w-full rounded-2xl shadow-2xl"
+                poster="assets/About-img/The-Hospital.png">
+                Your browser does not support the video tag.
+              </video>
 
             </motion.div>
           </div>

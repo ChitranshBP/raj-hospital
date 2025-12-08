@@ -401,7 +401,7 @@ const Testimonials = () => {
       )}
 
       {/* Share Your Experience CTA */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -422,7 +422,7 @@ const Testimonials = () => {
             </button>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>);
 
 };

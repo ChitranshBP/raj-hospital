@@ -1423,7 +1423,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Pankaj Kumar',
           qualification: 'MBBS, MS, M.Ch (Plastic Surgery)',
           experience: '12+ Years',
-          image: 'assets/specialties/Aesthetic/dr-pankaj-kumar.jpg',
+          image: 'assets/doc-dummy/male-dummy-raj.webp',
           specialization: 'Aesthetic & Reconstructive Surgery, Plastic Surgery'
         }
       ],
@@ -1728,7 +1728,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Ranajan Kumar Jha',
           qualification: 'MBBS, MS, FESS',
           experience: '15+ Years',
-          image: '',
+          image: 'assets/doc-dummy/male-dummy-raj.webp',
           specialization: 'ENT Surgery'
         }
         // {
@@ -2301,7 +2301,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Pradeep Prasad',
           qualification: 'MBBS, MD (Biochemistry)',
           experience: '10+ Years',
-          image: '', // No image provided
+          image: 'assets/doc-dummy/male-dummy-raj.webp',
           specialization: 'Consultant Biochemistry, Molecular Testing, Genomic Testing'
         },
         {
@@ -2309,7 +2309,7 @@ const SpecialtyDetail = () => {
           name: 'Dr. Jitendra Prasad',
           qualification: 'MBBS, MD (Microbiology)',
           experience: '9+ Years',
-          image: '', // No image provided
+          image: 'assets/doc-dummy/male-dummy-raj.webp',
           specialization: 'Microbiology'
         },
         {
@@ -2904,13 +2904,13 @@ const SpecialtyDetail = () => {
     },
 
 
-    //new doctors added- no specialists mentioned 
+    //new doctors added- no specialists mentioned
     // {
     //   id: 'ashok-kr-agarwal',
     //   name: 'Dr. Ashok Kr Agarwal',
     //   qualification: 'MBBS, MD (Medicine)',
     //   experience: '8 Years',
-    //   image: '', // No image provided
+    //   image: 'assets/doc-dummy/male-dummy-raj.webp',
     //   specialization: 'Consultant Physician, Diabetic Specialist, Heart Specialist, Chest Specialist'
     // },
     //   {
@@ -2918,7 +2918,7 @@ const SpecialtyDetail = () => {
     //     name: 'Dr. Ajeet Singh',
     //       qualification: 'MBBS (1982), Post Graduate Diploma (1988)',
     //         experience: '38 Years',
-    //           image: '', // No image provided
+    //           image: 'assets/doc-dummy/male-dummy-raj.webp',
     //             specialization: 'Strategic Planning, Compliance, COVID-19 Nodal Officer, Health Programs, CME Training'
     // },
     // {
@@ -2926,7 +2926,7 @@ const SpecialtyDetail = () => {
     //   name: 'Dr. Sanjeev Kumar Ravi',
     //     qualification: 'MBBS, Ultrasound Training Course, Diploma in Family Medicine',
     //       experience: '20 Years',
-    //         image: '', // No image provided
+    //         image: 'assets/doc-dummy/male-dummy-raj.webp',
     //             specialization: 'Ultrasonography, Casualty, ICU, HDU, General Ward'
     // },
     // {
@@ -2934,7 +2934,7 @@ const SpecialtyDetail = () => {
     //   name: 'Dr. Ashish Kumar',
     //   qualification: 'MBBS, MS (General Surgery)',
     //   experience: '12 Years',
-    //   image: '', // No image provided
+    //   image: 'assets/doc-dummy/male-dummy-raj.webp',
     //   specialization: 'Laparoscopic Surgery, Laser Proctology, Diagnostic & Therapeutic Endoscopy'
     // },
     //     {
@@ -2942,7 +2942,7 @@ const SpecialtyDetail = () => {
     //   name: 'Dr. Shubham Shekhar',
     //   qualification: 'ACLS, BLS',
     //   experience: '2 Years',
-    //   image: '', // No image provided
+    //   image: 'assets/doc-dummy/male-dummy-raj.webp',
     //   specialization: 'Emergency Medicine, Trauma Care, ICU, Casualty, OPD Management'
     // },
 
