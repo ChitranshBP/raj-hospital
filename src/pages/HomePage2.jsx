@@ -13,7 +13,7 @@ const specialties = [
     title: "Cardiology",
     shortTitle: "Cardiology",
     icon: FiIcons.FiHeart,
-    image: "assets/home-img/Cardiology.png",
+    image: "assets/home-img/Cardiology.webp",
     description:
       "Specialized cardiac care including advanced diagnostics, interventional procedures, and heart failure management.",
     features: [
@@ -31,7 +31,7 @@ const specialties = [
     title: "Neurology",
     shortTitle: "Neurology",
     icon: FiIcons.FiAperture,
-    image: "assets/home-img/Neurology.png",
+    image: "assets/home-img/Neurology.webp",
     description:
       "Comprehensive brain and spine care for injuries, strokes, and neurological disorders.",
     features: [
@@ -48,7 +48,7 @@ const specialties = [
     title: "Obstetrics & Gynecology",
     shortTitle: "Gynecology",
     icon: FiIcons.FiUser,
-    image: "assets/home-img/Gynecology.png",
+    image: "assets/home-img/Gynecology.webp",
     description:
       "Specialized care for women’s health, pregnancy, and gynecological conditions.",
     features: [
@@ -63,7 +63,7 @@ const specialties = [
     title: "Orthopaedics & Joint Replacement",
     shortTitle: "Orthopaedics",
     icon: FiIcons.FiAperture,
-    image: "assets/home-img/Orthopaedics.png",
+    image: "assets/home-img/Orthopaedics.webp",
     description:
       "Comprehensive bone and joint care including replacements and sports injury management.",
     features: [
@@ -78,7 +78,7 @@ const specialties = [
     title: "Minimal Access Surgery",
     shortTitle: "Surgery",
     icon: FiIcons.FiScissors,
-    image: "assets/home-img/MinimalAccess.png",
+    image: "assets/home-img/MinimalAccess.webp",
     description:
       "Laparoscopic and laser surgeries for faster recovery and minimal invasiveness.",
     features: [
@@ -94,7 +94,7 @@ const specialties = [
     title: "ENT (Ear, Nose & Throat)",
     shortTitle: "ENT",
     icon: FiIcons.FiMic,
-    image: "assets/home-img/ENT.png",
+    image: "assets/home-img/ENT.webp",
     description: "Comprehensive ear, nose, and throat care for all age groups.",
     features: [
       "Diagnosis and Treatment of ENT Disorders",
@@ -108,7 +108,7 @@ const specialties = [
     title: "Nephrology",
     shortTitle: "Nephrology",
     icon: FiIcons.FiAperture,
-    image: "assets/home-img/Nephrology.png",
+    image: "assets/home-img/Nephrology.webp",
     description: "Advanced kidney care with dialysis and continuous renal replacement therapy.",
     features: [
       "Hypertensive & Diabetic Kidney Disease",
@@ -123,7 +123,7 @@ const specialties = [
     title: "Oncology (Cancer Care)",
     shortTitle: "Oncology",
     icon: FiIcons.FiAperture,
-    image: "assets/home-img/Oncology.png",
+    image: "assets/home-img/Oncology.webp",
     description: "Comprehensive cancer care through chemotherapy and specialized surgical oncology.",
     features: [
       "Clinical Oncology (Chemotherapy)",
@@ -136,7 +136,7 @@ const specialties = [
     title: "Gastroenterology",
     shortTitle: "Gastrology",
     icon: FiIcons.FiTrendingUp,
-    image: "assets/home-img/Gastroenterology.png",
+    image: "assets/home-img/Gastroenterology.webp",
     description: "Advanced digestive and liver care through endoscopy and minimally invasive treatments.",
     features: [
       "Endoscopy & Colonoscopy",
@@ -152,7 +152,7 @@ const specialties = [
     title: "Emergency & Trauma Care",
     shortTitle: "Emergency",
     icon: FiIcons.FiAperture,
-    image: "assets/home-img/Emergency.png",
+    image: "assets/home-img/Emergency.webp",
     description: "24x7 emergency and acute trauma services with life support and evacuation facilities.",
     features: [
       "Advance Life Support Ambulance",
@@ -167,7 +167,7 @@ const specialties = [
     title: "Pediatrics & Neonatology",
     shortTitle: "Pediatrics",
     icon: FiIcons.FiSmile,
-    image: "assets/home-img/Pediatrics.png",
+    image: "assets/home-img/Pediatrics.webp",
     description: "Comprehensive healthcare for infants, children, and adolescents.",
     features: [
       "Child and Newborn Care",
@@ -181,7 +181,7 @@ const specialties = [
     title: "Urology",
     shortTitle: "Urology",
     icon: FiIcons.FiDroplet,
-    image: "assets/home-img/Urology.png",
+    image: "assets/home-img/Urology.webp",
     description: "Advanced urological care including prostate, kidney, and infertility treatments.",
     features: [
       "Prostate Surgeries - TURP",
@@ -196,9 +196,9 @@ const specialties = [
 
 const sections = {
   locations: [
-    { name: "City Center", rating: "4.8", img: "/assets/location1.jpg" },
-    { name: "Lakeside", rating: "4.7", img: "/assets/location2.jpg" },
-    { name: "Green Valley", rating: "4.6", img: "/assets/location3.jpg" },
+    { name: "City Center", rating: "4.8", img: "/assets/location1.webp" },
+    { name: "Lakeside", rating: "4.7", img: "/assets/location2.webp" },
+    { name: "Green Valley", rating: "4.6", img: "/assets/location3.webp" },
   ],
   technology: [
     {
@@ -209,7 +209,7 @@ const sections = {
     {
       name: "State-of-the-Art Gastroenterology Suite at Raj Hospitals, Ranchi",
       desc: "Precise cancer treatment",
-      image: "assets/About-img/Comprehensive-Neuro.png",
+      image: "assets/About-img/Comprehensive-Neuro.webp",
     },
     {
       name: "advanced Leica-Provido Operating Microscope at Raj Hospitals,",
@@ -236,32 +236,32 @@ const sections = {
   ],
   whyChoose: [
     {
-      image: "assets/home-img/Why-Choose-Raj Hospitals/30+ Years-of-Excellence.png",
+      image: "assets/home-img/Why-Choose-Raj Hospitals/30+ Years-of-Excellence.webp",
       title: "30+ Years of Excellence",
       desc: "Three decades of trusted healthcare service in Ranchi",
     },
     {
-      image: "assets/home-img/Why-Choose-Raj Hospitals/State-of-the-art-Technology.png",
+      image: "assets/home-img/Why-Choose-Raj Hospitals/State-of-the-art-Technology.webp",
       title: "State-of-the-art Technology",
       desc: "Latest medical equipment and advanced treatment facilities",
     },
     {
-      image: "assets/home-img/Why-Choose-Raj Hospitals/Experienced-Medical-Team.png",
+      image: "assets/home-img/Why-Choose-Raj Hospitals/Experienced-Medical-Team.webp",
       title: "Experienced Medical Team",
       desc: "Highly qualified doctors and skilled healthcare professionals",
     },
     {
-      image: "assets/home-img/Why-Choose-Raj Hospitals/24-7-Emergency-Services.png",
+      image: "assets/home-img/Why-Choose-Raj Hospitals/24-7-Emergency-Services.webp",
       title: "24/7 Emergency Services",
       desc: "Round-the-clock emergency care and critical support",
     },
     {
-      image: "assets/home-img/Why-Choose-Raj Hospitals/SICU-Facilities.png",
+      image: "assets/home-img/Why-Choose-Raj Hospitals/SICU-Facilities.webp",
       title: "ICU/NICU/SICU Facilities",
       desc: "Specialized intensive care units for critical patient care",
     },
     {
-      image: "assets/home-img/Picture1.jpg",
+      image: "assets/home-img/Picture1.webp",
       title: "Rooftop Helipad",
       desc: "Air ambulance facility for critical emergency cases",
     },
@@ -361,17 +361,17 @@ const sections = {
     {
       name: "A New Heart, A New Start",
       desc: "Life-saving cardiac surgery inspires a family.",
-      img: "/assets/patient1.jpg",
+      img: "/assets/patient1.webp",
     },
     {
       name: "Overcoming the Impossible",
       desc: "Complex spine surgery restores mobility.",
-      img: "/assets/patient2.jpg",
+      img: "/assets/patient2.webp",
     },
     {
       name: "Overcoming the Impossible",
       desc: "Complex spine surgery restores mobility.",
-      img: "/assets/patient2.jpg",
+      img: "/assets/patient2.webp",
     },
   ],
   wellness: [
@@ -539,7 +539,7 @@ function NewsMediaCompact() {
           <div className="hidden md:block md:w-1/3">
             <div className="w-full h-[450px] rounded-xl overflow-hidden ">
               <img
-                src="assets\home-img\Why-Choose-Raj Hospitals\breaking-news-raj.png"
+                src="assets\home-img\Why-Choose-Raj Hospitals\breaking-news-raj.webp"
                 alt="News & Media"
                 className="w-full h-full object-cover"
               />
@@ -593,7 +593,7 @@ function NewsMediaCompact() {
           <div className="hidden md:block md:w-1/3">
             <div className="w-full h-[450px] rounded-xl overflow-hidden ">
               <img
-                src="assets\home-img\Why-Choose-Raj Hospitals\breaking-news-raj.png"
+                src="assets\home-img\Why-Choose-Raj Hospitals\breaking-news-raj.webp"
                 alt="News & Media"
                 className="w-full h-full object-cover"
               />
@@ -605,7 +605,7 @@ function NewsMediaCompact() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="assets/press/news-1-r.jpg"
+                  src="assets/press/news-1-r.webp"
                   alt="Newspaper Clipping"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -614,7 +614,7 @@ function NewsMediaCompact() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="assets/press/news-2-raj.jpg"
+                  src="assets/press/news-2-raj.webp"
                   alt="Newspaper Clipping"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -627,7 +627,7 @@ function NewsMediaCompact() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="assets/press/news-3-raj.jpg"
+                  src="assets/press/news-3-raj.webp"
                   alt="Newspaper Clipping"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -636,7 +636,7 @@ function NewsMediaCompact() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer">
               <div className="h-64 overflow-hidden">
                 <img
-                  src="assets/press/Raj-hsopital-news-1_290824.jpg"
+                  src="assets/press/Raj-hsopital-news-1_290824.webp"
                   alt="Newspaper Clipping"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -1120,7 +1120,7 @@ export default function HomePage() {
       .then(posts => {
         const formattedBlogs = posts.map(post => ({
           title: post.title.rendered,
-          img: post._embedded?.['wp:featuredmedia']?.[0]?.source_url || 'assets/home-img/blogs/default-blog.jpg',
+          img: post._embedded?.['wp:featuredmedia']?.[0]?.source_url || 'assets/home-img/blogs/default-blog.webp',
           excerpt: post.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 100) + '...',
           url: post.link,
           date: new Date(post.date).toLocaleDateString()

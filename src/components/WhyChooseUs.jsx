@@ -12,42 +12,42 @@ const WhyChooseUs = () => {
     title: '30+ Years of Excellence',
     description: 'Three decades of trusted healthcare service in Ranchi',
     color: 'primary',
-    image: 'assets/home-img/Why-Choose-Raj Hospitals/30+ Years-of-Excellence.png'
+    image: 'assets/home-img/Why-Choose-Raj Hospitals/30+ Years-of-Excellence.webp'
   },
   {
     icon: FiSettings,
     title: 'State-of-the-art Technology',
     description: 'Latest medical equipment and advanced treatment facilities',
     color: 'secondary',
-    image: 'assets/home-img/Why-Choose-Raj Hospitals/State-of-the-art-Technology.png'
+    image: 'assets/home-img/Why-Choose-Raj Hospitals/State-of-the-art-Technology.webp'
   },
   {
     icon: FiUsers,
     title: 'Experienced Medical Team',
     description: 'Highly qualified doctors and skilled healthcare professionals',
     color: 'accent',
-    image: 'assets/home-img/Why-Choose-Raj Hospitals/Experienced-Medical-Team.png'
+    image: 'assets/home-img/Why-Choose-Raj Hospitals/Experienced-Medical-Team.webp'
   },
   {
     icon: FiClock,
     title: '24/7 Emergency Services',
     description: 'Round-the-clock emergency care and critical support',
     color: 'primary',
-    image: 'assets/home-img/Why-Choose-Raj Hospitals/24-7-Emergency-Services.png'
+    image: 'assets/home-img/Why-Choose-Raj Hospitals/24-7-Emergency-Services.webp'
   },
   {
     icon: FiHeart,
     title: 'ICU/NICU/SICU Facilities',
     description: 'Specialized intensive care units for critical patient care',
     color: 'secondary',
-    image: 'assets/home-img/Why-Choose-Raj Hospitals/SICU-Facilities.png'
+    image: 'assets/home-img/Why-Choose-Raj Hospitals/SICU-Facilities.webp'
   },
   {
     icon: FiZap,
     title: 'Rooftop Helipad',
     description: 'Air ambulance facility for critical emergency cases',
     color: 'accent',
-    image: 'assets/home-img/Picture1.jpg'
+    image: 'assets/home-img/Picture1.webp'
   }];
 
 

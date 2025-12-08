@@ -9,17 +9,17 @@ const { FiCalendar, FiAward, FiUser, FiMapPin, FiPhone, FiCheck, FiX } = FiIcons
 // Shared specialty icons (easy to extend)
 const medicalIcons = {
   cardiology:
-    'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/091b9e61-b25b-4812-8cd8-7615daae1bd5.png',
+    'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/091b9e61-b25b-4812-8cd8-7615daae1bd5.webp',
   neurology:
-    'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/69f8ef93-154c-488e-9dfe-781dd286c641.png',
+    'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/69f8ef93-154c-488e-9dfe-781dd286c641.webp',
   oncology:
-    'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/fa4c25d9-2812-4a78-aca1-8f31f67ebe83.png',
+    'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/fa4c25d9-2812-4a78-aca1-8f31f67ebe83.webp',
   orthopedics:
-    'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/697b8ebb-3648-4a6b-ad86-a8d0089d3fbd.png',
+    'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/697b8ebb-3648-4a6b-ad86-a8d0089d3fbd.webp',
   gastroenterology:
-    'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/989ec42a-aa58-4b37-b9f3-ec419fcd10a2.png',
+    'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/989ec42a-aa58-4b37-b9f3-ec419fcd10a2.webp',
   nephrology:
-    'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6e48b8a7-bca0-4bc4-acbb-3ba5f5674077.png',
+    'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6e48b8a7-bca0-4bc4-acbb-3ba5f5674077.webp',
 };
 
 // Centralized doctors data — add more objects here to extend the app
@@ -31,7 +31,7 @@ export const doctorsData = [
   //   specialty: 'Cardiology',
   //   experience: '16+ Years',
   //   image:
-  //     'assets/Doc-Side/Cardiologist - Dr. Rajesh Kumar Jha.png',
+  //     'assets/Doc-Side/Cardiologist - Dr. Rajesh Kumar Jha.webp',
   //   specialtyIcon: medicalIcons.cardiology,
   //   description:
   //     'Dr. Rajesh Kumar Sinha is a Senior Consultant Cardiologist with over 16 years of experience in the field. He specializes in interventional cardiology, complex cardiac procedures, angioplasty, and comprehensive heart disease management.',
@@ -131,7 +131,7 @@ export const doctorsData = [
   //   qualifications: 'MBBS, MD',
   //   specialty: 'Neurology',
   //   experience: '12+ Years',
-  //   image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/sample-doc.png',
+  //   image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/sample-doc.webp',
   //   specialtyIcon: medicalIcons.neurology,
   //   description: 'Dr. Meera Sharma is an expert Neurologist with experience in stroke care and epilepsy management.',
   //   expertise: ['Epilepsy Management', 'Stroke Care', 'Neurodegenerative Disorders', 'Neurophysiology'],
@@ -168,7 +168,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD, DM',
     specialty: 'Cardiology',
     experience: '16+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Cardiologist - Dr. Rajesh-Kumar Jha.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Cardiologist - Dr. Rajesh-Kumar Jha.webp',
     specialtyIcon: medicalIcons.cardiology,
     description: 'Dr. Rajesh Kumar Jha is a Cardiologist with over 16 years of experience specializing in interventional cardiology.',
     expertise: ['Interventional Cardiology'],
@@ -217,7 +217,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Anaesthesiology), PDCC (Cardiac Anaesthesia)',
     specialty: 'Critical Care',
     experience: '8+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Fuzail-Sarwar.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Fuzail-Sarwar.webp',
     specialtyIcon: '', // No icon provided
     description: 'Dr. Fuzail Sarwer is a renowned Anaesthesiologist and Critical Care specialist with over 20 years of experience. He is known for his precise diagnosis and empathetic patient care.',
     expertise: [
@@ -297,7 +297,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD MEM',
     specialty: 'Emergency',
     experience: '12+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Emergency - Dr. Shyam-Prasad.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Emergency - Dr. Shyam-Prasad.webp',
     specialtyIcon: '', // No icon provided
     description: 'Dr. Shyam Prasad is an experienced emergency medicine specialist with over 12 years of practice. He serves as the Consultant Head of the Department of Emergency at Raj Hospital and is affiliated with SEMI. He is dedicated to handling all kinds of emergency medical situations and trauma care.',
     expertise: [
@@ -416,7 +416,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Medicine)',
     specialty: 'Internal Medicine',
     experience: '25+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Internal Medicine - Dr. A K-Agrawal.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Internal Medicine - Dr. A K-Agrawal.webp',
     // specialtyIcon: '', // No icon provided
     description: 'Dr. A K Agarwal is a seasoned Internal Medicine specialist with over 18 years of experience, focusing on heart and chest-related issues.',
     expertise: [
@@ -448,7 +448,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Medicine)',
     specialty: 'Internal Medicine',
     experience: '25+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Internal Medicine - Dr. A K-Sinha.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Internal Medicine - Dr. A K-Sinha.webp',
     specialtyIcon: '', // No icon provided
     description: 'Dr. A K Sinha is a highly experienced Internal Medicine specialist with over 25 years of practice, focusing on cardiology, heart problems, and chest-related issues.',
     expertise: [
@@ -477,7 +477,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD, DNB (Orthopaedics)',
     specialty: 'Internal Medicine',
     experience: '8+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/General Physician - Dr. Neelam-Kumari.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/General Physician - Dr. Neelam-Kumari.webp',
     specialtyIcon: medicalIcons.internalMedicine,
     description:
       'Dr. Neelam is an internal medicine specialist with over 8 years of experience. She has qualifications from Banaras Hindu University (BHU), Varanasi, and DNB in Orthopaedics from VMMC, Safdarjung, New Delhi.',
@@ -522,7 +522,7 @@ export const doctorsData = [
     qualifications: 'MD (Internal Medicine), DM (Nephrology)',
     specialty: 'Nephrology',
     experience: '15+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Nephrologist - Dr. Avinas- Kumar-Dubey.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Nephrologist - Dr. Avinas- Kumar-Dubey.webp',
     specialtyIcon: '', // No icon provided
     description:
       'Dr. Avinash Kumar Dubey is a distinguished Nephrologist with over 15 years of experience, specializing in kidney transplantation, chronic kidney disease, and preventive nephrology. He is recognized for his thorough diagnostic approach and compassionate patient care.',
@@ -559,7 +559,7 @@ export const doctorsData = [
     qualifications: 'MBBS, ECFMG Certified (USA) Neurosurgery, DNB Neurosurgery (Brain & Spine Surgery)',
     specialty: 'Neurosurgery',
     experience: '9+ Years',
-    image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Neurosurgeon - Dr. Vivek-Raj.png',
+    image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Neurosurgeon - Dr. Vivek-Raj.webp',
     specialtyIcon: '', // No icon provided
     description: 'Dr. Vivek Raj is a skilled neurosurgeon with expertise in brain and spine tumor surgery, pediatric brain surgery, and emergency spine trauma. He is committed to providing advanced surgical care including awake brain surgery for better patient outcomes.',
     expertise: [
@@ -597,7 +597,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (Surgery)',
     specialty: 'Oncology',
     experience: '20+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Oncologist - Dr. P-K-Raina.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Oncologist - Dr. P-K-Raina.webp',
     specialtyIcon: medicalIcons.oncology,
     description:
       'Dr. P K Raina is a skilled oncologist and surgeon with over 20 years of experience. His areas of interest include Head & Neck Cancer, Breast Cancer, and Gynae Oncology, focusing on comprehensive cancer care and surgical oncology.',
@@ -794,7 +794,7 @@ export const doctorsData = [
     specialty: 'Orthopaedics & Joint Replacement',
     experience: '9+ Years',
     image:
-      '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Muzammil-Feroz.png',
+      '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Muzammil-Feroz.webp',
     specialtyIcon: medicalIcons.orthopaedics,
 
     description:
@@ -944,7 +944,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (Orthopaedics), FIJR, FIASM',
     specialty: 'Orthopaedics (Sports Injury & Joint Replacement)',
     experience: '6+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Abhishek-Roy.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Abhishek-Roy.webp',
     specialtyIcon: medicalIcons.orthopaedics,
     description:
       'Dr. Abhishek Roy specializes in orthopaedics with a focus on sports injury and joint replacement. He has over 6 years of experience and expertise in managing complex trauma, arthritis, and autoimmune neurological disorders.',
@@ -1002,7 +1002,7 @@ export const doctorsData = [
     qualifications: 'DNB Respiratory Medicine',
     specialty: 'Pulmonology',
     experience: '12+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Pulmonologist - Dr. Suprova-Chakraborty.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Pulmonologist - Dr. Suprova-Chakraborty.webp',
     specialtyIcon: medicalIcons.pulmonology,
     description:
       'Dr. Suprova Chakraborty is an experienced pulmonologist with over 12 years specializing in respiratory medicine. She has worked as Senior Resident at IPGMER-SSKM Hospital Kolkata and AIIMS Deoghar, and as Consultant at Hayat Hospital & Down Town Hospital in Guwahati.',
@@ -1042,7 +1042,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (General Surgery), MCh (Urology)',
     specialty: 'Urology',
     experience: '18+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Sunil-Kumar.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Sunil-Kumar.webp',
     specialtyIcon: medicalIcons.urology,
     description:
       'Dr. Sunil Kumar is a senior urologist with over 18 years of experience. He specializes in robotic surgery, renal transplantation, laparoscopic procedures, endourology, uro-oncology, male infertility, and vascular access for hemodialysis.',
@@ -1094,7 +1094,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (General Surgery), MCh (Urology)',
     specialty: 'Urology',
     experience: '18+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Ved-Prakash-Verma.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Ved-Prakash-Verma.webp',
     specialtyIcon: medicalIcons.urology,
     description:
       'Dr. Ved Prakash is a urologist with over 18 years of experience specializing in endourology, reconstructive urology, uro-oncology, laparoscopic surgery, and andrology including male infertility.',
@@ -1150,7 +1150,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (Obstetrics), DNB (Obs & Gyn), D.MAS',
     specialty: 'Obstetrics & Gynaecology',
     experience: '10+ Years',
-    image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Anupama-Mahli.png',
+    image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Anupama-Mahli.webp',
     specialtyIcon: medicalIcons.obstetricsGynecology,
     description:
       'Dr. Anupama Mahli has over 10 years of experience in obstetrics and gynaecology with expertise in laparoscopy, hysteroscopy, infertility treatment, and sonology (ultrasound).',
@@ -1348,7 +1348,7 @@ export const doctorsData = [
     qualifications: 'BDS',
     specialty: 'Dentistry',
     experience: '10+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dental-Surgeon - Dr. Surajmani-bhattacharjee.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dental-Surgeon - Dr. Surajmani-bhattacharjee.webp',
     specialtyIcon: medicalIcons.dentistry,
     description:
       'Dr. Suraj Mani Bhattacharjee is an experienced dentist with over 10 years of expertise, having performed 5000+ root canal treatments and multiple mouth rehabilitations. He has served as clinical head in leading dental chains and worked as a cosmetic dentist for Mahavir International NGO.',
@@ -1668,7 +1668,7 @@ export const doctorsData = [
     qualifications: 'BPT, MPT, PGDYT, FOMT, FDM, FNMT, MIAP',
     specialty: 'Physiotherapy',
     experience: '16+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Physiotherapist - Dr. Abhay-Kumar-Pandey.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Physiotherapist - Dr. Abhay-Kumar-Pandey.webp',
     specialtyIcon: medicalIcons.physiotherapy,
     description:
       'Dr. Abhay Kr Pandey is a senior physiotherapist at Raj Hospital, Ranchi, with over 16 years of experience specializing in orthopedic and traumatology physiotherapy, yoga therapy, and manual therapy. His interests include cardiology, heart problems, and chest-related issues.',
@@ -1772,7 +1772,7 @@ export const doctorsData = [
     qualifications: 'M.B.B.S (Gold Medalist), M.D. (Dermatology, Venereology & Leprosy), M.D. (Physiology), A.C.S.I Fellowship in Dermatosurgery',
     specialty: 'Dermatology, Dermatosurgery & Aesthetics',
     experience: '10+ Years',
-    image: 'assets/Doc-Front/Dr-Shaista-Huma.png', // No image provided
+    image: 'assets/Doc-Front/Dr-Shaista-Huma.webp', // No image provided
     specialtyIcon: '', // No icon provided
     description:
       'Dr. Shaista Huma is a respected dermatologist and dermatosurgeon with over 10 years of experience. She specializes in clinical dermatology, aesthetic dermatology, and advanced dermatosurgical procedures, committed to patient-centric, modern skin care treatments.',
@@ -1866,7 +1866,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MDS (Oral & Maxillofacial Surgery – Rajiv Gandhi University of Health Sciences, Bangalore, Karnataka)',
     specialty: 'Oral & Maxillofacial Surgery',
     experience: '10+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Maxillofacial Surgeon - Dr. Abhishek-Bhattacharjee.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Maxillofacial Surgeon - Dr. Abhishek-Bhattacharjee.webp',
     specialtyIcon: '', // No icon provided
     description: 'Dr. Abhishek Bhattacharjee has over 10 years of clinical experience, treating more than 3000 satisfied patients and performing over 2500 surgeries, including 1000+ major surgeries. He is the Chief Oral and Maxillofacial Surgeon in Asia’s largest dental chain across Delhi and Bangalore. Dr. Bhattacharjee has worked with Mahavir International NGO in Delhi and has served as a consultant at renowned hospitals such as Batra Hospital Delhi, Max Hospital Malvia Nagar Delhi, Krush Divine Hospital Noida, and Sapthagiri Institute of Medical Sciences and Research Centre Bangalore.',
     expertise: [
@@ -1914,7 +1914,7 @@ export const doctorsData = [
     qualifications: 'MBBS (JNMCH, AMU), MD (JNMCH, AMU), IDCCM (TMH), EDM (Govind Academy, Singapore)',
     specialty: 'Critical Care',
     experience: '16+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Mohib-Ahmed.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Mohib-Ahmed.webp',
     specialtyIcon: '', // No icon provided
     description: 'Dr. Mohib Ahmed is an experienced Critical Care specialist with over 16 years of expertise in managing acute and complex conditions. He is proficient in Neuro Critical Care, Airway Management, and Ultrasound in ICU (POCUS), dedicated to providing evidence-based and compassionate care.',
     expertise: [
@@ -2637,7 +2637,7 @@ export const doctorsData = [
     qualifications: 'B.Sc (Dietetics & Nutrition), M.Sc (Sports Nutrition Specialist), ISSA (Life Science), B.Ed',
     specialty: '',
     experience: '6+ Years',
-    image: '/assets/Doc-Side/Mr. Parijat Sarkar (Dietetian).jpg', // No image provided
+    image: '/assets/Doc-Side/Mr. Parijat Sarkar (Dietetian).webp', // No image provided
     specialtyIcon: '',
     description: '',
 

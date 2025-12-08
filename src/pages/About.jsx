@@ -40,7 +40,7 @@ const About = () => {
   const milestones = [
   {
     year: "1991",
-    image: "assets/About-img/The-Hospital.png",
+    image: "assets/About-img/The-Hospital.webp",
     achievements: [
     "Inaugurated on November 3rd with 17 private rooms, labor room & OT",
     "Started Brain & Spine, Orthopedic & Maternity Surgeries",
@@ -59,7 +59,7 @@ const About = () => {
   },
   {
     year: "1995",
-    image: "assets/About-img/1995.png",
+    image: "assets/About-img/1995.webp",
     achievements: [
     "Opened 25-bedded General Ward (total 63 beds)",
     "Installed C-Arm in OT",
@@ -69,14 +69,14 @@ const About = () => {
   },
   {
     year: "1997",
-    image: "assets/About-img/1997.png",
+    image: "assets/About-img/1997.webp",
     achievements: [
     "Became first private hospital in the region recognized by Ministry of Health & Family Welfare for Central Govt. beneficiaries"]
 
   },
   {
     year: "2001",
-    image: "assets/About-img/2001.png",
+    image: "assets/About-img/2001.webp",
     achievements: [
     "New 14-bed ICU inaugurated by Jharkhand's first CM, Shri Babulal Marandi",
     "Started Dialysis services"]
@@ -84,7 +84,7 @@ const About = () => {
   },
   {
     year: "2003–05",
-    image: "assets/About-img/2003-05.png",
+    image: "assets/About-img/2003-05.webp",
     achievements: [
     "First private center for HIV management in Jharkhand",
     "Started Joint Replacement surgeries",
@@ -94,7 +94,7 @@ const About = () => {
   },
   {
     year: "2008",
-    image: "assets/About-img/2008.png",
+    image: "assets/About-img/2008.webp",
     achievements: [
     "Mr. Sahil Gambhir (now CEO) joined; launched 24/7 in-house Pharmacy",
     "Expanded ICU to 20 beds & added 10-bedded HDU"]
@@ -102,7 +102,7 @@ const About = () => {
   },
   {
     year: "2011–13",
-    image: "assets/About-img/Comprehensive-Neuro.png",
+    image: "assets/About-img/Comprehensive-Neuro.webp",
     achievements: [
     "Started Knee Replacement surgeries (with international collaboration)",
     "Installed PSA-based Oxygen Generation facility",
@@ -112,7 +112,7 @@ const About = () => {
   },
   {
     year: "2015",
-    image: "assets/About-img/As-we-move-into-the-fourth.png",
+    image: "assets/About-img/As-we-move-into-the-fourth.webp",
     achievements: [
     "Major infrastructural overhaul",
     "Added 4 Modular OTs for critical surgeries",
@@ -124,21 +124,21 @@ const About = () => {
   },
   {
     year: "2018",
-    image: "assets/About-img/2018.png",
+    image: "assets/About-img/2018.webp",
     achievements: [
     "Launched Cath Lab & Interventional Cardiology (with Artemis Healthcare)"]
 
   },
   {
     year: "2019",
-    image: "assets/About-img/NABH.png",
+    image: "assets/About-img/NABH.webp",
     achievements: [
     "Pre-Accredited by NABH for Patient Safety & Quality"]
 
   },
   {
     year: "2020–21",
-    image: "assets/About-img/2020-21.png",
+    image: "assets/About-img/2020-21.webp",
     achievements: [
     "Key role in COVID-19 fight; successfully treated 1000+ patients",
     "Among first private hospitals in Jharkhand to start Vaccination Drive"]
@@ -146,7 +146,7 @@ const About = () => {
   },
   {
     "year": "January 2022",
-    "image": "assets/About-img/CRRT-pic.jpg",
+    "image": "assets/About-img/CRRT-pic.webp",
     "achievements": [
     "Launched State-of-the-Art Gastroenterology Suite at Raj Hospitals, Ranchi",
     "Facilities include Endoscopy, ERCP, Colonoscopy, Capsule Endoscopy, and Sigmoidoscopy",
@@ -157,7 +157,7 @@ const About = () => {
   },
   {
     "year": "12th May 2023",
-    "image": "assets/About-img/Gastro-pic.jpg",
+    "image": "assets/About-img/Gastro-pic.webp",
     "achievements": [
     "Introduced Advanced Kidney Care with Continuous Renal Replacement Therapy (CRRT) at Raj Hospitals, Ranchi",
     "Led by Dr. Avinash Kumar Dubey (MD Medicine, DM Nephrology) and Dr. Ravish Ranjan (MD Medicine, DNB Gastroenterology)",
@@ -238,7 +238,7 @@ const About = () => {
                 loop
                 controls
                 className="w-full rounded-2xl shadow-2xl"
-                poster="assets/About-img/The-Hospital.png">
+                poster="assets/About-img/The-Hospital.webp">
                 Your browser does not support the video tag.
               </video>
 

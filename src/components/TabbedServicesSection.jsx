@@ -32,7 +32,7 @@ const TabbedServicesSection = () => {
     title: 'Cardiology',
     shortTitle: 'Cardiology',
     icon: FiHeart,
-    image: 'assets/home-img/Cardiology.png',
+    image: 'assets/home-img/Cardiology.webp',
     description: 'Specialized cardiac care including advanced diagnostics, interventional procedures, and heart failure management.',
     features: [
       'Daycare Angiography',
@@ -50,7 +50,7 @@ const TabbedServicesSection = () => {
     title: 'Neurology',
     shortTitle: 'Neurology',
     icon: FiAperture,
-    image: 'assets/home-img/Neurology.png',
+    image: 'assets/home-img/Neurology.webp',
     description: 'Comprehensive brain and spine care for injuries, strokes, and neurological disorders.',
     features: [
       'Head Injuries',
@@ -67,7 +67,7 @@ const TabbedServicesSection = () => {
     title: 'Obstetrics & Gynecology',
     shortTitle: 'Gynecology',
     icon: FiUser,
-    image: 'assets/home-img/Gynecology.png',
+    image: 'assets/home-img/Gynecology.webp',
     description: 'Specialized care for women’s health, pregnancy, and gynecological conditions.',
     features: [
       'Comprehensive Obstetrics & Gynecology Services',
@@ -82,7 +82,7 @@ const TabbedServicesSection = () => {
     title: 'Nephrology',
     shortTitle: 'Nephrology',
     icon: FiAperture,
-    image: 'assets/home-img/Nephrology.png',
+    image: 'assets/home-img/Nephrology.webp',
     description: 'Advanced kidney care with dialysis and continuous renal replacement therapy.',
     features: [
       'Hypertensive & Diabetic Kidney Disease',
@@ -97,7 +97,7 @@ const TabbedServicesSection = () => {
     title: 'Oncology (Cancer Care)',
     shortTitle: 'Oncology',
     icon: FiAperture,
-    image: 'assets/home-img/Oncology.png',
+    image: 'assets/home-img/Oncology.webp',
     description: 'Comprehensive cancer care through chemotherapy and specialized surgical oncology.',
     features: [
       'Clinical Oncology (Chemotherapy)',
@@ -110,7 +110,7 @@ const TabbedServicesSection = () => {
     title: 'Orthopaedics & Joint Replacement',
     shortTitle: 'Orthopaedics',
     icon: FiAperture,
-    image: 'assets/home-img/Orthopaedics.png',
+    image: 'assets/home-img/Orthopaedics.webp',
     description: 'Comprehensive bone and joint care including replacements and sports injury management.',
     features: [
       'Joint Replacements - Knee, Hip, Shoulder, Elbow & Ankle',
@@ -125,7 +125,7 @@ const TabbedServicesSection = () => {
     title: 'Minimal Access Surgery',
     shortTitle: 'Surgery',
     icon: FiScissors,
-    image: 'assets/home-img/MinimalAccess.png',
+    image: 'assets/home-img/MinimalAccess.webp',
     description: 'Laparoscopic and laser surgeries for faster recovery and minimal invasiveness.',
     features: [
       'Laparoscopic & Laser Surgery - Gall Bladder',
@@ -140,7 +140,7 @@ const TabbedServicesSection = () => {
     title: 'ENT (Ear, Nose & Throat)',
     shortTitle: 'ENT',
     icon: FiMic,
-    image: 'assets/home-img/ENT.png',
+    image: 'assets/home-img/ENT.webp',
     description: 'Comprehensive ear, nose, and throat care for all age groups.',
     features: [
       'Diagnosis and Treatment of ENT Disorders',
@@ -156,7 +156,7 @@ const TabbedServicesSection = () => {
     title: 'Gastroenterology',
     shortTitle: 'Gastrology',
     icon: FiTrendingUp,
-    image: 'assets/home-img/Gastroenterology.png',
+    image: 'assets/home-img/Gastroenterology.webp',
     description: 'Advanced digestive and liver care through endoscopy and minimally invasive treatments.',
     features: [
       'Endoscopy & Colonoscopy',
@@ -172,7 +172,7 @@ const TabbedServicesSection = () => {
     title: 'Emergency & Trauma Care',
     shortTitle: 'Emergency',
     icon: FiAperture,
-    image: 'assets/home-img/Emergency.png',
+    image: 'assets/home-img/Emergency.webp',
     description: '24x7 emergency and acute trauma services with life support and evacuation facilities.',
     features: [
       'Advance Life Support Ambulance',
@@ -188,7 +188,7 @@ const TabbedServicesSection = () => {
     title: 'Pediatrics & Neonatology',
     shortTitle: 'Pediatrics',
     icon: FiSmile,
-    image: 'assets/home-img/Pediatrics.png',
+    image: 'assets/home-img/Pediatrics.webp',
     description: 'Comprehensive healthcare for infants, children, and adolescents.',
     features: [
       'Child and Newborn Care',
@@ -202,7 +202,7 @@ const TabbedServicesSection = () => {
     title: 'Urology',
     shortTitle: 'Urology',
     icon: FiDroplet,
-    image: 'assets/home-img/Urology.png',
+    image: 'assets/home-img/Urology.webp',
     description: 'Advanced urological care including prostate, kidney, and infertility treatments.',
     features: [
       'Prostate Surgeries - TURP',

@@ -251,7 +251,7 @@ const Header = () => {
               }>
                 {/* Main Logo - Responsive and dynamic sizing */}
                 <img
-                  src="/assets/Header/main-logo_ranchi.png"
+                  src="/assets/Header/main-logo_ranchi.webp"
                   alt="Main Logo"
                   className={`object-contain transition-all duration-300 ${showMiddleRow ?
                       'w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px]' // Both rows visible
@@ -265,17 +265,17 @@ const Header = () => {
                     'space-x-1 sm:space-x-3 md:space-x-2 lg:space-x-2'}`
                 }>
                   <img
-                    src="/assets/Header/NABL_logo-1.png"
+                    src="/assets/Header/NABL_logo-1.webp"
                     alt="NABH Logo 1"
                     className="object-contain w-[30px] h-[30px]" />
 
                   <img
-                    src="/assets/Header/NABL-Logo-2.png"
+                    src="/assets/Header/NABL-Logo-2.webp"
                     alt="NABH Logo 2"
                     className="object-contain w-[30px] h-[30px]" />
 
                   <img
-                    src="/assets/Header/NABL-Logo-3.png"
+                    src="/assets/Header/NABL-Logo-3.webp"
                     alt="NABH Logo 3"
                     className="object-contain w-[30px] h-[30px]" />
 

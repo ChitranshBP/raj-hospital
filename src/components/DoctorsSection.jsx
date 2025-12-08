@@ -18,7 +18,7 @@ const DoctorsSection = () => {
     qualifications: 'MBBS, MD, DM',
     specialty: 'Cardiology',
     experience: '16+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Cardiologist - Dr. Rajesh-Kumar Jha.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Cardiologist - Dr. Rajesh-Kumar Jha.webp',
     description: 'Dr. Rajesh Kumar Jha is a Cardiologist with over 16 years of experience specializing in interventional cardiology.',
     expertise: ['Interventional Cardiology'],
     availability: ''
@@ -29,7 +29,7 @@ const DoctorsSection = () => {
     qualifications: 'MBBS, MS (General Surgery)',
     specialty: 'Bariatric Surgery, General & Laparoscopic Surgery',
     experience: '12+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/General Surgeon - Dr. Ashish-Kumar-Modi.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/General Surgeon - Dr. Ashish-Kumar-Modi.webp',
     description: 'Dr. Ashish Kumar Modi is a highly skilled bariatric and laparoscopic surgeon with over 12 years of experience.',
     expertise: ['Laparoscopy Surgery', 'Laser Surgery For Proctology', 'Diagnostic and Therapeutic Endoscopy'],
     availability: ''
@@ -40,7 +40,7 @@ const DoctorsSection = () => {
     qualifications: 'MD (Internal Medicine), DM (Nephrology)',
     specialty: 'Nephrology',
     experience: '10+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Nephrologist - Dr. Avinas- Kumar-Dubey.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Nephrologist - Dr. Avinas- Kumar-Dubey.webp',
     description: 'Dr. Avinash Kumar Dubey is a distinguished Nephrologist with over 10 years of experience.',
     expertise: ['Kidney transplantation', 'Chronic Kidney Disease (CKD)', 'Preventive Nephrology'],
     availability: ''
@@ -51,7 +51,7 @@ const DoctorsSection = () => {
     qualifications: 'MBBS, MD (Internal Medicine), DNB Super Specialty',
     specialty: 'Gastroenterology',
     experience: '12 Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gastroenterologist - Dr. Ravish-Ranjan.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gastroenterologist - Dr. Ravish-Ranjan.webp',
     description: 'Dr. Ravish Ranjan is an experienced gastroenterologist specializing in advanced diagnostic and therapeutic endoscopy.',
     expertise: ['Gastroenterology', 'Therapeutic and Diagnostic Upper GI Endoscopy', 'ERCP'],
     availability: ''
@@ -62,7 +62,7 @@ const DoctorsSection = () => {
     qualifications: 'MBBS, MD (Anaesthesiology), PDCC (Cardiac Anaesthesia)',
     specialty: 'Critical Care',
     experience: '8+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Fuzail-Sarwar.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Fuzail-Sarwar.webp',
     description: 'Dr. Fuzail Sarwer is a renowned Anaesthesiologist and Critical Care specialist with over 20 years of experience.',
     expertise: ['Anaesthesiology & Pain Management', 'Critical Care Medicine', 'Trauma Care & Emergency Medicine'],
     availability: ''
@@ -73,7 +73,7 @@ const DoctorsSection = () => {
     qualifications: 'MBBS, MS (Orthopaedics), DNB (Orthopaedics)',
     specialty: 'Orthopaedics & Joint Replacement',
     experience: '9+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Muzammil-Feroz.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Muzammil-Feroz.webp',
     description: 'Dr. Muzammil Pheroz is an experienced orthopaedist with over 9 years of practice.',
     expertise: ['Trauma Surgery', 'Geriatric Trauma', 'Hip & Knee Joint Replacement'],
     availability: ''
@@ -84,7 +84,7 @@ const DoctorsSection = () => {
     qualifications: 'MBBS, MS (Obstetrics), DNB (Obs & Gyn), D.MAS',
     specialty: 'Obstetrics & Gynaecology',
     experience: '10+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Tanushree-Chatterjee.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Tanushree-Chatterjee.webp',
     description: 'Dr. Tanushree Chatterjee has over 10 years of experience in obstetrics and gynaecology.',
     expertise: ['Laparoscopy & Hysteroscopy', 'Infertility', 'Sonologist (USG)'],
     availability: ''
@@ -95,7 +95,7 @@ const DoctorsSection = () => {
     qualifications: 'MBBS, MS (Surgery)',
     specialty: 'Oncology',
     experience: '14+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Oncologist - Dr. P-K-Raina.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Oncologist - Dr. P-K-Raina.webp',
     description: 'Dr. P K Raina is a skilled oncologist and surgeon with over 14 years of experience.',
     expertise: ['Head & Neck Cancer', 'Breast Cancer', 'Gynae Oncology'],
     availability: ''
@@ -106,7 +106,7 @@ const DoctorsSection = () => {
     qualifications: 'DNB Respiratory Medicine',
     specialty: 'Pulmonology',
     experience: '18+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Pulmonologist - Dr. Suprova-Chakraborty.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Pulmonologist - Dr. Suprova-Chakraborty.webp',
     description: 'Dr. Suprova Chakraborty is an experienced pulmonologist with over 18 years specializing in respiratory medicine.',
     expertise: ['Allergies', 'Asthma and Lung Disease Treatment', 'Tuberculosis, Bronchitis'],
     availability: ''
@@ -117,7 +117,7 @@ const DoctorsSection = () => {
     qualifications: 'MBBS, MS (General Surgery), MCh (Urology)',
     specialty: 'Urology',
     experience: '12+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Sunil-Kumar.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Sunil-Kumar.webp',
     description: 'Dr. Sunil Kumar is a senior urologist with over 12 years of experience.',
     expertise: ['Robotic Surgery', 'Renal Transplantation', 'Laparoscopic Surgery'],
     availability: ''
@@ -128,7 +128,7 @@ const DoctorsSection = () => {
     qualifications: 'MBBS, MS (General Surgery), MCh (Urology)',
     specialty: 'Urology',
     experience: '9+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Ved-Prakash-Verma.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Ved-Prakash-Verma.webp',
     description: 'Dr. Ved Prakash is a urologist with over 9 years of experience.',
     expertise: ['Endourology', 'Reconstructive Urology', 'Uro-oncology'],
     availability: ''
@@ -139,7 +139,7 @@ const DoctorsSection = () => {
     qualifications: 'BPT, MPT, PGDYT, COMT, MIAP',
     specialty: 'Physiotherapy',
     experience: '25+ Years',
-    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Physiotherapist - Dr. Abhay-Kumar-Pandey.png',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Physiotherapist - Dr. Abhay-Kumar-Pandey.webp',
     description: 'Dr. Abhay Kr Pandey is a senior physiotherapist at Raj Hospital, Ranchi.',
     expertise: ['Orthopedic & Traumatology Physiotherapy', 'Yoga Therapy', 'Manual Therapy'],
     availability: ''

@@ -6,7 +6,7 @@ const ServicesOverview = () => {
   {
     title: 'Cardiology & Cardiac Sciences',
     description: 'Comprehensive heart care with advanced cardiac procedures',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/091b9e61-b25b-4812-8cd8-7615daae1bd5.png'
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/091b9e61-b25b-4812-8cd8-7615daae1bd5.webp'
   },
   {
     title: 'Neurosciences & Neurosurgery',

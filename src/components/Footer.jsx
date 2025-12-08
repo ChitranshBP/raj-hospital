@@ -45,17 +45,17 @@ const Footer = () => {
   const certifications = [
   {
     name: 'NABH Accredited',
-    image: 'https://quest-media-storage-bucket.s3.us-east-2.amazonaws.com/1750920042927-WhatsApp%20Image%202025-06-26%20at%2012.10.25_286e04ed.jpg',
+    image: 'https://quest-media-storage-bucket.s3.us-east-2.amazonaws.com/1750920042927-WhatsApp%20Image%202025-06-26%20at%2012.10.25_286e04ed.webp',
     description: 'National Accreditation Board for Hospitals'
   },
   {
     name: 'ISO Certified',
-    image: 'https://quest-media-storage-bucket.s3.us-east-2.amazonaws.com/1750920042927-WhatsApp%20Image%202025-06-26%20at%2012.10.25_286e04ed.jpg',
+    image: 'https://quest-media-storage-bucket.s3.us-east-2.amazonaws.com/1750920042927-WhatsApp%20Image%202025-06-26%20at%2012.10.25_286e04ed.webp',
     description: 'Quality Management System'
   },
   {
     name: 'JCI Standards',
-    image: 'https://quest-media-storage-bucket.s3.us-east-2.amazonaws.com/1750920042927-WhatsApp%20Image%202025-06-26%20at%2012.10.25_286e04ed.jpg',
+    image: 'https://quest-media-storage-bucket.s3.us-east-2.amazonaws.com/1750920042927-WhatsApp%20Image%202025-06-26%20at%2012.10.25_286e04ed.webp',
     description: 'International Healthcare Standards'
   }];
 
@@ -89,7 +89,7 @@ const Footer = () => {
                 {/* Logo */}
                 <div className="mb-6">
                   <img
-                    src="/assets/Header/main-logo_ranchi-below.png"
+                    src="/assets/Header/main-logo_ranchi-below.webp"
                     alt="Raj Hospitals Logo"
                     className="h-28 w-auto filter brightness-0 invert object-contain"
                   />
