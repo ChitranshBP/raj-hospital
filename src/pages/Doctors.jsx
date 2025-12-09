@@ -174,9 +174,12 @@ useEffect(() => {
                   >
                     View Profile
                   </Link>
-                  <button className="flex-1 bg-white text-primary-600 border border-primary-600 py-1.5 rounded-md hover:bg-primary-50 transition-colors text-xs font-medium">
+                  <Link
+                    to={`/doctor/${doctor.id}`}
+                    className="flex-1 bg-white text-primary-600 border border-primary-600 py-1.5 rounded-md hover:bg-primary-50 transition-colors text-xs font-medium text-center"
+                  >
                     Book
-                  </button>
+                  </Link>
                 </div>
               </div>
             </motion.div>

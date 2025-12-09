@@ -6,46 +6,57 @@ import SafeIcon from '../common/SafeIcon';
 const { FiDownload, FiFileText, FiCalendar, FiShield } = FiIcons;
 
 const BiomedicalWasteReports = () => {
-  const [selectedYear, setSelectedYear] = useState('2024');
+  const [selectedYear, setSelectedYear] = useState('2025');
 
-  // Sample data for PDF reports - users can replace with actual data
+  // Biomedical waste reports data
   const reports = {
+    2025: [
+      { month: 'January', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/BMW-January-2025.pdf' },
+      { month: 'February', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/FEB-2025.pdf' },
+      { month: 'March', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/March-PDF.pdf' },
+      { month: 'April', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/April-PDF.pdf' },
+      { month: 'May', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/bmw-may-2025.pdf' },
+      { month: 'June', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/BMW _ JUNE-2025.pdf' },
+      { month: 'July', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/Biomedical-Waste-report-July 25.pdf' },
+      { month: 'August', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/Biomedical-waste-report-August25.pdf' },
+      { month: 'September', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/Biomedical waste Report September 25.pdf' },
+      { month: 'November', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/Biomedical waste Report Nov 25.pdf' }
+    ],
     2024: [
-    { month: 'January', year: '2024', size: '2.3 MB', status: 'completed', pdfUrl: '#january-2024' },
-    { month: 'February', year: '2024', size: '2.1 MB', status: 'completed', pdfUrl: '#february-2024' },
-    { month: 'March', year: '2024', size: '2.4 MB', status: 'completed', pdfUrl: '#march-2024' },
-    { month: 'April', year: '2024', size: '2.2 MB', status: 'completed', pdfUrl: '#april-2024' },
-    { month: 'May', year: '2024', size: '2.5 MB', status: 'completed', pdfUrl: '#may-2024' },
-    { month: 'June', year: '2024', size: '2.3 MB', status: 'completed', pdfUrl: '#june-2024' },
-    { month: 'July', year: '2024', size: '2.4 MB', status: 'completed', pdfUrl: '#july-2024' },
-    { month: 'August', year: '2024', size: '2.6 MB', status: 'completed', pdfUrl: '#august-2024' },
-    { month: 'September', year: '2024', size: '2.2 MB', status: 'completed', pdfUrl: '#september-2024' },
-    { month: 'October', year: '2024', size: '2.3 MB', status: 'completed', pdfUrl: '#october-2024' },
-    { month: 'November', year: '2024', size: '2.1 MB', status: 'completed', pdfUrl: '#november-2024' },
-    { month: 'December', year: '2024', size: '2.4 MB', status: 'pending', pdfUrl: '#december-2024' }],
-
+      { month: 'January', year: '2024', status: 'completed', pdfUrl: '/assets/bmw/BMW JANUARY 2024.pdf' },
+      { month: 'February', year: '2024', status: 'completed', pdfUrl: '/assets/bmw/BMW FEBRUARY 2024.pdf' },
+      { month: 'March', year: '2024', status: 'completed', pdfUrl: '/assets/bmw/BMW MARCH 2024.pdf' },
+      { month: 'April', year: '2024', status: 'completed', pdfUrl: '/assets/bmw/BMW APRIL 2024.pdf' },
+      { month: 'May', year: '2024', status: 'completed', pdfUrl: '/assets/bmw/BMW MAY 2024.pdf' },
+      { month: 'June', year: '2024', status: 'completed', pdfUrl: '/assets/bmw/BMW JUNE 2024.pdf' },
+      { month: 'July', year: '2024', status: 'completed', pdfUrl: '/assets/bmw/BMW JULY 2024.pdf' },
+      { month: 'August', year: '2024', status: 'completed', pdfUrl: '/assets/bmw/BMW AUGUST 2024.pdf' },
+      { month: 'September', year: '2024', status: 'completed', pdfUrl: '/assets/bmw/BMW SEPTEMBER 2024.pdf' },
+      { month: 'October', year: '2024', status: 'completed', pdfUrl: '/assets/bmw/BMW OCTOBER 2024.pdf' },
+      { month: 'November', year: '2024', status: 'completed', pdfUrl: '/assets/bmw/BMW NOVEMBER 2024.pdf' },
+      { month: 'December', year: '2024', status: 'completed', pdfUrl: '/assets/bmw/dec-2024.pdf' }
+    ],
     2023: [
-    { month: 'January', year: '2023', size: '2.0 MB', status: 'completed', pdfUrl: '#january-2023' },
-    { month: 'February', year: '2023', size: '1.9 MB', status: 'completed', pdfUrl: '#february-2023' },
-    { month: 'March', year: '2023', size: '2.1 MB', status: 'completed', pdfUrl: '#march-2023' },
-    { month: 'April', year: '2023', size: '2.0 MB', status: 'completed', pdfUrl: '#april-2023' },
-    { month: 'May', year: '2023', size: '2.2 MB', status: 'completed', pdfUrl: '#may-2023' },
-    { month: 'June', year: '2023', size: '2.1 MB', status: 'completed', pdfUrl: '#june-2023' },
-    { month: 'July', year: '2023', size: '2.0 MB', status: 'completed', pdfUrl: '#july-2023' },
-    { month: 'August', year: '2023', size: '2.3 MB', status: 'completed', pdfUrl: '#august-2023' },
-    { month: 'September', year: '2023', size: '2.1 MB', status: 'completed', pdfUrl: '#september-2023' },
-    { month: 'October', year: '2023', size: '2.2 MB', status: 'completed', pdfUrl: '#october-2023' },
-    { month: 'November', year: '2023', size: '2.0 MB', status: 'completed', pdfUrl: '#november-2023' },
-    { month: 'December', year: '2023', size: '2.1 MB', status: 'completed', pdfUrl: '#december-2023' }]
-
+      { month: 'January', year: '2023', status: 'completed', pdfUrl: '/assets/bmw/JAN_001.pdf' },
+      { month: 'February', year: '2023', status: 'completed', pdfUrl: '/assets/bmw/FEB._001.pdf' },
+      { month: 'March', year: '2023', status: 'completed', pdfUrl: '/assets/bmw/MAR_001.pdf' },
+      { month: 'April', year: '2023', status: 'completed', pdfUrl: '/assets/bmw/APR_001.pdf' },
+      { month: 'May', year: '2023', status: 'completed', pdfUrl: '/assets/bmw/MAY_001.pdf' },
+      { month: 'June', year: '2023', status: 'completed', pdfUrl: '/assets/bmw/JUN_001.pdf' },
+      { month: 'July', year: '2023', status: 'completed', pdfUrl: '/assets/bmw/JUL_001.pdf' },
+      { month: 'August', year: '2023', status: 'completed', pdfUrl: '/assets/bmw/AUG_001.pdf' },
+      { month: 'September', year: '2023', status: 'completed', pdfUrl: '/assets/bmw/Monthly-BMW-Sep-23.pdf' },
+      { month: 'October', year: '2023', status: 'completed', pdfUrl: '/assets/bmw/Monthly-BMW-Oct-23.pdf' },
+      { month: 'November', year: '2023', status: 'completed', pdfUrl: '/assets/bmw/Monthly-BMW-Nov-23.pdf' },
+      { month: 'December', year: '2023', status: 'completed', pdfUrl: '/assets/bmw/Monthly-BMW-Dec-23.pdf' }
+    ]
   };
 
   const availableYears = Object.keys(reports);
 
   const handleDownload = (report) => {
-    // Placeholder for actual PDF download functionality
-    // Users can replace this with actual download logic
-    alert(`Downloading ${report.month} ${report.year} Biomedical Waste Report\nFile size: ${report.size}`);
+    // Open PDF in new tab
+    window.open(report.pdfUrl, '_blank');
   };
 
 
@@ -171,11 +182,6 @@ const BiomedicalWasteReports = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
               className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 border border-gray-100">
-
-                {/* File Size */}
-                <div className="flex items-center justify-end mb-4">
-                  <span className="text-xs text-gray-500">{report.size}</span>
-                </div>
 
                 {/* Report Icon */}
                 <div className="w-16 h-16 bg-gradient-to-r from-primary-100 to-secondary-100 rounded-2xl flex items-center justify-center mb-4 mx-auto">

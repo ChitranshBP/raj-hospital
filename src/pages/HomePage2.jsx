@@ -203,17 +203,17 @@ const sections = {
   technology: [
     {
       name: "Advanced Kidney Care with Continuous Renal Replacement Therapy (CRRT)",
-      desc: "Minimally invasive with quick recovery",
+      desc: "24/7 continuous dialysis support for critically ill patients with acute kidney injury",
       image: "assets/home-img/crrt-raj-home.webp",
     },
     {
       name: "State-of-the-Art Gastroenterology Suite at Raj Hospitals, Ranchi",
-      desc: "Precise cancer treatment",
+      desc: "Advanced endoscopy and colonoscopy facilities for precise digestive system diagnosis and treatment",
       image: "assets/About-img/Comprehensive-Neuro.webp",
     },
     {
-      name: "advanced Leica-Provido Operating Microscope at Raj Hospitals,",
-      desc: "Complex brain and spine procedures",
+      name: "Advanced Leica-Provido Operating Microscope at Raj Hospitals,",
+      desc: "High-precision surgical microscope for complex brain, spine, and neurosurgical procedures",
       image: "assets/home-img/Complex-brain.webp",
     },
   ],
@@ -1179,7 +1179,7 @@ export default function HomePage() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="text-center bg-gradient-to-br from-[#0191C7]/10 to-[#0191C7]/5 rounded-lg p-3 border border-[#0191C7]/20"
                 >
-                  <h3 className="text-2xl font-bold text-[#F9771B]">200+</h3>
+                  <h3 className="text-2xl font-bold text-[#F9771B]">50+</h3>
                   <p className="text-gray-600 text-xs font-medium">Expert Doctors</p>
                 </motion.div>
 
@@ -1190,7 +1190,7 @@ export default function HomePage() {
                   transition={{ duration: 0.5, delay: 0.3 }}
                   className="text-center bg-gradient-to-br from-[#0191C7]/10 to-[#0191C7]/5 rounded-lg p-3 border border-[#0191C7]/20"
                 >
-                  <h3 className="text-2xl font-bold text-[#F9771B]">1L+</h3>
+                  <h3 className="text-2xl font-bold text-[#F9771B]">3L+</h3>
                   <p className="text-gray-600 text-xs font-medium">Patients Treated</p>
                 </motion.div>
 
@@ -1251,8 +1251,7 @@ export default function HomePage() {
         <Section
           title="Our Technology"
           description="Investing in globally advanced medical technology for care you can trust."
-          showViewAll={true}
-          viewAllLink="/technology"
+          showViewAll={false}
         >
           {/* Mobile: Horizontal Scroll, Desktop: Grid */}
           <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">

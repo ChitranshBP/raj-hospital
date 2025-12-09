@@ -244,7 +244,7 @@ const Header = () => {
                   <SafeIcon icon={FiFacebook} className="w-4 h-4" />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/raj.hospitals/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-orange-200 transition-colors"
@@ -263,7 +263,7 @@ const Header = () => {
 
               {/* Location Icon */}
               <a
-                href="/location"
+                href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9"
                 className="flex items-center space-x-1 hover:text-orange-200 transition-colors"
               >
                 <SafeIcon icon={FiMapPin} className="w-4 h-4" />
@@ -292,7 +292,7 @@ const Header = () => {
               {/* Social Media Icons */}
               <div className="flex items-center space-x-2">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/RajHospitals"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-orange-200 transition-colors"
@@ -300,7 +300,7 @@ const Header = () => {
                   <SafeIcon icon={FiFacebook} className="w-4 h-4" />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/raj.hospitals/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-orange-200 transition-colors"
@@ -308,7 +308,7 @@ const Header = () => {
                   <SafeIcon icon={FiInstagram} className="w-4 h-4" />
                 </a>
                 <a
-                  href="https://youtube.com"
+                  href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-orange-200 transition-colors"
@@ -319,7 +319,7 @@ const Header = () => {
 
               {/* Location Icon */}
               <a
-                href="/location"
+                href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9"
                 className="flex items-center space-x-1 hover:text-orange-200 transition-colors"
               >
                 <SafeIcon icon={FiMapPin} className="w-4 h-4" />
@@ -460,7 +460,7 @@ const Header = () => {
 
                     <Link
                       to="/careers"
-                      className="text-orange-500 hover:text-orange-600 transition-colors font-medium text-sm lg:text-base"
+                      className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base"
                     >
                       Careers
                     </Link>
@@ -470,6 +470,13 @@ const Header = () => {
                       className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base"
                     >
                       News & Media
+                    </Link>
+
+                    <Link
+                      to="/blogs"
+                      className="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base"
+                    >
+                      Blogs
                     </Link>
                   </motion.nav>
                 )}
