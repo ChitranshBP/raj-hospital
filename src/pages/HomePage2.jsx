@@ -31,7 +31,7 @@ const specialties = [
     title: "Neurology",
     shortTitle: "Neurology",
     icon: FiIcons.FiAperture,
-    image: "assets/home-img/Neurology.webp",
+    image: "assets/home-img/raj-home-specialty/neurology.webp",
     description:
       "Comprehensive brain and spine care for injuries, strokes, and neurological disorders.",
     features: [
@@ -48,9 +48,9 @@ const specialties = [
     title: "Obstetrics & Gynecology",
     shortTitle: "Gynecology",
     icon: FiIcons.FiUser,
-    image: "assets/home-img/Gynecology.webp",
+    image: "assets/home-img/raj-home-specialty/Obstetrics & Gynecology.webp",
     description:
-      "Specialized care for women’s health, pregnancy, and gynecological conditions.",
+      "Specialized care for women's health, pregnancy, and gynecological conditions.",
     features: [
       "Comprehensive Obstetrics & Gynecology Services",
       "High-Risk Pregnancy Management",
@@ -63,7 +63,7 @@ const specialties = [
     title: "Orthopaedics & Joint Replacement",
     shortTitle: "Orthopaedics",
     icon: FiIcons.FiAperture,
-    image: "assets/home-img/Orthopaedics.webp",
+    image: "assets/home-img/raj-home-specialty/Orthopaedics & Joint Replacement.webp",
     description:
       "Comprehensive bone and joint care including replacements and sports injury management.",
     features: [
@@ -78,7 +78,7 @@ const specialties = [
     title: "Minimal Access Surgery",
     shortTitle: "Surgery",
     icon: FiIcons.FiScissors,
-    image: "assets/home-img/MinimalAccess.webp",
+    image: "assets/specialties/Minimal Access Surgery/Laparoscopy-Surgery.webp",
     description:
       "Laparoscopic and laser surgeries for faster recovery and minimal invasiveness.",
     features: [
@@ -94,7 +94,7 @@ const specialties = [
     title: "ENT (Ear, Nose & Throat)",
     shortTitle: "ENT",
     icon: FiIcons.FiMic,
-    image: "assets/home-img/ENT.webp",
+    image: "assets/specialties/ENT/Rhinology & Sinus-Care.webp",
     description: "Comprehensive ear, nose, and throat care for all age groups.",
     features: [
       "Diagnosis and Treatment of ENT Disorders",
@@ -108,7 +108,7 @@ const specialties = [
     title: "Nephrology",
     shortTitle: "Nephrology",
     icon: FiIcons.FiAperture,
-    image: "assets/home-img/Nephrology.webp",
+    image: "assets/home-img/raj-home-specialty/Nephrology.webp",
     description: "Advanced kidney care with dialysis and continuous renal replacement therapy.",
     features: [
       "Hypertensive & Diabetic Kidney Disease",
@@ -136,7 +136,7 @@ const specialties = [
     title: "Gastroenterology",
     shortTitle: "Gastrology",
     icon: FiIcons.FiTrendingUp,
-    image: "assets/home-img/Gastroenterology.webp",
+    image: "assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Inflammatory-Bowel-Disease.webp",
     description: "Advanced digestive and liver care through endoscopy and minimally invasive treatments.",
     features: [
       "Endoscopy & Colonoscopy",
@@ -152,7 +152,7 @@ const specialties = [
     title: "Emergency & Trauma Care",
     shortTitle: "Emergency",
     icon: FiIcons.FiAperture,
-    image: "assets/home-img/Emergency.webp",
+    image: "assets/specialties/Critical Care & Emergency/Trauma.webp",
     description: "24x7 emergency and acute trauma services with life support and evacuation facilities.",
     features: [
       "Advance Life Support Ambulance",
@@ -1335,7 +1335,7 @@ export default function HomePage() {
                 </a> */}
                   </div>
 
-                </div>
+                  </div>
               ))}
             </div>
           </div>
@@ -1386,7 +1386,7 @@ export default function HomePage() {
                   Watch Testimonial
                 </a> */}
                   </div>
-                </div>
+                  </div>
               ))}
             </div>
           </div>
