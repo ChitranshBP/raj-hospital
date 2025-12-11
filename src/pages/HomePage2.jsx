@@ -1297,7 +1297,7 @@ export default function HomePage() {
           title="Doctors Talk"
           description="Our experts share health tips and awareness."
           showViewAll={true}
-          viewAllLink="/doctors-talk"
+          viewAllLink="https://www.youtube.com/playlist?list=PL_ZdqB1Ag8tLg15rHj8cNbQqnfUTWvn5E"
         >
           {/* Mobile: Horizontal Scroll, Desktop: Grid */}
           <div className="overflow-x-auto md:overflow-visible scrollbar-hide -mx-4 md:mx-0 px-4 md:px-0">
