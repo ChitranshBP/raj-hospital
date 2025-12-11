@@ -3678,7 +3678,7 @@ const SpecialtyDetail = () => {
 
 
       {/* Overview Section */}
-      <section className="py-16 bg-white">
+      <section className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
@@ -3815,7 +3815,7 @@ const SpecialtyDetail = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -3864,7 +3864,7 @@ const SpecialtyDetail = () => {
       </section>
 
       {/* Conditions We Treat Section */}
-      <section className="py-16 bg-gradient-to-r from-gray-50 to-blue-50">
+      <section className="py-8 bg-gradient-to-r from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -3987,7 +3987,7 @@ const SpecialtyDetail = () => {
 
 
       {/* Success Stories */}
-      <section className="py-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+      <section className="py-8 bg-gradient-to-br from-primary-50 to-secondary-50">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -4033,7 +4033,7 @@ const SpecialtyDetail = () => {
       </section>
 
       {/* FAQs and Contact Form */}
-      <section className="py-16 bg-white">
+      <section className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">

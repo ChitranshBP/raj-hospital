@@ -395,7 +395,7 @@ const sections = {
 
 function Section({ title, description, children, showViewAll, viewAllLink }) {
   return (
-    <section className="py-12 px-4 max-w-7xl mx-auto">
+    <section className="py-8 px-4 max-w-7xl mx-auto">
       <div className="flex justify-between items-center mb-2">
         <h2 className="text-2xl font-bold text-[#F9771B]">{title}</h2>
         {showViewAll && (
@@ -418,7 +418,7 @@ function Section({ title, description, children, showViewAll, viewAllLink }) {
 
 function WhyChooseRaj() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header - Left Aligned */}
         <motion.div
@@ -496,7 +496,7 @@ function NewsMediaCompact() {
   const [newsTab, setNewsTab] = useState('digital'); // 'digital' or 'print'
 
   return (
-    <section className="py-12 max-w-7xl mx-auto px-4">
+    <section className="py-8 max-w-7xl mx-auto px-4">
       {/* Section Header */}
       <div className="flex justify-between items-center mb-2">
         <h2 className="text-2xl font-bold text-[#F9771B]">News & Media</h2>
@@ -664,7 +664,7 @@ const TabbedSpecialtiesSection = () => {
   };
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-8 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
 
 
@@ -1143,7 +1143,7 @@ export default function HomePage() {
       <WhyChooseRaj />
 
       {/* About Raj Hospitals Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Content & Statistics */}

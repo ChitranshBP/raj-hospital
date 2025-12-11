@@ -2972,7 +2972,7 @@ const DoctorProfile = () => {
 
   return (
     <div>
-      <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-20 py-16">
+      <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-20 py-8">
         <div className="max-w-7xl mx-auto px-4">
           <div className="md:flex md:items-start md:gap-12">
             {/* Left Column: All doctor info */}

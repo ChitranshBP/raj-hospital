@@ -3,12 +3,10 @@ import { motion } from 'framer-motion';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 
-const { FiStar, FiQuote, FiUser, FiFilter, FiSearch, FiPlay } = FiIcons;
+const { FiStar, FiQuote, FiUser, FiPlay } = FiIcons;
 
 const Testimonials = () => {
   const [activeTab, setActiveTab] = useState('written');
-  const [filterCategory, setFilterCategory] = useState('All');
-  const [searchTerm, setSearchTerm] = useState('');
   const [modalVideoId, setModalVideoId] = useState(null);
 
   // Load Review Magnet script
@@ -146,19 +144,6 @@ const Testimonials = () => {
     },
   ];
 
-  // Get unique departments for filter
-  const departments = ['All', ...new Set(testimonials.map((item) => item.department))];
-
-  // Filter testimonials based on search term and category
-  const filteredTestimonials = testimonials.filter((testimonial) => {
-    const matchesSearch = testimonial.text.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    testimonial.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    testimonial.treatment.toLowerCase().includes(searchTerm.toLowerCase());
-
-    const matchesCategory = filterCategory === 'All' || testimonial.department === filterCategory;
-
-    return matchesSearch && matchesCategory;
-  });
 
   return (
     <div>
@@ -210,35 +195,6 @@ const Testimonials = () => {
               </button>
             </div>
 
-            {/* Search and Filter - Only for Written Testimonials */}
-            {activeTab === 'written' && (
-              <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
-                <div className="relative flex-1 max-w-md">
-                  <SafeIcon icon={FiSearch} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                  <input
-                    type="text"
-                    placeholder="Search testimonials..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  />
-                </div>
-                <div className="flex items-center space-x-3">
-                  <SafeIcon icon={FiFilter} className="text-gray-500 w-5 h-5" />
-                  <select
-                    value={filterCategory}
-                    onChange={(e) => setFilterCategory(e.target.value)}
-                    className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  >
-                    {departments.map((department) => (
-                      <option key={department} value={department}>
-                        {department}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-            )}
           </div>
         </div>
       </section>
@@ -256,7 +212,7 @@ const Testimonials = () => {
 
               {/* Fallback: Show static testimonials */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {filteredTestimonials.map((testimonial, index) => (
+                {testimonials.map((testimonial, index) => (
                   <motion.div
                     key={testimonial.id}
                     initial={{ opacity: 0, y: 30 }}
