@@ -262,11 +262,9 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex flex-wrap justify-center gap-4 text-xs">
-                <Link to="/contact" className="text-gray-400 hover:text-orange-400 transition-colors">Privacy Policy</Link>
+                <Link to="/privacy-policy" className="text-gray-400 hover:text-orange-400 transition-colors">Privacy Policy</Link>
                 <span className="text-gray-700">•</span>
-                <Link to="/contact" className="text-gray-400 hover:text-orange-400 transition-colors">Terms & Conditions</Link>
-                <span className="text-gray-700">•</span>
-                <Link to="/contact" className="text-gray-400 hover:text-orange-400 transition-colors">Patient Rights</Link>
+                <Link to="/terms-and-conditions" className="text-gray-400 hover:text-orange-400 transition-colors">Terms & Conditions</Link>
                 <span className="text-gray-700">•</span>
                 <Link to="/biomedical-waste-reports" className="text-gray-400 hover:text-orange-400 transition-colors">BMW Reports</Link>
               </div>

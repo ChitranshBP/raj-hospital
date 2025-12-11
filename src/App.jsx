@@ -13,6 +13,8 @@ import Careers from './pages/Careers';
 import Contact from './pages/Contact';
 import NewsMedia from './pages/NewsMedia';
 import BiomedicalWasteReports from './pages/BiomedicalWasteReports';
+import TermsAndConditions from './pages/TermsAndConditions';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import Footer from './components/Footer';
 import { Toaster } from 'sonner';
 import './App.css';
@@ -37,6 +39,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/news-media" element={<NewsMedia />} />
             <Route path="/biomedical-waste-reports" element={<BiomedicalWasteReports />} />
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </main>
         <Footer />
