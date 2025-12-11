@@ -3604,6 +3604,7 @@ const SpecialtyDetail = () => {
               </div>
               <Link
                 to={`/doctors/${doc.id}`}
+                state={{ openAppointment: true }}
                 className="w-full bg-primary-500 text-white py-2 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 text-sm"
               >
                 <FiCalendar className="w-4 h-4" />
@@ -3789,6 +3790,7 @@ const SpecialtyDetail = () => {
                       </div>
                       <Link
                         to={`/doctors/${doctor.id}`}
+                        state={{ openAppointment: true }}
                         className="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 mb-2"
                       >
                         <FiCalendar className="w-4 h-4" />
@@ -3822,7 +3824,7 @@ const SpecialtyDetail = () => {
             viewport={{ once: true }}
             className="text-center mb-12">
 
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Treatments we offer</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Treatments We Offer</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive {specialty.title.split(' ')[0]} care with advanced techniques and personalized treatment plans
             </p>
@@ -3960,6 +3962,7 @@ const SpecialtyDetail = () => {
             </div>
             <Link
                   to={`/doctors/${doctor.id}`}
+                  state={{ openAppointment: true }}
                   className="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2">
 
               <SafeIcon icon={FiCalendar} className="w-4 h-4" />

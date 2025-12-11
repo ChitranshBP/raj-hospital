@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 
@@ -2946,10 +2946,20 @@ export const doctorsData = [
 
 const DoctorProfile = () => {
   const { doctorId } = useParams();
+  const location = useLocation();
   const [showAppointmentForm, setShowAppointmentForm] = useState(false);
 
   // Pick doctor by id (fallback to first doctor if not found)
   const doctor = doctorsData.find((d) => d.id === doctorId) || doctorsData[0];
+
+  // Auto-open appointment form if coming from "Book Apt." button
+  useEffect(() => {
+    if (location.state?.openAppointment) {
+      setShowAppointmentForm(true);
+      // Clear the state to prevent modal from reopening on refresh
+      window.history.replaceState({}, document.title);
+    }
+  }, [location]);
 
   if (!doctor) {
     return (
@@ -3038,7 +3048,7 @@ const DoctorProfile = () => {
                       <SafeIcon icon={FiCalendar} className="w-5 h-5" />
                       <span>Book Appointment</span>
                     </button>
-
+{/* 
                     {doctor.contact?.phone && (
                       <a
                         href={`tel:${doctor.contact.phone}`}
@@ -3047,7 +3057,7 @@ const DoctorProfile = () => {
                         <SafeIcon icon={FiPhone} className="w-5 h-5" />
                         <span>Contact Now</span>
                       </a>
-                    )}
+                    )} */}
                   </div>
                 </motion.div>
               </div>

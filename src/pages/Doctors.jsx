@@ -176,9 +176,10 @@ useEffect(() => {
                   </Link>
                   <Link
                     to={`/doctor/${doctor.id}`}
+                    state={{ openAppointment: true }}
                     className="flex-1 bg-white text-primary-600 border border-primary-600 py-1.5 rounded-md hover:bg-primary-50 transition-colors text-xs font-medium text-center"
                   >
-                    Book
+                    Book Apt.
                   </Link>
                 </div>
               </div>

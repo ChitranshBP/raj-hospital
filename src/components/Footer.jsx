@@ -30,7 +30,6 @@ const Footer = () => {
     "Nephrology",
     "Neurosciences",
     "Oncology (Cancer Care)",
-    "Orthopaedics & Joint Replacement",
     "Pulmonology",
     "Internal Medicine",
     "Urology",
@@ -61,7 +60,11 @@ const Footer = () => {
     { name: 'Specialties', path: '/specialties' },
     { name: 'Testimonials', path: '/testimonials' },
     { name: 'Careers', path: '/careers' },
-    { name: 'News & Media', path: '/news-media' }
+    { name: 'News & Media', path: '/news-media' },
+        { name: 'Blogs', path: '/blogs' },
+        { name: 'BioMedical Waste Reports', path: '/biomedical-waste-reports' }
+
+
   ];
 
 
