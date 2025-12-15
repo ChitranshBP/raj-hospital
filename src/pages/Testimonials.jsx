@@ -148,7 +148,7 @@ const Testimonials = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-20 py-16">
+      <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-28 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}

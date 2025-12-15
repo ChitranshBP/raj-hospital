@@ -270,7 +270,7 @@ const About = () => {
               <img
                   src="assets/home-img/Picture1.png"
                   alt="Chairman - Raj Hospital"
-                  className="w-full h-64 md:h-full object-cover" />
+                  className="w-full h-64 md:h-full object-contain md:object-cover" />
 
             </div>
             
