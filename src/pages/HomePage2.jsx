@@ -895,6 +895,59 @@ function QuickNavigationBar() {
 
       // Physiotherapy
       { name: "Dr. Abhay Kumar Pandey", specialty: "Physiotherapy", type: "doctor", link: "#/doctors/abhay-pandey" },
+
+      // Additional Cardiology
+      { name: "Dr. Awnindra Kumar Singh", specialty: "Cardiology", type: "doctor", link: "#/doctors/awnindra-singh" },
+      { name: "Dr. Anup Kumar Jha", specialty: "Cardiology", type: "doctor", link: "#/doctors/anup-kumar-jha" },
+
+      // Additional Critical Care
+      { name: "Dr. Rahul Roy", specialty: "Critical Care", type: "doctor", link: "#/doctors/rahul-roy" },
+
+      // Additional Neurology
+      { name: "Dr. Prakash Chandra", specialty: "Neurology", type: "doctor", link: "#/doctors/prakash-chandra" },
+      { name: "Dr. Vijay Raj", specialty: "Neurology", type: "doctor", link: "#/doctors/vijay-raj" },
+
+      // Additional Oncology
+      { name: "Dr. Anamika Kumari", specialty: "Oncology", type: "doctor", link: "#/doctors/anamika-kumari" },
+
+      // Additional Orthopaedics
+      { name: "Dr. Deepak Verma", specialty: "Orthopaedics", type: "doctor", link: "#/doctors/deepak-verma" },
+      { name: "Dr. Ujjwal Sinha", specialty: "Orthopaedics", type: "doctor", link: "#/doctors/ujjwal-sinha" },
+
+      // Additional ENT
+      { name: "Dr. T.G.N. Sinha", specialty: "ENT", type: "doctor", link: "#/doctors/tgn-sinha" },
+
+      // Additional Gynecology
+      { name: "Dr. Tanushree Chakroborty", specialty: "Obstetrics & Gynaecology", type: "doctor", link: "#/doctors/tanushree-chakroborty" },
+
+      // Aesthetic Surgery
+      { name: "Dr. Pankaj Kumar", specialty: "Aesthetic & Reconstructive Surgery", type: "doctor", link: "#/doctors/pankaj-kumar" },
+
+      // Additional Internal Medicine
+      { name: "Dr. Sony", specialty: "Internal Medicine", type: "doctor", link: "#/doctors/sony" },
+
+      // Ophthalmology
+      { name: "Dr. Abid Akhtar", specialty: "Ophthalmology", type: "doctor", link: "#/doctors/abid-akhtar" },
+
+      // Pediatrics
+      { name: "Dr. Ravi Shekhar Singh", specialty: "Pediatrics & Neonatology", type: "doctor", link: "#/doctors/ravi-shekhar-singh" },
+
+      // Radiology
+      { name: "Dr. Anil Kumar", specialty: "Radiology", type: "doctor", link: "#/doctors/anil-kumar" },
+      { name: "Dr. Shekhar Sharma", specialty: "Radiology", type: "doctor", link: "#/doctors/shekhar-sharma" },
+
+      // Laboratory
+      { name: "Dr. Pradeep Prasad", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/pradeep-prasad" },
+      { name: "Dr. Jitendra Prasad", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/jitendra-prasad" },
+      { name: "Dr. Kriti Kaira", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/kriti-kaira" },
+      { name: "Dr. Shweta Sushmita", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/shweta-sushmita" },
+      { name: "Dr. Praveen Kumar", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/praveen-kumar" },
+      { name: "Dr. Parijat Sarkar", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/parijat-sarkar" },
+      { name: "Dr. Ashok Kr Agarwal", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/ashok-kr-agarwal" },
+      { name: "Dr. Ajeet Singh", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/ajeet-singh" },
+      { name: "Dr. Sanjeev Kumar Ravi", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/sanjeev-kumar-ravi" },
+      { name: "Dr. Ashish Kumar", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/ashish-kumar" },
+      { name: "Dr. Shubham Shekhar", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/shubham-shekhar" },
     ],
   };
 

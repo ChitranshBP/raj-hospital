@@ -792,7 +792,7 @@ export const doctorsData = [
     qualifications:
       'MBBS, MS (Orthopaedics), MECA, DNB (Orthopaedics), Dip. Sports Medicine (FIFA, Switzerland), MNAMS',
     specialty: 'Orthopaedics & Joint Replacement',
-    experience: '9+ Years',
+    experience: '11+ Years',
     image:
       '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Muzammil-Feroz.webp',
     specialtyIcon: medicalIcons.orthopaedics,
@@ -2939,8 +2939,127 @@ export const doctorsData = [
 
 
 
+  // Cardiology - Dr. Awnindra Kumar Singh
+  {
+    id: 'awnindra-singh',
+    name: 'Dr. Awnindra Kumar Singh',
+    qualifications: 'MBBS, MD, DM',
+    specialty: 'Cardiology',
+    experience: '16+ Years',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/-Dr. Awnindra-Kumar-Singh-Cardiologist.webp',
+    specialtyIcon: medicalIcons.cardiology,
+    description: 'Dr. Awnindra Kumar Singh is an experienced Interventional Cardiologist with over 16 years of expertise in advanced cardiac procedures.',
+    expertise: [
+      'Interventional Cardiology',
+      'Angioplasty & Stenting',
+      'Complex Cardiac Procedures'
+    ],
+    education: [
+      { degree: 'DM (Cardiology)', institution: '', year: '' },
+      { degree: 'MD', institution: '', year: '' },
+      { degree: 'MBBS', institution: '', year: '' }
+    ],
+    memberships: [],
+    procedures: [],
+    contact: {
+      email: '',
+      phone: '+919771488888',
+      clinic: 'Raj Hospitals, Cardiology Department',
+      address: 'Ranchi, Jharkhand, India'
+    }
+  },
 
+  // Pediatrics - Dr. Ravi Shekhar Singh
+  {
+    id: 'ravi-shekhar-singh',
+    name: 'Dr. Ravi Shekhar Singh',
+    qualifications: 'MBBS, DCH',
+    specialty: 'Pediatrics & Neonatology',
+    experience: '10+ Years',
+    image: 'assets/specialties/PAEDIATRICS/dr-ravi-shekhar-singh.webp',
+    specialtyIcon: '',
+    description: 'Dr. Ravi Shekhar Singh is a skilled Pediatrician specializing in Pediatric Medicine and Critical Care for infants and children.',
+    expertise: [
+      'Pediatric Medicine',
+      'Pediatric Critical Care',
+      'Neonatal Care',
+      'Child Healthcare'
+    ],
+    education: [
+      { degree: 'DCH', institution: '', year: '' },
+      { degree: 'MBBS', institution: '', year: '' }
+    ],
+    memberships: [],
+    procedures: [],
+    contact: {
+      email: '',
+      phone: '+919771488888',
+      clinic: 'Raj Hospitals, Pediatrics Department',
+      address: 'Ranchi, Jharkhand, India'
+    }
+  },
 
+  // Neurology - Dr. Prakash Chandra
+  {
+    id: 'prakash-chandra',
+    name: 'Dr. Prakash Chandra',
+    qualifications: 'MBBS, MS, MCH',
+    specialty: 'Neurology',
+    experience: '18+ Years',
+    image: 'assets/Doc-Side/Dr. Prakash Chandra (Neuro Surgeon).webp',
+    specialtyIcon: medicalIcons.neurology,
+    description: 'Dr. Prakash Chandra is a highly experienced Neurosurgeon with expertise in Neurology, Epileptology, and Neurophysiology.',
+    expertise: [
+      'Neurosurgery',
+      'Epileptology',
+      'Neurophysiology',
+      'Complex Brain Surgeries'
+    ],
+    education: [
+      { degree: 'MCH (Neurosurgery)', institution: '', year: '' },
+      { degree: 'MS', institution: '', year: '' },
+      { degree: 'MBBS', institution: '', year: '' }
+    ],
+    memberships: [],
+    procedures: [],
+    contact: {
+      email: '',
+      phone: '+919771488888',
+      clinic: 'Raj Hospitals, Neurology Department',
+      address: 'Ranchi, Jharkhand, India'
+    }
+  },
+
+  // Neurology - Dr. Vijay Raj
+  {
+    id: 'vijay-raj',
+    name: 'Dr. Vijay Raj',
+    qualifications: 'MBBS, MD, DM (Neurology)',
+    specialty: 'Neurology',
+    experience: '15+ Years',
+    image: 'assets/Doc-Side/vijayraj.webp',
+    specialtyIcon: medicalIcons.neurology,
+    description: 'Dr. Vijay Raj is a skilled Neurologist specializing in Neurodiagnostics and Stroke Management with extensive experience.',
+    expertise: [
+      'Neurodiagnostics',
+      'Stroke Management',
+      'Neurological Disorders',
+      'Brain & Nervous System Care'
+    ],
+    education: [
+      { degree: 'DM (Neurology)', institution: '', year: '' },
+      { degree: 'MD', institution: '', year: '' },
+      { degree: 'MBBS', institution: '', year: '' }
+    ],
+    memberships: [],
+    procedures: [],
+    contact: {
+      email: '',
+      phone: '+919771488888',
+      clinic: 'Raj Hospitals, Neurology Department',
+      address: 'Ranchi, Jharkhand, India'
+    }
+  }
 
 ];
 
