@@ -2660,7 +2660,7 @@ const SpecialtyDetail = () => {
       id: 'oral-maxillofacial-surgery-ad',
       title: 'Oral & Maxillofacial Surgery',
       icon: FiActivity,
-      bannerImage: 'public/assets/specialties/oral/oral1.webp',
+      bannerImage: '/assets/specialties/oral/oral1.webp',
 
       shortDescription:
         'Specialized surgical care for the mouth, teeth, jaws, and facial structures with advanced techniques and expert oral & maxillofacial surgeons.',
@@ -2673,43 +2673,43 @@ const SpecialtyDetail = () => {
           title: 'Wisdom Tooth (Third Molar) Removal',
           description:
             'Expert extraction of impacted or partially erupted wisdom teeth using minimally invasive techniques to reduce pain, swelling, and complications.',
-          image: 'public/assets/specialties/oral/Wisdom Tooth.webp'
+          image: '/assets/specialties/oral/Wisdom Tooth.webp'
         },
         {
           title: 'Facial & Jaw Trauma Surgery',
           description:
             'Comprehensive treatment for fractures of the jaw, cheekbone, nasal bone, and eye socket. Restores facial function, symmetry, and aesthetics.',
-          image: 'public/assets/specialties/oral/Facial & Jaw Trauma Surgery.webp'
+          image: '/assets/specialties/oral/Facial & Jaw Trauma Surgery.webp'
         },
         {
           title: 'Cyst & Tumor Removal (Oral Pathology)',
           description:
             'Diagnosis and surgical removal of oral cysts, benign tumors, and other abnormal growths to prevent infection, bone loss, or recurrence.',
-          image: 'public/assets/specialties/oral/Cyst & Tumor Removal (Oral Pathology).webp'
+          image: '/assets/specialties/oral/Cyst & Tumor Removal (Oral Pathology).webp'
         },
         {
           title: 'Orthognathic (Corrective Jaw) Surgery',
           description:
             'Corrective surgery for jaw deformities, bite problems, and facial asymmetry using digital planning and modern surgical techniques.',
-          image: 'public/assets/specialties/oral/Orthognathic (Corrective Jaw) Surgery.webp'
+          image: '/assets/specialties/oral/Orthognathic (Corrective Jaw) Surgery.webp'
         },
         {
           title: 'TMJ Disorder Management',
           description:
             'Diagnosis and treatment of temporomandibular joint disorders causing jaw pain, locking, clicking, or restricted movement.',
-          image: 'public/assets/specialties/oral/TMJ Disorder Management.webp'
+          image: '/assets/specialties/oral/TMJ Disorder Management.webp'
         },
         {
           title: 'Dental Implants & Bone Grafting',
           description:
             'Implant placement for missing teeth supported by sinus lift, ridge augmentation, and bone grafting when required.',
-          image: 'public/assets/specialties/oral/Dental Implants & Bone Grafting.webp'
+          image: '/assets/specialties/oral/Dental Implants & Bone Grafting.webp'
         },
         {
           title: 'Pre-Prosthetic Surgery',
           description:
             'Adjustments to jawbone and soft tissues to improve denture fit and comfort, ensuring long-term stability.',
-          image: 'public/assets/specialties/oral/Pre-Prosthetic Surgery.webp'
+          image: '/assets/specialties/oral/Pre-Prosthetic Surgery.webp'
         }
       ],
 
