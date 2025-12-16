@@ -3091,13 +3091,13 @@ const DoctorProfile = () => {
 
   return (
     <div>
-      <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-20 py-8">
+      <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-28 py-8">
         <div className="max-w-7xl mx-auto px-4">
           <div className="md:flex md:items-start md:gap-12">
             {/* Left Column: All doctor info */}
             <div className="md:flex-1 space-y-8">
               {/* Hero top: Image + Info */}
-              <div className="flex flex-col md:flex-row md:items-center md:gap-8">
+              <div className="flex flex-col md:flex-row md:items-center md:gap-8 items-center">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}

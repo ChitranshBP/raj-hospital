@@ -134,7 +134,7 @@ const Footer = () => {
                 <p className="text-gray-300 leading-relaxed mb-6 text-sm">
                   Raj Hospitals is a leading multi-specialty healthcare provider in Ranchi, Jharkhand, delivering comprehensive medical care with state-of-the-art technology and a patient-centric approach since 1991.
                 </p>
-                <div className="grid grid-cols-1 gap-3 mb-6">
+                {/* <div className="grid grid-cols-1 gap-3 mb-6">
                   <div className="flex items-center space-x-3 bg-white/5 backdrop-blur-sm rounded-lg px-3 py-2 border border-white/10">
                     <SafeIcon icon={FiShield} className="w-5 h-5 text-orange-400" />
                     <span className="text-gray-200 text-sm font-medium">NABH Accredited Hospital</span>
@@ -146,6 +146,32 @@ const Footer = () => {
                   <div className="flex items-center space-x-3 bg-white/5 backdrop-blur-sm rounded-lg px-3 py-2 border border-white/10">
                     <SafeIcon icon={FiAward} className="w-5 h-5 text-orange-400" />
                     <span className="text-gray-200 text-sm font-medium">30+ Years of Excellence</span>
+                  </div>
+                </div> */}
+
+                {/* Contact Info */}
+                <div className="mt-6 space-y-3">
+                  <div className="flex items-center space-x-2">
+                    <SafeIcon icon={FiPhone} className="w-4 h-4 text-orange-400" />
+                    <a href="tel:+919771488888" className="text-gray-300 hover:text-orange-400 text-sm transition-colors">
+                      +91 977 14 88888
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <SafeIcon icon={FiMail} className="w-4 h-4 text-orange-400" />
+                    <a href="mailto:info@rajhospitals.com" className="text-gray-300 hover:text-orange-400 text-sm transition-colors">
+                      info@rajhospitals.com
+                    </a>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <SafeIcon icon={FiMapPin} className="w-4 h-4 text-orange-400 mt-0.5" />
+                    <a
+                      href="https://maps.google.com/?q=Raj+Hospitals+Bariatu+Road+Ranchi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-orange-400 text-sm transition-colors">
+                      Ranchi, Jharkhand - 834009
+                    </a>
                   </div>
                 </div>
 
@@ -246,13 +272,8 @@ const Footer = () => {
 
             </div>
 
-            {/* Contact Banner - Full Width */}
-         
           </div>
         </div>
-
-   
-
 
         {/* Bottom Footer */}
         <div className="bg-black/50 border-t border-gray-800 py-6">

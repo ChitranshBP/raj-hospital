@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-24 py-16">
+      <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-28 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -41,27 +41,45 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {[
-            { icon: FiPhone, title: '24/7 Emergency', info: '+91 977 14 88888', description: 'Call us anytime for emergency medical assistance', color: 'accent' },
-            { icon: FiMapPin, title: 'Location', info: 'Ranchi, Jharkhand', description: 'Easy to reach location in the heart of Ranchi', color: 'primary' },
-            { icon: FiMail, title: 'Email Us', info: 'info@rajhospitals.com', description: 'Send us your queries and we\'ll respond promptly', color: 'secondary' },
-            { icon: FiClock, title: 'Working Hours', info: '24/7 Open', description: 'We provide round-the-clock medical services', color: 'primary' }].
-            map((contact, index) =>
-            <motion.div
-              key={contact.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="text-center bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+            { icon: FiPhone, title: '24/7 Emergency', info: '+91 977 14 88888', description: 'Call us anytime for emergency medical assistance', color: 'accent', link: 'tel:+919771488888' },
+            { icon: FiMapPin, title: 'Location', info: 'Ranchi, Jharkhand', description: 'Easy to reach location in the heart of Ranchi', color: 'primary', link: 'https://maps.google.com/?q=Raj+Hospitals+Bariatu+Road+Ranchi' },
+            { icon: FiMail, title: 'Email Us', info: 'info@rajhospitals.com', description: 'Send us your queries and we\'ll respond promptly', color: 'secondary', link: 'mailto:info@rajhospitals.com' },
+            { icon: FiClock, title: 'Working Hours', info: '24/7 Open', description: 'We provide round-the-clock medical services', color: 'primary', link: null }].
+            map((contact, index) => {
+              const CardContent = (
+                <>
+                  <div className={`w-16 h-16 bg-${contact.color}-100 rounded-full flex items-center justify-center mx-auto mb-4`}>
+                    <SafeIcon icon={contact.icon} className={`w-8 h-8 text-${contact.color}-600`} />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{contact.title}</h3>
+                  <p className="text-lg font-medium text-primary-600 mb-2">{contact.info}</p>
+                  <p className="text-gray-600 text-sm">{contact.description}</p>
+                </>
+              );
 
-                <div className={`w-16 h-16 bg-${contact.color}-100 rounded-full flex items-center justify-center mx-auto mb-4`}>
-                  <SafeIcon icon={contact.icon} className={`w-8 h-8 text-${contact.color}-600`} />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{contact.title}</h3>
-                <p className="text-lg font-medium text-primary-600 mb-2">{contact.info}</p>
-                <p className="text-gray-600 text-sm">{contact.description}</p>
-              </motion.div>
-            )}
+              return (
+                <motion.div
+                  key={contact.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}>
+                  {contact.link ? (
+                    <a
+                      href={contact.link}
+                      target={contact.link.startsWith('http') ? '_blank' : undefined}
+                      rel={contact.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                      className="block text-center bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300 hover:bg-gray-100 cursor-pointer">
+                      {CardContent}
+                    </a>
+                  ) : (
+                    <div className="text-center bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+                      {CardContent}
+                    </div>
+                  )}
+                </motion.div>
+              );
+            })}
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
