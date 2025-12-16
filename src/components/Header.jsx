@@ -110,6 +110,7 @@ const Header = () => {
     "Internal Medicine": FiCrosshair,
     Urology: FiZap,
     "Obstetrics & Gynaecology": FiTrendingUp,
+    "Oral & Maxillofacial Surgery": FiScissors,
     "Aesthetic & Reconstructive Surgery": FiScissors,
     Dental: FiSmile,
     Dermatology: FiFeather,
@@ -141,6 +142,7 @@ const Header = () => {
         "Internal Medicine",
         "Urology",
         "Obstetrics & Gynaecology",
+        "Oral & Maxillofacial Surgery",
       ],
     },
     {
@@ -155,6 +157,7 @@ const Header = () => {
         "Pediatrics & Neonatology",
         "Physiotherapy & Rehabilitation",
         "Psychiatry & Mental Health",
+
       ],
     },
     {
@@ -184,6 +187,9 @@ const Header = () => {
     },
     "FNAC, Biopsy, Blood & Laboratory Investigations": {
       "Advanced Diagnostics": "laboratory-investigations",
+    },
+    "Oral & Maxillofacial Surgery": {
+      "Centres of Excellence": "oral-maxillofacial-surgery-ad",
     },
   };
 
@@ -345,11 +351,10 @@ const Header = () => {
 
       {/* Main Header with dynamic height */}
       <header
-        className={`fixed w-full z-40 transition-all duration-300 ${
-          isScrolled
-            ? "bg-white shadow-lg top-[48px] sm:top-6"
-            : "bg-white top-[48px] sm:top-6"
-        }`}
+        className={`fixed w-full z-40 transition-all duration-300 ${isScrolled
+          ? "bg-white shadow-lg top-[48px] sm:top-6"
+          : "bg-white top-[48px] sm:top-6"
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4">
           {/* Logo and Main Container with fixed height - responsive */}
@@ -357,30 +362,27 @@ const Header = () => {
             {/* Logo with responsive and dynamic sizing */}
             <Link to="/" className="flex items-center">
               <div
-                className={`flex items-center transition-all duration-300 ${
-                  showMiddleRow
-                    ? "space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-6"
-                    : "space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6"
-                }`}
+                className={`flex items-center transition-all duration-300 ${showMiddleRow
+                  ? "space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-6"
+                  : "space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6"
+                  }`}
               >
                 {/* Main Logo - Responsive and dynamic sizing */}
                 <img
                   src="/assets/Header/main-logo_ranchi.webp"
                   alt="Main Logo"
-                  className={`object-contain transition-all duration-300 ${
-                    showMiddleRow
-                      ? "w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px]" // Both rows visible
-                      : "w-[80px] h-[80px] sm:w-[110px] sm:h-[110px] md:w-[130px] md:h-[130px] lg:w-[140px] lg:h-[140px]" // One row visible - mobile stays same size
-                  }`}
+                  className={`object-contain transition-all duration-300 ${showMiddleRow
+                    ? "w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px]" // Both rows visible
+                    : "w-[80px] h-[80px] sm:w-[110px] sm:h-[110px] md:w-[130px] md:h-[130px] lg:w-[140px] lg:h-[140px]" // One row visible - mobile stays same size
+                    }`}
                 />
 
                 {/* NABH Logos - Responsive and dynamic sizing */}
                 <div
-                  className={`flex transition-all duration-300 ${
-                    showMiddleRow
-                      ? "space-x-1 sm:space-x-2 md:space-x-2 lg:space-x-2"
-                      : "space-x-1 sm:space-x-3 md:space-x-2 lg:space-x-2"
-                  }`}
+                  className={`flex transition-all duration-300 ${showMiddleRow
+                    ? "space-x-1 sm:space-x-2 md:space-x-2 lg:space-x-2"
+                    : "space-x-1 sm:space-x-3 md:space-x-2 lg:space-x-2"
+                    }`}
                 >
                   <img
                     src="/assets/Header/NABL_logo-1.webp"
@@ -661,9 +663,8 @@ const Header = () => {
                     <span>Specialties</span>
                     <SafeIcon
                       icon={FiChevronDown}
-                      className={`w-4 h-4 transition-transform ${
-                        isSpecialtiesOpen ? "rotate-180" : ""
-                      }`}
+                      className={`w-4 h-4 transition-transform ${isSpecialtiesOpen ? "rotate-180" : ""
+                        }`}
                     />
                   </button>
                   {isSpecialtiesOpen && (
@@ -684,9 +685,8 @@ const Header = () => {
                             </span>
                             <SafeIcon
                               icon={FiChevronDown}
-                              className={`w-3 h-3 transition-transform ${
-                                openCategory === idx ? "rotate-180" : ""
-                              }`}
+                              className={`w-3 h-3 transition-transform ${openCategory === idx ? "rotate-180" : ""
+                                }`}
                             />
                           </button>
                           {openCategory === idx && (

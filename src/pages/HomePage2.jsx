@@ -515,8 +515,8 @@ function NewsMediaCompact() {
         <button
           onClick={() => setNewsTab('digital')}
           className={`px-4 py-2 rounded-lg font-semibold transition-all ${newsTab === 'digital'
-              ? 'bg-[#F9771B] text-white shadow'
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+            ? 'bg-[#F9771B] text-white shadow'
+            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
             }`}
         >
           Digital
@@ -524,8 +524,8 @@ function NewsMediaCompact() {
         <button
           onClick={() => setNewsTab('print')}
           className={`px-4 py-2 rounded-lg font-semibold transition-all ${newsTab === 'print'
-              ? 'bg-[#F9771B] text-white shadow'
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+            ? 'bg-[#F9771B] text-white shadow'
+            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
             }`}
         >
           Print
@@ -721,8 +721,8 @@ const TabbedSpecialtiesSection = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className={`flex items-center space-x-2 whitespace-nowrap px-5 py-2 rounded-full font-medium text-sm border transition ${activeTab === index
-                    ? "bg-[#F9771B] text-white shadow-lg border-transparent"
-                    : "bg-white text-gray-600 border border-gray-300 hover:border-[#F9771B] hover:text-[#F9771B]"
+                  ? "bg-[#F9771B] text-white shadow-lg border-transparent"
+                  : "bg-white text-gray-600 border border-gray-300 hover:border-[#F9771B] hover:text-[#F9771B]"
                   }`}
               >
                 <SafeIcon
@@ -815,6 +815,7 @@ function QuickNavigationBar() {
       { name: "Internal Medicine", type: "specialty", link: "#/specialties/internal-medicine", keywords: ["internal-medicine-ad", "general medicine", "physician", "internal"] },
       { name: "Urology", type: "specialty", link: "#/specialties/urology", keywords: ["urology-ad", "prostate", "kidney stone", "urinary", "bladder", "infertility"] },
       { name: "Obstetrics & Gynaecology", type: "specialty", link: "#/specialties/obstetrics-and-gynaecology", keywords: ["gynecology-ad", "gynaecology-ad", "women", "pregnancy", "obstetrics", "maternity"] },
+      { name: "Oral & Maxillofacial Surgery", type: "specialty", link: "#/specialties/oral-and-maxillofacial-surgery", keywords: ["oral-maxillofacial-surgery-ad", "oral", "maxillofacial", "surgery", "oral surgery", "maxillofacial surgery"] },
 
       // Allied Specialties
       { name: "Aesthetic & Reconstructive Surgery", type: "specialty", link: "#/specialties/aesthetic-and-reconstructive-surgery", keywords: ["plastic-surgery-ad", "aesthetic-ad", "cosmetic", "reconstructive", "plastic"] },
@@ -1078,8 +1079,8 @@ function QuickNavigationBar() {
                       </div>
                     </div>
                     <span className={`text-xs px-2 py-1 rounded-full ${suggestion.type === 'specialty'
-                        ? 'bg-[#0191C7]/10 text-[#0191C7]'
-                        : 'bg-[#F9771B]/10 text-[#F9771B]'
+                      ? 'bg-[#0191C7]/10 text-[#0191C7]'
+                      : 'bg-[#F9771B]/10 text-[#F9771B]'
                       }`}>
                       {suggestion.type === 'specialty' ? 'Specialty' : 'Doctor'}
                     </span>

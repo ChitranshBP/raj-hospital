@@ -1253,7 +1253,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (General Surgery), MCh (Plastic Surgery)',
     specialty: 'Aesthetic & Reconstructive Surgery',
     experience: '12+ Years',
-    image: 'assets/Doc-Side/Dr Pankaj Kumar.webp',
+    image: '/assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: medicalIcons.plasticSurgery,
     description:
       'Dr. Pankaj Kumar is a renowned Plastic, Cosmetic, and Reconstructive Surgeon based in Ranchi with over 10 years of experience. He is associated with Raj Hospital and Srijan Plastic Cosmetic and Micro Surgery Clinic, known for attention to accurate diagnosis and empathetic patient care.',
@@ -3167,7 +3167,7 @@ const DoctorProfile = () => {
                       <SafeIcon icon={FiCalendar} className="w-5 h-5" />
                       <span>Book Appointment</span>
                     </button>
-{/* 
+                    {/* 
                     {doctor.contact?.phone && (
                       <a
                         href={`tel:${doctor.contact.phone}`}

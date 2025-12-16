@@ -2312,14 +2312,7 @@ const SpecialtyDetail = () => {
           image: 'assets/doc-dummy/male-dummy-raj.webp',
           specialization: 'Microbiology'
         },
-        {
-          id: 'kriti-kaira',
-          name: 'Dr. Kriti Kaira',
-          qualification: 'MBBS, MD (Pathology), Post Doctoral Fellowship (Oncopathology)',
-          experience: '3+ Years',
-          image: '/assets/Doc-Side/Dr kirti_kaira_lab.webp',
-          specialization: 'Pathology, Histopathology, Cytology, Hematology, Clinical Pathology'
-        },
+
         {
           id: 'shweta-sushmita',
           name: 'Dr. Shweta Sushmita',
@@ -2335,6 +2328,14 @@ const SpecialtyDetail = () => {
           experience: '8+ Years',
           image: 'assets/Doc-Side/Dr Praveen Kumar (Lab).webp',
           specialization: 'Consultant Pathology, Clinical Hematology, Cytology, Bone Marrow Biopsy, Histopathology'
+        },
+        {
+          id: 'kriti-kaira',
+          name: 'Dr. Kriti Kaira',
+          qualification: 'MBBS, MD (Pathology), Post Doctoral Fellowship (Oncopathology)',
+          experience: '3+ Years',
+          image: '/assets/Doc-Side/Dr kirti_kaira_lab.webp',
+          specialization: 'Pathology, Histopathology, Cytology, Hematology, Clinical Pathology'
         },
 
 
@@ -2473,22 +2474,22 @@ const SpecialtyDetail = () => {
           image: 'assets/Doc-Side/Dr Ahmad Hussain.webp',
           specialization: 'Neurology'
         },
-        {
-          id: '801',
-          name: 'Dr. Prakash Chandra',
-          qualification: 'MBBS, MS, MCH',
-          experience: '18+ Years',
-          image: "assets/Doc-Side/Dr. Prakash Chandra (Neuro Surgeon).webp",
-          specialization: 'Neurology, Epileptology, and Neurophysiology'
-        },
-        {
-          id: 'vijay-raj',
-          name: 'Dr. Vijay Raj',
-          qualification: 'MBBS, MD, DM (Neurology)',
-          experience: '15+ Years',
-          image: 'assets/Doc-Side/vijayraj.webp',
-          specialization: 'Neurodiagnostics and Stroke Management'
-        },
+        // {
+        //   id: '801',
+        //   name: 'Dr. Prakash Chandra',
+        //   qualification: 'MBBS, MS, MCH',
+        //   experience: '18+ Years',
+        //   image: "assets/Doc-Side/Dr. Prakash Chandra (Neuro Surgeon).webp",
+        //   specialization: 'Neurology, Epileptology, and Neurophysiology'
+        // },
+        // {
+        //   id: 'vijay-raj',
+        //   name: 'Dr. Vijay Raj',
+        //   qualification: 'MBBS, MD, DM (Neurology)',
+        //   experience: '15+ Years',
+        //   image: 'assets/Doc-Side/vijayraj.webp',
+        //   specialization: 'Neurodiagnostics and Stroke Management'
+        // },
         // {
         //   id: '803',
         //   name: 'Dr. Ujjwal Roy',
@@ -2659,7 +2660,7 @@ const SpecialtyDetail = () => {
       id: 'oral-maxillofacial-surgery-ad',
       title: 'Oral & Maxillofacial Surgery',
       icon: FiActivity,
-      bannerImage: 'assets/specialties/OralMaxillofacial-ad/oral-maxillofacial-banner.webp',
+      bannerImage: 'public/assets/specialties/oral/oral1.webp',
 
       shortDescription:
         'Specialized surgical care for the mouth, teeth, jaws, and facial structures with advanced techniques and expert oral & maxillofacial surgeons.',
@@ -2672,43 +2673,43 @@ const SpecialtyDetail = () => {
           title: 'Wisdom Tooth (Third Molar) Removal',
           description:
             'Expert extraction of impacted or partially erupted wisdom teeth using minimally invasive techniques to reduce pain, swelling, and complications.',
-          image: 'assets/specialties/OralMaxillofacial-ad/wisdom-tooth-removal.webp'
+          image: 'public/assets/specialties/oral/Wisdom Tooth.webp'
         },
         {
           title: 'Facial & Jaw Trauma Surgery',
           description:
             'Comprehensive treatment for fractures of the jaw, cheekbone, nasal bone, and eye socket. Restores facial function, symmetry, and aesthetics.',
-          image: 'assets/specialties/OralMaxillofacial-ad/facial-trauma-surgery.webp'
+          image: 'public/assets/specialties/oral/Facial & Jaw Trauma Surgery.webp'
         },
         {
           title: 'Cyst & Tumor Removal (Oral Pathology)',
           description:
             'Diagnosis and surgical removal of oral cysts, benign tumors, and other abnormal growths to prevent infection, bone loss, or recurrence.',
-          image: 'assets/specialties/OralMaxillofacial-ad/cyst-tumor-removal.webp'
+          image: 'public/assets/specialties/oral/Cyst & Tumor Removal (Oral Pathology).webp'
         },
         {
           title: 'Orthognathic (Corrective Jaw) Surgery',
           description:
             'Corrective surgery for jaw deformities, bite problems, and facial asymmetry using digital planning and modern surgical techniques.',
-          image: 'assets/specialties/OralMaxillofacial-ad/orthognathic-surgery.webp'
+          image: 'public/assets/specialties/oral/Orthognathic (Corrective Jaw) Surgery.webp'
         },
         {
           title: 'TMJ Disorder Management',
           description:
             'Diagnosis and treatment of temporomandibular joint disorders causing jaw pain, locking, clicking, or restricted movement.',
-          image: 'assets/specialties/OralMaxillofacial-ad/tmj-treatment.webp'
+          image: 'public/assets/specialties/oral/TMJ Disorder Management.webp'
         },
         {
           title: 'Dental Implants & Bone Grafting',
           description:
             'Implant placement for missing teeth supported by sinus lift, ridge augmentation, and bone grafting when required.',
-          image: 'assets/specialties/OralMaxillofacial-ad/dental-implants.webp'
+          image: 'public/assets/specialties/oral/Dental Implants & Bone Grafting.webp'
         },
         {
           title: 'Pre-Prosthetic Surgery',
           description:
             'Adjustments to jawbone and soft tissues to improve denture fit and comfort, ensuring long-term stability.',
-          image: 'assets/specialties/OralMaxillofacial-ad/pre-prosthetic-surgery.webp'
+          image: 'public/assets/specialties/oral/Pre-Prosthetic Surgery.webp'
         }
       ],
 
