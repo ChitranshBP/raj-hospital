@@ -1010,14 +1010,14 @@ function QuickNavigationBar() {
       subject: "Second Opinion"
     },
     {
-      title: "Get Health Checkup",
+      title: "Corporate/TPA Query",
       icon: FiIcons.FiActivity,
       bgColor: "bg-white",
       textColor: "text-gray-700",
       hoverBg: "hover:bg-gray-50",
       border: "border border-gray-200",
       link: "/contact",
-      subject: "Get Health Checkup"
+      subject: "Corporate/TPA Query"
     },
     {
       title: "Book a Test",
@@ -1233,7 +1233,7 @@ export default function HomePage() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="text-center bg-gradient-to-br from-[#0191C7]/10 to-[#0191C7]/5 rounded-lg p-3 border border-[#0191C7]/20"
                 >
-                  <h3 className="text-2xl font-bold text-[#F9771B]">50+</h3>
+                  <h3 className="text-2xl font-bold text-[#F9771B]">100+</h3>
                   <p className="text-gray-600 text-xs font-medium">Expert Doctors</p>
                 </motion.div>
 
@@ -1244,7 +1244,7 @@ export default function HomePage() {
                   transition={{ duration: 0.5, delay: 0.3 }}
                   className="text-center bg-gradient-to-br from-[#0191C7]/10 to-[#0191C7]/5 rounded-lg p-3 border border-[#0191C7]/20"
                 >
-                  <h3 className="text-2xl font-bold text-[#F9771B]">3L+</h3>
+                  <h3 className="text-2xl font-bold text-[#F9771B]">3.5L+</h3>
                   <p className="text-gray-600 text-xs font-medium">Patients Treated</p>
                 </motion.div>
 

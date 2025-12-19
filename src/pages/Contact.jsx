@@ -15,6 +15,18 @@ const Contact = () => {
       setSelectedSubject(location.state.subject);
     }
   }, [location]);
+
+  // Formester URLs - Replace these with your actual Formester form URLs
+  const CORPORATE_FORMESTER_URL = "YOUR_CORPORATE_FORMESTER_URL_HERE";
+  const NORMAL_FORMESTER_URL = "YOUR_NORMAL_FORMESTER_URL_HERE";
+
+  // Determine which form URL to use based on subject
+  const getFormesterURL = () => {
+    if (selectedSubject === "Corporate/TPA Query") {
+      return CORPORATE_FORMESTER_URL;
+    }
+    return NORMAL_FORMESTER_URL;
+  };
   return (
     <div>
       {/* Hero Section */}
@@ -95,7 +107,7 @@ const Contact = () => {
                 <SafeIcon icon={FiMessageSquare} className="w-6 h-6 text-primary-600" />
                 <h2 className="text-2xl font-bold text-gray-900">Send us a Message</h2>
               </div>
-              <form className="space-y-6">
+              <form action={getFormesterURL()} method="POST" className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -103,6 +115,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
+                      name="firstName"
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                       placeholder="Enter your first name" />
@@ -114,6 +127,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
+                      name="lastName"
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                       placeholder="Enter your last name" />
@@ -127,6 +141,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="email"
+                      name="email"
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                       placeholder="Enter your email" />
@@ -138,6 +153,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="tel"
+                      name="phone"
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                       placeholder="Enter your phone number" />
@@ -149,14 +165,16 @@ const Contact = () => {
                     Subject *
                   </label>
                   <select
+                    name="subject"
                     value={selectedSubject}
                     onChange={(e) => setSelectedSubject(e.target.value)}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    required
                   >
                     <option value="">Select a subject</option>
                     <option value="Book Appointment">Book Appointment</option>
                     <option value="Second Opinion">Second Opinion</option>
-                    <option value="Get Health Checkup">Get Health Checkup</option>
+                    <option value="Corporate/TPA Query">Corporate/TPA Query</option>
                     <option value="Book a Test">Book a Test</option>
                     <option value="General Inquiry">General Inquiry</option>
                     <option value="Emergency">Emergency</option>
@@ -169,6 +187,7 @@ const Contact = () => {
                     Message *
                   </label>
                   <textarea
+                    name="message"
                     rows={5}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"

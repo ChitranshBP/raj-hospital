@@ -3663,12 +3663,12 @@ const SpecialtyDetail = () => {
               transition={{ duration: 0.8 }}
               className="max-w-3xl text-white">
 
-              <div className="flex items-center space-x-3 mb-4">
+              {/* <div className="flex items-center space-x-3 mb-4">
                 <div className="w-12 h-12 bg-primary-500/30 backdrop-blur-sm rounded-full flex items-center justify-center">
                   <SafeIcon icon={specialty.icon} className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-lg font-medium">Department of</div>
-              </div>
+              </div> */}
               <h1 className="text-4xl lg:text-5xl font-bold mb-4">{specialty.title}</h1>
               <p className="text-xl text-gray-200">{specialty.shortDescription}</p>
             </motion.div>
