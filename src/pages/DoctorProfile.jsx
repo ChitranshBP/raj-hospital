@@ -1772,7 +1772,7 @@ export const doctorsData = [
     qualifications: 'M.B.B.S (Gold Medalist), M.D. (Dermatology, Venereology & Leprosy), M.D. (Physiology), A.C.S.I Fellowship in Dermatosurgery',
     specialty: 'Dermatology',
     experience: '10+ Years',
-    image: 'assets/Doc-Front/Dr-Shaista-Huma.webp', // No image provided
+    image: 'assets/doc-dummy/male-dummy-raj.webp', // No image provided
     specialtyIcon: '', // No icon provided
     description:
       'Dr. Shaista Huma is a respected dermatologist and dermatosurgeon with over 10 years of experience. She specializes in clinical dermatology, aesthetic dermatology, and advanced dermatosurgical procedures, committed to patient-centric, modern skin care treatments.',
