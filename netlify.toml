@@ -1,0 +1,205 @@
+# Netlify configuration for React SPA
+
+[build]
+  # Build command for React app
+  command = "npm run build"
+
+  # Directory that contains the build output
+  publish = "dist"
+
+# Redirect rules for SPA routing
+[[redirects]]
+  from = "/specialties/aesthetic-and-reconstructive-surgery"
+  to = "/aesthetic-&-reconstructive-surgery"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/cardiology"
+  to = "/cardiologist-and-heart-specialist-ranchi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/critical-care"
+  to = "/critical-care"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/dental"
+  to = "/dental-surgeon-ranchi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/dermatology"
+  to = "/dermatologist-ranchi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/emergency"
+  to = "/emergency-medicine"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/ent"
+  to = "/ent-specialist"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/eye-care"
+  to = "/eye-hospital-ranchi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/gastroenterology"
+  to = "/gastroenterology-ranchi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/minimal-access-surgery"
+  to = "/general-and-laparoscopic-surgery-ranchi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/internal-medicine"
+  to = "/internal-medicine"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/nephrology"
+  to = "/nephrologist-ranchi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/neurology"
+  to = "/neurologist-ranchi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/neurosciences"
+  to = "/neurosciences"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/obstetrics-and-gynaecology"
+  to = "/maternity-and-gynaecology"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/oral-and-maxillofacial-surgery"
+  to = "/oral-and-maxillofacial-surgery"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/oncology-cancer-care"
+  to = "/oncologist-and-cancer-specialist-ranchi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/orthopaedics-and-joint-replacement"
+  to = "/orthopedic-and-joint-replacement-surgery"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/pediatrics-and-neonatology"
+  to = "/paediatrician-and-child-specialist"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/pulmonology"
+  to = "/pulmonology-specialist"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/physiotherapy-and-rehabilitation"
+  to = "/physiotherapy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/nutrition-and-dietetics"
+  to = "/nutrition-and-dietetics"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/psychiatry-and-mental-health"
+  to = "/psychiatry-and-mental-health"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/radiology"
+  to = "/radiology"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/specialties/laboratory-investigations"
+  to = "/laboratory-investigations"
+  status = 301
+  force = true
+
+# SPA fallback - serve index.html for all other routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers for better security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

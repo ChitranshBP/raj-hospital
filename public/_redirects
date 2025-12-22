@@ -1,0 +1,30 @@
+# Redirects for Netlify deployment
+# Specialty pages to SEO-friendly URLs
+/specialties/aesthetic-and-reconstructive-surgery /aesthetic-&-reconstructive-surgery 301
+/specialties/cardiology /cardiologist-and-heart-specialist-ranchi 301
+/specialties/critical-care /critical-care 301
+/specialties/dental /dental-surgeon-ranchi 301
+/specialties/dermatology /dermatologist-ranchi 301
+/specialties/emergency /emergency-medicine 301
+/specialties/ent /ent-specialist 301
+/specialties/eye-care /eye-hospital-ranchi 301
+/specialties/gastroenterology /gastroenterology-ranchi 301
+/specialties/minimal-access-surgery /general-and-laparoscopic-surgery-ranchi 301
+/specialties/internal-medicine /internal-medicine 301
+/specialties/nephrology /nephrologist-ranchi 301
+/specialties/neurology /neurologist-ranchi 301
+/specialties/neurosciences /neurosciences 301
+/specialties/obstetrics-and-gynaecology /maternity-and-gynaecology 301
+/specialties/oral-and-maxillofacial-surgery /oral-and-maxillofacial-surgery 301
+/specialties/oncology-cancer-care /oncologist-and-cancer-specialist-ranchi 301
+/specialties/orthopaedics-and-joint-replacement /orthopedic-and-joint-replacement-surgery 301
+/specialties/pediatrics-and-neonatology /paediatrician-and-child-specialist 301
+/specialties/pulmonology /pulmonology-specialist 301
+/specialties/physiotherapy-and-rehabilitation /physiotherapy 301
+/specialties/nutrition-and-dietetics /nutrition-and-dietetics 301
+/specialties/psychiatry-and-mental-health /psychiatry-and-mental-health 301
+/specialties/radiology /radiology 301
+/specialties/laboratory-investigations /laboratory-investigations 301
+
+# SPA fallback - serve index.html for all routes (must be last)
+/*    /index.html   200
