@@ -1,0 +1,149 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Force HTTPS (Optional - Uncomment if you want to enforce HTTPS)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect specialty pages to SEO-friendly URLs
+
+# Aesthetic & Reconstructive Surgery
+RewriteRule ^specialties/aesthetic-and-reconstructive-surgery$ /aesthetic-&-reconstructive-surgery [R=301,L]
+
+# Cardiology
+RewriteRule ^specialties/cardiology$ /cardiologist-and-heart-specialist-ranchi [R=301,L]
+
+# Critical Care
+RewriteRule ^specialties/critical-care$ /critical-care [R=301,L]
+
+# Dental
+RewriteRule ^specialties/dental$ /dental-surgeon-ranchi [R=301,L]
+
+# Dermatology
+RewriteRule ^specialties/dermatology$ /dermatologist-ranchi [R=301,L]
+
+# Emergency
+RewriteRule ^specialties/emergency$ /emergency-medicine [R=301,L]
+
+# ENT
+RewriteRule ^specialties/ent$ /ent-specialist [R=301,L]
+
+# Eye Care
+RewriteRule ^specialties/eye-care$ /eye-hospital-ranchi [R=301,L]
+
+# Gastroenterology
+RewriteRule ^specialties/gastroenterology$ /gastroenterology-ranchi [R=301,L]
+
+# Minimal Access Surgery (General & Laparoscopic Surgery)
+RewriteRule ^specialties/minimal-access-surgery$ /general-and-laparoscopic-surgery-ranchi [R=301,L]
+
+# Internal Medicine
+RewriteRule ^specialties/internal-medicine$ /internal-medicine [R=301,L]
+
+# Nephrology
+RewriteRule ^specialties/nephrology$ /nephrologist-ranchi [R=301,L]
+
+# Neurology
+RewriteRule ^specialties/neurology$ /neurologist-ranchi [R=301,L]
+
+# Neurosciences
+RewriteRule ^specialties/neurosciences$ /neurosciences [R=301,L]
+
+# Obstetrics & Gynaecology
+RewriteRule ^specialties/obstetrics-and-gynaecology$ /maternity-and-gynaecology [R=301,L]
+
+# Oral & Maxillofacial Surgery
+RewriteRule ^specialties/oral-and-maxillofacial-surgery$ /oral-and-maxillofacial-surgery [R=301,L]
+
+# Oncology (Cancer Care)
+RewriteRule ^specialties/oncology-cancer-care$ /oncologist-and-cancer-specialist-ranchi [R=301,L]
+
+# Orthopaedics & Joint Replacement
+RewriteRule ^specialties/orthopaedics-and-joint-replacement$ /orthopedic-and-joint-replacement-surgery [R=301,L]
+
+# Pediatrics & Neonatology
+RewriteRule ^specialties/pediatrics-and-neonatology$ /paediatrician-and-child-specialist [R=301,L]
+
+# Pulmonology
+RewriteRule ^specialties/pulmonology$ /pulmonology-specialist [R=301,L]
+
+# Physiotherapy & Rehabilitation
+RewriteRule ^specialties/physiotherapy-and-rehabilitation$ /physiotherapy [R=301,L]
+
+# Nutrition & Dietetics
+RewriteRule ^specialties/nutrition-and-dietetics$ /nutrition-and-dietetics [R=301,L]
+
+# Psychiatry & Mental Health
+RewriteRule ^specialties/psychiatry-and-mental-health$ /psychiatry-and-mental-health [R=301,L]
+
+# Radiology
+RewriteRule ^specialties/radiology$ /radiology [R=301,L]
+
+# Laboratory Investigations
+RewriteRule ^specialties/laboratory-investigations$ /laboratory-investigations [R=301,L]
+
+# Handle React Router (BrowserRouter) - This must be AFTER all specific redirects
+# If the requested file or directory doesn't exist, serve index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+# Prevent directory browsing
+Options -Indexes
+
+# Set default index files
+DirectoryIndex index.html index.php
+
+# Set 404 error page (Optional)
+# ErrorDocument 404 /404.html
+
+# Set 500 error page (Optional)
+# ErrorDocument 500 /500.html
+
+# Enable GZIP Compression (Optional - for better performance)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/atom_xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Browser Caching (Optional - for better performance)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  # CSS and JavaScript
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  # Others
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+</IfModule>
+
+# Security Headers (Optional - for better security)
+<IfModule mod_headers.c>
+  # Prevent clickjacking
+  Header always set X-Frame-Options "SAMEORIGIN"
+  # Prevent MIME type sniffing
+  Header always set X-Content-Type-Options "nosniff"
+  # Enable XSS protection
+  Header always set X-XSS-Protection "1; mode=block"
+  # Referrer Policy
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

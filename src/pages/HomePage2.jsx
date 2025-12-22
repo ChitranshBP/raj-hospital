@@ -246,7 +246,7 @@ const sections = {
       desc: "Latest medical equipment and advanced treatment facilities",
     },
     {
-      image: "assets/home-img/Why-Choose-Raj Hospitals/Experienced-Medical-Team.webp",
+      image: "assets/home-img/Why-Choose-Raj Hospitals/raj-all-doctors.webp",
       title: "Experienced Medical Team",
       desc: "Highly qualified doctors and skilled healthcare professionals",
     },
@@ -298,7 +298,7 @@ const sections = {
       title: "राज अस्पताल के आपातकालीन विभाग को एनएबीएच की मान्यता मिली",
       date: "Feburary 24, 2025",
       excerpt: "State-of-the-art facility dedicated to cardiac patients.",
-      url: "/#/news-media",
+      url: "/news-media",
     },
     {
       title: "रांची: राज अस्पताल में नेशनल कार्डियक लाइफ सपोर्ट प्रशिक्षण शिविर का आयोजन",
@@ -310,25 +310,25 @@ const sections = {
       title: "रांचीः बाई-पास सर्जरी के लिए अब नहीं जाना होगा बाहर, राज अस्पताल में मिल रही सुविधाोजन किया",
       date: "1 January, 2024",
       excerpt: "Thousands benefited from free screenings and consultations.",
-      url: "/#/news-media",
+      url: "/news-media",
     },
     {
       title: "राज अस्पताल में पहली बार IVUS (इंट्रावास्कुलर अल्ट्रासाउंड) तकनीक से एंजियोप्लास्टी की गई।",
       date: "22 july, 2023",
       excerpt: "Specialized care for children with advanced neonatal ICU.",
-      url: "/#/news-media",
+      url: "/news-media",
     },
     {
       title: "राज अस्पताल, रांची में मनाया गया 77वां स्वतंत्रता दिवस, ध्वजारोहण कर दी तिरंगे को सलामी: आयोजन किया",
       date: "23 august, 2023",
       excerpt: "Community outreach programs expanding across the city.",
-      url: "/#/news-media",
+      url: "/news-media",
     },
     {
       title: "रांची: 28 जुलाई को मनाया जायेगा विश्व हेपेटाइटिस दिवस",
       date: "28 july, 2023",
       excerpt: "Received recognition for outstanding patient satisfaction scores.",
-      url: "/#/news-media",
+      url: "/news-media",
     },
   ],
   testimonials: [
@@ -802,153 +802,153 @@ function QuickNavigationBar() {
   const searchData = {
     specialties: [
       // Centres of Excellence
-      { name: "Cardiology", type: "specialty", link: "#/specialties/cardiology", keywords: ["cardiology-ad", "heart", "cardiac", "angiography", "angioplasty", "pacemaker", "heart attack"] },
-      { name: "Critical Care", type: "specialty", link: "#/specialties/critical-care-", keywords: ["critical-care-ad", "icu", "intensive care", "critical"] },
-      { name: "Emergency", type: "specialty", link: "#/specialties/emergency", keywords: ["emergency-ad", "trauma", "ambulance", "24x7", "accident", "acute care"] },
-      { name: "Gastroenterology", type: "specialty", link: "#/specialties/gastroenterology", keywords: ["gastroenterology-ad", "stomach", "gastro", "endoscopy", "liver", "digestive", "colonoscopy"] },
-      { name: "Minimal Access Surgery", type: "specialty", link: "#/specialties/minimal-access-surgery", keywords: ["surgery-ad", "minimal-access-ad", "laparoscopic", "laser", "hernia", "operation"] },
-      { name: "Nephrology", type: "specialty", link: "#/specialties/nephrology", keywords: ["nephrology-ad", "kidney", "dialysis", "renal", "hemodialysis"] },
-      { name: "Neurosciences", type: "specialty", link: "#/specialties/neurosciences", keywords: ["neurosciences-ad", "neurology-ad", "brain", "neuro", "stroke", "spine", "head injury", "neurosurgery"] },
-      { name: "Oncology (Cancer Care)", type: "specialty", link: "#/specialties/oncology-cancer-care", keywords: ["oncology-ad", "cancer", "chemotherapy", "tumor", "radiation"] },
-      { name: "Orthopaedics & Joint Replacement", type: "specialty", link: "#/specialties/orthopaedics-and-joint-replacement", keywords: ["orthopedics-ad", "orthopaedics-ad", "bone", "ortho", "joint", "knee", "hip", "arthroscopy"] },
-      { name: "Pulmonology", type: "specialty", link: "#/specialties/pulmonology", keywords: ["pulmonology-ad", "lung", "respiratory", "asthma", "copd", "breathing"] },
-      { name: "Internal Medicine", type: "specialty", link: "#/specialties/internal-medicine", keywords: ["internal-medicine-ad", "general medicine", "physician", "internal"] },
-      { name: "Urology", type: "specialty", link: "#/specialties/urology", keywords: ["urology-ad", "prostate", "kidney stone", "urinary", "bladder", "infertility"] },
-      { name: "Obstetrics & Gynaecology", type: "specialty", link: "#/specialties/obstetrics-and-gynaecology", keywords: ["gynecology-ad", "gynaecology-ad", "women", "pregnancy", "obstetrics", "maternity"] },
-      { name: "Oral & Maxillofacial Surgery", type: "specialty", link: "#/specialties/oral-and-maxillofacial-surgery", keywords: ["oral-maxillofacial-surgery-ad", "oral", "maxillofacial", "surgery", "oral surgery", "maxillofacial surgery"] },
+      { name: "Cardiology", type: "specialty", link: "/specialties/cardiology", keywords: ["cardiology-ad", "heart", "cardiac", "angiography", "angioplasty", "pacemaker", "heart attack"] },
+      { name: "Critical Care", type: "specialty", link: "/specialties/critical-care-", keywords: ["critical-care-ad", "icu", "intensive care", "critical"] },
+      { name: "Emergency", type: "specialty", link: "/specialties/emergency", keywords: ["emergency-ad", "trauma", "ambulance", "24x7", "accident", "acute care"] },
+      { name: "Gastroenterology", type: "specialty", link: "/specialties/gastroenterology", keywords: ["gastroenterology-ad", "stomach", "gastro", "endoscopy", "liver", "digestive", "colonoscopy"] },
+      { name: "Minimal Access Surgery", type: "specialty", link: "/specialties/minimal-access-surgery", keywords: ["surgery-ad", "minimal-access-ad", "laparoscopic", "laser", "hernia", "operation"] },
+      { name: "Nephrology", type: "specialty", link: "/specialties/nephrology", keywords: ["nephrology-ad", "kidney", "dialysis", "renal", "hemodialysis"] },
+      { name: "Neurosciences", type: "specialty", link: "/specialties/neurosciences", keywords: ["neurosciences-ad", "neurology-ad", "brain", "neuro", "stroke", "spine", "head injury", "neurosurgery"] },
+      { name: "Oncology (Cancer Care)", type: "specialty", link: "/specialties/oncology-cancer-care", keywords: ["oncology-ad", "cancer", "chemotherapy", "tumor", "radiation"] },
+      { name: "Orthopaedics & Joint Replacement", type: "specialty", link: "/specialties/orthopaedics-and-joint-replacement", keywords: ["orthopedics-ad", "orthopaedics-ad", "bone", "ortho", "joint", "knee", "hip", "arthroscopy"] },
+      { name: "Pulmonology", type: "specialty", link: "/specialties/pulmonology", keywords: ["pulmonology-ad", "lung", "respiratory", "asthma", "copd", "breathing"] },
+      { name: "Internal Medicine", type: "specialty", link: "/specialties/internal-medicine", keywords: ["internal-medicine-ad", "general medicine", "physician", "internal"] },
+      { name: "Urology", type: "specialty", link: "/specialties/urology", keywords: ["urology-ad", "prostate", "kidney stone", "urinary", "bladder", "infertility"] },
+      { name: "Obstetrics & Gynaecology", type: "specialty", link: "/specialties/obstetrics-and-gynaecology", keywords: ["gynecology-ad", "gynaecology-ad", "women", "pregnancy", "obstetrics", "maternity"] },
+      { name: "Oral & Maxillofacial Surgery", type: "specialty", link: "/specialties/oral-and-maxillofacial-surgery", keywords: ["oral-maxillofacial-surgery-ad", "oral", "maxillofacial", "surgery", "oral surgery", "maxillofacial surgery"] },
 
       // Allied Specialties
-      { name: "Aesthetic & Reconstructive Surgery", type: "specialty", link: "#/specialties/aesthetic-and-reconstructive-surgery", keywords: ["plastic-surgery-ad", "aesthetic-ad", "cosmetic", "reconstructive", "plastic"] },
-      { name: "Dental", type: "specialty", link: "#/specialties/dental", keywords: ["dental-ad", "teeth", "dentist", "root canal", "implants", "orthodontics"] },
-      { name: "Dermatology", type: "specialty", link: "#/specialties/dermatology", keywords: ["dermatology-ad", "skin", "derma", "cosmetic", "laser therapy", "skin cancer"] },
-      { name: "ENT", type: "specialty", link: "#/specialties/ent", keywords: ["ent-ad", "ear", "nose", "throat", "sinus", "hearing"] },
-      { name: "Eye Care", type: "specialty", link: "#/specialties/eye-care", keywords: ["eye-care-ad", "ophthalmology-ad", "eye", "vision", "cataract", "lasik", "glaucoma"] },
-      { name: "Nutrition & Dietetics", type: "specialty", link: "#/specialties/nutrition-and-dietetics", keywords: ["nutrition-ad", "diet", "dietetics", "nutritionist", "dietician"] },
-      { name: "Pediatrics & Neonatology", type: "specialty", link: "#/specialties/pediatrics-and-neonatology", keywords: ["pediatrics-ad", "child", "kids", "newborn", "neonatology", "baby", "immunization"] },
-      { name: "Physiotherapy & Rehabilitation", type: "specialty", link: "#/specialties/physiotherapy-and-rehabilitation", keywords: ["physiotherapy-ad", "rehab", "physical therapy", "exercise", "rehabilitation"] },
-      { name: "Psychiatry & Mental Health", type: "specialty", link: "#/specialties/psychiatry-and-mental-health", keywords: ["psychiatry-ad", "mental health", "counseling", "depression", "anxiety", "therapy"] },
+      { name: "Aesthetic & Reconstructive Surgery", type: "specialty", link: "/specialties/aesthetic-and-reconstructive-surgery", keywords: ["plastic-surgery-ad", "aesthetic-ad", "cosmetic", "reconstructive", "plastic"] },
+      { name: "Dental", type: "specialty", link: "/specialties/dental", keywords: ["dental-ad", "teeth", "dentist", "root canal", "implants", "orthodontics"] },
+      { name: "Dermatology", type: "specialty", link: "/specialties/dermatology", keywords: ["dermatology-ad", "skin", "derma", "cosmetic", "laser therapy", "skin cancer"] },
+      { name: "ENT", type: "specialty", link: "/specialties/ent", keywords: ["ent-ad", "ear", "nose", "throat", "sinus", "hearing"] },
+      { name: "Eye Care", type: "specialty", link: "/specialties/eye-care", keywords: ["eye-care-ad", "ophthalmology-ad", "eye", "vision", "cataract", "lasik", "glaucoma"] },
+      { name: "Nutrition & Dietetics", type: "specialty", link: "/specialties/nutrition-and-dietetics", keywords: ["nutrition-ad", "diet", "dietetics", "nutritionist", "dietician"] },
+      { name: "Pediatrics & Neonatology", type: "specialty", link: "/specialties/pediatrics-and-neonatology", keywords: ["pediatrics-ad", "child", "kids", "newborn", "neonatology", "baby", "immunization"] },
+      { name: "Physiotherapy & Rehabilitation", type: "specialty", link: "/specialties/physiotherapy-and-rehabilitation", keywords: ["physiotherapy-ad", "rehab", "physical therapy", "exercise", "rehabilitation"] },
+      { name: "Psychiatry & Mental Health", type: "specialty", link: "/specialties/psychiatry-and-mental-health", keywords: ["psychiatry-ad", "mental health", "counseling", "depression", "anxiety", "therapy"] },
 
       // Advanced Diagnostics
-      { name: "Radiology", type: "specialty", link: "#/specialties/radiology", keywords: ["radiology-ad", "xray", "ct scan", "mri", "ultrasound", "imaging"] },
-      //{ name: "Cardiology (Advanced Diagnostics)", type: "specialty", link: "#/specialties/cardiology-ad", keywords: ["cardiology-ad", "cardiac diagnostics", "ecg", "echo", "tmt"] },
-      { name: "Neurology (Advanced Diagnostics)", type: "specialty", link: "#/specialties/neurology-ad", keywords: ["neurology-ad", "neuro diagnostics", "eeg", "nerve conduction"] },
-      { name: "Laboratory Investigations", type: "specialty", link: "#/specialties/laboratory-investigations", keywords: ["lab-ad", "laboratory-ad", "blood test", "biopsy", "fnac", "pathology"] },
+      { name: "Radiology", type: "specialty", link: "/specialties/radiology", keywords: ["radiology-ad", "xray", "ct scan", "mri", "ultrasound", "imaging"] },
+      //{ name: "Cardiology (Advanced Diagnostics)", type: "specialty", link: "/specialties/cardiology-ad", keywords: ["cardiology-ad", "cardiac diagnostics", "ecg", "echo", "tmt"] },
+      { name: "Neurology (Advanced Diagnostics)", type: "specialty", link: "/specialties/neurology-ad", keywords: ["neurology-ad", "neuro diagnostics", "eeg", "nerve conduction"] },
+      { name: "Laboratory Investigations", type: "specialty", link: "/specialties/laboratory-investigations", keywords: ["lab-ad", "laboratory-ad", "blood test", "biopsy", "fnac", "pathology"] },
     ],
     doctors: [
       // Cardiology
-      { name: "Dr. Rajesh Kumar Jha", specialty: "Cardiology", type: "doctor", link: "#/doctors/rajesh-jha" },
+      { name: "Dr. Rajesh Kumar Jha", specialty: "Cardiology", type: "doctor", link: "/doctors/rajesh-jha" },
 
       // Critical Care
-      { name: "Dr. Fuzail Sarwer", specialty: "Critical Care", type: "doctor", link: "#/doctors/fuzail-sarwer" },
-      { name: "Dr. Mohib Ahmed", specialty: "Critical Care", type: "doctor", link: "#/doctors/mohib-ahmed" },
+      { name: "Dr. Fuzail Sarwer", specialty: "Critical Care", type: "doctor", link: "/doctors/fuzail-sarwer" },
+      { name: "Dr. Mohib Ahmed", specialty: "Critical Care", type: "doctor", link: "/doctors/mohib-ahmed" },
 
       // Emergency
-      { name: "Dr. Shyam Prasad", specialty: "Emergency", type: "doctor", link: "#/doctors/shyam-prasad" },
+      { name: "Dr. Shyam Prasad", specialty: "Emergency", type: "doctor", link: "/doctors/shyam-prasad" },
 
       // Gastroenterology
-      { name: "Dr. Ravish Ranjan", specialty: "Gastroenterology", type: "doctor", link: "#/doctors/ravish-ranjan" },
+      { name: "Dr. Ravish Ranjan", specialty: "Gastroenterology", type: "doctor", link: "/doctors/ravish-ranjan" },
 
       // Surgery
-      { name: "Dr. Ashish Kumar Modi", specialty: "Bariatric Surgery, General & Laparoscopic Surgery", type: "doctor", link: "#/doctors/ashish-modi" },
+      { name: "Dr. Ashish Kumar Modi", specialty: "Bariatric Surgery, General & Laparoscopic Surgery", type: "doctor", link: "/doctors/ashish-modi" },
 
       // Internal Medicine
-      { name: "Dr. A K Agarwal", specialty: "Internal Medicine", type: "doctor", link: "#/doctors/ak-agarwal" },
-      { name: "Dr. A K Sinha", specialty: "Internal Medicine", type: "doctor", link: "#/doctors/ak-sinha" },
-      { name: "Dr. Neelam Kumari", specialty: "Internal Medicine", type: "doctor", link: "#/doctors/neelam-kumari" },
+      { name: "Dr. A K Agarwal", specialty: "Internal Medicine", type: "doctor", link: "/doctors/ak-agarwal" },
+      { name: "Dr. A K Sinha", specialty: "Internal Medicine", type: "doctor", link: "/doctors/ak-sinha" },
+      { name: "Dr. Neelam Kumari", specialty: "Internal Medicine", type: "doctor", link: "/doctors/neelam-kumari" },
 
       // Nephrology
-      { name: "Dr. Avinash Kumar Dubey", specialty: "Nephrology", type: "doctor", link: "#/doctors/avinash-dubey" },
+      { name: "Dr. Avinash Kumar Dubey", specialty: "Nephrology", type: "doctor", link: "/doctors/avinash-dubey" },
 
       // Neurosciences
-      { name: "Dr. Vivek Raj", specialty: "Neurosurgery", type: "doctor", link: "#/doctors/vivek-raj" },
-      { name: "Dr. Ahmad Hussain", specialty: "Neurosciences", type: "doctor", link: "#/doctors/ahmad-hussain" },
+      { name: "Dr. Vivek Raj", specialty: "Neurosurgery", type: "doctor", link: "/doctors/vivek-raj" },
+      { name: "Dr. Ahmad Hussain", specialty: "Neurosciences", type: "doctor", link: "/doctors/ahmad-hussain" },
 
       // Oncology
-      { name: "Dr. P K Raina", specialty: "Oncology", type: "doctor", link: "#/doctors/pk-raina" },
+      { name: "Dr. P K Raina", specialty: "Oncology", type: "doctor", link: "/doctors/pk-raina" },
 
       // ENT
-      { name: "Dr. Abhijit Kumar", specialty: "Otolaryngology & Head and Neck Surgery", type: "doctor", link: "#/doctors/abhijit-kumar" },
-      { name: "Dr. Ranajan Kumar Jha", specialty: "ENT", type: "doctor", link: "#/doctors/ranajan-jha" },
+      { name: "Dr. Abhijit Kumar", specialty: "Otolaryngology & Head and Neck Surgery", type: "doctor", link: "/doctors/abhijit-kumar" },
+      { name: "Dr. Ranajan Kumar Jha", specialty: "ENT", type: "doctor", link: "/doctors/ranajan-jha" },
 
       // Orthopaedics
-      { name: "Dr. Mozammil Feroz", specialty: "Orthopaedics & Joint Replacement", type: "doctor", link: "#/doctors/Mozammil-pheroz" },
-      { name: "Dr. Abhishek Roy", specialty: "Orthopaedics (Sports Injury & Joint Replacement)", type: "doctor", link: "#/doctors/abhishek-roy" },
+      { name: "Dr. Mozammil Feroz", specialty: "Orthopaedics & Joint Replacement", type: "doctor", link: "/doctors/Mozammil-pheroz" },
+      { name: "Dr. Abhishek Roy", specialty: "Orthopaedics (Sports Injury & Joint Replacement)", type: "doctor", link: "/doctors/abhishek-roy" },
 
       // Pulmonology
-      { name: "Dr. Suprova Chakraborty", specialty: "Pulmonology", type: "doctor", link: "#/doctors/suprova-chakraborty" },
+      { name: "Dr. Suprova Chakraborty", specialty: "Pulmonology", type: "doctor", link: "/doctors/suprova-chakraborty" },
 
       // Urology
-      { name: "Dr. Sunil Kumar", specialty: "Urology", type: "doctor", link: "#/doctors/sunil-kumar" },
-      { name: "Dr. Ved Prakash Verma", specialty: "Urology", type: "doctor", link: "#/doctors/ved-prakash" },
+      { name: "Dr. Sunil Kumar", specialty: "Urology", type: "doctor", link: "/doctors/sunil-kumar" },
+      { name: "Dr. Ved Prakash Verma", specialty: "Urology", type: "doctor", link: "/doctors/ved-prakash" },
 
       // Obstetrics & Gynaecology
-      { name: "Dr. Anupama Mahli", specialty: "Obstetrics & Gynaecology", type: "doctor", link: "#/doctors/anupama-mahli" },
-      { name: "Dr. Pushpa Sinha", specialty: "Obstetrics & Gynaecology", type: "doctor", link: "#/doctors/pushpa-sinha" },
+      { name: "Dr. Anupama Mahli", specialty: "Obstetrics & Gynaecology", type: "doctor", link: "/doctors/anupama-mahli" },
+      { name: "Dr. Pushpa Sinha", specialty: "Obstetrics & Gynaecology", type: "doctor", link: "/doctors/pushpa-sinha" },
 
       // Dentistry
-      { name: "Dr. Suraj Mani Bhattacharjee", specialty: "Dentistry", type: "doctor", link: "#/doctors/suraj-mani-bhattacharjee" },
-      { name: "Dr. Abhishek Bhattacharjee", specialty: "Oral & Maxillofacial Surgery", type: "doctor", link: "#/doctors/abhishek-bhattacharjee" },
-      { name: "Dr. Vikash Sharma", specialty: "Oral And Maxillofacial Surgery", type: "doctor", link: "#/doctors/vikash-sharma" },
+      { name: "Dr. Suraj Mani Bhattacharjee", specialty: "Dentistry", type: "doctor", link: "/doctors/suraj-mani-bhattacharjee" },
+      { name: "Dr. Abhishek Bhattacharjee", specialty: "Oral & Maxillofacial Surgery", type: "doctor", link: "/doctors/abhishek-bhattacharjee" },
+      { name: "Dr. Vikash Sharma", specialty: "Oral And Maxillofacial Surgery", type: "doctor", link: "/doctors/vikash-sharma" },
 
       // Dermatology
-      { name: "Dr. Piyali Banerjee", specialty: "Dermatology and Cosmetology", type: "doctor", link: "#/doctors/piyali-banerjee" },
-      { name: "Dr. Shaista Huma", specialty: "Dermatology, Dermatosurgery & Aesthetics", type: "doctor", link: "#/doctors/shaista-huma" },
+      { name: "Dr. Piyali Banerjee", specialty: "Dermatology and Cosmetology", type: "doctor", link: "/doctors/piyali-banerjee" },
+      { name: "Dr. Shaista Huma", specialty: "Dermatology, Dermatosurgery & Aesthetics", type: "doctor", link: "/doctors/shaista-huma" },
 
       // Physiotherapy
-      { name: "Dr. Abhay Kumar Pandey", specialty: "Physiotherapy", type: "doctor", link: "#/doctors/abhay-pandey" },
+      { name: "Dr. Abhay Kumar Pandey", specialty: "Physiotherapy", type: "doctor", link: "/doctors/abhay-pandey" },
 
       // Additional Cardiology
-      { name: "Dr. Awnindra Kumar Singh", specialty: "Cardiology", type: "doctor", link: "#/doctors/awnindra-singh" },
-      { name: "Dr. Anup Kumar Jha", specialty: "Cardiology", type: "doctor", link: "#/doctors/anup-kumar-jha" },
+      { name: "Dr. Awnindra Kumar Singh", specialty: "Cardiology", type: "doctor", link: "/doctors/awnindra-singh" },
+      { name: "Dr. Anup Kumar Jha", specialty: "Cardiology", type: "doctor", link: "/doctors/anup-kumar-jha" },
 
       // Additional Critical Care
-      { name: "Dr. Rahul Roy", specialty: "Critical Care", type: "doctor", link: "#/doctors/rahul-roy" },
+      { name: "Dr. Rahul Roy", specialty: "Critical Care", type: "doctor", link: "/doctors/rahul-roy" },
 
       // Additional Neurology
-      { name: "Dr. Prakash Chandra", specialty: "Neurology", type: "doctor", link: "#/doctors/prakash-chandra" },
-      { name: "Dr. Vijay Raj", specialty: "Neurology", type: "doctor", link: "#/doctors/vijay-raj" },
+      { name: "Dr. Prakash Chandra", specialty: "Neurology", type: "doctor", link: "/doctors/prakash-chandra" },
+      { name: "Dr. Vijay Raj", specialty: "Neurology", type: "doctor", link: "/doctors/vijay-raj" },
 
       // Additional Oncology
-      { name: "Dr. Anamika Kumari", specialty: "Oncology", type: "doctor", link: "#/doctors/anamika-kumari" },
+      { name: "Dr. Anamika Kumari", specialty: "Oncology", type: "doctor", link: "/doctors/anamika-kumari" },
 
       // Additional Orthopaedics
-      { name: "Dr. Deepak Verma", specialty: "Orthopaedics", type: "doctor", link: "#/doctors/deepak-verma" },
-      { name: "Dr. Ujjwal Sinha", specialty: "Orthopaedics", type: "doctor", link: "#/doctors/ujjwal-sinha" },
+      { name: "Dr. Deepak Verma", specialty: "Orthopaedics", type: "doctor", link: "/doctors/deepak-verma" },
+      { name: "Dr. Ujjwal Sinha", specialty: "Orthopaedics", type: "doctor", link: "/doctors/ujjwal-sinha" },
 
       // Additional ENT
-      { name: "Dr. T.G.N. Sinha", specialty: "ENT", type: "doctor", link: "#/doctors/tgn-sinha" },
+      { name: "Dr. T.G.N. Sinha", specialty: "ENT", type: "doctor", link: "/doctors/tgn-sinha" },
 
       // Additional Gynecology
-      { name: "Dr. Tanushree Chakroborty", specialty: "Obstetrics & Gynaecology", type: "doctor", link: "#/doctors/tanushree-chakroborty" },
+      { name: "Dr. Tanushree Chakroborty", specialty: "Obstetrics & Gynaecology", type: "doctor", link: "/doctors/tanushree-chakroborty" },
 
       // Aesthetic Surgery
-      { name: "Dr. Pankaj Kumar", specialty: "Aesthetic & Reconstructive Surgery", type: "doctor", link: "#/doctors/pankaj-kumar" },
+      { name: "Dr. Pankaj Kumar", specialty: "Aesthetic & Reconstructive Surgery", type: "doctor", link: "/doctors/pankaj-kumar" },
 
       // Additional Internal Medicine
-      { name: "Dr. Sony", specialty: "Internal Medicine", type: "doctor", link: "#/doctors/sony" },
+      { name: "Dr. Sony", specialty: "Internal Medicine", type: "doctor", link: "/doctors/sony" },
 
       // Ophthalmology
-      { name: "Dr. Abid Akhtar", specialty: "Ophthalmology", type: "doctor", link: "#/doctors/abid-akhtar" },
+      { name: "Dr. Abid Akhtar", specialty: "Ophthalmology", type: "doctor", link: "/doctors/abid-akhtar" },
 
       // Pediatrics
-      { name: "Dr. Ravi Shekhar Singh", specialty: "Pediatrics & Neonatology", type: "doctor", link: "#/doctors/ravi-shekhar-singh" },
+      { name: "Dr. Ravi Shekhar Singh", specialty: "Pediatrics & Neonatology", type: "doctor", link: "/doctors/ravi-shekhar-singh" },
 
       // Radiology
-      { name: "Dr. Anil Kumar", specialty: "Radiology", type: "doctor", link: "#/doctors/anil-kumar" },
-      { name: "Dr. Shekhar Sharma", specialty: "Radiology", type: "doctor", link: "#/doctors/shekhar-sharma" },
+      { name: "Dr. Anil Kumar", specialty: "Radiology", type: "doctor", link: "/doctors/anil-kumar" },
+      { name: "Dr. Shekhar Sharma", specialty: "Radiology", type: "doctor", link: "/doctors/shekhar-sharma" },
 
       // Laboratory
-      { name: "Dr. Pradeep Prasad", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/pradeep-prasad" },
-      { name: "Dr. Jitendra Prasad", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/jitendra-prasad" },
-      { name: "Dr. Kriti Kaira", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/kriti-kaira" },
-      { name: "Dr. Shweta Sushmita", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/shweta-sushmita" },
-      { name: "Dr. Praveen Kumar", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/praveen-kumar" },
-      { name: "Dr. Parijat Sarkar", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/parijat-sarkar" },
-      { name: "Dr. Ashok Kr Agarwal", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/ashok-kr-agarwal" },
-      { name: "Dr. Ajeet Singh", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/ajeet-singh" },
-      { name: "Dr. Sanjeev Kumar Ravi", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/sanjeev-kumar-ravi" },
-      { name: "Dr. Ashish Kumar", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/ashish-kumar" },
-      { name: "Dr. Shubham Shekhar", specialty: "Pathology & Laboratory", type: "doctor", link: "#/doctors/shubham-shekhar" },
+      { name: "Dr. Pradeep Prasad", specialty: "Pathology & Laboratory", type: "doctor", link: "/doctors/pradeep-prasad" },
+      { name: "Dr. Jitendra Prasad", specialty: "Pathology & Laboratory", type: "doctor", link: "/doctors/jitendra-prasad" },
+      { name: "Dr. Kriti Kaira", specialty: "Pathology & Laboratory", type: "doctor", link: "/doctors/kriti-kaira" },
+      { name: "Dr. Shweta Sushmita", specialty: "Pathology & Laboratory", type: "doctor", link: "/doctors/shweta-sushmita" },
+      { name: "Dr. Praveen Kumar", specialty: "Pathology & Laboratory", type: "doctor", link: "/doctors/praveen-kumar" },
+      { name: "Dr. Parijat Sarkar", specialty: "Pathology & Laboratory", type: "doctor", link: "/doctors/parijat-sarkar" },
+      { name: "Dr. Ashok Kr Agarwal", specialty: "Pathology & Laboratory", type: "doctor", link: "/doctors/ashok-kr-agarwal" },
+      { name: "Dr. Ajeet Singh", specialty: "Pathology & Laboratory", type: "doctor", link: "/doctors/ajeet-singh" },
+      { name: "Dr. Sanjeev Kumar Ravi", specialty: "Pathology & Laboratory", type: "doctor", link: "/doctors/sanjeev-kumar-ravi" },
+      { name: "Dr. Ashish Kumar", specialty: "Pathology & Laboratory", type: "doctor", link: "/doctors/ashish-kumar" },
+      { name: "Dr. Shubham Shekhar", specialty: "Pathology & Laboratory", type: "doctor", link: "/doctors/shubham-shekhar" },
     ],
   };
 

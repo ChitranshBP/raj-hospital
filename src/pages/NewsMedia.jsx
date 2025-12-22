@@ -131,41 +131,41 @@ const digitalNews = [
 
   // PRINT IMAGES ONLY
   const newspaperClippings = [
-    { id: 1, image: 'assets/press/news-1-r.webp' },
-    { id: 2, image: 'assets/press/news-2-raj.webp' },
-    { id: 3, image: 'assets/press/news-3-raj.webp' },
-    { id: 4, image: 'assets/press/Raj-hsopital-news-1_290824.webp' },
-    { id: 5, image: 'assets/press/Raj-hsopital-news-2_290824.webp' },
-    { id: 6, image: 'assets/press/Raj-hsopital-news-3_290824.webp' },
-    { id: 7, image: 'assets/press/Raj-hsopital-news-4_290824.webp' },
-    { id: 8, image: 'assets/press/Raj-hsopital-news-5_290824.webp' },
-    { id: 9, image: 'assets/press/Raj-hsopital-news-6_290824.webp' },
-    { id: 10, image: 'assets/press/Raj-hsopital-news-7_290824.webp' },
-    { id: 11, image: 'assets/press/CCT.webp' },
-    { id: 12, image: 'assets/press/CCT-1.webp' },
-    { id: 13, image: 'assets/press/Dr. Suprova.webp' },
-    { id: 14, image: 'assets/press/Dr. Suprova-1.webp' },
-    { id: 15, image: 'assets/press/Dr-Rajesh-BLS-training-in-mecon.webp' },
-    { id: 16, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.16.27 PM.webp' },
-    { id: 17, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.16.28 PM.webp' },
-    { id: 18, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.16.32 PM.webp' },
-    { id: 19, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.18.05 PM.webp' },
-    { id: 20, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.18.06 PM.webp' },
-    { id: 21, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.18.07 PM.webp' },
-    { id: 22, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.39 PM.webp' },
-    { id: 23, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.40 PM.webp' },
-    { id: 24, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.41 PM.webp' },
-    { id: 25, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.42 PM.webp' },
-    { id: 26, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.43 PM.webp' },
-    { id: 27, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.44 PM.webp' },
-    { id: 28, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.45 PM.webp' },
-    { id: 29, image: 'assets/press/WhatsApp Image 2024-08-09 at 10.05.21 AM.webp' },
-    { id: 30, image: 'assets/press/WhatsApp Image 2024-08-09 at 10.05.22 AM.webp' },
-    { id: 31, image: 'assets/press/WhatsApp Image 2024-08-09 at 10.05.23 AM.webp' },
-    { id: 32, image: 'assets/press/IMG-20250222-WA0004.webp' },
-    { id: 33, image: 'assets/press/IMG-20250222-WA0005.webp' },
-    { id: 34, image: 'assets/press/IMG-20250222-WA0006.webp' },
-    { id: 35, image: 'assets/press/IMG-20250222-WA0007.webp' },
+    { id: 1, image: 'assets/press/news-1-r.webp', title: 'Raj Hospital Featured in Media' },
+    { id: 2, image: 'assets/press/news-2-raj.webp', title: 'राज अस्पताल में लेजर प्रोक्टोलॉजी पर कार्यशाला' },
+    { id: 3, image: 'assets/press/news-3-raj.webp', title: 'लेजर प्रॉक्टोलॉजी विषय पर वर्कशॉप का आयोजन' },
+    { id: 4, image: 'assets/press/Raj-hsopital-news-1_290824.webp', title: 'राज अस्पताल में लाइफ सपोर्ट पर प्रशिक्षण शिविर' },
+    { id: 5, image: 'assets/press/Raj-hsopital-news-2_290824.webp', title: 'राज हॉस्पिटल में आयोजित हुआ लाइफ सपोर्ट प्रशिक्षण शिविर, 40 से ज्यादा उम्मीदवारों ने लिया हिस्सा' },
+    { id: 6, image: 'assets/press/Raj-hsopital-news-3_290824.webp', title: 'राज अस्पताल में दो दिवसीय प्रशिक्षण शिविर' },
+    { id: 7, image: 'assets/press/Raj-hsopital-news-4_290824.webp', title: 'महतलाइफ सपोर्ट का दिया गया प्रशिक्षण' },
+    { id: 8, image: 'assets/press/Raj-hsopital-news-5_290824.webp', title: 'राज अस्पताल में लगा कार्डियक लाइफ सपोर्ट प्रशिक्षण शिविर' },
+    { id: 9, image: 'assets/press/Raj-hsopital-news-6_290824.webp', title: 'राज अस्पताल में लगा कार्डियक लाइफ सपोर्ट प्रशिक्षण शिविर' },
+    { id: 10, image: 'assets/press/Raj-hsopital-news-7_290824.webp', title: 'Hospital Development News' },
+    { id: 11, image: 'assets/press/CCT.webp', title: 'राज अस्पताल में शुरू हुआ सीसीटी ईएम कोर्स' },
+    { id: 12, image: 'assets/press/CCT-1.webp', title: 'Critical Care Team Feature' },
+    { id: 13, image: 'assets/press/Dr. Suprova.webp', title: 'Dr. Suprova Featured in Press' },
+    { id: 14, image: 'assets/press/Dr. Suprova-1.webp', title: 'Dr. Suprova Medical Expertise' },
+    { id: 15, image: 'assets/press/Dr-Rajesh-BLS-training-in-mecon.webp', title: 'Dr. Rajesh BLS Training at MECON' },
+    { id: 16, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.16.27 PM.webp', title: 'Hospital News Update' },
+    { id: 17, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.16.28 PM.webp', title: 'Medical Services Announcement' },
+    { id: 18, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.16.32 PM.webp', title: 'Healthcare Developments' },
+    { id: 19, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.18.05 PM.webp', title: 'Press Coverage Highlights' },
+    { id: 20, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.18.06 PM.webp', title: 'Hospital Achievement Recognition' },
+    { id: 21, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.18.07 PM.webp', title: 'Medical Excellence Feature' },
+    { id: 22, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.39 PM.webp', title: 'Healthcare News Coverage' },
+    { id: 23, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.40 PM.webp', title: 'Patient Success Stories' },
+    { id: 24, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.41 PM.webp', title: 'Medical Breakthrough News' },
+    { id: 25, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.42 PM.webp', title: 'Raj Hospital Media Feature' },
+    { id: 26, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.43 PM.webp', title: 'Healthcare Service Updates' },
+    { id: 27, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.44 PM.webp', title: 'Hospital Expansion News' },
+    { id: 28, image: 'assets/press/WhatsApp Image 2024-08-08 at 5.23.45 PM.webp', title: 'Community Health Programs' },
+    { id: 29, image: 'assets/press/WhatsApp Image 2024-08-09 at 10.05.21 AM.webp', title: 'Medical Team Recognition' },
+    { id: 30, image: 'assets/press/WhatsApp Image 2024-08-09 at 10.05.22 AM.webp', title: 'Advanced Care Facilities' },
+    { id: 31, image: 'assets/press/WhatsApp Image 2024-08-09 at 10.05.23 AM.webp', title: 'Healthcare Excellence Award' },
+    { id: 32, image: 'assets/press/IMG-20250222-WA0004.webp', title: 'Recent Press Coverage' },
+    { id: 33, image: 'assets/press/IMG-20250222-WA0005.webp', title: 'Medical Innovation Report' },
+    { id: 34, image: 'assets/press/IMG-20250222-WA0006.webp', title: 'Hospital Services Feature' },
+    { id: 35, image: 'assets/press/IMG-20250222-WA0007.webp', title: 'Latest Healthcare News' },
   ];
 
   return (
@@ -292,9 +292,14 @@ const digitalNews = [
                     <div className="h-72 overflow-hidden">
                       <img
                         src={clip.image}
-                        alt="Newspaper"
+                        alt={clip.title}
                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                       />
+                    </div>
+                    <div className="p-4 bg-white">
+                      <h3 className="text-gray-900 font-semibold text-base line-clamp-2">
+                        {clip.title}
+                      </h3>
                     </div>
                   </motion.div>
                 ))}
