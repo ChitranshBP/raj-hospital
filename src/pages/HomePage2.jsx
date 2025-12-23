@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import SafeIcon from "../common/SafeIcon"; // Adjust import as per your structure
 import * as FiIcons from "react-icons/fi";
 import HeroSection from "../components/HeroSection";
+import SEO from "../components/SEO";
+import { generalPagesMeta } from "../seo";
 
 const { FiChevronLeft, FiChevronRight, FiX } = FiIcons;
 
@@ -1184,8 +1186,16 @@ export default function HomePage() {
       });
   }, []);
 
+  // Get SEO data for home page
+  const homePageSEO = generalPagesMeta.find(page => page.page === "home");
+
   return (
     <main className="bg-white">
+      <SEO
+        title={homePageSEO?.metaTitle}
+        description={homePageSEO?.metaDescription}
+        schema={homePageSEO?.schema}
+      />
       <HeroSection />
       {/* Quick Navigation Bar */}
       <QuickNavigationBar />

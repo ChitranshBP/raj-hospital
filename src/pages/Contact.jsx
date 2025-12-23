@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
+import SEO from '../components/SEO';
+import { generalPagesMeta } from '../seo';
 
 const { FiPhone, FiMapPin, FiMail, FiClock, FiSend, FiMessageSquare } = FiIcons;
 
@@ -27,8 +29,17 @@ const Contact = () => {
     }
     return NORMAL_FORMESTER_URL;
   };
+
+  // Get SEO data for contact page
+  const contactPageSEO = generalPagesMeta.find(page => page.page === "contact");
+
   return (
     <div>
+      <SEO
+        title={contactPageSEO?.metaTitle}
+        description={contactPageSEO?.metaDescription}
+        schema={contactPageSEO?.schema}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-28 py-16">
         <div className="max-w-7xl mx-auto px-4">

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useLocation } from 'react-router-dom';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
+import SEO from '../components/SEO';
+import specialtiesMeta from '../seo';
 
 const {
 
@@ -36,7 +38,15 @@ const {
 
 const SpecialtyDetail = () => {
   const { specialtyId } = useParams();
+  const location = useLocation();
   const [openIndex, setOpenIndex] = useState(null);
+
+  // Get SEO data for the current specialty based on URL path
+  const specialtySEO = useMemo(() => {
+    return specialtiesMeta.find(specialty =>
+      specialty.redirectUrl === location.pathname
+    );
+  }, [location.pathname]);
   // Specialty data based on ID
   // In a real application, this would be fetched from an API based on the specialtyId
   const specialtyData = {
@@ -3642,6 +3652,11 @@ const SpecialtyDetail = () => {
 
   return (
     <div>
+      <SEO
+        title={specialtySEO?.metaTitle}
+        description={specialtySEO?.metaDescription}
+        schema={specialtySEO?.schema}
+      />
       {/* Hero Section */}
       <section className="relative h-[50vh] mt-20 overflow-hidden">
         {/* Background Image */}

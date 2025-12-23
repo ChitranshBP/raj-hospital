@@ -2,10 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
+import SEO from '../components/SEO';
+import { generalPagesMeta } from '../seo';
 
 const { FiShield, FiHeart, FiTrendingUp, FiUserCheck, FiActivity, Heart, TrendingUp, UserCheck, Activity, Sparkles, FiStar } = FiIcons;
 
 const About = () => {
+  // Get SEO data for about page
+  const aboutPageSEO = generalPagesMeta.find(page => page.page === "about");
 
 
   const values = [
@@ -183,6 +187,11 @@ const About = () => {
 
   return (
     <div>
+      <SEO
+        title={aboutPageSEO?.metaTitle}
+        description={aboutPageSEO?.metaDescription}
+        schema={aboutPageSEO?.schema}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-32 py-6">
         <div className="max-w-7xl mx-auto px-4">

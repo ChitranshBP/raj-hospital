@@ -1,3 +1,158 @@
+// -------------------------
+// GENERAL PAGES META
+// -------------------------
+const generalPagesMeta = [
+  {
+    page: "home",
+    redirectUrl: "/",
+    newSiteUrl: "https://raj-new.netlify.app/",
+    metaTitle:
+      "Raj Hospitals in Ranchi | Multi-Speciality Healthcare Services",
+    metaDescription:
+      "Raj Hospitals in Ranchi offers comprehensive multi-speciality healthcare with expert doctors, advanced diagnostics, and patient-centric care.",
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "Hospital",
+      name: "Raj Hospitals",
+      url: "https://rajhospitals.com/",
+      logo: "https://rajhospitals.com/assets/logo.png",
+      description:
+        "Raj Hospitals in Ranchi offers comprehensive multi-speciality healthcare services with expert doctors and modern medical facilities.",
+      telephone: "+919771488888",
+      email: "info@rajhospitals.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Mahatma Gandhi Main Road, behind Central",
+        addressLocality: "Ranchi",
+        addressRegion: "Jharkhand",
+        postalCode: "834001",
+        addressCountry: "IN",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: "23.3441",
+        longitude: "85.3096",
+      },
+      openingHours: [
+        "Mo 00:00-23:59",
+        "Tu 00:00-23:59",
+        "We 00:00-23:59",
+        "Th 00:00-23:59",
+        "Fr 00:00-23:59",
+        "Sa 00:00-23:59",
+        "Su 00:00-23:59",
+      ],
+      medicalSpecialty: [
+        "Cardiology",
+        "Neurology",
+        "Orthopedics",
+        "Emergency Medicine",
+        "Gastroenterology",
+        "Internal Medicine",
+        "General Surgery",
+        "Pediatrics",
+        "Obstetrics and Gynecology",
+      ],
+      areaServed: {
+        "@type": "City",
+        name: "Ranchi",
+      },
+      memberOf: {
+        "@type": "Organization",
+        name: "Raj Hospitals",
+      },
+    },
+  },
+
+  {
+    page: "about",
+    redirectUrl: "/about",
+    newSiteUrl: "https://raj-new.netlify.app/about",
+    metaTitle:
+      "About Raj Hospitals in Ranchi | Trusted Healthcare Provider",
+    metaDescription:
+      "Learn about Raj Hospitals in Ranchi, its mission, healthcare values, expert team, and commitment to quality patient care and advanced medical services.",
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      name: "Raj Hospitals",
+      url: "https://rajhospitals.com/about.php",
+      logo: "https://rajhospitals.com/assets/logo.png",
+      description:
+        "Raj Hospitals is a trusted multi-speciality hospital in Ranchi offering comprehensive healthcare services with expert medical teams and advanced facilities.",
+      telephone: "+919771488888",
+      email: "info@rajhospitals.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Mahatma Gandhi Main Road, behind Central",
+        addressLocality: "Ranchi",
+        addressRegion: "Jharkhand",
+        postalCode: "834001",
+        addressCountry: "IN",
+      },
+      areaServed: {
+        "@type": "City",
+        name: "Ranchi",
+      },
+      founder: {
+        "@type": "Person",
+        name: "Raj Hospitals",
+      },
+    },
+  },
+
+  {
+    page: "contact",
+    redirectUrl: "/contact",
+    newSiteUrl: "https://raj-new.netlify.app/contact",
+    metaTitle:
+      "Contact Raj Hospitals in Ranchi | Phone, Email & Address",
+    metaDescription:
+      "Get in touch with Raj Hospitals in Ranchi for appointments, inquiries, and 24x7 support. Call, email or visit us at Mahatma Gandhi Main Road.",
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      name: "Raj Hospitals",
+      url: "https://rajhospitals.com/contact.php",
+      description:
+        "Contact Raj Hospitals in Ranchi for appointments, inquiries, emergency support, and patient services. Call, email or visit us.",
+      telephone: "+919771488888",
+      email: "info@rajhospitals.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Mahatma Gandhi Main Road, behind Central",
+        addressLocality: "Ranchi",
+        addressRegion: "Jharkhand",
+        postalCode: "834001",
+        addressCountry: "IN",
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          opens: "00:00",
+          closes: "23:59",
+        },
+      ],
+      areaServed: {
+        "@type": "City",
+        name: "Ranchi",
+      },
+    },
+  },
+];
+
+// -------------------------
+// SPECIALTIES META
+// -------------------------
 const specialtiesMeta = [
   {
     redirectUrl: "/aesthetic-&-reconstructive-surgery",
@@ -550,6 +705,8 @@ const specialtiesMeta = [
       },
     },
   },
+
 ];
 
+export { generalPagesMeta, specialtiesMeta };
 export default specialtiesMeta;

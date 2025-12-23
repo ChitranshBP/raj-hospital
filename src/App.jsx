@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/Header';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
@@ -21,36 +22,38 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <div className="min-h-screen bg-white">
-        <Header/>
-        <main>
-          <Routes>
-            <Route path="/" element={<Homepage2 />} />
-            <Route path="/homepage2" element={<Homepage2 />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/doctors" element={<Doctors />} />
-            <Route path="/doctor/:doctorId" element={<DoctorProfile />} />
-            <Route path="/doctors/:doctorId" element={<DoctorProfile />} />
-            <Route path="/specialties/:specialtyId" element={<SpecialtyDetail />} />
-            <Route path="/testimonials" element={<Testimonials />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/news-media" element={<NewsMedia />} />
-            <Route path="/biomedical-waste-reports" element={<BiomedicalWasteReports />} />
-            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          </Routes>
-        </main>
-        <Footer />
-        <Toaster
-          position="top-right"
-          richColors
-          closeButton />
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        <div className="min-h-screen bg-white">
+          <Header/>
+          <main>
+            <Routes>
+              <Route path="/" element={<Homepage2 />} />
+              <Route path="/homepage2" element={<Homepage2 />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/doctors" element={<Doctors />} />
+              <Route path="/doctor/:doctorId" element={<DoctorProfile />} />
+              <Route path="/doctors/:doctorId" element={<DoctorProfile />} />
+              <Route path="/specialties/:specialtyId" element={<SpecialtyDetail />} />
+              <Route path="/testimonials" element={<Testimonials />} />
+              <Route path="/careers" element={<Careers />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/news-media" element={<NewsMedia />} />
+              <Route path="/biomedical-waste-reports" element={<BiomedicalWasteReports />} />
+              <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            </Routes>
+          </main>
+          <Footer />
+          <Toaster
+            position="top-right"
+            richColors
+            closeButton />
 
-      </div>
-    </Router>);
+        </div>
+      </Router>
+    </HelmetProvider>);
 
 }
 

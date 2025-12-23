@@ -5,82 +5,82 @@ RewriteEngine On
 # RewriteCond %{HTTPS} off
 # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Redirect specialty pages to SEO-friendly URLs
+# Redirect old PHP pages to new site URLs
+
+# Home Page
+RewriteRule ^index\.php$ https://raj-new.netlify.app/ [R=301,L]
+RewriteRule ^best-hospital-in-ranchi\.php$ https://raj-new.netlify.app/ [R=301,L]
+
+# General Pages
+RewriteRule ^about\.php$ https://raj-new.netlify.app/about [R=301,L]
+RewriteRule ^contact\.php$ https://raj-new.netlify.app/contact [R=301,L]
+RewriteRule ^find-a-doctor\.php$ https://raj-new.netlify.app/doctors [R=301,L]
+RewriteRule ^careers\.php$ https://raj-new.netlify.app/careers [R=301,L]
+
+# Redirect old specialty PHP pages to new specialty URLs
 
 # Aesthetic & Reconstructive Surgery
-RewriteRule ^specialties/aesthetic-and-reconstructive-surgery$ /aesthetic-&-reconstructive-surgery [R=301,L]
+RewriteRule ^aesthetic-&-reconstructive-surgery\.php$ https://raj-new.netlify.app/specialties/aesthetic-and-reconstructive-surgery [R=301,L]
 
 # Cardiology
-RewriteRule ^specialties/cardiology$ /cardiologist-and-heart-specialist-ranchi [R=301,L]
+RewriteRule ^cardiologist-and-heart-specialist-ranchi\.php$ https://raj-new.netlify.app/specialties/cardiology [R=301,L]
 
 # Critical Care
-RewriteRule ^specialties/critical-care$ /critical-care [R=301,L]
+RewriteRule ^critical-care\.php$ https://raj-new.netlify.app/specialties/critical-care [R=301,L]
 
 # Dental
-RewriteRule ^specialties/dental$ /dental-surgeon-ranchi [R=301,L]
+RewriteRule ^dental-surgeon-ranchi\.php$ https://raj-new.netlify.app/specialties/dental [R=301,L]
 
 # Dermatology
-RewriteRule ^specialties/dermatology$ /dermatologist-ranchi [R=301,L]
+RewriteRule ^dermatologist-ranchi\.php$ https://raj-new.netlify.app/specialties/dermatology [R=301,L]
 
 # Emergency
-RewriteRule ^specialties/emergency$ /emergency-medicine [R=301,L]
+RewriteRule ^emergency-medicine\.php$ https://raj-new.netlify.app/specialties/emergency [R=301,L]
 
 # ENT
-RewriteRule ^specialties/ent$ /ent-specialist [R=301,L]
+RewriteRule ^ent-specialist\.php$ https://raj-new.netlify.app/specialties/ent [R=301,L]
 
 # Eye Care
-RewriteRule ^specialties/eye-care$ /eye-hospital-ranchi [R=301,L]
+RewriteRule ^eye-hospital-ranchi\.php$ https://raj-new.netlify.app/specialties/eye-care [R=301,L]
 
 # Gastroenterology
-RewriteRule ^specialties/gastroenterology$ /gastroenterology-ranchi [R=301,L]
+RewriteRule ^gastroenterology-ranchi\.php$ https://raj-new.netlify.app/specialties/gastroenterology [R=301,L]
 
-# Minimal Access Surgery (General & Laparoscopic Surgery)
-RewriteRule ^specialties/minimal-access-surgery$ /general-and-laparoscopic-surgery-ranchi [R=301,L]
+# General & Laparoscopic Surgery
+RewriteRule ^general-and-laparoscopic-surgery-ranchi\.php$ https://raj-new.netlify.app/specialties/minimal-access-surgery [R=301,L]
 
 # Internal Medicine
-RewriteRule ^specialties/internal-medicine$ /internal-medicine [R=301,L]
+RewriteRule ^internal-medicine\.php$ https://raj-new.netlify.app/specialties/internal-medicine [R=301,L]
 
 # Nephrology
-RewriteRule ^specialties/nephrology$ /nephrologist-ranchi [R=301,L]
+RewriteRule ^nephrologist-ranchi\.php$ https://raj-new.netlify.app/specialties/nephrology [R=301,L]
 
 # Neurology
-RewriteRule ^specialties/neurology$ /neurologist-ranchi [R=301,L]
+RewriteRule ^neurologist-ranchi\.php$ https://raj-new.netlify.app/specialties/neurology [R=301,L]
 
-# Neurosciences
-RewriteRule ^specialties/neurosciences$ /neurosciences [R=301,L]
-
-# Obstetrics & Gynaecology
-RewriteRule ^specialties/obstetrics-and-gynaecology$ /maternity-and-gynaecology [R=301,L]
+# Obstetrics & Gynaecology (Maternity)
+RewriteRule ^maternity-and-gynecologist-ranchi\.php$ https://raj-new.netlify.app/specialties/obstetrics-and-gynaecology [R=301,L]
 
 # Oral & Maxillofacial Surgery
-RewriteRule ^specialties/oral-and-maxillofacial-surgery$ /oral-and-maxillofacial-surgery [R=301,L]
+RewriteRule ^oral-&-maxillofacial-surgery\.php$ https://raj-new.netlify.app/specialties/oral-and-maxillofacial-surgery [R=301,L]
 
 # Oncology (Cancer Care)
-RewriteRule ^specialties/oncology-cancer-care$ /oncologist-and-cancer-specialist-ranchi [R=301,L]
+RewriteRule ^oncologist-and-cancer-specialist-ranchi\.php$ https://raj-new.netlify.app/specialties/oncology-cancer-care [R=301,L]
 
 # Orthopaedics & Joint Replacement
-RewriteRule ^specialties/orthopaedics-and-joint-replacement$ /orthopedic-and-joint-replacement-surgery [R=301,L]
+RewriteRule ^orthopedic-and-joint-replacement-surgery-ranchi\.php$ https://raj-new.netlify.app/specialties/orthopaedics-and-joint-replacement [R=301,L]
 
-# Pediatrics & Neonatology
-RewriteRule ^specialties/pediatrics-and-neonatology$ /paediatrician-and-child-specialist [R=301,L]
+# Pediatrics
+RewriteRule ^pediatrician-specialists-ranchi\.php$ https://raj-new.netlify.app/specialties/pediatrics-and-neonatology [R=301,L]
+
+# Physiotherapy
+RewriteRule ^physiotherapist-ranchi\.php$ https://raj-new.netlify.app/specialties/physiotherapy-and-rehabilitation [R=301,L]
 
 # Pulmonology
-RewriteRule ^specialties/pulmonology$ /pulmonology-specialist [R=301,L]
+RewriteRule ^pulmonologist-ranchi\.php$ https://raj-new.netlify.app/specialties/pulmonology [R=301,L]
 
-# Physiotherapy & Rehabilitation
-RewriteRule ^specialties/physiotherapy-and-rehabilitation$ /physiotherapy [R=301,L]
-
-# Nutrition & Dietetics
-RewriteRule ^specialties/nutrition-and-dietetics$ /nutrition-and-dietetics [R=301,L]
-
-# Psychiatry & Mental Health
-RewriteRule ^specialties/psychiatry-and-mental-health$ /psychiatry-and-mental-health [R=301,L]
-
-# Radiology
-RewriteRule ^specialties/radiology$ /radiology [R=301,L]
-
-# Laboratory Investigations
-RewriteRule ^specialties/laboratory-investigations$ /laboratory-investigations [R=301,L]
+# Urology
+RewriteRule ^urology-ranchi\.php$ https://raj-new.netlify.app/specialties/urology [R=301,L]
 
 # Handle React Router (BrowserRouter) - This must be AFTER all specific redirects
 # If the requested file or directory doesn't exist, serve index.html
