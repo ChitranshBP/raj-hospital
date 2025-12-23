@@ -155,7 +155,7 @@ const generalPagesMeta = [
 // -------------------------
 const specialtiesMeta = [
   {
-    redirectUrl: "/aesthetic-&-reconstructive-surgery",
+    redirectUrl: "/specialties/aesthetic-and-reconstructive-surgery",
     metaTitle: "Aesthetic & Reconstructive Surgery in Ranchi | Raj Hospitals",
     metaDescription:
       "Advanced aesthetic and reconstructive surgery in Ranchi at Raj Hospitals. Expert care for cosmetic, trauma, and reconstructive needs.",
@@ -177,7 +177,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/cardiologist-and-heart-specialist-ranchi",
+    redirectUrl: "/specialties/cardiology",
     metaTitle: "Best Cardiologist & Heart Specialist in Ranchi | Raj Hospitals",
     metaDescription:
       "Expert cardiologist and heart specialist in Ranchi offering advanced diagnosis and treatment for heart diseases at Raj Hospitals.",
@@ -199,7 +199,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/critical-care",
+    redirectUrl: "/specialties/critical-care",
     metaTitle: "Advanced Critical Care & ICU in Ranchi | Raj Hospitals",
     metaDescription:
       "24×7 critical care and ICU services in Ranchi with advanced monitoring and life support systems.",
@@ -221,7 +221,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/dental-surgeon-ranchi",
+    redirectUrl: "/specialties/dental",
     metaTitle: "Best Dental Surgeon in Ranchi | Raj Hospitals",
     metaDescription:
       "Expert dental surgeon in Ranchi providing advanced dental and oral surgery care.",
@@ -243,7 +243,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/dermatologist-ranchi",
+    redirectUrl: "/specialties/dermatology",
     metaTitle: "Best Dermatologist in Ranchi | Raj Hospitals",
     metaDescription:
       "Expert dermatologist in Ranchi for skin, hair, and cosmetic treatments.",
@@ -265,7 +265,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/emergency-medicine",
+    redirectUrl: "/specialties/emergency",
     metaTitle: "24×7 Emergency Medicine & Care in Ranchi | Raj Hospitals",
     metaDescription:
       "24×7 emergency medicine services in Ranchi with rapid response and expert care.",
@@ -287,7 +287,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/ent-specialist",
+    redirectUrl: "/specialties/ent",
     metaTitle: "Best ENT Specialist in Ranchi | Raj Hospitals",
     metaDescription:
       "Expert ENT specialist in Ranchi for ear, nose, and throat care.",
@@ -309,7 +309,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/eye-hospital-ranchi",
+    redirectUrl: "/specialties/eye-care",
     metaTitle: "Best Eye Hospital in Ranchi | Raj Hospitals",
     metaDescription:
       "Trusted eye hospital in Ranchi offering comprehensive eye care services.",
@@ -331,7 +331,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/gastroenterology-ranchi",
+    redirectUrl: "/specialties/gastroenterology",
     metaTitle: "Best Gastroenterologist in Ranchi | Raj Hospitals",
     metaDescription:
       "Expert gastroenterology care in Ranchi for digestive system disorders.",
@@ -353,7 +353,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/general-and-laparoscopic-surgery-ranchi",
+    redirectUrl: "/specialties/minimal-access-surgery",
     metaTitle: "General & Laparoscopic Surgery in Ranchi | Raj Hospitals",
     metaDescription:
       "Advanced general and laparoscopic surgery services in Ranchi.",
@@ -375,7 +375,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/internal-medicine",
+    redirectUrl: "/specialties/internal-medicine",
     metaTitle: "Internal Medicine Specialist in Ranchi | Raj Hospitals",
     metaDescription:
       "Expert internal medicine care in Ranchi for adult health conditions.",
@@ -397,7 +397,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/nephrologist-ranchi",
+    redirectUrl: "/specialties/nephrology",
     metaTitle: "Best Nephrologist in Ranchi | Raj Hospitals",
     metaDescription:
       "Expert nephrology care in Ranchi for kidney-related disorders.",
@@ -419,7 +419,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/neurologist-ranchi",
+    redirectUrl: "/specialties/neurology",
     metaTitle: "Best Neurologist in Ranchi | Raj Hospitals",
     metaDescription:
       "Expert neurology care in Ranchi for brain and nervous system disorders.",
@@ -441,7 +441,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/neurosciences",
+    redirectUrl: "/specialties/neurosciences",
     metaTitle: "Neurosciences & Brain Care in Ranchi | Raj Hospitals",
     metaDescription:
       "Comprehensive neurosciences and brain care services in Ranchi.",
@@ -463,7 +463,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/maternity-and-gynaecology",
+    redirectUrl: "/specialties/obstetrics-and-gynaecology",
     metaTitle: "Maternity & Gynecologist in Ranchi | Raj Hospitals",
     metaDescription:
       "Comprehensive maternity and gynaecology care services in Ranchi.",
@@ -485,7 +485,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/oral-and-maxillofacial-surgery",
+    redirectUrl: "/specialties/oral-and-maxillofacial-surgery",
     metaTitle: "Oral & Maxillofacial Surgery in Ranchi | Raj Hospitals",
     metaDescription:
       "Advanced oral and maxillofacial surgery services in Ranchi.",
@@ -507,7 +507,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/oncologist-and-cancer-specialist-ranchi",
+    redirectUrl: "/specialties/oncology-cancer-care",
     metaTitle: "Oncologist & Cancer Specialist in Ranchi | Raj Hospitals",
     metaDescription:
       "Comprehensive cancer diagnosis and treatment services in Ranchi.",
@@ -529,7 +529,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/orthopedic-and-joint-replacement-surgery",
+    redirectUrl: "/specialties/orthopaedics-and-joint-replacement",
     metaTitle:
       "Orthopedic & Joint Replacement Surgery in Ranchi | Raj Hospitals",
     metaDescription:
@@ -553,7 +553,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/paediatrician-and-child-specialist",
+    redirectUrl: "/specialties/pediatrics-and-neonatology",
     metaTitle: "Pediatrician & Child Specialist in Ranchi | Raj Hospitals",
     metaDescription:
       "Comprehensive paediatric care services in Ranchi for infants and children.",
@@ -575,7 +575,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/pulmonology-specialist",
+    redirectUrl: "/specialties/pulmonology",
     metaTitle: "Pulmonology Specialist in Ranchi | Raj Hospitals",
     metaDescription:
       "Advanced pulmonology and respiratory care services in Ranchi.",
@@ -597,7 +597,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/physiotherapy",
+    redirectUrl: "/specialties/physiotherapy-and-rehabilitation",
     metaTitle: "Physiotherapy Department in Ranchi | Raj Hospitals",
     metaDescription:
       "Advanced physiotherapy and rehabilitation services in Ranchi.",
@@ -619,7 +619,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/nutrition-and-dietetics",
+    redirectUrl: "/specialties/nutrition-and-dietetics",
     metaTitle: "Nutrition & Dietetics Services in Ranchi | Raj Hospitals",
     metaDescription:
       "Clinical nutrition and dietetics services in Ranchi for patient care.",
@@ -641,7 +641,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/psychiatry-and-mental-health",
+    redirectUrl: "/specialties/psychiatry-and-mental-health",
     metaTitle: "Psychiatry & Mental Health Services in Ranchi | Raj Hospitals",
     metaDescription:
       "Comprehensive psychiatry and mental health services in Ranchi.",
@@ -663,7 +663,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/radiology",
+    redirectUrl: "/specialties/radiology",
     metaTitle: "Radiology Services in Ranchi | Raj Hospitals",
     metaDescription:
       "Advanced diagnostic radiology and imaging services in Ranchi.",
@@ -685,7 +685,7 @@ const specialtiesMeta = [
   },
 
   {
-    redirectUrl: "/laboratory-investigations",
+    redirectUrl: "/specialties/laboratory-investigations",
     metaTitle: "Laboratory Investigations in Ranchi | Raj Hospitals",
     metaDescription:
       "Comprehensive laboratory investigations and diagnostic services in Ranchi.",
