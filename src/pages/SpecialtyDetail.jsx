@@ -44,9 +44,10 @@ const SpecialtyDetail = () => {
   const specialtySEO = useMemo(() => {
     // Build the expected redirectUrl from specialtyId
     const expectedPath = `/specialties/${specialtyId}`;
-    return specialtiesMeta.find(specialty =>
+    const foundSEO = specialtiesMeta.find(specialty =>
       specialty.redirectUrl === expectedPath
     );
+    return foundSEO;
   }, [specialtyId]);
   // Specialty data based on ID
   // In a real application, this would be fetched from an API based on the specialtyId
