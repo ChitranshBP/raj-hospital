@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { Link, useParams, useLocation } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 import SEO from '../components/SEO';
@@ -38,15 +38,16 @@ const {
 
 const SpecialtyDetail = () => {
   const { specialtyId } = useParams();
-  const location = useLocation();
   const [openIndex, setOpenIndex] = useState(null);
 
-  // Get SEO data for the current specialty based on URL path
+  // Get SEO data for the current specialty based on specialtyId
   const specialtySEO = useMemo(() => {
+    // Build the expected redirectUrl from specialtyId
+    const expectedPath = `/specialties/${specialtyId}`;
     return specialtiesMeta.find(specialty =>
-      specialty.redirectUrl === location.pathname
+      specialty.redirectUrl === expectedPath
     );
-  }, [location.pathname]);
+  }, [specialtyId]);
   // Specialty data based on ID
   // In a real application, this would be fetched from an API based on the specialtyId
   const specialtyData = {

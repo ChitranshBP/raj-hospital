@@ -2,12 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
+import SEO from '../components/SEO';
+import { generalPagesMeta } from '../seo';
 
 const { FiStar, FiQuote, FiUser, FiPlay } = FiIcons;
 
 const Testimonials = () => {
   const [activeTab, setActiveTab] = useState('written');
   const [modalVideoId, setModalVideoId] = useState(null);
+
+  // Get SEO data for testimonials page
+  const testimonialsPageSEO = generalPagesMeta.find(page => page.page === "testimonials");
 
   // Load Review Magnet script
   useEffect(() => {
@@ -147,6 +152,11 @@ const Testimonials = () => {
 
   return (
     <div>
+      <SEO
+        title={testimonialsPageSEO?.metaTitle}
+        description={testimonialsPageSEO?.metaDescription}
+        schema={testimonialsPageSEO?.schema}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-28 py-16">
         <div className="max-w-7xl mx-auto px-4">

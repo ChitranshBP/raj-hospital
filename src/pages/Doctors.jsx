@@ -5,12 +5,17 @@ import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 import { doctorsData } from './DoctorProfile';
 import { useRef, useEffect } from 'react';
+import SEO from '../components/SEO';
+import { generalPagesMeta } from '../seo';
 
 
 
 const Doctors = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedSpecialty, setSelectedSpecialty] = useState('All');
+
+  // Get SEO data for doctors page
+  const doctorsPageSEO = generalPagesMeta.find(page => page.page === "doctors");
 
   // Get unique specialties from doctorsData
   const specialties = ['All', ...new Set(doctorsData.map(doctor => doctor.specialty))];
@@ -42,6 +47,11 @@ useEffect(() => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title={doctorsPageSEO?.metaTitle}
+        description={doctorsPageSEO?.metaDescription}
+        schema={doctorsPageSEO?.schema}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br mt-24 from-primary-50 to-secondary-50 py-16">
         <div className="max-w-7xl mx-auto px-4">

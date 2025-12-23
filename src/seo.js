@@ -148,6 +148,131 @@ const generalPagesMeta = [
       },
     },
   },
+
+  {
+    page: "doctors",
+    redirectUrl: "/doctors",
+    newSiteUrl: "https://raj-new.netlify.app/doctors",
+    metaTitle: "Find a Doctor at Raj Hospitals in Ranchi | Expert Medical Team",
+    metaDescription:
+      "Meet our expert team of doctors and specialists at Raj Hospitals in Ranchi. Find experienced physicians across various medical specialities for quality healthcare.",
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      name: "Raj Hospitals",
+      url: "https://rajhospitals.com/find-a-doctor.php",
+      description:
+        "Find experienced doctors and medical specialists at Raj Hospitals in Ranchi across various specialities including cardiology, neurology, orthopedics, and more.",
+      telephone: "+919771488888",
+      email: "info@rajhospitals.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Mahatma Gandhi Main Road, behind Central",
+        addressLocality: "Ranchi",
+        addressRegion: "Jharkhand",
+        postalCode: "834001",
+        addressCountry: "IN",
+      },
+      areaServed: {
+        "@type": "City",
+        name: "Ranchi",
+      },
+    },
+  },
+
+  {
+    page: "careers",
+    redirectUrl: "/careers",
+    newSiteUrl: "https://raj-new.netlify.app/careers",
+    metaTitle: "Careers at Raj Hospitals in Ranchi | Join Our Healthcare Team",
+    metaDescription:
+      "Explore career opportunities at Raj Hospitals in Ranchi. Join our team of healthcare professionals and make a difference in patient care and medical excellence.",
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "JobPosting",
+      hiringOrganization: {
+        "@type": "Hospital",
+        name: "Raj Hospitals",
+        sameAs: "https://rajhospitals.com",
+        logo: "https://rajhospitals.com/assets/logo.png",
+      },
+      jobLocation: {
+        "@type": "Place",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Mahatma Gandhi Main Road, behind Central",
+          addressLocality: "Ranchi",
+          addressRegion: "Jharkhand",
+          postalCode: "834001",
+          addressCountry: "IN",
+        },
+      },
+      description:
+        "Join Raj Hospitals in Ranchi and be part of a dedicated healthcare team committed to providing quality patient care and medical excellence.",
+    },
+  },
+
+  {
+    page: "news-media",
+    redirectUrl: "/news-media",
+    newSiteUrl: "https://raj-new.netlify.app/news-media",
+    metaTitle: "News & Media | Raj Hospitals in Ranchi | Latest Updates",
+    metaDescription:
+      "Stay updated with the latest news, press releases, and media coverage of Raj Hospitals in Ranchi. Read about our healthcare initiatives and achievements.",
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      name: "Raj Hospitals",
+      url: "https://rajhospitals.com/news-media",
+      description:
+        "Latest news, press releases, and media coverage about Raj Hospitals in Ranchi, including healthcare initiatives, achievements, and community outreach programs.",
+      telephone: "+919771488888",
+      email: "info@rajhospitals.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Mahatma Gandhi Main Road, behind Central",
+        addressLocality: "Ranchi",
+        addressRegion: "Jharkhand",
+        postalCode: "834001",
+        addressCountry: "IN",
+      },
+      areaServed: {
+        "@type": "City",
+        name: "Ranchi",
+      },
+    },
+  },
+
+  {
+    page: "testimonials",
+    redirectUrl: "/testimonials",
+    newSiteUrl: "https://raj-new.netlify.app/testimonials",
+    metaTitle: "Patient Testimonials | Raj Hospitals in Ranchi | Success Stories",
+    metaDescription:
+      "Read real patient testimonials and success stories from Raj Hospitals in Ranchi. Discover how our expert care has transformed lives and restored health.",
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      name: "Raj Hospitals",
+      url: "https://rajhospitals.com/testimonials",
+      description:
+        "Patient testimonials and success stories from Raj Hospitals in Ranchi showcasing quality healthcare, expert medical treatment, and patient satisfaction.",
+      telephone: "+919771488888",
+      email: "info@rajhospitals.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Mahatma Gandhi Main Road, behind Central",
+        addressLocality: "Ranchi",
+        addressRegion: "Jharkhand",
+        postalCode: "834001",
+        addressCountry: "IN",
+      },
+      areaServed: {
+        "@type": "City",
+        name: "Ranchi",
+      },
+    },
+  },
 ];
 
 // -------------------------
