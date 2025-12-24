@@ -34,8 +34,8 @@ const HeroSection = () => {
     mobile: 'assets/Home-Banners/raj-specialty-mob-banner.webp'
   },
   {
-    desktop: 'assets/Home-Banners/why-choose-banner.webp',
-    mobile: 'assets/Home-Banners/raj-why-choose-mob-banner.webp'
+    desktop: 'assets/Home-Banners/web-banner-choose.webp',
+    mobile: 'assets/Home-Banners/mob-banner-choose.webp'
   }];
 
 

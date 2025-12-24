@@ -275,18 +275,18 @@ const About = () => {
 
         {/* Chairman Message Card */}
         <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
-          <div className="md:flex">
+          <div className="md:flex md:items-center">
             {/* Chairman Image */}
-            <div className="md:w-1/3">
+            <div className="md:w-1/4 flex justify-center p-6">
               <img
                   src="assets/home-img/Picture1.png"
                   alt="Chairman - Raj Hospital"
-                  className="w-full h-64 md:h-full object-contain md:object-cover" />
+                  className="w-56 h-56 md:w-72 md:h-72 object-cover rounded-xl shadow-lg" />
 
             </div>
-            
+
             {/* Message Content */}
-            <div className="md:w-2/3 p-6">
+            <div className="md:w-3/4 p-6">
               {/* Quote Icon */}
               <div className="inline-flex items-center px-1 py-1 bg-orange-50 text-orange-600 rounded-full text-sm font-semibold mb-4">
                 Message from Chairman
