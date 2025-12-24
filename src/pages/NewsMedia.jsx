@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SEO from '../components/SEO';
 import { generalPagesMeta } from '../seo';
+import pagesMeta from '../meta';
 
 const NewsMedia = () => {
   const [activeTab, setActiveTab] = useState('digital');
   const [selectedImage, setSelectedImage] = useState(null);
 
   // Get SEO data for news-media page
-  const newsMediaPageSEO = generalPagesMeta.find(page => page.page === "news-media");
+  const newsMediaPageMeta = pagesMeta.find(page => page.page === "news-media");
+  const newsMediaPageSchema = generalPagesMeta.find(page => page.page === "news-media");
 
   // DIGITAL NEWS CARDS
 const digitalNews = [
@@ -176,9 +178,9 @@ const digitalNews = [
   return (
     <div className="min-h-screen bg-gray-50">
       <SEO
-        title={newsMediaPageSEO?.metaTitle}
-        description={newsMediaPageSEO?.metaDescription}
-        schema={newsMediaPageSEO?.schema}
+        title={newsMediaPageMeta?.metaTitle}
+        description={newsMediaPageMeta?.metaDescription}
+        schema={newsMediaPageSchema?.schema}
       />
      {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-32 py-10">

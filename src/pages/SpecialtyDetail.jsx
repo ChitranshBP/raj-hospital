@@ -5,6 +5,7 @@ import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 import SEO from '../components/SEO';
 import specialtiesMeta from '../seo';
+import pagesMeta from '../meta';
 
 const {
 
@@ -40,14 +41,54 @@ const SpecialtyDetail = () => {
   const { specialtyId } = useParams();
   const [openIndex, setOpenIndex] = useState(null);
 
-  // Get SEO data for the current specialty based on specialtyId
+  // Map specialtyId to meta.js page names
+  const specialtyIdToMetaPage = {
+    'aesthetic-and-reconstructive-surgery': 'aesthetic-reconstructive-surgery',
+    'cardiology': 'cardiology',
+    'critical-care': 'critical-care-icu',
+    'dental': 'dental',
+    'dermatology': 'dermatology',
+    'emergency': 'emergency-medicine',
+    'ent': 'ent',
+    'eye-care': 'eye-care',
+    'gastroenterology': 'gastroenterology',
+    'minimal-access-surgery': 'general-laparoscopic-surgery',
+    'internal-medicine': 'internal-medicine',
+    'nephrology': 'nephrology',
+    'neurology': 'neurology',
+    'neurosciences': 'neurosciences-brain-care',
+    'obstetrics-and-gynaecology': 'pediatrics',
+    'oral-and-maxillofacial-surgery': 'dental',
+    'oncology-cancer-care': 'cardiology',
+    'orthopaedics-and-joint-replacement': 'orthopedics-joint-replacement',
+    'pediatrics-and-neonatology': 'pediatrics',
+    'pulmonology': 'pulmonology',
+    'physiotherapy-and-rehabilitation': 'physiotherapy',
+    'nutrition-and-dietetics': 'nutrition-dietetics-services',
+    'psychiatry-and-mental-health': 'psychiatry-mental-health-services',
+    'radiology': 'advanced-radiology-services',
+    'laboratory-investigations': 'laboratory-investigations',
+    'urology': 'urology'
+  };
+
+  // Get SEO data for the current specialty
   const specialtySEO = useMemo(() => {
-    // Build the expected redirectUrl from specialtyId
+    // Get meta title and description from meta.js
+    const metaPageName = specialtyIdToMetaPage[specialtyId];
+    const metaData = pagesMeta.find(page => page.page === metaPageName);
+
+    // Get schema from seo.js
     const expectedPath = `/specialties/${specialtyId}`;
-    const foundSEO = specialtiesMeta.find(specialty =>
+    const schemaData = specialtiesMeta.find(specialty =>
       specialty.redirectUrl === expectedPath
     );
-    return foundSEO;
+
+    // Combine both
+    return {
+      metaTitle: metaData?.metaTitle,
+      metaDescription: metaData?.metaDescription,
+      schema: schemaData?.schema
+    };
   }, [specialtyId]);
   // Specialty data based on ID
   // In a real application, this would be fetched from an API based on the specialtyId

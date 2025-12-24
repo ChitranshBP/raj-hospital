@@ -4,6 +4,7 @@ import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 import SEO from '../components/SEO';
 import { generalPagesMeta } from '../seo';
+import pagesMeta from '../meta';
 
 const { FiStar, FiQuote, FiUser, FiPlay } = FiIcons;
 
@@ -12,7 +13,8 @@ const Testimonials = () => {
   const [modalVideoId, setModalVideoId] = useState(null);
 
   // Get SEO data for testimonials page
-  const testimonialsPageSEO = generalPagesMeta.find(page => page.page === "testimonials");
+  const testimonialsPageMeta = pagesMeta.find(page => page.page === "testimonials");
+  const testimonialsPageSchema = generalPagesMeta.find(page => page.page === "testimonials");
 
   // Load Review Magnet script
   useEffect(() => {
@@ -153,9 +155,9 @@ const Testimonials = () => {
   return (
     <div>
       <SEO
-        title={testimonialsPageSEO?.metaTitle}
-        description={testimonialsPageSEO?.metaDescription}
-        schema={testimonialsPageSEO?.schema}
+        title={testimonialsPageMeta?.metaTitle}
+        description={testimonialsPageMeta?.metaDescription}
+        schema={testimonialsPageSchema?.schema}
       />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-28 py-16">

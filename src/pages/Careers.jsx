@@ -4,6 +4,7 @@ import * as FiIcons from "react-icons/fi";
 import SafeIcon from "../common/SafeIcon";
 import SEO from '../components/SEO';
 import { generalPagesMeta } from '../seo';
+import pagesMeta from '../meta';
 
 const {
   FiSearch,
@@ -24,7 +25,8 @@ const Careers = () => {
   const [selectedJob, setSelectedJob] = useState(null);
 
   // Get SEO data for careers page
-  const careersPageSEO = generalPagesMeta.find(page => page.page === "careers");
+  const careersPageMeta = pagesMeta.find(page => page.page === "careers");
+  const careersPageSchema = generalPagesMeta.find(page => page.page === "careers");
 
   // Career openings data
   const jobs = [
@@ -311,9 +313,9 @@ const Careers = () => {
   return (
     <div>
       <SEO
-        title={careersPageSEO?.metaTitle}
-        description={careersPageSEO?.metaDescription}
-        schema={careersPageSEO?.schema}
+        title={careersPageMeta?.metaTitle}
+        description={careersPageMeta?.metaDescription}
+        schema={careersPageSchema?.schema}
       />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-28 py-16">

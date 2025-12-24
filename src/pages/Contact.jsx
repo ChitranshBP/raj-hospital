@@ -5,6 +5,7 @@ import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 import SEO from '../components/SEO';
 import { generalPagesMeta } from '../seo';
+import pagesMeta from '../meta';
 
 const { FiPhone, FiMapPin, FiMail, FiClock, FiSend, FiMessageSquare } = FiIcons;
 
@@ -31,14 +32,15 @@ const Contact = () => {
   };
 
   // Get SEO data for contact page
-  const contactPageSEO = generalPagesMeta.find(page => page.page === "contact");
+  const contactPageMeta = pagesMeta.find(page => page.page === "contact");
+  const contactPageSchema = generalPagesMeta.find(page => page.page === "contact");
 
   return (
     <div>
       <SEO
-        title={contactPageSEO?.metaTitle}
-        description={contactPageSEO?.metaDescription}
-        schema={contactPageSEO?.schema}
+        title={contactPageMeta?.metaTitle}
+        description={contactPageMeta?.metaDescription}
+        schema={contactPageSchema?.schema}
       />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 to-secondary-50 mt-28 py-16">

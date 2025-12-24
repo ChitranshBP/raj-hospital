@@ -6,6 +6,7 @@ import * as FiIcons from "react-icons/fi";
 import HeroSection from "../components/HeroSection";
 import SEO from "../components/SEO";
 import { generalPagesMeta } from "../seo";
+import pagesMeta from "../meta";
 
 const { FiChevronLeft, FiChevronRight, FiX } = FiIcons;
 
@@ -1187,14 +1188,15 @@ export default function HomePage() {
   }, []);
 
   // Get SEO data for home page
-  const homePageSEO = generalPagesMeta.find(page => page.page === "home");
+  const homePageMeta = pagesMeta.find(page => page.page === "home");
+  const homePageSchema = generalPagesMeta.find(page => page.page === "home");
 
   return (
     <main className="bg-white">
       <SEO
-        title={homePageSEO?.metaTitle}
-        description={homePageSEO?.metaDescription}
-        schema={homePageSEO?.schema}
+        title={homePageMeta?.metaTitle}
+        description={homePageMeta?.metaDescription}
+        schema={homePageSchema?.schema}
       />
       <HeroSection />
       {/* Quick Navigation Bar */}
