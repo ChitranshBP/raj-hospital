@@ -179,6 +179,12 @@ const Testimonials = () => {
       desc: "After slipping in his washroom, Mr. Aniket suffered a fracture in the little finger of his right hand. He was immediately brought to the Emergency Department at Raj Hospitals, where an X-ray confirmed the fracture. The surgery was successfully performed by Dr. Mozammil Pheroz using K-wire fixation.",
       thumbnail: "https://img.youtube.com/vi/nrBUSAEFOnc/maxresdefault.jpg",
     },
+      {
+      videoId: "8BIt5vJVgYI",
+      patient: "How Knee Replacement Changed Her Life | Testimonial of Shejhari Devi",
+      desc: "After months of severe knee pain that affected even her daily routine, Mrs. Shejhari Devi finally found relief under the expert care of Dr. Deepak Verma.",
+      thumbnail: "https://img.youtube.com/vi/8BIt5vJVgYI/maxresdefault.jpg",
+    },
   ];
 
 
