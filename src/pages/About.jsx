@@ -163,7 +163,7 @@ const About = () => {
   },
     {
     "year": "16th February 2023",
-    "image": "assets/About-img/nabh-hospital.webp",
+    "image": "assets/About-img/nabh-hospital-new.webp",
     "achievements": [
     "Hospital received NABH Accreditation",
     "Recognition for maintaining highest standards of patient safety and quality healthcare",
@@ -193,7 +193,7 @@ const About = () => {
 
   {
     "year": "21st January 2025",
-    "image": "assets/About-img/CERTIFIED-EMERGENCY-SERVICES-logo-768x768-1.webp",
+    "image": "assets/About-img/nabh-emergency-new.webp",
     "achievements": [
     "Emergency Department received NABH Accreditation",
     "Enhanced emergency care with standardized protocols and quality assurance",
@@ -202,7 +202,7 @@ const About = () => {
   },
   {
     "year": "28th January 2025",
-    "image": "assets/About-img/nabh-nursing-excellence-certification.webp",
+    "image": "assets/About-img/nabh-nursing.webp",
     "achievements": [
     "Nursing Excellence Department received NABH Accreditation",
     "Recognition for superior nursing care standards and patient-centric approach",
@@ -488,7 +488,7 @@ const About = () => {
 
                 {/* Image on opposite side - Desktop */}
                 <div className="hidden md:block w-4/12">
-                  <div className="relative h-52 bg-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+                  <div className="relative h-56 bg-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
                     <img
                       src={milestone.image}
                       alt={`Raj Hospital ${milestone.year}`}
