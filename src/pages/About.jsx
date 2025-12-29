@@ -161,6 +161,15 @@ const About = () => {
 
 
   },
+    {
+    "year": "16th February 2023",
+    "image": "assets/About-img/nabh-hospital.webp",
+    "achievements": [
+    "Hospital received NABH Accreditation",
+    "Recognition for maintaining highest standards of patient safety and quality healthcare",
+    "Comprehensive quality management system implementation"]
+
+  },
   {
     "year": "12th May 2023",
     "image": "assets/About-img/Gastro-pic.webp",
@@ -179,6 +188,25 @@ const About = () => {
     "Capabilities include complicated brain tumor surgeries, complex spine surgeries, and vascular surgeries",
     "Neuro consultants with decades of experience offering neuro and spine surgery",
     "Advanced neurology diagnostics including EEG, EMG, NCS; comprehensive stroke and emergency services available 24/7"]
+
+  },
+
+  {
+    "year": "21st January 2025",
+    "image": "assets/About-img/CERTIFIED-EMERGENCY-SERVICES-logo-768x768-1.webp",
+    "achievements": [
+    "Emergency Department received NABH Accreditation",
+    "Enhanced emergency care with standardized protocols and quality assurance",
+    "24/7 emergency services meeting international quality benchmarks"]
+
+  },
+  {
+    "year": "28th January 2025",
+    "image": "assets/About-img/nabh-nursing-excellence-certification.webp",
+    "achievements": [
+    "Nursing Excellence Department received NABH Accreditation",
+    "Recognition for superior nursing care standards and patient-centric approach",
+    "Continuous professional development and quality improvement in nursing services"]
 
   }];
 
