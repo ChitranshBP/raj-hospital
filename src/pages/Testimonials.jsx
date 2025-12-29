@@ -185,6 +185,12 @@ const Testimonials = () => {
       desc: "After months of severe knee pain that affected even her daily routine, Mrs. Shejhari Devi finally found relief under the expert care of Dr. Deepak Verma.",
       thumbnail: "https://img.youtube.com/vi/8BIt5vJVgYI/maxresdefault.jpg",
     },
+         {
+      videoId: "DOSuZZjZiZ8",
+      patient: "Stomach cancer treatment | Patient Testimonial",
+      desc: "Meet Mr. Anil Prasad Sahu, who came to us with advanced stomach cancer and a heart full of questions.",
+      thumbnail: "https://img.youtube.com/vi/DOSuZZjZiZ8/maxresdefault.jpg",
+    },
   ];
 
 
