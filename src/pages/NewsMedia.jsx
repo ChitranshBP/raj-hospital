@@ -173,6 +173,8 @@ const digitalNews = [
     { id: 33, image: 'assets/press/IMG-20250222-WA0005.webp', title: 'आपातकालीन विभाग को एनएबीएच मान्यता' },
     { id: 34, image: 'assets/press/IMG-20250222-WA0006.webp', title: 'आपातकालीन विभाग को एनएबीएच मान्यता' },
     { id: 35, image: 'assets/press/IMG-20250222-WA0007.webp', title: 'आपातकालीन विभाग को एनएबीएच मान्यता' },
+    { id: 36, image: 'assets/press/raj-news.webp', title: 'राज हॉस्पिटल ने प्रभात खबर कर्मियों के लिए लगाया कैंप, 113 को मिला परामर्श' },
+
   ];
 
   return (
@@ -291,7 +293,7 @@ const digitalNews = [
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {newspaperClippings.map((clip, index) => (
+                {[...newspaperClippings].reverse().map((clip, index) => (
                   <motion.div
                     key={clip.id}
                     initial={{ opacity: 0, y: 30 }}

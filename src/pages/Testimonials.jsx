@@ -134,7 +134,7 @@ const Testimonials = () => {
     {
       videoId: "HARE579wkdY",
       patient: "Knee replacement surgery | Raj Hospitals",
-      desc: "The doctors and staff were exceptional.",
+      desc: "Mr. Rajwar brought his wife, Mrs. Neelam Rajwar, to Raj Hospitals for a knee replacement surgery — and today, they walk away with smiles and gratitude.",
       thumbnail: "https://img.youtube.com/vi/HARE579wkdY/maxresdefault.jpg",
     },
     {
@@ -148,6 +148,36 @@ const Testimonials = () => {
       patient: "Neurosurgery Success Story at Raj Hospitals",
       desc: "Under the expert care of Dr. Ahmad Hussain (Neurosurgeon) and Dr. Neelam Kumari, our patient has made an incredible recovery.",
       thumbnail: "https://img.youtube.com/vi/vg59yGKWz_s/maxresdefault.jpg",
+    },
+    {
+      videoId: "-QcubD0G-A4",
+      patient: "Appendix Treatment | Patient Testimonial | Raj Hospitals",
+      desc: "Exceptional care and treatment experience.",
+      thumbnail: "https://img.youtube.com/vi/-QcubD0G-A4/maxresdefault.jpg",
+    },
+    {
+      videoId: "7aQnhMDBKRM",
+      patient: "Breathing Treatment | Patient Testimonial | Raj Hospitals",
+      desc: "Watch this real patient testimonial sharing their experience with breathing treatment at Raj Hospitals under the expert care of Dr. Sainik Dutta.",
+      thumbnail: "https://img.youtube.com/vi/7aQnhMDBKRM/maxresdefault.jpg",
+    },
+    {
+      videoId: "yThRjkoljvc",
+      patient: "Jaundice Treatment | Patient Testimonial | Raj Hospitals",
+      desc: "Watch this real patient testimonial where Ms. Divya Kumari shares her experience of jaundice treatment at Raj Hospitals under the expert care of Dr. Ravish Ranjan.",
+      thumbnail: "https://img.youtube.com/vi/yThRjkoljvc/maxresdefault.jpg",
+    },
+    {
+      videoId: "aQBEpvueG5U",
+      patient: "Jaundice Treatment | Patient Testimonial | Raj Hospitals",
+      desc: "Watch this real patient testimonial where Mrs. Anita Kumari shares her experience of jaundice treatment at Raj Hospitals under the expert care of Dr. Ravish Ranjan.",
+      thumbnail: "https://img.youtube.com/vi/aQBEpvueG5U/maxresdefault.jpg",
+    },
+    {
+      videoId: "nrBUSAEFOnc",
+      patient: "Little Finger Fracture Treatment | Patient Testimonial | Raj Hospitals",
+      desc: "After slipping in his washroom, Mr. Aniket suffered a fracture in the little finger of his right hand. He was immediately brought to the Emergency Department at Raj Hospitals, where an X-ray confirmed the fracture. The surgery was successfully performed by Dr. Mozammil Pheroz using K-wire fixation.",
+      thumbnail: "https://img.youtube.com/vi/nrBUSAEFOnc/maxresdefault.jpg",
     },
   ];
 
