@@ -55,7 +55,7 @@ const About = () => {
   },
   {
     year: "1992–94",
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop",
+    image: "assets/About-img/timeline-raj.webp",
     achievements: [
     "Introduced Endoscopic, ENT Microsurgeries & Laparoscopic Surgeries",
     "Added twin/triple sharing rooms & a 2-bed ICU (total 34 beds)",
