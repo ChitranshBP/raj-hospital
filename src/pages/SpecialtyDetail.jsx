@@ -226,7 +226,7 @@ const SpecialtyDetail = () => {
       longDescription: 'The Department of Gastroenterology & Endoscopy at Raj Hospitals provides top medical services for digestive system disorders including gastroenterology, hepatology, and gastrointestinal surgery. Our minimally invasive procedures like laparoscopy and endoscopy offer faster recovery, fewer complications and less post-operative follow-up. We are among few centers offering scarless minimal access surgery and advanced laparoscopic, biliary, pancreatic, and colorectal oncologic procedures.',
 
       services: [
-        { title: 'Therapeutic and Diagnostic Upper GI Endoscopy', description: 'Advanced diagnostic and therapeutic procedures for the upper gastrointestinal tract.', image: '/assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Therapeutic and Diagnostic.webp' },
+        { title: 'Therapeutic and Diagnostic Upper GI Endoscopy', description: 'Advanced diagnostic and therapeutic procedures for the upper gastrointestinal tract.', image: '/assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Upper-GI-Endoscopy-Indian.png' },
         { title: 'Lower GI Endoscopy (Colonoscopy)', description: 'Examination and treatment of the lower gastrointestinal tract using colonoscopy techniques.', image: '/assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Lower GI Endoscopy (Colonoscopy).webp' },
         { title: 'ERCP (Endoscopic Retrograde Cholangiopancreatography)', description: 'Diagnostic and therapeutic procedure to treat biliary and pancreatic duct disorders.', image: '/assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/ERCP (Endoscopic-Retrograde).webp' },
         { title: 'Endoscopic Ultrasound (EUS)', description: 'Advanced imaging technique combining endoscopy and ultrasound to diagnose pancreatic and GI disorders.', image: '/assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/ERCP,-EUS,-Hepatitis-Care.webp' },
@@ -374,7 +374,7 @@ const SpecialtyDetail = () => {
       shortDescription: 'Advanced ICU services for medical, surgical, cardiac, and neuro-critical patients.',
       longDescription: 'Raj Hospitals’ Critical Care Department provides intensive, round-the-clock monitoring and management for patients with life-threatening medical and surgical conditions. With modern ICUs, specialized life-support technology, and an expert multidisciplinary team, we deliver world-class care to critically ill patients.',
       services: [
-        { title: 'Cardiac & Neuro ICU', description: 'Expert cardiac and neurological intensive care with advanced monitoring systems.', image: '/assets/specialties/Critical Care & Emergency/Cardiac & Neuro ICU.webp' },
+        { title: 'Cardiac & Neuro ICU', description: 'Expert cardiac and neurological intensive care with advanced monitoring systems.', image: '/assets/specialties/Critical Care & Emergency/Cardiac-Neuro-ICU-Indian.png' },
         { title: 'Medical & Surgical ICU', description: '24/7 support for complex medical and surgical cases.', image: '/assets/specialties/Critical Care & Emergency/Medical & Surgical-ICU.webp' },
         { title: 'Neuro Critical Care', description: 'Comprehensive neurocritical management for stroke and head injuries.', image: '/assets/specialties/Critical Care & Emergency/Neuro-Care.webp' },
         { title: 'Haemodialysis', description: 'Critical renal support for acute or chronic kidney injuries.', image: '/assets/specialties/Critical Care & Emergency/Haemodialysis.webp' },
@@ -384,7 +384,7 @@ const SpecialtyDetail = () => {
         { title: 'Difficult Airway Management', description: 'Expert critical airway handling for ventilated patients.', image: '/assets/specialties/Critical Care & Emergency/Difficult-Airway-Management.webp' },
         { title: 'Isolation Rooms', description: 'Positive and negative pressure rooms for infection-controlled therapy.', image: '/assets/specialties/Critical Care & Emergency/Positive & Negative-Pressure-Isolation-Rooms.webp' },
         { title: 'ICU Ultrasound (POCUS)', description: 'Bedside ultrasound diagnostics and interventions.', image: '/assets/specialties/Critical Care & Emergency/Ultrasound-in-ICU.webp' },
-        { title: 'Pre & Post-Procedure Monitoring', description: 'Continuous patient observation before and after interventions.', image: '/assets/specialties/Critical Care & Emergency/Pre & Post-Procedure-Monitoring.webp' },
+        { title: 'Pre & Post-Procedure Monitoring', description: 'Continuous patient observation before and after interventions.', image: '/assets/specialties/Critical Care & Emergency/Pre-Post-Monitoring-Indian.png' },
         { title: 'Research in Critical Care', description: 'Ongoing innovation in life support and intensive monitoring.', image: '/assets/specialties/Critical Care & Emergency/Research in-Critical-Care.webp' }
       ],
       facilities: [
@@ -445,11 +445,11 @@ const SpecialtyDetail = () => {
       shortDescription: '24/7 Emergency & Trauma Care with rapid response systems.',
       longDescription: 'The Emergency Medicine Department at Raj Hospitals ensures immediate and effective care for all acute medical and trauma cases. Our experienced emergency consultants, trained paramedics, and ICUs on Wheels team guarantee lifesaving interventions within the golden hour.',
       services: [
-        { title: '24 × 7 Emergency Consultant', description: 'Immediate response to medical, trauma, cardiac, and accident emergencies.', image: '/assets/specialties/Critical Care & Emergency/24-7consultant.webp' },
+        { title: '24 × 7 Emergency Consultant', description: 'Immediate response to medical, trauma, cardiac, and accident emergencies.', image: '/assets/specialties/Critical Care & Emergency/Emergency-Consultant-Indian.png' },
         { title: 'Emergency, Trauma & Acute Care', description: 'Swift management of accidents, trauma, and acute medical conditions.', image: '/assets/specialties/Critical Care & Emergency/Trauma.webp' },
         { title: 'ICU On Wheels', description: 'Fully equipped ambulances start advanced life support during transfer.', image: '/assets/specialties/Critical Care & Emergency/ICU-On-Wheels.webp' },
         { title: 'Dedicated Emergency Unit (10 Beds)', description: 'Multi-bed setup to handle concurrent emergencies.', image: '/assets/specialties/Critical Care & Emergency/bed.webp' },
-        { title: 'Special Minor Procedure Room', description: 'Space for emergency surgical and stabilizing procedures.', image: '/assets/specialties/Critical Care & Emergency/Special-Mino- Procedure-Room.webp' },
+        { title: 'Special Minor Procedure Room', description: 'Space for emergency surgical and stabilizing procedures.', image: '/assets/specialties/Critical Care & Emergency/Minor-Procedure-Room-Indian.png' },
         { title: 'Multidisciplinary Emergency Team', description: 'Emergency physicians, surgeons, cardiologists, and orthopaedists working in coordination.', image: '/assets/specialties/Critical Care & Emergency/Multidisciplinary.webp' }
       ],
       facilities: [
@@ -492,7 +492,7 @@ const SpecialtyDetail = () => {
         { title: 'Thoracoscopic (Lung) Surgeries', description: 'Minimally invasive surgical management of chest and lung conditions.', image: '/assets/specialties/Minimal Access Surgery/Thoracoscopic.webp' },
         { title: 'Bariatric (Weight Loss) & GI Surgeries', description: 'Weight-loss and gastrointestinal surgeries for obesity and digestive disorders.', image: '/assets/specialties/Minimal Access Surgery/Bariatric.webp' },
         { title: 'Laparoscopy Surgery', description: 'Keyhole procedures for faster recovery, less scarring and better results.', image: '/assets/specialties/Minimal Access Surgery/Laparoscopy-Surgery.webp' },
-        { title: 'Laser Surgery For Proctology', description: 'Painless, advanced treatment for fissures, fistulas, piles, and hemorrhoids using laser.', image: '/assets/specialties/Minimal Access Surgery/Laser-Surgery-For-Proctology.webp' },
+        { title: 'Laser Surgery For Proctology', description: 'Painless, advanced treatment for fissures, fistulas, piles, and hemorrhoids using laser.', image: '/assets/specialties/Minimal Access Surgery/Laser-Proctology-Indian.png' },
         { title: 'Diagnostic and Therapeutic Endoscopy', description: 'Procedures for both diagnosis and treatment using advanced endoscopic techniques.', image: '/assets/specialties/Minimal Access Surgery/Diagnostic-and-Therapeutic-Endoscopy.webp' }
       ],
 
@@ -680,11 +680,11 @@ const SpecialtyDetail = () => {
         { title: 'Dementias', description: 'Evaluation and treatment of Alzheimer’s disease, vascular dementia, and other dementias.', image: '/assets/specialties/Neurology/Dementias.webp' },
         { title: 'Emergency & Spine', description: 'Urgent surgical care for traumatic neurologic injuries.', image: '/assets/specialties/Neurology/Emergency & Spine.webp' },
         { title: 'Epilepsy', description: 'Diagnosis, medical management, and surgical options for seizure disorders.', image: '/assets/specialties/Neurology/Epilepsy.webp' },
-        { title: 'Headache', description: 'Diagnosis and treatment of chronic and severe headaches.', image: '/assets/specialties/Neurology/Headache.webp' },
+        { title: 'Headache', description: 'Diagnosis and treatment of chronic and severe headaches.', image: '/assets/specialties/Neurology/Headache-Indian.png' },
         { title: 'Head Injuries', description: 'Emergency and rehabilitative care for traumatic brain injuries.', image: '/assets/specialties/Neurology/Head-Injuries.webp' },
         { title: 'Motor Neuron Disease', description: 'Comprehensive care and symptom management.', image: '/assets/specialties/Neurology/Motor-Neuron-Disease.webp' },
         { title: 'Movement Disorders', description: 'Extensive care for complex movement disorders.', image: '/assets/specialties/Neurology/Movement-Disorders.webp' },
-        { title: 'Myasthenia Gravis', description: 'Diagnosis and treatment of this neuromuscular condition.', image: '/assets/specialties/Neurology/Myasthenia-Gravis.webp' },
+        { title: 'Myasthenia Gravis', description: 'Diagnosis and treatment of this neuromuscular condition.', image: '/assets/specialties/Neurology/Myasthenia-Gravis-Care-Indian.png' },
         { title: 'Myopathies', description: 'Diagnosis and treatment of muscle disorders.', image: '/assets/specialties/Neurology/Myopathies.webp' },
         { title: 'Neuro Infectious Disorders', description: 'Treatment for meningitis, encephalitis, CNS tuberculosis, Pott’s spine, etc.', image: '/assets/specialties/Neurology/Neur- Infectious-Disorders.webp' },
         { title: 'Neurology', description: 'Comprehensive neurological evaluations and treatments.', image: '/assets/specialties/Neurology/Neurology.webp' },
