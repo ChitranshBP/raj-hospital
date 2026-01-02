@@ -680,11 +680,11 @@ const SpecialtyDetail = () => {
         { title: 'Dementias', description: 'Evaluation and treatment of Alzheimer’s disease, vascular dementia, and other dementias.', image: '/assets/specialties/Neurology/Dementias.webp' },
         { title: 'Emergency & Spine', description: 'Urgent surgical care for traumatic neurologic injuries.', image: '/assets/specialties/Neurology/Emergency & Spine.webp' },
         { title: 'Epilepsy', description: 'Diagnosis, medical management, and surgical options for seizure disorders.', image: '/assets/specialties/Neurology/Epilepsy.webp' },
-        { title: 'Headache', description: 'Diagnosis and treatment of chronic and severe headaches.', image: '/assets/specialties/Neurology/Headache-Indian.png' },
+        { title: 'Headache', description: 'Diagnosis and treatment of chronic and severe headaches.', image: '/assets/specialties/Neurology/Headache-New.webp' },
         { title: 'Head Injuries', description: 'Emergency and rehabilitative care for traumatic brain injuries.', image: '/assets/specialties/Neurology/Head-Injuries.webp' },
         { title: 'Motor Neuron Disease', description: 'Comprehensive care and symptom management.', image: '/assets/specialties/Neurology/Motor-Neuron-Disease.webp' },
         { title: 'Movement Disorders', description: 'Extensive care for complex movement disorders.', image: '/assets/specialties/Neurology/Movement-Disorders.webp' },
-        { title: 'Myasthenia Gravis', description: 'Diagnosis and treatment of this neuromuscular condition.', image: '/assets/specialties/Neurology/Myasthenia-Gravis-Care-Indian.png' },
+        { title: 'Myasthenia Gravis', description: 'Diagnosis and treatment of this neuromuscular condition.', image: '/assets/specialties/Neurology/Myasthenia-Gravis-New.webp' },
         { title: 'Myopathies', description: 'Diagnosis and treatment of muscle disorders.', image: '/assets/specialties/Neurology/Myopathies.webp' },
         { title: 'Neuro Infectious Disorders', description: 'Treatment for meningitis, encephalitis, CNS tuberculosis, Pott’s spine, etc.', image: '/assets/specialties/Neurology/Neur- Infectious-Disorders.webp' },
         { title: 'Neurology', description: 'Comprehensive neurological evaluations and treatments.', image: '/assets/specialties/Neurology/Neurology.webp' },
@@ -878,12 +878,12 @@ const SpecialtyDetail = () => {
         {
           title: 'Spine Osteoporosis',
           description: 'Comprehensive diagnosis and treatment for spine osteoporosis to prevent fractures and maintain bone strength.',
-          image: '/assets/specialties/Orthopaedics/Spine-Osteoporosis.webp'
+          image: '/assets/specialties/Orthopaedics/Spine-Osteoporosis-New.webp'
         },
         {
           title: 'Arthritis',
           description: 'Expert care and advanced therapies for arthritis to reduce pain, improve joint function, and enhance quality of life.',
-          image: '/assets/specialties/Orthopaedics/Arthritis.webp'
+          image: '/assets/specialties/Orthopaedics/Arthritis-New.webp'
         },
 
         { title: 'Joint Replacements – Knee, Hip, Shoulder, Elbow & Ankle', description: 'Advanced joint replacement surgeries for multiple joints ensuring mobility and pain relief.', image: '/assets/specialties/Orthopaedics/Joint-Replacements.webp' },
@@ -1454,8 +1454,8 @@ const SpecialtyDetail = () => {
         { title: 'Buttock & Thigh Lift', description: 'Reshaping procedures for better contour and body proportion.', image: '/assets/specialties/Aesthetic & Reconstructive Surgery/Buttock & Thigh-Lift.webp' },
         { title: 'Liposuction', description: 'Surgical fat removal for body shaping and sculpting.', image: '/assets/specialties/Aesthetic & Reconstructive Surgery/Liposuction.webp' },
         { title: 'Blepharoplasty (Eyelid Surgery)', description: 'Correct drooping eyelids and rejuvenate the eye area.', image: '/assets/specialties/Aesthetic & Reconstructive Surgery/Blepharoplasty.webp' },
-        { title: 'Chin & Facial Surgery', description: 'Corrective surgeries to enhance jawline and chin structure.', image: '/assets/specialties/Aesthetic & Reconstructive Surgery/Chin & Facial-Surgery.webp' },
-        { title: 'Non-surgical Face Rejuvenation', description: 'Advanced non-invasive treatments for anti-aging & skin tightening.', image: '/assets/specialties/Aesthetic & Reconstructive Surgery/Non-surgical-Face-Rejuvenation.webp' },
+        { title: 'Chin & Facial Surgery', description: 'Corrective surgeries to enhance jawline and chin structure.', image: '/assets/specialties/Aesthetic & Reconstructive Surgery/Chin-Facial-Surgery-New.webp' },
+        { title: 'Non-surgical Face Rejuvenation', description: 'Advanced non-invasive treatments for anti-aging & skin tightening.', image: '/assets/specialties/Aesthetic & Reconstructive Surgery/Non-Surgical-Face-Rejuvenation-New.webp' },
         { title: 'Non-surgical Rhinoplasty', description: 'Non-invasive reshaping of the nose for balanced facial aesthetics.', image: '/assets/specialties/Aesthetic & Reconstructive Surgery/Non-surgical-Rhinoplasty.webp' }
       ],
 
