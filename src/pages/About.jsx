@@ -307,7 +307,7 @@ const About = () => {
             {/* Chairman Image */}
             <div className="md:w-1/4 flex justify-center p-6">
               <img
-                  src="assets/home-img/Picture1.png"
+                  src="assets/home-img/Picture1.webp"
                   alt="Chairman - Raj Hospital"
                   className="w-56 h-56 md:w-72 md:h-72 object-cover rounded-xl shadow-lg" />
 

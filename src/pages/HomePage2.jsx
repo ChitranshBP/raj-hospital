@@ -224,17 +224,17 @@ const sections = {
     {
       videoId: "x6fgmqLUabI",
       title: "What is Black Fungus? | All You Need to Know About Black Fungus | Dr. Mohon Ahmed",
-      thumbnail: "https://img.youtube.com/vi/x6fgmqLUabI/maxresdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/x6fgmqLUabI/maxresdefault.webp",
     },
     {
       videoId: "taKkhV37BwE",
       title: "Nephrotic Syndrome - Dr. Avinash Kumar Dubey",
-      thumbnail: "https://img.youtube.com/vi/taKkhV37BwE/maxresdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/taKkhV37BwE/maxresdefault.webp",
     },
     {
       videoId: "cJxWXwRX-GM",
       title: "World Hepatitis Day 2023: Important Facts About Hepatitis",
-      thumbnail: "https://img.youtube.com/vi/cJxWXwRX-GM/maxresdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/cJxWXwRX-GM/maxresdefault.webp",
     },
   ],
   whyChoose: [
@@ -339,25 +339,25 @@ const sections = {
       videoId: "Gi1WhJ1dR6g",
       patient: "Emergency Brain Care That Saved Prem Kumar Singh | Raj Hospitals",
       desc: "I felt cared for every step of the way.",
-      thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.webp",
     },
     {
       videoId: "HARE579wkdY",
       patient: "Knee replacement surgery | Raj Hospitals",
       desc: "The doctors and staff were exceptional.",
-      thumbnail: "https://img.youtube.com/vi/HARE579wkdY/maxresdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/HARE579wkdY/maxresdefault.webp",
     },
     {
       videoId: "mHiO2RYdgds",
       patient: "Cancer treatment | Patient Testimonial ",
       desc: "The doctors and staff were exceptional.",
-      thumbnail: "https://img.youtube.com/vi/mHiO2RYdgds/maxresdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/mHiO2RYdgds/maxresdefault.webp",
     },
     {
       videoId: "vg59yGKWz_s",
       patient: "Neurosurgery Success Story at Raj Hospitals",
       desc: "Under the expert care of Dr. Ahmad Hussain (Neurosurgeon) and Dr. Neelam Kumari, our patient has made an incredible recovery.",
-      thumbnail: "https://img.youtube.com/vi/vg59yGKWz_s/maxresdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/vg59yGKWz_s/maxresdefault.webp",
     },
   ],
   patients: [

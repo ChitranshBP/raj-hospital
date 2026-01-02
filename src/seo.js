@@ -15,7 +15,7 @@ const generalPagesMeta = [
       "@type": "Hospital",
       name: "Raj Hospitals",
       url: "https://rajhospitals.com/",
-      logo: "https://rajhospitals.com/assets/logo.png",
+      logo: "https://rajhospitals.com/assets/logo.webp",
       description:
         "Raj Hospitals in Ranchi offers comprehensive multi-speciality healthcare services with expert doctors and modern medical facilities.",
       telephone: "+919771488888",
@@ -77,7 +77,7 @@ const generalPagesMeta = [
       "@type": "MedicalBusiness",
       name: "Raj Hospitals",
       url: "https://rajhospitals.com/about.php",
-      logo: "https://rajhospitals.com/assets/logo.png",
+      logo: "https://rajhospitals.com/assets/logo.webp",
       description:
         "Raj Hospitals is a trusted multi-speciality hospital in Ranchi offering comprehensive healthcare services with expert medical teams and advanced facilities.",
       telephone: "+919771488888",
@@ -194,7 +194,7 @@ const generalPagesMeta = [
         "@type": "Hospital",
         name: "Raj Hospitals",
         sameAs: "https://rajhospitals.com",
-        logo: "https://rajhospitals.com/assets/logo.png",
+        logo: "https://rajhospitals.com/assets/logo.webp",
       },
       jobLocation: {
         "@type": "Place",

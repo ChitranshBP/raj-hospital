@@ -226,7 +226,7 @@ const SpecialtyDetail = () => {
       longDescription: 'The Department of Gastroenterology & Endoscopy at Raj Hospitals provides top medical services for digestive system disorders including gastroenterology, hepatology, and gastrointestinal surgery. Our minimally invasive procedures like laparoscopy and endoscopy offer faster recovery, fewer complications and less post-operative follow-up. We are among few centers offering scarless minimal access surgery and advanced laparoscopic, biliary, pancreatic, and colorectal oncologic procedures.',
 
       services: [
-        { title: 'Therapeutic and Diagnostic Upper GI Endoscopy', description: 'Advanced diagnostic and therapeutic procedures for the upper gastrointestinal tract.', image: '/assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Upper-GI-Endoscopy-Indian.png' },
+        { title: 'Therapeutic and Diagnostic Upper GI Endoscopy', description: 'Advanced diagnostic and therapeutic procedures for the upper gastrointestinal tract.', image: '/assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Upper-GI-Endoscopy-Indian.webp' },
         { title: 'Lower GI Endoscopy (Colonoscopy)', description: 'Examination and treatment of the lower gastrointestinal tract using colonoscopy techniques.', image: '/assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/Lower GI Endoscopy (Colonoscopy).webp' },
         { title: 'ERCP (Endoscopic Retrograde Cholangiopancreatography)', description: 'Diagnostic and therapeutic procedure to treat biliary and pancreatic duct disorders.', image: '/assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/ERCP (Endoscopic-Retrograde).webp' },
         { title: 'Endoscopic Ultrasound (EUS)', description: 'Advanced imaging technique combining endoscopy and ultrasound to diagnose pancreatic and GI disorders.', image: '/assets/specialties/Gastroenterology & Endoscopy/Treatments we offer/ERCP,-EUS,-Hepatitis-Care.webp' },
@@ -374,7 +374,7 @@ const SpecialtyDetail = () => {
       shortDescription: 'Advanced ICU services for medical, surgical, cardiac, and neuro-critical patients.',
       longDescription: 'Raj Hospitals’ Critical Care Department provides intensive, round-the-clock monitoring and management for patients with life-threatening medical and surgical conditions. With modern ICUs, specialized life-support technology, and an expert multidisciplinary team, we deliver world-class care to critically ill patients.',
       services: [
-        { title: 'Cardiac & Neuro ICU', description: 'Expert cardiac and neurological intensive care with advanced monitoring systems.', image: '/assets/specialties/Critical Care & Emergency/Cardiac-Neuro-ICU-Indian.png' },
+        { title: 'Cardiac & Neuro ICU', description: 'Expert cardiac and neurological intensive care with advanced monitoring systems.', image: '/assets/specialties/Critical Care & Emergency/Cardiac-Neuro-ICU-Indian.webp' },
         { title: 'Medical & Surgical ICU', description: '24/7 support for complex medical and surgical cases.', image: '/assets/specialties/Critical Care & Emergency/Medical & Surgical-ICU.webp' },
         { title: 'Neuro Critical Care', description: 'Comprehensive neurocritical management for stroke and head injuries.', image: '/assets/specialties/Critical Care & Emergency/Neuro-Care.webp' },
         { title: 'Haemodialysis', description: 'Critical renal support for acute or chronic kidney injuries.', image: '/assets/specialties/Critical Care & Emergency/Haemodialysis.webp' },
@@ -384,7 +384,7 @@ const SpecialtyDetail = () => {
         { title: 'Difficult Airway Management', description: 'Expert critical airway handling for ventilated patients.', image: '/assets/specialties/Critical Care & Emergency/Difficult-Airway-Management.webp' },
         { title: 'Isolation Rooms', description: 'Positive and negative pressure rooms for infection-controlled therapy.', image: '/assets/specialties/Critical Care & Emergency/Positive & Negative-Pressure-Isolation-Rooms.webp' },
         { title: 'ICU Ultrasound (POCUS)', description: 'Bedside ultrasound diagnostics and interventions.', image: '/assets/specialties/Critical Care & Emergency/Ultrasound-in-ICU.webp' },
-        { title: 'Pre & Post-Procedure Monitoring', description: 'Continuous patient observation before and after interventions.', image: '/assets/specialties/Critical Care & Emergency/Pre-Post-Monitoring-Indian.png' },
+        { title: 'Pre & Post-Procedure Monitoring', description: 'Continuous patient observation before and after interventions.', image: '/assets/specialties/Critical Care & Emergency/Pre-Post-Monitoring-Indian.webp' },
         { title: 'Research in Critical Care', description: 'Ongoing innovation in life support and intensive monitoring.', image: '/assets/specialties/Critical Care & Emergency/Research in-Critical-Care.webp' }
       ],
       facilities: [
@@ -445,11 +445,11 @@ const SpecialtyDetail = () => {
       shortDescription: '24/7 Emergency & Trauma Care with rapid response systems.',
       longDescription: 'The Emergency Medicine Department at Raj Hospitals ensures immediate and effective care for all acute medical and trauma cases. Our experienced emergency consultants, trained paramedics, and ICUs on Wheels team guarantee lifesaving interventions within the golden hour.',
       services: [
-        { title: '24 × 7 Emergency Consultant', description: 'Immediate response to medical, trauma, cardiac, and accident emergencies.', image: '/assets/specialties/Critical Care & Emergency/Emergency-Consultant-Indian.png' },
+        { title: '24 × 7 Emergency Consultant', description: 'Immediate response to medical, trauma, cardiac, and accident emergencies.', image: '/assets/specialties/Critical Care & Emergency/Emergency-Consultant-Indian.webp' },
         { title: 'Emergency, Trauma & Acute Care', description: 'Swift management of accidents, trauma, and acute medical conditions.', image: '/assets/specialties/Critical Care & Emergency/Trauma.webp' },
         { title: 'ICU On Wheels', description: 'Fully equipped ambulances start advanced life support during transfer.', image: '/assets/specialties/Critical Care & Emergency/ICU-On-Wheels.webp' },
         { title: 'Dedicated Emergency Unit (10 Beds)', description: 'Multi-bed setup to handle concurrent emergencies.', image: '/assets/specialties/Critical Care & Emergency/bed.webp' },
-        { title: 'Special Minor Procedure Room', description: 'Space for emergency surgical and stabilizing procedures.', image: '/assets/specialties/Critical Care & Emergency/Minor-Procedure-Room-Indian.png' },
+        { title: 'Special Minor Procedure Room', description: 'Space for emergency surgical and stabilizing procedures.', image: '/assets/specialties/Critical Care & Emergency/Minor-Procedure-Room-Indian.webp' },
         { title: 'Multidisciplinary Emergency Team', description: 'Emergency physicians, surgeons, cardiologists, and orthopaedists working in coordination.', image: '/assets/specialties/Critical Care & Emergency/Multidisciplinary.webp' }
       ],
       facilities: [
@@ -492,7 +492,7 @@ const SpecialtyDetail = () => {
         { title: 'Thoracoscopic (Lung) Surgeries', description: 'Minimally invasive surgical management of chest and lung conditions.', image: '/assets/specialties/Minimal Access Surgery/Thoracoscopic.webp' },
         { title: 'Bariatric (Weight Loss) & GI Surgeries', description: 'Weight-loss and gastrointestinal surgeries for obesity and digestive disorders.', image: '/assets/specialties/Minimal Access Surgery/Bariatric.webp' },
         { title: 'Laparoscopy Surgery', description: 'Keyhole procedures for faster recovery, less scarring and better results.', image: '/assets/specialties/Minimal Access Surgery/Laparoscopy-Surgery.webp' },
-        { title: 'Laser Surgery For Proctology', description: 'Painless, advanced treatment for fissures, fistulas, piles, and hemorrhoids using laser.', image: '/assets/specialties/Minimal Access Surgery/Laser-Proctology-Indian.png' },
+        { title: 'Laser Surgery For Proctology', description: 'Painless, advanced treatment for fissures, fistulas, piles, and hemorrhoids using laser.', image: '/assets/specialties/Minimal Access Surgery/Laser-Proctology-Indian.webp' },
         { title: 'Diagnostic and Therapeutic Endoscopy', description: 'Procedures for both diagnosis and treatment using advanced endoscopic techniques.', image: '/assets/specialties/Minimal Access Surgery/Diagnostic-and-Therapeutic-Endoscopy.webp' }
       ],
 
@@ -1550,10 +1550,10 @@ const SpecialtyDetail = () => {
 
       services: [
         { title: 'Cosmetic Dentistry & Smile Designing', description: 'Aesthetic treatments including smile designing, veneers, and teeth whitening to enhance your smile.', image: '/assets/specialties/Dental/Cosmetic-Dentistry & Smile-Designing.webp' },
-        { title: 'Dental Filling', description: 'Advanced tooth-colored fillings to treat cavities and restore teeth functionally and aesthetically.', image: '/assets/specialties/Dental/Dental-Filling.webp' },
+        { title: 'Dental Filling', description: 'Advanced tooth-colored fillings to treat cavities and restore teeth functionally and aesthetically.', image: '/assets/specialties/Dental/Dental-Filling-Indian.webp' },
         { title: 'Root Canal Treatment (RCT)', description: 'Pain-free root canal treatments with advanced rotary endodontics for permanent tooth preservation.', image: '/assets/specialties/Dental/Root-Canal-Treatment.webp' },
         { title: 'Crowns & Bridges', description: 'Prosthetic restorations for missing or damaged teeth ensuring long-lasting strength and functionality.', image: '/assets/specialties/Dental/Crowns & Bridges.webp' },
-        { title: 'Scaling & Polishing', description: 'Professional cleaning to maintain oral hygiene and prevent gum disease.', image: '/assets/specialties/Dental/Scaling & Polishing.webp' },
+        { title: 'Scaling & Polishing', description: 'Professional cleaning to maintain oral hygiene and prevent gum disease.', image: '/assets/specialties/Dental/Scaling-Polishing-Indian.webp' },
         { title: 'Preventive Dentistry', description: 'Regular cleanings, fluoride treatments, and sealants to prevent cavities and gum issues early.', image: '/assets/specialties/Dental/Preventive-Dentistry.webp' },
         { title: 'Teeth Whitening (Bleaching)', description: 'Safe and effective whitening treatments to brighten stained or yellowed teeth.', image: '/assets/specialties/Dental/Teeth-Whitening.webp' },
         { title: 'Removable & Complete Dentures', description: 'Custom dentures for lost teeth ensuring functional bite and natural aesthetics.', image: '/assets/specialties/Dental/Removable & Complete-Dentures.webp' },
@@ -1561,7 +1561,7 @@ const SpecialtyDetail = () => {
         { title: 'Implant Surgery', description: 'Permanent solution for missing teeth with titanium dental implants.', image: '/assets/specialties/Dental/Implant-Surgery.webp' },
         { title: 'Laser Gum Surgery & Pyorrhea Care', description: 'Advanced laser treatments for gum diseases and periodontal therapy.', image: '/assets/specialties/Dental/Laser-Gum-Surgery & Pyorrhea-Care.webp' },
         { title: 'Orthodontics & Braces', description: 'Treatment for crooked teeth including traditional braces and modern aligners.', image: '/assets/specialties/Dental/Orthodontics & Braces.webp' },
-        { title: 'Paediatric Dentistry', description: 'Comprehensive dental care for children including preventive and corrective treatments.', image: '/assets/specialties/Dental/Paediatric-Dentistry.webp' }
+        { title: 'Paediatric Dentistry', description: 'Comprehensive dental care for children including preventive and corrective treatments.', image: '/assets/specialties/Dental/Paediatric-Dentistry-Indian.webp' }
       ],
 
       facilities: [
@@ -1743,7 +1743,7 @@ const SpecialtyDetail = () => {
         { title: 'Sleep Apnea & Snoring Disorders', description: 'Specialized diagnosis and treatment for obstructive sleep apnea and snoring-related ENT conditions.', image: '/assets/specialties/ENT/Sleep-Apnea & Snoring-Disorders.webp' },
         { title: 'Functional Endoscopic Sinus Surgery (FESS)', description: 'Minimally invasive sinus surgery for chronic sinusitis and nasal blockages.', image: '/assets/specialties/ENT/Functional.webp' },
         { title: 'Audiology & Hearing Aids', description: 'Hearing assessments, audiometry, and advanced hearing aids for hearing loss.', image: '/assets/specialties/ENT/Audiology & Hearing-Aids.webp' },
-        { title: 'Speech Therapy & Voice Disorders', description: 'Phonosurgery, voice rehabilitation, and speech therapy programs.', image: '/assets/specialties/ENT/Speech-Therapy & Voice-Disorders.webp' },
+        { title: 'Speech Therapy & Voice Disorders', description: 'Phonosurgery, voice rehabilitation, and speech therapy programs.', image: '/assets/specialties/ENT/Speech-Therapy-Indian.webp' },
         { title: 'Pediatric ENT Care', description: 'Dedicated treatments for children including tonsillitis, adenoidectomy, and ear infections.', image: '/assets/specialties/ENT/Pediatric-ENT-Care.webp' }
       ],
 
@@ -1954,10 +1954,10 @@ const SpecialtyDetail = () => {
       longDescription: `The Paediatrics Department at Raj Hospitals delivers comprehensive, state-of-the-art healthcare services tailored for children from birth up to sixteen years. With dedicated pediatricians, skilled nurses, and child life experts, the department ensures the highest standards in child healthcare, diagnosis, compassionate support, preventive medicine, and advanced treatments. Specialized services range from pediatric and neonatal intensive care to immunization and surgical management for various childhood diseases and health concerns.`,
 
       services: [
-        { title: 'Respiratory support (Ventilation & Surfactant)', description: 'Advanced management for respiratory distress in newborns requiring ventilators and surfactant therapy.', image: '/assets/specialties/Paediatrics & Neonatology/Respiratory-support.webp' },
+        { title: 'Respiratory support (Ventilation & Surfactant)', description: 'Advanced management for respiratory distress in newborns requiring ventilators and surfactant therapy.', image: '/assets/specialties/Paediatrics & Neonatology/Respiratory-Support-Indian.webp' },
         { title: 'Neonatal jaundice (DVET)', description: 'Management of severe newborn jaundice with double volume exchange transfusion (DVET).', image: '/assets/specialties/Paediatrics & Neonatology/Neonatal-jaundice.webp' },
         { title: 'Neonatal sepsis & convulsions', description: 'Critical care for life-threatening newborn infections and treatment for neonatal convulsions.', image: '/assets/specialties/Paediatrics & Neonatology/Neonatal-sepsis.webp' },
-        { title: 'Common pediatric ailments', description: 'Comprehensive care for conditions such as pneumonia, pediatric asthma, allergic disorders, gastrointestinal (GI) diseases, and childhood convulsions.', image: '/assets/specialties/Paediatrics & Neonatology/Common-pediatric-ailments.webp' }
+        { title: 'Common pediatric ailments', description: 'Comprehensive care for conditions such as pneumonia, pediatric asthma, allergic disorders, gastrointestinal (GI) diseases, and childhood convulsions.', image: '/assets/specialties/Paediatrics & Neonatology/Common-Pediatric-Ailments-Indian.webp' }
       ],
 
       facilities: [
@@ -2213,7 +2213,7 @@ const SpecialtyDetail = () => {
       id: 'psychiatry-and-mental-health',
       title: 'Psychiatry & Mental Health',
       icon: FiHeart,
-      bannerImage: '/assets/specialties/Psychiatry & Mental Health/Psychiatry & Mental-Health.webp',
+      bannerImage: '/assets/specialties/Psychiatry & Mental Health/Psychiatry-Banner-Indian.webp',
       shortDescription: 'Comprehensive mental health services for diagnosis, treatment, and rehabilitation of psychiatric disorders.',
       longDescription: `The Psychiatry & Mental Health Department at Raj Hospitals offers compassionate, evidence-based care for individuals facing mental health challenges. Our multidisciplinary team provides diagnosis, medical management, psychotherapy, and rehabilitation for a range of psychiatric conditions including depression, anxiety disorders, bipolar disorder, schizophrenia, and stress-related illnesses. We are committed to reducing stigma and promoting mental wellness through patient-centered care, family support, and community outreach.`,
 
@@ -2222,7 +2222,7 @@ const SpecialtyDetail = () => {
         { title: 'Medication Management', description: 'Safe and effective use of psychiatric medications tailored to individual needs.', image: '/assets/specialties/Psychiatry & Mental Health/Medication-Management.webp' },
         { title: 'Psychotherapy & Counseling', description: 'Individual, family, and group therapy sessions to aid coping, recovery, and behavioral change.', image: '/assets/specialties/Psychiatry & Mental Health/Psychotherapy & Counseling.webp' },
         { title: 'Addiction Treatment', description: 'Rehabilitation and support for substance use disorders.', image: '/assets/specialties/Psychiatry & Mental Health/Addiction-Treatment.webp' },
-        { title: 'Child & Adolescent Psychiatry', description: 'Specialized services addressing developmental and behavioral issues in young patients.', image: '/assets/specialties/Psychiatry & Mental Health/Child & Adolescent-Psychiatry.webp' }
+        { title: 'Child & Adolescent Psychiatry', description: 'Specialized services addressing developmental and behavioral issues in young patients.', image: '/assets/specialties/Psychiatry & Mental Health/Child-Psychiatry-Indian.webp' }
       ],
 
       facilities: [
@@ -2465,27 +2465,27 @@ const SpecialtyDetail = () => {
         {
           title: 'Neuro Infectious Disorder',
           description: "Expert management of neurological infections including Meningitis, Encephalitis, CNS Tuberculosis, and Pott's Spine.",
-          image: '/assets/specialties/Neurology-ad/Neuro-Infectious-Disorder.webp'
+          image: '/assets/specialties/Neurology-ad/Neuro-Infectious-Disorder-Indian.webp'
         },
         {
           title: 'Movement Disorder',
           description: 'Comprehensive care for movement disorders including Tremor, Dystonia, Chorea, and Athetosis.',
-          image: '/assets/specialties/Neurology-ad/Movement-Disorder.webp'
+          image: '/assets/specialties/Neurology-ad/Movement-Disorder-Indian.webp'
         },
         {
           title: 'Parkinson Disease and Atypical Parkinsonism',
           description: "Specialized treatment and management for Parkinson's Disease and Atypical Parkinsonism.",
-          image: '/assets/specialties/Neurology-ad/Parkinson-Disease.webp'
+          image: '/assets/specialties/Neurology-ad/Parkinson-Disease-Indian.webp'
         },
         {
           title: 'Spine Disorders',
           description: 'Treatment for spine-related neurological conditions including Cervical and Lumbosacral Spondylosis.',
-          image: '/assets/specialties/Neurology-ad/Spine-Disorders.webp'
+          image: '/assets/specialties/Neurology-ad/Spine-Disorders-Indian.webp'
         },
         {
           title: 'EEG (Electroencephalogram)',
           description: 'A painless test to record brain\'s electrical activity used for diagnosing epilepsy, seizures, and sleep disorders.',
-          image: '/assets/specialties/Neurology-ad/EEG.webp'
+          image: '/assets/specialties/Neurology-ad/EEG-Indian.webp'
         },
         {
           title: 'NCS (Nerve Conduction Study)',
