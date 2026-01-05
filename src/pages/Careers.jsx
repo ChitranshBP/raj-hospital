@@ -23,6 +23,8 @@ const Careers = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [showForm, setShowForm] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
+  const [selectedPosition, setSelectedPosition] = useState("");
+  const [customPosition, setCustomPosition] = useState("");
 
   // Get SEO data for careers page
   const careersPageMeta = pagesMeta.find(page => page.page === "careers");
@@ -32,252 +34,288 @@ const Careers = () => {
   const jobs = [
     {
       id: 1,
-      title: "Senior Cardiologist",
-      department: "Medical",
+      title: "General Duty Assistant",
+      department: "Support Staff",
       location: "Ranchi, Jharkhand",
       type: "Full-time",
-      postedDate: "April 10, 2024",
+      qualification: "GDA",
+      experience: "0-1 YRS",
+      positions: "8",
       description:
-        "We are seeking an experienced Cardiologist to join our Cardiology department. The ideal candidate will have extensive experience in interventional cardiology and cardiac care.",
+        "We are seeking dedicated General Duty Assistants to support our healthcare team in providing quality patient care and maintaining hospital operations.",
       requirements: [
-        "MD/DNB in Cardiology with DM/DNB super specialization",
-        "Minimum 8 years of experience post super specialization",
-        "Experience in interventional procedures and cardiac catheterization",
-        "Published research work preferred",
-        "Excellent communication and patient care skills",
+        "GDA qualification",
+        "0-1 year of experience",
+        "Good communication and interpersonal skills",
+        "Ability to work in shifts",
+        "Physical fitness to perform duties",
       ],
-
       responsibilities: [
-        "Diagnose and treat cardiovascular diseases",
-        "Perform interventional cardiac procedures",
-        "Manage cardiac emergencies",
-        "Collaborate with other specialists for comprehensive patient care",
-        "Participate in departmental meetings and continuing medical education",
+        "Assist nursing staff in patient care activities",
+        "Maintain cleanliness and hygiene in patient areas",
+        "Transport patients within the hospital",
+        "Support in routine hospital operations",
+        "Follow hospital protocols and safety guidelines",
       ],
     },
     {
       id: 2,
-      title: "Staff Nurse - ICU",
-      department: "Nursing",
+      title: "Ward Boy",
+      department: "Support Staff",
       location: "Ranchi, Jharkhand",
       type: "Full-time",
-      postedDate: "April 8, 2024",
+      qualification: "Matric",
+      experience: "0-1 YRS",
+      positions: "10",
       description:
-        "We are looking for dedicated ICU Nurses to provide high-quality care to critically ill patients. The role involves close monitoring and specialized care in our state-of-the-art ICU facility.",
+        "Join our team as a Ward Boy to assist in patient care and hospital maintenance. We are looking for dedicated individuals to support our healthcare services.",
       requirements: [
-        "BSc Nursing or GNM from a recognized institution",
-        "Minimum 2 years of experience in ICU/Critical Care",
-        "BLS and ACLS certification preferred",
-        "Knowledge of ventilator management and critical care protocols",
-        "Good communication skills and ability to work in high-stress environments",
+        "Matriculation (10th pass)",
+        "0-1 year of experience",
+        "Good physical health",
+        "Ability to work in hospital environment",
+        "Basic communication skills",
       ],
-
       responsibilities: [
-        "Monitor and assess critically ill patients",
-        "Administer medications and treatments as prescribed",
-        "Assist in emergency procedures and resuscitation",
-        "Maintain accurate patient records",
-        "Communicate effectively with medical team and patients' families",
+        "Assist in patient care under supervision",
+        "Maintain ward cleanliness and hygiene",
+        "Transport patients and medical equipment",
+        "Support nursing staff in daily activities",
+        "Ensure proper disposal of medical waste",
       ],
     },
     {
       id: 3,
-      title: "Radiologic Technologist",
-      department: "Diagnostic",
+      title: "Ward Girl",
+      department: "Support Staff",
       location: "Ranchi, Jharkhand",
       type: "Full-time",
-      postedDate: "April 5, 2024",
+      qualification: "Matric",
+      experience: "0-1 YRS",
+      positions: "6",
       description:
-        "Join our Radiology department as a Radiologic Technologist. You will operate various imaging equipment and work closely with our radiologists to provide accurate diagnostic services.",
+        "We are looking for dedicated Ward Girls to provide support in patient care and maintain cleanliness in hospital wards.",
       requirements: [
-        "Diploma/Degree in Radiologic Technology",
-        "Minimum 3 years of experience in a hospital setting",
-        "Experience with CT, MRI, and X-ray equipment",
-        "Knowledge of radiation safety protocols",
-        "Good technical and interpersonal skills",
+        "Matriculation (10th pass)",
+        "0-1 year of experience",
+        "Compassionate and caring attitude",
+        "Ability to work in shifts",
+        "Good interpersonal skills",
       ],
-
       responsibilities: [
-        "Operate imaging equipment including CT, MRI, and X-ray machines",
-        "Position patients correctly for imaging procedures",
-        "Ensure proper radiation safety measures",
-        "Maintain equipment and report any malfunctions",
-        "Assist radiologists during specialized procedures",
+        "Assist female patients with daily activities",
+        "Maintain cleanliness in female wards",
+        "Support nursing staff in patient care",
+        "Ensure patient comfort and dignity",
+        "Follow hospital hygiene protocols",
       ],
     },
     {
       id: 4,
-      title: "Hospital Administrator",
-      department: "Administration",
+      title: "Resident Medical Officer",
+      department: "Medical",
       location: "Ranchi, Jharkhand",
       type: "Full-time",
-      postedDate: "April 3, 2024",
+      qualification: "MBBS",
+      experience: "1-3 YRS",
+      positions: "3",
       description:
-        "We are seeking an experienced Hospital Administrator to oversee daily operations and ensure efficient management of hospital resources and staff.",
+        "We are seeking qualified MBBS doctors to join as Resident Medical Officers. Provide quality medical care and emergency services in our hospital.",
       requirements: [
-        "MBA in Healthcare Management or equivalent",
-        "Minimum 7 years of experience in hospital administration",
-        "Strong knowledge of healthcare regulations and policies",
-        "Excellent leadership and organizational skills",
-        "Experience in budgeting and financial management",
+        "MBBS degree from recognized institution",
+        "1-3 years of clinical experience",
+        "Valid medical registration",
+        "Good clinical knowledge and skills",
+        "Ability to handle emergency situations",
       ],
-
       responsibilities: [
-        "Oversee daily operations of the hospital",
-        "Develop and implement hospital policies and procedures",
-        "Manage hospital budget and resources",
-        "Ensure compliance with healthcare regulations",
-        "Coordinate with department heads for smooth functioning",
+        "Provide medical care to admitted patients",
+        "Handle emergency cases and critical patients",
+        "Conduct ward rounds and patient assessments",
+        "Maintain accurate medical records",
+        "Coordinate with senior consultants",
       ],
     },
     {
       id: 5,
-      title: "Physiotherapist",
-      department: "Rehabilitation",
+      title: "Assistant Nurse Supervisor",
+      department: "Nursing",
       location: "Ranchi, Jharkhand",
       type: "Full-time",
-      postedDate: "March 30, 2024",
+      qualification: "B.Sc/M.Sc",
+      experience: "5-8 YRS",
+      positions: "1",
       description:
-        "Join our rehabilitation team as a Physiotherapist. You will work with patients recovering from surgeries, injuries, and various medical conditions to improve their mobility and quality of life.",
+        "Join our nursing leadership team as Assistant Nurse Supervisor. Lead and mentor nursing staff to deliver exceptional patient care.",
       requirements: [
-        "Bachelor's/Master's degree in Physiotherapy",
-        "Minimum 2 years of clinical experience",
-        "Experience in orthopedic and neurological rehabilitation",
-        "Knowledge of modern physiotherapy techniques",
-        "Good patient handling and communication skills",
+        "B.Sc/M.Sc in Nursing",
+        "5-8 years of nursing experience",
+        "Strong leadership and management skills",
+        "Excellent clinical knowledge",
+        "Registered Nurse certification",
       ],
-
       responsibilities: [
-        "Assess patient mobility and physical limitations",
-        "Develop and implement rehabilitation plans",
-        "Provide therapeutic exercises and treatments",
-        "Monitor and document patient progress",
-        "Educate patients on home exercises and preventive measures",
+        "Supervise and coordinate nursing staff",
+        "Ensure quality patient care delivery",
+        "Conduct staff training and development",
+        "Monitor adherence to nursing protocols",
+        "Manage nursing schedules and resources",
       ],
     },
     {
       id: 6,
-      title: "Medical Lab Technician",
-      department: "Laboratory",
+      title: "Executive Accountant",
+      department: "Accounts",
       location: "Ranchi, Jharkhand",
       type: "Full-time",
-      postedDate: "March 28, 2024",
+      qualification: "B.com/M.com",
+      experience: "1-2 YRS",
+      positions: "1",
       description:
-        "We are looking for skilled Medical Lab Technicians to join our diagnostic laboratory. You will perform various laboratory tests and assist in accurate diagnosis of medical conditions.",
+        "We are seeking an experienced Executive Accountant to manage financial operations and ensure accurate accounting for our hospital.",
       requirements: [
-        "Diploma/Degree in Medical Laboratory Technology",
-        "Minimum 2 years of experience in a hospital laboratory",
-        "Knowledge of various laboratory techniques and equipment",
-        "Attention to detail and accuracy in work",
-        "Good technical and analytical skills",
+        "B.Com/M.Com degree",
+        "1-2 years of accounting experience",
+        "Knowledge of accounting software",
+        "Good analytical and numerical skills",
+        "Understanding of hospital finance preferred",
       ],
-
       responsibilities: [
-        "Collect and process patient samples",
-        "Perform laboratory tests including hematology, biochemistry, and microbiology",
-        "Maintain laboratory equipment and supplies",
-        "Ensure quality control and accurate documentation",
-        "Coordinate with doctors for special tests and urgent results",
+        "Maintain financial records and accounts",
+        "Prepare financial reports and statements",
+        "Handle billing and payment processing",
+        "Ensure compliance with accounting standards",
+        "Assist in budgeting and financial planning",
       ],
     },
     {
       id: 7,
-      title: "Dietitian",
-      department: "Nutrition",
+      title: "Multi Organ Transplant Coordinator",
+      department: "Medical",
       location: "Ranchi, Jharkhand",
       type: "Full-time",
-      postedDate: "March 25, 2024",
+      qualification: "BSW/MSW",
+      experience: "1 YR",
+      positions: "1",
       description:
-        "Join our nutrition department as a Dietitian. You will provide nutritional counseling to patients and develop dietary plans based on their medical conditions and nutritional needs.",
+        "Join our specialized transplant team as a coordinator to facilitate and manage multi-organ transplant procedures and donor coordination.",
       requirements: [
-        "Bachelor's/Master's degree in Nutrition and Dietetics",
-        "Minimum 3 years of clinical experience",
-        "Knowledge of therapeutic diets for various medical conditions",
-        "Good communication and counseling skills",
-        "Experience in hospital dietary management preferred",
+        "BSW/MSW degree",
+        "1 year of relevant experience",
+        "Knowledge of transplant protocols",
+        "Excellent coordination and communication skills",
+        "Compassionate and empathetic approach",
       ],
-
       responsibilities: [
-        "Assess patients' nutritional needs",
-        "Develop and implement dietary plans",
-        "Provide nutritional counseling to patients and families",
-        "Collaborate with medical team for comprehensive patient care",
-        "Monitor and document patients' nutritional status",
+        "Coordinate organ transplant procedures",
+        "Liaise with donor families and recipients",
+        "Maintain transplant documentation",
+        "Ensure compliance with transplant regulations",
+        "Support patients and families throughout process",
       ],
     },
     {
       id: 8,
-      title: "Emergency Medicine Physician",
-      department: "Medical",
+      title: "Consultant Radiology",
+      department: "Radiology",
       location: "Ranchi, Jharkhand",
       type: "Full-time",
-      postedDate: "March 20, 2024",
+      qualification: "DMRD/MD/MD Radiology",
+      experience: "0-3 YRS",
+      positions: "1",
       description:
-        "We are seeking an experienced Emergency Medicine Physician to join our 24/7 emergency department. The role involves providing immediate care to patients with acute illnesses and injuries.",
+        "We are seeking a qualified Radiology Consultant to provide expert diagnostic imaging services and interpretation.",
       requirements: [
-        "MD/DNB in Emergency Medicine or equivalent qualification",
-        "Minimum 5 years of experience in emergency medicine",
-        "Advanced life support certifications (ACLS, ATLS, PALS)",
-        "Experience in trauma management",
-        "Ability to work under pressure and make quick decisions",
+        "DMRD/MD/MD Radiology",
+        "0-3 years of experience",
+        "Expertise in various imaging modalities",
+        "Strong diagnostic and analytical skills",
+        "Good communication with clinical teams",
       ],
-
       responsibilities: [
-        "Provide immediate assessment and treatment of emergency patients",
-        "Perform emergency procedures and resuscitation",
-        "Coordinate with specialists for patient care",
-        "Supervise emergency department staff",
-        "Ensure efficient patient flow in the emergency department",
+        "Interpret diagnostic imaging studies",
+        "Perform interventional radiology procedures",
+        "Consult with clinical teams on cases",
+        "Ensure quality of imaging services",
+        "Supervise radiology technicians",
       ],
     },
     {
       id: 9,
-      title: "IT Support Specialist",
-      department: "Information Technology",
+      title: "Executive Operations",
+      department: "Operations",
       location: "Ranchi, Jharkhand",
       type: "Full-time",
-      postedDate: "March 18, 2024",
+      qualification: "Any Graduate",
+      experience: "0-3 YRS",
+      positions: "5",
       description:
-        "Join our IT department as a Support Specialist. You will provide technical support for hospital information systems and ensure smooth functioning of IT infrastructure.",
+        "Join our operations team to support smooth functioning of hospital services and patient care operations.",
       requirements: [
-        "Bachelor's degree in Computer Science or related field",
-        "Minimum 3 years of experience in IT support",
-        "Knowledge of healthcare information systems preferred",
-        "Experience in network management and troubleshooting",
-        "Good problem-solving and communication skills",
+        "Any Graduate degree",
+        "0-3 years of experience",
+        "Good organizational skills",
+        "Ability to multitask",
+        "Strong communication skills",
       ],
-
       responsibilities: [
-        "Provide technical support to hospital staff",
-        "Troubleshoot hardware and software issues",
-        "Maintain and update hospital information systems",
-        "Ensure data security and backup",
-        "Train staff on new software and systems",
+        "Coordinate daily hospital operations",
+        "Support patient admission and discharge",
+        "Manage operational documentation",
+        "Assist in resolving operational issues",
+        "Ensure smooth workflow across departments",
       ],
     },
     {
       id: 10,
-      title: "Pharmacist",
+      title: "Executive Billing",
+      department: "Billing",
+      location: "Ranchi, Jharkhand",
+      type: "Full-time",
+      qualification: "B.com/M.com",
+      experience: "0-3 YRS",
+      positions: "3",
+      description:
+        "We are looking for billing executives to manage patient billing, insurance claims, and financial documentation.",
+      requirements: [
+        "B.Com/M.Com degree",
+        "0-3 years of billing experience",
+        "Knowledge of medical billing preferred",
+        "Computer proficiency",
+        "Attention to detail",
+      ],
+      responsibilities: [
+        "Process patient billing and invoices",
+        "Handle insurance claims and reimbursements",
+        "Maintain accurate billing records",
+        "Resolve billing queries and disputes",
+        "Coordinate with accounts department",
+      ],
+    },
+    {
+      id: 11,
+      title: "Clinical Pharmacologist",
       department: "Pharmacy",
       location: "Ranchi, Jharkhand",
       type: "Full-time",
-      postedDate: "March 15, 2024",
+      qualification: "Pharm.D",
+      experience: "0-1 YRS",
+      positions: "1",
       description:
-        "We are looking for a qualified Pharmacist to join our hospital pharmacy. You will be responsible for dispensing medications and providing pharmaceutical care to patients.",
+        "Join our pharmacy team as a Clinical Pharmacologist to provide expert pharmaceutical care and medication management.",
       requirements: [
-        "Bachelor's/Master's degree in Pharmacy",
-        "Minimum 2 years of experience in hospital pharmacy",
-        "Knowledge of drug interactions and adverse effects",
-        "Good communication and counseling skills",
-        "Experience with inventory management",
+        "Pharm.D degree",
+        "0-1 year of experience",
+        "Strong knowledge of pharmacology",
+        "Good clinical assessment skills",
+        "Registered pharmacist",
       ],
-
       responsibilities: [
-        "Dispense medications as prescribed",
-        "Review medication orders for appropriateness",
-        "Provide medication information to patients and healthcare providers",
-        "Manage pharmacy inventory and ensure adequate stock",
-        "Ensure compliance with pharmacy regulations and policies",
+        "Review and monitor medication therapy",
+        "Provide drug information to healthcare team",
+        "Ensure rational drug use",
+        "Conduct medication counseling",
+        "Participate in clinical rounds",
       ],
     },
   ];
@@ -417,14 +455,39 @@ const Careers = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Current/Previous Position
+                    Position Applying For *
                   </label>
-                  <input
-                    type="text"
+                  <select
+                    required
+                    value={selectedPosition}
+                    onChange={(e) => setSelectedPosition(e.target.value)}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    placeholder="Enter your current or previous job position"
-                  />
+                  >
+                    <option value="">Select a position</option>
+                    {jobs.map((job) => (
+                      <option key={job.id} value={job.title}>
+                        {job.title} ({job.positions} openings)
+                      </option>
+                    ))}
+                    <option value="Spontaneous Application">Spontaneous Application</option>
+                  </select>
                 </div>
+
+                {selectedPosition === "Spontaneous Application" && (
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Specify Position *
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      value={customPosition}
+                      onChange={(e) => setCustomPosition(e.target.value)}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      placeholder="Enter the position you're interested in"
+                    />
+                  </div>
+                )}
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -535,7 +598,7 @@ const Careers = () => {
                     </span>
                     <span className="flex items-center text-gray-600">
                       <SafeIcon icon={FiCalendar} className="w-4 h-4 mr-1" />
-                      Posted: {selectedJob.postedDate}
+                      Openings: {selectedJob.positions}
                     </span>
                   </div>
                 </div>
@@ -689,8 +752,8 @@ const Careers = () => {
                         </div>
                       </div>
                       <div className="flex items-center space-x-4">
-                        <span className="text-sm text-gray-500">
-                          Posted: {job.postedDate}
+                        <span className="text-sm font-semibold text-primary-600">
+                          Openings: {job.positions}
                         </span>
                         <button
                           onClick={(e) => {
