@@ -190,7 +190,7 @@ const Header = () => {
       "Advanced Diagnostics": "laboratory-investigations",
     },
     "Oral & Maxillofacial Surgery": {
-      "Centres of Excellence": "oral-maxillofacial-surgery-ad",
+      "Allied Specialties": "oral-maxillofacial-surgery-ad",
     },
   };
 
