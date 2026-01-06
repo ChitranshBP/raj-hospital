@@ -1878,6 +1878,47 @@ export const doctorsData = [
   },
 
   {
+    id: 'ahmad-hussain-neurology',
+    name: 'Dr. Ahmad Hussain',
+    qualifications: 'M.B.B.S (PMCH - Dhanbad), MD (Medicine - PMCH, Patna), DrNB (Neurology - Sir Gangaram Hospital, Delhi)',
+    specialty: 'Neurology',
+    experience: '5+ Years',
+    image: '/assets/Doc-Side/Dr Ahmad Hussain.webp',
+    specialtyIcon: '', // No icon provided
+    description:
+      'Dr. Ahmad Hussain is a neurologist with over 5 years of experience in managing complex neurological conditions including stroke, epilepsy, dementias, movement disorders, and neuro-infectious diseases.',
+
+    expertise: [
+      'Stroke (Ischemic & Haemorrhagic)',
+      'Epilepsy',
+      'Dementias (Alzheimer\'s Disease, Vascular Dementia etc.)',
+      'Parkinson\'s Disease and Atypical Parkinsonism',
+      'Autoimmune & Demyelinating Disorders (Multiple Sclerosis, ADEM, NMOSD & MOGAD)',
+      'Myasthenia Gravis',
+      'Neuro Infectious Disorders (Meningitis, Encephalitis, CNS Tuberculosis, Pott\'s Spine etc.)',
+      'Neuropathies (GBS, CIDP etc.)',
+      'MND (Motor Neuron Disease)',
+      'Myopathies',
+      'Movement Disorders'
+    ],
+    education: [
+      { degree: 'M.B.B.S', institution: 'PMCH - Dhanbad', year: '' },
+      { degree: 'MD (Medicine)', institution: 'PMCH - Patna', year: '' },
+      { degree: 'DrNB (Neurology)', institution: 'Sir Gangaram Hospital - Delhi', year: '' }
+    ],
+    memberships: [], // Not specified
+    awards: [], // Not specified
+    procedures: [], // Not specified
+    publications: [], // Not specified
+    contact: {
+      phone: '+919263630500',
+      email: '', // Not specified
+      clinic: '', // Not specified
+      address: '' // Not specified
+    }
+  },
+
+  {
     id: 'abhishek-bhattacharjee',
     name: 'Dr. Abhishek Bhattacharjee',
     qualifications: 'MBBS, MDS (Oral & Maxillofacial Surgery – Rajiv Gandhi University of Health Sciences, Bangalore, Karnataka)',
@@ -2157,57 +2198,57 @@ export const doctorsData = [
     }
   },
   //medicine
-  {
-    id: 'ashok-kr-agarwal',
-    name: 'Dr. Ashok Kr Agarwal',
-    qualifications: 'MBBS, MD (Medicine)',
-    specialty: 'Internal Medicine',
-    experience: '8 Years',
-    image: '/assets/doc-dummy/male-dummy-raj.webp',
-    specialtyIcon: '', // No icon provided
-    description: '', // No description provided
+  // {
+  //   id: 'ashok-kr-agarwal',
+  //   name: 'Dr. Ashok Kr Agarwal',
+  //   qualifications: 'MBBS, MD (Medicine)',
+  //   specialty: 'Internal Medicine',
+  //   experience: '8 Years',
+  //   image: '/assets/doc-dummy/male-dummy-raj.webp',
+  //   specialtyIcon: '', // No icon provided
+  //   description: '', // No description provided
 
-    expertise: [
-      'Consultant Physician',
-      'Diabetic, Heart, Chest Specialist',
-    ],
+  //   expertise: [
+  //     'Consultant Physician',
+  //     'Diabetic, Heart, Chest Specialist',
+  //   ],
 
-    education: [
-      { degree: 'MBBS', institution: '', year: '' },
-      { degree: 'MD (Medicine)', institution: 'P.M.C.H', year: '' },
-      { degree: 'Senior Residency (Cardiology)', institution: 'G.B Pant Hospital, New Delhi', year: '' },
-      { degree: 'Senior Residency (Medicine)', institution: 'R.I.M.S', year: '' }
-    ],
+  //   education: [
+  //     { degree: 'MBBS', institution: '', year: '' },
+  //     { degree: 'MD (Medicine)', institution: 'P.M.C.H', year: '' },
+  //     { degree: 'Senior Residency (Cardiology)', institution: 'G.B Pant Hospital, New Delhi', year: '' },
+  //     { degree: 'Senior Residency (Medicine)', institution: 'R.I.M.S', year: '' }
+  //   ],
 
-    memberships: [
+  //   memberships: [
 
-    ],
+  //   ],
 
-    awards: [], // No awards listed
-    procedures: [],
-    publications: [],
+  //   awards: [], // No awards listed
+  //   procedures: [],
+  //   publications: [],
 
-    contact: {
-      phone: '', // No phone provided
-      email: '', // No email provided
-      specialtyIcon: '',
-      description: '',
-      expertise: [],
-      education: [],
-      memberships: [],
-      awards: [],
-      procedures: [],
-      publications: [],
-      contact: {
-        phone: '',
-        email: '',
-        clinic: '',
-        address: ''
-      }
-    }
+  //   contact: {
+  //     phone: '', // No phone provided
+  //     email: '', // No email provided
+  //     specialtyIcon: '',
+  //     description: '',
+  //     expertise: [],
+  //     education: [],
+  //     memberships: [],
+  //     awards: [],
+  //     procedures: [],
+  //     publications: [],
+  //     contact: {
+  //       phone: '',
+  //       email: '',
+  //       clinic: '',
+  //       address: ''
+  //     }
+  //   }
 
 
-  },
+  // },
   //administration
   {
     id: 'ajeet-singh',
@@ -2321,59 +2362,59 @@ export const doctorsData = [
     }
   },
   //general-surgery
-  {
-    id: 'ashish-kumar',
-    name: 'Dr. Ashish Kumar',
-    qualifications: 'MBBS, MS (General Surgery)',
-    specialty: 'Minimal Access Surgery',
-    experience: '12 Years',
-    image: '/assets/doc-dummy/male-dummy-raj.webp',
-    specialtyIcon: '',
-    description: '',
+  // {
+  //   id: 'ashish-kumar',
+  //   name: 'Dr. Ashish Kumar',
+  //   qualifications: 'MBBS, MS (General Surgery)',
+  //   specialty: 'Minimal Access Surgery',
+  //   experience: '12 Years',
+  //   image: '/assets/doc-dummy/male-dummy-raj.webp',
+  //   specialtyIcon: '',
+  //   description: '',
 
-    expertise: [
-      'Laparoscopy Surgery',
-      'Laser Surgery for Proctology',
-      'Diagnostic and Therapeutic Endoscopy',
+  //   expertise: [
+  //     'Laparoscopy Surgery',
+  //     'Laser Surgery for Proctology',
+  //     'Diagnostic and Therapeutic Endoscopy',
 
-    ],
+  //   ],
 
-    education: [
-      { degree: 'MBBS', institution: 'JLNMCH, Bhagalpur', year: '' },
-      { degree: 'MS (General Surgery)', institution: 'RIMS, Ranchi', year: '' }
-    ],
+  //   education: [
+  //     { degree: 'MBBS', institution: 'JLNMCH, Bhagalpur', year: '' },
+  //     { degree: 'MS (General Surgery)', institution: 'RIMS, Ranchi', year: '' }
+  //   ],
 
-    memberships: [
-      'F.MAS',
-      'F.IAGE',
-      'Member of ASI',
-      'Member of Diabetic Foot',
-      'Treasurer in ASI Jharkhand Chapter'
-    ],
+  //   memberships: [
+  //     'F.MAS',
+  //     'F.IAGE',
+  //     'Member of ASI',
+  //     'Member of Diabetic Foot',
+  //     'Treasurer in ASI Jharkhand Chapter'
+  //   ],
 
-    awards: [],
-    procedures: [],
-    publications: [],
+  //   awards: [],
+  //   procedures: [],
+  //   publications: [],
 
-    contact: {
-      phone: '',
-      email: '',
-      specialtyIcon: '',
-      description: '',
-      expertise: [],
-      education: [],
-      memberships: [],
-      awards: [],
-      procedures: [],
-      publications: [],
-      contact: {
-        phone: '',
-        email: '',
-        clinic: '',
-        address: ''
-      }
-    }
-  },
+  //   contact: {
+  //     phone: '',
+  //     email: '',
+  //     specialtyIcon: '',
+  //     description: '',
+  //     expertise: [],
+  //     education: [],
+  //     memberships: [],
+  //     awards: [],
+  //     procedures: [],
+  //     publications: [],
+  //     contact: {
+  //       phone: '',
+  //       email: '',
+  //       clinic: '',
+  //       address: ''
+  //     }
+  //   }
+  // },
   //emergency-medicine
   {
     id: 'shubham-shekhar',
@@ -3021,7 +3062,7 @@ export const doctorsData = [
     id: 'prakash-chandra',
     name: 'Dr. Prakash Chandra',
     qualifications: 'MBBS, MS, MCH',
-    specialty: 'Neurology',
+    specialty: 'Neurosciences',
     experience: '18+ Years',
     image: '/assets/Doc-Side/Dr. Prakash Chandra (Neuro Surgeon).webp',
     specialtyIcon: medicalIcons.neurology,
@@ -3052,7 +3093,7 @@ export const doctorsData = [
     id: 'vijay-raj',
     name: 'Dr. Vijay Raj',
     qualifications: 'MBBS, MD, DM (Neurology)',
-    specialty: 'Neurology',
+    specialty: 'Neurosciences',
     experience: '15+ Years',
     image: '/assets/Doc-Side/vijayraj.webp',
     specialtyIcon: medicalIcons.neurology,
