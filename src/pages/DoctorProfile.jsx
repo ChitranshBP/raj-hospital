@@ -790,7 +790,7 @@ export const doctorsData = [
     id: 'Mozammil-pheroz',
     name: 'Dr. Mozammil Pheroz',
     qualifications:
-      'MBBS, MS (Orthopaedics), MECA, DNB (Orthopaedics), Dip. Sports Medicine (FIFA, Switzerland), MNAMS',
+      'MBBS, MS (Orthopaedics),DNB (Orthopaedics), Dip. Sports Medicine (FIFA, Switzerland), MNAMS',
     specialty: 'Orthopaedics & Joint Replacement',
     experience: '11+ Years',
     image:
