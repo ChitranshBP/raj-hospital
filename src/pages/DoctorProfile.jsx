@@ -559,7 +559,7 @@ export const doctorsData = [
     qualifications: 'MBBS, ECFMG Certified (USA) Neurosurgery, DNB Neurosurgery (Brain & Spine Surgery)',
     specialty: 'Neurosciences',
     experience: '9+ Years',
-    image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Neurosurgeon - Dr. Vivek-Raj.webp',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Neurosurgeon - Dr. Vivek-Raj.webp',
     specialtyIcon: '', // No icon provided
     description: 'Dr. Vivek Raj is a skilled neurosurgeon with expertise in brain and spine tumor surgery, pediatric brain surgery, and emergency spine trauma. He is committed to providing advanced surgical care including awake brain surgery for better patient outcomes.',
     expertise: [
@@ -690,7 +690,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (Otolaryngology), PDCC (Head and Neck Oncology)',
     specialty: 'ENT',
     experience: '16+ Years',
-    image: 'assets/doc-dummy/male-dummy-raj.webp',
+    image: '/assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: medicalIcons.ent,
     description:
       'Dr. Abhijit Kumar is a Consultant Otolaryngologist and Head & Neck Surgeon with over 16 years of experience across premier surgical centers in India. His special interest includes endoscopic skull base surgery, head and neck cancer surgeries, cochlear implants, and implantable hearing aids. He has extensive academic and clinical experience, along with numerous research publications in national and international journals.',
@@ -794,7 +794,7 @@ export const doctorsData = [
     specialty: 'Orthopaedics & Joint Replacement',
     experience: '11+ Years',
     image:
-      '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Muzammil-Feroz.webp',
+      '/assets/Doc-Side/dr-pheroz-raj-removebg-preview.png',
     specialtyIcon: medicalIcons.orthopaedics,
 
     description:
@@ -1150,7 +1150,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (Obstetrics), DNB (Obs & Gyn), D.MAS',
     specialty: 'Obstetrics & Gynaecology',
     experience: '10+ Years',
-    image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Anupama-Mahli.webp',
+    image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Anupama-Mahli.webp',
     specialtyIcon: medicalIcons.obstetricsGynecology,
     description:
       'Dr. Anupama Mahli has over 10 years of experience in obstetrics and gynaecology with expertise in laparoscopy, hysteroscopy, infertility treatment, and sonology (ultrasound).',
@@ -1400,7 +1400,7 @@ export const doctorsData = [
     qualifications: 'MBBS, DVDL (Dermatology, Venereology, Leprosy)',
     specialty: 'Dermatology',
     experience: '12+ Years',
-    image: 'assets/Doc-Side/Dr Piyali Banerjee(Derma).webp',
+    image: '/assets/Doc-Side/Dr Piyali Banerjee(Derma).webp',
     specialtyIcon: medicalIcons.dermatology,
     description:
       'Dr. Piyali Banerjee is a skilled dermatologist and cosmetologist with over 12 years of experience, specializing in hair disorders, acne, and cosmetology. She has held advisory roles and received multiple awards for her academic and clinical excellence.',
@@ -1418,7 +1418,7 @@ export const doctorsData = [
       },
       {
         degree: 'MBBS',
-        institution: '',
+        institution: 'RIMS, Ranchi',
         year: ''
       }
     ],
@@ -1426,10 +1426,27 @@ export const doctorsData = [
       'Life Membership IADV (LM/J/7586)'
     ],
     awards: [
-      { title: 'First Prize in Award Paper Presentation, Asia Aesthetica', year: '2019' },
-      { title: 'Award Paper Presentation, International Dermacon, New Delhi', year: '2013' }
+      { title: 'First Prize in Award Paper Presentation, Asia Aesthetica, Gangtok', year: 'September 2019' },
+      { title: 'Award Paper Presentation, International Dermacon, Hotel Ashoka, New Delhi', year: '2013' },
+      { title: 'E-Poster Scholarship, WCOCD, Bengaluru', year: 'May 2017' }
     ],
-    publications: [],
+    publications: [
+      {
+        title: 'Contributed a chapter on Nail and Hair Disorders in the book "Diabetes and Dermatology"',
+        journal: '',
+        year: ''
+      },
+      {
+        title: 'Has publication in PubMed indexed journals',
+        journal: '',
+        year: ''
+      },
+      {
+        title: 'Reviewer in Cureus Journal of Dermatology',
+        journal: '',
+        year: ''
+      }
+    ],
     contact: {
       email: '',
       phone: '+919263630500',
@@ -1557,7 +1574,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS, FESS',
     specialty: 'ENT',
     experience: '15+ Years',
-    image: 'assets/doc-dummy/male-dummy-raj.webp',
+    image: '/assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: medicalIcons.ent,
     description:
       'Dr. Ranajan Kumar Jha is an experienced ENT specialist at Raj Hospital, Ranchi, with expertise in functional endoscopic sinus surgery (FESS) and comprehensive treatment of ear, nose, and throat conditions. He is recognized for his patient-centric approach and advanced surgical skills.',
@@ -1772,7 +1789,7 @@ export const doctorsData = [
     qualifications: 'M.B.B.S (Gold Medalist), M.D. (Dermatology, Venereology & Leprosy), M.D. (Physiology), A.C.S.I Fellowship in Dermatosurgery',
     specialty: 'Dermatology',
     experience: '10+ Years',
-    image: 'assets/doc-dummy/male-dummy-raj.webp', // No image provided
+    image: '/assets/doc-dummy/male-dummy-raj.webp', // No image provided
     specialtyIcon: '', // No icon provided
     description:
       'Dr. Shaista Huma is a respected dermatologist and dermatosurgeon with over 10 years of experience. She specializes in clinical dermatology, aesthetic dermatology, and advanced dermatosurgical procedures, committed to patient-centric, modern skin care treatments.',
@@ -1825,7 +1842,7 @@ export const doctorsData = [
     qualifications: 'M.B.B.S (PMCH - Dhanbad), MD (Medicine - PMCH, Patna), DrNB (Neurology - Sir Gangaram Hospital, Delhi)',
     specialty: 'Neurosciences',
     experience: '5+ Years',
-    image: 'assets/Doc-Side/Dr Ahmad Hussain.webp',
+    image: '/assets/Doc-Side/Dr Ahmad Hussain.webp',
     specialtyIcon: '', // No icon provided
     description:
       'Dr. Ahmad Hussain is a neurologist with over 5 years of experience in managing complex neurological conditions including stroke, epilepsy, dementias, movement disorders, and neuro-infectious diseases.',
@@ -1994,7 +2011,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Biochemistry)',
     specialty: 'FNAC, Biopsy, Blood & Laboratory Investigations',
     experience: '10+ Years',
-    image: 'assets/doc-dummy/male-dummy-raj.webp',
+    image: '/assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '', // No icon provided
     description: '', // No description provided
 
@@ -2045,7 +2062,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Microbiology)',
     specialty: 'FNAC, Biopsy, Blood & Laboratory Investigations',
     experience: '9+ Years',
-    image: 'assets/doc-dummy/male-dummy-raj.webp',
+    image: '/assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '', // No icon provided
     description: '', // No description provided
 
@@ -2146,7 +2163,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Medicine)',
     specialty: 'Internal Medicine',
     experience: '8 Years',
-    image: 'assets/doc-dummy/male-dummy-raj.webp',
+    image: '/assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '', // No icon provided
     description: '', // No description provided
 
@@ -2198,7 +2215,7 @@ export const doctorsData = [
     qualifications: 'MBBS (1982), Post Graduate Diploma (1988)',
     specialty: '', // No specific specialty provided
     experience: '38 Years',
-    image: 'assets/doc-dummy/male-dummy-raj.webp',
+    image: '/assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '',
     description: '',
 
@@ -2256,7 +2273,7 @@ export const doctorsData = [
     qualifications: 'MBBS, Ultrasound Training Course (New Delhi), Diploma in Family Medicine',
     specialty: '', // No specific specialty provided
     experience: '20 Years',
-    image: 'assets/doc-dummy/male-dummy-raj.webp',
+    image: '/assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '', // No icon provided
     description: '', // No description provided
 
@@ -2310,7 +2327,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (General Surgery)',
     specialty: 'Minimal Access Surgery',
     experience: '12 Years',
-    image: 'assets/doc-dummy/male-dummy-raj.webp',
+    image: '/assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '',
     description: '',
 
@@ -2364,7 +2381,7 @@ export const doctorsData = [
     qualifications: 'ACLS, BLS',
     specialty: 'Emergency',
     experience: '2 Years',
-    image: 'assets/doc-dummy/male-dummy-raj.webp',
+    image: '/assets/doc-dummy/male-dummy-raj.webp',
     specialtyIcon: '',
     description: '',
 
@@ -2416,7 +2433,7 @@ export const doctorsData = [
     qualifications: 'MBBS, Cardio-Physician (NI), IGNOU',
     specialty: 'Cardiology',
     experience: '30+ Years',
-    image: 'assets/Doc-Side/Dr Anup Kumar Jha_.webp', // No image provided
+    image: '/assets/Doc-Side/Dr Anup Kumar Jha_.webp', // No image provided
     specialtyIcon: '',
     description: '',
 
@@ -2465,7 +2482,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Pathology)',
     specialty: 'FNAC, Biopsy, Blood & Laboratory Investigations',
     experience: '10+ Years',
-    image: 'assets/Doc-Side/Lab - Dr. Sweta Sushmita.webp',
+    image: '/assets/Doc-Side/Lab - Dr. Sweta Sushmita.webp',
     specialtyIcon: '',
     description: '',
 
@@ -2517,7 +2534,7 @@ export const doctorsData = [
     qualifications: 'MBBS, DCP (Pathology)',
     specialty: 'FNAC, Biopsy, Blood & Laboratory Investigations',
     experience: '8+ Years',
-    image: 'assets/Doc-Side/Dr Praveen Kumar (Lab).webp',
+    image: '/assets/Doc-Side/Dr Praveen Kumar (Lab).webp',
     specialtyIcon: '',
     description: '',
 
@@ -2569,7 +2586,7 @@ export const doctorsData = [
       'MBBS, DNB (Anaesthesiology), PDCC (Interventional Pain Medicine), CCEPEC (IAPC)',
     specialty: 'Critical Care',
     experience: '4+ Years',
-    image: 'assets/Doc-Side/Dr Sony (Interventional Pain Medicine).webp',
+    image: '/assets/Doc-Side/Dr Sony (Interventional Pain Medicine).webp',
     specialtyIcon: '',
     description: '',
 
@@ -2692,7 +2709,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS (Ophthalmology)',
     specialty: 'Eye Care',
     experience: '20+ Years',
-    image: 'assets/Doc-Side/Dr. Abid Akhtar (Opthal).webp', // No image provided
+    image: '/assets/Doc-Side/Dr. Abid Akhtar (Opthal).webp', // No image provided
     specialtyIcon: '',
     description: '',
 
@@ -2740,7 +2757,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD (Psychiatry)',
     specialty: 'Psychiatry & Mental Health',
     experience: '40+ Years',
-    image: 'assets/Doc-Side/Dr Anil Kumar (Psychiatry).webp', // No image provided
+    image: '/assets/Doc-Side/Dr Anil Kumar (Psychiatry).webp', // No image provided
     specialtyIcon: '',
     description: '',
 
@@ -2793,7 +2810,7 @@ export const doctorsData = [
     qualifications: 'MBBS, DNB (Radiotherapy)',
     specialty: 'Oncology (Cancer Care)',
     experience: '11+ Years',
-    image: 'assets/Doc-Side/Dr Anamika Onco photo.webp',
+    image: '/assets/Doc-Side/Dr Anamika Onco photo.webp',
     specialtyIcon: '',
     description: '',
 
@@ -2843,7 +2860,7 @@ export const doctorsData = [
     qualifications: 'MBBS, DMRD (Radiodiagnosis)',
     specialty: 'Radiology',
     experience: '20+ Years',
-    image: 'assets/Doc-Side/Dr Shekhar Sharma (Radiologist).webp', // No image provided
+    image: '/assets/Doc-Side/Dr Shekhar Sharma (Radiologist).webp', // No image provided
     specialtyIcon: '',
     description: '',
 
@@ -2976,7 +2993,7 @@ export const doctorsData = [
     qualifications: 'MBBS, DCH',
     specialty: 'Pediatrics & Neonatology',
     experience: '10+ Years',
-    image: 'assets/specialties/PAEDIATRICS/dr-ravi-shekhar-singh.webp',
+    image: '/assets/specialties/PAEDIATRICS/dr-ravi-shekhar-singh.webp',
     specialtyIcon: '',
     description: 'Dr. Ravi Shekhar Singh is a skilled Pediatrician specializing in Pediatric Medicine and Critical Care for infants and children.',
     expertise: [
@@ -3006,7 +3023,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MS, MCH',
     specialty: 'Neurology',
     experience: '18+ Years',
-    image: 'assets/Doc-Side/Dr. Prakash Chandra (Neuro Surgeon).webp',
+    image: '/assets/Doc-Side/Dr. Prakash Chandra (Neuro Surgeon).webp',
     specialtyIcon: medicalIcons.neurology,
     description: 'Dr. Prakash Chandra is a highly experienced Neurosurgeon with expertise in Neurology, Epileptology, and Neurophysiology.',
     expertise: [
@@ -3037,7 +3054,7 @@ export const doctorsData = [
     qualifications: 'MBBS, MD, DM (Neurology)',
     specialty: 'Neurology',
     experience: '15+ Years',
-    image: 'assets/Doc-Side/vijayraj.webp',
+    image: '/assets/Doc-Side/vijayraj.webp',
     specialtyIcon: medicalIcons.neurology,
     description: 'Dr. Vijay Raj is a skilled Neurologist specializing in Neurodiagnostics and Stroke Management with extensive experience.',
     expertise: [
