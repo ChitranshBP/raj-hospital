@@ -142,7 +142,7 @@ const Header = () => {
         "Internal Medicine",
         "Urology",
         "Obstetrics & Gynaecology",
-        "Oral & Maxillofacial Surgery",
+        
       ],
     },
     {
@@ -157,6 +157,7 @@ const Header = () => {
         "Pediatrics & Neonatology",
         "Physiotherapy & Rehabilitation",
         "Psychiatry & Mental Health",
+        "Oral & Maxillofacial Surgery",
 
       ],
     },

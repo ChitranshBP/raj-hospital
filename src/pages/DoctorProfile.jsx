@@ -636,7 +636,7 @@ export const doctorsData = [
     id: 'deepak-verma',
     name: 'Dr. Deepak Verma',
     qualifications: 'MBBS, MS (Ortho)',
-    specialty: '', // No specific specialty provided
+    specialty: 'Orthopaedics & Joint Replacement', // No specific specialty provided
     experience: '25+ Years',
     image: '/assets/Doc-Side/Orthopedic Surgeon - Dr. Deepak Verma.webp',
     specialtyIcon: '', // No icon provided
@@ -2362,59 +2362,59 @@ export const doctorsData = [
     }
   },
   //general-surgery
-  // {
-  //   id: 'ashish-kumar',
-  //   name: 'Dr. Ashish Kumar',
-  //   qualifications: 'MBBS, MS (General Surgery)',
-  //   specialty: 'Minimal Access Surgery',
-  //   experience: '12 Years',
-  //   image: '/assets/doc-dummy/male-dummy-raj.webp',
-  //   specialtyIcon: '',
-  //   description: '',
+  {
+    id: 'B-kumar',
+    name: 'Dr. B Kumar',
+    qualifications: 'MBBS, MS (General Surgery)',
+    specialty: 'Minimal Access Surgery',
+    experience: '12 Years',
+    image: '/assets/doc-dummy/male-dummy-raj.webp',
+    specialtyIcon: '',
+    description: '',
 
-  //   expertise: [
-  //     'Laparoscopy Surgery',
-  //     'Laser Surgery for Proctology',
-  //     'Diagnostic and Therapeutic Endoscopy',
+    expertise: [
+      'Laparoscopy Surgery',
+      'Laser Surgery for Proctology',
+      'Diagnostic and Therapeutic Endoscopy',
 
-  //   ],
+    ],
 
-  //   education: [
-  //     { degree: 'MBBS', institution: 'JLNMCH, Bhagalpur', year: '' },
-  //     { degree: 'MS (General Surgery)', institution: 'RIMS, Ranchi', year: '' }
-  //   ],
+    education: [
+      { degree: 'MBBS', institution: 'JLNMCH, Bhagalpur', year: '' },
+      { degree: 'MS (General Surgery)', institution: 'RIMS, Ranchi', year: '' }
+    ],
 
-  //   memberships: [
-  //     'F.MAS',
-  //     'F.IAGE',
-  //     'Member of ASI',
-  //     'Member of Diabetic Foot',
-  //     'Treasurer in ASI Jharkhand Chapter'
-  //   ],
+    memberships: [
+      'F.MAS',
+      'F.IAGE',
+      'Member of ASI',
+      'Member of Diabetic Foot',
+      'Treasurer in ASI Jharkhand Chapter'
+    ],
 
-  //   awards: [],
-  //   procedures: [],
-  //   publications: [],
+    awards: [],
+    procedures: [],
+    publications: [],
 
-  //   contact: {
-  //     phone: '',
-  //     email: '',
-  //     specialtyIcon: '',
-  //     description: '',
-  //     expertise: [],
-  //     education: [],
-  //     memberships: [],
-  //     awards: [],
-  //     procedures: [],
-  //     publications: [],
-  //     contact: {
-  //       phone: '',
-  //       email: '',
-  //       clinic: '',
-  //       address: ''
-  //     }
-  //   }
-  // },
+    contact: {
+      phone: '',
+      email: '',
+      specialtyIcon: '',
+      description: '',
+      expertise: [],
+      education: [],
+      memberships: [],
+      awards: [],
+      procedures: [],
+      publications: [],
+      contact: {
+        phone: '',
+        email: '',
+        clinic: '',
+        address: ''
+      }
+    }
+  },
   //emergency-medicine
   {
     id: 'shubham-shekhar',
