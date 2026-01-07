@@ -3591,6 +3591,30 @@ const SpecialtyDetail = () => {
       'Histopathology & Biopsy',
       'Fine Needle Aspiration Cytology (FNAC)',
       'Hormonal Assays'
+    ],
+
+    // 27. Oral & Maxillofacial Surgery
+    'oral-maxillofacial-surgery-ad': [
+      'Impacted Wisdom Teeth',
+      'Jaw Fractures & Facial Trauma',
+      'Oral & Maxillofacial Cysts',
+      'Benign & Malignant Oral Tumors',
+      'Temporomandibular Joint (TMJ) Disorders',
+      'Jaw Deformities & Malocclusion',
+      'Cleft Lip & Palate',
+      'Facial Asymmetry',
+      'Dental Implant Placement',
+      'Bone Grafting & Ridge Augmentation',
+      'Sinus Lift Procedures',
+      'Pre-Prosthetic Surgery',
+      'Facial Infections & Abscesses',
+      'Sleep Apnea (Surgical Treatment)',
+      'Salivary Gland Disorders',
+      'Oral Mucosal Lesions',
+      'Orthognathic Surgery',
+      'Facial Reconstruction',
+      'Maxillofacial Pathology',
+      'Dentoalveolar Surgery'
     ]
   };
 
