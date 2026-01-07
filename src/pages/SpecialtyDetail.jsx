@@ -741,7 +741,7 @@ const SpecialtyDetail = () => {
         },
  
        {
-          id: '801',
+          id: 'prakash-chandra',
           name: 'Dr. Prakash Chandra',
           qualification: 'MBBS, MS, MCH',
           experience: '18+ Years',
