@@ -707,6 +707,14 @@ const SpecialtyDetail = () => {
         'Interventional neuro-radiology facilities'
       ],
       specialists: [
+               {
+          id: 'ahmad-hussain',
+          name: 'Dr. Ahmad Hussain',
+          qualification: 'MBBS, MD, DrNB',
+          experience: '5+ Years',
+          image: '/assets/Doc-Side/Dr Ahmad Hussain.webp',
+          specialization: 'Neurology'
+        },
         {
           id: 'vivek-raj',
           name: 'Dr. Vivek Raj',
@@ -723,13 +731,22 @@ const SpecialtyDetail = () => {
         //   image: '/assets/specialties/Neurosciences/dr-vivek-raj.webp',
         //   specialization: 'Neurology'
         // },
-        {
-          id: 'ahmad-hussain',
-          name: 'Dr. Ahmad Hussain',
-          qualification: 'MBBS, MD, DrNB',
-          experience: '5+ Years',
-          image: '/assets/Doc-Side/Dr Ahmad Hussain.webp',
-          specialization: 'Neurology'
+             {
+          id: 'vijay-raj',
+          name: 'Dr. Vijay Raj',
+          qualification: 'MBBS, MD, DM (Neurology)',
+          experience: '15+ Years',
+          image: '/assets/Doc-Side/vijayraj.webp',
+          specialization: 'Neurodiagnostics and Stroke Management'
+        },
+ 
+       {
+          id: '801',
+          name: 'Dr. Prakash Chandra',
+          qualification: 'MBBS, MS, MCH',
+          experience: '18+ Years',
+          image: "/assets/Doc-Side/Dr. Prakash Chandra (Neuro Surgeon).webp",
+          specialization: 'Neurology, Epileptology, and Neurophysiology'
         },
         // add new profile 
 
@@ -920,7 +937,7 @@ const SpecialtyDetail = () => {
           name: 'Dr Mozammil Pheroz',
           qualification: 'MBBS, MS (Orthopaedics), DNB',
           experience: '11+ Years',
-          image: '/assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Muzammil-Feroz.webp',
+          image: '/assets/Doc-Side/dr-pheroz-raj-removebg-preview.png',
           specialization: 'Orthopaedics & Joint Replacement Surgery'
         },
         // new profile added
@@ -2527,30 +2544,9 @@ const SpecialtyDetail = () => {
           image: '/assets/Doc-Side/Dr Ahmad Hussain.webp',
           specialization: 'Neurology'
         },
-        // {
-        //   id: '801',
-        //   name: 'Dr. Prakash Chandra',
-        //   qualification: 'MBBS, MS, MCH',
-        //   experience: '18+ Years',
-        //   image: "assets/Doc-Side/Dr. Prakash Chandra (Neuro Surgeon).webp",
-        //   specialization: 'Neurology, Epileptology, and Neurophysiology'
-        // },
-        // {
-        //   id: 'vijay-raj',
-        //   name: 'Dr. Vijay Raj',
-        //   qualification: 'MBBS, MD, DM (Neurology)',
-        //   experience: '15+ Years',
-        //   image: '/assets/Doc-Side/vijayraj.webp',
-        //   specialization: 'Neurodiagnostics and Stroke Management'
-        // },
-        // {
-        //   id: '803',
-        //   name: 'Dr. Ujjwal Roy',
-        //   qualification: 'MBBS, DM (Neurology)',
-        //   experience: '10+ Years',
-        //   image: '/assets/specialties/Neurology/dr-ujjwal-roy.webp',
-        //   specialization: 'Headache, Migraine, and Movement Disorders'
-        // }
+     
+   
+        
       ],
 
       successStories: [
