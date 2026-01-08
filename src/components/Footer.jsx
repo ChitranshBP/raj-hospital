@@ -275,6 +275,30 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Map Section */}
+        <div className="border-t border-gray-800 py-8">
+          <div className="max-w-7xl mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="rounded-xl overflow-hidden shadow-2xl border border-gray-700">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.8753723757673!2d85.32022857588855!3d23.356529303782207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e1a89d6881dd%3A0xd169ee225be1478!2sRaj%20Hospitals%20-%20Best%20Multi%20Specialty%20Hospital%20in%20Ranchi%20Jharkhand!5e0!3m2!1sen!2sin!4v1755580421244!5m2!1sen!2sin"
+                width="100%"
+                height="350"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Raj Hospitals Location - Ranchi, Jharkhand"
+                className="w-full">
+              </iframe>
+            </motion.div>
+          </div>
+        </div>
+
         {/* Bottom Footer */}
         <div className="bg-black/50 border-t border-gray-800 py-6">
           <div className="max-w-7xl mx-auto px-4">
