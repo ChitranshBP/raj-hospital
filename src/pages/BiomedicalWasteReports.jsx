@@ -20,7 +20,8 @@ const BiomedicalWasteReports = () => {
       { month: 'July', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/Biomedical-Waste-report-July 25.pdf' },
       { month: 'August', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/Biomedical-waste-report-August25.pdf' },
       { month: 'September', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/Biomedical waste Report September 25.pdf' },
-      { month: 'November', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/Biomedical waste Report Nov 25.pdf' }
+      { month: 'November', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/Biomedical waste Report Nov 25.pdf' },
+            { month: 'December', year: '2025', status: 'completed', pdfUrl: '/assets/bmw/BMW Report december 25.pdf' }
     ],
     2024: [
       { month: 'January', year: '2024', status: 'completed', pdfUrl: '/assets/bmw/BMW JANUARY 2024.pdf' },
