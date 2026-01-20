@@ -3,6 +3,86 @@
 // Use $base_url for all links and assets
 // Ensure $base_url is defined in the parent page before including this file
 $active_page = basename($_SERVER['PHP_SELF']);
+
+// Configuration from React Version
+$specialties = [
+    [
+        'category' => 'Centres of Excellence',
+        'items' => [
+            'Cardiology', 'Critical Care ', 'Emergency', 'Gastroenterology', 
+            'Minimal Access Surgery', 'Nephrology', 'Neurosciences', 
+            'Oncology (Cancer Care)', 'Orthopaedics & Joint Replacement', 
+            'Pulmonology', 'Internal Medicine', 'Urology', 
+            'Obstetrics & Gynaecology'
+        ]
+    ],
+    [
+        'category' => 'Allied Specialties',
+        'items' => [
+            'Aesthetic & Reconstructive Surgery', 'Dental', 'Dermatology', 
+            'ENT', 'Eye Care', 'Nutrition & Dietetics', 
+            'Pediatrics & Neonatology', 'Physiotherapy & Rehabilitation', 
+            'Psychiatry & Mental Health', 'Oral & Maxillofacial Surgery'
+        ]
+    ],
+    [
+        'category' => 'Advanced Diagnostics',
+        'items' => [
+            'Radiology', 'Neurology', 
+            'FNAC, Biopsy, Blood & Laboratory Investigations'
+        ]
+    ]
+];
+
+// Icon Mapping (React Fi... -> Feather name)
+$specialtyIcons = [
+    'Cardiology' => 'heart',
+    'Critical Care ' => 'activity',
+    'Emergency' => 'alert-circle',
+    'Gastroenterology' => 'aperture',
+    'Minimal Access Surgery' => 'target',
+    'Nephrology' => 'droplet',
+    'Neurosciences' => 'coffee', // Matching React version placeholder
+    'Oncology (Cancer Care)' => 'shield',
+    'Orthopaedics & Joint Replacement' => 'users',
+    'Pulmonology' => 'wind',
+    'Internal Medicine' => 'crosshair',
+    'Urology' => 'zap',
+    'Obstetrics & Gynaecology' => 'trending-up',
+    'Oral & Maxillofacial Surgery' => 'scissors',
+    'Aesthetic & Reconstructive Surgery' => 'scissors',
+    'Dental' => 'smile',
+    'Dermatology' => 'feather',
+    'ENT' => 'mic',
+    'Eye Care' => 'eye',
+    'Nutrition & Dietetics' => 'coffee',
+    'Pediatrics & Neonatology' => 'coffee',
+    'Physiotherapy & Rehabilitation' => 'move',
+    'Psychiatry & Mental Health' => 'message-circle',
+    'Radiology' => 'camera',
+    'Neurology' => 'moon',
+    'FNAC, Biopsy, Blood & Laboratory Investigations' => 'file'
+];
+
+function getSpecialtySlug($name, $category) {
+    $specialtyUrlMap = [
+        'Cardiology' => ['Advanced Diagnostics' => 'cardiology-ad'],
+        'Neurology' => ['Advanced Diagnostics' => 'neurology-ad'],
+        'FNAC, Biopsy, Blood & Laboratory Investigations' => ['Advanced Diagnostics' => 'laboratory-investigations'],
+        'Oral & Maxillofacial Surgery' => ['Allied Specialties' => 'oral-maxillofacial-surgery-ad'],
+    ];
+
+    if (isset($specialtyUrlMap[$name][$category])) {
+        return $specialtyUrlMap[$name][$category];
+    }
+
+    $slug = strtolower($name);
+    $slug = str_replace('&', 'and', $slug);
+    $slug = preg_replace('/\s+/', '-', $slug);
+    $slug = str_replace(['(', ')'], '', $slug);
+    $slug = preg_replace('/-+/', '-', $slug);
+    return trim($slug, '-');
+}
 ?>
     <!-- Header -->
     <div class="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-2 sm:py-1 fixed top-0 left-0 right-0 z-50 shadow-sm">
@@ -93,34 +173,24 @@ $active_page = basename($_SERVER['PHP_SELF']);
                             <!-- Mega Menu -->
                             <div class="absolute top-full right-0 w-[800px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 hidden group-hover:block fade-in-visible z-50" style="margin-top: 10px;">
                                 <div class="grid grid-cols-3 gap-6">
-                                    <!-- Col 1 -->
+                                    <?php foreach ($specialties as $categoryData): ?>
                                     <div class="flex flex-col">
-                                        <h4 class="font-semibold text-orange-600 uppercase tracking-wide mb-3 border-b border-gray-200 pb-2 text-sm">Centres of Excellence</h4>
+                                        <h4 class="font-semibold text-orange-600 uppercase tracking-wide mb-3 border-b border-gray-200 pb-2 text-sm">
+                                            <?php echo htmlspecialchars($categoryData['category']); ?>
+                                        </h4>
                                         <div class="flex flex-col gap-1">
-                                            <a href="<?php echo $base_url; ?>specialties/cardiology.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="heart" class="w-4 h-4 text-orange-500"></i> Cardiology</a>
-                                            <a href="<?php echo $base_url; ?>specialties/critical-care.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="activity" class="w-4 h-4 text-orange-500"></i> Critical Care</a>
-                                            <a href="<?php echo $base_url; ?>specialties/emergency.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="alert-circle" class="w-4 h-4 text-orange-500"></i> Emergency</a>
-                                            <a href="<?php echo $base_url; ?>specialties/neurology.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="coffee" class="w-4 h-4 text-orange-500"></i> Neurosciences</a>
-                                             <a href="<?php echo $base_url; ?>specialties/oncology-cancer-care.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="shield" class="w-4 h-4 text-orange-500"></i> Oncology</a>
+                                            <?php foreach ($categoryData['items'] as $item): 
+                                                $icon = $specialtyIcons[$item] ?? 'circle';
+                                                $slug = getSpecialtySlug($item, $categoryData['category']);
+                                            ?>
+                                            <a href="<?php echo $base_url; ?>specialties/<?php echo $slug; ?>.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="<?php echo $icon; ?>" class="w-4 h-4 text-orange-500"></i> 
+                                                <?php echo htmlspecialchars($item); ?>
+                                            </a>
+                                            <?php endforeach; ?>
                                         </div>
                                     </div>
-                                    <!-- Col 2 -->
-                                    <div class="flex flex-col">
-                                        <h4 class="font-semibold text-orange-600 uppercase tracking-wide mb-3 border-b border-gray-200 pb-2 text-sm">Allied Specialties</h4>
-                                        <div class="flex flex-col gap-1">
-                                             <a href="<?php echo $base_url; ?>specialties/dental.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="smile" class="w-4 h-4 text-orange-500"></i> Dental</a>
-                                             <a href="<?php echo $base_url; ?>specialties/ent.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="mic" class="w-4 h-4 text-orange-500"></i> ENT</a>
-                                             <a href="<?php echo $base_url; ?>specialties/eye-care.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="eye" class="w-4 h-4 text-orange-500"></i> Eye Care</a>
-                                        </div>
-                                    </div>
-                                    <!-- Col 3 -->
-                                    <div class="flex flex-col">
-                                        <h4 class="font-semibold text-orange-600 uppercase tracking-wide mb-3 border-b border-gray-200 pb-2 text-sm">Advanced Diagnostics</h4>
-                                        <div class="flex flex-col gap-1">
-                                             <a href="<?php echo $base_url; ?>specialties/radiology.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="camera" class="w-4 h-4 text-orange-500"></i> Radiology</a>
-                                             <a href="<?php echo $base_url; ?>specialties/pathology.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="file" class="w-4 h-4 text-orange-500"></i> Laboratory</a>
-                                        </div>
-                                    </div>
+                                    <?php endforeach; ?>
                                 </div>
                             </div>
                         </div>

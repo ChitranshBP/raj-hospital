@@ -98,8 +98,8 @@
 
     <script>
         const doctorsData = [
-             // Default / Template Profile (Dr. A K Agarwal)
-             {
+            // Default / Template Profile (Dr. A K Agarwal)
+            {
                 id: 'ak-agarwal',
                 name: 'Dr. A K Agarwal',
                 qualifications: 'MBBS, MD (Medicine)',
@@ -124,156 +124,59 @@
                 publications: [],
                 contact: { phone: '+919263630500' }
             },
-
-            // 1. Dr. Rajesh Kumar Jha
-            {
-                id: 'rajesh-jha',
-                name: 'Dr. Rajesh Kumar Jha',
-                qualifications: 'MBBS, MD, DM',
-                specialty: 'Cardiology',
-                experience: '16+ Years',
-                image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Cardiologist - Dr. Rajesh-Kumar Jha.webp',
-                // specialtyIcon: medicalIcons.cardiology, // logic for icons handled via raw html fallback if needed or add map
-                description: 'Dr. Rajesh Kumar Jha is a Cardiologist with over 16 years of experience specializing in interventional cardiology.',
-                expertise: ['Interventional Cardiology'],
-                education: [
-                  { degree: 'DM (Cardiology)', institution: 'Safdarjung Hospital, New Delhi' },
-                  { degree: 'MD (Medicine)', institution: 'RIMS, Ranchi' },
-                  { degree: 'MBBS', institution: 'TNMC, Mumbai' }
-                ],
-                memberships: [
-                  'AFESC - European Society of Cardiology',
-                  'Cardiological Society of India (CSI)'
-                ],
-                contact: {
-                  phone: '+919263630500'
-                }
-            },
-
-            // 2. Dr. Fuzail Sarwer
-            {
-                id: 'fuzail-sarwer',
-                name: 'Dr. Fuzail Sarwer',
-                qualifications: 'MBBS, MD (Anaesthesiology), PDCC (Cardiac Anaesthesia)',
-                specialty: 'Critical Care',
-                experience: '8+ Years',
-                image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Fuzail-Sarwar.webp',
-                description: 'Dr. Fuzail Sarwer is a renowned Anaesthesiologist and Critical Care specialist with over 20 years of experience. He is known for his precise diagnosis and empathetic patient care.',
-                expertise: [
-                  'Anaesthesiology & Pain Management',
-                  'Critical Care Medicine',
-                  'Trauma Care & Emergency Medicine',
-                  'Cardiac Anesthesia',
-                  'POCUS (Point Of Care Ultrasound)',
-                  'Medical Education & Research Methodology'
-                ],
-                education: [
-                  { degree: 'MBBS', institution: 'Kathihar Medical College', year: '' },
-                  { degree: 'MD (Anaesthesiology)', institution: 'Kathihar Medical College', year: '' },
-                  { degree: 'PDCC (Cardiac Anaesthesia)', institution: 'RIMS, Ranchi', year: '' }
-                ],
-                memberships: [
-                  'Indian Medical Association',
-                  'Indian Society Of Anesthesiologists',
-                  'Indian Society of Critical Care Medicine'
-                ],
-                contact: {
-                  phone: '+919263630500'
-                }
-            },
-
-            // 3. Dr. Rahul Roy
-            {
-                id: 'rahul-roy',
-                name: 'Dr. Rahul Roy',
-                qualifications: 'MBBS, DA (Diploma Anesthesia), IDCCM (Critical Care), MBA (Hospital Administration)',
-                specialty: 'Critical Care',
-                experience: '20+ Years',
-                image: 'assets/Doc-Side/Dr Rahul Roy(CCT).webp',
-                description: 'Dr. Rahul Roy is a highly experienced Anesthesiologist and Critical Care specialist with over 20 years of expertise. He specializes in critical care medicine, anesthesia, pain management, and end of life care, providing comprehensive and compassionate patient care.',
-                expertise: [
-                  'Critical Care',
-                  'Anesthesia',
-                  'Pain Management',
-                  'End of Life Care'
-                ],
-                education: [
-                  { degree: 'MBBS', institution: 'MGIMS, Wardha', year: '' },
-                  { degree: 'DA (Diploma Anesthesia)', institution: 'MGIMS, Wardha', year: '' },
-                  { degree: 'IDCCM (Critical Care)', institution: 'Nagpur University', year: '' },
-                  { degree: 'MBA (Hospital Administration)', institution: '', year: '' }
-                ],
-                memberships: [
-                  'Indian Medical Association',
-                  'Indian Society of Critical Care Medicine',
-                  'European Society of Intensive Care Medicine'
-                ],
-                contact: {
-                  phone: '+919263630500'
-                }
-            },
-
-            // 4. Dr. Shyam Prasad
-            {
-                id: 'shyam-prasad',
-                name: 'Dr. Shyam Prasad',
-                qualifications: 'MBBS, MD MEM',
-                specialty: 'Emergency',
-                experience: '12+ Years',
-                image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Emergency - Dr. Shyam-Prasad.webp',
-                description: 'Dr. Shyam Prasad is an experienced emergency medicine specialist with over 12 years of practice. He serves as the Consultant Head of the Department of Emergency at Raj Hospital and is affiliated with SEMI. He is dedicated to handling all kinds of emergency medical situations and trauma care.',
-                expertise: [
-                  'Emergency Medical Care',
-                  'All Types of Trauma'
-                ],
-                education: [
-                  { degree: 'MBBS', institution: 'Smolensk State Medical Academy, Russia', year: '' },
-                  { degree: 'MD MEM', institution: 'G.W.U & Amri Bhubaneswar', year: '' }
-                ],
-                memberships: [
-                  'SEMI'
-                ],
-                awards: [
-                  { title: 'Consultant Head', organization: 'Department Of Emergency, Raj Hospital', year: '' }
-                ],
-                contact: {
-                  phone: '+919263630500'
-                }
-            },
-
-            // 5. Dr. Ravish Ranjan
-            {
-                id: 'ravish-ranjan',
-                name: 'Dr. Ravish Ranjan',
-                qualifications: 'MBBS, MD (Internal Medicine), DNB Super Specialty',
-                specialty: 'Gastroenterology',
-                experience: '12 Years',
-                image: 'assets/Doc-Side/Gastroenterologist - Dr. Ravish Ranjan.webp',
-                description: 'Dr. Ravish Ranjan is an experienced gastroenterologist specializing in advanced diagnostic and therapeutic endoscopy with 12 years of expertise. He is dedicated to providing personalized and comprehensive care for complex gastrointestinal conditions.',
-                expertise: [
-                  'Therapeutic and Diagnostic Advance Upper GI Endoscopy',
-                  'Therapeutic and Diagnostic Advance Lower GI Endoscopy (Colonoscopy)',
-                  'ERCP – Management of advanced CBD, Pancreatic Duct & Gallbladder Diseases',
-                  'EUS',
-                  'Fibro Scan',
-                  'Capsule Endoscopy',
-                  'Hepatology Unit – Dealing with ALF and Complications of CLD',
-                  'Breath Test',
-                  'Manometry – Esophageal & Anal',
-                  'IBD Clinic',
-                  'Pancreatic Disorder',
-                  'Esophageal Disorder',
-                  'Enteral Stenting'
-                ],
-                education: [
-                  { degree: 'MBBS', institution: 'RIMS', year: '' },
-                  { degree: 'MD (Internal Medicine)', institution: 'PMCH, Patna', year: '' },
-                  { degree: 'DNB Super Specialty', institution: 'IGIMS, Patna', year: '' }
-                ],
-                contact: {
-                  phone: '+919263630500'
-                }
-            }
+            { id: 'rajesh-jha', name: 'Dr. Rajesh Kumar Jha', qualifications: 'MBBS, MD, DM', specialty: 'Cardiology', experience: '16+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Cardiologist - Dr. Rajesh-Kumar Jha.webp' },
+            { id: 'fuzail-sarwer', name: 'Dr. Fuzail Sarwer', qualifications: 'MBBS, MD, PDCC', specialty: 'Critical Care', experience: '8+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Fuzail-Sarwar.webp' },
+            { id: 'rahul-roy', name: 'Dr. Rahul Roy', qualifications: 'MBBS, DA, IDCCM', specialty: 'Critical Care', experience: '20+ Years', image: 'assets/Doc-Side/Dr Rahul Roy(CCT).webp' },
+            { id: 'shyam-prasad', name: 'Dr. Shyam Prasad', qualifications: 'MBBS, MD MEM', specialty: 'Emergency', experience: '12+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Emergency - Dr. Shyam-Prasad.webp' },
+            { id: 'ravish-ranjan', name: 'Dr. Ravish Ranjan', qualifications: 'MBBS, MD, DNB', specialty: 'Gastroenterology', experience: '12 Years', image: 'assets/Doc-Side/Gastroenterologist - Dr. Ravish Ranjan.webp' },
+            { id: 'ashish-modi', name: 'Dr. Ashish Kumar Modi', qualifications: 'MBBS, MS', specialty: 'Minimal Access Surgery', experience: '12+ Years', image: 'assets/Doc-Side/General Surgeon - Dr. Ashish Kumar Modi.webp', hasStaticPage: true },
+            { id: 'ak-agarwal', name: 'Dr. A K Agarwal', qualifications: 'MBBS, MD', specialty: 'Internal Medicine', experience: '25+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Internal Medicine - Dr. A K-Agrawal.webp', hasStaticPage: true },
+            { id: 'ak-sinha', name: 'Dr. A K Sinha', qualifications: 'MBBS, MD', specialty: 'Internal Medicine', experience: '25+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Internal Medicine - Dr. A K-Sinha.webp', hasStaticPage: true },
+            { id: 'neelam-kumari', name: 'Dr. Neelam Kumari', qualifications: 'MBBS, MD, DNB', specialty: 'Internal Medicine', experience: '8+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/General Physician - Dr. Neelam-Kumari.webp', hasStaticPage: true },
+            { id: 'avinash-dubey', name: 'Dr. Avinash Kumar Dubey', qualifications: 'MD, DM', specialty: 'Nephrology', experience: '15+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Nephrologist - Dr. Avinas- Kumar-Dubey.webp', hasStaticPage: true },
+            { id: 'vivek-raj', name: 'Dr. Vivek Raj', qualifications: 'MBBS, DNB', specialty: 'Neurosciences', experience: '9+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Neurosurgeon - Dr. Vivek-Raj.webp' },
+            { id: 'pk-raina', name: 'Dr. P K Raina', qualifications: 'MBBS, MS', specialty: 'Oncology (Cancer Care)', experience: '20+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Oncologist - Dr. P-K-Raina.webp' },
+            { id: 'deepak-verma', name: 'Dr. Deepak Verma', qualifications: 'MBBS, MS', specialty: 'Orthopaedics & Joint Replacement', experience: '25+ Years', image: 'assets/Doc-Side/Orthopedic Surgeon - Dr. Deepak Verma.webp' },
+            { id: 'abhijit-kumar', name: 'Dr. Abhijit Kumar', qualifications: 'MBBS, MS, PDCC', specialty: 'ENT', experience: '16+ Years', image: 'assets/doc-dummy/male-dummy-raj.webp' },
+            { id: 'mozammil-pheroz', name: 'Dr. Mozammil Pheroz', qualifications: 'MBBS, MS, DNB, Dip.Sports Medicine', specialty: 'Orthopaedics & Joint Replacement', experience: '11+ Years', image: 'assets/Doc-Side/dr-pheroz-raj-removebg-preview.png' },
+            { id: 'ujjwal-sinha', name: 'Dr. Ujjwal Sinha', qualifications: 'MBBS, MS, DNB', specialty: 'Orthopaedics & Joint Replacement', experience: '15+ Years', image: 'assets/Doc-Side/ujjwal_sinha_ortho.webp' },
+            { id: 'abhishek-roy', name: 'Dr. Abhishek Roy', qualifications: 'MBBS, MS', specialty: 'Orthopaedics & Joint Replacement', experience: '6+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Abhishek-Roy.webp' },
+            { id: 'suprova-chakraborty', name: 'Dr. Suprova Chakraborty', qualifications: 'DNB Respiratory Medicine', specialty: 'Pulmonology', experience: '12+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Pulmonologist - Dr. Suprova-Chakraborty.webp' },
+            { id: 'sunil-kumar', name: 'Dr. Sunil Kumar', qualifications: 'MBBS, MS, MCh', specialty: 'Urology', experience: '18+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Sunil-Kumar.webp' },
+            { id: 'ved-prakash', name: 'Dr. Ved Prakash Verma', qualifications: 'MBBS, MS, MCh', specialty: 'Urology', experience: '18+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Ved-Prakash-Verma.webp' },
+            { id: 'anupama-mahli', name: 'Dr. Anupama Mahli', qualifications: 'MBBS, MS, DNB', specialty: 'Obstetrics & Gynaecology', experience: '10+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Anupama-Mahli.webp' },
+            { id: 'pushpa-sinha', name: 'Dr. Pushpa Sinha', qualifications: 'MBBS, MD, DGO', specialty: 'Obstetrics & Gynaecology', experience: '15+ Years', image: 'assets/Doc-Side/Gyanecologist - Dr. Pushpa Sinha.webp' },
+            { id: 'pankaj-kumar', name: 'Dr. Pankaj Kumar', qualifications: 'MBBS, MS, MCh', specialty: 'Aesthetic & Reconstructive Surgery', experience: '12+ Years', image: 'assets/doc-dummy/male-dummy-raj.webp' },
+            { id: 'tanushree-chakroborty', name: 'Dr. Tanushree Chakroborty', qualifications: 'MBBS, DGO', specialty: 'Obstetrics & Gynaecology', experience: '15+ Years', image: 'assets/Doc-Side/tanushree_gyane.webp' },
+            { id: 'suraj-mani-bhattacharjee', name: 'Dr. Suraj Mani Bhattacharjee', qualifications: 'BDS', specialty: 'Dental', experience: '10+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dental-Surgeon - Dr. Surajmani-bhattacharjee.webp' },
+            { id: 'piyali-banerjee', name: 'Dr. Piyali Banerjee', qualifications: 'MBBS, DVDL', specialty: 'Dermatology', experience: '12+ Years', image: 'assets/Doc-Side/Dr Piyali Banerjee(Derma).webp' },
+            { id: 'tgn-sinha', name: 'Dr. T.G.N. Sinha', qualifications: 'MBBS, MS, FICS', specialty: 'ENT', experience: '45+ Years', image: 'assets/Doc-Side/Dr T G N Sinha ( ENT).webp' },
+            { id: 'ranajan-jha', name: 'Dr. Ranajan Kumar Jha', qualifications: 'MBBS, MS, FESS', specialty: 'ENT', experience: '15+ Years', image: 'assets/doc-dummy/male-dummy-raj.webp' },
+            { id: 'abhay-pandey', name: 'Dr. Abhay Kumar Pandey', qualifications: 'BPT, MPT, PGDYT', specialty: 'Physiotherapy & Rehabilitation', experience: '16+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Physiotherapist - Dr. Abhay-Kumar-Pandey.webp' },
+            { id: 'shaista-huma', name: 'Dr. Shaista Huma', qualifications: 'MBBS, MD, ACS', specialty: 'Dermatology', experience: '10+ Years', image: 'assets/doc-dummy/male-dummy-raj.webp' },
+            { id: 'ahmad-hussain', name: 'Dr. Ahmad Hussain', qualifications: 'MBBS, MD, DrNB', specialty: 'Neurosciences', experience: '5+ Years', image: 'assets/Doc-Side/Dr Ahmad Hussain.webp' },
+            { id: 'abhishek-bhattacharjee', name: 'Dr. Abhishek Bhattacharjee', qualifications: 'MBBS, MDS', specialty: 'Dental', experience: '10+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Maxillofacial Surgeon - Dr. Abhishek-Bhattacharjee.webp' },
+            { id: 'mohib-ahmed', name: 'Dr. Mohib Ahmed', qualifications: 'MBBS, MD, IDCCM', specialty: 'Critical Care', experience: '16+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Mohib-Ahmed.webp' },
+            { id: 'pradeep-prasad', name: 'Dr. Pradeep Prasad', qualifications: 'MBBS, MD', specialty: 'FNAC, Biopsy, Blood & Laboratory', experience: '10+ Years', image: 'assets/doc-dummy/male-dummy-raj.webp' },
+            { id: 'jitendra-prasad', name: 'Dr. Jitendra Prasad', qualifications: 'MBBS, MD', specialty: 'FNAC, Biopsy, Blood & Laboratory', experience: '9+ Years', image: 'assets/doc-dummy/male-dummy-raj.webp' },
+            { id: 'kriti-kaira', name: 'Dr. Kriti Kaira', qualifications: 'MBBS, MD, PDF', specialty: 'FNAC, Biopsy, Blood & Laboratory', experience: '3+ Years', image: 'assets/Doc-Side/Dr kirti_kaira_lab.webp' },
+            { id: 'ajeet-singh', name: 'Dr. Ajeet Singh', qualifications: 'MBBS, PGD', specialty: 'Administration', experience: '38 Years', image: 'assets/doc-dummy/male-dummy-raj.webp' },
+            { id: 'sanjeev-kumar-ravi', name: 'Dr. Sanjeev Kumar Ravi', qualifications: 'MBBS, DFM', specialty: 'Family Medicine', experience: '20 Years', image: 'assets/doc-dummy/male-dummy-raj.webp' },
+            { id: 'B-kumar', name: 'Dr. B Kumar', qualifications: 'MBBS, MS', specialty: 'Minimal Access Surgery', experience: '12 Years', image: 'assets/doc-dummy/male-dummy-raj.webp' },
+            { id: 'shubham-shekhar', name: 'Dr. Shubham Shekhar', qualifications: 'ACLS, BLS', specialty: 'Emergency', experience: '2 Years', image: 'assets/doc-dummy/male-dummy-raj.webp' },
+            { id: 'anup-kumar-jha', name: 'Dr. Anup Kumar Jha', qualifications: 'MBBS, Cardio-Physician', specialty: 'Cardiology', experience: '30+ Years', image: 'assets/Doc-Side/Dr Anup Kumar Jha_.webp' },
+            { id: 'shweta-sushmita', name: 'Dr. Shweta Sushmita', qualifications: 'MBBS, MD', specialty: 'FNAC, Biopsy, Blood & Laboratory', experience: '10+ Years', image: 'assets/Doc-Side/Lab - Dr. Sweta Sushmita.webp' },
+            { id: 'praveen-kumar', name: 'Dr. Praveen Kumar', qualifications: 'MBBS, DCP', specialty: 'FNAC, Biopsy, Blood & Laboratory', experience: '8+ Years', image: 'assets/Doc-Side/Dr Praveen Kumar (Lab).webp' },
+            { id: 'sony', name: 'Dr. Sony', qualifications: 'MBBS, DNB, PDCC', specialty: 'Critical Care', experience: '4+ Years', image: 'assets/Doc-Side/Dr Sony (Interventional Pain Medicine).webp' },
+            { id: 'parijat-sarkar', name: 'Mr. Parijat Sarkar', qualifications: 'B.Sc, M.Sc', specialty: 'Dietetics & Nutrition', experience: '6+ Years', image: 'assets/Doc-Side/Mr. Parijat Sarkar (Dietetian).webp' },
+            { id: 'abid-akhtar', name: 'Dr. Abid Akhtar', qualifications: 'MBBS, MS', specialty: 'Eye Care', experience: '20+ Years', image: 'assets/Doc-Side/Dr. Abid Akhtar (Opthal).webp' },
+            { id: 'anil-kumar', name: 'Dr. Anil Kumar', qualifications: 'MBBS, MD', specialty: 'Psychiatry & Mental Health', experience: '40+ Years', image: 'assets/Doc-Side/Dr Anil Kumar (Psychiatry).webp' },
+            { id: 'anamika-kumari', name: 'Dr. Anamika Kumari', qualifications: 'MBBS, DNB', specialty: 'Oncology (Cancer Care)', experience: '11+ Years', image: 'assets/Doc-Side/Dr Anamika Onco photo.webp' },
+            { id: 'shekhar-sharma', name: 'Dr. Shekhar Sharma', qualifications: 'MBBS, DMRD', specialty: 'Radiology', experience: '20+ Years', image: 'assets/Doc-Side/Dr Shekhar Sharma (Radiologist).webp' },
+            { id: 'awnindra-singh', name: 'Dr. Awnindra Kumar Singh', qualifications: 'MBBS, MD, DM', specialty: 'Cardiology', experience: '16+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/-Dr. Awnindra-Kumar-Singh-Cardiologist.webp' },
+            { id: 'ravi-shekhar-singh', name: 'Dr. Ravi Shekhar Singh', qualifications: 'MBBS, DCH', specialty: 'Pediatrics & Neonatology', experience: '10+ Years', image: 'assets/specialties/PAEDIATRICS/dr-ravi-shekhar-singh.webp' },
+            { id: 'prakash-chandra', name: 'Dr. Prakash Chandra', qualifications: 'MBBS, MS, MCH', specialty: 'Neurosciences', experience: '18+ Years', image: 'assets/Doc-Side/Dr. Prakash Chandra (Neuro Surgeon).webp' },
+            { id: 'vijay-raj', name: 'Dr. Vijay Raj', qualifications: 'MBBS, MD, DM', specialty: 'Neurosciences', experience: '15+ Years', image: 'assets/Doc-Side/vijayraj.webp' }
         ];
 
         // Ensure we cover the case where 'ak-agarwal' is requested

@@ -123,3 +123,10 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+             if (typeof feather !== 'undefined') {
+                feather.replace();
+            }
+        });
+    </script>
