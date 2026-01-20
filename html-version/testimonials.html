@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Raj Hospitals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in-visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Header (Same as index.html) -->
+    <div class="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-2 sm:py-1 fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-3 sm:px-4">
+             <div class="flex flex-col space-y-2 sm:hidden">
+                <div class="flex items-center justify-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <a href="https://www.facebook.com/RajHospitals" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="facebook" class="w-4 h-4"></i></a>
+                        <a href="https://www.instagram.com/raj.hospitals/" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="instagram" class="w-4 h-4"></i></a>
+                        <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="youtube" class="w-4 h-4"></i></a>
+                    </div>
+                    <a href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9" class="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+                        <i data-feather="map-pin" class="w-4 h-4"></i>
+                        <span class="text-xs font-medium">Location</span>
+                    </a>
+                </div>
+                <div class="flex items-center justify-center">
+                    <div class="flex items-center space-x-2">
+                        <i data-feather="bell" class="w-4 h-4 text-red-300"></i>
+                        <a href="tel:+919771488888" class="text-xs font-medium hover:underline">(24×7) Helpline: +91 97714 88888</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hidden sm:flex justify-between items-center gap-4">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-2">
+                        <a href="https://www.facebook.com/RajHospitals" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="facebook" class="w-4 h-4"></i></a>
+                        <a href="https://www.instagram.com/raj.hospitals/" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="instagram" class="w-4 h-4"></i></a>
+                        <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="youtube" class="w-4 h-4"></i></a>
+                    </div>
+                    <a href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9" class="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+                        <i data-feather="map-pin" class="w-4 h-4"></i>
+                        <span class="text-sm font-medium">Location</span>
+                    </a>
+                </div>
+                 <div class="flex items-center">
+                    <div class="flex items-center space-x-2">
+                        <i data-feather="bell" class="w-4 h-4 text-red-300"></i>
+                        <a href="tel:+919771488888" class="text-sm font-medium hover:underline">(24×7) Helpline: +91 97714 88888</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header id="main-header" class="fixed w-full z-40 bg-white top-[48px] sm:top-6 transition-all duration-300 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex relative items-center justify-between h-16 md:h-20 lg:h-24">
+                <a href="index.html" class="flex items-center group">
+                    <div id="logo-container" class="flex items-center space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6 transition-all duration-300">
+                        <img id="main-logo" src="assets/Header/main-logo_ranchi.webp" alt="Main Logo" class="object-contain transition-all duration-300 w-[90px] h-[90px] sm:w-[125px] sm:h-[125px] md:w-[145px] md:h-[145px] lg:w-[180px] lg:h-[180px]">
+                        <div id="nabh-logos" class="flex space-x-1 sm:space-x-3 md:space-x-2 lg:space-x-2 transition-all duration-300">
+                            <img src="assets/Header/NABL_logo-1.webp" alt="NABH Logo 1" class="object-contain w-[30px] h-[30px]">
+                            <img src="assets/Header/NABL-Logo-2.webp" alt="NABH Logo 2" class="object-contain w-[30px] h-[30px]">
+                            <img src="assets/Header/NABL-Logo-3.webp" alt="NABH Logo 3" class="object-contain w-[30px] h-[30px]">
+                        </div>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex lg:flex flex-col items-end space-y-1 lg:space-y-2">
+                    <nav id="nav-top-row" class="flex items-center space-x-3 md:space-x-4 lg:space-x-6 overflow-hidden transition-all duration-300 h-auto opacity-100 origin-top">
+                        <a href="index.html" class="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">Home</a>
+                        <a href="testimonials.html" class="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">Testimonials</a>
+                        <a href="careers.html" class="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">Careers</a>
+                        <a href="news-media.html" class="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">News & Media</a>
+                        <a href="blogs.html" class="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">Blogs</a>
+                    </nav>
+
+                    <nav class="flex items-center space-x-3 md:space-x-4 lg:space-x-6">
+                        <a href="about.html" class="text-orange-500 font-medium text-sm lg:text-base">About Raj</a>
+                        <div class="relative group cursor-pointer" id="specialties-trigger">
+                            <div class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                                <span>Specialities</span>
+                                <i data-feather="chevron-down" class="w-3 h-3 group-hover:rotate-180 transition-transform"></i>
+                            </div>
+                            <!-- Mega Menu (Simplified structure for brevity, assuming same as index) -->
+                             <div class="absolute top-full right-0 w-[800px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 hidden group-hover:block fade-in-visible z-50">
+                                <div class="grid grid-cols-3 gap-6">
+                                    <div class="flex flex-col">
+                                        <h4 class="font-semibold text-orange-600 uppercase tracking-wide mb-3 border-b border-gray-200 pb-2 text-sm">Centres of Excellence</h4>
+                                        <div class="flex flex-col gap-1">
+                                            <a href="specialties/cardiology.html" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="heart" class="w-4 h-4 text-orange-500"></i> Cardiology</a>
+                                            <a href="specialties/critical-care.html" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="activity" class="w-4 h-4 text-orange-500"></i> Critical Care</a>
+                                            <a href="specialties/emergency.html" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="alert-circle" class="w-4 h-4 text-orange-500"></i> Emergency</a>
+                                            <a href="specialties/neurology.html" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="coffee" class="w-4 h-4 text-orange-500"></i> Neurosciences</a>
+                                            <a href="specialties/oncology.html" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="shield" class="w-4 h-4 text-orange-500"></i> Oncology</a>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="font-semibold text-orange-600 uppercase tracking-wide mb-3 border-b border-gray-200 pb-2 text-sm">Allied Specialties</h4>
+                                        <div class="flex flex-col gap-1">
+                                             <a href="specialties/dental.html" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="smile" class="w-4 h-4 text-orange-500"></i> Dental</a>
+                                             <a href="specialties/ent.html" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="mic" class="w-4 h-4 text-orange-500"></i> ENT</a>
+                                             <a href="specialties/eye-care.html" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="eye" class="w-4 h-4 text-orange-500"></i> Eye Care</a>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="font-semibold text-orange-600 uppercase tracking-wide mb-3 border-b border-gray-200 pb-2 text-sm">Advanced Diagnostics</h4>
+                                        <div class="flex flex-col gap-1">
+                                             <a href="specialties/radiology.html" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="camera" class="w-4 h-4 text-orange-500"></i> Radiology</a>
+                                             <a href="specialties/pathology.html" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm"><i data-feather="file" class="w-4 h-4 text-orange-500"></i> Laboratory</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="doctors.html" class="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">Find a Doctor</a>
+                        <div class="flex items-center space-x-3 ml-2 lg:ml-4">
+                            <a href="contact.html" class="bg-orange-500 text-white px-4 lg:px-7 py-2 lg:py-2.5 rounded-full hover:bg-orange-600 transition-colors font-semibold text-sm lg:text-base shadow-md">Book Appointment</a>
+                        </div>
+                    </nav>
+                     <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700">
+                        <i data-feather="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 max-h-[80vh] overflow-y-auto absolute w-full left-0 shadow-lg">
+             <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block py-2 text-gray-700 font-medium border-b border-gray-50">Home</a>
+                <a href="about.html" class="block py-2 text-orange-500 font-medium border-b border-gray-50">About Raj</a>
+                <a href="specialties.html" class="block py-2 text-gray-700 font-medium border-b border-gray-50">Specialties</a>
+                <a href="doctors.html" class="block py-2 text-gray-700 font-medium border-b border-gray-50">Find a Doctor</a>
+                <a href="testimonials.html" class="block py-2 text-gray-700 font-medium border-b border-gray-50">Testimonials</a>
+                <a href="news-media.html" class="block py-2 text-gray-700 font-medium border-b border-gray-50">News & Media</a>
+                <a href="contact.html" class="block w-full bg-orange-500 text-white py-3 rounded-lg font-medium text-center mt-4">Book Appointment</a>
+             </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-[#fef5f3] to-[#f0fbff] mt-32 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center fade-in">
+                <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                Patient <span class="text-[#ea5234]">Testimonials</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Real stories from real patients who have experienced our compassionate care and medical excellence
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section class="py-8 bg-white border-b border-gray-100 sticky top-[100px] z-30 transition-all duration-300" id="tabs-section">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col gap-6">
+                <!-- Tab Navigation -->
+                <div class="flex justify-center gap-4">
+                    <button onclick="switchTab('written')" id="tab-written" class="px-8 py-3 rounded-lg font-semibold transition-all duration-200 bg-[#fc684b] text-white shadow-lg">
+                        Written Testimonials
+                    </button>
+                    <button onclick="switchTab('video')" id="tab-video" class="px-8 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center gap-2 bg-gray-100 text-gray-700 hover:bg-gray-200">
+                        <i data-feather="play" class="w-4 h-4"></i>
+                        Video Testimonials
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-16 bg-gray-50 min-h-screen">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <!-- Written Testimonials -->
+            <div id="content-written" class="block fade-in">
+                <!-- Fallback: Show static testimonials -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" id="written-testimonials-grid">
+                    <!-- Javascript will populate this -->
+                </div>
+            </div>
+
+            <!-- Video Testimonials -->
+            <div id="content-video" class="hidden fade-in">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="video-testimonials-grid">
+                     <!-- Javascript will populate this -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 hidden" onclick="closeModal()">
+        <div class="relative w-full max-w-4xl bg-black rounded-lg overflow-hidden" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-10 text-white bg-black bg-opacity-50 hover:bg-opacity-75 rounded-full p-2 transition-all">
+                <i data-feather="x" class="w-6 h-6"></i>
+            </button>
+            <div class="relative pt-[56.25%]">
+                <iframe id="modal-iframe" class="absolute top-0 left-0 w-full h-full" src="" title="Video Testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.1\'%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'2\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+        <div class="relative z-10">
+            <div class="py-16">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+                        <div class="lg:col-span-2">
+                            <div class="mb-6"><img src="assets/Header/main-logo_ranchi-below.webp" alt="Raj Hospitals Logo" class="h-28 w-auto filter brightness-0 invert object-contain"></div>
+                            <p class="text-gray-300 leading-relaxed mb-6 text-sm">Raj Hospitals is a leading multi-specialty healthcare provider in Ranchi, Jharkhand, delivering comprehensive medical care with state-of-the-art technology and a patient-centric approach since 1991.</p>
+                            <div class="mt-6 space-y-3">
+                                <div class="flex items-center space-x-2"><i data-feather="phone" class="w-4 h-4 text-orange-400"></i><a href="tel:+919771488888" class="text-gray-300 hover:text-orange-400 text-sm transition-colors">+91 977 14 88888</a></div>
+                                <div class="flex items-center space-x-2"><i data-feather="mail" class="w-4 h-4 text-orange-400"></i><a href="mailto:info@rajhospitals.com" class="text-gray-300 hover:text-orange-400 text-sm transition-colors">info@rajhospitals.com</a></div>
+                                <div class="flex items-start space-x-2"><i data-feather="map-pin" class="w-4 h-4 text-orange-400 mt-0.5"></i><a href="https://maps.google.com/?q=Raj+Hospitals+Bariatu+Road+Ranchi" target="_blank" class="text-gray-300 hover:text-orange-400 text-sm transition-colors">Ranchi, Jharkhand - 834009</a></div>
+                            </div>
+                            <div class="mt-6">
+                                <h5 class="text-sm font-semibold text-orange-400 uppercase tracking-wide mb-4">Connect With Us</h5>
+                                <div class="flex space-x-3">
+                                    <a href="https://www.facebook.com/RajHospitals" target="_blank" class="w-11 h-11 bg-gradient-to-br from-orange-500/20 to-orange-600/20 backdrop-blur-sm rounded-xl flex items-center justify-center hover:from-orange-500 hover:to-orange-600 transition-all duration-300 border border-orange-500/30 hover:border-orange-500 group hover:scale-110 text-orange-300 hover:text-white"><i data-feather="facebook" class="w-5 h-5"></i></a>
+                                    <a href="https://www.instagram.com/raj.hospitals/" target="_blank" class="w-11 h-11 bg-gradient-to-br from-orange-500/20 to-orange-600/20 backdrop-blur-sm rounded-xl flex items-center justify-center hover:from-orange-500 hover:to-orange-600 transition-all duration-300 border border-orange-500/30 hover:border-orange-500 group hover:scale-110 text-orange-300 hover:text-white"><i data-feather="instagram" class="w-5 h-5"></i></a>
+                                    <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" class="w-11 h-11 bg-gradient-to-br from-orange-500/20 to-orange-600/20 backdrop-blur-sm rounded-xl flex items-center justify-center hover:from-orange-500 hover:to-orange-600 transition-all duration-300 border border-orange-500/30 hover:border-orange-500 group hover:scale-110 text-orange-300 hover:text-white"><i data-feather="youtube" class="w-5 h-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-6 text-white uppercase tracking-wide">Quick Links</h4>
+                            <ul class="space-y-2.5">
+                                <li><a href="about.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>About Raj Hospitals</span></a></li>
+                                <li><a href="doctors.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Find a Doctor</span></a></li>
+                                <li><a href="specialties.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Specialties</span></a></li>
+                                <li><a href="careers.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Careers</span></a></li>
+                                <li><a href="news-media.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>News & Media</span></a></li>
+                                <li><a href="blogs.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Blogs</span></a></li>
+                                <li><a href="biomedical-waste-reports.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>BioMedical Waste Reports</span></a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-6 text-white uppercase tracking-wide">Centres of Excellence</h4>
+                            <ul class="space-y-2.5">
+                                <li><a href="specialties/cardiology.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Cardiology</span></a></li>
+                                <li><a href="specialties/critical-care.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Critical Care</span></a></li>
+                                <li><a href="specialties/emergency.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Emergency</span></a></li>
+                                <li><a href="specialties/gastroenterology.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Gastroenterology</span></a></li>
+                                <li><a href="specialties/minimal-access-surgery.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Minimal Access Surgery</span></a></li>
+                                <li><a href="specialties/nephrology.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Nephrology</span></a></li>
+                                <li><a href="specialties/neurosciences.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Neurosciences</span></a></li>
+                                <li><a href="specialties/oncology-cancer-care.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Oncology (Cancer Care)</span></a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-6 text-white uppercase tracking-wide">Allied Specialties</h4>
+                             <ul class="space-y-2.5">
+                                <li><a href="specialties/aesthetic-and-reconstructive-surgery.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Aesthetic & Surg</span></a></li>
+                                <li><a href="specialties/dental.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Dental</span></a></li>
+                                <li><a href="specialties/dermatology.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Dermatology</span></a></li>
+                                <li><a href="specialties/ent.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>ENT</span></a></li>
+                                <li><a href="specialties/eye-care.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Eye Care</span></a></li>
+                                <li><a href="specialties/pediatrics-and-neonatology.html" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Pediatrics</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="border-t border-gray-800 py-8">
+              <div class="max-w-7xl mx-auto px-4">
+                <div class="rounded-xl overflow-hidden shadow-2xl border border-gray-700">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.8753723757673!2d85.32022857588855!3d23.356529303782207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e1a89d6881dd%3A0xd169ee225be1478!2sRaj%20Hospitals%20-%20Best%20Multi%20Specialty%20Hospital%20in%20Ranchi%20Jharkhand!5e0!3m2!1sen!2sin!4v1755580421244!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-black/50 border-t border-gray-800 py-6">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                        <div class="text-gray-400 text-sm text-center md:text-left">
+                            <p class="mb-1">© 2025 <span class="text-white font-semibold">Raj Hospitals</span>. All rights reserved.</p>
+                             <p class="text-gray-500 text-xs">Established 1991 • NABH Accredited • Leading Healthcare Provider in Jharkhand</p>
+                        </div>
+                         <div class="flex flex-wrap justify-center gap-4 text-xs">
+                            <a href="privacy-policy.html" class="text-gray-400 hover:text-orange-400 transition-colors">Privacy Policy</a>
+                            <span class="text-gray-700">•</span>
+                            <a href="terms-and-conditions.html" class="text-gray-400 hover:text-orange-400 transition-colors">Terms & Conditions</a>
+                            <span class="text-gray-700">•</span>
+                            <a href="biomedical-waste-reports.html" class="text-gray-400 hover:text-orange-400 transition-colors">BMW Reports</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Testimonials Data
+        const testimonials = [
+            {
+                id: 1,
+                name: 'Rajesh Kumar',
+                location: 'Ranchi, Jharkhand',
+                rating: 5,
+                text: 'Excellent care during my cardiac surgery. The doctors and staff were extremely professional and caring. Dr. Modi\'s expertise saved my life. I was particularly impressed with the cleanliness of the facilities and the attentiveness of the nursing staff throughout my recovery. Highly recommend Raj Hospitals to anyone needing cardiac care.',
+                treatment: 'Cardiac Surgery',
+                department: 'Cardiology',
+                image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
+                date: 'March 15, 2024'
+            },
+            {
+                id: 2,
+                name: 'Priya Sharma',
+                location: 'Bokaro, Jharkhand',
+                rating: 5,
+                text: 'Outstanding maternity care from Dr. Anupama Mahi. The facilities are modern and clean. The nursing staff was incredibly supportive throughout my delivery. The entire experience, from prenatal care to postpartum support, exceeded my expectations. The lactation specialist was particularly helpful for a first-time mother like me. Thank you for the wonderful experience.',
+                treatment: 'Maternity Care',
+                department: 'Obstetrics & Gynecology',
+                image: 'https://images.unsplash.com/photo-1543430720-fa600c67e423?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwY2xvc2UtdXAlMjBwb3J0cmFpdCUyMG9mJTIwYSUyMHNtaWxpbmclMjB3b21hbiUyMHdpdGglMjBhJTIwYmx1cnJlZCUyMGJhY2tncm91bmQufGVufDB8fHx8MTc1NTA4Njk5MXww&ixlib=rb-4.1.0&q=80&w=200$w=150',
+                date: 'February 28, 2024'
+            },
+            {
+                id: 3,
+                name: 'Anil Singh',
+                location: 'Dhanbad, Jharkhand',
+                rating: 5,
+                text: 'During COVID-19, when I needed dialysis, Raj Hospitals provided exceptional care. Dr. Avinash Kumar and his team ensured my safety while providing the best treatment. The safety protocols were thorough and made me feel secure during a very uncertain time. The entire nephrology department deserves recognition for their dedication and expertise. Forever grateful.',
+                treatment: 'Nephrology Treatment',
+                department: 'Nephrology',
+                image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
+                date: 'January 10, 2024'
+            },
+            {
+                id: 4,
+                name: 'Sunita Devi',
+                location: 'Jamshedpur, Jharkhand',
+                rating: 5,
+                text: 'My father\'s emergency surgery was handled with utmost care and professionalism. The 24/7 emergency service is truly commendable. The hospital staff treated us like family. Dr. Manish Kumar performed the surgery with great skill, and the ICU team\'s attentiveness helped my father recover quickly. The hospital\'s prompt response to our emergency situation saved my father\'s life.',
+                treatment: 'Emergency Surgery',
+                department: 'Emergency Care',
+                image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
+                date: 'April 5, 2024'
+            },
+            {
+                id: 5,
+                name: 'Vikash Gupta',
+                location: 'Hazaribagh, Jharkhand',
+                rating: 5,
+                text: 'Excellent orthopedic treatment for my knee replacement. Dr. Ravi Kumar Sinha and the physiotherapy team were outstanding. Clean facilities, caring staff, and affordable quality care. The rehabilitation program designed for me was comprehensive and effective. Within weeks, I was able to walk comfortably again. Highly satisfied with the entire treatment journey.',
+                treatment: 'Orthopedic Surgery',
+                department: 'Orthopedics',
+                image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
+                date: 'March 22, 2024'
+            },
+            {
+                id: 6,
+                name: 'Meera Kumari',
+                location: 'Ranchi, Jharkhand',
+                rating: 5,
+                text: 'The neurology department provided exceptional care for my stroke treatment. Dr. Suresh Kumar Jha\'s quick response, advanced facilities, and continuous monitoring helped in my complete recovery. The rehabilitation therapists worked tirelessly to help me regain my speech and mobility. My family and I are deeply thankful for the compassionate care I received during such a difficult time.',
+                treatment: 'Neurology Treatment',
+                department: 'Neurology',
+                image: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
+                date: 'February 15, 2024'
+            },
+            {
+                id: 7,
+                name: 'Rakesh Singh',
+                location: 'Patna, Bihar',
+                rating: 5,
+                text: 'Traveled from Patna for my cataract surgery at Raj Hospitals. Dr. Meera Devi\'s expertise in ophthalmology is remarkable. The procedure was quick, painless, and the results are amazing. I can now see clearly without glasses for the first time in decades. The follow-up care was thorough and the entire eye care team was professional and reassuring throughout.',
+                treatment: 'Cataract Surgery',
+                department: 'Ophthalmology',
+                image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
+                date: 'January 30, 2024'
+            },
+            {
+                id: 8,
+                name: 'Sanjay Prasad',
+                location: 'Ranchi, Jharkhand',
+                rating: 5,
+                text: 'My experience with the ENT department was excellent. Dr. Vikash Kumar diagnosed and treated my chronic sinusitis that had been bothering me for years. The endoscopic procedure was minimally invasive with quick recovery. I appreciate the detailed explanation of my condition and treatment options. I can finally breathe normally and sleep well after years of discomfort.',
+                treatment: 'Sinus Surgery',
+                department: 'ENT',
+                image: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
+                date: 'April 12, 2024'
+            }
+        ];
+
+        // Video Testimonials Data
+        const videoTestimonials = [
+            {
+                videoId: "Gi1WhJ1dR6g",
+                patient: "Emergency Brain Care That Saved Prem Kumar Singh | Raj Hospitals",
+                desc: "I felt cared for every step of the way.",
+                thumbnail: "https://img.youtube.com/vi/Gi1WhJ1dR6g/maxresdefault.jpg",
+            },
+            {
+                videoId: "HARE579wkdY",
+                patient: "Knee replacement surgery | Raj Hospitals",
+                desc: "Mr. Rajwar brought his wife, Mrs. Neelam Rajwar, to Raj Hospitals for a knee replacement surgery — and today, they walk away with smiles and gratitude.",
+                thumbnail: "https://img.youtube.com/vi/HARE579wkdY/maxresdefault.jpg",
+            },
+            {
+                videoId: "mHiO2RYdgds",
+                patient: "Cancer treatment | Patient Testimonial ",
+                desc: "The doctors and staff were exceptional.",
+                thumbnail: "https://img.youtube.com/vi/mHiO2RYdgds/maxresdefault.jpg",
+            },
+            {
+                videoId: "vg59yGKWz_s",
+                patient: "Neurosurgery Success Story at Raj Hospitals",
+                desc: "Under the expert care of Dr. Ahmad Hussain (Neurosurgeon) and Dr. Neelam Kumari, our patient has made an incredible recovery.",
+                thumbnail: "https://img.youtube.com/vi/vg59yGKWz_s/maxresdefault.jpg",
+            },
+            {
+                videoId: "-QcubD0G-A4",
+                patient: "Appendix Treatment | Patient Testimonial | Raj Hospitals",
+                desc: "Exceptional care and treatment experience.",
+                thumbnail: "https://img.youtube.com/vi/-QcubD0G-A4/maxresdefault.jpg",
+            },
+            {
+                videoId: "7aQnhMDBKRM",
+                patient: "Breathing Treatment | Patient Testimonial | Raj Hospitals",
+                desc: "Watch this real patient testimonial sharing their experience with breathing treatment at Raj Hospitals under the expert care of Dr. Sainik Dutta.",
+                thumbnail: "https://img.youtube.com/vi/7aQnhMDBKRM/maxresdefault.jpg",
+            },
+            {
+                videoId: "yThRjkoljvc",
+                patient: "Jaundice Treatment | Patient Testimonial | Raj Hospitals",
+                desc: "Watch this real patient testimonial where Ms. Divya Kumari shares her experience of jaundice treatment at Raj Hospitals under the expert care of Dr. Ravish Ranjan.",
+                thumbnail: "https://img.youtube.com/vi/yThRjkoljvc/maxresdefault.jpg",
+            },
+            {
+                videoId: "aQBEpvueG5U",
+                patient: "Jaundice Treatment | Patient Testimonial | Raj Hospitals",
+                desc: "Watch this real patient testimonial where Mrs. Anita Kumari shares her experience of jaundice treatment at Raj Hospitals under the expert care of Dr. Ravish Ranjan.",
+                thumbnail: "https://img.youtube.com/vi/aQBEpvueG5U/maxresdefault.jpg",
+            },
+            {
+                videoId: "nrBUSAEFOnc",
+                patient: "Little Finger Fracture Treatment | Patient Testimonial | Raj Hospitals",
+                desc: "After slipping in his washroom, Mr. Aniket suffered a fracture in the little finger of his right hand. He was immediately brought to the Emergency Department at Raj Hospitals, where an X-ray confirmed the fracture. The surgery was successfully performed by Dr. Mozammil Pheroz using K-wire fixation.",
+                thumbnail: "https://img.youtube.com/vi/nrBUSAEFOnc/maxresdefault.jpg",
+            },
+            {
+                videoId: "8BIt5vJVgYI",
+                patient: "How Knee Replacement Changed Her Life | Testimonial of Shejhari Devi",
+                desc: "After months of severe knee pain that affected even her daily routine, Mrs. Shejhari Devi finally found relief under the expert care of Dr. Deepak Verma.",
+                thumbnail: "https://img.youtube.com/vi/8BIt5vJVgYI/maxresdefault.jpg",
+            },
+            {
+                videoId: "DOSuZZjZiZ8",
+                patient: "Stomach cancer treatment | Patient Testimonial",
+                desc: "Meet Mr. Anil Prasad Sahu, who came to us with advanced stomach cancer and a heart full of questions.",
+                thumbnail: "https://img.youtube.com/vi/DOSuZZjZiZ8/maxresdefault.jpg",
+            }
+        ];
+
+        // Navbar scroll effect
+        const header = document.getElementById('main-header');
+        const logo = document.getElementById('main-logo');
+        const logoContainer = document.getElementById('logo-container');
+        const navTopRow = document.getElementById('nav-top-row');
+
+        window.addEventListener('scroll', () => {
+             if (window.scrollY > 50) {
+                header.classList.add('py-1');
+                 logo.classList.remove('w-[90px]', 'h-[90px]', 'sm:w-[125px]', 'sm:h-[125px]', 'md:w-[145px]', 'md:h-[145px]', 'lg:w-[180px]', 'lg:h-[180px]');
+                logo.classList.add('w-12', 'h-12', 'md:w-16', 'md:h-16');
+                 navTopRow.style.height = '0';
+                navTopRow.style.opacity = '0';
+                navTopRow.style.marginTop = '0';
+            } else {
+                 header.classList.remove('py-1');
+                  logo.classList.add('w-[90px]', 'h-[90px]', 'sm:w-[125px]', 'sm:h-[125px]', 'md:w-[145px]', 'md:h-[145px]', 'lg:w-[180px]', 'lg:h-[180px]');
+                logo.classList.remove('w-12', 'h-12', 'md:w-16', 'md:h-16');
+                 navTopRow.style.height = 'auto'; 
+                navTopRow.style.opacity = '1';
+                navTopRow.style.marginTop = '';
+            }
+        });
+
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Testimonial Logic
+        function renderWrittenTestimonials() {
+            const container = document.getElementById('written-testimonials-grid');
+            if (!container || !testimonials || testimonials.length === 0) return;
+
+            container.innerHTML = testimonials.map((t, index) => `
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 relative fade-in" style="animation-delay: ${index * 0.1}s">
+                    <div class="absolute top-6 right-6 text-[#fbd7d0]">
+                        <i data-feather="message-circle" class="w-12 h-12"></i>
+                    </div>
+                    
+                    <div class="flex space-x-1 mb-6">
+                        ${Array(t.rating).fill('<i data-feather="star" class="w-5 h-5 text-yellow-400 fill-current"></i>').join('')}
+                    </div>
+
+                    <blockquote class="text-gray-700 leading-relaxed mb-6 text-lg">
+                        "${t.text}"
+                    </blockquote>
+
+                    <div class="flex items-center space-x-4 pt-4 border-t border-gray-100">
+                        <div class="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                            <img src="${t.image}" alt="${t.name}" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                                <div>
+                                    <h4 class="font-bold text-gray-900 text-lg">${t.name}</h4>
+                                    <p class="text-gray-600 text-sm">${t.location}</p>
+                                </div>
+                                <div class="mt-2 md:mt-0 md:text-right">
+                                    <span class="inline-block bg-[#fde9e6] text-[#c4401f] px-3 py-1 rounded-full text-xs font-medium">
+                                        ${t.treatment}
+                                    </span>
+                                    <p class="text-gray-500 text-xs mt-1">${t.date}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            feather.replace();
+        }
+
+        function renderVideoTestimonials() {
+            const container = document.getElementById('video-testimonials-grid');
+            if (!container || !videoTestimonials || videoTestimonials.length === 0) return;
+
+            container.innerHTML = videoTestimonials.map((v, index) => `
+                <div class="bg-white border border-[#fde9e6] rounded-xl shadow-md flex flex-col overflow-hidden hover:shadow-lg transition-shadow fade-in" style="animation-delay: ${index * 0.1}s">
+                    <button onclick="openModal('${v.videoId}')" class="relative group w-full text-left cursor-pointer">
+                        <img src="${v.thumbnail}" alt="Testimonial by ${v.patient}" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center group-hover:bg-opacity-50 transition-all">
+                            <div class="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i data-feather="play" class="w-8 h-8 text-[#ea5234] ml-1"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="p-4 flex-grow flex flex-col">
+                        <h3 class="text-sm font-semibold text-gray-900 mb-2 line-clamp-2">${v.patient}</h3>
+                        <p class="text-xs text-gray-600 line-clamp-2">${v.desc}</p>
+                    </div>
+                </div>
+            `).join('');
+            feather.replace();
+        }
+
+        window.switchTab = function(tabId) {
+            const contentWritten = document.getElementById('content-written');
+            const contentVideo = document.getElementById('content-video');
+            const tabWritten = document.getElementById('tab-written');
+            const tabVideo = document.getElementById('tab-video');
+
+            if (tabId === 'written') {
+                contentWritten.classList.remove('hidden');
+                contentWritten.classList.add('block');
+                contentVideo.classList.remove('block');
+                contentVideo.classList.add('hidden');
+
+                tabWritten.classList.remove('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+                tabWritten.classList.add('bg-[#fc684b]', 'text-white', 'shadow-lg');
+                
+                tabVideo.classList.remove('bg-[#fc684b]', 'text-white', 'shadow-lg');
+                tabVideo.classList.add('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+            } else {
+                contentWritten.classList.remove('block');
+                contentWritten.classList.add('hidden');
+                contentVideo.classList.remove('hidden');
+                contentVideo.classList.add('block');
+
+                tabVideo.classList.remove('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+                tabVideo.classList.add('bg-[#fc684b]', 'text-white', 'shadow-lg');
+
+                tabWritten.classList.remove('bg-[#fc684b]', 'text-white', 'shadow-lg');
+                tabWritten.classList.add('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+            }
+        }
+
+        window.openModal = function(videoId) {
+            const modal = document.getElementById('video-modal');
+            const iframe = document.getElementById('modal-iframe');
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            modal.classList.remove('hidden');
+        }
+
+        window.closeModal = function() {
+            const modal = document.getElementById('video-modal');
+            const iframe = document.getElementById('modal-iframe');
+            iframe.src = ''; 
+            modal.classList.add('hidden');
+        }
+
+        // Fade-in animation
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+             // Initialize Feathers
+            feather.replace();
+
+            // Render Testimonials
+            renderWrittenTestimonials();
+            renderVideoTestimonials();
+
+            // Initialize Animations
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+            // Load Review Magnet
+            const script = document.createElement('script');
+            script.src = 'https://reviewmagnet.in/widget-loader.js';
+            script.async = true;
+            document.body.appendChild(script);
+        });
+    </script>
+</body>
+</html>
