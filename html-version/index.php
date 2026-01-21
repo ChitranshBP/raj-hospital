@@ -97,12 +97,16 @@
             <!-- Search Bar -->
             <div class="mb-6">
                 <div class="relative max-w-2xl mx-auto">
-                    <form class="relative">
-                        <input type="text" placeholder="Search for Doctors and Specialties" class="w-full px-6 py-3.5 pr-12 rounded-full border-2 border-gray-200 focus:border-orange-500 focus:outline-none text-gray-700 placeholder-gray-500 shadow-sm">
+                    <div class="relative">
+                        <input type="text" id="search-input" placeholder="Search for Doctors and Specialties" class="w-full px-6 py-3.5 pr-12 rounded-full border-2 border-gray-200 focus:border-orange-500 focus:outline-none text-gray-700 placeholder-gray-500 shadow-sm" autocomplete="off">
                         <button type="button" class="absolute right-2 top-1/2 -translate-y-1/2 bg-orange-500 hover:bg-orange-600 text-white p-2.5 rounded-full transition-colors">
                             <i data-feather="search" class="w-5 h-5"></i>
                         </button>
-                    </form>
+                    </div>
+                    <!-- Search Results Dropdown -->
+                    <div id="search-results" class="absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-200 max-h-96 overflow-y-auto z-50 hidden">
+                        <!-- Results will be populated by JavaScript -->
+                    </div>
                 </div>
             </div>
 
@@ -1174,6 +1178,178 @@
                  if (e.target === modal) {
                      modal.classList.add('hidden');
                      iframe.src = '';
+                 }
+             });
+
+             // --- Search Functionality ---
+             const searchInput = document.getElementById('search-input');
+             const searchResults = document.getElementById('search-results');
+
+             // Doctors and Specialties Data
+             const searchData = {
+                 doctors: [
+                     { name: "Dr. Nishant Sinha", specialty: "Cardiology", qualifications: "MBBS, MD, DM (Cardiology)", url: "specialties/cardiology.php" },
+                     { name: "Dr. Sunil Kumar Mahto", specialty: "Cardiology", qualifications: "MBBS, MD, DM (Cardiology)", url: "specialties/cardiology.php" },
+                     { name: "Dr. Himanshu Sekhar Hota", specialty: "Cardiology (Interventional)", qualifications: "MBBS, MD, DM (Cardiology)", url: "specialties/cardiology.php" },
+                     { name: "Dr. Ahmad Hussain", specialty: "Neurology", qualifications: "MBBS, MS (General Surgery), MCh (Neurosurgery)", url: "specialties/neurology.php" },
+                     { name: "Dr. Anupama Mahli", specialty: "Obstetrics & Gynecology", qualifications: "MBBS, MS, DNB, D.MAS", url: "specialties/obstetrics-and-gynaecology.php" },
+                     { name: "Dr. Pushpa Sinha", specialty: "Obstetrics & Gynecology", qualifications: "MBBS, MD, DGO", url: "specialties/obstetrics-and-gynaecology.php" },
+                     { name: "Dr. Tanushree Chakroborty", specialty: "Obstetrics & Gynecology", qualifications: "MBBS, DGO", url: "specialties/obstetrics-and-gynaecology.php" },
+                     { name: "Dr. Anand Kumar Singh", specialty: "Orthopaedics", qualifications: "MBBS, MS (Ortho)", url: "specialties/orthopaedics.php" },
+                     { name: "Dr. Md. Rizwan Akhtar", specialty: "Orthopaedics", qualifications: "MBBS, D-Ortho, DNB (Ortho)", url: "specialties/orthopaedics.php" },
+                     { name: "Dr. Sudhir Kumar Sinha", specialty: "Minimal Access Surgery", qualifications: "MBBS, MS", url: "specialties/minimal-access-surgery.php" },
+                     { name: "Dr. Manoj Kumar", specialty: "Minimal Access Surgery", qualifications: "MBBS, MS", url: "specialties/minimal-access-surgery.php" },
+                     { name: "Dr. Mohon Ahmed", specialty: "ENT", qualifications: "MBBS, MS (ENT)", url: "specialties/ent.php" },
+                     { name: "Dr. Avinash Kumar Dubey", specialty: "Nephrology", qualifications: "MBBS, MD (Medicine), DM (Nephrology)", url: "specialties/nephrology.php" },
+                     { name: "Dr. Rajesh Kumar Sinha", specialty: "Oncology", qualifications: "MBBS, MS, MCh (Surgical Oncology)", url: "specialties/oncology.php" },
+                     { name: "Dr. Rajesh Raman", specialty: "Gastroenterology", qualifications: "MBBS, MD, DM (Gastroenterology)", url: "specialties/gastroenterology.php" },
+                     { name: "Dr. Rakesh Kumar Sinha", specialty: "Pediatrics", qualifications: "MBBS, MD (Pediatrics)", url: "specialties/pediatrics.php" },
+                     { name: "Dr. Rakesh Roshan", specialty: "Urology", qualifications: "MBBS, MS, MCh (Urology)", url: "specialties/urology.php" },
+                     { name: "Dr. Shekhar Sharma", specialty: "Radiology", qualifications: "MBBS, MD (Radiology)", url: "specialties/radiology.php" },
+                     { name: "Dr. Shweta Sushmita", specialty: "Laboratory Investigations", qualifications: "MD (Pathology)", url: "specialties/laboratory-investigations.php" },
+                     { name: "Dr. Praveen Kumar", specialty: "Laboratory Investigations", qualifications: "MD (Biochemistry)", url: "specialties/laboratory-investigations.php" },
+                     { name: "Dr. Kriti Kaira", specialty: "Laboratory Investigations", qualifications: "MD (Microbiology)", url: "specialties/laboratory-investigations.php" },
+                     { name: "Dr. Abhishek Bhattacharjee", specialty: "Oral & Maxillofacial Surgery", qualifications: "BDS, MDS", url: "specialties/oral-maxillofacial-surgery-ad.php" }
+                 ],
+                 specialties: [
+                     { name: "Cardiology", description: "Heart and cardiovascular care", url: "specialties/cardiology.php", icon: "heart" },
+                     { name: "Neurology", description: "Brain, spine and nervous system care", url: "specialties/neurology.php", icon: "aperture" },
+                     { name: "Obstetrics & Gynecology", description: "Women's health and maternity care", url: "specialties/obstetrics-and-gynaecology.php", icon: "user" },
+                     { name: "Orthopaedics & Joint Replacement", description: "Bone, joint and musculoskeletal care", url: "specialties/orthopaedics.php", icon: "users" },
+                     { name: "Minimal Access Surgery", description: "Laparoscopic and laser surgeries", url: "specialties/minimal-access-surgery.php", icon: "scissors" },
+                     { name: "ENT (Ear, Nose & Throat)", description: "Ear, nose and throat care", url: "specialties/ent.php", icon: "mic" },
+                     { name: "Nephrology", description: "Kidney and renal care", url: "specialties/nephrology.php", icon: "droplet" },
+                     { name: "Oncology (Cancer Care)", description: "Cancer treatment and chemotherapy", url: "specialties/oncology.php", icon: "shield" },
+                     { name: "Gastroenterology", description: "Digestive system and liver care", url: "specialties/gastroenterology.php", icon: "trending-up" },
+                     { name: "Emergency & Trauma Care", description: "24/7 emergency services", url: "specialties/emergency.php", icon: "alert-circle" },
+                     { name: "Pediatrics & Neonatology", description: "Child and newborn care", url: "specialties/pediatrics.php", icon: "smile" },
+                     { name: "Urology", description: "Urinary tract and male reproductive care", url: "specialties/urology.php", icon: "zap" },
+                     { name: "Radiology", description: "MRI, CT Scan, X-Ray and imaging", url: "specialties/radiology.php", icon: "monitor" },
+                     { name: "Laboratory Investigations", description: "FNAC, Biopsy, Blood tests", url: "specialties/laboratory-investigations.php", icon: "thermometer" },
+                     { name: "Oral & Maxillofacial Surgery", description: "Dental and facial surgery", url: "specialties/oral-maxillofacial-surgery-ad.php", icon: "smile" }
+                 ]
+             };
+
+             function performSearch(query) {
+                 if (!query || query.length < 2) {
+                     searchResults.classList.add('hidden');
+                     return;
+                 }
+
+                 const lowerQuery = query.toLowerCase();
+                 const results = [];
+
+                 // Search specialties
+                 searchData.specialties.forEach(specialty => {
+                     if (specialty.name.toLowerCase().includes(lowerQuery) ||
+                         specialty.description.toLowerCase().includes(lowerQuery)) {
+                         results.push({
+                             type: 'specialty',
+                             ...specialty
+                         });
+                     }
+                 });
+
+                 // Search doctors
+                 searchData.doctors.forEach(doctor => {
+                     if (doctor.name.toLowerCase().includes(lowerQuery) ||
+                         doctor.specialty.toLowerCase().includes(lowerQuery) ||
+                         doctor.qualifications.toLowerCase().includes(lowerQuery)) {
+                         results.push({
+                             type: 'doctor',
+                             ...doctor
+                         });
+                     }
+                 });
+
+                 displayResults(results);
+             }
+
+             function displayResults(results) {
+                 if (results.length === 0) {
+                     searchResults.innerHTML = `
+                         <div class="p-4 text-center text-gray-500">
+                             <i data-feather="search" class="w-8 h-8 mx-auto mb-2 opacity-50"></i>
+                             <p>No results found</p>
+                         </div>
+                     `;
+                     searchResults.classList.remove('hidden');
+                     feather.replace();
+                     return;
+                 }
+
+                 // Group results by type
+                 const specialties = results.filter(r => r.type === 'specialty');
+                 const doctors = results.filter(r => r.type === 'doctor');
+
+                 let html = '';
+
+                 if (specialties.length > 0) {
+                     html += `<div class="p-3 bg-gray-50 border-b border-gray-200">
+                         <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Specialties</span>
+                     </div>`;
+                     specialties.forEach(s => {
+                         html += `
+                             <a href="${s.url}" class="flex items-center gap-3 p-3 hover:bg-orange-50 transition-colors border-b border-gray-100">
+                                 <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+                                     <i data-feather="${s.icon}" class="w-5 h-5 text-orange-500"></i>
+                                 </div>
+                                 <div>
+                                     <div class="font-semibold text-gray-900">${s.name}</div>
+                                     <div class="text-sm text-gray-500">${s.description}</div>
+                                 </div>
+                             </a>
+                         `;
+                     });
+                 }
+
+                 if (doctors.length > 0) {
+                     html += `<div class="p-3 bg-gray-50 border-b border-gray-200">
+                         <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Doctors</span>
+                     </div>`;
+                     doctors.forEach(d => {
+                         html += `
+                             <a href="${d.url}" class="flex items-center gap-3 p-3 hover:bg-orange-50 transition-colors border-b border-gray-100">
+                                 <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                     <i data-feather="user" class="w-5 h-5 text-blue-500"></i>
+                                 </div>
+                                 <div>
+                                     <div class="font-semibold text-gray-900">${d.name}</div>
+                                     <div class="text-sm text-gray-500">${d.specialty} &bull; ${d.qualifications}</div>
+                                 </div>
+                             </a>
+                         `;
+                     });
+                 }
+
+                 searchResults.innerHTML = html;
+                 searchResults.classList.remove('hidden');
+                 feather.replace();
+             }
+
+             // Event listeners for search
+             searchInput.addEventListener('input', (e) => {
+                 performSearch(e.target.value.trim());
+             });
+
+             searchInput.addEventListener('focus', (e) => {
+                 if (e.target.value.trim().length >= 2) {
+                     performSearch(e.target.value.trim());
+                 }
+             });
+
+             // Hide results when clicking outside
+             document.addEventListener('click', (e) => {
+                 if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                     searchResults.classList.add('hidden');
+                 }
+             });
+
+             // Keyboard navigation
+             searchInput.addEventListener('keydown', (e) => {
+                 if (e.key === 'Escape') {
+                     searchResults.classList.add('hidden');
+                     searchInput.blur();
                  }
              });
         });

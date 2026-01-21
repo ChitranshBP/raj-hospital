@@ -305,6 +305,95 @@
         </div>
     </section>
 
+    <!-- Conditions We Treat Section -->
+    <section class="py-12 bg-gradient-to-r from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Conditions We Treat</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Common conditions we diagnose and treat in our Orthopaedics & Joint Replacement department
+                </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 fade-in">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Knee Replacement (Total & Partial)</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Hip Replacement</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Shoulder Replacement</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Osteoarthritis</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Rheumatoid Arthritis</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Fractures & Trauma</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Sports Injuries</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">ACL & PCL Tears</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Meniscus Tears</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Rotator Cuff Injuries</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Spinal Disorders & Deformities</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Herniated Disc & Sciatica</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Osteoporosis</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Bone Infections</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Limb Deformities</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Pediatric Orthopaedic Conditions</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Joint Dislocations</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Tendon & Ligament Injuries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Treatments We Offer Section -->
     <section class="py-8 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">

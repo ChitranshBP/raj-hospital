@@ -1,11 +1,13 @@
 <?php $base_url = '../'; ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urology & Kidney Stone Care - Raj Hospitals</title>
-    <meta name="description" content="Best Urology Hospital in Ranchi offering comprehensive urological care for adults and children with advanced medical technology.">
+    <meta name="description"
+        content="Best Urology Hospital in Ranchi offering comprehensive urological care for adults and children with advanced medical technology.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
@@ -38,26 +40,50 @@
         }
     </script>
     <style>
-        .scrollbar-hide::-webkit-scrollbar { display: none; }
-        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
-        .fade-in-visible { opacity: 1; transform: translateY(0); }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
+
 <body class="bg-white">
 
     <!-- Top Header Bar -->
-    <div class="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-2 sm:py-1 fixed top-0 left-0 right-0 z-50 shadow-sm">
+    <div
+        class="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-2 sm:py-1 fixed top-0 left-0 right-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-3 sm:px-4">
             <!-- Mobile Layout -->
             <div class="flex flex-col space-y-2 sm:hidden">
                 <div class="flex items-center justify-center space-x-4">
                     <div class="flex items-center space-x-3">
-                        <a href="https://www.facebook.com/RajHospitals" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="facebook" class="w-4 h-4"></i></a>
-                        <a href="https://www.instagram.com/raj.hospitals/" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="instagram" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="youtube" class="w-4 h-4"></i></a>
+                        <a href="https://www.facebook.com/RajHospitals" target="_blank"
+                            class="hover:text-orange-200 transition-colors"><i data-feather="facebook"
+                                class="w-4 h-4"></i></a>
+                        <a href="https://www.instagram.com/raj.hospitals/" target="_blank"
+                            class="hover:text-orange-200 transition-colors"><i data-feather="instagram"
+                                class="w-4 h-4"></i></a>
+                        <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank"
+                            class="hover:text-orange-200 transition-colors"><i data-feather="youtube"
+                                class="w-4 h-4"></i></a>
                     </div>
-                    <a href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9" class="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+                    <a href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9"
+                        class="flex items-center space-x-1 hover:text-orange-200 transition-colors">
                         <i data-feather="map-pin" class="w-4 h-4"></i>
                         <span class="text-xs font-medium">Location</span>
                     </a>
@@ -65,7 +91,8 @@
                 <div class="flex items-center justify-center">
                     <div class="flex items-center space-x-2">
                         <i data-feather="bell" class="w-4 h-4 text-red-300"></i>
-                        <a href="tel:+919771488888" class="text-xs font-medium hover:underline">(24x7) Helpline: +91 97714 88888</a>
+                        <a href="tel:+919771488888" class="text-xs font-medium hover:underline">(24x7) Helpline: +91
+                            97714 88888</a>
                     </div>
                 </div>
             </div>
@@ -74,11 +101,18 @@
             <div class="hidden sm:flex justify-between items-center gap-4">
                 <div class="flex items-center space-x-4">
                     <div class="flex items-center space-x-2">
-                        <a href="https://www.facebook.com/RajHospitals" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="facebook" class="w-4 h-4"></i></a>
-                        <a href="https://www.instagram.com/raj.hospitals/" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="instagram" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="youtube" class="w-4 h-4"></i></a>
+                        <a href="https://www.facebook.com/RajHospitals" target="_blank"
+                            class="hover:text-orange-200 transition-colors"><i data-feather="facebook"
+                                class="w-4 h-4"></i></a>
+                        <a href="https://www.instagram.com/raj.hospitals/" target="_blank"
+                            class="hover:text-orange-200 transition-colors"><i data-feather="instagram"
+                                class="w-4 h-4"></i></a>
+                        <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank"
+                            class="hover:text-orange-200 transition-colors"><i data-feather="youtube"
+                                class="w-4 h-4"></i></a>
                     </div>
-                    <a href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9" class="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+                    <a href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9"
+                        class="flex items-center space-x-1 hover:text-orange-200 transition-colors">
                         <i data-feather="map-pin" class="w-4 h-4"></i>
                         <span class="text-sm font-medium">Location</span>
                     </a>
@@ -86,7 +120,8 @@
                 <div class="flex items-center">
                     <div class="flex items-center space-x-2">
                         <i data-feather="bell" class="w-4 h-4 text-red-300"></i>
-                        <a href="tel:+919771488888" class="text-sm font-medium hover:underline">(24x7) Helpline: +91 97714 88888</a>
+                        <a href="tel:+919771488888" class="text-sm font-medium hover:underline">(24x7) Helpline: +91
+                            97714 88888</a>
                     </div>
                 </div>
             </div>
@@ -109,7 +144,8 @@
             <div class="max-w-7xl mx-auto px-4 w-full">
                 <div class="max-w-3xl text-white fade-in">
                     <h1 class="text-4xl lg:text-5xl font-bold mb-4">Urology & Stone Care</h1>
-                    <p class="text-xl text-gray-200">Best Urology Hospital in Ranchi offering comprehensive urological care for adults and children with advanced medical technology.</p>
+                    <p class="text-xl text-gray-200">Best Urology Hospital in Ranchi offering comprehensive urological
+                        care for adults and children with advanced medical technology.</p>
                 </div>
             </div>
         </div>
@@ -123,7 +159,12 @@
                 <div class="lg:col-span-2">
                     <div class="fade-in">
                         <h2 class="text-3xl font-bold text-gray-900 mb-6">Overview</h2>
-                        <p class="text-lg text-gray-700 leading-relaxed mb-6">Raj Hospitals is committed to providing compassionate and timely care for disorders of the urinary system. Our skilled urologists offer diagnosis and treatment for a wide range of urological diseases including urinary tract infections, kidney stones, urologic cancers, infertility, and male reproductive issues. The department is equipped with cutting-edge technology delivering expert adult and pediatric urology care and minimally invasive surgical options.</p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">Raj Hospitals is committed to providing
+                            compassionate and timely care for disorders of the urinary system. Our skilled urologists
+                            offer diagnosis and treatment for a wide range of urological diseases including urinary
+                            tract infections, kidney stones, urologic cancers, infertility, and male reproductive
+                            issues. The department is equipped with cutting-edge technology delivering expert adult and
+                            pediatric urology care and minimally invasive surgical options.</p>
 
                         <!-- Why Choose Us Box -->
                         <div class="bg-primary-50 p-6 rounded-xl border border-primary-100 mb-8">
@@ -133,20 +174,27 @@
                             </h3>
                             <ul class="space-y-3">
                                 <li class="flex items-start">
-                                    <i data-feather="check" class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
-                                    <span class="text-gray-700">Experienced team of urologists and uro-oncosurgeons</span>
+                                    <i data-feather="check"
+                                        class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Experienced team of urologists and
+                                        uro-oncosurgeons</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i data-feather="check" class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
-                                    <span class="text-gray-700">Advanced laser and lithotripsy technology for kidney stones</span>
+                                    <i data-feather="check"
+                                        class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Advanced laser and lithotripsy technology for kidney
+                                        stones</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i data-feather="check" class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
+                                    <i data-feather="check"
+                                        class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
                                     <span class="text-gray-700">Minimally invasive and robotic-assisted surgeries</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i data-feather="check" class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
-                                    <span class="text-gray-700">Comprehensive care for male infertility and sexual health</span>
+                                    <i data-feather="check"
+                                        class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Comprehensive care for male infertility and sexual
+                                        health</span>
                                 </li>
                             </ul>
                         </div>
@@ -159,7 +207,8 @@
                             <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
-                                    <span class="text-gray-700">Advanced endoscopic and laparoscopic surgical suites</span>
+                                    <span class="text-gray-700">Advanced endoscopic and laparoscopic surgical
+                                        suites</span>
                                 </div>
                             </div>
                             <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
@@ -171,25 +220,28 @@
                             <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
-                                    <span class="text-gray-700">Dedicated dialysis access and renal transplant support</span>
+                                    <span class="text-gray-700">Dedicated dialysis access and renal transplant
+                                        support</span>
                                 </div>
                             </div>
                             <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
-                                    <span class="text-gray-700">Comprehensive diagnostic imaging and laboratory services</span>
+                                    <span class="text-gray-700">Comprehensive diagnostic imaging and laboratory
+                                        services</span>
                                 </div>
                             </div>
-                             <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
                                     <span class="text-gray-700">Specialized pediatric urology care</span>
                                 </div>
                             </div>
-                             <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-2 h-2 bg-primary-500 rounded-full"></div>
-                                    <span class="text-gray-700">Multidisciplinary urology team for holistic management</span>
+                                    <span class="text-gray-700">Multidisciplinary urology team for holistic
+                                        management</span>
                                 </div>
                             </div>
                         </div>
@@ -201,12 +253,15 @@
                     <h3 class="text-2xl font-bold text-gray-900 mb-4 flex justify-center items-center">
                         Meet Our Specialists
                     </h3>
-                    <div class="flex flex-col gap-8 overflow-y-auto" style="max-height: 1000px; max-width: 340px; margin: 0 auto;">
+                    <div class="flex flex-col gap-8 overflow-y-auto"
+                        style="max-height: 1000px; max-width: 340px; margin: 0 auto;">
 
                         <!-- Doctor 1 -->
-                        <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full" style="min-height: 500px;">
+                        <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full"
+                            style="min-height: 500px;">
                             <div class="relative h-48 overflow-hidden">
-                                <img src="../assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Sunil-Kumar.webp" alt="Dr. Sunil Kumar" class="w-full h-full object-cover object-top">
+                                <img src="../assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Sunil-Kumar.webp"
+                                    alt="Dr. Sunil Kumar" class="w-full h-full object-cover object-top">
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Sunil Kumar</h3>
@@ -216,21 +271,25 @@
                                     <i data-feather="award" class="w-4 h-4 mr-2"></i>
                                     <span>18+ Years Experience</span>
                                 </div>
-                                <a href="../contact.php" class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 mb-2">
+                                <a href="../contact.php"
+                                    class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 mb-2">
                                     <i data-feather="calendar" class="w-4 h-4"></i>
                                     <span>Book Appointment</span>
                                 </a>
-                                <a href="../doctors.php" class="w-full bg-white text-primary-600 py-2 rounded-lg border border-primary-600 hover:bg-primary-50 transition-colors font-medium flex items-center justify-center space-x-2">
+                                <a href="../doctors.php"
+                                    class="w-full bg-white text-primary-600 py-2 rounded-lg border border-primary-600 hover:bg-primary-50 transition-colors font-medium flex items-center justify-center space-x-2">
                                     <i data-feather="user" class="w-4 h-4"></i>
                                     <span>View Profile</span>
                                 </a>
                             </div>
                         </div>
 
-                         <!-- Doctor 2 -->
-                        <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full" style="min-height: 500px;">
+                        <!-- Doctor 2 -->
+                        <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full"
+                            style="min-height: 500px;">
                             <div class="relative h-48 overflow-hidden">
-                                <img src="../assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Ved-Prakash-Verma.webp" alt="Dr. Ved Prakash Verma" class="w-full h-full object-cover object-top">
+                                <img src="../assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Ved-Prakash-Verma.webp"
+                                    alt="Dr. Ved Prakash Verma" class="w-full h-full object-cover object-top">
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Ved Prakash Verma</h3>
@@ -240,17 +299,108 @@
                                     <i data-feather="award" class="w-4 h-4 mr-2"></i>
                                     <span>18+ Years Experience</span>
                                 </div>
-                                <a href="../contact.php" class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 mb-2">
+                                <a href="../contact.php"
+                                    class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 mb-2">
                                     <i data-feather="calendar" class="w-4 h-4"></i>
                                     <span>Book Appointment</span>
                                 </a>
-                                <a href="../doctors.php" class="w-full bg-white text-primary-600 py-2 rounded-lg border border-primary-600 hover:bg-primary-50 transition-colors font-medium flex items-center justify-center space-x-2">
+                                <a href="../doctors.php"
+                                    class="w-full bg-white text-primary-600 py-2 rounded-lg border border-primary-600 hover:bg-primary-50 transition-colors font-medium flex items-center justify-center space-x-2">
                                     <i data-feather="user" class="w-4 h-4"></i>
                                     <span>View Profile</span>
                                 </a>
                             </div>
                         </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conditions We Treat Section -->
+    <section class="py-12 bg-gradient-to-r from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Conditions We Treat</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Common conditions we diagnose and treat in our Urology department
+                </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100 fade-in">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Kidney Stones (Urolithiasis)</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Urinary Tract Infections (UTI)</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Benign Prostatic Hyperplasia (BPH)</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Prostate Cancer</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Bladder Cancer</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Kidney Cancer (Renal Cell Carcinoma)</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Erectile Dysfunction</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Male Infertility</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Urinary Incontinence</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Overactive Bladder (OAB)</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Testicular Cancer</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Varicocele</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Hydrocele</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Urethral Stricture</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Pelvic Organ Prolapse</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Penile Disorders</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Pediatric Urological Conditions</span>
+                    </div>
+                    <div class="flex items-center space-x-3 py-2">
+                        <div class="w-2 h-2 bg-primary-500 rounded-full flex-shrink-0"></div>
+                        <span class="text-gray-700 text-base">Hematuria (Blood in Urine)</span>
                     </div>
                 </div>
             </div>
@@ -269,101 +419,129 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Urology/Prostate-Surgeries.webp" alt="Prostate Surgeries" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Urology/Prostate-Surgeries.webp" alt="Prostate Surgeries"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Prostate Surgeries (TURP)</h3>
-                        <p class="text-gray-600 mb-4">Treatment for benign prostatic hyperplasia and related conditions using Transurethral Resection of Prostate.</p>
+                        <p class="text-gray-600 mb-4">Treatment for benign prostatic hyperplasia and related conditions
+                            using Transurethral Resection of Prostate.</p>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Urology/Kidney-Stone-Surgeries.webp" alt="Kidney Stone Surgeries" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Urology/Kidney-Stone-Surgeries.webp"
+                            alt="Kidney Stone Surgeries"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Kidney Stone Surgeries</h3>
-                        <p class="text-gray-600 mb-4">Minimally invasive and surgical removal of kidney and bladder stones.</p>
+                        <p class="text-gray-600 mb-4">Minimally invasive and surgical removal of kidney and bladder
+                            stones.</p>
                     </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Urology/Female-Urology-Surgeries.webp" alt="Female Urology" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Urology/Female-Urology-Surgeries.webp" alt="Female Urology"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Female Urology Surgeries</h3>
-                        <p class="text-gray-600 mb-4">Treatment for female urinary tract conditions including incontinence and prolapse.</p>
+                        <p class="text-gray-600 mb-4">Treatment for female urinary tract conditions including
+                            incontinence and prolapse.</p>
                     </div>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Urology/Infertility-Treatment.webp" alt="Infertility Treatment" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Urology/Infertility-Treatment.webp" alt="Infertility Treatment"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Infertility Treatment</h3>
-                        <p class="text-gray-600 mb-4">Care and surgical management of male and female infertility in the reproductive age group.</p>
+                        <p class="text-gray-600 mb-4">Care and surgical management of male and female infertility in the
+                            reproductive age group.</p>
                     </div>
                 </div>
 
                 <!-- Service 5 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Urology/Lithotripsy.webp" alt="Lithotripsy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Urology/Lithotripsy.webp" alt="Lithotripsy"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Lithotripsy</h3>
-                        <p class="text-gray-600 mb-4">Non-invasive shock wave therapy for breaking down kidney stones.</p>
+                        <p class="text-gray-600 mb-4">Non-invasive shock wave therapy for breaking down kidney stones.
+                        </p>
                     </div>
                 </div>
 
                 <!-- Service 6 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Urology/Robotic-Surgery.webp" alt="Robotic Surgery" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Urology/Robotic-Surgery.webp" alt="Robotic Surgery"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Robotic Surgery</h3>
-                        <p class="text-gray-600 mb-4">Advanced robotic-assisted surgical techniques for precision and quicker recovery.</p>
+                        <p class="text-gray-600 mb-4">Advanced robotic-assisted surgical techniques for precision and
+                            quicker recovery.</p>
                     </div>
                 </div>
 
                 <!-- Service 7 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Urology/Renal-Transplantation.webp" alt="Renal Transplantation" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Urology/Renal-Transplantation.webp" alt="Renal Transplantation"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Renal Transplantation</h3>
-                        <p class="text-gray-600 mb-4">Comprehensive pre-op and post-op care and surgery for kidney transplant patients.</p>
+                        <p class="text-gray-600 mb-4">Comprehensive pre-op and post-op care and surgery for kidney
+                            transplant patients.</p>
                     </div>
                 </div>
 
-                 <!-- Service 8 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <!-- Service 8 -->
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Urology/Laparoscopi- Surgery.webp" alt="Laparoscopic Surgery" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Urology/Laparoscopi- Surgery.webp" alt="Laparoscopic Surgery"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Laparoscopic Surgery</h3>
-                        <p class="text-gray-600 mb-4">Minimally invasive surgeries for urological conditions including tumors and reconstructions.</p>
+                        <p class="text-gray-600 mb-4">Minimally invasive surgeries for urological conditions including
+                            tumors and reconstructions.</p>
                     </div>
                 </div>
 
                 <!-- Service 9 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Urology/Uro-Oncology.webp" alt="Uro-Oncology" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Urology/Uro-Oncology.webp" alt="Uro-Oncology"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Uro-Oncology</h3>
-                        <p class="text-gray-600 mb-4">Management of urological cancers including bladder, prostate, and renal tumors.</p>
+                        <p class="text-gray-600 mb-4">Management of urological cancers including bladder, prostate, and
+                            renal tumors.</p>
                     </div>
                 </div>
             </div>
@@ -390,11 +568,13 @@
                         <h3 class="text-xl font-semibold text-gray-900">Successful Kidney Stone Removal</h3>
                     </div>
                     <p class="text-gray-500 mb-4">Patient: Mr. Sharma</p>
-                    <p class="text-gray-700 mb-6">Raj Hospitals provided minimally invasive stone removal treatment which was quick and effective. I experienced little pain and a fast recovery.</p>
+                    <p class="text-gray-700 mb-6">Raj Hospitals provided minimally invasive stone removal treatment
+                        which was quick and effective. I experienced little pain and a fast recovery.</p>
                     <div class="bg-green-50 p-4 rounded-lg border border-green-100">
                         <div class="flex items-center space-x-2">
                             <i data-feather="check" class="w-5 h-5 text-green-600"></i>
-                            <span class="font-medium text-green-800">Outcome: Stone-free with restored kidney function.</span>
+                            <span class="font-medium text-green-800">Outcome: Stone-free with restored kidney
+                                function.</span>
                         </div>
                     </div>
                 </div>
@@ -408,11 +588,13 @@
                         <h3 class="text-xl font-semibold text-gray-900">Robotic Prostate Surgery Success</h3>
                     </div>
                     <p class="text-gray-500 mb-4">Patient: Mr. Singh</p>
-                    <p class="text-gray-700 mb-6">The advanced robotic surgery for prostate cancer was state-of-the-art and led to minimal complications and fast rehabilitation.</p>
+                    <p class="text-gray-700 mb-6">The advanced robotic surgery for prostate cancer was state-of-the-art
+                        and led to minimal complications and fast rehabilitation.</p>
                     <div class="bg-green-50 p-4 rounded-lg border border-green-100">
                         <div class="flex items-center space-x-2">
                             <i data-feather="check" class="w-5 h-5 text-green-600"></i>
-                            <span class="font-medium text-green-800">Outcome: Cancer remission and improved quality of life.</span>
+                            <span class="font-medium text-green-800">Outcome: Cancer remission and improved quality of
+                                life.</span>
                         </div>
                     </div>
                 </div>
@@ -435,21 +617,27 @@
                 <div>
                     <div class="space-y-4">
                         <!-- FAQ 1 -->
-                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer"
+                            onclick="toggleFaq(this)">
                             <div class="flex justify-between items-center">
-                                <h3 class="text-lg font-semibold text-gray-900 mb-3">What urological conditions are treated?</h3>
-                                <i data-feather="plus" class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">What urological conditions are
+                                    treated?</h3>
+                                <i data-feather="plus"
+                                    class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
                             </div>
                             <div class="faq-content text-gray-700 transition-all duration-300 overflow-hidden max-h-0">
-                                <p>Urinary infections, stones, cancers, infertility, erectile dysfunction, and pediatric urology conditions.</p>
+                                <p>Urinary infections, stones, cancers, infertility, erectile dysfunction, and pediatric
+                                    urology conditions.</p>
                             </div>
                         </div>
 
                         <!-- FAQ 2 -->
-                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer"
+                            onclick="toggleFaq(this)">
                             <div class="flex justify-between items-center">
                                 <h3 class="text-lg font-semibold text-gray-900 mb-3">Is robotic surgery available?</h3>
-                                <i data-feather="plus" class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
+                                <i data-feather="plus"
+                                    class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
                             </div>
                             <div class="faq-content text-gray-700 transition-all duration-300 overflow-hidden max-h-0">
                                 <p>Yes, we offer robotic-assisted surgeries for precision and faster recovery.</p>
@@ -457,24 +645,31 @@
                         </div>
 
                         <!-- FAQ 3 -->
-                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer"
+                            onclick="toggleFaq(this)">
                             <div class="flex justify-between items-center">
-                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Do you perform kidney transplants?</h3>
-                                <i data-feather="plus" class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Do you perform kidney transplants?
+                                </h3>
+                                <i data-feather="plus"
+                                    class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
                             </div>
                             <div class="faq-content text-gray-700 transition-all duration-300 overflow-hidden max-h-0">
                                 <p>Yes, including pre and post transplantation comprehensive care.</p>
                             </div>
                         </div>
 
-                         <!-- FAQ 4 -->
-                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer" onclick="toggleFaq(this)">
+                        <!-- FAQ 4 -->
+                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer"
+                            onclick="toggleFaq(this)">
                             <div class="flex justify-between items-center">
-                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Are pediatric urology services offered?</h3>
-                                <i data-feather="plus" class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Are pediatric urology services
+                                    offered?</h3>
+                                <i data-feather="plus"
+                                    class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
                             </div>
                             <div class="faq-content text-gray-700 transition-all duration-300 overflow-hidden max-h-0">
-                                <p>Our team specializes in managing congenital and acquired urological conditions in children.</p>
+                                <p>Our team specializes in managing congenital and acquired urological conditions in
+                                    children.</p>
                             </div>
                         </div>
                     </div>
@@ -492,7 +687,9 @@
                                 <label for="inquiry_name" class="block text-sm font-medium text-gray-700 mb-1">
                                     Full Name <span class="text-red-500">*</span>
                                 </label>
-                                <input type="text" id="inquiry_name" name="inquiry_name" required class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all" placeholder="Enter your name">
+                                <input type="text" id="inquiry_name" name="inquiry_name" required
+                                    class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                                    placeholder="Enter your name">
                             </div>
 
                             <!-- Email -->
@@ -500,7 +697,9 @@
                                 <label for="inquiry_email" class="block text-sm font-medium text-gray-700 mb-1">
                                     Email Address <span class="text-red-500">*</span>
                                 </label>
-                                <input type="email" id="inquiry_email" name="inquiry_email" required class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all" placeholder="Enter your email">
+                                <input type="email" id="inquiry_email" name="inquiry_email" required
+                                    class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                                    placeholder="Enter your email">
                             </div>
 
                             <!-- Phone -->
@@ -508,7 +707,9 @@
                                 <label for="inquiry_phone" class="block text-sm font-medium text-gray-700 mb-1">
                                     Phone Number <span class="text-red-500">*</span>
                                 </label>
-                                <input type="tel" id="inquiry_phone" name="inquiry_phone" required pattern="[0-9]{10}" class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all" placeholder="Enter 10-digit mobile number">
+                                <input type="tel" id="inquiry_phone" name="inquiry_phone" required pattern="[0-9]{10}"
+                                    class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                                    placeholder="Enter 10-digit mobile number">
                             </div>
 
                             <!-- Message -->
@@ -516,14 +717,17 @@
                                 <label for="inquiry_message" class="block text-sm font-medium text-gray-700 mb-1">
                                     Your Question <span class="text-red-500">*</span>
                                 </label>
-                                <textarea id="inquiry_message" name="inquiry_message" required rows="4" class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all" placeholder="Describe your question or concern..."></textarea>
+                                <textarea id="inquiry_message" name="inquiry_message" required rows="4"
+                                    class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                                    placeholder="Describe your question or concern..."></textarea>
                             </div>
 
                             <!-- Hidden field for specialty -->
                             <input type="hidden" name="specialty" value="Urology">
 
                             <!-- Submit Button -->
-                            <button type="submit" class="w-full bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2">
+                            <button type="submit"
+                                class="w-full bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2">
                                 <i data-feather="send" class="w-5 h-5"></i>
                                 Submit Inquiry
                             </button>
@@ -630,4 +834,5 @@
         }
     </script>
 </body>
+
 </html>
