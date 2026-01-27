@@ -137,7 +137,7 @@ function getSpecialtySlug($name, $category) {
             <div class="flex relative items-center justify-between h-16 md:h-20 lg:h-24">
                 <!-- Logo -->
                 <a href="<?php echo $base_url; ?>index.php" class="flex items-center group">
-                    <div id="logo-container" class="flex items-center space-x-3 sm:space-x-4 md:space-x-5 lg:space-x-6 transition-all duration-300">
+                    <div id="logo-container" class="flex items-center space-x-2 sm:space-x-4 md:space-x-5 lg:space-x-6 transition-all duration-300">
                         <img id="main-logo" src="<?php echo $base_url; ?>assets/Header/main-logo_ranchi.webp" alt="Main Logo" class="object-contain transition-all duration-300 w-[80px] h-[80px] sm:w-[110px] sm:h-[110px] md:w-[130px] md:h-[130px] lg:w-[160px] lg:h-[160px]">
                         <div id="nabh-logos" class="flex space-x-1 sm:space-x-3 md:space-x-2 lg:space-x-2 transition-all duration-300">
                             <img src="<?php echo $base_url; ?>assets/Header/NABL_logo-1.webp" alt="NABH Logo 1" class="object-contain w-[30px] h-[30px]">
@@ -147,9 +147,15 @@ function getSpecialtySlug($name, $category) {
                     </div>
                 </a>
 
+                <!-- Mobile Menu Button (visible on mobile only) -->
+                <button id="mobile-menu-btn" class="flex md:hidden items-center justify-center p-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors border border-gray-200 bg-white shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6" id="menu-icon"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 hidden" id="close-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+
                 <!-- Desktop Nav -->
                 <div class="hidden md:flex lg:flex flex-col items-end space-y-1 lg:space-y-2">
-                    
+
                     <!-- First Row (Collapsible) -->
                     <nav id="nav-top-row" class="flex items-center space-x-3 md:space-x-4 lg:space-x-6 overflow-hidden transition-all duration-300 h-auto opacity-100 origin-top">
                         <a href="<?php echo $base_url; ?>index.php" class="<?php echo $active_page == 'index.php' ? 'text-orange-500' : 'text-gray-700 hover:text-gray-900'; ?> transition-colors font-medium text-sm lg:text-base">Home</a>
@@ -200,24 +206,45 @@ function getSpecialtySlug($name, $category) {
                             <a href="<?php echo $base_url; ?>contact.php" class="<?php echo $active_page == 'contact.php' ? 'bg-orange-600 shadow-inner' : 'bg-orange-500 hover:bg-orange-600'; ?> text-white px-4 lg:px-7 py-2 lg:py-2.5 rounded-full transition-colors font-semibold text-sm lg:text-base shadow-md">Book Appointment</a>
                         </div>
                     </nav>
-
-                    <!-- Mobile Menu Details (Simplified for HTML version) -->
-                   <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700">
-                        <i data-feather="menu" class="w-6 h-6"></i>
-                    </button>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 max-h-[80vh] overflow-y-auto absolute w-full left-0 shadow-lg">
-             <div class="px-4 py-4 space-y-3">
-                <a href="<?php echo $base_url; ?>index.php" class="block py-2 <?php echo $active_page == 'index.php' ? 'text-orange-500' : 'text-gray-700'; ?> font-medium border-b border-gray-50">Home</a>
-                <a href="<?php echo $base_url; ?>about.php" class="block py-2 <?php echo $active_page == 'about.php' ? 'text-orange-500' : 'text-gray-700'; ?> font-medium border-b border-gray-50">About Raj</a>
-                <a href="<?php echo $base_url; ?>specialties.php" class="block py-2 <?php echo $active_page == 'specialties.php' ? 'text-orange-500' : 'text-gray-700'; ?> font-medium border-b border-gray-50">Specialties</a>
-                <a href="<?php echo $base_url; ?>doctors.php" class="block py-2 <?php echo $active_page == 'doctors.php' ? 'text-orange-500' : 'text-gray-700'; ?> font-medium border-b border-gray-50">Find a Doctor</a>
-                <a href="<?php echo $base_url; ?>testimonials.php" class="block py-2 <?php echo $active_page == 'testimonials.php' ? 'text-orange-500' : 'text-gray-700'; ?> font-medium border-b border-gray-50">Testimonials</a>
-                <a href="<?php echo $base_url; ?>news-media.php" class="block py-2 <?php echo $active_page == 'news-media.php' ? 'text-orange-500' : 'text-gray-700'; ?> font-medium border-b border-gray-50">News & Media</a>
+        <!-- Mobile Menu (Hidden by default, visible on mobile when toggled) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 max-h-[80vh] overflow-y-auto absolute w-full left-0 shadow-lg">
+             <div class="px-4 py-4 space-y-1">
+                <a href="<?php echo $base_url; ?>index.php" class="block py-3 <?php echo $active_page == 'index.php' ? 'text-orange-500' : 'text-gray-700'; ?> font-medium border-b border-gray-100">Home</a>
+                <a href="<?php echo $base_url; ?>about.php" class="block py-3 <?php echo $active_page == 'about.php' ? 'text-orange-500' : 'text-gray-700'; ?> font-medium border-b border-gray-100">About Raj</a>
+
+                <!-- Mobile Specialties Accordion -->
+                <div class="border-b border-gray-100">
+                    <button id="mobile-specialties-btn" class="flex items-center justify-between w-full py-3 text-gray-700 font-medium">
+                        <span>Specialties</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 transition-transform duration-200" id="specialties-chevron"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div id="mobile-specialties-dropdown" class="hidden pb-3">
+                        <?php foreach ($specialties as $categoryData): ?>
+                        <div class="border-b border-gray-100 pb-2">
+                            <button type="button" class="w-full flex items-center justify-between py-2 px-2 text-orange-600 hover:bg-orange-50 rounded transition-colors mobile-category-btn">
+                                <span class="text-sm font-semibold uppercase"><?php echo htmlspecialchars($categoryData['category']); ?></span>
+                                <i data-feather="chevron-down" class="w-3 h-3 transition-transform category-chevron"></i>
+                            </button>
+                            <div class="pl-4 mt-1 space-y-1 max-h-48 overflow-y-auto hidden mobile-category-items scrollbar-thin">
+                                <?php foreach ($categoryData['items'] as $item):
+                                    $slug = getSpecialtySlug($item, $categoryData['category']);
+                                ?>
+                                <a href="<?php echo $base_url; ?>specialties/<?php echo $slug; ?>.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors"><?php echo htmlspecialchars($item); ?></a>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+
+                <a href="<?php echo $base_url; ?>doctors.php" class="block py-3 <?php echo $active_page == 'doctors.php' ? 'text-orange-500' : 'text-gray-700'; ?> font-medium border-b border-gray-100">Find a Doctor</a>
+                <a href="<?php echo $base_url; ?>testimonials.php" class="block py-3 <?php echo $active_page == 'testimonials.php' ? 'text-orange-500' : 'text-gray-700'; ?> font-medium border-b border-gray-100">Testimonials</a>
+                <a href="<?php echo $base_url; ?>news-media.php" class="block py-3 <?php echo $active_page == 'news-media.php' ? 'text-orange-500' : 'text-gray-700'; ?> font-medium border-b border-gray-100">News & Media</a>
+                <a href="<?php echo $base_url; ?>careers.php" class="block py-3 <?php echo $active_page == 'careers.php' ? 'text-orange-500' : 'text-gray-700'; ?> font-medium border-b border-gray-100">Careers</a>
                 <a href="<?php echo $base_url; ?>contact.php" class="block w-full bg-orange-500 text-white py-3 rounded-lg font-medium text-center mt-4">Book Appointment</a>
              </div>
         </div>

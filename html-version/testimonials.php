@@ -273,14 +273,6 @@
             }
         });
 
-        // Mobile Menu
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
         // Testimonial Logic
         function renderWrittenTestimonials() {
             const container = document.getElementById('written-testimonials-grid');

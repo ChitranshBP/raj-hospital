@@ -26,6 +26,23 @@
             opacity: 1;
             transform: translateY(0);
         }
+        /* Search colors matching React version */
+        .search-specialty-icon {
+            background-color: rgba(1, 145, 199, 0.1);
+            color: #0191C7;
+        }
+        .search-doctor-icon {
+            background-color: rgba(249, 119, 27, 0.1);
+            color: #F9771B;
+        }
+        .search-specialty-badge {
+            background-color: rgba(1, 145, 199, 0.1);
+            color: #0191C7;
+        }
+        .search-doctor-badge {
+            background-color: rgba(249, 119, 27, 0.1);
+            color: #F9771B;
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -97,15 +114,15 @@
             <!-- Search Bar -->
             <div class="mb-6">
                 <div class="relative max-w-2xl mx-auto">
-                    <div class="relative">
-                        <input type="text" id="search-input" placeholder="Search for Doctors and Specialties" class="w-full px-6 py-3.5 pr-12 rounded-full border-2 border-gray-200 focus:border-orange-500 focus:outline-none text-gray-700 placeholder-gray-500 shadow-sm" autocomplete="off">
-                        <button type="button" class="absolute right-2 top-1/2 -translate-y-1/2 bg-orange-500 hover:bg-orange-600 text-white p-2.5 rounded-full transition-colors">
+                    <form id="homepage-search-form" class="relative">
+                        <input type="text" id="homepage-search" placeholder="Search for Doctors and Specialties" class="w-full px-6 py-3.5 pr-12 rounded-full border-2 border-gray-200 focus:border-[#F9771B] focus:outline-none text-gray-700 placeholder-gray-500 shadow-sm" autocomplete="off">
+                        <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 bg-[#F9771B] hover:bg-[#F9771B]/90 text-white p-2.5 rounded-full transition-colors">
                             <i data-feather="search" class="w-5 h-5"></i>
                         </button>
-                    </div>
+                    </form>
                     <!-- Search Results Dropdown -->
-                    <div id="search-results" class="absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-200 max-h-96 overflow-y-auto z-50 hidden">
-                        <!-- Results will be populated by JavaScript -->
+                    <div id="search-results-dropdown" class="hidden absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-2xl border border-gray-200 max-h-[400px] overflow-y-auto z-50">
+                        <!-- Results will be populated by JS -->
                     </div>
                 </div>
             </div>
@@ -1030,14 +1047,6 @@
                  lastScrollY = currentScrollY;
              }, { passive: true });
 
-             // --- Mobile Menu ---
-             const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-             const mobileMenu = document.getElementById('mobile-menu');
-             
-             mobileMenuBtn.addEventListener('click', () => {
-                 mobileMenu.classList.toggle('hidden');
-             });
-
              // --- Hero Carousel ---
              const slides = document.querySelectorAll('.hero-slide');
              const dots = document.querySelectorAll('.hero-dot');
@@ -1181,177 +1190,259 @@
                  }
              });
 
-             // --- Search Functionality ---
-             const searchInput = document.getElementById('search-input');
-             const searchResults = document.getElementById('search-results');
+             // --- Homepage Search Functionality (matching React version) ---
+             const searchInput = document.getElementById('homepage-search');
+             const searchDropdown = document.getElementById('search-results-dropdown');
+             const searchForm = searchInput ? searchInput.closest('form') : null;
 
-             // Doctors and Specialties Data
-             const searchData = {
-                 doctors: [
-                     { name: "Dr. Nishant Sinha", specialty: "Cardiology", qualifications: "MBBS, MD, DM (Cardiology)", url: "specialties/cardiology.php" },
-                     { name: "Dr. Sunil Kumar Mahto", specialty: "Cardiology", qualifications: "MBBS, MD, DM (Cardiology)", url: "specialties/cardiology.php" },
-                     { name: "Dr. Himanshu Sekhar Hota", specialty: "Cardiology (Interventional)", qualifications: "MBBS, MD, DM (Cardiology)", url: "specialties/cardiology.php" },
-                     { name: "Dr. Ahmad Hussain", specialty: "Neurology", qualifications: "MBBS, MS (General Surgery), MCh (Neurosurgery)", url: "specialties/neurology.php" },
-                     { name: "Dr. Anupama Mahli", specialty: "Obstetrics & Gynecology", qualifications: "MBBS, MS, DNB, D.MAS", url: "specialties/obstetrics-and-gynaecology.php" },
-                     { name: "Dr. Pushpa Sinha", specialty: "Obstetrics & Gynecology", qualifications: "MBBS, MD, DGO", url: "specialties/obstetrics-and-gynaecology.php" },
-                     { name: "Dr. Tanushree Chakroborty", specialty: "Obstetrics & Gynecology", qualifications: "MBBS, DGO", url: "specialties/obstetrics-and-gynaecology.php" },
-                     { name: "Dr. Anand Kumar Singh", specialty: "Orthopaedics", qualifications: "MBBS, MS (Ortho)", url: "specialties/orthopaedics.php" },
-                     { name: "Dr. Md. Rizwan Akhtar", specialty: "Orthopaedics", qualifications: "MBBS, D-Ortho, DNB (Ortho)", url: "specialties/orthopaedics.php" },
-                     { name: "Dr. Sudhir Kumar Sinha", specialty: "Minimal Access Surgery", qualifications: "MBBS, MS", url: "specialties/minimal-access-surgery.php" },
-                     { name: "Dr. Manoj Kumar", specialty: "Minimal Access Surgery", qualifications: "MBBS, MS", url: "specialties/minimal-access-surgery.php" },
-                     { name: "Dr. Mohon Ahmed", specialty: "ENT", qualifications: "MBBS, MS (ENT)", url: "specialties/ent.php" },
-                     { name: "Dr. Avinash Kumar Dubey", specialty: "Nephrology", qualifications: "MBBS, MD (Medicine), DM (Nephrology)", url: "specialties/nephrology.php" },
-                     { name: "Dr. Rajesh Kumar Sinha", specialty: "Oncology", qualifications: "MBBS, MS, MCh (Surgical Oncology)", url: "specialties/oncology.php" },
-                     { name: "Dr. Rajesh Raman", specialty: "Gastroenterology", qualifications: "MBBS, MD, DM (Gastroenterology)", url: "specialties/gastroenterology.php" },
-                     { name: "Dr. Rakesh Kumar Sinha", specialty: "Pediatrics", qualifications: "MBBS, MD (Pediatrics)", url: "specialties/pediatrics.php" },
-                     { name: "Dr. Rakesh Roshan", specialty: "Urology", qualifications: "MBBS, MS, MCh (Urology)", url: "specialties/urology.php" },
-                     { name: "Dr. Shekhar Sharma", specialty: "Radiology", qualifications: "MBBS, MD (Radiology)", url: "specialties/radiology.php" },
-                     { name: "Dr. Shweta Sushmita", specialty: "Laboratory Investigations", qualifications: "MD (Pathology)", url: "specialties/laboratory-investigations.php" },
-                     { name: "Dr. Praveen Kumar", specialty: "Laboratory Investigations", qualifications: "MD (Biochemistry)", url: "specialties/laboratory-investigations.php" },
-                     { name: "Dr. Kriti Kaira", specialty: "Laboratory Investigations", qualifications: "MD (Microbiology)", url: "specialties/laboratory-investigations.php" },
-                     { name: "Dr. Abhishek Bhattacharjee", specialty: "Oral & Maxillofacial Surgery", qualifications: "BDS, MDS", url: "specialties/oral-maxillofacial-surgery-ad.php" }
-                 ],
-                 specialties: [
-                     { name: "Cardiology", description: "Heart and cardiovascular care", url: "specialties/cardiology.php", icon: "heart" },
-                     { name: "Neurology", description: "Brain, spine and nervous system care", url: "specialties/neurology.php", icon: "aperture" },
-                     { name: "Obstetrics & Gynecology", description: "Women's health and maternity care", url: "specialties/obstetrics-and-gynaecology.php", icon: "user" },
-                     { name: "Orthopaedics & Joint Replacement", description: "Bone, joint and musculoskeletal care", url: "specialties/orthopaedics.php", icon: "users" },
-                     { name: "Minimal Access Surgery", description: "Laparoscopic and laser surgeries", url: "specialties/minimal-access-surgery.php", icon: "scissors" },
-                     { name: "ENT (Ear, Nose & Throat)", description: "Ear, nose and throat care", url: "specialties/ent.php", icon: "mic" },
-                     { name: "Nephrology", description: "Kidney and renal care", url: "specialties/nephrology.php", icon: "droplet" },
-                     { name: "Oncology (Cancer Care)", description: "Cancer treatment and chemotherapy", url: "specialties/oncology.php", icon: "shield" },
-                     { name: "Gastroenterology", description: "Digestive system and liver care", url: "specialties/gastroenterology.php", icon: "trending-up" },
-                     { name: "Emergency & Trauma Care", description: "24/7 emergency services", url: "specialties/emergency.php", icon: "alert-circle" },
-                     { name: "Pediatrics & Neonatology", description: "Child and newborn care", url: "specialties/pediatrics.php", icon: "smile" },
-                     { name: "Urology", description: "Urinary tract and male reproductive care", url: "specialties/urology.php", icon: "zap" },
-                     { name: "Radiology", description: "MRI, CT Scan, X-Ray and imaging", url: "specialties/radiology.php", icon: "monitor" },
-                     { name: "Laboratory Investigations", description: "FNAC, Biopsy, Blood tests", url: "specialties/laboratory-investigations.php", icon: "thermometer" },
-                     { name: "Oral & Maxillofacial Surgery", description: "Dental and facial surgery", url: "specialties/oral-maxillofacial-surgery-ad.php", icon: "smile" }
-                 ]
-             };
+             const doctors = [
+                // Cardiology (3 doctors)
+                { id: 'rajesh-jha', name: 'Dr. Rajesh Kr. Jha', qualifications: 'MBBS, MD, DM (Cardiology)', specialty: 'Cardiology', experience: '16+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Cardiologist - Dr. Rajesh-Kumar Jha.webp', profileUrl: 'doctors/rajesh-jha.php' },
+                { id: 'awnindra-singh', name: 'Dr. Awnindra Kumar Singh', qualifications: 'MBBS, MD, DM', specialty: 'Cardiology', experience: '16+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/-Dr. Awnindra-Kumar-Singh-Cardiologist.webp', profileUrl: 'doctors/awnindra-singh.php' },
+                { id: 'anup-kumar-jha', name: 'Dr. Anup Kumar Jha', qualifications: 'MBBS, Cardio-Physician (NI), IGNOU', specialty: 'Cardiology', experience: '30+ Years', image: 'assets/Doc-Side/Dr Anup Kumar Jha_.webp', profileUrl: 'doctors/anup-kumar-jha.php' },
 
-             function performSearch(query) {
-                 if (!query || query.length < 2) {
-                     searchResults.classList.add('hidden');
-                     return;
-                 }
+                // Critical Care (3 doctors)
+                { id: 'mohib-ahmed', name: 'Dr. Mohib Ahmed', qualifications: 'MBBS, MD, IDCCM', specialty: 'Critical Care', experience: '16+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Mohib-Ahmed.webp', profileUrl: 'doctors/mohib-ahmed.php' },
+                { id: 'rahul-roy', name: 'Dr. Rahul Roy', qualifications: 'MBBS, DA, IDCCM', specialty: 'Critical Care', experience: '20+ Years', image: 'assets/Doc-Side/Dr Rahul Roy(CCT).webp', profileUrl: 'doctors/rahul-roy.php' },
+                { id: 'fuzail-sarwer', name: 'Dr. Fuzail Sarwer', qualifications: 'MBBS, MD, PDCC', specialty: 'Critical Care', experience: '8+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Fuzail-Sarwar.webp', profileUrl: 'doctors/fuzail-sarwer.php' },
 
-                 const lowerQuery = query.toLowerCase();
-                 const results = [];
+                // Emergency (1 doctor)
+                { id: 'shyam-prasad', name: 'Dr. Shyam Prasad', qualifications: 'MBBS, MD MEM', specialty: 'Emergency', experience: '12+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Emergency - Dr. Shyam-Prasad.webp', profileUrl: 'doctors/shyam-prasad.php' },
 
-                 // Search specialties
-                 searchData.specialties.forEach(specialty => {
-                     if (specialty.name.toLowerCase().includes(lowerQuery) ||
-                         specialty.description.toLowerCase().includes(lowerQuery)) {
-                         results.push({
-                             type: 'specialty',
-                             ...specialty
-                         });
+                // Gastroenterology (1 doctor)
+                { id: 'ravish-ranjan', name: 'Dr. Ravish Ranjan', qualifications: 'MBBS, MD, DNB', specialty: 'Gastroenterology', experience: '12 Years', image: 'assets/Doc-Side/Gastroenterologist - Dr. Ravish Ranjan.webp', profileUrl: 'doctors/ravish-ranjan.php' },
+
+                // Minimal Access Surgery (1 doctor)
+                { id: 'ashish-modi', name: 'Dr. Ashish Kumar Modi', qualifications: 'MBBS, MS', specialty: 'Minimal Access Surgery', experience: '12+ Years', image: 'assets/Doc-Side/General Surgeon - Dr. Ashish Kumar Modi.webp', profileUrl: 'doctors/ashish-modi.php' },
+
+                // Internal Medicine (4 doctors)
+                { id: 'ak-agarwal', name: 'Dr. A K Agarwal', qualifications: 'MBBS, MD', specialty: 'Internal Medicine', experience: '25+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Internal Medicine - Dr. A K-Agrawal.webp', profileUrl: 'doctors/ak-agarwal.php' },
+                { id: 'ak-sinha', name: 'Dr. A K Sinha', qualifications: 'MBBS, MD', specialty: 'Internal Medicine', experience: '25+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Internal Medicine - Dr. A K-Sinha.webp', profileUrl: 'doctors/ak-sinha.php' },
+                { id: 'neelam-kumari', name: 'Dr. Neelam Kumari', qualifications: 'MBBS, MD, DNB', specialty: 'Internal Medicine', experience: '8+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/General Physician - Dr. Neelam-Kumari.webp', profileUrl: 'doctors/neelam-kumari.php' },
+                { id: 'sony', name: 'Dr. Sony', qualifications: 'MBBS, DNB, PDCC', specialty: 'Internal Medicine', experience: '4+ Years', image: 'assets/Doc-Side/Dr Sony (Interventional Pain Medicine).webp', profileUrl: 'doctors/sony.php' },
+
+                // Nephrology (1 doctor)
+                { id: 'avinash-dubey', name: 'Dr. Avinash Kumar Dubey', qualifications: 'MD, DM', specialty: 'Nephrology', experience: '15+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Nephrologist - Dr. Avinas- Kumar-Dubey.webp', profileUrl: 'doctors/avinash-dubey.php' },
+
+                // Neurosciences (4 doctors)
+                { id: 'ahmad-hussain', name: 'Dr. Ahmad Hussain', qualifications: 'MBBS, MD, DrNB', specialty: 'Neurosciences', experience: '5+ Years', image: 'assets/Doc-Side/Dr Ahmad Hussain.webp', profileUrl: 'doctors/ahmad-hussain.php' },
+                { id: 'vivek-raj', name: 'Dr. Vivek Raj', qualifications: 'MBBS, DNB', specialty: 'Neurosciences', experience: '9+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Neurosurgeon - Dr. Vivek-Raj.webp', profileUrl: 'doctors/vivek-raj.php' },
+                { id: 'vijay-raj', name: 'Dr. Vijay Raj', qualifications: 'MBBS, MD, DM', specialty: 'Neurosciences', experience: '15+ Years', image: 'assets/Doc-Side/vijayraj.webp', profileUrl: 'doctors/vijay-raj.php' },
+                { id: 'prakash-chandra', name: 'Dr. Prakash Chandra', qualifications: 'MBBS, MS, MCH', specialty: 'Neurosciences', experience: '18+ Years', image: 'assets/Doc-Side/Dr. Prakash Chandra (Neuro Surgeon).webp', profileUrl: 'doctors/prakash-chandra.php' },
+
+                // Oncology (2 doctors)
+                { id: 'pk-raina', name: 'Dr. P K Raina', qualifications: 'MBBS, MS', specialty: 'Oncology (Cancer Care)', experience: '20+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Oncologist - Dr. P-K-Raina.webp', profileUrl: 'doctors/pk-raina.php' },
+                { id: 'anamika-kumari', name: 'Dr. Anamika Kumari', qualifications: 'MBBS, DNB', specialty: 'Oncology (Cancer Care)', experience: '11+ Years', image: 'assets/Doc-Side/Dr Anamika Onco photo.webp', profileUrl: 'doctors/anamika-kumari.php' },
+
+                // Orthopaedics (3 doctors)
+                { id: 'deepak-verma', name: 'Dr. Deepak Verma', qualifications: 'MBBS, MS', specialty: 'Orthopaedics & Joint Replacement', experience: '25+ Years', image: 'assets/Doc-Side/Orthopedic Surgeon - Dr. Deepak Verma.webp', profileUrl: 'doctors/deepak-verma.php' },
+                { id: 'ujjwal-sinha', name: 'Dr. Ujjwal Sinha', qualifications: 'MBBS, MS, DNB', specialty: 'Orthopaedics & Joint Replacement', experience: '15+ Years', image: 'assets/Doc-Side/ujjwal_sinha_ortho.webp', profileUrl: 'doctors/ujjwal-sinha.php' },
+                { id: 'abhishek-roy', name: 'Dr. Abhishek Roy', qualifications: 'MBBS, MS', specialty: 'Orthopaedics & Joint Replacement', experience: '6+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Orthopedic Surgeon - Dr. Abhishek-Roy.webp', profileUrl: 'doctors/abhishek-roy.php' },
+
+                // Urology (2 doctors)
+                { id: 'sunil-kumar', name: 'Dr. Sunil Kumar', qualifications: 'MBBS, MS, MCh', specialty: 'Urology', experience: '18+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Sunil-Kumar.webp', profileUrl: 'doctors/sunil-kumar.php' },
+                { id: 'ved-prakash', name: 'Dr. Ved Prakash Verma', qualifications: 'MBBS, MS, MCh', specialty: 'Urology', experience: '18+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Urologist - Dr. Ved-Prakash-Verma.webp', profileUrl: 'doctors/ved-prakash.php' },
+
+                // Obstetrics & Gynaecology (3 doctors)
+                { id: 'anupama-mahli', name: 'Dr. Anupama Mahli', qualifications: 'MBBS, MS, DNB', specialty: 'Obstetrics & Gynaecology', experience: '10+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Gyanecologist - Dr. Anupama-Mahli.webp', profileUrl: 'doctors/anupama-mahli.php' },
+                { id: 'pushpa-sinha', name: 'Dr. Pushpa Sinha', qualifications: 'MBBS, MD, DGO', specialty: 'Obstetrics & Gynaecology', experience: '15+ Years', image: 'assets/Doc-Side/Gyanecologist - Dr. Pushpa Sinha.webp', profileUrl: 'doctors/pushpa-sinha.php' },
+                { id: 'tanushree-chakroborty', name: 'Dr. Tanushree Chakroborty', qualifications: 'MBBS, DGO', specialty: 'Obstetrics & Gynaecology', experience: '15+ Years', image: 'assets/Doc-Side/tanushree_gyane.webp', profileUrl: 'doctors/tanushree-chakroborty.php' },
+
+                // Pulmonology (1 doctor)
+                { id: 'suprova-chakraborty', name: 'Dr. Suprova Chakraborty', qualifications: 'DNB Respiratory Medicine', specialty: 'Pulmonology', experience: '12+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Pulmonologist - Dr. Suprova-Chakraborty.webp', profileUrl: 'doctors/suprova-chakraborty.php' },
+
+                // ENT (2 doctors)
+                { id: 'tgn-sinha', name: 'Dr. T.G.N. Sinha', qualifications: 'MBBS, MS, FICS', specialty: 'ENT', experience: '45+ Years', image: 'assets/Doc-Side/Dr T G N Sinha ( ENT).webp', profileUrl: 'doctors/tgn-sinha.php' },
+                { id: 'ranajan-jha', name: 'Dr. Ranajan Kumar Jha', qualifications: 'MBBS, MS, FESS', specialty: 'ENT', experience: '15+ Years', image: 'assets/doc-dummy/male-dummy-raj.webp', profileUrl: 'doctors/ranajan-jha.php' },
+
+                // Dental (2 doctors)
+                { id: 'suraj-mani-bhattacharjee', name: 'Dr. Suraj Mani Bhattacharjee', qualifications: 'BDS', specialty: 'Dental', experience: '10+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dental-Surgeon - Dr. Surajmani-bhattacharjee.webp', profileUrl: 'doctors/suraj-mani-bhattacharjee.php' },
+                { id: 'abhishek-bhattacharjee', name: 'Dr. Abhishek Bhattacharjee', qualifications: 'MBBS, MDS', specialty: 'Dental', experience: '10+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Maxillofacial Surgeon - Dr. Abhishek-Bhattacharjee.webp', profileUrl: 'doctors/abhishek-bhattacharjee.php' },
+
+                // Dermatology (2 doctors)
+                { id: 'piyali-banerjee', name: 'Dr. Piyali Banerjee', qualifications: 'MBBS, DVDL', specialty: 'Dermatology', experience: '12+ Years', image: 'assets/Doc-Side/Dr Piyali Banerjee(Derma).webp', profileUrl: 'doctors/piyali-banerjee.php' },
+                { id: 'shaista-huma', name: 'Dr. Shaista Huma', qualifications: 'MBBS, MD, ACS', specialty: 'Dermatology', experience: '10+ Years', image: 'assets/doc-dummy/male-dummy-raj.webp', profileUrl: 'doctors/shaista-huma.php' },
+
+                // Eye Care (1 doctor)
+                { id: 'abid-akhtar', name: 'Dr. Abid Akhtar', qualifications: 'MBBS, MS', specialty: 'Eye Care', experience: '20+ Years', image: 'assets/Doc-Side/Dr. Abid Akhtar (Opthal).webp', profileUrl: 'doctors/abid-akhtar.php' },
+
+                // Radiology (1 doctor)
+                { id: 'shekhar-sharma', name: 'Dr. Shekhar Sharma', qualifications: 'MBBS, DMRD', specialty: 'Radiology', experience: '20+ Years', image: 'assets/Doc-Side/Dr Shekhar Sharma (Radiologist).webp', profileUrl: 'doctors/shekhar-sharma.php' },
+
+                // Laboratory (3 doctors)
+                { id: 'shweta-sushmita', name: 'Dr. Shweta Sushmita', qualifications: 'MBBS, MD', specialty: 'Laboratory Investigations', experience: '10+ Years', image: 'assets/Doc-Side/Lab - Dr. Sweta Sushmita.webp', profileUrl: 'doctors/shweta-sushmita.php' },
+                { id: 'praveen-kumar', name: 'Dr. Praveen Kumar', qualifications: 'MBBS, DCP', specialty: 'Laboratory Investigations', experience: '8+ Years', image: 'assets/Doc-Side/Dr Praveen Kumar (Lab).webp', profileUrl: 'doctors/praveen-kumar.php' },
+                { id: 'kriti-kaira', name: 'Dr. Kriti Kaira', qualifications: 'MBBS, MD, PDF', specialty: 'Laboratory Investigations', experience: '3+ Years', image: 'assets/Doc-Side/Dr kirti_kaira_lab.webp', profileUrl: 'doctors/kriti-kaira.php' },
+
+                // Psychiatry (1 doctor)
+                { id: 'anil-kumar', name: 'Dr. Anil Kumar', qualifications: 'MBBS, MD', specialty: 'Psychiatry & Mental Health', experience: '40+ Years', image: 'assets/Doc-Side/Dr Anil Kumar (Psychiatry).webp', profileUrl: 'doctors/anil-kumar.php' },
+
+                // Physiotherapy (1 doctor)
+                { id: 'abhay-pandey', name: 'Dr. Abhay Kumar Pandey', qualifications: 'BPT, MPT, PGDYT', specialty: 'Physiotherapy & Rehabilitation', experience: '16+ Years', image: 'assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Physiotherapist - Dr. Abhay-Kumar-Pandey.webp', profileUrl: 'doctors/abhay-pandey.php' },
+
+                // Aesthetic & Reconstructive Surgery (1 doctor)
+                { id: 'pankaj-kumar', name: 'Dr. Pankaj Kumar', qualifications: 'MBBS, MS, MCh', specialty: 'Aesthetic & Reconstructive Surgery', experience: '12+ Years', image: 'assets/doc-dummy/male-dummy-raj.webp', profileUrl: 'doctors/pankaj-kumar.php' },
+
+                // Additional doctors from doctors/*.php
+                { id: 'abhijit-kumar', name: 'Dr. Abhijit Kumar', qualifications: 'MBBS, MS (Otolaryngology), PDCC', specialty: 'ENT', experience: '16+ Years', image: 'assets/doc-dummy/male-dummy-raj.webp', profileUrl: 'doctors/abhijit-kumar.php' },
+                { id: 'ajeet-singh', name: 'Dr. Ajeet Singh', qualifications: 'MBBS, Post Graduate Diploma', specialty: 'Administration & General Medicine', experience: '38 Years', image: 'assets/doc-dummy/male-dummy-raj.webp', profileUrl: 'doctors/ajeet-singh.php' },
+                { id: 'b-kumar', name: 'Dr. B Kumar', qualifications: 'MBBS, MS (General Surgery)', specialty: 'Minimal Access Surgery', experience: '12 Years', image: 'assets/doc-dummy/male-dummy-raj.webp', profileUrl: 'doctors/b-kumar.php' },
+                { id: 'jitendra-prasad', name: 'Dr. Jitendra Prasad', qualifications: 'MBBS, MD (Microbiology)', specialty: 'FNAC, Biopsy, Blood & Laboratory Investigations', experience: '9+ Years', image: 'assets/doc-dummy/male-dummy-raj.webp', profileUrl: 'doctors/jitendra-prasad.php' },
+                { id: 'mozammil-pheroz', name: 'Dr. Mozammil Pheroz', qualifications: 'MBBS, MS, DNB (Ortho), Dip. Sports Medicine', specialty: 'Orthopaedics & Joint Replacement', experience: '11+ Years', image: 'assets/Doc-Side/dr-pheroz-raj-removebg-preview.png', profileUrl: 'doctors/mozammil-pheroz.php' },
+                { id: 'parijat-sarkar', name: 'Mr. Parijat Sarkar', qualifications: 'M.Sc (Sports Nutrition), B.Sc (Dietetics)', specialty: 'Dietetics & Nutrition', experience: '6+ Years', image: 'assets/Doc-Side/Mr. Parijat Sarkar (Dietetian).webp', profileUrl: 'doctors/parijat-sarkar.php' },
+                { id: 'pradeep-prasad', name: 'Dr. Pradeep Prasad', qualifications: 'MBBS, MD (Biochemistry)', specialty: 'FNAC, Biopsy, Blood & Laboratory Investigations', experience: '10+ Years', image: 'assets/doc-dummy/male-dummy-raj.webp', profileUrl: 'doctors/pradeep-prasad.php' },
+                { id: 'ravi-shekhar-singh', name: 'Dr. Ravi Shekhar Singh', qualifications: 'MBBS, DCH', specialty: 'Pediatrics & Neonatology', experience: '10+ Years', image: 'assets/specialties/PAEDIATRICS/dr-ravi-shekhar-singh.webp', profileUrl: 'doctors/ravi-shekhar-singh.php' },
+                { id: 'sanjeev-kumar-ravi', name: 'Dr. Sanjeev Kumar Ravi', qualifications: 'MBBS, Diploma in Family Medicine', specialty: 'Family Medicine & Ultrasonography', experience: '20 Years', image: 'assets/doc-dummy/male-dummy-raj.webp', profileUrl: 'doctors/sanjeev-kumar-ravi.php' },
+                { id: 'shubham-shekhar', name: 'Dr. Shubham Shekhar', qualifications: 'ACLS, BLS', specialty: 'Emergency', experience: '2 Years', image: 'assets/doc-dummy/male-dummy-raj.webp', profileUrl: 'doctors/shubham-shekhar.php' }
+            ];
+
+             // Specialties Data (for search) - with keywords like React version
+             const specialties = [
+                { name: 'Cardiology', url: 'specialties/cardiology.php', icon: 'heart', description: 'Heart & Cardiovascular Care', keywords: ['heart', 'cardiac', 'angiography', 'angioplasty', 'pacemaker', 'heart attack'] },
+                { name: 'Neurosciences', url: 'specialties/neurosciences.php', icon: 'aperture', description: 'Brain & Nervous System Care', keywords: ['brain', 'neuro', 'stroke', 'spine', 'head injury', 'neurosurgery'] },
+                { name: 'Obstetrics & Gynaecology', url: 'specialties/obstetrics-and-gynaecology.php', icon: 'user', description: "Women's Health", keywords: ['women', 'pregnancy', 'obstetrics', 'maternity', 'gynecology'] },
+                { name: 'Orthopaedics & Joint Replacement', url: 'specialties/orthopaedics-and-joint-replacement.php', icon: 'users', description: 'Bone & Joint Care', keywords: ['bone', 'ortho', 'joint', 'knee', 'hip', 'arthroscopy'] },
+                { name: 'Minimal Access Surgery', url: 'specialties/minimal-access-surgery.php', icon: 'scissors', description: 'Laparoscopic Surgery', keywords: ['laparoscopic', 'laser', 'hernia', 'operation', 'surgery'] },
+                { name: 'ENT', url: 'specialties/ent.php', icon: 'mic', description: 'Ear, Nose & Throat', keywords: ['ear', 'nose', 'throat', 'sinus', 'hearing'] },
+                { name: 'Nephrology', url: 'specialties/nephrology.php', icon: 'droplet', description: 'Kidney Care', keywords: ['kidney', 'dialysis', 'renal', 'hemodialysis'] },
+                { name: 'Oncology (Cancer Care)', url: 'specialties/oncology-cancer-care.php', icon: 'shield', description: 'Cancer Treatment', keywords: ['cancer', 'chemotherapy', 'tumor', 'radiation', 'oncology'] },
+                { name: 'Gastroenterology', url: 'specialties/gastroenterology.php', icon: 'trending-up', description: 'Digestive Health', keywords: ['stomach', 'gastro', 'endoscopy', 'liver', 'digestive', 'colonoscopy'] },
+                { name: 'Emergency', url: 'specialties/emergency.php', icon: 'alert-circle', description: '24/7 Emergency Care', keywords: ['trauma', 'ambulance', '24x7', 'accident', 'acute care'] },
+                { name: 'Pediatrics & Neonatology', url: 'specialties/pediatrics-and-neonatology.php', icon: 'smile', description: 'Child Healthcare', keywords: ['child', 'kids', 'newborn', 'neonatology', 'baby', 'immunization'] },
+                { name: 'Urology', url: 'specialties/urology.php', icon: 'zap', description: 'Urinary & Male Reproductive Health', keywords: ['prostate', 'kidney stone', 'urinary', 'bladder', 'infertility'] },
+                { name: 'Critical Care', url: 'specialties/critical-care.php', icon: 'activity', description: 'Intensive Care Unit', keywords: ['icu', 'intensive care', 'critical'] },
+                { name: 'Pulmonology', url: 'specialties/pulmonology.php', icon: 'wind', description: 'Lung & Respiratory Care', keywords: ['lung', 'respiratory', 'asthma', 'copd', 'breathing'] },
+                { name: 'Dermatology', url: 'specialties/dermatology.php', icon: 'sun', description: 'Skin Care', keywords: ['skin', 'derma', 'cosmetic', 'laser therapy', 'skin cancer'] },
+                { name: 'Dental', url: 'specialties/dental.php', icon: 'smile', description: 'Dental Care', keywords: ['teeth', 'dentist', 'root canal', 'implants', 'orthodontics'] },
+                { name: 'Eye Care', url: 'specialties/eye-care.php', icon: 'eye', description: 'Ophthalmology', keywords: ['eye', 'vision', 'cataract', 'lasik', 'glaucoma', 'ophthalmology'] },
+                { name: 'Physiotherapy & Rehabilitation', url: 'specialties/physiotherapy-and-rehabilitation.php', icon: 'activity', description: 'Physical Therapy', keywords: ['rehab', 'physical therapy', 'exercise', 'rehabilitation'] },
+                { name: 'Psychiatry & Mental Health', url: 'specialties/psychiatry-and-mental-health.php', icon: 'heart', description: 'Mental Health Care', keywords: ['mental health', 'counseling', 'depression', 'anxiety', 'therapy'] },
+                { name: 'Radiology', url: 'specialties/radiology.php', icon: 'radio', description: 'Imaging & Diagnostics', keywords: ['xray', 'ct scan', 'mri', 'ultrasound', 'imaging'] },
+                { name: 'Internal Medicine', url: 'specialties/internal-medicine.php', icon: 'thermometer', description: 'General Medicine', keywords: ['general medicine', 'physician', 'internal'] },
+                { name: 'Laboratory Investigations', url: 'specialties/laboratory-investigations.php', icon: 'file-text', description: 'Lab & Diagnostics', keywords: ['blood test', 'biopsy', 'fnac', 'pathology', 'lab'] },
+                { name: 'Aesthetic & Reconstructive Surgery', url: 'specialties/aesthetic-and-reconstructive-surgery.php', icon: 'star', description: 'Cosmetic Surgery', keywords: ['cosmetic', 'reconstructive', 'plastic'] },
+                { name: 'Nutrition & Dietetics', url: 'specialties/nutrition-and-dietetics.php', icon: 'coffee', description: 'Nutritional Counseling', keywords: ['diet', 'dietetics', 'nutritionist', 'dietician'] }
+            ];
+
+             if (searchInput && searchDropdown) {
+                 // Function to filter and show results
+                 function showSearchResults(query) {
+                     if (query.length < 1) {
+                         searchDropdown.classList.add('hidden');
+                         return;
                      }
-                 });
 
-                 // Search doctors
-                 searchData.doctors.forEach(doctor => {
-                     if (doctor.name.toLowerCase().includes(lowerQuery) ||
-                         doctor.specialty.toLowerCase().includes(lowerQuery) ||
-                         doctor.qualifications.toLowerCase().includes(lowerQuery)) {
-                         results.push({
-                             type: 'doctor',
-                             ...doctor
+                     // 1. Search specialties with keyword support
+                     const matchedSpecialties = specialties.filter(s =>
+                         s.name.toLowerCase().includes(query) ||
+                         s.keywords.some(keyword => keyword.toLowerCase().includes(query))
+                     ).map(s => ({ ...s, type: 'specialty' }));
+
+                     // Get list of matching specialty names to help find doctors
+                     const matchingSpecialtyNames = matchedSpecialties.map(s => s.name);
+
+                     // 2. Search doctors by name, direct specialty match, or if their specialty was found via keywords
+                     const matchedDoctors = doctors.filter(d =>
+                         d.name.toLowerCase().includes(query) ||
+                         d.specialty.toLowerCase().includes(query) ||
+                         matchingSpecialtyNames.includes(d.specialty) // Include doctors whose specialty matched via keywords
+                     ).map(d => ({ ...d, type: 'doctor' }));
+
+                     // Combine and limit (prioritize specialties then doctors)
+                     const allResults = [...matchedSpecialties, ...matchedDoctors].slice(0, 8);
+
+                     // Build results HTML (matching React version style)
+                     let html = '';
+
+                     if (allResults.length > 0) {
+                         allResults.forEach(item => {
+                             if (item.type === 'specialty') {
+                                 html += `
+                                     <button type="button" onclick="window.location.href='${item.url}'" class="w-full px-6 py-3 hover:bg-gray-50 flex items-center justify-between transition-colors text-left border-b border-gray-100 last:border-b-0">
+                                         <div class="flex items-center gap-3">
+                                             <div class="p-2 rounded-full search-specialty-icon">
+                                                 <i data-feather="activity" class="w-4 h-4"></i>
+                                             </div>
+                                             <div>
+                                                 <p class="font-medium text-gray-900">${item.name}</p>
+                                             </div>
+                                         </div>
+                                         <span class="text-xs px-2 py-1 rounded-full search-specialty-badge">
+                                             Specialty
+                                         </span>
+                                     </button>
+                                 `;
+                             } else {
+                                 html += `
+                                     <button type="button" onclick="window.location.href='${item.profileUrl}'" class="w-full px-6 py-3 hover:bg-gray-50 flex items-center justify-between transition-colors text-left border-b border-gray-100 last:border-b-0">
+                                         <div class="flex items-center gap-3">
+                                             <div class="p-2 rounded-full search-doctor-icon">
+                                                 <i data-feather="user" class="w-4 h-4"></i>
+                                             </div>
+                                             <div>
+                                                 <p class="font-medium text-gray-900">${item.name}</p>
+                                                 <p class="text-sm text-gray-500">${item.specialty}</p>
+                                             </div>
+                                         </div>
+                                         <span class="text-xs px-2 py-1 rounded-full search-doctor-badge">
+                                             Doctor
+                                         </span>
+                                     </button>
+                                 `;
+                             }
                          });
+                     } else {
+                         html = `<div class="p-6 text-center text-gray-500">
+                             <i data-feather="search" class="w-8 h-8 mx-auto mb-2 text-gray-300"></i>
+                             <p>No results found for "${query}"</p>
+                         </div>`;
                      }
-                 });
 
-                 displayResults(results);
-             }
-
-             function displayResults(results) {
-                 if (results.length === 0) {
-                     searchResults.innerHTML = `
-                         <div class="p-4 text-center text-gray-500">
-                             <i data-feather="search" class="w-8 h-8 mx-auto mb-2 opacity-50"></i>
-                             <p>No results found</p>
-                         </div>
-                     `;
-                     searchResults.classList.remove('hidden');
+                     searchDropdown.innerHTML = html;
+                     searchDropdown.classList.remove('hidden');
                      feather.replace();
-                     return;
                  }
 
-                 // Group results by type
-                 const specialties = results.filter(r => r.type === 'specialty');
-                 const doctors = results.filter(r => r.type === 'doctor');
+                 // Input event handler
+                 searchInput.addEventListener('input', (e) => {
+                     const query = e.target.value.trim().toLowerCase();
+                     showSearchResults(query);
+                 });
 
-                 let html = '';
+                 // Focus event - show suggestions if there's a query
+                 searchInput.addEventListener('focus', () => {
+                     const query = searchInput.value.trim().toLowerCase();
+                     if (query.length > 0) {
+                         showSearchResults(query);
+                     }
+                 });
 
-                 if (specialties.length > 0) {
-                     html += `<div class="p-3 bg-gray-50 border-b border-gray-200">
-                         <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Specialties</span>
-                     </div>`;
-                     specialties.forEach(s => {
-                         html += `
-                             <a href="${s.url}" class="flex items-center gap-3 p-3 hover:bg-orange-50 transition-colors border-b border-gray-100">
-                                 <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
-                                     <i data-feather="${s.icon}" class="w-5 h-5 text-orange-500"></i>
-                                 </div>
-                                 <div>
-                                     <div class="font-semibold text-gray-900">${s.name}</div>
-                                     <div class="text-sm text-gray-500">${s.description}</div>
-                                 </div>
-                             </a>
-                         `;
+                 // Blur event - hide suggestions with delay
+                 searchInput.addEventListener('blur', () => {
+                     setTimeout(() => {
+                         searchDropdown.classList.add('hidden');
+                     }, 200);
+                 });
+
+                 // Form submit - redirect to doctors page with search query
+                 if (searchForm) {
+                     searchForm.addEventListener('submit', (e) => {
+                         e.preventDefault();
+                         const query = searchInput.value.trim();
+                         if (query) {
+                             window.location.href = `doctors.php?search=${encodeURIComponent(query)}`;
+                         }
                      });
                  }
 
-                 if (doctors.length > 0) {
-                     html += `<div class="p-3 bg-gray-50 border-b border-gray-200">
-                         <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Doctors</span>
-                     </div>`;
-                     doctors.forEach(d => {
-                         html += `
-                             <a href="${d.url}" class="flex items-center gap-3 p-3 hover:bg-orange-50 transition-colors border-b border-gray-100">
-                                 <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                                     <i data-feather="user" class="w-5 h-5 text-blue-500"></i>
-                                 </div>
-                                 <div>
-                                     <div class="font-semibold text-gray-900">${d.name}</div>
-                                     <div class="text-sm text-gray-500">${d.specialty} &bull; ${d.qualifications}</div>
-                                 </div>
-                             </a>
-                         `;
-                     });
-                 }
-
-                 searchResults.innerHTML = html;
-                 searchResults.classList.remove('hidden');
-                 feather.replace();
+                 // Close dropdown on Escape key
+                 searchInput.addEventListener('keydown', (e) => {
+                     if (e.key === 'Escape') {
+                         searchDropdown.classList.add('hidden');
+                         searchInput.blur();
+                     }
+                 });
              }
-
-             // Event listeners for search
-             searchInput.addEventListener('input', (e) => {
-                 performSearch(e.target.value.trim());
-             });
-
-             searchInput.addEventListener('focus', (e) => {
-                 if (e.target.value.trim().length >= 2) {
-                     performSearch(e.target.value.trim());
-                 }
-             });
-
-             // Hide results when clicking outside
-             document.addEventListener('click', (e) => {
-                 if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-                     searchResults.classList.add('hidden');
-                 }
-             });
-
-             // Keyboard navigation
-             searchInput.addEventListener('keydown', (e) => {
-                 if (e.key === 'Escape') {
-                     searchResults.classList.add('hidden');
-                     searchInput.blur();
-                 }
-             });
         });
     </script>
 </body>

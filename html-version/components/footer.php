@@ -128,5 +128,69 @@
              if (typeof feather !== 'undefined') {
                 feather.replace();
             }
+
+            // --- Mobile Menu ---
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    if (menuIcon && closeIcon) {
+                        menuIcon.classList.toggle('hidden');
+                        closeIcon.classList.toggle('hidden');
+                    }
+                });
+
+                // Close mobile menu when clicking a link (except specialties button)
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        if (menuIcon && closeIcon) {
+                            menuIcon.classList.remove('hidden');
+                            closeIcon.classList.add('hidden');
+                        }
+                    });
+                });
+            }
+
+            // --- Mobile Specialties Accordion ---
+            const mobileSpecialtiesBtn = document.getElementById('mobile-specialties-btn');
+            const mobileSpecialtiesDropdown = document.getElementById('mobile-specialties-dropdown');
+            const specialtiesChevron = document.getElementById('specialties-chevron');
+
+            if (mobileSpecialtiesBtn && mobileSpecialtiesDropdown) {
+                mobileSpecialtiesBtn.addEventListener('click', () => {
+                    mobileSpecialtiesDropdown.classList.toggle('hidden');
+                    if (specialtiesChevron) {
+                        specialtiesChevron.classList.toggle('rotate-180');
+                    }
+                });
+            }
+
+            // --- Nested Mobile Category Accordion ---
+            const mobileCategoryBtns = document.querySelectorAll('.mobile-category-btn');
+            
+            if (mobileCategoryBtns.length > 0) {
+                mobileCategoryBtns.forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault(); // Prevent accidental navigation if it were a link
+                        
+                        // Toggle chevron rotation
+                        const chevron = btn.querySelector('.category-chevron');
+                        if (chevron) {
+                            chevron.classList.toggle('rotate-180');
+                        }
+
+                        // Toggle visibility of the next sibling (the items container)
+                        const itemsContainer = btn.nextElementSibling;
+                        if (itemsContainer && itemsContainer.classList.contains('mobile-category-items')) {
+                            itemsContainer.classList.toggle('hidden');
+                        }
+                    });
+                });
+            }
         });
     </script>

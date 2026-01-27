@@ -397,14 +397,6 @@
             }
         });
 
-        // Mobile Menu
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
         // Populate Filters and Initial Render
         function initPage() {
             const departmentSelect = document.getElementById('department-filter');
