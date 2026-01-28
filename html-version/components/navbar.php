@@ -249,3 +249,52 @@ function getSpecialtySlug($name, $category) {
              </div>
         </div>
     </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+             // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    if (menuIcon) menuIcon.classList.toggle('hidden');
+                    if (closeIcon) closeIcon.classList.toggle('hidden');
+                });
+            }
+
+            // Mobile Specialties Accordion
+            const specialtiesBtn = document.getElementById('mobile-specialties-btn');
+            const specialtiesDropdown = document.getElementById('mobile-specialties-dropdown');
+            const specialtiesChevron = document.getElementById('specialties-chevron');
+
+            if (specialtiesBtn && specialtiesDropdown) {
+                specialtiesBtn.addEventListener('click', () => {
+                    specialtiesDropdown.classList.toggle('hidden');
+                    if (specialtiesChevron) {
+                        specialtiesChevron.classList.toggle('rotate-180');
+                    }
+                });
+            }
+
+            // Mobile Category Dropdowns
+            const categoryBtns = document.querySelectorAll('.mobile-category-btn');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const items = btn.nextElementSibling;
+                    const chevron = btn.querySelector('.category-chevron');
+                    
+                    if (items) {
+                        items.classList.toggle('hidden');
+                    }
+                    if (chevron) {
+                        chevron.classList.toggle('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>

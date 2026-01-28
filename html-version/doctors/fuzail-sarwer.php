@@ -1,26 +1,20 @@
-<?php $base_url = '../'; ?>
+<?php
+$base_url = '../';
+$page_title = 'Dr. Fuzail Sarwer | Raj Hospitals';
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Fuzail Sarwer | Raj Hospitals</title>
+    <title><?php echo $page_title; ?></title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <style>
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-
-        .fade-in-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in-visible { opacity: 1; transform: translateY(0); }
     </style>
-    <script>
+     <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -49,7 +43,7 @@
                             800: '#066185',
                             900: '#0b516e'
                         },
-                        accent: {
+                         accent: {
                             100: '#ffedd5',
                             500: '#f97316',
                             600: '#ea580c',
@@ -60,7 +54,6 @@
         }
     </script>
 </head>
-
 <body class="bg-gray-50">
 
     <?php include $base_url . 'components/navbar.php'; ?>
@@ -69,51 +62,35 @@
         <!-- Content injected via JS -->
     </div>
 
-    <!-- Footer -->
     <?php include $base_url . 'components/footer.php'; ?>
 
     <!-- Booking Modal -->
-    <div id="booking-modal"
-        class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-[9999] p-2 fade-in">
+    <div id="booking-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-[9999] p-2 fade-in">
         <div class="bg-white rounded-lg shadow-2xl max-w-lg w-full max-h-[85vh] overflow-y-auto">
-            <div
-                class="sticky top-0 bg-white border-b border-gray-200 px-4 py-2.5 flex justify-between items-center rounded-t-lg z-10">
+             <div class="sticky top-0 bg-white border-b border-gray-200 px-4 py-2.5 flex justify-between items-center rounded-t-lg z-10">
                 <h4 class="font-bold text-gray-900 text-base">Book Appointment</h4>
                 <button id="close-modal-btn" class="text-gray-500 hover:text-gray-700 transition-colors">
                     <i data-feather="x" class="w-5 h-5"></i>
                 </button>
             </div>
-            <div class="p-4">
-                <div class="bg-gray-50 rounded-lg p-3 mb-4 border border-gray-200">
+             <div class="p-4">
+                 <div class="bg-gray-50 rounded-lg p-3 mb-4 border border-gray-200">
                     <div class="grid grid-cols-2 gap-3 text-xs">
-                        <div>
-                            <p class="text-gray-600 mb-0.5">Doctor</p>
-                            <p class="font-semibold text-gray-900" id="modal-doctor-name"></p>
-                        </div>
-                        <div>
-                            <p class="text-gray-600 mb-0.5">Specialty</p>
-                            <p class="font-semibold text-gray-900" id="modal-doctor-specialty"></p>
-                        </div>
+                        <div><p class="text-gray-600 mb-0.5">Doctor</p><p class="font-semibold text-gray-900" id="modal-doctor-name"></p></div>
+                        <div><p class="text-gray-600 mb-0.5">Specialty</p><p class="font-semibold text-gray-900" id="modal-doctor-specialty"></p></div>
                     </div>
                 </div>
                 <form class="space-y-3" onsubmit="event.preventDefault(); alert('Appointment request submitted!');">
-                    <input type="hidden" name="doctor_name" id="form-doctor-name">
-                    <div>
-                        <label class="block text-xs font-medium text-gray-700 mb-1">Patient Name <span
-                                class="text-red-500">*</span></label>
-                        <input type="text" required
-                            class="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 outline-none"
-                            placeholder="Enter your full name">
+                     <input type="hidden" name="doctor_name" id="form-doctor-name">
+                     <div>
+                        <label class="block text-xs font-medium text-gray-700 mb-1">Patient Name <span class="text-red-500">*</span></label>
+                        <input type="text" required class="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 outline-none" placeholder="Enter your full name">
                     </div>
                     <div>
-                        <label class="block text-xs font-medium text-gray-700 mb-1">Phone Number <span
-                                class="text-red-500">*</span></label>
-                        <input type="tel" required pattern="[0-9]{10}"
-                            class="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 outline-none"
-                            placeholder="Enter 10-digit mobile number">
+                        <label class="block text-xs font-medium text-gray-700 mb-1">Phone Number <span class="text-red-500">*</span></label>
+                        <input type="tel" required pattern="[0-9]{10}" class="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 outline-none" placeholder="Enter 10-digit mobile number">
                     </div>
-                    <button type="submit"
-                        class="w-full bg-primary-500 hover:bg-primary-600 text-white px-4 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 text-sm">
+                     <button type="submit" class="w-full bg-primary-500 hover:bg-primary-600 text-white px-4 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 text-sm">
                         <i data-feather="calendar" class="w-4 h-4"></i> Submit Request
                     </button>
                 </form>
@@ -124,34 +101,34 @@
     <script>
         // DATA: Only the specific doctor for this page
         const doctorData = {
-            id: 'fuzail-sarwer',
-            name: 'Dr. Fuzail Sarwer',
-            qualifications: 'MBBS, MD (Anaesthesiology), PDCC (Cardiac Anaesthesia)',
-            specialty: 'Critical Care',
-            experience: '8+ Years',
-            image: '../assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Fuzail-Sarwar.webp',
-            description: 'Dr. Fuzail Sarwer is a renowned Anaesthesiologist and Critical Care specialist with over 20 years of experience. He is known for his precise diagnosis and empathetic patient care.',
-            expertise: [
-                'Anaesthesiology & Pain Management',
-                'Critical Care Medicine',
-                'Trauma Care & Emergency Medicine',
-                'Cardiac Anesthesia',
-                'POCUS (Point Of Care Ultrasound)',
-                'Medical Education & Research Methodology'
-            ],
-            education: [
-                { degree: 'MBBS', institution: 'Kathihar Medical College', year: '' },
-                { degree: 'MD (Anaesthesiology)', institution: 'Kathihar Medical College', year: '' },
-                { degree: 'PDCC (Cardiac Anaesthesia)', institution: 'RIMS, Ranchi', year: '' }
-            ],
-            memberships: [
-                'Indian Medical Association',
-                'Indian Society Of Anesthesiologists',
-                'Indian Society of Critical Care Medicine'
-            ],
-            contact: {
-                phone: '+919263630500'
-            }
+                id: 'fuzail-sarwer',
+                name: 'Dr. Fuzail Sarwer',
+                qualifications: 'MBBS, MD (Anaesthesiology), PDCC (Cardiac Anaesthesia)',
+                specialty: 'Critical Care',
+                experience: '8+ Years',
+                image: '../assets/Raj-hospital-doctor-image/Raj-hospital-doctor-image/Dr. Fuzail-Sarwar.webp',
+                description: 'Dr. Fuzail Sarwer is a renowned Anaesthesiologist and Critical Care specialist with over 20 years of experience. He is known for his precise diagnosis and empathetic patient care.',
+                expertise: [
+                  'Anaesthesiology & Pain Management',
+                  'Critical Care Medicine',
+                  'Trauma Care & Emergency Medicine',
+                  'Cardiac Anesthesia',
+                  'POCUS (Point Of Care Ultrasound)',
+                  'Medical Education & Research Methodology'
+                ],
+                education: [
+                  { degree: 'MBBS', institution: 'Kathihar Medical College', year: '' },
+                  { degree: 'MD (Anaesthesiology)', institution: 'Kathihar Medical College', year: '' },
+                  { degree: 'PDCC (Cardiac Anaesthesia)', institution: 'RIMS, Ranchi', year: '' }
+                ],
+                memberships: [
+                  'Indian Medical Association',
+                  'Indian Society Of Anesthesiologists',
+                  'Indian Society of Critical Care Medicine'
+                ],
+                contact: {
+                  phone: '+919263630500'
+                }
         };
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -238,13 +215,13 @@
                     </div>
                 </section>
             `;
-
+            
             // Re-run feather icons
             feather.replace();
 
             // Trigger animations
             setTimeout(() => {
-                document.querySelectorAll('.fade-in').forEach(el => el.classList.add('fade-in-visible'));
+                document.querySelector('.fade-in').classList.add('fade-in-visible');
             }, 100);
 
             // Populate Modal Data
@@ -271,37 +248,28 @@
             }
         });
 
-        // Header Scroll
+         // Header Scroll
         const header = document.getElementById('main-header');
         const logo = document.getElementById('main-logo');
         const navTopRow = document.getElementById('nav-top-row');
 
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
+             if (window.scrollY > 50) {
                 header.classList.add('py-1');
-                logo.classList.remove('w-[90px]', 'h-[90px]', 'sm:w-[125px]', 'sm:h-[125px]', 'md:w-[145px]', 'md:h-[145px]', 'lg:w-[180px]', 'lg:h-[180px]');
+                 logo.classList.remove('w-[90px]', 'h-[90px]', 'sm:w-[125px]', 'sm:h-[125px]', 'md:w-[145px]', 'md:h-[145px]', 'lg:w-[180px]', 'lg:h-[180px]');
                 logo.classList.add('w-12', 'h-12', 'md:w-16', 'md:h-16');
-                navTopRow.style.height = '0';
+                 navTopRow.style.height = '0';
                 navTopRow.style.opacity = '0';
                 navTopRow.style.marginTop = '0';
             } else {
-                header.classList.remove('py-1');
-                logo.classList.add('w-[90px]', 'h-[90px]', 'sm:w-[125px]', 'sm:h-[125px]', 'md:w-[145px]', 'md:h-[145px]', 'lg:w-[180px]', 'lg:h-[180px]');
+                 header.classList.remove('py-1');
+                  logo.classList.add('w-[90px]', 'h-[90px]', 'sm:w-[125px]', 'sm:h-[125px]', 'md:w-[145px]', 'md:h-[145px]', 'lg:w-[180px]', 'lg:h-[180px]');
                 logo.classList.remove('w-12', 'h-12', 'md:w-16', 'md:h-16');
-                navTopRow.style.height = 'auto';
+                 navTopRow.style.height = 'auto'; 
                 navTopRow.style.opacity = '1';
                 navTopRow.style.marginTop = '';
             }
         });
-
-        // Mobile Menu
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
     </script>
 </body>
-
 </html>
