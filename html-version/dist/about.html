@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Raj Hospitals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in-visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-white">
+
+        <!-- Header -->
+    <div class="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-2 sm:py-1 fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-3 sm:px-4">
+            <!-- Mobile Layout - Stacked -->
+            <div class="flex flex-col space-y-2 sm:hidden">
+                <div class="flex items-center justify-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <a href="https://www.facebook.com/RajHospitals" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="facebook" class="w-4 h-4"></i></a>
+                        <a href="https://www.instagram.com/raj.hospitals/" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="instagram" class="w-4 h-4"></i></a>
+                        <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="youtube" class="w-4 h-4"></i></a>
+                    </div>
+                    <a href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9" class="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+                        <i data-feather="map-pin" class="w-4 h-4"></i>
+                        <span class="text-xs font-medium">Location</span>
+                    </a>
+                </div>
+                <div class="flex items-center justify-center">
+                    <div class="flex items-center space-x-2">
+                        <i data-feather="bell" class="w-4 h-4 text-red-300"></i>
+                        <a href="tel:+919771488888" class="text-xs font-medium hover:underline">(24×7) Helpline: +91 97714 88888</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Desktop Layout -->
+            <div class="hidden sm:flex justify-between items-center gap-4">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-2">
+                        <a href="https://www.facebook.com/RajHospitals" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="facebook" class="w-4 h-4"></i></a>
+                        <a href="https://www.instagram.com/raj.hospitals/" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="instagram" class="w-4 h-4"></i></a>
+                        <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="youtube" class="w-4 h-4"></i></a>
+                    </div>
+                    <a href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9" class="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+                        <i data-feather="map-pin" class="w-4 h-4"></i>
+                        <span class="text-sm font-medium">Location</span>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-2">
+                        <i data-feather="bell" class="w-4 h-4 text-red-300"></i>
+                        <a href="tel:+919771488888" class="text-sm font-medium hover:underline">(24×7) Helpline: +91 97714 88888</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header id="main-header" class="fixed w-full z-40 bg-white top-[48px] sm:top-6 transition-all duration-300 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex relative items-center justify-between h-16 md:h-20 lg:h-24">
+                <!-- Logo -->
+                <a href="./index.php" class="flex items-center group">
+                    <div id="logo-container" class="flex items-center space-x-2 sm:space-x-4 md:space-x-5 lg:space-x-6 transition-all duration-300">
+                        <img id="main-logo" src="./assets/Header/main-logo_ranchi.webp" alt="Main Logo" class="object-contain transition-all duration-300 w-[80px] h-[80px] sm:w-[110px] sm:h-[110px] md:w-[130px] md:h-[130px] lg:w-[160px] lg:h-[160px]">
+                        <div id="nabh-logos" class="flex space-x-1 sm:space-x-3 md:space-x-2 lg:space-x-2 transition-all duration-300">
+                            <img src="./assets/Header/NABL_logo-1.webp" alt="NABH Logo 1" class="object-contain w-[30px] h-[30px]">
+                            <img src="./assets/Header/NABL-Logo-2.webp" alt="NABH Logo 2" class="object-contain w-[30px] h-[30px]">
+                            <img src="./assets/Header/NABL-Logo-3.webp" alt="NABH Logo 3" class="object-contain w-[30px] h-[30px]">
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Mobile Menu Button (visible on mobile only) -->
+                <button id="mobile-menu-btn" class="flex md:hidden items-center justify-center p-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors border border-gray-200 bg-white shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6" id="menu-icon"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 hidden" id="close-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex lg:flex flex-col items-end space-y-1 lg:space-y-2">
+
+                    <!-- First Row (Collapsible) -->
+                    <nav id="nav-top-row" class="flex items-center space-x-3 md:space-x-4 lg:space-x-6 overflow-hidden transition-all duration-300 h-auto opacity-100 origin-top">
+                        <a href="./index.php" class="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">Home</a>
+                        <a href="./testimonials.php" class="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">Testimonials</a>
+                        <a href="./careers.php" class="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">Careers</a>
+                        <a href="./news-media.php" class="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">News & Media</a>
+                        <a href="./blogs.php" class="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">Blogs</a>
+                    </nav>
+
+                    <!-- Second Row (Always Visible) -->
+                    <nav class="flex items-center space-x-3 md:space-x-4 lg:space-x-6">
+                        <a href="./about.php" class="text-orange-500 transition-colors font-medium text-sm lg:text-base">About Raj</a>
+                        
+                        <!-- Specialties Dropdown trigger -->
+                        <div class="relative group cursor-pointer" id="specialties-trigger">
+                            <div class="flex items-center space-x-1 text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">
+                                <span>Specialities</span>
+                                <i data-feather="chevron-down" class="w-3 h-3 group-hover:rotate-180 transition-transform"></i>
+                            </div>
+                            
+                            <!-- Mega Menu -->
+                            <div class="absolute top-full right-0 w-[800px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 hidden group-hover:block fade-in-visible z-50" style="margin-top: 10px;">
+                                <div class="grid grid-cols-3 gap-6">
+                                                                        <div class="flex flex-col">
+                                        <h4 class="font-semibold text-orange-600 uppercase tracking-wide mb-3 border-b border-gray-200 pb-2 text-sm">
+                                            Centres of Excellence                                        </h4>
+                                        <div class="flex flex-col gap-1">
+                                                                                        <a href="./specialties/cardiology.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="heart" class="w-4 h-4 text-orange-500"></i> 
+                                                Cardiology                                            </a>
+                                                                                        <a href="./specialties/critical-care.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="activity" class="w-4 h-4 text-orange-500"></i> 
+                                                Critical Care                                             </a>
+                                                                                        <a href="./specialties/emergency.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="alert-circle" class="w-4 h-4 text-orange-500"></i> 
+                                                Emergency                                            </a>
+                                                                                        <a href="./specialties/gastroenterology.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="aperture" class="w-4 h-4 text-orange-500"></i> 
+                                                Gastroenterology                                            </a>
+                                                                                        <a href="./specialties/minimal-access-surgery.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="target" class="w-4 h-4 text-orange-500"></i> 
+                                                Minimal Access Surgery                                            </a>
+                                                                                        <a href="./specialties/nephrology.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="droplet" class="w-4 h-4 text-orange-500"></i> 
+                                                Nephrology                                            </a>
+                                                                                        <a href="./specialties/neurosciences.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="coffee" class="w-4 h-4 text-orange-500"></i> 
+                                                Neurosciences                                            </a>
+                                                                                        <a href="./specialties/oncology-cancer-care.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="shield" class="w-4 h-4 text-orange-500"></i> 
+                                                Oncology (Cancer Care)                                            </a>
+                                                                                        <a href="./specialties/orthopaedics-and-joint-replacement.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="users" class="w-4 h-4 text-orange-500"></i> 
+                                                Orthopaedics &amp; Joint Replacement                                            </a>
+                                                                                        <a href="./specialties/pulmonology.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="wind" class="w-4 h-4 text-orange-500"></i> 
+                                                Pulmonology                                            </a>
+                                                                                        <a href="./specialties/internal-medicine.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="crosshair" class="w-4 h-4 text-orange-500"></i> 
+                                                Internal Medicine                                            </a>
+                                                                                        <a href="./specialties/urology.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="zap" class="w-4 h-4 text-orange-500"></i> 
+                                                Urology                                            </a>
+                                                                                        <a href="./specialties/obstetrics-and-gynaecology.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="trending-up" class="w-4 h-4 text-orange-500"></i> 
+                                                Obstetrics &amp; Gynaecology                                            </a>
+                                                                                    </div>
+                                    </div>
+                                                                        <div class="flex flex-col">
+                                        <h4 class="font-semibold text-orange-600 uppercase tracking-wide mb-3 border-b border-gray-200 pb-2 text-sm">
+                                            Allied Specialties                                        </h4>
+                                        <div class="flex flex-col gap-1">
+                                                                                        <a href="./specialties/aesthetic-and-reconstructive-surgery.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="scissors" class="w-4 h-4 text-orange-500"></i> 
+                                                Aesthetic &amp; Reconstructive Surgery                                            </a>
+                                                                                        <a href="./specialties/dental.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="smile" class="w-4 h-4 text-orange-500"></i> 
+                                                Dental                                            </a>
+                                                                                        <a href="./specialties/dermatology.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="feather" class="w-4 h-4 text-orange-500"></i> 
+                                                Dermatology                                            </a>
+                                                                                        <a href="./specialties/ent.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="mic" class="w-4 h-4 text-orange-500"></i> 
+                                                ENT                                            </a>
+                                                                                        <a href="./specialties/eye-care.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="eye" class="w-4 h-4 text-orange-500"></i> 
+                                                Eye Care                                            </a>
+                                                                                        <a href="./specialties/nutrition-and-dietetics.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="coffee" class="w-4 h-4 text-orange-500"></i> 
+                                                Nutrition &amp; Dietetics                                            </a>
+                                                                                        <a href="./specialties/pediatrics-and-neonatology.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="coffee" class="w-4 h-4 text-orange-500"></i> 
+                                                Pediatrics &amp; Neonatology                                            </a>
+                                                                                        <a href="./specialties/physiotherapy-and-rehabilitation.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="move" class="w-4 h-4 text-orange-500"></i> 
+                                                Physiotherapy &amp; Rehabilitation                                            </a>
+                                                                                        <a href="./specialties/psychiatry-and-mental-health.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="message-circle" class="w-4 h-4 text-orange-500"></i> 
+                                                Psychiatry &amp; Mental Health                                            </a>
+                                                                                        <a href="./specialties/oral-maxillofacial-surgery-ad.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="scissors" class="w-4 h-4 text-orange-500"></i> 
+                                                Oral &amp; Maxillofacial Surgery                                            </a>
+                                                                                    </div>
+                                    </div>
+                                                                        <div class="flex flex-col">
+                                        <h4 class="font-semibold text-orange-600 uppercase tracking-wide mb-3 border-b border-gray-200 pb-2 text-sm">
+                                            Advanced Diagnostics                                        </h4>
+                                        <div class="flex flex-col gap-1">
+                                                                                        <a href="./specialties/radiology.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="camera" class="w-4 h-4 text-orange-500"></i> 
+                                                Radiology                                            </a>
+                                                                                        <a href="./specialties/neurology-ad.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="moon" class="w-4 h-4 text-orange-500"></i> 
+                                                Neurology                                            </a>
+                                                                                        <a href="./specialties/laboratory-investigations.php" class="flex items-center gap-2 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 text-sm">
+                                                <i data-feather="file" class="w-4 h-4 text-orange-500"></i> 
+                                                FNAC, Biopsy, Blood &amp; Laboratory Investigations                                            </a>
+                                                                                    </div>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+
+                        <a href="./doctors.php" class="text-gray-700 hover:text-gray-900 transition-colors font-medium text-sm lg:text-base">Find a Doctor</a>
+                        <div class="flex items-center space-x-3 ml-2 lg:ml-4">
+                            <a href="./contact.php" class="bg-orange-500 hover:bg-orange-600 text-white px-4 lg:px-7 py-2 lg:py-2.5 rounded-full transition-colors font-semibold text-sm lg:text-base shadow-md">Book Appointment</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default, visible on mobile when toggled) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 max-h-[80vh] overflow-y-auto absolute w-full left-0 shadow-lg">
+             <div class="px-4 py-4 space-y-1">
+                <a href="./index.php" class="block py-3 text-gray-700 font-medium border-b border-gray-100">Home</a>
+                <a href="./about.php" class="block py-3 text-orange-500 font-medium border-b border-gray-100">About Raj</a>
+
+                <!-- Mobile Specialties Accordion -->
+                <div class="border-b border-gray-100">
+                    <button id="mobile-specialties-btn" class="flex items-center justify-between w-full py-3 text-gray-700 font-medium">
+                        <span>Specialties</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 transition-transform duration-200" id="specialties-chevron"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div id="mobile-specialties-dropdown" class="hidden pb-3">
+                                                <div class="border-b border-gray-100 pb-2">
+                            <button type="button" class="w-full flex items-center justify-between py-2 px-2 text-orange-600 hover:bg-orange-50 rounded transition-colors mobile-category-btn">
+                                <span class="text-sm font-semibold uppercase">Centres of Excellence</span>
+                                <i data-feather="chevron-down" class="w-3 h-3 transition-transform category-chevron"></i>
+                            </button>
+                            <div class="pl-4 mt-1 space-y-1 max-h-48 overflow-y-auto hidden mobile-category-items scrollbar-thin">
+                                                                <a href="./specialties/cardiology.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Cardiology</a>
+                                                                <a href="./specialties/critical-care.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Critical Care </a>
+                                                                <a href="./specialties/emergency.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Emergency</a>
+                                                                <a href="./specialties/gastroenterology.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Gastroenterology</a>
+                                                                <a href="./specialties/minimal-access-surgery.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Minimal Access Surgery</a>
+                                                                <a href="./specialties/nephrology.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Nephrology</a>
+                                                                <a href="./specialties/neurosciences.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Neurosciences</a>
+                                                                <a href="./specialties/oncology-cancer-care.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Oncology (Cancer Care)</a>
+                                                                <a href="./specialties/orthopaedics-and-joint-replacement.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Orthopaedics &amp; Joint Replacement</a>
+                                                                <a href="./specialties/pulmonology.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Pulmonology</a>
+                                                                <a href="./specialties/internal-medicine.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Internal Medicine</a>
+                                                                <a href="./specialties/urology.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Urology</a>
+                                                                <a href="./specialties/obstetrics-and-gynaecology.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Obstetrics &amp; Gynaecology</a>
+                                                            </div>
+                        </div>
+                                                <div class="border-b border-gray-100 pb-2">
+                            <button type="button" class="w-full flex items-center justify-between py-2 px-2 text-orange-600 hover:bg-orange-50 rounded transition-colors mobile-category-btn">
+                                <span class="text-sm font-semibold uppercase">Allied Specialties</span>
+                                <i data-feather="chevron-down" class="w-3 h-3 transition-transform category-chevron"></i>
+                            </button>
+                            <div class="pl-4 mt-1 space-y-1 max-h-48 overflow-y-auto hidden mobile-category-items scrollbar-thin">
+                                                                <a href="./specialties/aesthetic-and-reconstructive-surgery.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Aesthetic &amp; Reconstructive Surgery</a>
+                                                                <a href="./specialties/dental.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Dental</a>
+                                                                <a href="./specialties/dermatology.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Dermatology</a>
+                                                                <a href="./specialties/ent.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">ENT</a>
+                                                                <a href="./specialties/eye-care.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Eye Care</a>
+                                                                <a href="./specialties/nutrition-and-dietetics.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Nutrition &amp; Dietetics</a>
+                                                                <a href="./specialties/pediatrics-and-neonatology.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Pediatrics &amp; Neonatology</a>
+                                                                <a href="./specialties/physiotherapy-and-rehabilitation.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Physiotherapy &amp; Rehabilitation</a>
+                                                                <a href="./specialties/psychiatry-and-mental-health.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Psychiatry &amp; Mental Health</a>
+                                                                <a href="./specialties/oral-maxillofacial-surgery-ad.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Oral &amp; Maxillofacial Surgery</a>
+                                                            </div>
+                        </div>
+                                                <div class="border-b border-gray-100 pb-2">
+                            <button type="button" class="w-full flex items-center justify-between py-2 px-2 text-orange-600 hover:bg-orange-50 rounded transition-colors mobile-category-btn">
+                                <span class="text-sm font-semibold uppercase">Advanced Diagnostics</span>
+                                <i data-feather="chevron-down" class="w-3 h-3 transition-transform category-chevron"></i>
+                            </button>
+                            <div class="pl-4 mt-1 space-y-1 max-h-48 overflow-y-auto hidden mobile-category-items scrollbar-thin">
+                                                                <a href="./specialties/radiology.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Radiology</a>
+                                                                <a href="./specialties/neurology-ad.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">Neurology</a>
+                                                                <a href="./specialties/laboratory-investigations.php" class="block py-2 px-4 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded transition-colors">FNAC, Biopsy, Blood &amp; Laboratory Investigations</a>
+                                                            </div>
+                        </div>
+                                            </div>
+                </div>
+
+                <a href="./doctors.php" class="block py-3 text-gray-700 font-medium border-b border-gray-100">Find a Doctor</a>
+                <a href="./testimonials.php" class="block py-3 text-gray-700 font-medium border-b border-gray-100">Testimonials</a>
+                <a href="./news-media.php" class="block py-3 text-gray-700 font-medium border-b border-gray-100">News & Media</a>
+                <a href="./careers.php" class="block py-3 text-gray-700 font-medium border-b border-gray-100">Careers</a>
+                <a href="./contact.php" class="block w-full bg-orange-500 text-white py-3 rounded-lg font-medium text-center mt-4">Book Appointment</a>
+             </div>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+             // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    if (menuIcon) menuIcon.classList.toggle('hidden');
+                    if (closeIcon) closeIcon.classList.toggle('hidden');
+                });
+            }
+
+            // Mobile Specialties Accordion
+            const specialtiesBtn = document.getElementById('mobile-specialties-btn');
+            const specialtiesDropdown = document.getElementById('mobile-specialties-dropdown');
+            const specialtiesChevron = document.getElementById('specialties-chevron');
+
+            if (specialtiesBtn && specialtiesDropdown) {
+                specialtiesBtn.addEventListener('click', () => {
+                    specialtiesDropdown.classList.toggle('hidden');
+                    if (specialtiesChevron) {
+                        specialtiesChevron.classList.toggle('rotate-180');
+                    }
+                });
+            }
+
+            // Mobile Category Dropdowns
+            const categoryBtns = document.querySelectorAll('.mobile-category-btn');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const items = btn.nextElementSibling;
+                    const chevron = btn.querySelector('.category-chevron');
+                    
+                    if (items) {
+                        items.classList.toggle('hidden');
+                    }
+                    if (chevron) {
+                        chevron.classList.toggle('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-[#fef5f3] to-[#f0fbff] mt-32 py-6">
+        <div class="max-w-7xl mx-auto px-4 text-center fade-in">
+             <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              About <span class="text-[#ea5234]">Raj Hospitals</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Three decades of unwavering commitment to healthcare excellence in Ranchi, Jharkhand
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                     <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+                      <div class="space-y-4 text-gray-600 leading-relaxed">
+                        <p>Established in 1991, Raj Hospitals has been at the forefront of healthcare delivery in Ranchi, Jharkhand for over three decades. What began as a vision to provide world-class medical care to the people of Jharkhand has evolved into one of the region's most trusted healthcare institutions.</p>
+                        <p>Our journey has been marked by continuous growth, innovation, and an unwavering commitment to patient care. From a modest beginning, we have expanded to become a 100+ bed super specialty hospital, equipped with state-of-the-art technology and a team of highly qualified medical professionals.</p>
+                        <p>Today, Raj Hospitals stands as a beacon of hope and healing, serving not just Ranchi but patients from across Jharkhand and neighboring states. Our partnership with MAX Saket Delhi further strengthens our commitment to providing the highest standards of medical care.</p>
+                      </div>
+                </div>
+                <div class="fade-in">
+                    <video src="assets/raj-video/raj-video.mp4" autoplay muted loop controls class="w-full rounded-2xl shadow-xl" poster="assets/About-img/The-Hospital.webp">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chairman Message -->
+    <section class="py-12 px-4 bg-gray-50/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Chairman's Message</h2>
+                <p class="text-gray-600">A personal message from our founder and chairman</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden fade-in">
+                <div class="md:flex md:items-center">
+                    <div class="md:w-1/4 flex justify-center p-6 bg-gray-50">
+                        <img src="assets/home-img/Picture1.png" alt="Chairman - Raj Hospital" class="w-56 h-56 md:w-64 md:h-64 object-cover rounded-xl shadow-lg">
+                    </div>
+                    <div class="md:w-3/4 p-8">
+                        <div class="inline-flex items-center px-3 py-1 bg-orange-50 text-orange-600 rounded-full text-sm font-semibold mb-6">Message from Chairman</div>
+                        <div class="space-y-4 text-gray-700 text-sm leading-relaxed">
+                            <p>When we started our facility in Ranchi 30 years ago, we started very small, but we ensured that our patients got the best medical technology and treatment modalities available. In line with the same philosophy, we have created a facility that is second to none regarding medical competence, technology, and infrastructure.</p>
+                            <p>We have designed this hospital keeping in view the modern healthcare needs. It has been designed to ensure maximum ease to the patient, minimize their movement and discomfort, and ensure their safety. We provide a spectrum of all major medical specialties like Cardiac Sciences, Critical care, Oncology, Neuro Sciences, Nephrology & Urology, Orthopaedics, Aesthetic & Reconstructive Surgery, Minimal Access Surgery, Obs & Gynaecology, Paediatrics, ENT, and Internal Medicine.</p>
+                            <p>Another unique feature of the best hospital in Ranchi is that we have dedicated department-wise critical care units like Medical ICU, Surgical ICU, Cardiac Care Unit, and HDU, which department-specific Doctors and paramedics will manage. It ensures customized care for all our patients.</p>
+                            <p>At Raj Hospitals, the best hospital in Ranchi, we have always ensured that this world-class facility is accessible for all socio-economic sections of the society without compromising the quality of treatment and patient care.</p>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-gray-100">
+                            <div>
+                                <h4 class="font-semibold text-gray-900 text-lg">Jogesh Gambhir</h4>
+                                <p class="text-sm text-gray-600">Founder & Chairman, Raj Hospitals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <div class="bg-white p-8 rounded-2xl shadow-lg fade-in border-t-4 border-orange-500">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="heart" class="w-8 h-8 text-orange-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed">To provide compassionate, high-quality healthcare services that improve the health and well-being of our community. We are committed to delivering patient-centered care with integrity, excellence, and respect for every individual we serve.</p>
+                </div>
+                 <div class="bg-white p-8 rounded-2xl shadow-lg fade-in border-t-4 border-[#0191C7]">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="shield" class="w-8 h-8 text-[#0191C7]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed">To be the leading healthcare provider in Eastern India, recognized for our clinical excellence, innovative treatments, and exceptional patient experience. We envision a healthier community where quality healthcare is accessible to all.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Our Core Values</h2>
+                <p class="text-gray-600">The principles that guide everything we do in delivering exceptional healthcare</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                 <!-- 1 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 fade-in hover:shadow-md transition">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-feather="heart" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div><h3 class="text-xl font-bold text-gray-900">Compassion</h3></div>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">We treat each patient as a member of our family and make them partner in their goals towards positive health by collaboration and an informed care delivery system.</p>
+                </div>
+                 <!-- 2 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 fade-in hover:shadow-md transition">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-[#0191C7] rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-feather="trending-up" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div><h3 class="text-xl font-bold text-gray-900">Commitment</h3></div>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">We are committed to constantly provide the best of technology and skills to our patients for their holistic wellbeing.</p>
+                </div>
+                 <!-- 3 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 fade-in hover:shadow-md transition">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-feather="user-check" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div><h3 class="text-xl font-bold text-gray-900">Competence</h3></div>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">We employ credentialed, competent and experienced medical, support and managerial teams to deliver optimum quality outcomes for our patients at all times.</p>
+                </div>
+                 <!-- 4 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 fade-in hover:shadow-md transition">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-[#0191C7] rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i data-feather="activity" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div><h3 class="text-xl font-bold text-gray-900">Care</h3></div>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">We provide the best-in-class and standard of care to all our patients regardless of their socio-economic background.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Timeline -->
+    <section class="py-12 px-4 bg-gray-50/50">
+        <div class="max-w-5xl mx-auto">
+             <div class="text-center mb-12 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Journey Through the Years</h2>
+                <p class="text-gray-600">Raj Hospital & Research Centre - Three decades of excellence in healthcare</p>
+            </div>
+            
+            <div class="relative px-4 md:px-0">
+                 <!-- Central Line -->
+                <div class="absolute left-8 md:left-1/2 md:transform md:-translate-x-0.5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#0191C7] via-orange-500 to-orange-600"></div>
+
+                <div class="space-y-12">
+                     <!-- 1991 (Left) -->
+                    <div class="relative flex flex-col md:flex-row items-center gap-8 fade-in">
+                        <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:text-right md:pr-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 md:border-l-0 md:border-r-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">1991</span>
+                                <ul class="space-y-2 text-left md:text-right">
+                                    <li class="text-sm text-gray-700">Inaugurated on November 3rd with 17 private rooms, labor room & OT</li>
+                                    <li class="text-sm text-gray-700">Started Brain & Spine, Orthopedic & Maternity Surgeries</li>
+                                    <li class="text-sm text-gray-700">First private hospital with complete Radiology & Diagnostic services under one roof</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pl-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/The-Hospital.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                    <!-- 1992-94 (Right) -->
+                    <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 fade-in">
+                        <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:pl-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">1992–94</span>
+                                <ul class="space-y-2">
+                                    <li class="text-sm text-gray-700">Introduced Endoscopic, ENT Microsurgeries & Laparoscopic Surgeries</li>
+                                    <li class="text-sm text-gray-700">Added twin/triple sharing rooms & a 2-bed ICU (total 34 beds)</li>
+                                    <li class="text-sm text-gray-700">Launched first private hospital CT Scan in Ranchi</li>
+                                    <li class="text-sm text-gray-700">Pathology became a 24/7 facility</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pr-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/timeline-raj.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                    <!-- 1995 (Left) -->
+                    <div class="relative flex flex-col md:flex-row items-center gap-8 fade-in">
+                         <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:text-right md:pr-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 md:border-l-0 md:border-r-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">1995</span>
+                                <ul class="space-y-2 text-left md:text-right">
+                                    <li class="text-sm text-gray-700">Opened 25-bedded General Ward (total 63 beds)</li>
+                                    <li class="text-sm text-gray-700">Installed C-Arm in OT</li>
+                                    <li class="text-sm text-gray-700">Began Closed Cardiac Surgeries & Pacemaker Implantations</li>
+                                    <li class="text-sm text-gray-700">Added Cancer Treatment</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pl-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/1995.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                    <!-- 1997 (Right) -->
+                    <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 fade-in">
+                        <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:pl-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">1997</span>
+                                <ul class="space-y-2">
+                                    <li class="text-sm text-gray-700">Became first private hospital in the region recognized by Ministry of Health & Family Welfare for Central Govt. beneficiaries</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pr-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/1997.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                    <!-- 2001 (Left) -->
+                    <div class="relative flex flex-col md:flex-row items-center gap-8 fade-in">
+                         <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:text-right md:pr-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 md:border-l-0 md:border-r-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">2001</span>
+                                <ul class="space-y-2 text-left md:text-right">
+                                    <li class="text-sm text-gray-700">New 14-bed ICU inaugurated by Jharkhand's first CM, Shri Babulal Marandi</li>
+                                    <li class="text-sm text-gray-700">Started Dialysis services</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pl-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/2001.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                     <!-- 2003-05 (Right) -->
+                    <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 fade-in">
+                        <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:pl-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">2003–05</span>
+                                <ul class="space-y-2">
+                                     <li class="text-sm text-gray-700">First private center for HIV management in Jharkhand</li>
+                                <li class="text-sm text-gray-700">Started Joint Replacement surgeries</li>
+                                <li class="text-sm text-gray-700">Launched first private hospital MRI in Ranchi</li>
+                                <li class="text-sm text-gray-700">Upgraded Sonography facilities</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pr-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/2003-05.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                     <!-- 2008 (Left) -->
+                     <div class="relative flex flex-col md:flex-row items-center gap-8 fade-in">
+                         <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:text-right md:pr-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 md:border-l-0 md:border-r-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">2008</span>
+                                <ul class="space-y-2 text-left md:text-right">
+                                     <li class="text-sm text-gray-700">Mr. Sahil Gambhir (now CEO) joined; launched 24/7 in-house Pharmacy</li>
+                                <li class="text-sm text-gray-700">Expanded ICU to 20 beds & added 10-bedded HDU</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pl-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/2008.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                     <!-- 2011-13 (Right) -->
+                     <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 fade-in">
+                        <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:pl-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">2011–13</span>
+                                <ul class="space-y-2">
+                                     <li class="text-sm text-gray-700">Started Knee Replacement surgeries (with international collaboration)</li>
+                                <li class="text-sm text-gray-700">Installed PSA-based Oxygen Generation facility</li>
+                                <li class="text-sm text-gray-700">Expanded to 100+ beds</li>
+                                <li class="text-sm text-gray-700">Opened advanced Neuro & Radio Diagnostics (1.5 Tesla MRI, EEG, EMG etc.)</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pr-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/Comprehensive-Neuro.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                     <!-- 2015 (Left) -->
+                     <div class="relative flex flex-col md:flex-row items-center gap-8 fade-in">
+                         <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:text-right md:pr-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 md:border-l-0 md:border-r-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">2015</span>
+                                <ul class="space-y-2 text-left md:text-right">
+                                     <li class="text-sm text-gray-700">Major infrastructural overhaul</li>
+                                <li class="text-sm text-gray-700">Added 4 Modular OTs for critical surgeries</li>
+                                <li class="text-sm text-gray-700">Expanded Critical Care to 50 beds</li>
+                                <li class="text-sm text-gray-700">Complete Dialysis Centre with Nephro Plus</li>
+                                <li class="text-sm text-gray-700">Upgraded Maternity, Physiotherapy, Dentistry, Endoscopy</li>
+                                <li class="text-sm text-gray-700">Modern utilities: Piped Gas/Suction, Fire Safety, Helipad</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pl-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/As-we-move-into-the-fourth.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                    <!-- 2018 (Right) -->
+                     <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 fade-in">
+                        <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:pl-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">2018</span>
+                                <ul class="space-y-2">
+                                     <li class="text-sm text-gray-700">Launched Cath Lab & Interventional Cardiology (with Artemis Healthcare)</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pr-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/2018.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                    <!-- 2019 (Left) -->
+                     <div class="relative flex flex-col md:flex-row items-center gap-8 fade-in">
+                         <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:text-right md:pr-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 md:border-l-0 md:border-r-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">2019</span>
+                                <ul class="space-y-2 text-left md:text-right">
+                                    <li class="text-sm text-gray-700">Pre-Accredited by NABH for Patient Safety & Quality</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pl-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/NABH.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                    <!-- 2020-21 (Right) -->
+                    <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 fade-in">
+                        <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:pl-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">2020–21</span>
+                                <ul class="space-y-2">
+                                     <li class="text-sm text-gray-700">Key role in COVID-19 fight; successfully treated 1000+ patients</li>
+                                     <li class="text-sm text-gray-700">Among first private hospitals in Jharkhand to start Vaccination Drive</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pr-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/2020-21.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                     <!-- January 2022 (Left) -->
+                     <div class="relative flex flex-col md:flex-row items-center gap-8 fade-in">
+                         <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:text-right md:pr-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 md:border-l-0 md:border-r-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">January 2022</span>
+                                <ul class="space-y-2 text-left md:text-right">
+                                    <li class="text-sm text-gray-700">Launched State-of-the-Art Gastroenterology Suite</li>
+                                    <li class="text-sm text-gray-700">Facilities include Endoscopy, ERCP, Colonoscopy, Capsule Endoscopy</li>
+                                    <li class="text-sm text-gray-700">Advanced management of liver failure with PLEX & CRRT</li>
+                                    <li class="text-sm text-gray-700">Performed more than 30,000 diagnostic and therapeutic procedures</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pl-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/CRRT-pic.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                     <!-- 16th February 2023 (Right) -->
+                    <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 fade-in">
+                        <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:pl-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">16th February 2023</span>
+                                <ul class="space-y-2">
+                                     <li class="text-sm text-gray-700">Hospital received NABH Accreditation</li>
+                                     <li class="text-sm text-gray-700">Recognition for maintaining highest standards of patient safety</li>
+                                     <li class="text-sm text-gray-700">Comprehensive quality management system implementation</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pr-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/nabh-hospital-new.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                     <!-- 12th May 2023 (Left) -->
+                     <div class="relative flex flex-col md:flex-row items-center gap-8 fade-in">
+                         <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:text-right md:pr-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 md:border-l-0 md:border-r-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">12th May 2023</span>
+                                <ul class="space-y-2 text-left md:text-right">
+                                    <li class="text-sm text-gray-700">Introduced Advanced Kidney Care with CRRT</li>
+                                    <li class="text-sm text-gray-700">Comprehensive kidney care for renal failure</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pl-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/Gastro-pic.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                    <!-- July 2023 (Right) -->
+                    <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 fade-in">
+                        <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:pl-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">July 2023</span>
+                                <ul class="space-y-2">
+                                     <li class="text-sm text-gray-700">Launched Leica-Provido Operating Microscope</li>
+                                     <li class="text-sm text-gray-700">Complicated brain tumor & spine surgeries</li>
+                                     <li class="text-sm text-gray-700">Advanced neurology diagnostics including EEG, EMG, NCS</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pr-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/neuro-pic.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                     <!-- 21st January 2025 (Left) -->
+                     <div class="relative flex flex-col md:flex-row items-center gap-8 fade-in">
+                         <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:text-right md:pr-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 md:border-l-0 md:border-r-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">21st January 2025</span>
+                                <ul class="space-y-2 text-left md:text-right">
+                                    <li class="text-sm text-gray-700">Emergency Department received NABH Accreditation</li>
+                                    <li class="text-sm text-gray-700">Enhanced emergency care with standardized protocols</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pl-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/nabh-emergency-new.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                    <!-- 28th January 2025 (Right) -->
+                    <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 fade-in">
+                        <div class="absolute left-5 md:left-1/2 md:transform md:-translate-x-1/2 z-10 flex items-center justify-center w-6 h-6 bg-white border-4 border-orange-500 rounded-full shadow-md"></div>
+                        <div class="w-full md:w-5/12 pl-16 md:pl-0 md:pl-8">
+                             <div class="bg-white rounded-xl shadow-md p-5 border-l-4 border-orange-500 hover:shadow-lg transition">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-bold mb-3">28th January 2025</span>
+                                <ul class="space-y-2">
+                                     <li class="text-sm text-gray-700">Nursing Excellence Department received NABH Accreditation</li>
+                                     <li class="text-sm text-gray-700">Recognition for superior nursing care standards</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="hidden md:block w-5/12 pr-8">
+                             <div class="h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md"><img src="assets/About-img/nabh-nursing.webp" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.1\'%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'2\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+
+        <div class="relative z-10">
+            <div class="py-16">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+                         <!-- Hospital Info -->
+                        <div class="lg:col-span-2">
+                            <div class="mb-6">
+                                 <img src="./assets/Header/main-logo_ranchi-below.webp" alt="Raj Hospitals Logo" class="h-28 w-auto filter brightness-0 invert object-contain">
+                            </div>
+                             <p class="text-gray-300 leading-relaxed mb-6 text-sm">Raj Hospitals is a leading multi-specialty healthcare provider in Ranchi, Jharkhand, delivering comprehensive medical care with state-of-the-art technology and a patient-centric approach since 1991.</p>
+                             <div class="mt-6 space-y-3">
+                                  <div class="flex items-center space-x-2">
+                                    <i data-feather="phone" class="w-4 h-4 text-orange-400"></i>
+                                    <a href="tel:+919771488888" class="text-gray-300 hover:text-orange-400 text-sm transition-colors">+91 977 14 88888</a>
+                                  </div>
+                                   <div class="flex items-center space-x-2">
+                                    <i data-feather="mail" class="w-4 h-4 text-orange-400"></i>
+                                    <a href="mailto:info@rajhospitals.com" class="text-gray-300 hover:text-orange-400 text-sm transition-colors">info@rajhospitals.com</a>
+                                  </div>
+                                   <div class="flex items-start space-x-2">
+                                    <i data-feather="map-pin" class="w-4 h-4 text-orange-400 mt-0.5"></i>
+                                    <a href="https://maps.google.com/?q=Raj+Hospitals+Bariatu+Road+Ranchi" target="_blank" class="text-gray-300 hover:text-orange-400 text-sm transition-colors">Ranchi, Jharkhand - 834009</a>
+                                  </div>
+                             </div>
+                             <!-- Social Media -->
+                             <div class="mt-6">
+                                <h5 class="text-sm font-semibold text-orange-400 uppercase tracking-wide mb-4">Connect With Us</h5>
+                                <div class="flex space-x-3">
+                                    <a href="https://www.facebook.com/RajHospitals" target="_blank" class="w-11 h-11 bg-gradient-to-br from-orange-500/20 to-orange-600/20 backdrop-blur-sm rounded-xl flex items-center justify-center hover:from-orange-500 hover:to-orange-600 transition-all duration-300 border border-orange-500/30 hover:border-orange-500 group hover:scale-110 text-orange-300 hover:text-white">
+                                        <i data-feather="facebook" class="w-5 h-5"></i>
+                                    </a>
+                                     <a href="https://www.instagram.com/raj.hospitals/" target="_blank" class="w-11 h-11 bg-gradient-to-br from-orange-500/20 to-orange-600/20 backdrop-blur-sm rounded-xl flex items-center justify-center hover:from-orange-500 hover:to-orange-600 transition-all duration-300 border border-orange-500/30 hover:border-orange-500 group hover:scale-110 text-orange-300 hover:text-white">
+                                        <i data-feather="instagram" class="w-5 h-5"></i>
+                                    </a>
+                                     <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" class="w-11 h-11 bg-gradient-to-br from-orange-500/20 to-orange-600/20 backdrop-blur-sm rounded-xl flex items-center justify-center hover:from-orange-500 hover:to-orange-600 transition-all duration-300 border border-orange-500/30 hover:border-orange-500 group hover:scale-110 text-orange-300 hover:text-white">
+                                        <i data-feather="youtube" class="w-5 h-5"></i>
+                                    </a>
+                                </div>
+                             </div>
+                        </div>
+                         
+                         <!-- Quick Links -->
+                         <div>
+                            <h4 class="text-lg font-bold mb-6 text-white uppercase tracking-wide">Quick Links</h4>
+                            <ul class="space-y-2.5">
+                                <li><a href="./about.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>About Raj Hospitals</span></a></li>
+                                <li><a href="./doctors.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Find a Doctor</span></a></li>
+                                <li><a href="./specialties.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Specialties</span></a></li>
+                                <li><a href="./careers.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Careers</span></a></li>
+                                <li><a href="./news-media.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>News & Media</span></a></li>
+                                <li><a href="./blogs.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Blogs</span></a></li>
+                                <li><a href="./biomedical-waste-reports.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>BioMedical Waste Reports</span></a></li>
+                            </ul>
+                         </div>
+
+                         <!-- Centres of Excellence -->
+                         <div>
+                            <h4 class="text-lg font-bold mb-6 text-white uppercase tracking-wide">Centres of Excellence</h4>
+                            <ul class="space-y-2.5">
+                                <li><a href="./specialties/cardiology.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Cardiology</span></a></li>
+                                <li><a href="./specialties/critical-care.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Critical Care</span></a></li>
+                                <li><a href="./specialties/emergency.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Emergency</span></a></li>
+                                <li><a href="./specialties/gastroenterology.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Gastroenterology</span></a></li>
+                                <li><a href="./specialties/minimal-access-surgery.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Minimal Access Surgery</span></a></li>
+                                <li><a href="./specialties/nephrology.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Nephrology</span></a></li>
+                                <li><a href="./specialties/neurosciences.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Neurosciences</span></a></li>
+                                <li><a href="./specialties/oncology-cancer-care.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Oncology (Cancer Care)</span></a></li>
+                            </ul>
+                         </div>
+                         
+                         <!-- Allied Specialties -->
+                         <div>
+                            <h4 class="text-lg font-bold mb-6 text-white uppercase tracking-wide">Allied Specialties</h4>
+                             <ul class="space-y-2.5">
+                                <li><a href="./specialties/aesthetic-and-reconstructive-surgery.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Aesthetic & Surg</span></a></li>
+                                <li><a href="./specialties/dental.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Dental</span></a></li>
+                                <li><a href="./specialties/dermatology.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Dermatology</span></a></li>
+                                <li><a href="./specialties/ent.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>ENT</span></a></li>
+                                <li><a href="./specialties/eye-care.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Eye Care</span></a></li>
+                                <li><a href="./specialties/pediatrics-and-neonatology.php" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center space-x-2 text-sm group"><i data-feather="chevron-right" class="w-3 h-3 text-orange-500 group-hover:translate-x-1 transition-transform"></i> <span>Pediatrics</span></a></li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map Section -->
+            <div class="border-t border-gray-800 py-8">
+              <div class="max-w-7xl mx-auto px-4">
+                <div class="rounded-xl overflow-hidden shadow-2xl border border-gray-700">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.8753723757673!2d85.32022857588855!3d23.356529303782207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e1a89d6881dd%3A0xd169ee225be1478!2sRaj%20Hospitals%20-%20Best%20Multi%20Specialty%20Hospital%20in%20Ranchi%20Jharkhand!5e0!3m2!1sen!2sin!4v1755580421244!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="bg-black/50 border-t border-gray-800 py-6">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                        <div class="text-gray-400 text-sm text-center md:text-left">
+                            <p class="mb-1">© 2025 <span class="text-white font-semibold">Raj Hospitals</span>. All rights reserved.</p>
+                             <p class="text-gray-500 text-xs">Established 1991 • NABH Accredited • Leading Healthcare Provider in Jharkhand</p>
+                        </div>
+                         <div class="flex flex-wrap justify-center gap-4 text-xs">
+                            <a href="./privacy-policy.php" class="text-gray-400 hover:text-orange-400 transition-colors">Privacy Policy</a>
+                            <span class="text-gray-700">•</span>
+                            <a href="./terms-and-conditions.php" class="text-gray-400 hover:text-orange-400 transition-colors">Terms & Conditions</a>
+                            <span class="text-gray-700">•</span>
+                            <a href="./biomedical-waste-reports.php" class="text-gray-400 hover:text-orange-400 transition-colors">BMW Reports</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+             if (typeof feather !== 'undefined') {
+                feather.replace();
+            }
+
+
+        });
+    </script>
+
+    <script>
+        feather.replace();
+
+        // Navbar scroll effect
+        const header = document.getElementById('main-header');
+        const logo = document.getElementById('main-logo');
+        const logoContainer = document.getElementById('logo-container');
+        const navTopRow = document.getElementById('nav-top-row');
+
+        window.addEventListener('scroll', () => {
+             if (window.scrollY > 50) {
+                header.classList.add('py-1');
+                 logo.classList.remove('w-[90px]', 'h-[90px]', 'sm:w-[125px]', 'sm:h-[125px]', 'md:w-[145px]', 'md:h-[145px]', 'lg:w-[180px]', 'lg:h-[180px]');
+                logo.classList.add('w-12', 'h-12', 'md:w-16', 'md:h-16');
+                 navTopRow.style.height = '0';
+                navTopRow.style.opacity = '0';
+                navTopRow.style.marginTop = '0';
+            } else {
+                 header.classList.remove('py-1');
+                  logo.classList.add('w-[90px]', 'h-[90px]', 'sm:w-[125px]', 'sm:h-[125px]', 'md:w-[145px]', 'md:h-[145px]', 'lg:w-[180px]', 'lg:h-[180px]');
+                logo.classList.remove('w-12', 'h-12', 'md:w-16', 'md:h-16');
+                 navTopRow.style.height = 'auto'; 
+                navTopRow.style.opacity = '1';
+                navTopRow.style.marginTop = '';
+            }
+        });
+
+        // Fade-in animation
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
