@@ -5,9 +5,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pulmonology & Respiratory Care - Raj Hospitals</title>
+    <!-- ================= META TAGS ================= -->
+
+    <title>Pulmonology Hospital in Ranchi | Best Chest Specialist in Ranchi – Raj Hospital</title>
+
     <meta name="description"
-        content="High-quality pulmonology care in Ranchi by expert pulmonologists with comprehensive lung and respiratory treatment.">
+        content="Raj Hospital is one of the best pulmonology hospitals in Ranchi offering advanced treatment for lung, chest and respiratory diseases." />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- ================= GEO TAGS ================= -->
+
+    <meta name="geo.region" content="IN-JH" />
+    <meta name="geo.placename" content="Ranchi" />
+    <meta name="geo.position" content="23.3441;85.3096" />
+    <meta name="ICBM" content="23.3441, 85.3096" />
+
+    <!-- ================= KEYWORDS (COMMENTED) ================= -->
+    <!--
+Primary Keyword:
+Pulmonology Hospital in Ranchi
+
+Secondary Keywords:
+Best Chest Specialist in Ranchi
+Lung Disease Treatment in Ranchi
+Respiratory Specialist in Ranchi
+Pulmonary Care Hospital in Jharkhand
+-->
+
+    <!-- ================= REVIEW & RATING SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "name": "Raj Hospital",
+  "url": "https://rajhospitals.com/",
+  "logo": "https://rajhospitals.com/images/logo.png",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "380"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mahatma Gandhi Main Road",
+    "addressLocality": "Ranchi",
+    "addressRegion": "Jharkhand",
+    "postalCode": "834001",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
+    <!-- ================= MEDICAL SPECIALTY SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalSpecialty",
+  "name": "Pulmonology",
+  "medicalSpecialty": "Pulmonology",
+  "availableAtOrFrom": {
+    "@type": "Hospital",
+    "name": "Raj Hospital",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ranchi",
+      "addressRegion": "Jharkhand",
+      "addressCountry": "IN"
+    }
+  }
+}
+</script>
+
+    <!-- ================= FAQ SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is the best pulmonology hospital in Ranchi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Raj Hospital is one of the best pulmonology hospitals in Ranchi offering comprehensive respiratory care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Raj Hospital treat lung and respiratory diseases?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Raj Hospital provides diagnosis and treatment for lung, chest and respiratory conditions."
+      }
+    }
+  ]
+}
+</script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script>

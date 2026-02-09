@@ -5,9 +5,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obstetrics & Gynaecology - Raj Hospitals</title>
+    <!-- ================= META TAGS ================= -->
+
+    <title>Obstetrics & Gynaecology Hospital in Ranchi | Best Gynaecologist in Ranchi – Raj Hospital</title>
+
     <meta name="description"
-        content="Best Hospital in Ranchi for Pregnancy Delivery & Gynecology Care with expert gynecologists for high-risk pregnancy and infertility.">
+        content="Raj Hospital is one of the best obstetrics and gynaecology hospitals in Ranchi offering maternity care, pregnancy services and expert gynaecologists." />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- ================= GEO TAGS ================= -->
+
+    <meta name="geo.region" content="IN-JH" />
+    <meta name="geo.placename" content="Ranchi" />
+    <meta name="geo.position" content="23.3441;85.3096" />
+    <meta name="ICBM" content="23.3441, 85.3096" />
+
+    <!-- ================= KEYWORDS (COMMENTED) ================= -->
+    <!--
+Primary Keyword:
+Obstetrics and Gynaecology Hospital in Ranchi
+
+Secondary Keywords:
+Best Gynaecologist in Ranchi
+Maternity Hospital in Ranchi
+Women Health Hospital in Ranchi
+Pregnancy Care Hospital in Jharkhand
+-->
+
+    <!-- ================= REVIEW & RATING SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "name": "Raj Hospital",
+  "url": "https://rajhospitals.com/",
+  "logo": "https://rajhospitals.com/images/logo.png",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "380"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mahatma Gandhi Main Road",
+    "addressLocality": "Ranchi",
+    "addressRegion": "Jharkhand",
+    "postalCode": "834001",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
+    <!-- ================= MEDICAL SPECIALTY SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalSpecialty",
+  "name": "Obstetrics and Gynaecology",
+  "medicalSpecialty": "ObstetricsAndGynecology",
+  "availableAtOrFrom": {
+    "@type": "Hospital",
+    "name": "Raj Hospital",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ranchi",
+      "addressRegion": "Jharkhand",
+      "addressCountry": "IN"
+    }
+  }
+}
+</script>
+
+    <!-- ================= FAQ SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is the best obstetrics and gynaecology hospital in Ranchi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Raj Hospital is one of the best obstetrics and gynaecology hospitals in Ranchi providing comprehensive women healthcare."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Raj Hospital provide maternity and pregnancy care?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Raj Hospital provides complete maternity, pregnancy and women health care services in Ranchi."
+      }
+    }
+  ]
+}
+</script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
@@ -310,8 +408,8 @@
                         <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full"
                             style="min-height: 500px;">
                             <div class="relative h-48 overflow-hidden">
-                                <img src="../assets/Doc-Side/tanushree_gyane.webp"
-                                    alt="Dr. Tanushree Chakroborty" class="w-full h-full object-cover object-top">
+                                <img src="../assets/Doc-Side/tanushree_gyane.webp" alt="Dr. Tanushree Chakroborty"
+                                    class="w-full h-full object-cover object-top">
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Tanushree Chakroborty</h3>

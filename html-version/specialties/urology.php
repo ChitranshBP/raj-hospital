@@ -5,9 +5,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urology & Kidney Stone Care - Raj Hospitals</title>
+    <!-- ================= META TAGS ================= -->
+
+    <title>Urology Hospital in Ranchi | Best Urologist in Ranchi – Raj Hospital</title>
+
     <meta name="description"
-        content="Best Urology Hospital in Ranchi offering comprehensive urological care for adults and children with advanced medical technology.">
+        content="Raj Hospital is one of the best urology hospitals in Ranchi offering advanced treatment for kidney, bladder and urinary tract disorders." />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- ================= GEO TAGS ================= -->
+
+    <meta name="geo.region" content="IN-JH" />
+    <meta name="geo.placename" content="Ranchi" />
+    <meta name="geo.position" content="23.3441;85.3096" />
+    <meta name="ICBM" content="23.3441, 85.3096" />
+
+    <!-- ================= KEYWORDS (COMMENTED) ================= -->
+    <!--
+Primary Keyword:
+Urology Hospital in Ranchi
+
+Secondary Keywords:
+Best Urologist in Ranchi
+Urology Treatment in Ranchi
+Kidney Stone Treatment in Ranchi
+Urinary Disorder Specialist in Jharkhand
+-->
+
+    <!-- ================= REVIEW & RATING SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "name": "Raj Hospital",
+  "url": "https://rajhospitals.com/",
+  "logo": "https://rajhospitals.com/images/logo.png",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "380"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mahatma Gandhi Main Road",
+    "addressLocality": "Ranchi",
+    "addressRegion": "Jharkhand",
+    "postalCode": "834001",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
+    <!-- ================= MEDICAL SPECIALTY SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalSpecialty",
+  "name": "Urology",
+  "medicalSpecialty": "Urology",
+  "availableAtOrFrom": {
+    "@type": "Hospital",
+    "name": "Raj Hospital",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ranchi",
+      "addressRegion": "Jharkhand",
+      "addressCountry": "IN"
+    }
+  }
+}
+</script>
+
+    <!-- ================= FAQ SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is the best urology hospital in Ranchi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Raj Hospital is one of the best urology hospitals in Ranchi offering comprehensive urological care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Raj Hospital treat kidney stones and urinary problems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Raj Hospital provides advanced treatment for kidney stones and urinary tract disorders."
+      }
+    }
+  ]
+}
+</script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script>

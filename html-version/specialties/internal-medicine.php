@@ -5,9 +5,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internal Medicine & General Physician - Raj Hospitals</title>
+
+    <!-- ================= META TAGS ================= -->
+
+    <title>Internal Medicine Hospital in Ranchi | Best Physician in Ranchi – Raj Hospital</title>
+
     <meta name="description"
-        content="Best Internal Medicine Hospital in Ranchi with expert doctors for diabetes, heart, chest, gastro & chronic diseases.">
+        content="Raj Hospital is one of the best internal medicine hospitals in Ranchi offering expert physicians, accurate diagnosis and comprehensive medical care." />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- ================= GEO TAGS ================= -->
+
+    <meta name="geo.region" content="IN-JH" />
+    <meta name="geo.placename" content="Ranchi" />
+    <meta name="geo.position" content="23.3441;85.3096" />
+    <meta name="ICBM" content="23.3441, 85.3096" />
+
+    <!-- ================= KEYWORDS (COMMENTED) ================= -->
+    <!--
+Primary Keyword:
+Internal Medicine Hospital in Ranchi
+
+Secondary Keywords:
+Best Physician in Ranchi
+Internal Medicine Doctor in Ranchi
+General Medicine Hospital in Ranchi
+Medical Specialist in Jharkhand
+-->
+
+    <!-- ================= REVIEW & RATING SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "name": "Raj Hospital",
+  "url": "https://rajhospitals.com/",
+  "logo": "https://rajhospitals.com/images/logo.png",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "380"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mahatma Gandhi Main Road",
+    "addressLocality": "Ranchi",
+    "addressRegion": "Jharkhand",
+    "postalCode": "834001",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
+    <!-- ================= MEDICAL SPECIALTY SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalSpecialty",
+  "name": "Internal Medicine",
+  "medicalSpecialty": "InternalMedicine",
+  "availableAtOrFrom": {
+    "@type": "Hospital",
+    "name": "Raj Hospital",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ranchi",
+      "addressRegion": "Jharkhand",
+      "addressCountry": "IN"
+    }
+  }
+}
+</script>
+
+    <!-- ================= FAQ SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is the best internal medicine hospital in Ranchi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Raj Hospital is one of the best internal medicine hospitals in Ranchi providing comprehensive medical care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Raj Hospital have experienced physicians?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Raj Hospital has experienced internal medicine doctors and physicians for accurate diagnosis and treatment."
+      }
+    }
+  ]
+}
+</script>
+
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script>

@@ -1,11 +1,107 @@
 <?php $base_url = '../'; ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Critical Care - Best ICU Hospital in Ranchi | Raj Hospitals</title>
-    <meta name="description" content="Advanced ICU services at Raj Hospitals, Ranchi. Expert critical care for medical, surgical, cardiac, and neuro-critical patients with 24/7 intensivist availability.">
+    <meta name="description"
+        content="Raj Hospital is a leading critical care hospital in Ranchi offering advanced ICU facilities, emergency care, ventilator support and expert critical care doctors." />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- ================= GEO TAGS ================= -->
+
+    <meta name="geo.region" content="IN-JH" />
+    <meta name="geo.placename" content="Ranchi" />
+    <meta name="geo.position" content="23.3441;85.3096" />
+    <meta name="ICBM" content="23.3441, 85.3096" />
+
+    <!-- ================= KEYWORDS (COMMENTED) ================= -->
+    <!--
+Primary Keyword:
+Critical Care Hospital in Ranchi
+
+Secondary Keywords:
+Best ICU Hospital in Ranchi
+Critical Care Unit in Ranchi
+ICU Hospital in Ranchi
+Emergency Critical Care in Jharkhand
+-->
+
+    <!-- ================= REVIEW & RATING SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "name": "Raj Hospital",
+  "url": "https://rajhospitals.com/",
+  "logo": "https://rajhospitals.com/images/logo.png",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "380"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mahatma Gandhi Main Road",
+    "addressLocality": "Ranchi",
+    "addressRegion": "Jharkhand",
+    "postalCode": "834001",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
+    <!-- ================= MEDICAL SPECIALTY SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalSpecialty",
+  "name": "Critical Care",
+  "medicalSpecialty": "CriticalCareMedicine",
+  "availableAtOrFrom": {
+    "@type": "Hospital",
+    "name": "Raj Hospital",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ranchi",
+      "addressRegion": "Jharkhand",
+      "addressCountry": "IN"
+    }
+  }
+}
+</script>
+
+    <!-- ================= FAQ SCHEMA ================= -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is the best critical care hospital in Ranchi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Raj Hospital is one of the best critical care hospitals in Ranchi with advanced ICU facilities and experienced doctors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Raj Hospital provide 24x7 ICU and emergency services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Raj Hospital provides 24x7 ICU and emergency critical care services in Ranchi."
+      }
+    }
+  ]
+}
+</script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
@@ -37,26 +133,50 @@
         }
     </script>
     <style>
-        .scrollbar-hide::-webkit-scrollbar { display: none; }
-        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
-        .fade-in-visible { opacity: 1; transform: translateY(0); }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
+
 <body class="bg-white">
 
     <!-- Top Header Bar -->
-    <div class="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-2 sm:py-1 fixed top-0 left-0 right-0 z-50 shadow-sm">
+    <div
+        class="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-2 sm:py-1 fixed top-0 left-0 right-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-3 sm:px-4">
             <!-- Mobile Layout -->
             <div class="flex flex-col space-y-2 sm:hidden">
                 <div class="flex items-center justify-center space-x-4">
                     <div class="flex items-center space-x-3">
-                        <a href="https://www.facebook.com/RajHospitals" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="facebook" class="w-4 h-4"></i></a>
-                        <a href="https://www.instagram.com/raj.hospitals/" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="instagram" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="youtube" class="w-4 h-4"></i></a>
+                        <a href="https://www.facebook.com/RajHospitals" target="_blank"
+                            class="hover:text-orange-200 transition-colors"><i data-feather="facebook"
+                                class="w-4 h-4"></i></a>
+                        <a href="https://www.instagram.com/raj.hospitals/" target="_blank"
+                            class="hover:text-orange-200 transition-colors"><i data-feather="instagram"
+                                class="w-4 h-4"></i></a>
+                        <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank"
+                            class="hover:text-orange-200 transition-colors"><i data-feather="youtube"
+                                class="w-4 h-4"></i></a>
                     </div>
-                    <a href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9" class="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+                    <a href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9"
+                        class="flex items-center space-x-1 hover:text-orange-200 transition-colors">
                         <i data-feather="map-pin" class="w-4 h-4"></i>
                         <span class="text-xs font-medium">Location</span>
                     </a>
@@ -64,7 +184,8 @@
                 <div class="flex items-center justify-center">
                     <div class="flex items-center space-x-2">
                         <i data-feather="bell" class="w-4 h-4 text-red-300"></i>
-                        <a href="tel:+919771488888" class="text-xs font-medium hover:underline">(24x7) Helpline: +91 97714 88888</a>
+                        <a href="tel:+919771488888" class="text-xs font-medium hover:underline">(24x7) Helpline: +91
+                            97714 88888</a>
                     </div>
                 </div>
             </div>
@@ -73,11 +194,18 @@
             <div class="hidden sm:flex justify-between items-center gap-4">
                 <div class="flex items-center space-x-4">
                     <div class="flex items-center space-x-2">
-                        <a href="https://www.facebook.com/RajHospitals" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="facebook" class="w-4 h-4"></i></a>
-                        <a href="https://www.instagram.com/raj.hospitals/" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="instagram" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank" class="hover:text-orange-200 transition-colors"><i data-feather="youtube" class="w-4 h-4"></i></a>
+                        <a href="https://www.facebook.com/RajHospitals" target="_blank"
+                            class="hover:text-orange-200 transition-colors"><i data-feather="facebook"
+                                class="w-4 h-4"></i></a>
+                        <a href="https://www.instagram.com/raj.hospitals/" target="_blank"
+                            class="hover:text-orange-200 transition-colors"><i data-feather="instagram"
+                                class="w-4 h-4"></i></a>
+                        <a href="https://www.youtube.com/channel/UChfTNXg8w5T2NFTeuUjfuug" target="_blank"
+                            class="hover:text-orange-200 transition-colors"><i data-feather="youtube"
+                                class="w-4 h-4"></i></a>
                     </div>
-                    <a href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9" class="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+                    <a href="https://maps.app.goo.gl/Q8Kd9MDJdxZzxM7C9"
+                        class="flex items-center space-x-1 hover:text-orange-200 transition-colors">
                         <i data-feather="map-pin" class="w-4 h-4"></i>
                         <span class="text-sm font-medium">Location</span>
                     </a>
@@ -85,7 +213,8 @@
                 <div class="flex items-center">
                     <div class="flex items-center space-x-2">
                         <i data-feather="bell" class="w-4 h-4 text-red-300"></i>
-                        <a href="tel:+919771488888" class="text-sm font-medium hover:underline">(24x7) Helpline: +91 97714 88888</a>
+                        <a href="tel:+919771488888" class="text-sm font-medium hover:underline">(24x7) Helpline: +91
+                            97714 88888</a>
                     </div>
                 </div>
             </div>
@@ -99,7 +228,8 @@
     <section class="relative h-[50vh] mt-20 overflow-hidden">
         <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="../assets/specialties/Critical Care & Emergency/Critical-Care & Emergency.webp" alt="Critical Care" class="w-full h-full object-cover">
+            <img src="../assets/specialties/Critical Care & Emergency/Critical-Care & Emergency.webp"
+                alt="Critical Care" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
         </div>
 
@@ -108,7 +238,8 @@
             <div class="max-w-7xl mx-auto px-4 w-full">
                 <div class="max-w-3xl text-white fade-in">
                     <h1 class="text-4xl lg:text-5xl font-bold mb-4">Critical Care</h1>
-                    <p class="text-xl text-gray-200">Advanced ICU services for medical, surgical, cardiac, and neuro-critical patients.</p>
+                    <p class="text-xl text-gray-200">Advanced ICU services for medical, surgical, cardiac, and
+                        neuro-critical patients.</p>
                 </div>
             </div>
         </div>
@@ -122,7 +253,11 @@
                 <div class="lg:col-span-2">
                     <div class="fade-in">
                         <h2 class="text-3xl font-bold text-gray-900 mb-6">Overview</h2>
-                        <p class="text-lg text-gray-700 leading-relaxed mb-6">Raj Hospitals' Critical Care Department provides intensive, round-the-clock monitoring and management for patients with life-threatening medical and surgical conditions. With modern ICUs, specialized life-support technology, and an expert multidisciplinary team, we deliver world-class care to critically ill patients.</p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">Raj Hospitals' Critical Care Department
+                            provides intensive, round-the-clock monitoring and management for patients with
+                            life-threatening medical and surgical conditions. With modern ICUs, specialized life-support
+                            technology, and an expert multidisciplinary team, we deliver world-class care to critically
+                            ill patients.</p>
 
                         <!-- Why Choose Us Box -->
                         <div class="bg-primary-50 p-6 rounded-xl border border-primary-100 mb-8">
@@ -132,23 +267,31 @@
                             </h3>
                             <ul class="space-y-3">
                                 <li class="flex items-start">
-                                    <i data-feather="check" class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
-                                    <span class="text-gray-700">Team of experienced specialists with advanced training and expertise</span>
+                                    <i data-feather="check"
+                                        class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Team of experienced specialists with advanced training
+                                        and expertise</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i data-feather="check" class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
-                                    <span class="text-gray-700">State-of-the-art diagnostic and treatment facilities</span>
+                                    <i data-feather="check"
+                                        class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
+                                    <span class="text-gray-700">State-of-the-art diagnostic and treatment
+                                        facilities</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i data-feather="check" class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
-                                    <span class="text-gray-700">Comprehensive care from diagnosis to rehabilitation</span>
+                                    <i data-feather="check"
+                                        class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Comprehensive care from diagnosis to
+                                        rehabilitation</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i data-feather="check" class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
+                                    <i data-feather="check"
+                                        class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
                                     <span class="text-gray-700">Multidisciplinary approach for complex cases</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i data-feather="check" class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
+                                    <i data-feather="check"
+                                        class="w-5 h-5 text-primary-600 mt-1 mr-3 flex-shrink-0"></i>
                                     <span class="text-gray-700">24/7 emergency care for critical conditions</span>
                                 </li>
                             </ul>
@@ -198,26 +341,32 @@
                     <h3 class="text-2xl font-bold text-gray-900 mb-4 flex justify-center items-center">
                         Meet Our Specialists
                     </h3>
-                    <div class="flex flex-col gap-8 overflow-y-auto" style="max-height: 1000px; max-width: 340px; margin: 0 auto;">
+                    <div class="flex flex-col gap-8 overflow-y-auto"
+                        style="max-height: 1000px; max-width: 340px; margin: 0 auto;">
 
                         <!-- Doctor 1 -->
-                        <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full" style="min-height: 500px;">
+                        <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full"
+                            style="min-height: 500px;">
                             <div class="relative h-48 overflow-hidden">
-                                <img src="../assets/Doc-Front/Anaesthesiologist - Dr. Mohib Ahmed.webp" alt="Dr. Mohib Ahmed" class="w-full h-full object-cover object-top">
+                                <img src="../assets/Doc-Front/Anaesthesiologist - Dr. Mohib Ahmed.webp"
+                                    alt="Dr. Mohib Ahmed" class="w-full h-full object-cover object-top">
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Mohib Ahmed</h3>
                                 <p class="text-primary-600 font-medium mb-2">MBBS, MD, IDCCM, EDM</p>
-                                <p class="text-secondary-600 text-sm mb-3">Critical Care, Neuro Critical Care, Research, Airway Management, Ultrasound in ICU (POCUS)</p>
+                                <p class="text-secondary-600 text-sm mb-3">Critical Care, Neuro Critical Care, Research,
+                                    Airway Management, Ultrasound in ICU (POCUS)</p>
                                 <div class="flex items-center text-sm text-gray-500 mb-4">
                                     <i data-feather="award" class="w-4 h-4 mr-2"></i>
                                     <span>16+ Years Experience</span>
                                 </div>
-                                <a href="../contact.php" class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 mb-2">
+                                <a href="../contact.php"
+                                    class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 mb-2">
                                     <i data-feather="calendar" class="w-4 h-4"></i>
                                     <span>Book Appointment</span>
                                 </a>
-                                <a href="../doctors.php" class="w-full bg-white text-primary-600 py-2 rounded-lg border border-primary-600 hover:bg-primary-50 transition-colors font-medium flex items-center justify-center space-x-2">
+                                <a href="../doctors.php"
+                                    class="w-full bg-white text-primary-600 py-2 rounded-lg border border-primary-600 hover:bg-primary-50 transition-colors font-medium flex items-center justify-center space-x-2">
                                     <i data-feather="user" class="w-4 h-4"></i>
                                     <span>View Profile</span>
                                 </a>
@@ -225,23 +374,28 @@
                         </div>
 
                         <!-- Doctor 2 -->
-                        <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full" style="min-height: 500px;">
+                        <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full"
+                            style="min-height: 500px;">
                             <div class="relative h-48 overflow-hidden">
-                                <img src="../assets/Doc-Side/Dr Rahul Roy(CCT).webp" alt="Dr. Rahul Roy" class="w-full h-full object-cover object-top">
+                                <img src="../assets/Doc-Side/Dr Rahul Roy(CCT).webp" alt="Dr. Rahul Roy"
+                                    class="w-full h-full object-cover object-top">
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Rahul Roy</h3>
                                 <p class="text-primary-600 font-medium mb-2">MBBS, D.A, IDCCM, MBA</p>
-                                <p class="text-secondary-600 text-sm mb-3">Critical Care, Anesthesia, Pain Management, End of Life Care</p>
+                                <p class="text-secondary-600 text-sm mb-3">Critical Care, Anesthesia, Pain Management,
+                                    End of Life Care</p>
                                 <div class="flex items-center text-sm text-gray-500 mb-4">
                                     <i data-feather="award" class="w-4 h-4 mr-2"></i>
                                     <span>20+ Years Experience</span>
                                 </div>
-                                <a href="../contact.php" class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 mb-2">
+                                <a href="../contact.php"
+                                    class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 mb-2">
                                     <i data-feather="calendar" class="w-4 h-4"></i>
                                     <span>Book Appointment</span>
                                 </a>
-                                <a href="../doctors.php" class="w-full bg-white text-primary-600 py-2 rounded-lg border border-primary-600 hover:bg-primary-50 transition-colors font-medium flex items-center justify-center space-x-2">
+                                <a href="../doctors.php"
+                                    class="w-full bg-white text-primary-600 py-2 rounded-lg border border-primary-600 hover:bg-primary-50 transition-colors font-medium flex items-center justify-center space-x-2">
                                     <i data-feather="user" class="w-4 h-4"></i>
                                     <span>View Profile</span>
                                 </a>
@@ -249,9 +403,11 @@
                         </div>
 
                         <!-- Doctor 3 -->
-                        <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full" style="min-height: 500px;">
+                        <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 w-full"
+                            style="min-height: 500px;">
                             <div class="relative h-48 overflow-hidden">
-                                <img src="../assets/Doc-Front/Anaesthesiologist - Dr. Fuzail Sarwar.webp" alt="Dr. Fuzail Sarwer" class="w-full h-full object-cover object-top">
+                                <img src="../assets/Doc-Front/Anaesthesiologist - Dr. Fuzail Sarwar.webp"
+                                    alt="Dr. Fuzail Sarwer" class="w-full h-full object-cover object-top">
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold text-gray-900 mb-1">Dr. Fuzail Sarwer</h3>
@@ -261,11 +417,13 @@
                                     <i data-feather="award" class="w-4 h-4 mr-2"></i>
                                     <span>10+ Years Experience</span>
                                 </div>
-                                <a href="../contact.php" class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 mb-2">
+                                <a href="../contact.php"
+                                    class="w-full bg-primary-500 text-white py-3 rounded-lg hover:bg-primary-600 transition-colors font-medium flex items-center justify-center space-x-2 mb-2">
                                     <i data-feather="calendar" class="w-4 h-4"></i>
                                     <span>Book Appointment</span>
                                 </a>
-                                <a href="../doctors.php" class="w-full bg-white text-primary-600 py-2 rounded-lg border border-primary-600 hover:bg-primary-50 transition-colors font-medium flex items-center justify-center space-x-2">
+                                <a href="../doctors.php"
+                                    class="w-full bg-white text-primary-600 py-2 rounded-lg border border-primary-600 hover:bg-primary-50 transition-colors font-medium flex items-center justify-center space-x-2">
                                     <i data-feather="user" class="w-4 h-4"></i>
                                     <span>View Profile</span>
                                 </a>
@@ -290,20 +448,27 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Critical Care & Emergency/Cardiac-Neuro-ICU-Indian.webp" alt="Cardiac & Neuro ICU" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Critical Care & Emergency/Cardiac-Neuro-ICU-Indian.webp"
+                            alt="Cardiac & Neuro ICU"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Cardiac & Neuro ICU</h3>
-                        <p class="text-gray-600 mb-4">Expert cardiac and neurological intensive care with advanced monitoring systems.</p>
+                        <p class="text-gray-600 mb-4">Expert cardiac and neurological intensive care with advanced
+                            monitoring systems.</p>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Critical Care & Emergency/Medical & Surgical-ICU.webp" alt="Medical & Surgical ICU" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Critical Care & Emergency/Medical & Surgical-ICU.webp"
+                            alt="Medical & Surgical ICU"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Medical & Surgical ICU</h3>
@@ -312,20 +477,27 @@
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Critical Care & Emergency/Neuro-Care.webp" alt="Neuro Critical Care" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Critical Care & Emergency/Neuro-Care.webp"
+                            alt="Neuro Critical Care"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Neuro Critical Care</h3>
-                        <p class="text-gray-600 mb-4">Comprehensive neurocritical management for stroke and head injuries.</p>
+                        <p class="text-gray-600 mb-4">Comprehensive neurocritical management for stroke and head
+                            injuries.</p>
                     </div>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Critical Care & Emergency/Haemodialysis.webp" alt="Haemodialysis" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Critical Care & Emergency/Haemodialysis.webp"
+                            alt="Haemodialysis"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Haemodialysis</h3>
@@ -334,20 +506,26 @@
                 </div>
 
                 <!-- Service 5 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Critical Care & Emergency/Advanced-Ventilatory-Support.webp" alt="Advanced Ventilatory Support" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Critical Care & Emergency/Advanced-Ventilatory-Support.webp"
+                            alt="Advanced Ventilatory Support"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Advanced Ventilatory Support</h3>
-                        <p class="text-gray-600 mb-4">Invasive and non-invasive ventilation for respiratory distress.</p>
+                        <p class="text-gray-600 mb-4">Invasive and non-invasive ventilation for respiratory distress.
+                        </p>
                     </div>
                 </div>
 
                 <!-- Service 6 -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
+                <div
+                    class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden fade-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="../assets/specialties/Critical Care & Emergency/ECMO.webp" alt="ECMO" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="../assets/specialties/Critical Care & Emergency/ECMO.webp" alt="ECMO"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">ECMO</h3>
@@ -467,11 +645,13 @@
                         <h3 class="text-xl font-semibold text-gray-900">Stroke Survival & ICU Recovery</h3>
                     </div>
                     <p class="text-gray-500 mb-4">Patient: Mr. Gupta, 62</p>
-                    <p class="text-gray-700 mb-6">Recovered with neurocritical care, ventilatory support, and comprehensive ICU rehabilitation.</p>
+                    <p class="text-gray-700 mb-6">Recovered with neurocritical care, ventilatory support, and
+                        comprehensive ICU rehabilitation.</p>
                     <div class="bg-green-50 p-4 rounded-lg border border-green-100">
                         <div class="flex items-center space-x-2">
                             <i data-feather="check" class="w-5 h-5 text-green-600"></i>
-                            <span class="font-medium text-green-800">Outcome: Regained independence after 3 months.</span>
+                            <span class="font-medium text-green-800">Outcome: Regained independence after 3
+                                months.</span>
                         </div>
                     </div>
                 </div>
@@ -494,43 +674,55 @@
                 <div>
                     <div class="space-y-4">
                         <!-- FAQ 1 -->
-                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer"
+                            onclick="toggleFaq(this)">
                             <div class="flex justify-between items-center">
-                                <h3 class="text-lg font-semibold text-gray-900 mb-3">What conditions are treated in Critical Care?</h3>
-                                <i data-feather="plus" class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">What conditions are treated in
+                                    Critical Care?</h3>
+                                <i data-feather="plus"
+                                    class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
                             </div>
                             <div class="faq-content text-gray-700 transition-all duration-300 overflow-hidden max-h-0">
-                                <p>Critically ill patients with cardiac, neurological, respiratory, or post-surgical complications receive 24/7 care.</p>
+                                <p>Critically ill patients with cardiac, neurological, respiratory, or post-surgical
+                                    complications receive 24/7 care.</p>
                             </div>
                         </div>
 
                         <!-- FAQ 2 -->
-                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer"
+                            onclick="toggleFaq(this)">
                             <div class="flex justify-between items-center">
                                 <h3 class="text-lg font-semibold text-gray-900 mb-3">Are isolation rooms available?</h3>
-                                <i data-feather="plus" class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
+                                <i data-feather="plus"
+                                    class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
                             </div>
                             <div class="faq-content text-gray-700 transition-all duration-300 overflow-hidden max-h-0">
-                                <p>Yes, both positive and negative pressure isolation rooms are provided for infection control.</p>
+                                <p>Yes, both positive and negative pressure isolation rooms are provided for infection
+                                    control.</p>
                             </div>
                         </div>
 
                         <!-- FAQ 3 -->
-                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer"
+                            onclick="toggleFaq(this)">
                             <div class="flex justify-between items-center">
                                 <h3 class="text-lg font-semibold text-gray-900 mb-3">What is ECMO?</h3>
-                                <i data-feather="plus" class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
+                                <i data-feather="plus"
+                                    class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
                             </div>
                             <div class="faq-content text-gray-700 transition-all duration-300 overflow-hidden max-h-0">
-                                <p>Extra Corporeal Membrane Oxygenation is advanced life support for patients with severe cardiac or respiratory failure.</p>
+                                <p>Extra Corporeal Membrane Oxygenation is advanced life support for patients with
+                                    severe cardiac or respiratory failure.</p>
                             </div>
                         </div>
 
                         <!-- FAQ 4 -->
-                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer" onclick="toggleFaq(this)">
+                        <div class="faq-item bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow cursor-pointer"
+                            onclick="toggleFaq(this)">
                             <div class="flex justify-between items-center">
                                 <h3 class="text-lg font-semibold text-gray-900 mb-3">Is the ICU available 24/7?</h3>
-                                <i data-feather="plus" class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
+                                <i data-feather="plus"
+                                    class="text-2xl text-primary-500 flex-shrink-0 ml-4 faq-icon"></i>
                             </div>
                             <div class="faq-content text-gray-700 transition-all duration-300 overflow-hidden max-h-0">
                                 <p>Yes, our critical care team is available round-the-clock for all emergencies.</p>
@@ -551,7 +743,9 @@
                                 <label for="inquiry_name" class="block text-sm font-medium text-gray-700 mb-1">
                                     Full Name <span class="text-red-500">*</span>
                                 </label>
-                                <input type="text" id="inquiry_name" name="inquiry_name" required class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all" placeholder="Enter your name">
+                                <input type="text" id="inquiry_name" name="inquiry_name" required
+                                    class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                                    placeholder="Enter your name">
                             </div>
 
                             <!-- Email -->
@@ -559,7 +753,9 @@
                                 <label for="inquiry_email" class="block text-sm font-medium text-gray-700 mb-1">
                                     Email Address <span class="text-red-500">*</span>
                                 </label>
-                                <input type="email" id="inquiry_email" name="inquiry_email" required class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all" placeholder="Enter your email">
+                                <input type="email" id="inquiry_email" name="inquiry_email" required
+                                    class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                                    placeholder="Enter your email">
                             </div>
 
                             <!-- Phone -->
@@ -567,7 +763,9 @@
                                 <label for="inquiry_phone" class="block text-sm font-medium text-gray-700 mb-1">
                                     Phone Number <span class="text-red-500">*</span>
                                 </label>
-                                <input type="tel" id="inquiry_phone" name="inquiry_phone" required pattern="[0-9]{10}" class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all" placeholder="Enter 10-digit mobile number">
+                                <input type="tel" id="inquiry_phone" name="inquiry_phone" required pattern="[0-9]{10}"
+                                    class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                                    placeholder="Enter 10-digit mobile number">
                             </div>
 
                             <!-- Message -->
@@ -575,14 +773,17 @@
                                 <label for="inquiry_message" class="block text-sm font-medium text-gray-700 mb-1">
                                     Your Question <span class="text-red-500">*</span>
                                 </label>
-                                <textarea id="inquiry_message" name="inquiry_message" required rows="4" class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all" placeholder="Describe your question or concern..."></textarea>
+                                <textarea id="inquiry_message" name="inquiry_message" required rows="4"
+                                    class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                                    placeholder="Describe your question or concern..."></textarea>
                             </div>
 
                             <!-- Hidden field for specialty -->
                             <input type="hidden" name="specialty" value="Critical Care">
 
                             <!-- Submit Button -->
-                            <button type="submit" class="w-full bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2">
+                            <button type="submit"
+                                class="w-full bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2">
                                 <i data-feather="send" class="w-5 h-5"></i>
                                 Submit Inquiry
                             </button>
@@ -682,4 +883,5 @@
         }
     </script>
 </body>
+
 </html>
