@@ -2,17 +2,10 @@
   command = "php build.php"
   publish = "dist"
 
-# Redirect /page to /page.html (clean URLs)
+# Rewrite .php URLs to .html (links in pages use .php extensions)
 [[redirects]]
-  from = "/*"
+  from = "/*.php"
   to = "/:splat.html"
-  status = 200
-  conditions = {Role = ["admin"]}
-
-# Fallback to index.html
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
   status = 200
 
 # Security Headers
