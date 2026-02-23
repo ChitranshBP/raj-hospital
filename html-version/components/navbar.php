@@ -181,7 +181,7 @@ function getSpecialtySlug($name, $category) {
                                 <div class="grid grid-cols-3 gap-6">
                                     <?php foreach ($specialties as $categoryData): ?>
                                     <div class="flex flex-col">
-                                        <h4 class="font-semibold text-orange-600 uppercase tracking-wide mb-3 border-b border-gray-200 pb-2 text-sm">
+                                        <h4 class="font-semibold text-orange-600 uppercase tracking-wide mb-3  border-b border-gray-200 pb-2 text-sm">
                                             <?php echo htmlspecialchars($categoryData['category']); ?>
                                         </h4>
                                         <div class="flex flex-col gap-1">
